@@ -1,0 +1,13 @@
+$ <AUTHOR_HOME>/.elan/bin/lake env lean <AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/A14GDOneStructured_003/Replay.lean
+'LeanPEP.Imported.GDOneStructured003.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.raw_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.policy_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.upper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.centered_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.tau_rhs_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.tau_target_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.accepted_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.GDOneStructured003.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.GDOneCapture.tau_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.GDOneCapture.stationary_of_min' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,132 @@
+{
+  "accepted": true,
+  "adapted_approximate_gram_sha256": "d2688c1dff7853b8a43b30dc5914de9f8a2e6a4bf021a39eaf026a04a01bf3e4",
+  "adapter_generator_version": "v0.11.4",
+  "adapter_id": "pepit-smooth-convex-gd-one-step-v1",
+  "capture_mode": "deterministic_regression_fixture",
+  "computed_model_fingerprint": "1d752930ba9e3395abd7e3d4b643a0a239b33bb2a2d2ec4ed50b4e4af863842a",
+  "declared_model_fingerprint": "1d752930ba9e3395abd7e3d4b643a0a239b33bb2a2d2ec4ed50b4e4af863842a",
+  "expected_model_fingerprint": "1d752930ba9e3395abd7e3d4b643a0a239b33bb2a2d2ec4ed50b4e4af863842a",
+  "expected_ordering": {
+    "constraints": [
+      "initial_radius",
+      "smooth_convexity:star:x0",
+      "smooth_convexity:star:x1",
+      "smooth_convexity:x0:star",
+      "smooth_convexity:x0:x1",
+      "smooth_convexity:x1:star",
+      "smooth_convexity:x1:x0"
+    ],
+    "function_values": [
+      "f_star",
+      "f0",
+      "f1"
+    ],
+    "leaf_points": [
+      "x_star",
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "factorization_hint_checks": {
+    "dual_exact_for_source_matrix": true,
+    "note": "factor hints are untrusted numerical postprocessing; exact acceptance is decided only by downstream Gram audits",
+    "primal_exact_for_source_matrix": true
+  },
+  "live_solver_claim": false,
+  "mismatches": [],
+  "producer": {
+    "capture_mode": "deterministic_regression_fixture",
+    "git_commit": "5a061a1b2dbe450b6bac42e2442942748f3b1f32",
+    "name": "PEPit",
+    "package_version": "0.0.1.dev0+5a061a1",
+    "solver": "CLARABEL",
+    "solver_status": "optimal",
+    "wrapper": "cvxpy"
+  },
+  "schema_version": 1,
+  "solver_values": {
+    "dual_objective": "0.1666666667",
+    "primal_objective": "0.1666666668"
+  },
+  "source_artifact_sha256": "4091ff863e396fe36f752fe10b8a597a406488c608a930bcc7c97bef120616aa",
+  "source_ordering": {
+    "constraints": [
+      "initial_radius",
+      "smooth_convexity:star:x0",
+      "smooth_convexity:star:x1",
+      "smooth_convexity:x0:star",
+      "smooth_convexity:x0:x1",
+      "smooth_convexity:x1:star",
+      "smooth_convexity:x1:x0"
+    ],
+    "function_values": [
+      "f_star",
+      "f0",
+      "f1"
+    ],
+    "leaf_points": [
+      "x_star",
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "target": {
+    "centered_dual_matrix": [
+      [
+        "0.166666666633333333335",
+        "-0.249999999975",
+        "-0.249999999975"
+      ],
+      [
+        "-0.249999999975",
+        "0.5",
+        "0.25"
+      ],
+      [
+        "-0.249999999975",
+        "0.25",
+        "0.5"
+      ]
+    ],
+    "centered_primal_gram": [
+      [
+        "1",
+        "0.3333333333",
+        "0.3333333333"
+      ],
+      [
+        "0.3333333333",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ],
+      [
+        "0.3333333333",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ]
+    ],
+    "gram_basis_order": [
+      "x0_minus_xstar",
+      "g0",
+      "g1"
+    ],
+    "point_order": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  }
+}

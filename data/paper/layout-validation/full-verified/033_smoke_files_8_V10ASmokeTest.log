@@ -1,0 +1,24 @@
+LeanPEP.GramPEP.VecExpr.{u_1} (m : ℕ) (𝕜 : Type u_1) : Type u_1
+LeanPEP.GramPEP.Gram.{u_1} (m : ℕ) (𝕜 : Type u_1) : Type u_1
+LeanPEP.GramPEP.gramInner.{u_1} {m : ℕ} {𝕜 : Type u_1} [Semiring 𝕜] (G : Gram m 𝕜) (u v : VecExpr m 𝕜) : 𝕜
+LeanPEP.GramPEP.gramNormSq.{u_1} {m : ℕ} {𝕜 : Type u_1} [Semiring 𝕜] (G : Gram m 𝕜) (u : VecExpr m 𝕜) : 𝕜
+LeanPEP.GramPEP.IsGramPosSemidef.{u_1} {m : ℕ} {𝕜 : Type u_1} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]
+  (G : Gram m 𝕜) : Prop
+LeanPEP.GramPEP.interpolationSlack.{u_1, u_2} {Point : Type u_1} {m : ℕ} {𝕜 : Type u_2} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] (d : Data Point m 𝕜) (i j : Point) : 𝕜
+LeanPEP.GramPEP.InterpolationFeasible.{u_1, u_2} {Point : Type u_1} {m : ℕ} {𝕜 : Type u_2} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] (d : Data Point m 𝕜) : Prop
+LeanPEP.GramPEP.CoreFeasible.{u_1, u_2} {Point : Type u_1} {m : ℕ} {𝕜 : Type u_2} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] (d : Data Point m 𝕜) : Prop
+LeanPEP.GramPEP.interpolationSlack_ofFiniteGD.{u_1} {N : ℕ} {𝕜 : Type u_1} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] (d : Toy.FiniteGD.Data N 𝕜) (i j : Toy.FiniteGD.Point N) :
+  interpolationSlack (ofFiniteGD d) i j = Toy.FiniteGD.slack d i j
+LeanPEP.GramPEP.interpolationFeasible_ofFiniteGD_iff.{u_1} {N : ℕ} {𝕜 : Type u_1} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] (d : Toy.FiniteGD.Data N 𝕜) : InterpolationFeasible (ofFiniteGD d) ↔ Toy.FiniteGD.Feasible d
+LeanPEP.GramPEP.coreFeasible_ofFiniteGD_iff.{u_1} {N : ℕ} {𝕜 : Type u_1} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] (d : Toy.FiniteGD.Data N 𝕜) : CoreFeasible (ofFiniteGD d) ↔ Toy.FiniteGD.Feasible d
+LeanPEP.GramPEP.FiniteGDRegression.oneStepWitness_coreFeasible : CoreFeasible (ofFiniteGD oneStepWitnessQ)
+LeanPEP.GramPEP.FiniteGDRegression.twoStepWitness_coreFeasible : CoreFeasible (ofFiniteGD Toy.TwoStep.exactWitnessQ)
+LeanPEP.GramPEP.FiniteGDRegression.threeStepWitness_coreFeasible : CoreFeasible (ofFiniteGD Toy.ThreeStep.exactWitnessQ)
+LeanPEP.GramPEP.FiniteGDRegression.twoStepBadCandidate_notInterpolationFeasible :
+  ¬InterpolationFeasible (ofFiniteGD Toy.TwoStep.badCandidateQ)

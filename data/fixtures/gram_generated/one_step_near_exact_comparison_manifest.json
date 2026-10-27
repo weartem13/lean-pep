@@ -1,0 +1,26 @@
+{
+  "dimensions": {
+    "gram_basis_count": 3,
+    "point_count": 3
+  },
+  "generator_version": "v0.11.1",
+  "hashes": {
+    "raw_exact_sha256": "95a8c12b58e623d2ea5d3ed7a57ed35dbc55d439bbd84bbda1b24fd571614e16",
+    "reconstructed_exact_sha256": "e5f97e3fdd3f0b391d881c714ba6e9aac0c6ac3d0c2b5acd4b0727d65d319a3c",
+    "reconstruction_report_sha256": "eb59b0d5cc3c3906976d627580af5ffe73a8bca2988f7470da3263c7e83e24df",
+    "source_sha256": "502cba56391c69ebb200e502d61c8d456e01f13c0d741657612fdc64c1c2dd38"
+  },
+  "interpretation": "reconstructed Gram acceptance does not imply that the raw numerical Gram artifact was accepted",
+  "kind": "lean-pep-approximate-gram-audit-comparison-v1",
+  "schema_version": 1,
+  "tracks": {
+    "raw": {
+      "expected_audit": "rejected",
+      "meaning": "exact Gram audit of the original finite base-10 strings; no repair or rounding"
+    },
+    "reconstructed": {
+      "expected_audit": "accepted",
+      "meaning": "exact Gram audit of a nearby candidate produced by the recorded reconstruction policy"
+    }
+  }
+}

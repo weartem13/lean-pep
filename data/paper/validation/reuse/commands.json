@@ -1,0 +1,197 @@
+[
+  {
+    "name": "full_python",
+    "argv": [
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools",
+      "-p",
+      "test_*.py"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 158.4488508749928,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "full_python.log"
+  },
+  {
+    "name": "aggregate",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 53.90597133299161,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "aggregate.log"
+  },
+  {
+    "name": "affected_modules",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.OneStepScaling",
+      "LeanPEP.ActualFunction.ParametricGDHilbert",
+      "LeanPEP.ActualFunction.ProximalGradientScaling",
+      "LeanPEP.ActualFunction.ProximalGradientMinimizer",
+      "LeanPEP.Imported.CompositeBoundedCompletionRegression",
+      "LeanPEP.Imported.CompositeCandidatesRegression",
+      "LeanPEP.Imported.CompositeCaptureRegression",
+      "LeanPEP.Imported.CompositeCompletionRegression",
+      "LeanPEP.Imported.CompositeCoordinatesRegression",
+      "LeanPEP.Imported.CompositeOrderingRegression",
+      "LeanPEP.Imported.CompositePerformanceRegression",
+      "LeanPEP.Imported.CompositeRowsRegression",
+      "LeanPEP.Imported.CompositeSourceRegression",
+      "LeanPEP.Imported.CompositeSparseRegression"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 3.6547662500088336,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "affected_modules.log"
+  },
+  {
+    "name": "smoke",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D13SmokeTest.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 6.425756540993461,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "smoke.log"
+  },
+  {
+    "name": "pg1",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "D13StructuredOne_001/Replay.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 20.882651416992303,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "pg1.log"
+  },
+  {
+    "name": "pg2",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "A14PGTwoStructured_001/Replay.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 54.67831941699842,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "pg2.log"
+  },
+  {
+    "name": "pg3",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "A14PGThreeStructured_001/Replay.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 145.0392511659884,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "pg3.log"
+  },
+  {
+    "name": "pg_tight",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14PGOneTight_001/TightnessReplay.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 13.086666083996533,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "pg_tight.log"
+  },
+  {
+    "name": "pg_pair_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14PGOneTight_001/Regression.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 11.149117917011608,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "pg_pair_regression.log"
+  },
+  {
+    "name": "gd_tight",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14GDOneTight_001/TightnessReplay.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 7.522519124991959,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "gd_tight.log"
+  },
+  {
+    "name": "gd_pair_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14GDOneTight_001/Regression.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 8.008078541999566,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "gd_pair_regression.log"
+  },
+  {
+    "name": "r01_controls",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "ReuseEvidence_001/contrasts/Contrasts.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "wall_seconds": 114.87672374999966,
+    "peak_rss_bytes": null,
+    "resource_note": "not measured; concurrent with isolated build",
+    "log": "r01_controls.log"
+  }
+]

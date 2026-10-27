@@ -1,0 +1,17 @@
+# Rebuildable local objects and environments; research inputs remain visible.
+.lake/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.olean
+*.ilean
+.DS_Store
+.vscode/
+.idea/
+# TeX intermediates; paper/LeanPEP.pdf is a retained publication input.
+paper/build/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz

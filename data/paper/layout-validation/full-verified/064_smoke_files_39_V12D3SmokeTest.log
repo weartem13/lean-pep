@@ -1,0 +1,24 @@
+LeanPEP.ActualFunction.HuberWitness.huberFunction_hasDerivAt (a x : ℝ) :
+  HasDerivAt (huberFunction a) (huberGradient a x) x
+LeanPEP.ActualFunction.HuberWitness.deriv_huberFunction (a x : ℝ) : deriv (huberFunction a) x = huberGradient a x
+LeanPEP.ActualFunction.HuberWitness.huberFunction_differentiable (a : ℝ) : Differentiable ℝ (huberFunction a)
+LeanPEP.ActualFunction.HuberWitness.huberGradient_monotone (a : ℝ) : Monotone (huberGradient a)
+LeanPEP.ActualFunction.HuberWitness.huberFunction_convexOn (a : ℝ) : ConvexOn ℝ Set.univ (huberFunction a)
+LeanPEP.ActualFunction.HuberWitness.huberGradient_lipschitz (a : ℝ) : LipschitzWith 1 (huberGradient a)
+LeanPEP.ActualFunction.HuberWitness.huberFunction_hasGradientAt (a x : ℝ) :
+  HasGradientAt (huberFunction a) (huberGradient a x) x
+LeanPEP.ActualFunction.HuberWitness.analytic (a : ℝ) : IsOneSmoothConvexAnalytic (huberFunction a) (huberGradient a)
+LeanPEP.ActualFunction.HuberWitness.witnessFunction_hasDerivAt (N : ℕ) (x : ℝ) :
+  HasDerivAt (witnessFunction N) (witnessGradient N x) x
+LeanPEP.ActualFunction.HuberWitness.witnessFunction_hasGradientAt (N : ℕ) (x : ℝ) :
+  HasGradientAt (witnessFunction N) (witnessGradient N x) x
+LeanPEP.ActualFunction.HuberWitness.witnessGradient_lipschitz (N : ℕ) : LipschitzWith 1 (witnessGradient N)
+LeanPEP.ActualFunction.HuberWitness.witness_analytic (N : ℕ) :
+  IsOneSmoothConvexAnalytic (witnessFunction N) (witnessGradient N)
+LeanPEP.ActualFunction.HuberWitness.normalized_analytic_lower_witness (N : ℕ) :
+  IsOneSmoothConvexAnalytic (witnessFunction N) (witnessGradient N) ∧
+    witnessGradient N 0 = 0 ∧
+      (∀ (x : ℝ), witnessFunction N 0 ≤ witnessFunction N x) ∧
+        ‖1 - 0‖ ^ 2 ≤ 1 ∧
+          witnessFunction N (ParametricGDActual.unitGDIterate (witnessGradient N) 1 N) - witnessFunction N 0 =
+            ↑(Toy.FiniteGD.ParametricUpper.gdBoundQ N)

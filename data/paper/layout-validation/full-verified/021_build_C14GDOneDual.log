@@ -1,0 +1,57 @@
+⚠ [3102/3119] Replayed LeanPEP.ActualFunction.SmoothScalingCore
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3111/3119] Replayed LeanPEP.ActualFunction.OneStepGram
+warning: LeanPEP/ActualFunction/OneStepGram.lean:83:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3113/3119] Replayed LeanPEP.ActualFunction.OneStepScaling
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3118/3119] Replayed LeanPEP.ActualFunction.GDOneCapture
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:131:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:146:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:131:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:146:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [3119/3119] Replayed LeanPEP.Imported.C14GDOneDual
+info: LeanPEP/Imported/C14GDOneDual.lean:19:0: 'LeanPEP.Imported.C14GDOneDual.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:21:0: 'LeanPEP.Imported.C14GDOneDual.raw_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:23:0: 'LeanPEP.Imported.C14GDOneDual.policy_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:25:0: 'LeanPEP.Imported.C14GDOneDual.psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:27:0: 'LeanPEP.Imported.C14GDOneDual.upper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:29:0: 'LeanPEP.Imported.C14GDOneDual.centered_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:31:0: 'LeanPEP.Imported.C14GDOneDual.tau_rhs_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:33:0: 'LeanPEP.Imported.C14GDOneDual.tau_target_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:35:0: 'LeanPEP.Imported.C14GDOneDual.accepted_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:45:0: 'LeanPEP.Imported.C14GDOneDual.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:46:0: 'LeanPEP.ActualFunction.GDOneCapture.tau_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOneDual.lean:47:0: 'LeanPEP.ActualFunction.GDOneCapture.stationary_of_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3119 jobs).

@@ -1,0 +1,13 @@
+'LeanPEP.Imported.Refine001.FreshInstall.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.trace_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.raw_binding_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.policy_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.upper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.structured_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.structured_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.policy_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.FreshInstall.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,9 @@
+{
+  "capture_byte_sha256": "a2154f76e65a33c65a07631430b91c9d060cad8095b1598eec4fa319ad6fbc67",
+  "capture_canonical_sha256": "9f3871037285b1b0fd841d006c679b8ff72710b6ec4676418fa4416f15facb17",
+  "live_capture_performed": true,
+  "observer_sha256": "8d65b6384a2fdf6478b691fdc8f36e14671f39c8823a6c06b0103953698b7c86",
+  "original_capture_code_sha256": "dc464305f3b6dc08dabbd50f0df13b1ddb1a96c119c2bf0b4c8b90dfa612be4f",
+  "sidecar_byte_sha256": "eac439e2fef7b6abfcd1d4b05fec4f1afc76ecf902f74e9285da9000a667a776",
+  "solve_count": 1
+}

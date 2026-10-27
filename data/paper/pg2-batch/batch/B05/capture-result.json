@@ -1,0 +1,64 @@
+{
+  "capture_command": {
+    "argv": [
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin/python",
+      "tools/capture_pepit_proximal_gradient.py",
+      "--steps",
+      "2",
+      "--solver",
+      "CLARABEL",
+      "--solver-options",
+      "{\"equilibrate_enable\": true, \"max_iter\": 300, \"static_regularization_constant\": 1e-08, \"tol_feas\": 1e-09, \"tol_gap_abs\": 1e-09, \"tol_gap_rel\": 1e-09}",
+      "--verbose",
+      "2",
+      "--output",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B05/capture.json"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset"
+    },
+    "exit": 0,
+    "log": "RefineEvidence_001/batch/B05/solver.log",
+    "outer_CHILDREN_high_water_bytes": 151994368,
+    "resource_scope": "cumulative CHILDREN high water in batch parent; not per-operation simultaneous peak",
+    "started_at_utc": "2026-10-06T22:15:41.727842+00:00",
+    "timeout_stage": null,
+    "wall_seconds": 0.8351504589954857
+  },
+  "capture_sha256": "00e6215bbaf4fb769bc07530e5116186ececde31dd89ae93d02ea4e1954ec007",
+  "configuration": {
+    "equilibrate_enable": true,
+    "max_iter": 300,
+    "static_regularization_constant": 1e-08,
+    "tol_feas": 1e-09,
+    "tol_gap_abs": 1e-09,
+    "tol_gap_rel": 1e-09
+  },
+  "historical_matches": [
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_003/capture.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_003/completion/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_003/audit/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_003/capture.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_003/completion/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_003/audit/capture_input.json",
+    "A14PGTwoLive_003/capture.json",
+    "A14PGTwoLive_003/completion/capture_input.json",
+    "A14PGTwoLive_003/audit/capture_input.json",
+    "ReuseEvidence_001/new_live_001/capture.json",
+    "deliverables/LP-PAPER-REUSE-001-R01/evidence/new_live_001/capture.json"
+  ],
+  "id": "B05",
+  "numerical_key": "97ffa274fa179970dff33eab7fb930bba3ae454318b6f359599346c6e61ef305",
+  "producer": {
+    "mode": "live_solver_capture",
+    "name": "PEPit",
+    "solver": "CLARABEL",
+    "status": "optimal_inaccurate",
+    "version": "0.5.1",
+    "wrapper": "cvxpy"
+  },
+  "source_matches_reference": true,
+  "unique_recovery_owner": "B05"
+}

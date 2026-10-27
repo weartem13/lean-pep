@@ -1,0 +1,45 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.pointValuePolyQ_gradCoeff {N : ℕ} (i : LeanPEP.Toy.FiniteGD.Point N)
+  (r : Fin (N + 1)) : (LeanPEP.Toy.FiniteGD.pointValuePolyQ i).gradCoeff r = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.slackPolyQ_gradCoeff {N : ℕ} (i j : LeanPEP.Toy.FiniteGD.Point N)
+  (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.slackPolyQ i j).gradCoeff r =
+    -((LeanPEP.Toy.FiniteGD.xAffineQ i).sub (LeanPEP.Toy.FiniteGD.xAffineQ j)).constCoeff *
+      (LeanPEP.Toy.FiniteGD.gradAffineQ j).gradCoeff r
+LeanPEP.Toy.FiniteGD.ParametricUpper.slackPolyQ_star_iter_gradCoeff (N : ℕ) (k r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.slackPolyQ LeanPEP.Toy.FiniteGD.Point.star (LeanPEP.Toy.FiniteGD.Point.iter k)).gradCoeff r =
+    LeanPEP.Toy.FiniteGD.unitCoeff k r
+LeanPEP.Toy.FiniteGD.ParametricUpper.slackPolyQ_iter_iter_gradCoeff (N : ℕ) (i j r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.slackPolyQ (LeanPEP.Toy.FiniteGD.Point.iter i) (LeanPEP.Toy.FiniteGD.Point.iter j)).gradCoeff
+      r =
+    0
+LeanPEP.Toy.FiniteGD.ParametricUpper.interpPolySumQ_gradCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.InterpTermQ N)) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ terms).gradCoeff r =
+    (List.map (fun t => t.weight * (LeanPEP.Toy.FiniteGD.slackPolyQ t.i t.j).gradCoeff r) terms).sum
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarTermsQ_gradCoeff (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarTermsQ N)).gradCoeff r =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainTermsQ_gradCoeff (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainTermsQ N)).gradCoeff r = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.squarePolySumQ_gradCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.SquareTermQ N)) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.squarePolySumQ terms).gradCoeff r =
+    (List.map (fun t => t.weight * (2 * t.form.constCoeff * t.form.gradCoeff r)) terms).sum
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ (N : ℕ) (r k : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareSumQ (N : ℕ) (r : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateRhs_gradCoeff_eq_gradientSumQ (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).gradCoeff r =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N r +
+      LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareSumQ N r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ (N : ℕ) : Prop
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificate_gradCoefficients_eq_target_iff (N : ℕ) :
+  (∀ (r : Fin (N + 1)),
+      (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).gradCoeff r =
+        (LeanPEP.Toy.FiniteGD.upperTargetPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+              (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N)).gradCoeff
+          r) ↔
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ_4 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ 4
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ_8 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ 8

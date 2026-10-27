@@ -1,0 +1,448 @@
+[
+  {
+    "label": "python_full",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/test_python.py",
+      "--inventory-json",
+      "<VALIDATION_LOGS>/full-final/test-ids.json",
+      "-v"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 146.70566095798858,
+    "log": "000_python_full.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "generated",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/check_generated.py",
+      "--output",
+      "<VALIDATION_LOGS>/full-final/generation"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 14.114991458016448,
+    "log": "001_generated.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "core",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 3.1081495830148924,
+    "log": "002_core.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "prerequisites",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSource",
+      "LeanPEP.Imported.CompositeCoordinates",
+      "LeanPEP.Imported.CompositeOrdering",
+      "LeanPEP.Imported.CompositeRows",
+      "LeanPEP.Imported.CompositePerformance",
+      "LeanPEP.Imported.CompositeSparse",
+      "LeanPEP.Imported.CompositeCandidates",
+      "LeanPEP.Imported.CompositeCapture",
+      "LeanPEP.Imported.CompositeCompletion",
+      "LeanPEP.Imported.CompositeBoundedCompletion"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 101.89997945801588,
+    "log": "003_prerequisites.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeSourceRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSourceRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 37.07402758297394,
+    "log": "004_build_CompositeSourceRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCoordinatesRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCoordinatesRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 107.22121474999585,
+    "log": "005_build_CompositeCoordinatesRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeOrderingRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeOrderingRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 100.96921254100744,
+    "log": "006_build_CompositeOrderingRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeRowsRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeRowsRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 86.2440424579836,
+    "log": "007_build_CompositeRowsRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositePerformanceRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositePerformanceRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 160.55515420800657,
+    "log": "008_build_CompositePerformanceRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeSparseRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSparseRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 153.69539641600568,
+    "log": "009_build_CompositeSparseRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCandidatesRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCandidatesRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 148.51240841599065,
+    "log": "010_build_CompositeCandidatesRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCaptureRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCaptureRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 221.20472337500541,
+    "log": "011_build_CompositeCaptureRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCompletionRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCompletionRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 182.39580429100897,
+    "log": "012_build_CompositeCompletionRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeBoundedCompletionRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeBoundedCompletionRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 175.70088399999077,
+    "log": "013_build_CompositeBoundedCompletionRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "aggregate",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 215.55313987500267,
+    "log": "014_aggregate.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  }
+]

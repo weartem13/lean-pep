@@ -1,0 +1,822 @@
+✔ [2987/3101] Built LeanPEP.GramPEP.FiniteGD (5.7s)
+✔ [2989/3101] Built LeanPEP.Toy.TwoStep.Data (5.8s)
+⚠ [2992/3101] Replayed LeanPEP.GramPEP.RationalBoxSystem
+warning: LeanPEP/GramPEP/RationalBoxSystem.lean:111:45: This simp argument is unused:
+  max_le_iff
+
+Hint: Omit it from the simp argument list.
+  simp [policyLowerQ, policyUpperQ, hsign, m̵a̵x̵_̵l̵e̵_̵i̵f̵f̵,̵ ̵← herr, and_assoc, and_comm, and_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/RationalBoxSystem.lean:112:27: This simp argument is unused:
+  and_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [policyLowerQ, policyUpperQ, hsign, max_le_iff, ← herr, and_assoc, a̵n̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵n̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵]̵a̲n̲d̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [2993/3102] Built LeanPEP.Toy.ThreeStep.Data (5.0s)
+✔ [2995/3102] Built LeanPEP.Toy.OneStep.Data (6.0s)
+✔ [2997/3102] Built LeanPEP.Toy.FiniteGD.UpperCertificateExamples (6.3s)
+✔ [2998/3102] Built LeanPEP.GramPEP.UpperCertificateExamples (6.3s)
+✔ [2999/3102] Built LeanPEP.Toy.FiniteGD.ParametricUpperCertificate (6.6s)
+✔ [3000/3102] Built LeanPEP.Toy.FiniteGD.ExternalBundle (6.6s)
+✔ [3001/3102] Built LeanPEP.GramPEP.PSDFactorizationExamples (5.9s)
+⚠ [3002/3102] Built LeanPEP.GramPEP.UpperCoefficientSystem (6.4s)
+warning: LeanPEP/GramPEP/UpperCoefficientSystem.lean:126:37: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp [compileQ, Fin.sum_univ_succ, n̵e̵g̵_̵m̵u̵l̵,̵ ̵Finset.sum_neg_distrib,
+  ̵  ̵ ̵ ̵sub_eq_add_neg, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3003/3102] Built LeanPEP.Imported.GramOneStepResynthesized (6.1s)
+✔ [3004/3102] Built LeanPEP.Imported.PEPitOneStepApproxReconstructed (6.4s)
+✔ [3005/3102] Built LeanPEP.Imported.GramOneStepApproxReconstructed (6.1s)
+✔ [3008/3102] Built LeanPEP.Imported.PEPitOneStepApproxRaw (6.5s)
+✔ [3009/3102] Built LeanPEP.Imported.PSDSynthesized (7.2s)
+✔ [3010/3115] Built LeanPEP.Toy.TwoStep.Upper (7.8s)
+⚠ [3011/3115] Replayed LeanPEP.GramPEP.OriginCoordinates
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:98:93: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centerMapQ, liftVecQ, standardBasisExpr, mul_ite, mul_neg, Finset.sum_neg_distrib,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:105:81: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictVec, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:115:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:26: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, n̵e̵g̵_̵m̵u̵l̵,̵ ̵mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_neg_distrib, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:124:22: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictGram, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ,
+  ̵  ̵ ̵ ̵ite_mul, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3013/3115] Replayed LeanPEP.Profiles.ProximalGradient
+warning: LeanPEP/Profiles/ProximalGradient.lean:136:43: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [hi, hgj, hsj, sub_self,̵ ̵s̵u̵b̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3014/3115] Built LeanPEP.Imported.GramOneStepApproxRaw (5.8s)
+✔ [3016/3115] Built LeanPEP.Imported.GramOneStepBadUpper (6.1s)
+✔ [3017/3115] Built LeanPEP.Imported.GramOneStepBadPrimalFactor (6.2s)
+✔ [3018/3115] Built LeanPEP.Imported.GramOneStepBadMetadata (5.9s)
+✔ [3019/3115] Built LeanPEP.Imported.GramOneStepBadPrimal (6.2s)
+✔ [3021/3115] Built LeanPEP.GramPEP.ApproximateAudit (5.9s)
+✔ [3022/3115] Built LeanPEP.Imported.GramOneStepExact (6.1s)
+✔ [3023/3115] Built LeanPEP.Toy.ThreeStep.Upper (6.1s)
+✔ [3024/3115] Built LeanPEP.Toy.OneStep.RationalData (6.0s)
+✔ [3025/3115] Built LeanPEP.Toy.OneStep.PseudoCertificate (5.8s)
+✔ [3026/3115] Built LeanPEP.Toy.OneStep.Lower (6.2s)
+✔ [3027/3115] Built LeanPEP.GramPEP.UpperCertificateAuditExamples (5.9s)
+✔ [3028/3115] Built LeanPEP.Imported.TwoStepApproxReconstructed (5.6s)
+✔ [3029/3115] Built LeanPEP.Toy.FiniteGD.ParametricUpperProof (6.2s)
+✔ [3031/3115] Built LeanPEP.Imported.TwoStepApproxRaw (5.0s)
+✔ [3032/3115] Built LeanPEP.Toy.OneStep.Upper (7.7s)
+✔ [3034/3115] Built LeanPEP.Imported.TwoStepBadBound (5.8s)
+✔ [3035/3115] Built LeanPEP.Imported.TwoStepBadPrimal (6.1s)
+✔ [3036/3115] Built LeanPEP.Imported.TwoStepBadMetadata (6.1s)
+✔ [3037/3115] Built LeanPEP.Imported.TwoStepExact (6.2s)
+✔ [3038/3115] Built LeanPEP.Toy.FiniteGD.ApproximateAudit (6.4s)
+✔ [3039/3115] Built LeanPEP.GramPEP.UpperCoefficientBox (6.3s)
+✔ [3040/3115] Built LeanPEP.Toy.TwoStep.ExactValue (6.0s)
+✔ [3042/3115] Built LeanPEP.Adapters.PEPitOneStep (7.6s)
+✔ [3044/3115] Built LeanPEP.Imported.PEPitOneStepApproxComparison (6.4s)
+✔ [3046/3115] Built LeanPEP.Imported.GramOneStepApproxComparison (6.2s)
+✔ [3047/3115] Built LeanPEP.Toy.ThreeStep.ExactValue (6.4s)
+✔ [3051/3115] Built LeanPEP.Imported.PSDSynthesisRegression (7.7s)
+⚠ [3052/3115] Built LeanPEP.Toy.FiniteGD.ParametricUpperTelescoping (6.0s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperTelescoping.lean:54:13: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperTelescoping.lean:76:13: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3053/3115] Built LeanPEP.Toy.OneStep.RationalChecker (7.6s)
+✔ [3054/3115] Built LeanPEP.Toy.OneStep.UpperCertificate (8.7s)
+✔ [3055/3115] Built LeanPEP.Toy.OneStep.ExactValue (6.4s)
+✔ [3059/3115] Built LeanPEP.Toy.TwoStep (5.8s)
+✔ [3060/3115] Built LeanPEP.Imported.TwoStepApproxComparison (6.4s)
+✔ [3061/3115] Built LeanPEP.Imported.PEPitOneStepAdapter (6.6s)
+✔ [3062/3116] Built LeanPEP.Imported.PEPitOneStepBadConstraintOrderAdapter (6.6s)
+✔ [3079/3116] Built LeanPEP.Imported.PEPitOneStepBadSymbolicCoefficientAdapter (6.7s)
+✔ [3085/3140] Built LeanPEP.Toy.ThreeStep (6.5s)
+✔ [3203/3304] Built LeanPEP.HardInstances.NesterovChain.Matrix (7.7s)
+⚠ [3217/3304] Replayed LeanPEP.ActualFunction.AffineEvaluationCore
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:55:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:62:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3219/3304] Built LeanPEP.Toy.FiniteGD.ParametricUpperValueCoefficients (7.4s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:33:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:81:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵pointValuePolyQ, QuadPolyQ.zero, QuadPolyQ.valueVar,
+  ̲  ̲ ̲ ̲zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:82:57: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, Function.comp_apply,
+  ̵  ̵ ̵ ̵pointValuePolyQ, QuadPolyQ.zero,
+  ̲  ̲ ̲ ̲QuadPolyQ.valueVar,̵ ̵z̵e̵r̵o̵_̵s̵u̵b̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:86:21: This simp argument is unused:
+  hkr
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵k̵r̵,̵ ̵Ne.symm hkr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:111:42: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdChainTermsQ, List.map_map, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵pointValuePolyQ, QuadPolyQ.valueVar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:225:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:284:42: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:310:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:284:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:310:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3220/3304] Built LeanPEP.Toy.OneStep.AuditReport (6.6s)
+✔ [3221/3304] Built LeanPEP.Toy.OneStep.RationalBridge (6.4s)
+✔ [3224/3304] Built LeanPEP.Toy.OneStep.UpperCertificateChecker (6.7s)
+✔ [3225/3304] Built LeanPEP.Adapters (5.8s)
+⚠ [3227/3304] Built LeanPEP.Profiles.CompositeConstraintIndexing (5.8s)
+warning: LeanPEP/Profiles/CompositeConstraintIndexing.lean:49:42: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3228/3304] Built LeanPEP.GramPEP.CoefficientAlgebra (6.0s)
+warning: LeanPEP/GramPEP/CoefficientAlgebra.lean:63:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3229/3305] Built LeanPEP.HardInstances.NesterovChain.Function (6.1s)
+info: LeanPEP/HardInstances/NesterovChain/Function.lean:66:24: Try this:
+  [apply] abel_nf
+warning: LeanPEP/HardInstances/NesterovChain/Function.lean:66:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/HardInstances/NesterovChain/Function.lean:114:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3232/3306] Built LeanPEP.Profiles.ProximalGradientOneStep (8.9s)
+✔ [3234/3310] Built LeanPEP.Toy.FiniteGD.OneStepRegression (5.7s)
+⚠ [3235/3310] Replayed LeanPEP.ActualFunction.Proximal
+warning: LeanPEP/ActualFunction/Proximal.lean:100:10: This simp argument is unused:
+  real_inner_smul_left
+
+Hint: Omit it from the simp argument list.
+  simp only [inner_sub_left, inner_sub_right, inner_add_left, inner_add_right,
+            real_inner_smul_l̵e̵f̵t̵,̵ ̵re̵a̵l̵_̵in̵n̵e̵r̵_̵s̵m̵u̵l̵_̵r̵i̵ght, real_inner_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3239/3310] Built LeanPEP.Toy.FiniteGD.ParametricUpperConstantCoefficients (6.3s)
+⚠ [3240/3310] Replayed LeanPEP.ActualFunction.ProfileGram
+warning: LeanPEP/ActualFunction/ProfileGram.lean:45:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProfileGram.orderedSamples_pointIndex`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:72:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:78:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:84:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3241/3310] Built LeanPEP.ActualFunction.HuberWitness (8.5s)
+⚠ [3243/3325] Replayed LeanPEP.ActualFunction.SmoothScalingCore
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3246/3325] Replayed LeanPEP.ActualFunction.ProximalScaling
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:105:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:105:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:120:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3247/3325] Built LeanPEP.Profiles.Momentum (6.3s)
+warning: LeanPEP/Profiles/Momentum.lean:127:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3249/3325] Built LeanPEP.Toy.OneStep (5.4s)
+⚠ [3250/3325] Replayed LeanPEP.ActualFunction.ProximalGradient
+warning: LeanPEP/ActualFunction/ProximalGradient.lean:93:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalGradient.valueSlots_smooth`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProximalGradient.lean:98:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalGradient.valueSlots_nonsmooth`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3251/3325] Built LeanPEP.HardInstances.NesterovChain.Minimizer (6.1s)
+warning: LeanPEP/HardInstances/NesterovChain/Minimizer.lean:40:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/HardInstances/NesterovChain/Minimizer.lean:48:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3252/3325] Built LeanPEP.Profiles.ProximalGradientMigration (6.1s)
+warning: LeanPEP/Profiles/ProximalGradientMigration.lean:57:72: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3253/3325] Built LeanPEP.GramPEP.FiniteGDRegression (5.6s)
+⚠ [3254/3325] Built LeanPEP.Toy.FiniteGD.ParametricUpperConstantTelescoping (6.5s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperConstantTelescoping.lean:46:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperConstantTelescoping.lean:97:27: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.val_last, i̵f̵_̵p̵o̵s̵ ̵r̵f̵l̵,̵ ̵hdenNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3255/3325] Replayed LeanPEP.ActualFunction.CompositeOptimality
+warning: LeanPEP/ActualFunction/CompositeOptimality.lean:44:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3256/3325] Replayed LeanPEP.ActualFunction.ProximalGradientScalingCore
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:40:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:40:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:95:33: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:95:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3259/3325] Built LeanPEP.ActualFunction.OneStepGram (7.3s)
+warning: LeanPEP/ActualFunction/OneStepGram.lean:83:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3260/3325] Built LeanPEP.ActualFunction.StrongMidpointMinimizer (6.5s)
+✔ [3261/3327] Built LeanPEP.ActualFunction.ProximalGradientOneStep (6.0s)
+✔ [3264/3327] Built LeanPEP.ActualFunction.FejerConvergence (6.4s)
+✔ [3265/3327] Built LeanPEP.ActualFunction.MomentumActual (10s)
+✔ [3266/3327] Built LeanPEP.HardInstances.NesterovChain.SmallTrajectory (10s)
+✔ [3267/3327] Built LeanPEP.GramPEP (9.9s)
+⚠ [3271/3327] Built LeanPEP.Toy.FiniteGD.ParametricUpperGradientCoefficients (10s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:106:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵
+  ̵ ̵ ̵ ̵ ̵slackPolyQ_star_iter_gradCoeff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:107:4: This simp argument is unused:
+  slackPolyQ_star_iter_gradCoeff
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, Function.comp_apply,̵
+  ̵ ̵ ̵ ̵ ̵s̵l̵a̵c̵k̵P̵o̵l̵y̵Q̵_̵s̵t̵a̵r̵_̵i̵t̵e̵r̵_̵g̵r̵a̵d̵C̵o̵e̵f̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:111:21: This simp argument is unused:
+  hkr
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵k̵r̵,̵ ̵Ne.symm hkr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3272/3327] Built LeanPEP.ActualFunction.OneStepUpper (9.9s)
+⚠ [3273/3327] Built LeanPEP.ActualFunction.ProximalHilbertExistence (10s)
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:44:48: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:61:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:44:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:61:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:42:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:97:0: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalScaling.hilbertProxObjective_continuous`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProximalHilbertExistence.lean:113:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3274/3329] Built LeanPEP.ActualFunction.ProximalGradientOneStepWitness (9.2s)
+warning: LeanPEP/ActualFunction/ProximalGradientOneStepWitness.lean:52:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalGradientOneStepWitness.lean:57:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalGradientOneStepWitness.lean:67:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3276/3329] Built LeanPEP.HardInstances.NesterovChain (8.2s)
+✔ [3277/3329] Built LeanPEP.ActualFunction.MomentumOracleAgreement (8.8s)
+✔ [3278/3329] Built LeanPEP.Profiles.NesterovPilot (22s)
+✔ [3279/3329] Built LeanPEP.Comparisons.NesterovChainFinitePEP (6.8s)
+⚠ [3281/3329] Built LeanPEP.Bridges.NesterovChainGram (13s)
+warning: LeanPEP/Bridges/NesterovChainGram.lean:166:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: LeanPEP/Bridges/NesterovChainGram.lean:365:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3282/3331] Built LeanPEP.Toy.FiniteGD.ParametricUpperGradientStructure (7.0s)
+✔ [3283/3333] Built LeanPEP.ActualFunction.ProximalGradientMigration (7.5s)
+⚠ [3285/3333] Built LeanPEP.ActualFunction.ProximalExistence (8.9s)
+warning: LeanPEP/ActualFunction/ProximalExistence.lean:54:47: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalExistence.lean:71:34: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalExistence.lean:54:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalExistence.lean:71:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalExistence.lean:52:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3286/3334] Built LeanPEP.ActualFunction.OneStepScaling (8.6s)
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3305/3378] Built LeanPEP.HardInstances (6.4s)
+✔ [3311/3378] Built LeanPEP.Comparisons (7.0s)
+✔ [3312/3378] Built LeanPEP.ActualFunction.NesterovPilotUpper (7.8s)
+✔ [3317/3378] Built LeanPEP.Bridges (6.0s)
+✔ [3318/3378] Built LeanPEP.Toy.FiniteGD.ParametricUpperGradientCancellation (7.3s)
+✔ [3319/3378] Built LeanPEP.ActualFunction.SummablePerturbation (7.6s)
+✔ [3320/3378] Built LeanPEP.ActualFunction.HilbertWeakTopology (7.1s)
+⚠ [3321/3378] Built LeanPEP.Toy.FiniteGD.ParametricUpperQuadraticCoefficients (5.9s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticCoefficients.lean:53:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3322/3378] Built LeanPEP.ActualFunction.WeakFejerConvergence (6.6s)
+⚠ [3323/3378] Built LeanPEP.Toy.FiniteGD.ParametricUpperQuadraticOffDiagonal (6.6s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:33:21: This simp argument is unused:
+  hrs
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵r̵s̵,̵ ̵Ne.symm hrs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:165:28: This simp argument is unused:
+  Ne.symm hsk
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hsk,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵s̵k̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:204:22: This simp argument is unused:
+  hltSucc
+
+Hint: Omit it from the simp argument list.
+  simp [GradAffineQ.sub, GradAffineQ.add, GradAffineQ.neg,
+  ̵  ̵ ̵ ̵ ̵ ̵xAffineQ, GradAffineQ.const,
+  ̲  ̲ ̲ ̲ ̲ ̲prefixAffine_gradCoeff,
+  ̵  ̵ ̵ ̵ ̵ ̵unitCoeff, hlt, hlt̵S̵u̵c̵c̵,̵ ̵h̵l̵e, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:223:24: This simp argument is unused:
+  hnotSucc
+
+Hint: Omit it from the simp argument list.
+  simp [GradAffineQ.sub, GradAffineQ.add, GradAffineQ.neg, xAffineQ, GradAffineQ.const,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲prefixAffine_gradCoeff, unitCoeff, hlt, h̵n̵o̵t̵S̵u̵c̵c̵,̵ ̵hkr, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:234:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:290:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:296:21: This simp argument is unused:
+  hks
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵k̵s̵,̵ ̵Ne.symm hks]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:299:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3324/3378] Built LeanPEP.Profiles.ProximalGradientCertificate (47s)
+⚠ [3325/3378] Built LeanPEP.ActualFunction.WeakQuasiFejerConvergence (5.6s)
+warning: LeanPEP/ActualFunction/WeakQuasiFejerConvergence.lean:99:9: Variable name `z` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LeanPEP/ActualFunction/WeakQuasiFejerConvergence.lean:103:0: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.WeakQuasiFejerConvergence.exists_strong_tendsto_fixed_of_compact`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3326/3378] Built LeanPEP.Profiles.ProximalGradientCertificateIndexing (5.6s)
+⚠ [3327/3378] Built LeanPEP.Toy.FiniteGD.ParametricUpperQuadraticDiagonal (5.8s)
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:63:25: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:63:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:105:26: This simp argument is unused:
+  Ne.symm hab
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hab,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵a̵b̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:28: This simp argument is unused:
+  hab
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hra, h̵a̵b̵,̵ ̵Ne.symm hab]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:33: This simp argument is unused:
+  Ne.symm hab
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hra, hab,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵a̵b̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:105:43: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:109:37: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:105:43: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:109:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:119:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:141:42: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdChainTermsQ, List.map_map,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3328/3378] Built LeanPEP.Profiles.ProximalGradientCertificateFlow (6.2s)
+warning: LeanPEP/Profiles/ProximalGradientCertificateFlow.lean:62:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Profiles/ProximalGradientCertificateFlow.lean:74:49: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [smoothStarWeightQ, smoothFluxQ, hzero,̵ ̵h̵s̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Profiles/ProximalGradientCertificateFlow.lean:82:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Profiles/ProximalGradientCertificateFlow.lean:90:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Profiles/ProximalGradientCertificateFlow.lean:99:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3329/3378] Built LeanPEP.ActualFunction.ProximalGradientWitness (6.7s)
+warning: LeanPEP/ActualFunction/ProximalGradientWitness.lean:39:22: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientWitness.lean:39:22: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientWitness.lean:62:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalGradientWitness.lean:69:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalGradientWitness.lean:128:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalGradientWitness.lean:128:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3330/3378] Built LeanPEP.Toy.FiniteGD (4.7s)
+✔ [3331/3378] Built LeanPEP.Profiles.GradientDescent (4.0s)
+⚠ [3332/3378] Built LeanPEP.ActualFunction.ParametricGDHilbert (6.4s)
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:252:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:285:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:294:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:303:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:312:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:392:67: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ParametricGDHilbert.lean:392:67: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3333/3378] Built LeanPEP.ActualFunction.ProximalGradientRate (6.3s)
+warning: LeanPEP/ActualFunction/ProximalGradientRate.lean:86:52: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProximalGradientRate.lean:90:52: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3334/3378] Built LeanPEP.Profiles.ProximalGradientCertificateLocal (6.9s)
+warning: LeanPEP/Profiles/ProximalGradientCertificateLocal.lean:25:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3335/3378] Built LeanPEP.Profiles.GradientDescentGram (5.4s)
+⚠ [3336/3378] Built LeanPEP.ActualFunction.ParametricGDActual (5.5s)
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:52:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate_zero`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:55:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate_succ`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:80:0: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.prefixVector_sampledGradient`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:92:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:106:42: 'abel' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:106:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:109:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.actualPoint_iter_zero`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:115:0: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.actualPoint_iter_succ`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:128:0: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.pointValue_sampledValue`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ParametricGDActual.lean:141:0: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ParametricGDActual.pointGradient_sampledGradient`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3337/3378] Built LeanPEP.Profiles.ProximalGradientCertificateTelescoping (5.3s)
+⚠ [3338/3378] Built LeanPEP.Profiles.GradientDescentGramCertificate (5.8s)
+warning: LeanPEP/Profiles/GradientDescentGramCertificate.lean:298:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: LeanPEP/Profiles/GradientDescentGramCertificate.lean:320:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Profiles/GradientDescentGramCertificate.lean:320:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Profiles/GradientDescentGramCertificate.lean:374:29: This simp argument is unused:
+  unitCoeff
+
+Hint: Omit it from the simp argument list.
+  simp [gradAffineQ, pointGradientVecQ, affineVecQ,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵GradAffineQ.basis, u̵n̵i̵t̵C̵o̵e̵f̵f̵,̵ ̵sampledGradientBasisQ,
+           ̵ ̵gradientBasisIndex, standardBasisExpr,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵Ne.symm (Fin.succ_ne_zero i)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3339/3378] Built LeanPEP.ActualFunction.HuberWitnessTrajectory (5.6s)
+✔ [3340/3378] Built LeanPEP.ActualFunction.ParametricGDScaling (5.8s)
+✔ [3341/3378] Built LeanPEP.Profiles.ProximalGradientCertificateIdentity (5.6s)
+✔ [3342/3378] Built LeanPEP.ActualFunction.HuberWitnessAnalytic (5.5s)
+✔ [3343/3378] Built LeanPEP.Profiles (5.2s)
+✔ [3344/3378] Built LeanPEP.ActualFunction.ProximalGradientRateAll (5.7s)
+⚠ [3345/3378] Built LeanPEP.ActualFunction.MomentumScaling (6.3s)
+warning: LeanPEP/ActualFunction/MomentumScaling.lean:141:73: 'abel' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/MomentumScaling.lean:141:73: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/MomentumScaling.lean:147:31: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/MomentumScaling.lean:147:31: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/MomentumScaling.lean:167:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/MomentumScaling.lean:167:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3346/3378] Built LeanPEP.ActualFunction.NesterovPilotWitness (5.0s)
+⚠ [3347/3378] Built LeanPEP.ActualFunction.HuberWitnessScaling (6.0s)
+warning: LeanPEP/ActualFunction/HuberWitnessScaling.lean:397:25: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/HuberWitnessScaling.lean:397:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3348/3378] Built LeanPEP.ActualFunction.ProximalGradientScaling (5.5s)
+✔ [3349/3378] Built LeanPEP.ActualFunction.NesterovPilotScaling (5.5s)
+⚠ [3350/3378] Built LeanPEP.ActualFunction.ProximalGradientWitnessScaling (5.0s)
+warning: LeanPEP/ActualFunction/ProximalGradientWitnessScaling.lean:120:2: 'change R * (ProximalGradientWitness.witnessPoint n k - ProximalGradientWitness.slope n) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientWitnessScaling.lean:157:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3351/3378] Built LeanPEP.ActualFunction.NesterovPilotWitnessScaling (4.9s)
+warning: LeanPEP/ActualFunction/NesterovPilotWitnessScaling.lean:110:33: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/NesterovPilotWitnessScaling.lean:110:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/NesterovPilotWitnessScaling.lean:146:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/NesterovPilotWitnessScaling.lean:155:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3352/3378] Built LeanPEP.ActualFunction.ProximalIteration (5.0s)
+✔ [3353/3378] Built LeanPEP.Imported.CompiledCompletionRegression (109s)
+✔ [3354/3378] Built LeanPEP.ActualFunction.ProximalGradientMinimizer (4.8s)
+✔ [3355/3378] Built LeanPEP.ActualFunction.ProximalStability (5.0s)
+✔ [3356/3378] Built LeanPEP.Imported (4.7s)
+✔ [3357/3378] Built LeanPEP.ActualFunction.ProximalGradientSourceAudit (4.6s)
+✔ [3358/3378] Built LeanPEP.ActualFunction.ProximalGradientCanonical (4.8s)
+✔ [3359/3378] Built LeanPEP.ActualFunction.ForwardBackwardStability (4.9s)
+✔ [3360/3378] Built LeanPEP.ActualFunction.PSDSynthesisApplications (5.4s)
+✔ [3361/3378] Built LeanPEP.ActualFunction.ProximalGradientCoordinateAudit (4.5s)
+✔ [3362/3378] Built LeanPEP.ActualFunction.ProximalGradientHilbert (4.9s)
+✔ [3363/3378] Built LeanPEP.ActualFunction.ProximalGradientOrderingAudit (4.5s)
+✔ [3364/3378] Built LeanPEP.ActualFunction.ProximalGradientObjectiveConvergence (4.7s)
+✔ [3365/3378] Built LeanPEP.ActualFunction.ProximalGradientStability (5.1s)
+✔ [3366/3378] Built LeanPEP.ActualFunction.ProximalGradientRowAudit (4.6s)
+✔ [3367/3378] Built LeanPEP.ActualFunction.ProximalGradientConvergence (4.8s)
+✔ [3368/3378] Built LeanPEP.ActualFunction.ProximalGradientInexactConvergence (5.3s)
+✔ [3369/3378] Built LeanPEP.ActualFunction.ProximalGradientPerformanceAudit (4.5s)
+✔ [3370/3378] Built LeanPEP.ActualFunction.ProximalGradientWeakConvergence (4.9s)
+✔ [3371/3378] Built LeanPEP.ActualFunction.ProximalGradientSparseAudit (4.7s)
+✔ [3372/3378] Built LeanPEP.ActualFunction.ProximalGradientReconstructionAudit (4.5s)
+✔ [3373/3378] Built LeanPEP.ActualFunction.ProximalGradientCaptureAudit (4.3s)
+✔ [3374/3378] Built LeanPEP.ActualFunction.ProximalGradientCompletionAudit (4.6s)
+✔ [3375/3378] Built LeanPEP.ActualFunction.ProximalGradientBoundedCompletionAudit (4.6s)
+✔ [3376/3378] Built LeanPEP.ActualFunction (4.2s)
+✔ [3377/3378] Built LeanPEP (4.9s)
+Build completed successfully (3378 jobs).

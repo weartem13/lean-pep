@@ -1,0 +1,156 @@
+LeanPEP.ActualFunction.OperatorEnergy.firm_energy_of_inner.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {a b : E} (h : ‖a‖ ^ 2 ≤ inner ℝ a b) : ‖a‖ ^ 2 + ‖b - a‖ ^ 2 ≤ ‖b‖ ^ 2
+LeanPEP.ActualFunction.OperatorEnergy.composition_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {a b c : E} (hab : ‖b‖ ^ 2 + ‖a - b‖ ^ 2 ≤ ‖a‖ ^ 2) (hbc : ‖c‖ ^ 2 + ‖b - c‖ ^ 2 ≤ ‖b‖ ^ 2) :
+  ‖c‖ ^ 2 + 1 / 2 * ‖a - c‖ ^ 2 ≤ ‖a‖ ^ 2
+LeanPEP.ActualFunction.Proximal.subgradient_pair_monotone.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {h : E → ℝ} {s t x y : E} (hs : Proximal.SubgradientAt h s x)
+  (ht : Proximal.SubgradientAt h t y) : 0 ≤ inner ℝ (s - t) (x - y)
+LeanPEP.ActualFunction.ProximalScaling.isProxPoint_firm.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} {v w p q : E} (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (hp : IsProxPoint L h v p) (hq : IsProxPoint L h w q) : ‖p - q‖ ^ 2 ≤ inner ℝ (p - q) (v - w)
+LeanPEP.ActualFunction.ProximalScaling.isProxPoint_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} {v w p q : E} (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (hp : IsProxPoint L h v p) (hq : IsProxPoint L h w q) : ‖p - q‖ ^ 2 + ‖v - w - (p - q)‖ ^ 2 ≤ ‖v - w‖ ^ 2
+LeanPEP.ActualFunction.ProximalScaling.proxMap_firm.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (v w : E) :
+  ‖proxMap hp v - proxMap hp w‖ ^ 2 ≤ inner ℝ (proxMap hp v - proxMap hp w) (v - w)
+LeanPEP.ActualFunction.ProximalScaling.proxMap_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (v w : E) : ‖proxMap hp v - proxMap hp w‖ ^ 2 + ‖v - w - (proxMap hp v - proxMap hp w)‖ ^ 2 ≤ ‖v - w‖ ^ 2
+LeanPEP.ActualFunction.ProximalScaling.proxMap_norm_sub_le.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (v w : E) : ‖proxMap hp v - proxMap hp w‖ ≤ ‖v - w‖
+LeanPEP.ActualFunction.ProximalScaling.proxMap_lipschitz.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) :
+  LipschitzWith 1 (proxMap hp)
+LeanPEP.ActualFunction.ProximalScaling.proxMap_continuous.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) :
+  Continuous (proxMap hp)
+LeanPEP.ActualFunction.ProximalScaling.proxResidual_lipschitz.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) :
+  LipschitzWith 1 fun v => v - proxMap hp v
+LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.gradient_cocoercive.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E} (hf : IsOneSmoothConvexFirstOrder f g) (x y : E) :
+  ‖g x - g y‖ ^ 2 ≤ inner ℝ (g x - g y) (x - y)
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardStep.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (L : ℝ≥0) (g : E → E) (x : E) : E
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (g : E → E) (x : E) : E
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_succ_eq_step.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (g : E → E) (x0 : E) (k : ℕ) :
+  iterate hp g x0 (k + 1) = forwardBackwardStep hp g (iterate hp g x0 k)
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardStep_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f : E → ℝ} {g : E → E} (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L)
+  (x y : E) :
+  ‖forwardStep L g x - forwardStep L g y‖ ^ 2 + ‖x - y - (forwardStep L g x - forwardStep L g y)‖ ^ 2 ≤ ‖x - y‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (x y : E) :
+  ‖forwardBackwardStep hp g x - forwardBackwardStep hp g y‖ ^ 2 +
+      1 / 2 * ‖x - y - (forwardBackwardStep hp g x - forwardBackwardStep hp g y)‖ ^ 2 ≤
+    ‖x - y‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_lipschitz.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) :
+  LipschitzWith 1 (forwardBackwardStep hp g)
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_oracle_error.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (g : E → E) (x e : E) :
+  ‖proxMap hp (x - (↑L)⁻¹ • (g x + e)) - forwardBackwardStep hp g x‖ ≤ (↑L)⁻¹ * ‖e‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_fixed_iff_minimizer.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (x : E) :
+  forwardBackwardStep hp g x = x ↔ ∀ (y : E), f x + h x ≤ f y + h y
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_norm_sub_le.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (x0 y0 : E) (N : ℕ) : ‖iterate hp g x0 N - iterate hp g y0 N‖ ≤ ‖x0 - y0‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_fejer_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E)
+  (k : ℕ) :
+  ‖iterate hp g x0 (k + 1) - xStar‖ ^ 2 + 1 / 2 * ‖iterate hp g x0 (k + 1) - iterate hp g x0 k‖ ^ 2 ≤
+    ‖iterate hp g x0 k - xStar‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_distance_antitone.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Antitone fun k => ‖iterate hp g x0 k - xStar‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_sum_step_energy.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E)
+  (N : ℕ) :
+  ‖iterate hp g x0 N - xStar‖ ^ 2 + 1 / 2 * ∑ k ∈ Finset.range N, ‖iterate hp g x0 (k + 1) - iterate hp g x0 k‖ ^ 2 ≤
+    ‖x0 - xStar‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_step_norm_antitone.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (x0 : E) : Antitone fun k => ‖iterate hp g x0 (k + 1) - iterate hp g x0 k‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_last_step_norm_sq_le.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) (N : ℕ) :
+  ‖iterate hp g x0 (N + 1) - iterate hp g x0 N‖ ^ 2 ≤ 2 * ‖x0 - xStar‖ ^ 2 / (↑N + 1)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_step_norm_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Filter.Tendsto (fun k => ‖iterate hp g x0 (k + 1) - iterate hp g x0 k‖) Filter.atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_iterate_distance_le.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (x0 : E) (z : ℕ → E) (eps : ℕ → ℝ) (N : ℕ)
+  (herr : ∀ k < N, ‖z (k + 1) - forwardBackwardStep hp g (z k)‖ ≤ eps k) :
+  ‖z N - iterate hp g x0 N‖ ≤ ‖z 0 - x0‖ + ∑ k ∈ Finset.range N, eps k
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_gradient_distance_le.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (x0 : E) (z e : ℕ → E) (N : ℕ)
+  (hstep : ∀ k < N, z (k + 1) = proxMap hp (z k - (↑L)⁻¹ • (g (z k) + e k))) :
+  ‖z N - iterate hp g x0 N‖ ≤ ‖z 0 - x0‖ + ∑ k ∈ Finset.range N, (↑L)⁻¹ * ‖e k‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_norm_sub_le.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hf : IsSmoothConvexAnalytic L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) (x0 y0 : E) (N : ℕ) :
+  ‖hilbertIterate L h hL hh hcont g x0 N - hilbertIterate L h hL hh hcont g y0 N‖ ≤ ‖x0 - y0‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_sum_step_energy.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} {xStar : E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) (N : ℕ) :
+  ‖hilbertIterate L h hL hh hcont g x0 N - xStar‖ ^ 2 +
+      1 / 2 *
+        ∑ k ∈ Finset.range N,
+          ‖hilbertIterate L h hL hh hcont g x0 (k + 1) - hilbertIterate L h hL hh hcont g x0 k‖ ^ 2 ≤
+    ‖x0 - xStar‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_last_step_norm_sq_le.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} {xStar : E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) (N : ℕ) :
+  ‖hilbertIterate L h hL hh hcont g x0 (N + 1) - hilbertIterate L h hL hh hcont g x0 N‖ ^ 2 ≤
+    2 * ‖x0 - xStar‖ ^ 2 / (↑N + 1)
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_step_norm_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} {xStar : E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Filter.Tendsto (fun k => ‖hilbertIterate L h hL hh hcont g x0 (k + 1) - hilbertIterate L h hL hh hcont g x0 k‖)
+    Filter.atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_inexact_distance_le.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) (x0 : E)
+  (z : ℕ → E) (eps : ℕ → ℝ) (N : ℕ) (herr : ∀ k < N, ‖z (k + 1) - forwardBackwardStep ⋯ g (z k)‖ ≤ eps k) :
+  ‖z N - hilbertIterate L h hL hh hcont g x0 N‖ ≤ ‖z 0 - x0‖ + ∑ k ∈ Finset.range N, eps k
+'LeanPEP.ActualFunction.Proximal.subgradient_pair_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalScaling.proxMap_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.gradient_cocoercive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_sum_step_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_step_norm_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_gradient_distance_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_step_norm_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,483 @@
+{
+  "declared": {
+    "assumption_count": 1,
+    "dual_factor_count": 3,
+    "gram_basis_count": 3,
+    "ordered_pair_count": 9,
+    "point_count": 3,
+    "primal_factor_count": 1,
+    "upper_assumption_term_count": 1,
+    "upper_interp_term_count": 3
+  },
+  "expect": "rejected",
+  "model": {
+    "assumptions": [
+      {
+        "expr": {
+          "const": {
+            "den": 1,
+            "num": 1
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "name": "initial_radius"
+      }
+    ],
+    "gradient": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ]
+    ],
+    "position": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    ]
+  },
+  "ordering": {
+    "gram_basis": [
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "primal": {
+    "gram": [
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 10000000000,
+          "num": 3333333333
+        },
+        {
+          "den": 10000000000,
+          "num": 3333333333
+        }
+      ],
+      [
+        {
+          "den": 10000000000,
+          "num": 3333333333
+        },
+        {
+          "den": 100000000000000000000,
+          "num": 11111111108888888889
+        },
+        {
+          "den": 100000000000000000000,
+          "num": 11111111108888888889
+        }
+      ],
+      [
+        {
+          "den": 10000000000,
+          "num": 3333333333
+        },
+        {
+          "den": 100000000000000000000,
+          "num": 11111111108888888889
+        },
+        {
+          "den": 100000000000000000000,
+          "num": 11111111108888888889
+        }
+      ]
+    ],
+    "gram_factor": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 10000000000,
+              "num": 3333333333
+            },
+            {
+              "den": 10000000000,
+              "num": 3333333333
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "value": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 5000000000,
+        "num": 1388888889
+      },
+      {
+        "den": 2500000000,
+        "num": 416666667
+      }
+    ]
+  },
+  "schema_version": 1,
+  "source": "one-step near-exact Gram-PEP decimal artifact | raw exact decimal interpretation",
+  "upper": {
+    "assumption_terms": [
+      {
+        "index": 0,
+        "weight": {
+          "den": 10000000000,
+          "num": 1666666667
+        }
+      }
+    ],
+    "bound": {
+      "den": 10000000000,
+      "num": 1666666667
+    },
+    "dual_factor": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 10000000000,
+              "num": -3333333333
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          "weight": {
+            "den": 4,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 10000000000,
+              "num": -3333333333
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 4,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 5000000000,
+              "num": -3333333333
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 4,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "dual_matrix": [
+      [
+        {
+          "den": 200000000000000000000,
+          "num": 33333333326666666667
+        },
+        {
+          "den": 40000000000,
+          "num": -9999999999
+        },
+        {
+          "den": 40000000000,
+          "num": -9999999999
+        }
+      ],
+      [
+        {
+          "den": 40000000000,
+          "num": -9999999999
+        },
+        {
+          "den": 2,
+          "num": 1
+        },
+        {
+          "den": 4,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 40000000000,
+          "num": -9999999999
+        },
+        {
+          "den": 4,
+          "num": 1
+        },
+        {
+          "den": 2,
+          "num": 1
+        }
+      ]
+    ],
+    "interp_terms": [
+      {
+        "i": 0,
+        "j": 2,
+        "weight": {
+          "den": 2,
+          "num": 1
+        }
+      },
+      {
+        "i": 0,
+        "j": 1,
+        "weight": {
+          "den": 2,
+          "num": 1
+        }
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "weight": {
+          "den": 2,
+          "num": 1
+        }
+      }
+    ],
+    "objective": {
+      "const": {
+        "den": 1,
+        "num": 0
+      },
+      "gram_coeff": [
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      ],
+      "value_coeff": [
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ]
+    }
+  }
+}

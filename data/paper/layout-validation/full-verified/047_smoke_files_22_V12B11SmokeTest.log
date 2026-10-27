@@ -1,0 +1,41 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.pointValuePolyQ_quadCoeff {N : ℕ} (i : LeanPEP.Toy.FiniteGD.Point N)
+  (r s : Fin (N + 1)) : (LeanPEP.Toy.FiniteGD.pointValuePolyQ i).quadCoeff r s = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.slackPolyQ_quadCoeff {N : ℕ} (i j : LeanPEP.Toy.FiniteGD.Point N)
+  (r s : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.slackPolyQ i j).quadCoeff r s =
+    -LeanPEP.Toy.FiniteGD.symOuterQ (LeanPEP.Toy.FiniteGD.gradAffineQ j).gradCoeff
+          ((LeanPEP.Toy.FiniteGD.xAffineQ i).sub (LeanPEP.Toy.FiniteGD.xAffineQ j)).gradCoeff r s -
+      1 / 2 *
+        LeanPEP.Toy.FiniteGD.symOuterQ
+          ((LeanPEP.Toy.FiniteGD.gradAffineQ i).sub (LeanPEP.Toy.FiniteGD.gradAffineQ j)).gradCoeff
+          ((LeanPEP.Toy.FiniteGD.gradAffineQ i).sub (LeanPEP.Toy.FiniteGD.gradAffineQ j)).gradCoeff r s
+LeanPEP.Toy.FiniteGD.ParametricUpper.interpPolySumQ_quadCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.InterpTermQ N)) (r s : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ terms).quadCoeff r s =
+    (List.map (fun t => t.weight * (LeanPEP.Toy.FiniteGD.slackPolyQ t.i t.j).quadCoeff r s) terms).sum
+LeanPEP.Toy.FiniteGD.ParametricUpper.squarePolySumQ_quadCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.SquareTermQ N)) (r s : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.squarePolySumQ terms).quadCoeff r s =
+    (List.map (fun t => t.weight * (t.form.gradCoeff r * t.form.gradCoeff s)) terms).sum
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticInterpSumQ (N : ℕ) (r s : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticSquareContributionQ (N : ℕ) (r s k : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticSquareSumQ (N : ℕ) (r s : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateRhs_quadCoeff_eq_quadraticSumsQ (N : ℕ) (r s : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).quadCoeff r s =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticInterpSumQ N r s +
+      LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticSquareSumQ N r s
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ (N : ℕ) : Prop
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificate_quadCoefficients_eq_target_iff (N : ℕ) :
+  (∀ (r s : Fin (N + 1)),
+      (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).quadCoeff r s =
+        (LeanPEP.Toy.FiniteGD.upperTargetPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+              (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N)).quadCoeff
+          r s) ↔
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ_of_identity (N : ℕ)
+  (hidentity : LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ N) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ_4 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ 4
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ_8 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdQuadraticCoefficientIdentityQ 8

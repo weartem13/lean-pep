@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/ReuseEvidence_001/contrasts/Contrasts.lean"
+  ],
+  "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+  "exit": 0,
+  "wall_seconds": 99.00266645799275,
+  "peak_rss_bytes": 6208094208,
+  "resource_scope": "Darwin getrusage RUSAGE_CHILDREN, high-water mark; not process-tree sum; descendant inclusion unverified",
+  "log": "lean.log"
+}

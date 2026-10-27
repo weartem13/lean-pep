@@ -1,0 +1,233 @@
+{
+  "declared": {
+    "assumption_count": 1,
+    "dual_factor_count": 3,
+    "gram_basis_count": 3,
+    "ordered_pair_count": 9,
+    "point_count": 3,
+    "primal_factor_count": 1,
+    "upper_assumption_term_count": 1,
+    "upper_interp_term_count": 3
+  },
+  "expect": {
+    "raw": "rejected",
+    "reconstructed": "accepted"
+  },
+  "model": {
+    "assumptions": [
+      {
+        "expr": {
+          "const": "1",
+          "gram_coeff": [
+            [
+              "-1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "value_coeff": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "name": "initial_radius"
+      }
+    ],
+    "gradient": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "position": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "-1",
+        "0"
+      ]
+    ]
+  },
+  "ordering": {
+    "gram_basis": [
+      "x0_minus_xstar",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "policy": {
+    "max_abs_error": "2e-10",
+    "max_denominator": 1000,
+    "method": "limit_denominator"
+  },
+  "primal": {
+    "gram": [
+      [
+        "1",
+        "0.3333333333",
+        "0.3333333333"
+      ],
+      [
+        "0.3333333333",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ],
+      [
+        "0.3333333333",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ]
+    ],
+    "gram_factor": {
+      "factors": [
+        {
+          "vector": [
+            "1",
+            "0.3333333333",
+            "0.3333333333"
+          ],
+          "weight": "1"
+        }
+      ]
+    },
+    "value": [
+      "0",
+      "0.2777777778",
+      "0.1666666668"
+    ]
+  },
+  "schema_version": 1,
+  "source": "PEPit one-step GD solver artifact adapted from commit 5a061a1b2dbe450b6bac42e2442942748f3b1f32 (source sha256 bf92a968dd8a3ad100e888bfc2304faa77a291866271534af744caa7242cd4ca)",
+  "upper": {
+    "assumption_terms": [
+      {
+        "index": 0,
+        "weight": "0.1666666667"
+      }
+    ],
+    "bound": "0.1666666667",
+    "dual_factor": {
+      "factors": [
+        {
+          "vector": [
+            "-0.3333333333",
+            "1",
+            "0"
+          ],
+          "weight": "0.25"
+        },
+        {
+          "vector": [
+            "-0.3333333333",
+            "0",
+            "1"
+          ],
+          "weight": "0.25"
+        },
+        {
+          "vector": [
+            "-0.6666666666",
+            "1",
+            "1"
+          ],
+          "weight": "0.25"
+        }
+      ]
+    },
+    "dual_matrix": [
+      [
+        "0.166666666633333333335",
+        "-0.249999999975",
+        "-0.249999999975"
+      ],
+      [
+        "-0.249999999975",
+        "0.5",
+        "0.25"
+      ],
+      [
+        "-0.249999999975",
+        "0.25",
+        "0.5"
+      ]
+    ],
+    "interp_terms": [
+      {
+        "i": 0,
+        "j": 1,
+        "weight": "0.5"
+      },
+      {
+        "i": 0,
+        "j": 2,
+        "weight": "0.5"
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "weight": "0.5"
+      }
+    ],
+    "objective": {
+      "const": "0",
+      "gram_coeff": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "value_coeff": [
+        "-1",
+        "0",
+        "1"
+      ]
+    }
+  }
+}

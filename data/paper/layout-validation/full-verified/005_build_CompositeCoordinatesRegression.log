@@ -1,0 +1,56 @@
+⚠ [2978/2983] Replayed LeanPEP.Profiles.ProximalGradient
+warning: LeanPEP/Profiles/ProximalGradient.lean:136:43: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [hi, hgj, hsj, sub_self,̵ ̵s̵u̵b̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2980/2983] Replayed LeanPEP.GramPEP.OriginCoordinates
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:98:93: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centerMapQ, liftVecQ, standardBasisExpr, mul_ite, mul_neg, Finset.sum_neg_distrib,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:105:81: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictVec, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:115:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:26: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, n̵e̵g̵_̵m̵u̵l̵,̵ ̵mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_neg_distrib, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:124:22: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictGram, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ,
+  ̵  ̵ ̵ ̵ite_mul, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (2983 jobs).

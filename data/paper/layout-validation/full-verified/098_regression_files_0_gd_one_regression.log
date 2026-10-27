@@ -1,0 +1,14 @@
+'LeanPEP.Imported.C14GDOneRegression.wrong_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.wrong_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.wrong_objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.omitted_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.wrong_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.changed_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.wrong_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.changed_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.interpolation_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.gauge_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.gauge_policy_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14GDOneRegression.old_raw_optimal_face_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

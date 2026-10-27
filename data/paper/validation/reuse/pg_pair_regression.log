@@ -1,0 +1,19 @@
+'LeanPEP.Imported.C14PGOnePairRegression.wrong_horizon_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.C14PGOnePairRegression.wrong_case_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.C14PGOnePairRegression.wrong_objective_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.C14PGOnePairRegression.wrong_endpoint_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.C14PGOnePairRegression.changed_gram_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.C14PGOnePairRegression.changed_value_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.C14PGOnePairRegression.changed_value_policy_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

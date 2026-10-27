@@ -1,0 +1,40 @@
+LeanPEP.GramPEP.standardGram.{u_1} {m : ℕ} {𝕜 : Type u_1} [Zero 𝕜] [One 𝕜] : Gram m 𝕜
+LeanPEP.GramPEP.standardGram_posSemidef.{u_1} {m : ℕ} {𝕜 : Type u_1} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜] :
+  IsGramPosSemidef standardGram
+LeanPEP.GramPEP.standardFactorCertQ (m : ℕ) : PSDFactorCertQ m
+LeanPEP.GramPEP.castDataQ.{u_1} {Point : Type u_1} {m : ℕ} (d : DataQ Point m) : DataR Point m
+LeanPEP.GramPEP.interpolationSlack_castDataQ.{u_1} {Point : Type u_1} {m : ℕ} (d : DataQ Point m) (i j : Point) :
+  interpolationSlack (castDataQ d) i j = ↑(interpolationSlack d i j)
+LeanPEP.GramPEP.interpolationFeasibleQ_toReal.{u_1} {Point : Type u_1} {m : ℕ} (d : DataQ Point m)
+  (h : InterpolationFeasible d) : InterpolationFeasible (castDataQ d)
+LeanPEP.Bridges.NesterovChainGram.dim3PSDCertQ_check : checkPSDFactorQ dim3DataQ.gram dim3PSDCertQ = true
+LeanPEP.Bridges.NesterovChainGram.dim3InterpolationFeasibleQ : InterpolationFeasible dim3DataQ
+LeanPEP.Bridges.NesterovChainGram.dim3CoreFeasibleQ : CoreFeasible dim3DataQ
+LeanPEP.Bridges.NesterovChainGram.dim3CoreFeasibleR : CoreFeasible dim3DataR
+LeanPEP.Bridges.NesterovChainGram.dim3TrajectoryQ :
+  dim3DataQ.position (Toy.FiniteGD.Point.iter 1) =
+    dim3DataQ.position (Toy.FiniteGD.Point.iter 0) - dim3DataQ.gradient (Toy.FiniteGD.Point.iter 0)
+LeanPEP.Bridges.NesterovChainGram.dim3NormalizedPerformanceQ :
+  (dim3DataQ.value (Toy.FiniteGD.Point.iter 1) - dim3DataQ.value Toy.FiniteGD.Point.star) /
+      gramNormSq dim3DataQ.gram
+        (dim3DataQ.position (Toy.FiniteGD.Point.iter 0) - dim3DataQ.position Toy.FiniteGD.Point.star) =
+    3 / 56
+LeanPEP.Bridges.NesterovChainGram.dim3DataR_eq_actual : dim3DataR = dim3ActualDataR
+LeanPEP.Bridges.NesterovChainGram.dim5PSDCertQ_check : checkPSDFactorQ dim5DataQ.gram dim5PSDCertQ = true
+LeanPEP.Bridges.NesterovChainGram.dim5InterpolationFeasibleQ : InterpolationFeasible dim5DataQ
+LeanPEP.Bridges.NesterovChainGram.dim5CoreFeasibleQ : CoreFeasible dim5DataQ
+LeanPEP.Bridges.NesterovChainGram.dim5CoreFeasibleR : CoreFeasible dim5DataR
+LeanPEP.Bridges.NesterovChainGram.dim5TrajectoryStep0Q :
+  dim5DataQ.position (Toy.FiniteGD.Point.iter 1) =
+    dim5DataQ.position (Toy.FiniteGD.Point.iter 0) - dim5DataQ.gradient (Toy.FiniteGD.Point.iter 0)
+LeanPEP.Bridges.NesterovChainGram.dim5TrajectoryStep1Q :
+  dim5DataQ.position (Toy.FiniteGD.Point.iter 2) =
+    dim5DataQ.position (Toy.FiniteGD.Point.iter 1) - dim5DataQ.gradient (Toy.FiniteGD.Point.iter 1)
+LeanPEP.Bridges.NesterovChainGram.dim5NormalizedPerformanceQ :
+  (dim5DataQ.value (Toy.FiniteGD.Point.iter 2) - dim5DataQ.value Toy.FiniteGD.Point.star) /
+      gramNormSq dim5DataQ.gram
+        (dim5DataQ.position (Toy.FiniteGD.Point.iter 0) - dim5DataQ.position Toy.FiniteGD.Point.star) =
+    75 / 2816
+LeanPEP.Bridges.NesterovChainGram.dim5DataR_eq_actual : dim5DataR = dim5ActualDataR
+true
+true

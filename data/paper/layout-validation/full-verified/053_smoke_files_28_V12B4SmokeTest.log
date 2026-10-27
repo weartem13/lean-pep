@@ -1,0 +1,14 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ_eq_half_centerQ (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N = 1 / 2 * LeanPEP.Toy.FiniteGD.ParametricUpper.gdCenterQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ_zero_zero :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ 0 ⟨0, ⋯⟩ = 1
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ_zero_eq_chainWeightQ_zero (N : ℕ) (hN : 0 < N) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N ⟨0, ⋯⟩ =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ N ⟨0, hN⟩
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ_succ_eq_chainWeightQ_sub (N k : ℕ) (hk : k + 1 < N) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N ⟨k + 1, ⋯⟩ =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ N ⟨k + 1, hk⟩ -
+      LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ N ⟨k, ⋯⟩
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ_last_eq_one_sub_chainWeightQ_last (N : ℕ) (hN : 0 < N) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N ⟨N, ⋯⟩ =
+    1 - LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ N ⟨N - 1, ⋯⟩

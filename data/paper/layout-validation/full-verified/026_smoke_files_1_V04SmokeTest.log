@@ -1,0 +1,12 @@
+true
+{ accepted := true, violations := [] }
+{ accepted := false,
+  violations := [{ i := LeanPEP.Toy.FiniteGD.Point.star,
+                   j := LeanPEP.Toy.FiniteGD.Point.iter 2,
+                   value := (-1 : Rat)/5 },
+                 { i := LeanPEP.Toy.FiniteGD.Point.iter 0,
+                   j := LeanPEP.Toy.FiniteGD.Point.iter 2,
+                   value := (-1 : Rat)/5 },
+                 { i := LeanPEP.Toy.FiniteGD.Point.iter 1,
+                   j := LeanPEP.Toy.FiniteGD.Point.iter 2,
+                   value := (-1 : Rat)/5 }] }

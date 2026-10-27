@@ -1,0 +1,3511 @@
+{
+  "new_modules_build.log": {
+    "count": 76,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.raw_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.centered_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.tau_rhs_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.tau_target_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.accepted_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapture.tau_substitution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapture.stationary_of_min",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.source_rows_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.native_psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.raw_psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.raw_rows_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.raw_performance_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.native_rows_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.full_rows_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.model_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.interpolation_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.radius_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.finite_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.tau_beta",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.beta_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.tau_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.counts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.self_rows_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.native_gram_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.value_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.native_primal_checked",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.finite_primal_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.objective_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.concrete_primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.GDOnePrimal.checkFinite_sound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.GDOnePrimal.primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.trace_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.raw_binding_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.structured_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.structured_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.policy_count",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.trace_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.raw_dual_binding_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.coverage_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.native_psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.native_rows_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.full_rows_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.canonical_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.finite_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.raw_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.raw_performance_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.raw_negative_quadratic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.tau_beta",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.beta_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.tau_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.center_section",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.counts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.sample_values_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.native_value_reindex",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.source_to_original",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.native_primal_checked",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.full_native_feasible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.finite_primal_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.objective_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.concrete_primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.PGOnePrimal.primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.PGOnePrimal.checkFinite_sound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V03SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V04SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V05SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V06SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V07SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V08B2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V08SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V09SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V10ASmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V10BSmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V10CSmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V10D2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V10DSmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V11ASmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V11BSmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V11C2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V11CSmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12A1SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12A2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12A3SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12A4SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B10SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B11SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B12SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B13SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B1SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B3SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B4SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B5SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B6SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B7SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B8SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12B9SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12C1SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12C2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12C3SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12D1SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12D2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12D3SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V12D4SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V13A1SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V13A2SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V13A3SmokeTest.log": {
+    "count": 0,
+    "declarations": []
+  },
+  "lean_V13B1SmokeTest.log": {
+    "count": 3,
+    "declarations": [
+      {
+        "name": "LeanPEP.Profiles.Momentum.coefficientStateQ_causal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.NesterovPilot.pilotUpperCertQ_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.NesterovPilot.pilot_finite_tight",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13B2SmokeTest.log": {
+    "count": 4,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.ProfileGram.certificate_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.MomentumActual.affineTrajectory_realization",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotUpper.upper_analytic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotUpper.upper_analytic_of_isRun",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13B3SmokeTest.log": {
+    "count": 5,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.MomentumActual.eq_of_oracle_eq_on_queries",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitness.actual_trajectory",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitness.attains",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitness.oneDimensional_analytic_tight",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitness.analytic_upper_and_oneDimensional_tight",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13B4SmokeTest.log": {
+    "count": 6,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.MomentumScaling.affine_trajectory",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.MomentumScaling.certificate_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotScaling.upper_analytic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitnessScaling.scaled_trajectory",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitnessScaling.attains",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.NesterovPilotWitnessScaling.oneDimensional_analytic_tight",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C10SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.HilbertWeakTopology.weakSpace_tendsto_iff_inner",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.HilbertWeakTopology.isCompact_weakRiesz_closedBall",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.HilbertWeakTopology.inner_subfilter_of_weakRiesz_cluster",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.WeakFejerConvergence.fixed_of_inner_tendsto_of_residual",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.WeakFejerConvergence.inner_limits_eq_of_antitone",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.WeakFejerConvergence.exists_weak_tendsto_fixed",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_weak_tendsto",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_weak_and_objective_tendsto",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C11SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.SummablePerturbation.exists_limit_of_summable_error",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.SummablePerturbation.residual_tendsto_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inner_limits_eq_of_distance_limits",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inexact_weak_tendsto",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inexact_strong_tendsto_finiteDimensional",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_weak_tendsto_hilbert",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_tendsto_finiteDimensional_analytic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_oracle_prox_weak_tendsto_hilbert",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C1SmokeTest.log": {
+    "count": 6,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.checkUpperCertQ_sound_real_explicit",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.Proximal.isUnitProxPoint_iff_subgradient",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.ProximalGradientOneStep.upperCertQ_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientOneStep.actualData_constraints",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientOneStep.upper_analytic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientOneStepWitness.oneDimensional_analytic_tight",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C2SmokeTest.log": {
+    "count": 6,
+    "declarations": [
+      {
+        "name": "LeanPEP.Profiles.ProximalGradient.positionVecQ_gradient_causal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.ProximalGradient.modelQ_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradient.position_realization",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradient.certificate_upper_analytic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradient.oneStep_upper_analytic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradient.oneStep_analytic_tight",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C3ASmokeTest.log": {
+    "count": 6,
+    "declarations": [
+      {
+        "name": "LeanPEP.Profiles.ProximalGradientCertificate.dualValidQ_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_four",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientWitness.actual_run",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientWitness.attains",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientRate.upper_analytic_small",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientRate.analytic_tight_small",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C3BSmokeTest.log": {
+    "count": 6,
+    "declarations": [
+      {
+        "name": "LeanPEP.Profiles.Composite.rowMajorList_getElem?",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.ProximalGradientCertificate.local_gram_identity",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.ProximalGradientCertificate.certificateIdentityQ_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientRate.upper_analytic_steps",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientRate.analytic_tight_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C4SmokeTest.log": {
+    "count": 7,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.normalized_prox_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.eq_of_subgradient_of_isProxPoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientScaling.isSmoothProxRun_iff_normalized",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientScaling.certificate_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientScaling.upper_analytic_steps",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientWitnessScaling.actual_run",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientWitnessScaling.analytic_tight_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C5SmokeTest.log": {
+    "count": 7,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.subgradient_of_isProxPoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.isProxPoint_unique",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.Proximal.subgradient_of_composite_minimizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.Proximal.composite_minimizer_iff_prox_fixedPoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientScaling.upper_analytic_steps_of_minimizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientScaling.oneDimensionalMinimizerValues_eq_analyticValues",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientScaling.minimizer_tight_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C6SmokeTest.log": {
+    "count": 7,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.exists_norm_lower_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.existsUnique_isProxPoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.proxMap_spec",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.run_eq_iterate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.upper_analytic_steps_finiteDimensional",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.oneDimensionalValues_eq_minimizerValues",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.tight_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C7SmokeTest.log": {
+    "count": 7,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.StrongMidpointMinimizer.cauchySeq_of_midpoint_gap",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.StrongMidpointMinimizer.exists_minimizer_of_midpoint_gap",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.exists_norm_lower_bound_of_continuousAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.existsUnique_isProxPoint_hilbert",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.upper_analytic_steps_hilbert",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.oneDimensionalHilbertValues_eq_canonicalValues",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.hilbert_tight_all",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C8SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.Proximal.subgradient_pair_monotone",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalScaling.proxMap_lipschitz",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.gradient_cocoercive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_energy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_sum_step_energy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_step_norm_tendsto_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_gradient_distance_le",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_step_norm_tendsto_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13C9SmokeTest.log": {
+    "count": 7,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.FejerConvergence.fixed_of_subsequence_of_residual",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.FejerConvergence.exists_tendsto_fixed_of_compact",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_tendsto_of_subsequence",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_tendsto",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.run_tendsto_finiteDimensional",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.run_objective_gap_tendsto_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_objective_tendsto",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D10SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.RationalLinearSystem.obstruction_not_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.RationalLinearSystem.checked_obstruction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCompletion.residual_preserved",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCompletion.completion_within_raw_policy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCompletion.checked_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCompletion.Inconsistent.no_linear_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCompletion.PGThree.completed_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCompletionAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D11SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.RationalBoxSystem.margin_eq_slacks",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.RationalBoxSystem.obstruction_not_feasible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.RationalBoxSystem.checked_obstruction",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.RationalBoxSystem.policy_box_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeBoundedCompletion.Budget.no_box_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeBoundedCompletion.PGOne.free_seed_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeBoundedCompletion.PGThree.completed_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientBoundedCompletionAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D12SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.UpperCoefficientSystem.coefficient_ext_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.UpperCoefficientSystem.identity_iff_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.UpperCoefficientSystem.accepted_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.UpperCoefficientSystem.checked_no_accepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.UpperCoefficientBox.checked_no_accepted_in_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompiledCompletion.Three.compiled_certificate_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompiledCompletion.Inconsistent.no_fixed_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompiledCompletion.Budget.no_fixed_certificate_in_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D13SmokeTest.log": {
+    "count": 3,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.D13InterfaceSmoke.raw_route_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.D13InterfaceSmoke.reconstructed_route_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompiledCompletion.Budget.no_fixed_certificate_in_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D1SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.checkUpperCertQ_withDualFactor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.not_isGramPosSemidef_real_of_negative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PSDSynthesized.IrrationalCholesky.psd_real",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PSDSynthesized.LiftedZeroDiagonal.not_psd_real",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PSDSynthesisRegression.gd_bundle_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PSDSynthesisRegression.gd_attainment_real",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PSDSynthesisApplications.pg_two_upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PSDSynthesisApplications.two_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D2SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.Adapters.ExactFormulation.checkListQ_eq_true_iff",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientSource.checkSourceQ_eq_true_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientSource.checked_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeSource.PGThree.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeSource.PGThree.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeSource.forged_bound_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientSourceAudit.upper_firstOrder",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientSourceAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D3SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.OriginCoordinates.liftGramQ_eq_congruence",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.OriginCoordinates.evalR_restrictExprQ",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.OriginCoordinates.zeroOriginGramR_psd",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCoordinates.checkSourceQ_eq_expected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCoordinates.checked_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCoordinates.hidden_origin_native_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCoordinates.PGThree.bound_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D4SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.ExactReindexing.checkQ_eq_true_iff",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.ExactReindexing.evalR_reindex",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientOrdering.reorderSnapshotQ_roundtrip",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientOrdering.constraint_reference",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientOrdering.checked_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeOrdering.bad_inverse_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeOrdering.PGThree.bound_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientOrderingAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D5SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.RowNormalization.normalize_nonneg_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.RowNormalization.weighted_normalize",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientRows.snapshot_roundtrip",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientRows.assumption_sum_preserved",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientRows.normalizedUpper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeRows.zero_scale_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeRows.PGThree.bound_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientRowAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D6SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.PerformanceLift.eval_substitute",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientPerformance.finite_upper_equivalence",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientPerformance.eliminatedUpper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientPerformance.performance_mass_eq_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositePerformance.hidden_tau_source_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositePerformance.wrong_performance_joint_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositePerformance.PGThree.bound_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D7SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.ZeroRowCoverage.feasible_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.ZeroRowCoverage.finite_upper_equivalence",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientSparse.assumption_sum_preserved",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientSparse.completedUpper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeSparse.missing_nonzero_joint_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeSparse.split_performance_mass",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeSparse.PGThree.bound_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientSparseAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D8SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.GramPEP.RationalReconstructionAudit.checkCoefficientsQ_eq_true_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.GramPEP.RationalReconstructionAudit.checkChangesQ_eq_true_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientReconstruction.checked_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCandidates.PGThree.raw_not_psd_real",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCandidates.raw_acceptance_not_inherited",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCandidates.wrong_bound_joint_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCandidates.PGThree.reconstructed_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_V13D9SmokeTest.log": {
+    "count": 8,
+    "declarations": [
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCapture.captured_row_eval",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCapture.captured_objective_eval",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCapture.captured_numerics_preserved",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.ProximalGradientCapture.checked_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCapture.wrong_bound_trace_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCapture.extra_zero_capture_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.CompositeCapture.PGThree.reconstructed_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.ProximalGradientCaptureAudit.three_step_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_C14PGOneTight_001_TightnessReplay.log": {
+    "count": 14,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.selected_source_same",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.selected_trace_same",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.selected_bound_beta",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.finite_universal_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.external_primal_attainment",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.finite_tightness",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.current_certificate_actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.analytic_witness_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.analytic_witness_values",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.PGOneCapturedTightness.actual_tightness",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.structured_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOneUpper.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.finite_primal_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePrimal.objective_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_C14PGOneTight_001_Regression.log": {
+    "count": 7,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.wrong_horizon_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.wrong_case_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.wrong_objective_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.wrong_endpoint_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.changed_gram_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.changed_value_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14PGOnePairRegression.changed_value_policy_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_C14GDOneTight_001_TightnessReplay.log": {
+    "count": 13,
+    "declarations": [
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.symbolic_source_same",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.selected_bound_beta",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.finite_universal_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.external_primal_attainment",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.finite_tightness",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.current_certificate_actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.analytic_witness_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.analytic_witness_values",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapturedTightness.actual_tightness",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.accepted_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneDual.centered_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.finite_primal_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOnePrimal.concrete_primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_C14GDOneTight_001_Regression.log": {
+    "count": 12,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.wrong_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.wrong_reference",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.wrong_objective",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.omitted_interpolation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.wrong_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.changed_gram",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.wrong_factor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.changed_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.interpolation_required",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.gauge_feasible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.gauge_policy_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.C14GDOneRegression.old_raw_optimal_face_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_A14PGTwoStructured_001_Replay.log": {
+    "count": 10,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.trace_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.raw_binding_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.structured_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.structured_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.policy_count",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.Structured.PGTwo001.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_A14PGThreeStructured_001_Replay.log": {
+    "count": 10,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.trace_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.raw_binding_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.structured_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.structured_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.policy_count",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.PGThreeStructured001.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_A14GDOneStructured_003_Replay.log": {
+    "count": 12,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.raw_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.centered_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.tau_rhs_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.tau_target_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.accepted_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOneStructured003.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapture.tau_substitution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapture.stationary_of_min",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_A14GDTwoStructured_001_Replay.log": {
+    "count": 13,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.raw_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.upper_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.centered_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.tau_rhs_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.tau_target_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.accepted_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDTwoStructured001.actual_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDTwoCapture.tau_substitution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDTwoCapture.realizes_two",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.ActualFunction.GDOneCapture.stationary_of_min",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "lean_B14GDOnePrimal_003_PrimalReplay.log": {
+    "count": 26,
+    "declarations": [
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.source_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.source_rows_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.policy_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.native_psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.raw_psd_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.raw_rows_rejected",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.raw_performance_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.native_rows_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.full_rows_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.model_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.interpolation_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.radius_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.finite_check",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.tau_beta",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.beta_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.tau_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.counts",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.self_rows_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.native_gram_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.value_binding",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.native_primal_checked",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.finite_primal_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.objective_verified",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Imported.GDOnePrimal003.concrete_primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.GDOnePrimal.checkFinite_sound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "LeanPEP.Adapters.GDOnePrimal.primal_transport",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  }
+}

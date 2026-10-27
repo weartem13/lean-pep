@@ -1,0 +1,164 @@
+[
+  {
+    "arbitrary_pepit_order_supported": false,
+    "bound_guards": {
+      "centered_bound": true,
+      "empty_implicit_interpolation": true,
+      "native_certificate": true,
+      "native_objective": true,
+      "source": true
+    },
+    "canonical_json_sha256": "7936c77627a52f4b81e4e946a785808b25aa399c9ea67fe4b7a229e2c39a60ca",
+    "centered_certificate": {
+      "certificate": true,
+      "empty_implicit_interpolation": true,
+      "objective_matches_source": true,
+      "source": true
+    },
+    "centered_source_mismatches": [],
+    "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "centered": 5,
+      "native": 6,
+      "values": 5
+    },
+    "format": "leanpep-uncentered-pg-diagnostic-v1",
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "native_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D3 uncentered 1-step PG; direct native sample compilation, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "primal_transport_checked": false,
+    "provenance_authenticated": false,
+    "source_guards": {
+      "center_matrix": true,
+      "centered_source": true,
+      "constraints_roundtrip": true,
+      "header": true,
+      "nonsmooth_roundtrip": true,
+      "objective_roundtrip": true,
+      "section_matrix": true,
+      "smooth_roundtrip": true
+    },
+    "source_mismatches": []
+  },
+  {
+    "arbitrary_pepit_order_supported": false,
+    "bound_guards": {
+      "centered_bound": true,
+      "empty_implicit_interpolation": true,
+      "native_certificate": true,
+      "native_objective": true,
+      "source": true
+    },
+    "canonical_json_sha256": "72ab07661703937157b8a8e4f7eb1b57209aff2bcadaf2fc28a2a8c165115f0a",
+    "centered_certificate": {
+      "certificate": true,
+      "empty_implicit_interpolation": true,
+      "objective_matches_source": true,
+      "source": true
+    },
+    "centered_source_mismatches": [],
+    "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "centered": 7,
+      "native": 8,
+      "values": 7
+    },
+    "format": "leanpep-uncentered-pg-diagnostic-v1",
+    "horizon": 2,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "native_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D3 uncentered 2-step PG; direct native sample compilation, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "primal_transport_checked": false,
+    "provenance_authenticated": false,
+    "source_guards": {
+      "center_matrix": true,
+      "centered_source": true,
+      "constraints_roundtrip": true,
+      "header": true,
+      "nonsmooth_roundtrip": true,
+      "objective_roundtrip": true,
+      "section_matrix": true,
+      "smooth_roundtrip": true
+    },
+    "source_mismatches": []
+  },
+  {
+    "arbitrary_pepit_order_supported": false,
+    "bound_guards": {
+      "centered_bound": true,
+      "empty_implicit_interpolation": true,
+      "native_certificate": true,
+      "native_objective": true,
+      "source": true
+    },
+    "canonical_json_sha256": "f4c187c8e6fce957826cb8c98fb0ddcbafd4cac79ff12b1935a82b92f18387dc",
+    "centered_certificate": {
+      "certificate": true,
+      "empty_implicit_interpolation": true,
+      "objective_matches_source": true,
+      "source": true
+    },
+    "centered_source_mismatches": [],
+    "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "centered": 9,
+      "native": 10,
+      "values": 9
+    },
+    "format": "leanpep-uncentered-pg-diagnostic-v1",
+    "horizon": 3,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "native_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D3 uncentered 3-step PG; direct native sample compilation, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "primal_transport_checked": false,
+    "provenance_authenticated": false,
+    "source_guards": {
+      "center_matrix": true,
+      "centered_source": true,
+      "constraints_roundtrip": true,
+      "header": true,
+      "nonsmooth_roundtrip": true,
+      "objective_roundtrip": true,
+      "section_matrix": true,
+      "smooth_roundtrip": true
+    },
+    "source_mismatches": []
+  }
+]

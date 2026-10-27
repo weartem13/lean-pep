@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "For research using Lean-PEP, please cite the accompanying paper. When reproducing an artifact, also record the software version, commit and SOURCE_ID."
+type: software
+title: Lean-PEP
+license: Apache-2.0
+version: "0.1.0"
+repository-code: "https://github.com/weartem13/lean-pep"
+authors:
+  - family-names: Guo
+    given-names: Xinyuan
+    affiliation: "Department of Earth Science and Engineering, Imperial College London, UK"
+  - family-names: Ang
+    given-names: Andersen
+    affiliation: "School of Electronics and Computer Science, University of Southampton, UK"
+abstract: "Exact checking of performance-estimation certificates with source and representation bindings, and bridges to function-level algorithmic bounds in Lean."
+preferred-citation:
+  type: unpublished
+  title: "Lean-PEP: Performance-Estimation Certificates to Formally Verified Algorithmic Bounds"
+  authors:
+    - family-names: Guo
+      given-names: Xinyuan
+    - family-names: Ang
+      given-names: Andersen
+  year: 2026

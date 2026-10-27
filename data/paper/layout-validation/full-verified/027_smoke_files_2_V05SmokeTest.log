@@ -1,0 +1,12 @@
+true
+true
+LeanPEP.Toy.FiniteGD.UpperCertAuditQ.accepted
+LeanPEP.Toy.FiniteGD.UpperCertAuditQ.accepted
+LeanPEP.Toy.FiniteGD.UpperCertAuditQ.rejected
+  (LeanPEP.Toy.FiniteGD.UpperCertFailureQ.negativeInterpWeight
+    { weight := -1, i := LeanPEP.Toy.FiniteGD.Point.star, j := LeanPEP.Toy.FiniteGD.Point.iter 1 })
+LeanPEP.Toy.FiniteGD.UpperCertAuditQ.rejected
+  (LeanPEP.Toy.FiniteGD.UpperCertFailureQ.negativeSquareWeight { index := 3, weight := -1 })
+LeanPEP.Toy.FiniteGD.UpperCertAuditQ.rejected
+  (LeanPEP.Toy.FiniteGD.UpperCertFailureQ.identityMismatch
+    [{ location := LeanPEP.Toy.FiniteGD.CoeffLocationQ.const, expected := (1 : Rat)/9, actual := (1 : Rat)/10 }])

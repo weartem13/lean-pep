@@ -1,0 +1,1756 @@
+[
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "bash",
+      "tools/regenerate_imported_examples.sh"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 12.740319000004092,
+    "log": "regeneration.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSource",
+      "LeanPEP.Imported.CompositeCoordinates",
+      "LeanPEP.Imported.CompositeOrdering",
+      "LeanPEP.Imported.CompositeRows",
+      "LeanPEP.Imported.CompositePerformance",
+      "LeanPEP.Imported.CompositeSparse",
+      "LeanPEP.Imported.CompositeCandidates",
+      "LeanPEP.Imported.CompositeCapture",
+      "LeanPEP.Imported.CompositeCompletion",
+      "LeanPEP.Imported.CompositeBoundedCompletion"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 137.3013423750017,
+    "log": "clean_prerequisites.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 163.87105066699587,
+    "log": "full_python_tests.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSourceRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 32.69777525000245,
+    "log": "clean_regression_Source.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCoordinatesRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 105.65949958300189,
+    "log": "clean_regression_Coordinates.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeOrderingRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 91.38199754099332,
+    "log": "clean_regression_Ordering.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeRowsRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 82.20550633299717,
+    "log": "clean_regression_Rows.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositePerformanceRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 142.88495683399378,
+    "log": "clean_regression_Performance.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSparseRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 141.7336956250001,
+    "log": "clean_regression_Sparse.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCandidatesRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 139.53411308400246,
+    "log": "clean_regression_Candidates.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCaptureRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 207.56541854199895,
+    "log": "clean_regression_Capture.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCompletionRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 176.94952412500425,
+    "log": "clean_regression_Completion.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeBoundedCompletionRegression"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 172.61290954200376,
+    "log": "clean_regression_BoundedCompletion.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 232.67497074999847,
+    "log": "root_clean_build.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.C14PGOneUpper",
+      "LeanPEP.Imported.C14PGOnePrimal",
+      "LeanPEP.Imported.C14GDOneDual",
+      "LeanPEP.Imported.C14GDOnePrimal",
+      "LeanPEP.ActualFunction.PGOneCapturedTightness",
+      "LeanPEP.ActualFunction.GDOneCapturedTightness",
+      "LeanPEP.Adapters.PGOnePrimal",
+      "LeanPEP.Adapters.GDOnePrimal",
+      "LeanPEP.ActualFunction.GDOneCapture",
+      "LeanPEP.ActualFunction.GDTwoCapture"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 37.75728729199909,
+    "log": "new_modules_build.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V03SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 5.9721742080000695,
+    "log": "lean_V03SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V04SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.338243166996108,
+    "log": "lean_V04SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V05SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.380196208003326,
+    "log": "lean_V05SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V06SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.344530499998655,
+    "log": "lean_V06SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V07SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.336827875005838,
+    "log": "lean_V07SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V08B2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.358248792006634,
+    "log": "lean_V08B2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V08SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.418180000000575,
+    "log": "lean_V08SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V09SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.4804597919937805,
+    "log": "lean_V09SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V10ASmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.416384416996152,
+    "log": "lean_V10ASmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V10BSmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.46384845799912,
+    "log": "lean_V10BSmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V10CSmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.430404999999155,
+    "log": "lean_V10CSmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V10D2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.581041417004599,
+    "log": "lean_V10D2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V10DSmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.496608416004165,
+    "log": "lean_V10DSmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V11ASmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.5163657079974655,
+    "log": "lean_V11ASmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V11BSmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.26580987500347,
+    "log": "lean_V11BSmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V11C2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.666030375003174,
+    "log": "lean_V11C2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V11CSmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.824018624996825,
+    "log": "lean_V11CSmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12A1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.324765584002307,
+    "log": "lean_V12A1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12A2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.20344766699418,
+    "log": "lean_V12A2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12A3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.207057083003747,
+    "log": "lean_V12A3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12A4SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.180851958997664,
+    "log": "lean_V12A4SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B10SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.22352029200556,
+    "log": "lean_V12B10SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B11SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.180520041998534,
+    "log": "lean_V12B11SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B12SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.112747917002707,
+    "log": "lean_V12B12SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B13SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.696397624997189,
+    "log": "lean_V12B13SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 7.0070884590022615,
+    "log": "lean_V12B1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.6257327499988605,
+    "log": "lean_V12B2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.9681487919951905,
+    "log": "lean_V12B3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B4SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.9794195409995154,
+    "log": "lean_V12B4SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B5SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.342960333000519,
+    "log": "lean_V12B5SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B6SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.407880207996641,
+    "log": "lean_V12B6SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B7SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.358272124998621,
+    "log": "lean_V12B7SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B8SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.388508167001419,
+    "log": "lean_V12B8SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12B9SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.2690464580009575,
+    "log": "lean_V12B9SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12C1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.380446124996524,
+    "log": "lean_V12C1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12C2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.359981333000178,
+    "log": "lean_V12C2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12C3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.362533666993841,
+    "log": "lean_V12C3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12D1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.103601208997134,
+    "log": "lean_V12D1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12D2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.259890499997709,
+    "log": "lean_V12D2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12D3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.224214209003549,
+    "log": "lean_V12D3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V12D4SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.44887916600419,
+    "log": "lean_V12D4SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13A1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.3690281250019325,
+    "log": "lean_V13A1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13A2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.098085416997492,
+    "log": "lean_V13A2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13A3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.050302165996982,
+    "log": "lean_V13A3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13B1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.352072707995831,
+    "log": "lean_V13B1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13B2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.472923291999905,
+    "log": "lean_V13B2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13B3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.308770916999492,
+    "log": "lean_V13B3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13B4SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.743565041004331,
+    "log": "lean_V13B4SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C10SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.90619916599826,
+    "log": "lean_V13C10SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C11SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.8163208329933695,
+    "log": "lean_V13C11SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.260201749995758,
+    "log": "lean_V13C1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.453747416002443,
+    "log": "lean_V13C2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C3ASmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.4294653329998255,
+    "log": "lean_V13C3ASmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C3BSmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.708787333001965,
+    "log": "lean_V13C3BSmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C4SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.540777499998512,
+    "log": "lean_V13C4SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C5SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.541913708002539,
+    "log": "lean_V13C5SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C6SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.530193417005648,
+    "log": "lean_V13C6SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C7SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.472813166998094,
+    "log": "lean_V13C7SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C8SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.814681083000323,
+    "log": "lean_V13C8SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13C9SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.833744708994345,
+    "log": "lean_V13C9SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D10SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.39829045899387,
+    "log": "lean_V13D10SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D11SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.383846459000779,
+    "log": "lean_V13D11SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D12SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.416473040997516,
+    "log": "lean_V13D12SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D13SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.372428417002084,
+    "log": "lean_V13D13SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D1SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.447005750000244,
+    "log": "lean_V13D1SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D2SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.588122041001043,
+    "log": "lean_V13D2SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D3SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.705433292001544,
+    "log": "lean_V13D3SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D4SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.425613958002941,
+    "log": "lean_V13D4SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D5SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.527149166999152,
+    "log": "lean_V13D5SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D6SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.5801402920042165,
+    "log": "lean_V13D6SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D7SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.607858000003034,
+    "log": "lean_V13D7SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D8SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.866048000003502,
+    "log": "lean_V13D8SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "V13D9SmokeTest.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.95405112500157,
+    "log": "lean_V13D9SmokeTest.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14PGOneTight_001/TightnessReplay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.88606479200098,
+    "log": "lean_C14PGOneTight_001_TightnessReplay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14PGOneTight_001/Regression.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 11.258078375001787,
+    "log": "lean_C14PGOneTight_001_Regression.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14GDOneTight_001/TightnessReplay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 6.8312642500022775,
+    "log": "lean_C14GDOneTight_001_TightnessReplay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "C14GDOneTight_001/Regression.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 7.6203789159990265,
+    "log": "lean_C14GDOneTight_001_Regression.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "A14PGTwoStructured_001/Replay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 57.00779274999513,
+    "log": "lean_A14PGTwoStructured_001_Replay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "A14PGThreeStructured_001/Replay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 138.43814887500048,
+    "log": "lean_A14PGThreeStructured_001_Replay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "A14GDOneStructured_003/Replay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 9.25378875000024,
+    "log": "lean_A14GDOneStructured_003_Replay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "A14GDTwoStructured_001/Replay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 15.54153149999911,
+    "log": "lean_A14GDTwoStructured_001_Replay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  },
+  {
+    "cwd": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "B14GDOnePrimal_003/PrimalReplay.lean"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 9.034646915999474,
+    "log": "lean_B14GDOnePrimal_003_PrimalReplay.log",
+    "environment": {
+      "PATH": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin:<AUTHOR_HOME>/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Codex.app/Contents/Resources/codex-cli/codex-path:<AUTHOR_HOME>/.codex<WORK_TMP>/arg0/codex-arg07qeZzE:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:<AUTHOR_HOME>/.juliaup/bin:/opt/homebrew/opt/postgresql@17/bin:<AUTHOR_HOME>/google-cloud-sdk/bin:/usr/local/mysql/bin:<AUTHOR_HOME>/.local/bin:<AUTHOR_HOME>/.cabal/bin:<AUTHOR_HOME>/.ghcup/bin:<AUTHOR_HOME>/mambaforge/condabin:<AUTHOR_HOME>/.elan/bin:<AUTHOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/Codex.app/Contents/Resources:/Applications/Codex.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+      "PYTHONPATH": "<WORK_TMP>/LeanPEP_V014R_VERIFY_002/tools",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LEAN_PATH": "unset"
+    }
+  }
+]

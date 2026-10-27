@@ -1,0 +1,122 @@
+LeanPEP.GramPEP.RationalLinearSystem.checkSolutionQ_eq_true_iff {r c : ℕ} (s : SystemQ r c) (x : Fin c → ℚ) :
+  checkSolutionQ s x = true ↔ IsSolutionQ s x
+LeanPEP.GramPEP.RationalLinearSystem.checkObstructionQ_eq_true_iff {r c : ℕ} (s : SystemQ r c) (y : Fin r → ℚ) :
+  checkObstructionQ s y = true ↔ IsObstructionQ s y
+LeanPEP.GramPEP.RationalLinearSystem.obstruction_not_solution {r c : ℕ} (s : SystemQ r c) (y : Fin r → ℚ)
+  (hy : IsObstructionQ s y) : ¬∃ x, IsSolutionQ s x
+LeanPEP.GramPEP.RationalLinearSystem.checked_obstruction {r c : ℕ} (s : SystemQ r c) (y : Fin r → ℚ)
+  (hy : checkObstructionQ s y = true) : ¬∃ x, IsSolutionQ s x
+LeanPEP.Adapters.ProximalGradientCompletion.checkFixedTargetsQ_eq_true_iff {p m : ℕ} {model : ModelQ p m}
+  (seed completed : UpperCertQ model) :
+  checkFixedTargetsQ seed completed = true ↔
+    seed.objective = completed.objective ∧
+      seed.dualMatrix = completed.dualMatrix ∧
+        factorSignatureQ seed.dualFactor = factorSignatureQ completed.dualFactor ∧
+          RationalReconstructionAudit.assumptionReferencesQ seed =
+              RationalReconstructionAudit.assumptionReferencesQ completed ∧
+            seed.interpTerms = [] ∧ completed.interpTerms = []
+LeanPEP.Adapters.ProximalGradientCompletion.checkCompletedQ_eq_true_iff {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : Adapters.ProximalGradientCapture.TraceQ n k)
+  (policy : RationalReconstructionAudit.PolicyQ) (raw seed completed : UpperCertQ s.model) :
+  checkCompletedQ s t policy raw seed completed = true ↔
+    RationalReconstructionAudit.checkChangesQ policy raw seed = true ∧
+      checkFixedTargetsQ seed completed = true ∧
+        Adapters.ProximalGradientCapture.checkCapturedQ s t policy raw completed = true
+LeanPEP.Adapters.ProximalGradientCompletion.captured_check {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (policy : RationalReconstructionAudit.PolicyQ)
+  (raw seed completed : UpperCertQ s.model) (hc : checkCompletedQ s t policy raw seed completed = true) :
+  Adapters.ProximalGradientCapture.checkCapturedQ s t policy raw completed = true
+LeanPEP.Adapters.ProximalGradientCompletion.residual_preserved {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : Adapters.ProximalGradientCapture.TraceQ n k)
+  (policy : RationalReconstructionAudit.PolicyQ) (raw seed completed : UpperCertQ s.model)
+  (hc : checkCompletedQ s t policy raw seed completed = true) : seed.dualMatrix = completed.dualMatrix
+LeanPEP.Adapters.ProximalGradientCompletion.completion_within_raw_policy {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : Adapters.ProximalGradientCapture.TraceQ n k)
+  (policy : RationalReconstructionAudit.PolicyQ) (raw seed completed : UpperCertQ s.model)
+  (hc : checkCompletedQ s t policy raw seed completed = true) :
+  RationalReconstructionAudit.CoefficientsWithinQ policy (RationalReconstructionAudit.numericalCoefficientsQ raw)
+    (RationalReconstructionAudit.numericalCoefficientsQ completed)
+LeanPEP.Adapters.ProximalGradientCompletion.checked_certificate {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : Adapters.ProximalGradientCapture.TraceQ n k)
+  (policy : RationalReconstructionAudit.PolicyQ) (raw seed completed : UpperCertQ s.model)
+  (hc : checkCompletedQ s t policy raw seed completed = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = completed.bound
+LeanPEP.Imported.CompositeCompletion.PGOne.seed_rejected :
+  Adapters.ProximalGradientCapture.checkCapturedQ Imported.CompositeCompletion.PGOne.sourceQ
+      Imported.CompositeCompletion.PGOne.traceQ Imported.CompositeCompletion.PGOne.policyQ
+      Imported.CompositeCompletion.PGOne.rawUpperQ Imported.CompositeCompletion.PGOne.reconstructedUpperQ =
+    false
+LeanPEP.Imported.CompositeCompletion.PGOne.fixed_targets_check :
+  checkFixedTargetsQ Imported.CompositeCompletion.PGOne.reconstructedUpperQ
+      Imported.CompositeCompletion.PGOne.completedUpperQ =
+    true
+LeanPEP.Imported.CompositeCompletion.PGTwo.completed_check :
+  checkCompletedQ Imported.CompositeCompletion.PGTwo.sourceQ Imported.CompositeCompletion.PGTwo.traceQ
+      Imported.CompositeCompletion.PGTwo.policyQ Imported.CompositeCompletion.PGTwo.rawUpperQ
+      Imported.CompositeCompletion.PGTwo.reconstructedUpperQ Imported.CompositeCompletion.PGTwo.completedUpperQ =
+    true
+LeanPEP.Imported.CompositeCompletion.PGThree.linear_solution_check :
+  checkSolutionQ Imported.CompositeCompletion.PGThree.coefficientSystemQ
+      Imported.CompositeCompletion.PGThree.completionVectorQ =
+    true
+LeanPEP.Imported.CompositeCompletion.Inconsistent.seed_psd_check :
+  checkPSDFactorQ Imported.CompositeCompletion.Inconsistent.reconstructedUpperQ.dualMatrix
+      Imported.CompositeCompletion.Inconsistent.reconstructedUpperQ.dualFactor =
+    true
+LeanPEP.Imported.CompositeCompletion.Inconsistent.no_linear_solution :
+  ¬∃ x, IsSolutionQ Imported.CompositeCompletion.Inconsistent.coefficientSystemQ x
+LeanPEP.Imported.CompositeCompletion.changed_seed_within_policy :
+  RationalReconstructionAudit.checkChangesQ Imported.CompositeCompletion.PGOne.policyQ
+      Imported.CompositeCompletion.PGOne.rawUpperQ Imported.CompositeCompletion.changedSeedQ =
+    true
+LeanPEP.Imported.CompositeCompletion.changed_seed_fixed_rejected :
+  checkFixedTargetsQ Imported.CompositeCompletion.changedSeedQ Imported.CompositeCompletion.PGOne.completedUpperQ =
+    false
+LeanPEP.ActualFunction.ProximalGradientCompletionAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (policy : RationalReconstructionAudit.PolicyQ)
+  (raw seed completed : UpperCertQ s.model) (hc : checkCompletedQ s t policy raw seed completed = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑completed.bound
+LeanPEP.ActualFunction.ProximalGradientCompletionAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (policy : RationalReconstructionAudit.PolicyQ)
+  (raw seed completed : UpperCertQ s.model) (hc : checkCompletedQ s t policy raw seed completed = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexAnalytic L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑completed.bound
+LeanPEP.ActualFunction.ProximalGradientCompletionAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.GramPEP.RationalLinearSystem.obstruction_not_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.GramPEP.RationalLinearSystem.checked_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCompletion.residual_preserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCompletion.completion_within_raw_policy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCompletion.checked_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCompletion.Inconsistent.no_linear_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCompletion.PGThree.completed_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCompletionAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

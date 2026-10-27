@@ -1,0 +1,89 @@
+LeanPEP.Profiles.Momentum.ScheduleQ : Type
+LeanPEP.Profiles.Momentum.coefficientStateQ (s : ScheduleQ) : ℕ → (ℕ → ℚ) × (ℕ → ℚ)
+LeanPEP.Profiles.Momentum.stateCoeffQ_succ (s : ScheduleQ) (k j : ℕ) :
+  stateCoeffQ s (k + 1) j = queryCoeffQ s k j + if j = k then s.step k else 0
+LeanPEP.Profiles.Momentum.queryCoeffQ_succ (s : ScheduleQ) (k j : ℕ) :
+  queryCoeffQ s (k + 1) j = (1 + s.momentum k) * stateCoeffQ s (k + 1) j - s.momentum k * stateCoeffQ s k j
+LeanPEP.Profiles.Momentum.coefficientStateQ_causal (s : ScheduleQ) (k j : ℕ) :
+  k ≤ j → stateCoeffQ s k j = 0 ∧ queryCoeffQ s k j = 0
+LeanPEP.Profiles.Momentum.stateAffineQ_succ {N : ℕ} (s : ScheduleQ) (k : Fin (N + 1)) :
+  stateAffineQ N s (↑k + 1) =
+    (queryAffineQ N s ↑k).sub
+      (LeanPEP.Toy.FiniteGD.GradAffineQ.scale (s.step ↑k) (LeanPEP.Toy.FiniteGD.GradAffineQ.basis k))
+LeanPEP.Profiles.Momentum.queryAffineQ_succ (N : ℕ) (s : ScheduleQ) (k : ℕ) :
+  queryAffineQ N s (k + 1) =
+    (stateAffineQ N s (k + 1)).add
+      (LeanPEP.Toy.FiniteGD.GradAffineQ.scale (s.momentum k) ((stateAffineQ N s (k + 1)).sub (stateAffineQ N s k)))
+LeanPEP.Profiles.Momentum.evalR_stateAffineQ_succ {N : ℕ} (s : ScheduleQ) (k : Fin (N + 1))
+  (d : LeanPEP.Toy.FiniteGD.DataR N) :
+  (stateAffineQ N s (↑k + 1)).evalR d = (queryAffineQ N s ↑k).evalR d - ↑(s.step ↑k) * d.grad k
+LeanPEP.Profiles.Momentum.evalR_queryAffineQ_succ {N : ℕ} (s : ScheduleQ) (k : ℕ) (d : LeanPEP.Toy.FiniteGD.DataR N) :
+  (queryAffineQ N s (k + 1)).evalR d =
+    (stateAffineQ N s (k + 1)).evalR d +
+      ↑(s.momentum k) * ((stateAffineQ N s (k + 1)).evalR d - (stateAffineQ N s k).evalR d)
+LeanPEP.Profiles.Momentum.queryProfileQ (N : ℕ) (s : ScheduleQ) : LeanPEP.Profiles.FixedStepFirstOrder.ProfileQ N
+LeanPEP.Profiles.Momentum.outputProfileQ (N : ℕ) (s : ScheduleQ) : LeanPEP.Profiles.FixedStepFirstOrder.ProfileQ N
+LeanPEP.Profiles.Momentum.outputProfileQ_before_final {N : ℕ} (s : ScheduleQ) (i j : Fin (N + 1)) (hi : ↑i < N) :
+  (outputProfileQ N s).stepCoeff i j = queryCoeffQ s ↑i ↑j
+LeanPEP.Profiles.Momentum.outputProfileQ_final {N : ℕ} (s : ScheduleQ) (j : Fin (N + 1)) :
+  (outputProfileQ N s).stepCoeff (Fin.last N) j = stateCoeffQ s N ↑j
+LeanPEP.Profiles.Momentum.iterateAffineQ_queryProfileQ {N : ℕ} (s : ScheduleQ) (i : Fin (N + 1)) :
+  LeanPEP.Profiles.FixedStepFirstOrder.iterateAffineQ (queryProfileQ N s) i = queryAffineQ N s ↑i
+LeanPEP.Profiles.Momentum.iterateAffineQ_outputProfileQ_before_final {N : ℕ} (s : ScheduleQ) (i : Fin (N + 1))
+  (hi : ↑i < N) : LeanPEP.Profiles.FixedStepFirstOrder.iterateAffineQ (outputProfileQ N s) i = queryAffineQ N s ↑i
+LeanPEP.Profiles.Momentum.iterateAffineQ_outputProfileQ_final {N : ℕ} (s : ScheduleQ) :
+  LeanPEP.Profiles.FixedStepFirstOrder.iterateAffineQ (outputProfileQ N s) (Fin.last N) = stateAffineQ N s N
+LeanPEP.Profiles.Momentum.outputModelQ_position_before_final {N : ℕ} (s : ScheduleQ)
+  (normalization : NormalizationProfileQ) (i : Fin (N + 1)) (hi : ↑i < N) :
+  (outputModelQ N s normalization).position (pointIndex (LeanPEP.Toy.FiniteGD.Point.iter i)) =
+    affineVecQ (queryAffineQ N s ↑i)
+LeanPEP.Profiles.Momentum.outputModelQ_position_final {N : ℕ} (s : ScheduleQ) (normalization : NormalizationProfileQ) :
+  (outputModelQ N s normalization).position (pointIndex (LeanPEP.Toy.FiniteGD.Point.iter (Fin.last N))) =
+    affineVecQ (stateAffineQ N s N)
+LeanPEP.Profiles.Momentum.outputModelQ_causal {N : ℕ} (s : ScheduleQ) (normalization : NormalizationProfileQ)
+  (i j : Fin (N + 1)) (hij : ↑i ≤ ↑j) :
+  (outputModelQ N s normalization).position (pointIndex (LeanPEP.Toy.FiniteGD.Point.iter i)) (gradientBasisIndex j) = 0
+LeanPEP.Profiles.Momentum.outputModelQ_terminal_gradient_unused {N : ℕ} (s : ScheduleQ)
+  (normalization : NormalizationProfileQ) (i : Fin (N + 1)) :
+  (outputModelQ N s normalization).position (pointIndex (LeanPEP.Toy.FiniteGD.Point.iter i))
+      (gradientBasisIndex (Fin.last N)) =
+    0
+LeanPEP.Profiles.Momentum.outputObjectiveQ_evalR {N : ℕ} (s : ScheduleQ) (normalization : NormalizationProfileQ)
+  (d : DataR (Fin (N + 2)) (N + 2)) :
+  (outputObjectiveQ N s normalization).evalR d =
+    d.value (pointIndex (LeanPEP.Toy.FiniteGD.Point.iter (Fin.last N))) -
+      d.value (pointIndex LeanPEP.Toy.FiniteGD.Point.star)
+LeanPEP.Profiles.NesterovPilot.nesterovScheduleQ : ScheduleQ
+LeanPEP.Profiles.NesterovPilot.nesterovModelQ (N : ℕ) : ModelQ (N + 2) (N + 2)
+LeanPEP.Profiles.NesterovPilot.nesterovObjectiveQ (N : ℕ) : LinearExprQ (N + 2) (N + 2)
+LeanPEP.Profiles.NesterovPilot.pilot_positions :
+  pilotModelQ.position =
+    ![![0, 0, 0, 0, 0, 0], ![1, 0, 0, 0, 0, 0], ![1, -1, 0, 0, 0, 0], ![1, -1, -(5 / 4), 0, 0, 0],
+      ![1, -1, -(27 / 20), -(7 / 5), 0, 0], ![1, -1, -(27 / 20), -(7 / 5), -1, 0]]
+LeanPEP.Profiles.NesterovPilot.pilot_historical_gradient_mix :
+  pilotModelQ.position 4 - pilotModelQ.position 3 = ![0, 0, -(1 / 10), -(7 / 5), 0, 0]
+LeanPEP.Profiles.NesterovPilot.pilot_terminal_state_not_query :
+  stateCoeffQ nesterovScheduleQ 4 3 ≠ queryCoeffQ nesterovScheduleQ 4 3
+LeanPEP.Profiles.NesterovPilot.pilotUpperCertQ_check : checkUpperCertQ pilotUpperCertQ = true
+LeanPEP.Profiles.NesterovPilot.pilotUpperCertQ_valid : UpperCertValidQ pilotUpperCertQ
+LeanPEP.Profiles.NesterovPilot.pilot_certificate_identity :
+  certificateRhsExprQ pilotUpperCertQ = upperTargetExprQ (1 / 21) pilotObjectiveQ
+LeanPEP.Profiles.NesterovPilot.pilot_upper (d : DataR (Fin 6) 6) (hrealizes : RealizesModelQ pilotModelQ d)
+  (hcore : CoreFeasible d) (hassumptions : AssumptionsFeasibleR pilotModelQ d) : pilotObjectiveQ.evalR d ≤ 1 / 21
+LeanPEP.Profiles.NesterovPilot.pilotPrimalQ_psd_check : checkPSDFactorQ pilotPrimalQ.gram pilotPrimalFactorQ = true
+LeanPEP.Profiles.NesterovPilot.pilotPrimalQ_interpolation_check : checkInterpolationFeasibleQ pilotPrimalQ = true
+LeanPEP.Profiles.NesterovPilot.pilotPrimalQ_assumptions_check :
+  checkAssumptionsFeasibleQ pilotModelQ pilotPrimalQ = true
+LeanPEP.Profiles.NesterovPilot.pilotPrimalQ_value : pilotObjectiveQ.evalQ pilotPrimalQ = 1 / 21
+LeanPEP.Profiles.NesterovPilot.pilotPrimalQ_feasible_real :
+  RealizesModelQ pilotModelQ (castDataQ pilotPrimalQ) ∧
+    CoreFeasible (castDataQ pilotPrimalQ) ∧ AssumptionsFeasibleR pilotModelQ (castDataQ pilotPrimalQ)
+LeanPEP.Profiles.NesterovPilot.pilotPrimalQ_value_real : pilotObjectiveQ.evalR (castDataQ pilotPrimalQ) = 1 / 21
+LeanPEP.Profiles.NesterovPilot.pilot_finite_tight : IsGreatest pilotFiniteValues (1 / 21)
+LeanPEP.Profiles.NesterovPilot.wrongBoundCertQ_rejected : checkUpperCertQ wrongBoundCertQ = false
+LeanPEP.Profiles.NesterovPilot.wrongObjectiveCertQ_rejected : checkUpperCertQ wrongObjectiveCertQ = false
+LeanPEP.Profiles.NesterovPilot.negativeInterpCertQ_rejected : checkUpperCertQ negativeInterpCertQ = false
+LeanPEP.Profiles.NesterovPilot.missingDualFactorsCertQ_rejected : checkUpperCertQ missingDualFactorsCertQ = false
+'LeanPEP.Profiles.Momentum.coefficientStateQ_causal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Profiles.NesterovPilot.pilotUpperCertQ_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Profiles.NesterovPilot.pilot_finite_tight' depends on axioms: [propext, Classical.choice, Quot.sound]

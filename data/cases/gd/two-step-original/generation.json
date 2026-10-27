@@ -1,0 +1,756 @@
+{
+  "free_indices": [
+    2,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "generation_rule": "gd_two_source_affine_grid_v1",
+  "grid_seed": [
+    {
+      "den": 499999,
+      "num": 50000
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 499999,
+      "num": 50000
+    },
+    {
+      "den": 499999,
+      "num": 73411
+    },
+    {
+      "den": 499999,
+      "num": 170892
+    },
+    {
+      "den": 499999,
+      "num": 255696
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499999,
+      "num": 121603
+    },
+    {
+      "den": 499999,
+      "num": 106670
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499999,
+      "num": 103369
+    },
+    {
+      "den": 499999,
+      "num": 298052
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499999,
+      "num": 51493
+    },
+    {
+      "den": 499999,
+      "num": 108926
+    }
+  ],
+  "known_rate_used": false,
+  "matrix": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ]
+  ],
+  "max_trials": 128,
+  "pivot_indices": [
+    0,
+    1,
+    3,
+    4,
+    5
+  ],
+  "raw_seed": [
+    {
+      "den": 20000000000000000,
+      "num": 2000000000658527
+    },
+    {
+      "den": 10000000000000000,
+      "num": 10000000000587503
+    },
+    {
+      "den": 20000000000000000,
+      "num": 2000000000658527
+    },
+    {
+      "den": 12500000000000000,
+      "num": 1835272024779281
+    },
+    {
+      "den": 100000000000000000,
+      "num": 34178462515750113
+    },
+    {
+      "den": 10000000000000000,
+      "num": 5113936133283881
+    },
+    {
+      "den": 100000000000000000000000000,
+      "num": 11022823255104693
+    },
+    {
+      "den": 50000000000000000,
+      "num": 12160299443195609
+    },
+    {
+      "den": 12500000000000000,
+      "num": 2666755604681547
+    },
+    {
+      "den": 10000000000000000000000000,
+      "num": 1386919038652657
+    },
+    {
+      "den": 12500000000000000,
+      "num": 2584233334547853
+    },
+    {
+      "den": 10000000000000000,
+      "num": 5961046531422157
+    },
+    {
+      "den": 1000000000000000000000000,
+      "num": 219323695213271
+    },
+    {
+      "den": 100000000000000000,
+      "num": 10298600860245913
+    },
+    {
+      "den": 12500000000000000,
+      "num": 2723158825291357
+    }
+  ],
+  "residual_recomputed": true,
+  "rhs": [
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 1
+    }
+  ],
+  "solution": [
+    {
+      "den": 499999,
+      "num": 50000
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 499999,
+      "num": 50000
+    },
+    {
+      "den": 499999,
+      "num": 73411
+    },
+    {
+      "den": 499999,
+      "num": 170892
+    },
+    {
+      "den": 499999,
+      "num": 255696
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499999,
+      "num": 121603
+    },
+    {
+      "den": 499999,
+      "num": 106670
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499999,
+      "num": 103369
+    },
+    {
+      "den": 499999,
+      "num": 298052
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499999,
+      "num": 51493
+    },
+    {
+      "den": 499999,
+      "num": 108926
+    }
+  ],
+  "trial_count": 2,
+  "trials": [
+    {
+      "denominator": 500000,
+      "nonnegative": true,
+      "policy": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499999,
+      "nonnegative": true,
+      "policy": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": true,
+        "interpolation_references": true,
+        "policy_valid": true
+      },
+      "psd": {
+        "dimension": 4,
+        "factor_certificate": {
+          "factors": [
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 100000,
+                  "num": -73411
+                },
+                {
+                  "den": 25000,
+                  "num": -42723
+                },
+                {
+                  "den": 6250,
+                  "num": -15981
+                }
+              ],
+              "weight": {
+                "den": 499999,
+                "num": 50000
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 9293025079,
+                  "num": -10942352612
+                },
+                {
+                  "den": 9293025079,
+                  "num": 1649400944
+                }
+              ],
+              "weight": {
+                "den": 99999800000,
+                "num": 9293025079
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 762516929282561,
+                  "num": -762504972319114
+                }
+              ],
+              "weight": {
+                "den": 4646503246474921,
+                "num": 762516929282561
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                }
+              ],
+              "weight": {
+                "den": 762515404248702434878,
+                "num": 3812541830192365
+              }
+            }
+          ]
+        },
+        "factor_count": 4,
+        "format": "leanpep-psd-synthesis-v1",
+        "lean_status": "not_run_by_this_producer",
+        "matrix_sha256": "dfb968397fab4b50b4c716faced8fb05dd8c818dbcf7897763b30e9a244be2a8",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "producer_version": "v0.13D1",
+        "python_exact_recheck": true,
+        "reason": "exact factor identity",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "status": "psd"
+      }
+    }
+  ]
+}

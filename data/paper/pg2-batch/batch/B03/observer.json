@@ -1,0 +1,621 @@
+{
+  "stage": "candidate_returned",
+  "wall_seconds": 3.3714844589994755,
+  "trial_count": 29,
+  "trials": [
+    {
+      "denominator": 500000,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499999,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499998,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499997,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499996,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499995,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499994,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499993,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499992,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499991,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499990,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499989,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499988,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499987,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499986,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499985,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499984,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499983,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499982,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499981,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499980,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499979,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499978,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499977,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499976,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499975,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499974,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499973,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499972,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": true,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true,
+      "psd": {
+        "format": "leanpep-psd-synthesis-v1",
+        "producer_version": "v0.13D1",
+        "matrix_sha256": "613871e41e6a86e22644960b181c8fd6c6800aee68d436efc4759dc518d8db4f",
+        "dimension": 8,
+        "status": "psd",
+        "reason": "exact factor identity",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "python_exact_recheck": true,
+        "lean_status": "not_run_by_this_producer",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "factor_count": 6,
+        "factor_certificate": {
+          "factors": [
+            {
+              "weight": {
+                "num": 62497,
+                "den": 499972
+              },
+              "vector": [
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -40,
+                  "den": 62497
+                },
+                {
+                  "num": -1,
+                  "den": 1
+                },
+                {
+                  "num": 85551,
+                  "den": 124994
+                },
+                {
+                  "num": 69975,
+                  "den": 62497
+                },
+                {
+                  "num": 164849,
+                  "den": 124994
+                },
+                {
+                  "num": 180011,
+                  "den": 62497
+                },
+                {
+                  "num": 124826,
+                  "den": 62497
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 7814186601,
+                "den": 15623375042
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": -281487293,
+                  "den": 1645091916
+                },
+                {
+                  "num": 1785683,
+                  "den": 31256746404
+                },
+                {
+                  "num": -5149893155,
+                  "den": 15628373202
+                },
+                {
+                  "num": 4029497,
+                  "den": 10418915468
+                },
+                {
+                  "num": -820780387,
+                  "den": 1645091916
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 161062193371895,
+                "den": 1644999790852704
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -21275844929017,
+                  "den": 32212438674379
+                },
+                {
+                  "num": -139851974059004,
+                  "den": 161062193371895
+                },
+                {
+                  "num": 106332706633743,
+                  "den": 161062193371895
+                },
+                {
+                  "num": -21256737324233,
+                  "den": 161062193371895
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 8957366331257370019,
+                "den": 111273101959718447408
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -4918472587260395941,
+                  "den": 8957366331257370019
+                },
+                {
+                  "num": -98592490958510020501,
+                  "den": 98531029643831070209
+                },
+                {
+                  "num": 54041737145185405059,
+                  "den": 98531029643831070209
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 4110066192941346391048187,
+                "den": 22392161796857049015697340
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -1762252264330838705039,
+                  "den": 4110066192941346391048187
+                },
+                {
+                  "num": -4111828445205677229753226,
+                  "den": 4110066192941346391048187
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 89450010625305502552702756,
+                "den": 5651024540197494804019146414601
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "original_upper_accepted": true
+    }
+  ],
+  "returned_candidate": true
+}

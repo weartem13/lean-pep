@@ -1,0 +1,127 @@
+LeanPEP.GramPEP.PerformanceLift.substitute_embed {p m : ℕ} (o e : LinearExprQ p m) : substituteQ o (embedExprQ e) = e
+LeanPEP.GramPEP.PerformanceLift.substitute_tau {p m : ℕ} (o : LinearExprQ p m) : substituteQ o (tauExprQ p m) = o
+LeanPEP.GramPEP.PerformanceLift.substitute_add {p m : ℕ} (o : LinearExprQ p m) (e f : LinearExprQ (p + 1) m) :
+  substituteQ o (e.add f) = (substituteQ o e).add (substituteQ o f)
+LeanPEP.GramPEP.PerformanceLift.substitute_scale {p m : ℕ} (o : LinearExprQ p m) (a : ℚ) (e : LinearExprQ (p + 1) m) :
+  substituteQ o (LinearExprQ.scale a e) = LinearExprQ.scale a (substituteQ o e)
+LeanPEP.GramPEP.PerformanceLift.substitute_link {p m : ℕ} (o : LinearExprQ p m) :
+  substituteQ o (linkExprQ o) = LinearExprQ.zero p m
+LeanPEP.GramPEP.PerformanceLift.eval_embed {p m : ℕ} (e : LinearExprQ p m) (d : DataR (Fin p) m) (t : ℝ) :
+  (embedExprQ e).evalR (extendDataR d t) = e.evalR d
+LeanPEP.GramPEP.PerformanceLift.eval_tau {p m : ℕ} (d : DataR (Fin p) m) (t : ℝ) :
+  (tauExprQ p m).evalR (extendDataR d t) = t
+LeanPEP.GramPEP.PerformanceLift.eval_substitute {p m : ℕ} (o : LinearExprQ p m) (e : LinearExprQ (p + 1) m)
+  (d : DataR (Fin p) m) : (substituteQ o e).evalR d = e.evalR (extendDataR d (o.evalR d))
+LeanPEP.GramPEP.PerformanceLift.eval_link {p m : ℕ} (o : LinearExprQ p m) (d : DataR (Fin p) m) (t : ℝ) :
+  (linkExprQ o).evalR (extendDataR d t) = o.evalR d - t
+LeanPEP.Adapters.ProximalGradientPerformance.checkLiftQ_eq_true_iff {n : ℕ} (s : SourceQ n) :
+  checkLiftQ s = true ↔
+    0 < s.performanceRule.scale ∧
+      (∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n + 1)),
+          s.rows i = expectedRowsQ s.base s.performanceRule i) ∧
+        s.objective =
+          tauExprQ (Adapters.ProximalGradientOrdering.valueCount n) (Adapters.ProximalGradientOrdering.basisCount n)
+LeanPEP.Adapters.ProximalGradientPerformance.checkSourceQ_eq_true_iff {n : ℕ} (s : SourceQ n) :
+  checkSourceQ s = true ↔ Adapters.ProximalGradientRows.checkSourceQ s.base = true ∧ checkLiftQ s = true
+LeanPEP.Adapters.ProximalGradientPerformance.rows_feasible_iff {n : ℕ} (s : SourceQ n) (hs : checkLiftQ s = true)
+  (d : DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n)) (Adapters.ProximalGradientOrdering.basisCount n))
+  (t : ℝ) :
+  (∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n + 1)), 0 ≤ (orientedRowQ s i).evalR (extendDataR d t)) ↔
+    (∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n)),
+        RowNormalization.HoldsR (s.base.rules i).sense (s.base.snapshot.constraints i) d) ∧
+      t ≤ s.base.snapshot.objective.evalR d
+LeanPEP.Adapters.ProximalGradientPerformance.finite_upper_equivalence {n : ℕ} (s : SourceQ n) (hs : checkLiftQ s = true)
+  (B : ℝ) :
+  (∀
+      (d :
+        DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n)) (Adapters.ProximalGradientOrdering.basisCount n)),
+      IsGramPosSemidef d.gram →
+        (∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n)),
+            RowNormalization.HoldsR (s.base.rules i).sense (s.base.snapshot.constraints i) d) →
+          s.base.snapshot.objective.evalR d ≤ B) ↔
+    ∀
+      (d :
+        DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n)) (Adapters.ProximalGradientOrdering.basisCount n))
+      (t : ℝ),
+      IsGramPosSemidef d.gram →
+        (∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n + 1)),
+            0 ≤ (orientedRowQ s i).evalR (extendDataR d t)) →
+          t ≤ B
+LeanPEP.Adapters.ProximalGradientPerformance.assumption_sum_preserved {n : ℕ} (s : SourceQ n) (hs : checkLiftQ s = true)
+  (ts : List (AssumptionTermQ s.model)) :
+  substituteQ s.base.snapshot.objective (assumptionExprSumQ s.model ts) =
+    assumptionExprSumQ s.base.model (eliminateTermsQ s ts)
+LeanPEP.Adapters.ProximalGradientPerformance.certificate_rhs_preserved {n : ℕ} (s : SourceQ n)
+  (hs : checkLiftQ s = true) (c : UpperCertQ s.model) (hi : c.interpTerms = []) :
+  substituteQ s.base.snapshot.objective (certificateRhsExprQ c) = certificateRhsExprQ (eliminatedUpperQ s c)
+LeanPEP.Adapters.ProximalGradientPerformance.eliminatedUpper_check {n : ℕ} (s : SourceQ n) (hs : checkLiftQ s = true)
+  (c : UpperCertQ s.model) (hi : c.interpTerms = []) (hc : checkUpperCertQ c = true) :
+  checkUpperCertQ (eliminatedUpperQ s c) = true
+LeanPEP.Adapters.ProximalGradientPerformance.performance_mass_eq_one {n : ℕ} (s : SourceQ n) (hs : checkLiftQ s = true)
+  (c : UpperCertQ s.model) (hi : c.interpTerms = [])
+  (ho :
+    c.objective =
+      tauExprQ (Adapters.ProximalGradientOrdering.valueCount n) (Adapters.ProximalGradientOrdering.basisCount n))
+  (hc : checkUpperCertQ c = true) : performanceMassQ s c.assumptionTerms = 1
+LeanPEP.Adapters.ProximalGradientPerformance.checked_performance_mass {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) : performanceMassQ s c.assumptionTerms = 1
+LeanPEP.Adapters.ProximalGradientPerformance.checked_certificate {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = c.bound
+LeanPEP.Imported.CompositePerformance.PGOne.bound_check :
+  checkBoundQ Imported.CompositePerformance.PGOne.sourceQ Imported.CompositePerformance.PGOne.upperQ = true
+LeanPEP.Imported.CompositePerformance.PGTwo.bound_check :
+  checkBoundQ Imported.CompositePerformance.PGTwo.sourceQ Imported.CompositePerformance.PGTwo.upperQ = true
+LeanPEP.Imported.CompositePerformance.PGThree.bound_check :
+  checkBoundQ Imported.CompositePerformance.PGThree.sourceQ Imported.CompositePerformance.PGThree.upperQ = true
+LeanPEP.Imported.CompositePerformance.PGUnit.bound_check :
+  checkBoundQ Imported.CompositePerformance.PGUnit.sourceQ Imported.CompositePerformance.PGUnit.upperQ = true
+LeanPEP.Imported.CompositePerformance.hidden_tau_source_rejected :
+  checkSourceQ Imported.CompositePerformance.hiddenTauQ = false
+LeanPEP.Imported.CompositePerformance.wrong_performance_eliminated_passes :
+  Adapters.ProximalGradientRows.checkBoundQ Imported.CompositePerformance.PGOne.sourceQ.base
+      (eliminatedUpperQ Imported.CompositePerformance.PGOne.sourceQ
+        Imported.CompositePerformance.wrongPerformanceWeightQ) =
+    true
+LeanPEP.Imported.CompositePerformance.wrong_performance_joint_rejected :
+  checkBoundQ Imported.CompositePerformance.PGOne.sourceQ Imported.CompositePerformance.wrongPerformanceWeightQ = false
+LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) (hc : checkBoundQ s c = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+tests/lean/smoke/V13D6SmokeTest.lean:76:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+tests/lean/smoke/V13D6SmokeTest.lean:81:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.GramPEP.PerformanceLift.eval_substitute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientPerformance.finite_upper_equivalence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientPerformance.eliminatedUpper_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientPerformance.performance_mass_eq_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositePerformance.hidden_tau_source_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositePerformance.wrong_performance_joint_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositePerformance.PGThree.bound_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,40 @@
+LeanPEP.ActualFunction.ParametricGDHilbert.linearCombination.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (a : Fin (N + 1) → ℚ) (grad : Fin (N + 1) → E) : E
+LeanPEP.ActualFunction.ParametricGDHilbert.evalVector.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (a : LeanPEP.Toy.FiniteGD.GradAffineQ N) (u0 : E) (grad : Fin (N + 1) → E) : E
+LeanPEP.ActualFunction.ParametricGDHilbert.evalHilbert.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (p : LeanPEP.Toy.FiniteGD.QuadPolyQ N) (u0 : E) (grad : Fin (N + 1) → E)
+  (value : Fin (N + 1) → ℝ) : ℝ
+LeanPEP.ActualFunction.ParametricGDHilbert.evalHilbert_slackPolyQ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (u0 : E) (grad : Fin (N + 1) → E) (value : Fin (N + 1) → ℝ)
+  (i j : LeanPEP.Toy.FiniteGD.Point N) :
+  LeanPEP.ActualFunction.ParametricGDHilbert.evalHilbert (LeanPEP.Toy.FiniteGD.slackPolyQ i j) u0 grad value =
+    LeanPEP.ActualFunction.ParametricGDHilbert.interpolationSlack u0 grad value i j
+LeanPEP.ActualFunction.ParametricGDHilbert.upperCertValidQ_sound.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (c : LeanPEP.Toy.FiniteGD.UpperCertQ N) (hc : LeanPEP.Toy.FiniteGD.UpperCertValidQ c)
+  (u0 : E) (grad : Fin (N + 1) → E) (value : Fin (N + 1) → ℝ)
+  (hfeasible : LeanPEP.ActualFunction.ParametricGDHilbert.Feasible u0 grad value) :
+  value c.objective ≤ ↑c.bound * inner ℝ u0 u0
+LeanPEP.ActualFunction.ParametricGDHilbert.gd_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (N : ℕ) (u0 : E) (grad : Fin (N + 1) → E) (value : Fin (N + 1) → ℝ)
+  (hfeasible : LeanPEP.ActualFunction.ParametricGDHilbert.Feasible u0 grad value) :
+  value (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N) ≤
+    ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N) * inner ℝ u0 u0
+LeanPEP.ActualFunction.ParametricGDHilbert.gd_upper_normSq.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (u0 : E) (grad : Fin (N + 1) → E) (value : Fin (N + 1) → ℝ)
+  (hfeasible : LeanPEP.ActualFunction.ParametricGDHilbert.Feasible u0 grad value) :
+  value (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N) ≤
+    ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N) * ‖u0‖ ^ 2
+tests/lean/smoke/V12C1SmokeTest.lean:20:8: warning: Variable name `grad` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+tests/lean/smoke/V12C1SmokeTest.lean:33:8: warning: This simp argument is unused:
+  ParametricGDHilbert.prefixVector
+
+Hint: Omit it from the simp argument list.
+  simp [ParametricGDHilbert.interpolationSlack, ParametricGDHilbert.pointValue,
+          ParametricGDHilbert.pointGradient, ParametricGDHilbert.pointPosition, P̵a̵r̵a̵m̵e̵t̵r̵i̵c̵G̵D̵H̵i̵l̵b̵e̵r̵t̵.̵p̵r̵e̵f̵i̵x̵V̵e̵c̵t̵o̵r̵,̵ ̵grad, value]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

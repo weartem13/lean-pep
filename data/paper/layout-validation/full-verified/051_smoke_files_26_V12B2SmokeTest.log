@@ -1,0 +1,22 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCenterQ (N : ℕ) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ (N : ℕ) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective (N : ℕ) : Fin (N + 1)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ (N : ℕ) (k : Fin N) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ (N : ℕ) (k : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCenteredGradQ (N : ℕ) (k : Fin (N + 1)) : LeanPEP.Toy.FiniteGD.GradAffineQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCenteredPrefixQ (N : ℕ) (k : Fin (N + 1)) : LeanPEP.Toy.FiniteGD.GradAffineQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ (N : ℕ) (k : Fin (N + 1)) : LeanPEP.Toy.FiniteGD.GradAffineQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareWeightQ (N : ℕ) (k : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdInterpTermsQ (N : ℕ) : List (LeanPEP.Toy.FiniteGD.InterpTermQ N)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareTermsQ (N : ℕ) : List (LeanPEP.Toy.FiniteGD.SquareTermQ N)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ (N : ℕ) : LeanPEP.Toy.FiniteGD.UpperCertQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gd_upper_of_check (N : ℕ)
+  (hcheck : LeanPEP.Toy.FiniteGD.checkUpperCertQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N) = true)
+  (d : LeanPEP.Toy.FiniteGD.DataR N) (hfeasible : LeanPEP.Toy.FiniteGD.Feasible d) :
+  d.value (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N) ≤ ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ_check_0 :
+  LeanPEP.Toy.FiniteGD.checkUpperCertQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ 0) = true
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ_check_4 :
+  LeanPEP.Toy.FiniteGD.checkUpperCertQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ 4) = true
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ_check_8 :
+  LeanPEP.Toy.FiniteGD.checkUpperCertQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ 8) = true

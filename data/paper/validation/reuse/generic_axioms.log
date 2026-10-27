@@ -1,0 +1,129 @@
+'LeanPEP.ActualFunction.ProximalGradientSourceAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSourceAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSourceAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOrderingAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOrderingAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOrderingAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientRowAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientRowAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientRowAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientPerformanceAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSparseAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSparseAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSparseAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.raw_upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.finite_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.raw_upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.SmoothScaling.scaledPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.SmoothScaling.normalizedFunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.SmoothScaling.normalizedGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.SmoothScaling.normalizedFirstOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.linearCombination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ParametricGDHilbert.evalVector_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.IsSmoothProxRun' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.isSmoothProxRun_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.isSmoothProxRun_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.IsSmoothProxRun.restrict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.normalized_forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.isSmoothProxRun_iff_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.normalized_stationarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.normalizedPoint_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.normalized_objective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.stationary_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.certificate_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientScaling.certificate_upper_of_minimizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

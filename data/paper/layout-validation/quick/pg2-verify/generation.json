@@ -1,0 +1,7 @@
+{
+  "consumer_rule": "pg2_source_affine_grid_v1_64_trials",
+  "mode": "check supplied exact candidate; no solver",
+  "peak_rss_bytes": 41025536,
+  "resource_scope": "getrusage SELF process high-water mark including imports, before Lean",
+  "wall_seconds": 0.4447217919805553
+}

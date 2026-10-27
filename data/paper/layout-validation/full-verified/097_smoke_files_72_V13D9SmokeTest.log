@@ -1,0 +1,147 @@
+LeanPEP.Adapters.ProximalGradientCapture.checkTraceQ_eq_true_iff {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k) :
+  checkTraceQ s t = true ↔
+    ExactReindexing.checkQ t.values = true ∧
+      (∀ (i : Fin k), moveValuesQ t (t.rows i) = s.rows i) ∧
+        moveValuesQ t t.objective = s.objective ∧
+          (∀ (i : Fin k), (s.rules i).sense = RowNormalization.SenseQ.leZero ∧ (s.rules i).scale = 1) ∧
+            Adapters.ProximalGradientSparse.checkSourceQ s = true
+LeanPEP.Adapters.ProximalGradientCapture.captured_row_eval {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : TraceQ n k) (h : checkTraceQ s t = true) (i : Fin k)
+  (d :
+    DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n + 1)) (Adapters.ProximalGradientOrdering.basisCount n)) :
+  (s.rows i).evalR
+      (ExactReindexing.dataR t.values
+        (ExactReindexing.IndexMapQ.identity (Adapters.ProximalGradientOrdering.basisCount n)) d) =
+    (t.rows i).evalR d
+LeanPEP.Adapters.ProximalGradientCapture.captured_objective_eval {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k) (h : checkTraceQ s t = true)
+  (d :
+    DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n + 1)) (Adapters.ProximalGradientOrdering.basisCount n)) :
+  s.objective.evalR
+      (ExactReindexing.dataR t.values
+        (ExactReindexing.IndexMapQ.identity (Adapters.ProximalGradientOrdering.basisCount n)) d) =
+    t.objective.evalR d
+LeanPEP.Adapters.ProximalGradientCapture.checkRawBindingQ_eq_true_iff {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k) (raw : UpperCertQ s.model) :
+  checkRawBindingQ s t raw = true ↔
+    raw.bound = t.bound ∧
+      raw.objective = moveValuesQ t t.objective ∧
+        raw.interpTerms = [] ∧ orderedWeightsQ raw = traceWeightsQ t ∧ raw.dualMatrix = t.residual
+LeanPEP.Adapters.ProximalGradientCapture.captured_numerics_preserved {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k) (raw : UpperCertQ s.model)
+  (h : checkRawBindingQ s t raw = true) :
+  raw.bound = t.bound ∧ orderedWeightsQ raw = traceWeightsQ t ∧ raw.dualMatrix = t.residual
+LeanPEP.Adapters.ProximalGradientCapture.checkCapturedQ_eq_true_iff {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)
+  (raw reconstructed : UpperCertQ s.model) :
+  checkCapturedQ s t policy raw reconstructed = true ↔
+    checkTraceQ s t = true ∧
+      checkRawBindingQ s t raw = true ∧
+        Adapters.ProximalGradientReconstruction.checkReconstructedQ s policy raw reconstructed = true
+LeanPEP.Adapters.ProximalGradientCapture.checkCapturedRawQ_eq_true_iff {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k) (raw : UpperCertQ s.model) :
+  checkCapturedRawQ s t raw = true ↔
+    checkTraceQ s t = true ∧
+      checkRawBindingQ s t raw = true ∧ Adapters.ProximalGradientReconstruction.checkRawQ s raw = true
+LeanPEP.Adapters.ProximalGradientCapture.reconstructed_check {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : TraceQ n k) (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model)
+  (h : checkCapturedQ s t policy raw reconstructed = true) :
+  Adapters.ProximalGradientReconstruction.checkReconstructedQ s policy raw reconstructed = true
+LeanPEP.Adapters.ProximalGradientCapture.captured_raw_check {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : TraceQ n k) (raw : UpperCertQ s.model) (h : checkCapturedRawQ s t raw = true) :
+  Adapters.ProximalGradientReconstruction.checkRawQ s raw = true
+LeanPEP.Adapters.ProximalGradientCapture.checked_certificate {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : TraceQ n k) (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model)
+  (h : checkCapturedQ s t policy raw reconstructed = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = reconstructed.bound
+LeanPEP.Imported.CompositeCapture.PGOne.trace_check :
+  checkTraceQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.PGOne.traceQ = true
+LeanPEP.Imported.CompositeCapture.PGOne.binding_check :
+  checkRawBindingQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.PGOne.traceQ
+      Imported.CompositeCapture.PGOne.rawUpperQ =
+    true
+LeanPEP.Imported.CompositeCapture.PGOne.raw_check :
+  checkCapturedRawQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.PGOne.traceQ
+      Imported.CompositeCapture.PGOne.rawUpperQ =
+    true
+LeanPEP.Imported.CompositeCapture.PGThree.reconstructed_check :
+  checkCapturedQ Imported.CompositeCapture.PGThree.sourceQ Imported.CompositeCapture.PGThree.traceQ
+      Imported.CompositeCapture.PGThree.policyQ Imported.CompositeCapture.PGThree.rawUpperQ
+      Imported.CompositeCapture.PGThree.reconstructedUpperQ =
+    true
+LeanPEP.Imported.CompositeCapture.PGThree.raw_rejected :
+  checkCapturedRawQ Imported.CompositeCapture.PGThree.sourceQ Imported.CompositeCapture.PGThree.traceQ
+      Imported.CompositeCapture.PGThree.rawUpperQ =
+    false
+LeanPEP.Imported.CompositeCapture.wrong_bound_trace_source_passes :
+  checkTraceQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.wrongBoundTraceQ = true
+LeanPEP.Imported.CompositeCapture.wrong_bound_trace_rejected :
+  checkCapturedQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.wrongBoundTraceQ
+      Imported.CompositeCapture.PGOne.policyQ Imported.CompositeCapture.PGOne.rawUpperQ
+      Imported.CompositeCapture.PGOne.reconstructedUpperQ =
+    false
+LeanPEP.Imported.CompositeCapture.wrong_tau_placement_rejected :
+  checkTraceQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.wrongValuesTraceQ = false
+LeanPEP.Imported.CompositeCapture.extra_zero_old_d8_passes :
+  Adapters.ProximalGradientReconstruction.checkReconstructedQ Imported.CompositeCapture.PGOne.sourceQ
+      Imported.CompositeCapture.PGOne.policyQ Imported.CompositeCapture.extraZeroRawQ
+      Imported.CompositeCapture.extraZeroReconstructedQ =
+    true
+LeanPEP.Imported.CompositeCapture.extra_zero_capture_rejected :
+  checkCapturedQ Imported.CompositeCapture.PGOne.sourceQ Imported.CompositeCapture.PGOne.traceQ
+      Imported.CompositeCapture.PGOne.policyQ Imported.CompositeCapture.extraZeroRawQ
+      Imported.CompositeCapture.extraZeroReconstructedQ =
+    false
+LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k)
+  (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model) (hc : checkCapturedQ s t policy raw reconstructed = true)
+  {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑reconstructed.bound
+LeanPEP.ActualFunction.ProximalGradientCaptureAudit.raw_upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k) (t : TraceQ n k)
+  (raw : UpperCertQ s.model) (hc : checkCapturedRawQ s t raw = true) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E}
+  {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h)
+  (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑raw.bound
+LeanPEP.ActualFunction.ProximalGradientCaptureAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+tests/lean/smoke/V13D9SmokeTest.lean:65:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+tests/lean/smoke/V13D9SmokeTest.lean:70:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.Adapters.ProximalGradientCapture.captured_row_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCapture.captured_objective_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCapture.captured_numerics_preserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCapture.checked_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCapture.wrong_bound_trace_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCapture.extra_zero_capture_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCapture.PGThree.reconstructed_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

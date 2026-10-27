@@ -1,0 +1,168 @@
+LeanPEP.Profiles.ProximalGradient.value_blocks_disjoint {n : ℕ} (i : Fin (n + 3)) (j : Fin (n + 2)) :
+  Profiles.ProximalGradient.smoothValueIndex i ≠ Profiles.ProximalGradient.nonsmoothValueIndex j
+LeanPEP.Profiles.ProximalGradient.smoothValueIndex_injective (n : ℕ) :
+  Function.Injective Profiles.ProximalGradient.smoothValueIndex
+LeanPEP.Profiles.ProximalGradient.nonsmoothValueIndex_injective (n : ℕ) :
+  Function.Injective Profiles.ProximalGradient.nonsmoothValueIndex
+LeanPEP.Profiles.ProximalGradient.valueIndex_covers {n : ℕ} (i : Fin (Profiles.ProximalGradient.valueCount n)) :
+  (∃ j, Profiles.ProximalGradient.smoothValueIndex j = i) ∨ ∃ j, Profiles.ProximalGradient.nonsmoothValueIndex j = i
+LeanPEP.Profiles.ProximalGradient.positionVecQ_succ {n : ℕ} (j : Fin (n + 1)) :
+  Profiles.ProximalGradient.positionVecQ n (↑j + 1) =
+    Profiles.ProximalGradient.positionVecQ n ↑j - Profiles.ProximalGradient.gradientVecQ j.castSucc -
+      Profiles.ProximalGradient.residualVecQ j
+LeanPEP.Profiles.ProximalGradient.positionVecQ_gradient_causal {n : ℕ} (k : ℕ) (i : Fin (n + 2)) (hki : k ≤ ↑i) :
+  Profiles.ProximalGradient.positionVecQ n k (Profiles.ProximalGradient.gradientBasisIndex i) = 0
+LeanPEP.Profiles.ProximalGradient.positionVecQ_residual_causal {n : ℕ} (k : ℕ) (i : Fin (n + 1)) (hki : k ≤ ↑i) :
+  Profiles.ProximalGradient.positionVecQ n k (Profiles.ProximalGradient.residualBasisIndex i) = 0
+LeanPEP.Profiles.ProximalGradient.terminal_gradient_unused (n k : ℕ) (hk : k ≤ n + 1) :
+  Profiles.ProximalGradient.positionVecQ n k (Profiles.ProximalGradient.gradientBasisIndex (Fin.last (n + 1))) = 0
+LeanPEP.Profiles.ProximalGradient.modelQ_constraints (n : ℕ) :
+  (Profiles.ProximalGradient.modelQ n).assumptions =
+    List.flatMap
+          (fun i =>
+            List.map
+              (fun j =>
+                Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.oneSmoothConvex
+                  (Profiles.ProximalGradient.smoothSamplesQ n i) (Profiles.ProximalGradient.smoothSamplesQ n j))
+              (List.finRange (n + 3)))
+          (List.finRange (n + 3)) ++
+        List.flatMap
+          (fun i =>
+            List.map
+              (fun j =>
+                Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.convex
+                  (Profiles.ProximalGradient.nonsmoothSamplesQ n i) (Profiles.ProximalGradient.nonsmoothSamplesQ n j))
+              (List.finRange (n + 2)))
+          (List.finRange (n + 2)) ++
+      [Profiles.ProximalGradient.radiusExprQ n]
+LeanPEP.Profiles.ProximalGradient.modelQ_constraint_count (n : ℕ) :
+  (Profiles.ProximalGradient.modelQ n).assumptions.length = (n + 3) ^ 2 + (n + 2) ^ 2 + 1
+LeanPEP.Profiles.ProximalGradient.certificate_upper {n : ℕ} (c : UpperCertQ (Profiles.ProximalGradient.modelQ n))
+  (hcheck : checkUpperCertQ c = true) (hempty : c.interpTerms = [])
+  (hobjective : c.objective = Profiles.ProximalGradient.objectiveQ n)
+  (d : DataR (Fin (Profiles.ProximalGradient.valueCount n)) (Profiles.ProximalGradient.basisCount n))
+  (hpsd : IsGramPosSemidef d.gram) (hc : AssumptionsFeasibleR (Profiles.ProximalGradient.modelQ n) d) :
+  (Profiles.ProximalGradient.objectiveQ n).evalR d ≤ ↑c.bound
+LeanPEP.Profiles.ProximalGradient.smoothSamplesQ_zero :
+  Profiles.ProximalGradient.smoothSamplesQ 0 = Profiles.ProximalGradientOneStep.smoothSamplesQ
+LeanPEP.Profiles.ProximalGradient.nonsmoothSamplesQ_zero :
+  Profiles.ProximalGradient.nonsmoothSamplesQ 0 = Profiles.ProximalGradientOneStep.nonsmoothSamplesQ
+LeanPEP.Profiles.ProximalGradient.modelQ_zero :
+  Profiles.ProximalGradient.modelQ 0 = Profiles.ProximalGradientOneStep.modelQ
+LeanPEP.Profiles.ProximalGradient.objectiveQ_zero :
+  Profiles.ProximalGradient.objectiveQ 0 = Profiles.ProximalGradientOneStep.objectiveQ
+LeanPEP.Profiles.ProximalGradient.oneStep_exact_certificate :
+  ∃ c,
+    c.bound = 1 / 4 ∧
+      c.objective = Profiles.ProximalGradient.objectiveQ 0 ∧ c.interpTerms = [] ∧ checkUpperCertQ c = true
+LeanPEP.Profiles.ProximalGradient.oneStep_finite_tight : IsGreatest (Profiles.ProximalGradient.finiteValues 0) (1 / 4)
+LeanPEP.ActualFunction.ProximalGradient.IsProxRun.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (N : ℕ) (h : E → ℝ) (g : E → E) (x : ℕ → E) : Prop
+LeanPEP.ActualFunction.ProximalGradient.IsResidualRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (h : E → ℝ) (g : E → E) (x s : ℕ → E) : Prop
+LeanPEP.ActualFunction.ProximalGradient.IsProxRun.restrict.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {M N : ℕ} {h : E → ℝ} {g : E → E} {x : ℕ → E}
+  (hrun : ActualFunction.ProximalGradient.IsProxRun N h g x) (hmn : M ≤ N) :
+  ActualFunction.ProximalGradient.IsProxRun M h g x
+LeanPEP.ActualFunction.ProximalGradient.IsProxRun.toResidualRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {h : E → ℝ} {g : E → E} {x : ℕ → E}
+  (hrun : ActualFunction.ProximalGradient.IsProxRun N h g x) (hh : ConvexOn ℝ Set.univ h) :
+  ActualFunction.ProximalGradient.IsResidualRun N h g x (ActualFunction.ProximalGradient.residual g x)
+LeanPEP.ActualFunction.ProximalGradient.IsResidualRun.toProxRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {h : E → ℝ} {g : E → E} {x s : ℕ → E}
+  (hrun : ActualFunction.ProximalGradient.IsResidualRun N h g x s) : ActualFunction.ProximalGradient.IsProxRun N h g x
+LeanPEP.ActualFunction.ProximalGradient.IsResidualRun.residual_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {h : E → ℝ} {g : E → E} {x s : ℕ → E}
+  (hrun : ActualFunction.ProximalGradient.IsResidualRun N h g x s) (k : ℕ) (hk : k < N) :
+  s k = ActualFunction.ProximalGradient.residual g x k
+LeanPEP.ActualFunction.ProximalGradient.isProxRun_iff_residual.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {h : E → ℝ} {g : E → E} {x : ℕ → E} (hh : ConvexOn ℝ Set.univ h) :
+  ActualFunction.ProximalGradient.IsProxRun N h g x ↔
+    ActualFunction.ProximalGradient.IsResidualRun N h g x (ActualFunction.ProximalGradient.residual g x)
+LeanPEP.ActualFunction.ProximalGradient.position_realization.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} {g : E → E} {x s : ℕ → E} (xStar : E)
+  (hu : ∀ k < n + 1, x (k + 1) = x k - g (x k) - s k) (k : ℕ) (hk : k ≤ n + 1) :
+  ActualFunction.FiniteGram.realize (ActualFunction.ProximalGradient.baseVectors n g xStar x s)
+      (castVecQ (Profiles.ProximalGradient.positionVecQ n k)) =
+    x k - xStar
+LeanPEP.ActualFunction.ProximalGradient.smoothSamples_denote.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (f h : E → ℝ) (g : E → E) (xStar : E) (x s : ℕ → E)
+  (hu : ∀ k < n + 1, x (k + 1) = x k - g (x k) - s k) (i : Fin (n + 3)) :
+  ActualFunction.Composite.SampleDenotes (ActualFunction.ProximalGradient.baseVectors n g xStar x s)
+    (ActualFunction.ProximalGradient.valueSlots n f h xStar x) xStar (Profiles.ProximalGradient.smoothSamplesQ n i)
+    (ActualFunction.ProximalGradient.smoothPoints n xStar x i)
+    (g (ActualFunction.ProximalGradient.smoothPoints n xStar x i))
+    (f (ActualFunction.ProximalGradient.smoothPoints n xStar x i))
+LeanPEP.ActualFunction.ProximalGradient.nonsmoothSamples_denote.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (f h : E → ℝ) (g : E → E) (xStar : E) (x s : ℕ → E)
+  (hu : ∀ k < n + 1, x (k + 1) = x k - g (x k) - s k) (i : Fin (n + 2)) :
+  ActualFunction.Composite.SampleDenotes (ActualFunction.ProximalGradient.baseVectors n g xStar x s)
+    (ActualFunction.ProximalGradient.valueSlots n f h xStar x) xStar (Profiles.ProximalGradient.nonsmoothSamplesQ n i)
+    (ActualFunction.ProximalGradient.nonsmoothPoints n xStar x i)
+    (ActualFunction.ProximalGradient.nonsmoothOracles n (g xStar) s i)
+    (h (ActualFunction.ProximalGradient.nonsmoothPoints n xStar x i))
+LeanPEP.ActualFunction.ProximalGradient.radius_eval.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (n : ℕ) (f h : E → ℝ) (g : E → E) (xStar : E) (x s : ℕ → E) :
+  (Profiles.ProximalGradient.radiusExprQ n).evalR (ActualFunction.ProximalGradient.actualData n f h g xStar x s) =
+    1 - ‖x 0 - xStar‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradient.objective_eval.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (n : ℕ) (f h : E → ℝ) (g : E → E) (xStar : E) (x s : ℕ → E) :
+  (Profiles.ProximalGradient.objectiveQ n).evalR (ActualFunction.ProximalGradient.actualData n f h g xStar x s) =
+    f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar)
+LeanPEP.ActualFunction.ProximalGradient.actualData_constraints.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} {f h : E → ℝ} {g : E → E} {xStar : E} {x s : ℕ → E}
+  (hf : ActualFunction.IsOneSmoothConvexFirstOrder f g) (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsResidualRun (n + 1) h g x s) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  AssumptionsFeasibleR (Profiles.ProximalGradient.modelQ n)
+    (ActualFunction.ProximalGradient.actualData n f h g xStar x s)
+LeanPEP.ActualFunction.ProximalGradient.certificate_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (c : UpperCertQ (Profiles.ProximalGradient.modelQ n))
+  (hcheck : checkUpperCertQ c = true) (hempty : c.interpTerms = [])
+  (hobjective : c.objective = Profiles.ProximalGradient.objectiveQ n) {f h : E → ℝ} {g : E → E} {xStar : E}
+  {x s : ℕ → E} (hf : ActualFunction.IsOneSmoothConvexFirstOrder f g)
+  (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsResidualRun (n + 1) h g x s) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑c.bound
+LeanPEP.ActualFunction.ProximalGradient.certificate_upper_of_prox.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (c : UpperCertQ (Profiles.ProximalGradient.modelQ n))
+  (hcheck : checkUpperCertQ c = true) (hempty : c.interpTerms = [])
+  (hobjective : c.objective = Profiles.ProximalGradient.objectiveQ n) {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsOneSmoothConvexFirstOrder f g) (hh : ConvexOn ℝ Set.univ h)
+  (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsProxRun (n + 1) h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑c.bound
+LeanPEP.ActualFunction.ProximalGradient.certificate_upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n : ℕ} (c : UpperCertQ (Profiles.ProximalGradient.modelQ n))
+  (hcheck : checkUpperCertQ c = true) (hempty : c.interpTerms = [])
+  (hobjective : c.objective = Profiles.ProximalGradient.objectiveQ n) {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsOneSmoothConvexAnalytic f g) (hh : ConvexOn ℝ Set.univ h)
+  (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsProxRun (n + 1) h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑c.bound
+LeanPEP.ActualFunction.ProximalGradient.oneStep_upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsOneSmoothConvexAnalytic f g) (hh : ConvexOn ℝ Set.univ h)
+  (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsProxRun 1 h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  f (x 1) + h (x 1) - (f xStar + h xStar) ≤ 1 / 4
+LeanPEP.ActualFunction.ProximalGradient.oneDimensionalAnalyticValues_zero :
+  ActualFunction.ProximalGradient.oneDimensionalAnalyticValues 0 =
+    ActualFunction.ProximalGradientOneStepWitness.oneDimensionalAnalyticValues
+LeanPEP.ActualFunction.ProximalGradient.oneStep_analytic_tight :
+  IsGreatest (ActualFunction.ProximalGradient.oneDimensionalAnalyticValues 0) (1 / 4)
+'LeanPEP.Profiles.ProximalGradient.positionVecQ_gradient_causal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Profiles.ProximalGradient.modelQ_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradient.position_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradient.certificate_upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradient.oneStep_upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradient.oneStep_analytic_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

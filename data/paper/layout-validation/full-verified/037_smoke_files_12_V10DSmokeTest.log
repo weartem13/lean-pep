@@ -1,0 +1,25 @@
+LeanPEP.GramPEP.LinearExprQ (p m : ℕ) : Type
+LeanPEP.GramPEP.ModelQ (p m : ℕ) : Type
+LeanPEP.GramPEP.RealizesModelQ {p m : ℕ} (model : ModelQ p m) (d : DataR (Fin p) m) : Prop
+LeanPEP.GramPEP.AssumptionsFeasibleR {p m : ℕ} (model : ModelQ p m) (d : DataR (Fin p) m) : Prop
+LeanPEP.GramPEP.UpperCertQ {p m : ℕ} (model : ModelQ p m) : Type
+LeanPEP.GramPEP.checkLinearExprEqQ {p m : ℕ} (a b : LinearExprQ p m) : Bool
+LeanPEP.GramPEP.checkUpperCertQ {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model) : Bool
+LeanPEP.GramPEP.checkUpperCertQ_sound_real {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model)
+  (h : checkUpperCertQ c = true) (d : DataR (Fin p) m) (hrealizes : RealizesModelQ model d) (hcore : CoreFeasible d)
+  (hassumptions : AssumptionsFeasibleR model d) : c.objective.evalR d ≤ ↑c.bound
+LeanPEP.GramPEP.gramPairingR_nonneg_of_valid {m : ℕ} (S : Gram m ℚ) (cert : PSDFactorCertQ m)
+  (hS : PSDFactorValidQ S cert) (G : Gram m ℝ) (hG : IsGramPosSemidef G) : 0 ≤ gramPairingR S G
+LeanPEP.GramPEP.UpperCertificateExamples.upperCertQ_check : checkUpperCertQ upperCertQ = true
+LeanPEP.GramPEP.UpperCertificateExamples.upper_bound (d : DataR (Fin 2) 2) (hrealizes : RealizesModelQ twoPointModelQ d)
+  (hcore : CoreFeasible d) (hassumptions : AssumptionsFeasibleR twoPointModelQ d) : objectiveQ.evalR d ≤ 1
+LeanPEP.GramPEP.UpperCertificateExamples.oneStepUpperCertQ_check : checkUpperCertQ oneStepUpperCertQ = true
+LeanPEP.GramPEP.UpperCertificateExamples.oneStep_upper (d : DataR (Fin 3) 3)
+  (hrealizes : RealizesModelQ oneStepModelQ d) (hcore : CoreFeasible d)
+  (hassumptions : AssumptionsFeasibleR oneStepModelQ d) : d.value 2 - d.value 0 ≤ 1 / 6
+true
+true
+false
+false
+false
+false

@@ -1,0 +1,66 @@
+{
+  "capture_sha256": "17d3897805b86c80d51fcaca18cb10400820041ae3968d5fdbfad6a3e17485e2",
+  "completion_accepted": false,
+  "failure_scope": "No solution to this fixed-target coefficient system. This is not a proof that the source PEP is infeasible or that no other PSD residual works.",
+  "format": "leanpep-fixed-residual-completion-v1",
+  "free_columns": [],
+  "free_seed_values_preserved": true,
+  "guaranteed_reconstruction_claimed": false,
+  "independent_result_recheck": true,
+  "lean_checked": false,
+  "linear_status": "inconsistent",
+  "live_capture_performed": false,
+  "nearest_solution_claimed": false,
+  "pivot_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "producer_authenticated": false,
+  "producer_claim": {
+    "mode": "simulated_regression",
+    "name": "PEPit",
+    "solver": "not_run",
+    "status": "not_run",
+    "version": "0.5.1",
+    "wrapper": "not_run"
+  },
+  "raw_accepted": false,
+  "raw_binding_checks": {
+    "bound": true,
+    "interpolation_empty": true,
+    "objective": true,
+    "ordered_weights": true,
+    "residual": true
+  },
+  "residual_recomputed": false,
+  "scope": "exact linear completion of bound and existing weights at fixed objective/residual",
+  "seed_accepted": false,
+  "seed_policy_checks": {
+    "assumption_references": true,
+    "coefficient_lengths": true,
+    "denominator_bounds": true,
+    "error_bounds": true,
+    "interpolation_references": true,
+    "policy_valid": true
+  },
+  "source_coefficients_changed": false,
+  "source_sha256": "c3f52091aac928008c5abb980431fbe793b84dcffb9fa4a605ce910cef181c65",
+  "system_columns": 11,
+  "system_rows": 43,
+  "trace_checks": {
+    "objective": true,
+    "permutation": true,
+    "rows": true,
+    "rules": true,
+    "source": true
+  }
+}

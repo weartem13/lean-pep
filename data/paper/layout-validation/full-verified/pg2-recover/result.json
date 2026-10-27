@@ -1,0 +1,13 @@
+{
+  "actual_upper_verified": true,
+  "bound": "62500/499999",
+  "execution_status": "passed",
+  "inputs_unchanged": true,
+  "live_capture_performed": false,
+  "mode": "recover",
+  "pure_closure_status": "passed_content_review",
+  "residual_recomputed": true,
+  "rule": "pg2_source_affine_grid_v1_64_trials",
+  "selected_endpoint": "structured",
+  "status": "passed"
+}

@@ -1,0 +1,6 @@
+000_build_pg_tightness 0
+001_build_gd_tightness 0
+002_gd_one_regression 0
+003_gd_one_tightness 0
+004_pg_one_regression 0
+005_pg_one_tightness 0

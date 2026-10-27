@@ -1,0 +1,36 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.prefixAffine_gradCoeff {N : ℕ} (k : ℕ) (hk : k ≤ N + 1) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.GradAffineQ.prefixAffine k hk).gradCoeff r = if ↑r < k then 1 else 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ_gradCoeff (N : ℕ) (k r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ N k).gradCoeff r =
+    LeanPEP.Toy.FiniteGD.unitCoeff k r + 1 / ↑(2 * N - ↑k + 1) * if ↑r < ↑k then 1 else 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ_gradCoeff_self (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ N r).gradCoeff r = 1
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ_gradCoeff_of_lt (N : ℕ) (r k : Fin (N + 1)) (hrk : ↑r < ↑k) :
+  (LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ N k).gradCoeff r = 1 / ↑(2 * N - ↑k + 1)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ_gradCoeff_of_gt (N : ℕ) (r k : Fin (N + 1)) (hkr : ↑k < ↑r) :
+  (LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ N k).gradCoeff r = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ_self (N : ℕ) (r : Fin (N + 1)) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ N r r =
+    -2 * LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareWeightQ N r * (1 / ↑(2 * N - ↑r + 1))
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ_of_lt (N : ℕ) (r k : Fin (N + 1)) (hrk : ↑r < ↑k) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ N r k =
+    -2 * LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ N k
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ_of_gt (N : ℕ) (r k : Fin (N + 1)) (hkr : ↑k < ↑r) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ N r k = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientConstantSuffixQ (N : ℕ) (r : Fin (N + 1)) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareSumQ_decompose (N : ℕ) (r : Fin (N + 1)) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareSumQ N r =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ N r r -
+      2 * LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientConstantSuffixQ N r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ_iff_suffix (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientCoefficientIdentityQ N ↔
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSuffixIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSuffixIdentityQ_last (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N (Fin.last N) +
+      (LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSquareContributionQ N (Fin.last N) (Fin.last N) -
+        2 * LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientConstantSuffixQ N (Fin.last N)) =
+    0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSuffixIdentityQ_4 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSuffixIdentityQ 4
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSuffixIdentityQ_8 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdGradientSuffixIdentityQ 8

@@ -1,0 +1,779 @@
+[
+  {
+    "case": "Empty",
+    "dimension": 0,
+    "factor_certificate": {
+      "factors": []
+    },
+    "factor_count": 0,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "Zero",
+    "dimension": 3,
+    "factor_certificate": {
+      "factors": []
+    },
+    "factor_count": 0,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "f9037e345553d9b9fdd4eeed01a0966d692e9e52e210a38dee860a032b0d4fb6",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "IrrationalCholesky",
+    "dimension": 2,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 2
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 2,
+            "num": 5
+          }
+        }
+      ]
+    },
+    "factor_count": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "385f1343cfebe1d173fd06b332b8b03d4b027f0a940b8f59ff554e5492d318de",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [
+      0,
+      1
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "SingularPermuted",
+    "dimension": 3,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 2
+          }
+        }
+      ]
+    },
+    "factor_count": 1,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "462ad4ea3c9dd4ab0e8af8270b7fac5626617732aef28f40c42c84e02a2f9b41",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [
+      2
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "NegativeDiagonal",
+    "dimension": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "9d8dadf413aaee5d8755bac0fa061ea5fa8f0e74762aedeca52a3109f845ec25",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "quadratic_value": {
+      "den": 1,
+      "num": -1
+    },
+    "reason": "negative Schur diagonal",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "negative",
+    "witness_original_basis": [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ]
+  },
+  {
+    "case": "PositiveDiagonalIndefinite",
+    "dimension": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "8e9167f2847d86641f61b7bbe1f49be01f49bf4778677378f2c2f00a378f06f5",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [
+      0
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "quadratic_value": {
+      "den": 1,
+      "num": -3
+    },
+    "reason": "negative Schur diagonal",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "negative",
+    "witness_original_basis": [
+      {
+        "den": 1,
+        "num": -2
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  },
+  {
+    "case": "ZeroDiagonalNonzeroRow",
+    "dimension": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "92776147b8695d92af4385d5170008c00805e92b83c5a12ea1c550d758c9caa1",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "quadratic_value": {
+      "den": 1,
+      "num": -1
+    },
+    "reason": "zero Schur diagonal with nonzero row",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "negative",
+    "witness_original_basis": [
+      {
+        "den": 1,
+        "num": -2
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  },
+  {
+    "case": "LiftedZeroDiagonal",
+    "dimension": 3,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "ac00bfaf75db0b4c517aeae5bfb866042741122ca53a9e6fb993fa54872b2c05",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [
+      0
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "quadratic_value": {
+      "den": 1,
+      "num": -1
+    },
+    "reason": "zero Schur diagonal with nonzero row",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "negative",
+    "witness_original_basis": [
+      {
+        "den": 2,
+        "num": 1
+      },
+      {
+        "den": 2,
+        "num": -3
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  },
+  {
+    "case": "TinyNegative",
+    "dimension": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "453d42ade6e0cda5e59d1e1345ef944b543b4c69141877e4043e10b752907b3c",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "quadratic_value": {
+      "den": 100000000000000000000,
+      "num": -1
+    },
+    "reason": "negative Schur diagonal",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "negative",
+    "witness_original_basis": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  },
+  {
+    "asymmetry": {
+      "i": 0,
+      "j": 1,
+      "left": {
+        "den": 1,
+        "num": 1
+      },
+      "right": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    "case": "Asymmetric",
+    "dimension": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "41c074b0ef9e8c9f334ecf0834bfc95abbed5358448f3d904627da9110f7d217",
+    "origin": "hand-specified exact regression matrix; not a solver run",
+    "pivot_indices_original_basis": [],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact asymmetry",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "asymmetric"
+  },
+  {
+    "case": "GDPrimal",
+    "dimension": 3,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "factor_count": 1,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "e094770308ea2d57fe11ee5e5d5bf729cece02ad2e4b7cfe6da8bde19c546815",
+    "origin": "unchanged examples/gram_external/one_step_exact.json primal.gram",
+    "pivot_indices_original_basis": [
+      0
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "GDDual",
+    "dimension": 3,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -3
+            },
+            {
+              "den": 2,
+              "num": -3
+            }
+          ],
+          "weight": {
+            "den": 6,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            }
+          ],
+          "weight": {
+            "den": 8,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "factor_count": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "0a7b6c31c9d5b867c6b811545a2a07d9c5c04812bfd0c849e9c3ee182b6451cc",
+    "origin": "unchanged examples/gram_external/one_step_exact.json upper.dual_matrix",
+    "pivot_indices_original_basis": [
+      0,
+      1
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "PGDualOne",
+    "dimension": 5,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": -2
+            }
+          ],
+          "weight": {
+            "den": 4,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          "weight": {
+            "den": 2,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          "weight": {
+            "den": 8,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "factor_count": 3,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "7a30121c4f00ef1ed7d51cbbdadb31ca9f28db3b718dea04b5147cf99f888e27",
+    "origin": "exact C3A formula mirror, T=1; Lean equality to original upperCertQ is checked separately",
+    "pivot_indices_original_basis": [
+      0,
+      1,
+      2
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "PGDualTwo",
+    "dimension": 7,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 3,
+              "num": -5
+            },
+            {
+              "den": 3,
+              "num": -4
+            },
+            {
+              "den": 3,
+              "num": -4
+            },
+            {
+              "den": 3,
+              "num": -8
+            }
+          ],
+          "weight": {
+            "den": 8,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 12,
+              "num": -5
+            },
+            {
+              "den": 3,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          "weight": {
+            "den": 2,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 9,
+              "num": -5
+            },
+            {
+              "den": 9,
+              "num": -4
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          "weight": {
+            "den": 32,
+            "num": 3
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 11,
+              "num": 3
+            },
+            {
+              "den": 11,
+              "num": -3
+            }
+          ],
+          "weight": {
+            "den": 54,
+            "num": 11
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            }
+          ],
+          "weight": {
+            "den": 198,
+            "num": 19
+          }
+        }
+      ]
+    },
+    "factor_count": 5,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "eeb0a7db3ba791843072a7131fbddcf228918e17811f7c87cd4d4c160bf3294e",
+    "origin": "exact C3A formula mirror, T=2; Lean equality to original upperCertQ is checked separately",
+    "pivot_indices_original_basis": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  {
+    "case": "PGPrimalTwo",
+    "dimension": 7,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "factor_count": 1,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "4c04681be48c2471df74f3627aff1ee0654552b734b2e97432a93b7bf6c39998",
+    "origin": "exact C3A one-dimensional witness Gram mirror, T=2; matrix-level regression only",
+    "pivot_indices_original_basis": [
+      0
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  }
+]

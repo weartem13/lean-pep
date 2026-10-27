@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "source_root": "<PUBLIC_SOURCE>",
+  "output": "<VALIDATION_LOGS>/full-verified/generation",
+  "solver_calls": 0,
+  "lean_executed": false,
+  "generator_policy_changed": false,
+  "comparison_policy": "Exact file bytes; JSON documentary path leaves alone may replace examples/ by data/fixtures/.",
+  "command": {
+    "cwd": "<VALIDATION_LOGS>/full-verified/generation/snapshot",
+    "argv": [
+      "bash",
+      "tools/regenerate_imported_examples.sh"
+    ],
+    "timeout_seconds": 900,
+    "python_executable": "<TEST_ENV>/bin/python3",
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at_utc": "2026-10-07T08:28:52.072565+00:00",
+    "log": "generation.log",
+    "exit": 0,
+    "wall_seconds": 12.538052957999753
+  },
+  "source_unchanged": true,
+  "compared_files": 485,
+  "observed_rewrites": 165,
+  "byte_identical": 485,
+  "metadata_path_only": 0
+}

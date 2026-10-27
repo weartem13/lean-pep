@@ -1,0 +1,2629 @@
+{
+  "change_guards": {
+    "assumption_references": true,
+    "coefficient_lengths": true,
+    "denominator_bounds": true,
+    "error_bounds": true,
+    "interpolation_references": true,
+    "policy_valid": true
+  },
+  "changed_count": 0,
+  "coefficient_count": 86,
+  "entries": [
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.bound",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.const",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[0]",
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[3][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[3][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[3][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[3][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[3][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[3][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[4][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[4][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[4][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[4][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[4][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[4][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[5][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[5][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[5][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[5][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[5][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[5][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.assumption_terms[0].weight",
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.assumption_terms[1].weight",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.assumption_terms[2].weight",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.assumption_terms[3].weight",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.assumption_terms[4].weight",
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.assumption_terms[5].weight",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[0][0]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[0][1]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[0][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[0][3]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[0][4]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[0][5]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][0]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][1]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][3]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][4]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][5]",
+      "raw": {
+        "den": 2,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": -1
+      },
+      "source": "-0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][2]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][3]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][4]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[3][0]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[3][1]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[3][2]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[3][3]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[3][4]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[3][5]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[4][0]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[4][1]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[4][2]",
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[4][3]",
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[4][4]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[4][5]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[5][0]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[5][1]",
+      "raw": {
+        "den": 2,
+        "num": -1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": -1
+      },
+      "source": "-0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[5][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[5][3]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[5][4]",
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[5][5]",
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "within_error": true
+    }
+  ],
+  "factor_denominators_subject_to_policy": false,
+  "format": "leanpep-pg-reconstruction-report-v1",
+  "input_sha256": "761a973b6154cb9a9a78500b4960f61659f3db937a11ba8d22b1caedaa5f17ab",
+  "known_bound_used": false,
+  "lean_checked": false,
+  "live_capture_performed": false,
+  "matrix_repaired": false,
+  "out_of_budget_paths": [],
+  "policy": {
+    "max_abs_error": "0.00000000001",
+    "max_denominator": 1000,
+    "method": "limit_denominator"
+  },
+  "provenance_authenticated": false,
+  "raw": {
+    "diagnostic": {
+      "bound_guards": {
+        "compact_upper": true,
+        "coverage": true,
+        "empty_implicit_interpolation": true,
+        "full_bound": true,
+        "full_source": true,
+        "objective_binding": true
+      },
+      "canonical_json_sha256": "39f8055105788220c6d86e2f527b5dddbd2c7e2cdf0905536cfab916eaaf0061",
+      "compact_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "compact_row_count": 15,
+      "completed_diagnostic": {
+        "arbitrary_auxiliary_order_supported": false,
+        "bound_guards": {
+          "all_extended_rows": true,
+          "auxiliary_objective": true,
+          "base_source": true,
+          "certificate_objective": true,
+          "eliminated_bound": true,
+          "empty_implicit_interpolation": true,
+          "positive_performance_scale": true,
+          "source_certificate": true
+        },
+        "canonical_json_sha256": "3ac7c45a4c9a4466a6c38994eb7a944eeb6b7fbcce4905089306000e61051aa3",
+        "diagnostic_passed": true,
+        "dimensions": {
+          "base_rows": 14,
+          "base_values": 5,
+          "basis": 6,
+          "extended_rows": 15,
+          "extended_values": 6
+        },
+        "eliminated_diagnostic": {
+          "arbitrary_row_deletion_supported": false,
+          "bound_guards": {
+            "empty_implicit_interpolation": true,
+            "normalized_bound": true,
+            "normalized_source": true,
+            "oriented_source_certificate": true,
+            "positive_scales": true,
+            "source_objective": true
+          },
+          "canonical_json_sha256": "4cf659d8c12a0b5e58565fddc096fec63b5c8f9d332baaf6f272fe8eada6626a",
+          "diagnostic_passed": true,
+          "equality_rows_supported": false,
+          "format": "leanpep-scaled-pg-diagnostic-v1",
+          "horizon": 1,
+          "lean_checked": false,
+          "live_capture_performed": false,
+          "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+          "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+          "normalized_diagnostic": {
+            "arbitrary_pepit_leaf_elimination_supported": false,
+            "bound_guards": {
+              "canonical_bound": true,
+              "canonical_source": true,
+              "empty_implicit_interpolation": true,
+              "permutations": true,
+              "source_certificate": true,
+              "source_objective": true
+            },
+            "canonical_diagnostic": {
+              "arbitrary_pepit_order_supported": false,
+              "bound_guards": {
+                "centered_bound": true,
+                "empty_implicit_interpolation": true,
+                "native_certificate": true,
+                "native_objective": true,
+                "source": true
+              },
+              "canonical_json_sha256": "00eb3c68dd8bff7f6564bdbff3d306ff4dbfb98b65fe3575deb403b8ab4e8a59",
+              "centered_certificate": {
+                "certificate": true,
+                "empty_implicit_interpolation": true,
+                "objective_matches_source": true,
+                "source": true
+              },
+              "centered_source_mismatches": [],
+              "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+              "diagnostic_passed": true,
+              "dimensions": {
+                "centered": 5,
+                "native": 6,
+                "values": 5
+              },
+              "format": "leanpep-uncentered-pg-diagnostic-v1",
+              "horizon": 1,
+              "lean_checked": false,
+              "live_capture_performed": false,
+              "native_certificate": {
+                "accepted": true,
+                "factor": true,
+                "identity": true,
+                "symmetric": true,
+                "weights": true
+              },
+              "numeric_interpretation": "exact_num_den_no_reconstruction",
+              "origin": {
+                "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+                "mode": "deterministic_regression_fixture"
+              },
+              "primal_transport_checked": false,
+              "provenance_authenticated": false,
+              "source_guards": {
+                "center_matrix": true,
+                "centered_source": true,
+                "constraints_roundtrip": true,
+                "header": true,
+                "nonsmooth_roundtrip": true,
+                "objective_roundtrip": true,
+                "section_matrix": true,
+                "smooth_roundtrip": true
+              },
+              "source_mismatches": []
+            },
+            "canonical_input_error": null,
+            "canonical_json_sha256": "50c3bded00c938aa86874643c96ee3472d79be864d198da4f72acc06babf58cb",
+            "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+            "diagnostic_passed": true,
+            "dimensions": {
+              "basis": 6,
+              "nonsmooth": 2,
+              "rows": 14,
+              "smooth": 3,
+              "values": 5
+            },
+            "format": "leanpep-permuted-pg-diagnostic-v1",
+            "horizon": 1,
+            "lean_checked": false,
+            "live_capture_performed": false,
+            "numeric_interpretation": "exact_num_den_no_reconstruction",
+            "origin": {
+              "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+              "mode": "deterministic_regression_fixture"
+            },
+            "permutation_guards": {
+              "basis": true,
+              "nonsmooth": true,
+              "rows": true,
+              "smooth": true,
+              "values": true
+            },
+            "primal_import_supported": false,
+            "provenance_authenticated": false,
+            "roundtrip_payload_and_certificate": true,
+            "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+            "source_certificate": {
+              "accepted": true,
+              "factor": true,
+              "identity": true,
+              "symmetric": true,
+              "weights": true
+            }
+          },
+          "numeric_interpretation": "exact_num_den_no_reconstruction",
+          "oriented_source_certificate": {
+            "accepted": true,
+            "factor": true,
+            "identity": true,
+            "symmetric": true,
+            "weights": true
+          },
+          "origin": {
+            "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+            "mode": "deterministic_regression_fixture"
+          },
+          "positive_scale_guards": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "primal_import_supported": false,
+          "provenance_authenticated": false,
+          "raw_solver_signed_multipliers_supported": false,
+          "row_roundtrip": true,
+          "weighted_assumption_sum_preserved": true
+        },
+        "format": "leanpep-single-performance-diagnostic-v1",
+        "full_solver_pipeline_claimed": false,
+        "horizon": 1,
+        "layout": "tau_first_value_performance_first_row_v1",
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "multiple_metrics_supported": false,
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "origin": {
+          "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+          "mode": "deterministic_regression_fixture"
+        },
+        "performance_mass_is_one": true,
+        "performance_weighted_mass": {
+          "den": 1,
+          "num": 1
+        },
+        "primal_import_supported": false,
+        "provenance_authenticated": false,
+        "removed_performance_references": 1,
+        "retained_source_row_indices": [
+          1,
+          2,
+          5,
+          10,
+          13
+        ],
+        "row_mismatches": [],
+        "source_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "substituted_assumption_sum_preserved": true,
+        "substitution": "tau_equals_base_objective_not_zero"
+      },
+      "coverage": {
+        "guards": {
+          "omitted_rows_zero": true,
+          "partial_inverse": true,
+          "retained_labels": true,
+          "retained_rows": true,
+          "retained_rules": true
+        },
+        "label_mismatches": [],
+        "nonzero_omitted_indices": [],
+        "omitted_full_indices": [],
+        "passed": true,
+        "row_mismatches": [],
+        "rule_mismatches": []
+      },
+      "diagnostic_passed": true,
+      "format": "leanpep-zero-row-coverage-diagnostic-v1",
+      "full_row_count": 15,
+      "full_solver_pipeline_claimed": false,
+      "horizon": 1,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "mapped_full_indices": [
+        0,
+        2,
+        3,
+        6,
+        11,
+        14
+      ],
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "omitted_row_criterion": "all_coefficients_zero_before_tau_and_origin_elimination",
+      "origin": {
+        "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+        "mode": "deterministic_regression_fixture"
+      },
+      "provenance_authenticated": false,
+      "source_passed": true,
+      "term_count_preserved": true,
+      "weights_preserved": true
+    },
+    "psd": {
+      "dimension": 6,
+      "factor_certificate": {
+        "factors": [
+          {
+            "vector": [
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 2
+              }
+            ],
+            "weight": {
+              "den": 4,
+              "num": 1
+            }
+          },
+          {
+            "vector": [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            "weight": {
+              "den": 2,
+              "num": 1
+            }
+          },
+          {
+            "vector": [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            "weight": {
+              "den": 8,
+              "num": 1
+            }
+          }
+        ]
+      },
+      "factor_count": 3,
+      "format": "leanpep-psd-synthesis-v1",
+      "lean_status": "not_run_by_this_producer",
+      "matrix_sha256": "23192ec726ecca779c47f7a8bf834bbe6a6064633967eb16abe4fe6cbbda3d8d",
+      "pivot_indices_original_basis": [
+        0,
+        2,
+        3
+      ],
+      "producer_version": "v0.13D1",
+      "python_exact_recheck": true,
+      "reason": "exact factor identity",
+      "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+      "status": "psd"
+    }
+  },
+  "raw_accepted_diagnostic": true,
+  "raw_interpretation": "finite_decimal_strings_v1",
+  "reconstructed": {
+    "diagnostic": {
+      "bound_guards": {
+        "compact_upper": true,
+        "coverage": true,
+        "empty_implicit_interpolation": true,
+        "full_bound": true,
+        "full_source": true,
+        "objective_binding": true
+      },
+      "canonical_json_sha256": "39f8055105788220c6d86e2f527b5dddbd2c7e2cdf0905536cfab916eaaf0061",
+      "compact_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "compact_row_count": 15,
+      "completed_diagnostic": {
+        "arbitrary_auxiliary_order_supported": false,
+        "bound_guards": {
+          "all_extended_rows": true,
+          "auxiliary_objective": true,
+          "base_source": true,
+          "certificate_objective": true,
+          "eliminated_bound": true,
+          "empty_implicit_interpolation": true,
+          "positive_performance_scale": true,
+          "source_certificate": true
+        },
+        "canonical_json_sha256": "3ac7c45a4c9a4466a6c38994eb7a944eeb6b7fbcce4905089306000e61051aa3",
+        "diagnostic_passed": true,
+        "dimensions": {
+          "base_rows": 14,
+          "base_values": 5,
+          "basis": 6,
+          "extended_rows": 15,
+          "extended_values": 6
+        },
+        "eliminated_diagnostic": {
+          "arbitrary_row_deletion_supported": false,
+          "bound_guards": {
+            "empty_implicit_interpolation": true,
+            "normalized_bound": true,
+            "normalized_source": true,
+            "oriented_source_certificate": true,
+            "positive_scales": true,
+            "source_objective": true
+          },
+          "canonical_json_sha256": "4cf659d8c12a0b5e58565fddc096fec63b5c8f9d332baaf6f272fe8eada6626a",
+          "diagnostic_passed": true,
+          "equality_rows_supported": false,
+          "format": "leanpep-scaled-pg-diagnostic-v1",
+          "horizon": 1,
+          "lean_checked": false,
+          "live_capture_performed": false,
+          "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+          "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+          "normalized_diagnostic": {
+            "arbitrary_pepit_leaf_elimination_supported": false,
+            "bound_guards": {
+              "canonical_bound": true,
+              "canonical_source": true,
+              "empty_implicit_interpolation": true,
+              "permutations": true,
+              "source_certificate": true,
+              "source_objective": true
+            },
+            "canonical_diagnostic": {
+              "arbitrary_pepit_order_supported": false,
+              "bound_guards": {
+                "centered_bound": true,
+                "empty_implicit_interpolation": true,
+                "native_certificate": true,
+                "native_objective": true,
+                "source": true
+              },
+              "canonical_json_sha256": "00eb3c68dd8bff7f6564bdbff3d306ff4dbfb98b65fe3575deb403b8ab4e8a59",
+              "centered_certificate": {
+                "certificate": true,
+                "empty_implicit_interpolation": true,
+                "objective_matches_source": true,
+                "source": true
+              },
+              "centered_source_mismatches": [],
+              "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+              "diagnostic_passed": true,
+              "dimensions": {
+                "centered": 5,
+                "native": 6,
+                "values": 5
+              },
+              "format": "leanpep-uncentered-pg-diagnostic-v1",
+              "horizon": 1,
+              "lean_checked": false,
+              "live_capture_performed": false,
+              "native_certificate": {
+                "accepted": true,
+                "factor": true,
+                "identity": true,
+                "symmetric": true,
+                "weights": true
+              },
+              "numeric_interpretation": "exact_num_den_no_reconstruction",
+              "origin": {
+                "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+                "mode": "deterministic_regression_fixture"
+              },
+              "primal_transport_checked": false,
+              "provenance_authenticated": false,
+              "source_guards": {
+                "center_matrix": true,
+                "centered_source": true,
+                "constraints_roundtrip": true,
+                "header": true,
+                "nonsmooth_roundtrip": true,
+                "objective_roundtrip": true,
+                "section_matrix": true,
+                "smooth_roundtrip": true
+              },
+              "source_mismatches": []
+            },
+            "canonical_input_error": null,
+            "canonical_json_sha256": "50c3bded00c938aa86874643c96ee3472d79be864d198da4f72acc06babf58cb",
+            "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+            "diagnostic_passed": true,
+            "dimensions": {
+              "basis": 6,
+              "nonsmooth": 2,
+              "rows": 14,
+              "smooth": 3,
+              "values": 5
+            },
+            "format": "leanpep-permuted-pg-diagnostic-v1",
+            "horizon": 1,
+            "lean_checked": false,
+            "live_capture_performed": false,
+            "numeric_interpretation": "exact_num_den_no_reconstruction",
+            "origin": {
+              "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+              "mode": "deterministic_regression_fixture"
+            },
+            "permutation_guards": {
+              "basis": true,
+              "nonsmooth": true,
+              "rows": true,
+              "smooth": true,
+              "values": true
+            },
+            "primal_import_supported": false,
+            "provenance_authenticated": false,
+            "roundtrip_payload_and_certificate": true,
+            "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+            "source_certificate": {
+              "accepted": true,
+              "factor": true,
+              "identity": true,
+              "symmetric": true,
+              "weights": true
+            }
+          },
+          "numeric_interpretation": "exact_num_den_no_reconstruction",
+          "oriented_source_certificate": {
+            "accepted": true,
+            "factor": true,
+            "identity": true,
+            "symmetric": true,
+            "weights": true
+          },
+          "origin": {
+            "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+            "mode": "deterministic_regression_fixture"
+          },
+          "positive_scale_guards": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "primal_import_supported": false,
+          "provenance_authenticated": false,
+          "raw_solver_signed_multipliers_supported": false,
+          "row_roundtrip": true,
+          "weighted_assumption_sum_preserved": true
+        },
+        "format": "leanpep-single-performance-diagnostic-v1",
+        "full_solver_pipeline_claimed": false,
+        "horizon": 1,
+        "layout": "tau_first_value_performance_first_row_v1",
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "multiple_metrics_supported": false,
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "origin": {
+          "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+          "mode": "deterministic_regression_fixture"
+        },
+        "performance_mass_is_one": true,
+        "performance_weighted_mass": {
+          "den": 1,
+          "num": 1
+        },
+        "primal_import_supported": false,
+        "provenance_authenticated": false,
+        "removed_performance_references": 1,
+        "retained_source_row_indices": [
+          1,
+          2,
+          5,
+          10,
+          13
+        ],
+        "row_mismatches": [],
+        "source_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "substituted_assumption_sum_preserved": true,
+        "substitution": "tau_equals_base_objective_not_zero"
+      },
+      "coverage": {
+        "guards": {
+          "omitted_rows_zero": true,
+          "partial_inverse": true,
+          "retained_labels": true,
+          "retained_rows": true,
+          "retained_rules": true
+        },
+        "label_mismatches": [],
+        "nonzero_omitted_indices": [],
+        "omitted_full_indices": [],
+        "passed": true,
+        "row_mismatches": [],
+        "rule_mismatches": []
+      },
+      "diagnostic_passed": true,
+      "format": "leanpep-zero-row-coverage-diagnostic-v1",
+      "full_row_count": 15,
+      "full_solver_pipeline_claimed": false,
+      "horizon": 1,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "mapped_full_indices": [
+        0,
+        2,
+        3,
+        6,
+        11,
+        14
+      ],
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "omitted_row_criterion": "all_coefficients_zero_before_tau_and_origin_elimination",
+      "origin": {
+        "description": "D8 1-step finite-decimal regression from D7 exact data; NOT a live capture",
+        "mode": "deterministic_regression_fixture"
+      },
+      "provenance_authenticated": false,
+      "source_passed": true,
+      "term_count_preserved": true,
+      "weights_preserved": true
+    },
+    "psd": {
+      "dimension": 6,
+      "factor_certificate": {
+        "factors": [
+          {
+            "vector": [
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 2
+              }
+            ],
+            "weight": {
+              "den": 4,
+              "num": 1
+            }
+          },
+          {
+            "vector": [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            "weight": {
+              "den": 2,
+              "num": 1
+            }
+          },
+          {
+            "vector": [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            "weight": {
+              "den": 8,
+              "num": 1
+            }
+          }
+        ]
+      },
+      "factor_count": 3,
+      "format": "leanpep-psd-synthesis-v1",
+      "lean_status": "not_run_by_this_producer",
+      "matrix_sha256": "23192ec726ecca779c47f7a8bf834bbe6a6064633967eb16abe4fe6cbbda3d8d",
+      "pivot_indices_original_basis": [
+        0,
+        2,
+        3
+      ],
+      "producer_version": "v0.13D1",
+      "python_exact_recheck": true,
+      "reason": "exact factor identity",
+      "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+      "status": "psd"
+    }
+  },
+  "reconstructed_exact_accepted_diagnostic": true,
+  "reconstructed_joint_accepted_diagnostic": true,
+  "reconstruction_policy_passed": true,
+  "scope": "exact frozen source; scalar upper candidates only; no primal, live capture, or soundness from proximity",
+  "source_reconstructed": false,
+  "source_sha256": "441906e2f98a41225d7458d0afeef5c383a2ea3cbcd4ea630c599b17f9748401",
+  "source_unchanged": true
+}

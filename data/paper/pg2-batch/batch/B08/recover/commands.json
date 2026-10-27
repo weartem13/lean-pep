@@ -1,0 +1,18 @@
+[
+  {
+    "LEAN_PATH": "unset",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "<WORK_TMP>/LeanPEP_REFINE_BATCH/B08/Replay.lean"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "exit": 0,
+    "log": "replay.log",
+    "peak_rss_bytes": 5938774016,
+    "resource_scope": "getrusage CHILDREN high-water mark in this consumer process, bytes; not process-tree sum; descendant inclusion unverified",
+    "timeout_seconds": 900,
+    "wall_seconds": 47.4554380409827
+  }
+]

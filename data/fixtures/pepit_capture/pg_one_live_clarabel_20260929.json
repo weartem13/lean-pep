@@ -1,0 +1,2795 @@
+{
+  "basis_order": [
+    "x_star",
+    "g_star",
+    "x0",
+    "g0",
+    "s1",
+    "g1"
+  ],
+  "constraints": [
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 1
+          }
+        ]
+      },
+      "label": {
+        "kind": "performance"
+      },
+      "name": "Performance metric 1",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": -1
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": null,
+          "j": null,
+          "kind": "radius"
+        }
+      },
+      "name": "initial_radius",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 0,
+          "j": 1,
+          "kind": "smoothPair"
+        }
+      },
+      "name": "IC_f_smoothness_convexity(x_star, x0)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 0,
+          "j": 2,
+          "kind": "smoothPair"
+        }
+      },
+      "name": "IC_f_smoothness_convexity(x_star, x1)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 1,
+          "j": 0,
+          "kind": "smoothPair"
+        }
+      },
+      "name": "IC_f_smoothness_convexity(x0, x_star)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 1,
+          "j": 2,
+          "kind": "smoothPair"
+        }
+      },
+      "name": "IC_f_smoothness_convexity(x0, x1)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 2,
+          "j": 0,
+          "kind": "smoothPair"
+        }
+      },
+      "name": "IC_f_smoothness_convexity(x1, x_star)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 2,
+          "j": 1,
+          "kind": "smoothPair"
+        }
+      },
+      "name": "IC_f_smoothness_convexity(x1, x0)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 0,
+          "j": 1,
+          "kind": "convexPair"
+        }
+      },
+      "name": "IC_h_convexity(x_star, x1)",
+      "sense": "leZero"
+    },
+    {
+      "expression": {
+        "const": {
+          "den": 1,
+          "num": 0
+        },
+        "gram_coeff": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ],
+        "value_coeff": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      },
+      "label": {
+        "kind": "base",
+        "tag": {
+          "i": 1,
+          "j": 0,
+          "kind": "convexPair"
+        }
+      },
+      "name": "IC_h_convexity(x1, x_star)",
+      "sense": "leZero"
+    }
+  ],
+  "format": "leanpep-pepit-pg-capture-v1",
+  "horizon": 1,
+  "metric": {
+    "const": {
+      "den": 1,
+      "num": 0
+    },
+    "gram_coeff": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    ],
+    "value_coeff": [
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ]
+  },
+  "nonsmooth_samples": [
+    {
+      "logical_index": 0,
+      "oracle": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "position": [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "value_index": 1
+    },
+    {
+      "logical_index": 1,
+      "oracle": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "position": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "value_index": 3
+    }
+  ],
+  "numerical": {
+    "bound": "0.25000000935967587",
+    "multipliers": [
+      "1.0000000081244107",
+      "0.25000000935967587",
+      "0.3344973032841085",
+      "0.6656340410733608",
+      "4.3620293721110604e-05",
+      "0.6654831129511115",
+      "8.772406373449928e-05",
+      "0.33102942996073753",
+      "1.0000000125871267",
+      "1.258713355256439e-08"
+    ],
+    "residual": [
+      [
+        "0.25000001087741774",
+        "-6.566182294551792e-05",
+        "-0.25000000361481345",
+        "0.1672486475798585",
+        "0.5000000022313474",
+        "0.33281701647448464"
+      ],
+      [
+        "-6.566182294551792e-05",
+        "0.5001313353711896",
+        "6.566182294551727e-05",
+        "-0.16731430940279243",
+        "-4.385573832275746e-05",
+        "-0.3328608744441247"
+      ],
+      [
+        "-0.25000000361481345",
+        "6.566182294551727e-05",
+        "0.25000001087741774",
+        "-0.1672486475798585",
+        "-0.5000000022313474",
+        "-0.33281701647448464"
+      ],
+      [
+        "0.1672486475798585",
+        "-0.16731430940279243",
+        "-0.1672486475798585",
+        "0.33449730242223996",
+        "0.33448529131317273",
+        "0.16730230555632408"
+      ],
+      [
+        "0.5000000022313474",
+        "-4.385573832275746e-05",
+        "-0.5000000022313474",
+        "0.33448529131317273",
+        "1.000000011725294",
+        "0.6655585688878038"
+      ],
+      [
+        "0.33281701647448464",
+        "-0.3328608744441247",
+        "-0.33281701647448464",
+        "0.16730230555632408",
+        "0.6655585688878038",
+        "0.8311171450381997"
+      ]
+    ]
+  },
+  "objective": {
+    "const": {
+      "den": 1,
+      "num": 0
+    },
+    "gram_coeff": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    ],
+    "value_coeff": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  },
+  "policy": {
+    "max_abs_error": "0.000001",
+    "max_denominator": 1000000,
+    "method": "limit_denominator"
+  },
+  "producer": {
+    "mode": "live_solver_capture",
+    "name": "PEPit",
+    "solver": "CLARABEL",
+    "status": "optimal",
+    "version": "0.5.1",
+    "wrapper": "cvxpy"
+  },
+  "profile": {
+    "L": {
+      "den": 1,
+      "num": 1
+    },
+    "nonsmooth_class": "ConvexFunction",
+    "radius_squared": {
+      "den": 1,
+      "num": 1
+    },
+    "smooth_class": "SmoothConvexFunction",
+    "step_size": {
+      "den": 1,
+      "num": 1
+    }
+  },
+  "smooth_samples": [
+    {
+      "logical_index": 0,
+      "oracle": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "position": [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "value_index": 0
+    },
+    {
+      "logical_index": 1,
+      "oracle": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "position": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "value_index": 2
+    },
+    {
+      "logical_index": 2,
+      "oracle": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ],
+      "position": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "value_index": 4
+    }
+  ],
+  "value_order": [
+    "f_star",
+    "h_star",
+    "f0",
+    "h1",
+    "f1",
+    "tau"
+  ]
+}

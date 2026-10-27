@@ -1,0 +1,879 @@
+[
+  {
+    "argv": [
+      "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lean",
+      "--version"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "lean_version",
+    "log": "01_lean_version.log",
+    "wall_seconds": 0.03691716698813252
+  },
+  {
+    "argv": [
+      "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lake",
+      "--help"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "lake_help",
+    "log": "02_lake_help.log",
+    "wall_seconds": 0.03676575000281446
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_init",
+    "log": "03_mathlib_init.log",
+    "wall_seconds": 0.07824695800081827
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/mathlib4.git"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_remote",
+    "log": "04_mathlib_remote.log",
+    "wall_seconds": 0.010906040988629684
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_fetch",
+    "log": "05_mathlib_fetch.log",
+    "wall_seconds": 8.61893641599454
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_checkout",
+    "log": "06_mathlib_checkout.log",
+    "wall_seconds": 1.3530284999869764
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_revision",
+    "log": "07_mathlib_revision.log",
+    "wall_seconds": 0.01075124999624677
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_clean",
+    "log": "08_mathlib_clean.log",
+    "wall_seconds": 0.4549184579809662
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/plausible"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "plausible_init",
+    "log": "09_plausible_init.log",
+    "wall_seconds": 0.019420041993726045
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/plausible",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/plausible"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "plausible_remote",
+    "log": "10_plausible_remote.log",
+    "wall_seconds": 0.01057179199415259
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/plausible",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "63045536fe95024e6c18fc7b48e03f506701c5bc"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "plausible_fetch",
+    "log": "11_plausible_fetch.log",
+    "wall_seconds": 0.7145681670226622
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/plausible",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "plausible_checkout",
+    "log": "12_plausible_checkout.log",
+    "wall_seconds": 0.01983537498745136
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/plausible",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "plausible_revision",
+    "log": "13_plausible_revision.log",
+    "wall_seconds": 0.005947958008619025
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/plausible",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "plausible_clean",
+    "log": "14_plausible_clean.log",
+    "wall_seconds": 0.010563042014837265
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/LeanSearchClient"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "LeanSearchClient_init",
+    "log": "15_LeanSearchClient_init.log",
+    "wall_seconds": 0.01056208397494629
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/LeanSearchClient",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/LeanSearchClient"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "LeanSearchClient_remote",
+    "log": "16_LeanSearchClient_remote.log",
+    "wall_seconds": 0.010471749992575496
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/LeanSearchClient",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "LeanSearchClient_fetch",
+    "log": "17_LeanSearchClient_fetch.log",
+    "wall_seconds": 0.6091355419775937
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/LeanSearchClient",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "LeanSearchClient_checkout",
+    "log": "18_LeanSearchClient_checkout.log",
+    "wall_seconds": 0.0198632079991512
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/LeanSearchClient",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "LeanSearchClient_revision",
+    "log": "19_LeanSearchClient_revision.log",
+    "wall_seconds": 0.005231165996519849
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/LeanSearchClient",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "LeanSearchClient_clean",
+    "log": "20_LeanSearchClient_clean.log",
+    "wall_seconds": 0.010359374980907887
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/importGraph"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "importGraph_init",
+    "log": "21_importGraph_init.log",
+    "wall_seconds": 0.01092187498579733
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/importGraph",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/import-graph"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "importGraph_remote",
+    "log": "22_importGraph_remote.log",
+    "wall_seconds": 0.010523917007958516
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/importGraph",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "5c7542ed018c78194f1e2b903eaf6a792b74c03d"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "importGraph_fetch",
+    "log": "23_importGraph_fetch.log",
+    "wall_seconds": 0.6643867079983465
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/importGraph",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "importGraph_checkout",
+    "log": "24_importGraph_checkout.log",
+    "wall_seconds": 0.08000537499901839
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/importGraph",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "importGraph_revision",
+    "log": "25_importGraph_revision.log",
+    "wall_seconds": 0.12991483401856385
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/importGraph",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "importGraph_clean",
+    "log": "26_importGraph_clean.log",
+    "wall_seconds": 0.08081195899285376
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/proofwidgets"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "proofwidgets_init",
+    "log": "27_proofwidgets_init.log",
+    "wall_seconds": 0.010496500006411225
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/proofwidgets",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/ProofWidgets4"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "proofwidgets_remote",
+    "log": "28_proofwidgets_remote.log",
+    "wall_seconds": 0.01049537499784492
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/proofwidgets",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "24b0d9dc081c5423f8eec7e866c441e5184f29d9"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "proofwidgets_fetch",
+    "log": "29_proofwidgets_fetch.log",
+    "wall_seconds": 0.7768562079872936
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/proofwidgets",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "proofwidgets_checkout",
+    "log": "30_proofwidgets_checkout.log",
+    "wall_seconds": 0.074485207995167
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/proofwidgets",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "proofwidgets_revision",
+    "log": "31_proofwidgets_revision.log",
+    "wall_seconds": 0.00595620900276117
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/proofwidgets",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "proofwidgets_clean",
+    "log": "32_proofwidgets_clean.log",
+    "wall_seconds": 0.07723095899564214
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/aesop"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "aesop_init",
+    "log": "33_aesop_init.log",
+    "wall_seconds": 0.021050292009022087
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/aesop",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/aesop"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "aesop_remote",
+    "log": "34_aesop_remote.log",
+    "wall_seconds": 0.01076808397192508
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/aesop",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "e3cb2f741431ce31bf73549fb52316a57368b06f"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "aesop_fetch",
+    "log": "35_aesop_fetch.log",
+    "wall_seconds": 0.8216083750012331
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/aesop",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "aesop_checkout",
+    "log": "36_aesop_checkout.log",
+    "wall_seconds": 0.07363500000792556
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/aesop",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "aesop_revision",
+    "log": "37_aesop_revision.log",
+    "wall_seconds": 0.005782207997981459
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/aesop",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "aesop_clean",
+    "log": "38_aesop_clean.log",
+    "wall_seconds": 0.0195916669908911
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/Qq"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Qq_init",
+    "log": "39_Qq_init.log",
+    "wall_seconds": 0.010705417022109032
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Qq",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/quote4"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Qq_remote",
+    "log": "40_Qq_remote.log",
+    "wall_seconds": 0.010627833020407706
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Qq",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "f46324995fca5f0483b742e4eb4daec7f4ee50d2"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Qq_fetch",
+    "log": "41_Qq_fetch.log",
+    "wall_seconds": 0.6223410000093281
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Qq",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Qq_checkout",
+    "log": "42_Qq_checkout.log",
+    "wall_seconds": 0.019519624998793006
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Qq",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Qq_revision",
+    "log": "43_Qq_revision.log",
+    "wall_seconds": 0.006206334015587345
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Qq",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Qq_clean",
+    "log": "44_Qq_clean.log",
+    "wall_seconds": 0.01054208300774917
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/batteries"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "batteries_init",
+    "log": "45_batteries_init.log",
+    "wall_seconds": 0.010824083990883082
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/batteries",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/batteries"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "batteries_remote",
+    "log": "46_batteries_remote.log",
+    "wall_seconds": 0.010013291001087055
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/batteries",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "fa08db58b30eb033edcdab331bba000827f9f785"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "batteries_fetch",
+    "log": "47_batteries_fetch.log",
+    "wall_seconds": 0.775291208003182
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/batteries",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "batteries_checkout",
+    "log": "48_batteries_checkout.log",
+    "wall_seconds": 0.07597716600866988
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/batteries",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "batteries_revision",
+    "log": "49_batteries_revision.log",
+    "wall_seconds": 0.005503749998752028
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/batteries",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "batteries_clean",
+    "log": "50_batteries_clean.log",
+    "wall_seconds": 0.010643249988788739
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/Cli"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Cli_init",
+    "log": "51_Cli_init.log",
+    "wall_seconds": 0.010878875007620081
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Cli",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover/lean4-cli"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Cli_remote",
+    "log": "52_Cli_remote.log",
+    "wall_seconds": 0.009762917004991323
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Cli",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "92564e5770e4d09f2d86dfbf8ada1e9c715b384c"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Cli_fetch",
+    "log": "53_Cli_fetch.log",
+    "wall_seconds": 0.6045121249917429
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Cli",
+      "checkout",
+      "--detach",
+      "FETCH_HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Cli_checkout",
+    "log": "54_Cli_checkout.log",
+    "wall_seconds": 0.02112741698510945
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Cli",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Cli_revision",
+    "log": "55_Cli_revision.log",
+    "wall_seconds": 0.011016834003385156
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/Cli",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "Cli_clean",
+    "log": "56_Cli_clean.log",
+    "wall_seconds": 0.010268332989653572
+  },
+  {
+    "argv": [
+      "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lake",
+      "exe",
+      "cache",
+      "--help"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "official_cache_help",
+    "log": "57_official_cache_help.log",
+    "wall_seconds": 20.850209541007644
+  },
+  {
+    "argv": [
+      "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lake",
+      "exe",
+      "cache",
+      "get",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+      "Mathlib.Algebra.Order.Field.Basic",
+      "Mathlib.Algebra.Order.Star.Real",
+      "Mathlib.Analysis.Calculus.Deriv.Add",
+      "Mathlib.Analysis.Calculus.Deriv.MeanValue",
+      "Mathlib.Analysis.Calculus.Deriv.Mul",
+      "Mathlib.Analysis.Calculus.Deriv.Pow",
+      "Mathlib.Analysis.Calculus.Gradient.Basic",
+      "Mathlib.Analysis.Calculus.LocalExtr.Basic",
+      "Mathlib.Analysis.Convex.Continuous",
+      "Mathlib.Analysis.Convex.Deriv",
+      "Mathlib.Analysis.Convex.Function",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Analysis.InnerProductSpace.Dual",
+      "Mathlib.Analysis.Normed.Module.FiniteDimension",
+      "Mathlib.Analysis.Normed.Module.WeakDual",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Analysis.SpecificLimits.Basic",
+      "Mathlib.Data.Fin.VecNotation",
+      "Mathlib.Data.List.OfFn",
+      "Mathlib.Data.List.Range",
+      "Mathlib.Data.Matrix.Mul",
+      "Mathlib.LinearAlgebra.Matrix.PosDef",
+      "Mathlib.Logic.Equiv.Fin.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.DeriveFintype",
+      "Mathlib.Topology.Algebra.InfiniteSum.Order",
+      "Mathlib.Topology.Algebra.InfiniteSum.Ring",
+      "Mathlib.Topology.ClusterPt",
+      "Mathlib.Topology.Compactness.Compact",
+      "Mathlib.Topology.MetricSpace.Cauchy",
+      "Mathlib.Topology.MetricSpace.Lipschitz",
+      "Mathlib.Topology.MetricSpace.Pseudo.Lemmas",
+      "Mathlib.Topology.Order.Compact",
+      "Mathlib.Topology.Order.MonotoneConvergence",
+      "Mathlib.Topology.Sequences"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "official_cache_get",
+    "log": "58_official_cache_get.log",
+    "wall_seconds": 15.745199791999767
+  }
+]

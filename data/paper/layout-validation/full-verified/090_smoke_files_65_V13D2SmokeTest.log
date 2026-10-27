@@ -1,0 +1,71 @@
+LeanPEP.Adapters.ExactFormulation.checkListQ_eq_true_iff.{u_1} {α : Type u_1} (cmp : α → α → Bool)
+  (hcmp : ∀ (a b : α), cmp a b = true ↔ a = b) (xs ys : List α) :
+  Adapters.ExactFormulation.checkListQ cmp xs ys = true ↔ xs = ys
+LeanPEP.GramPEP.UpperCertQ.rebind {p m : ℕ} {source target : ModelQ p m} (c : UpperCertQ source) (h : source = target) :
+  UpperCertQ target
+LeanPEP.GramPEP.checkUpperCertQ_rebind {p m : ℕ} {source target : ModelQ p m} (c : UpperCertQ source)
+  (h : source = target) : checkUpperCertQ (c.rebind h) = checkUpperCertQ c
+LeanPEP.Adapters.ProximalGradientSource.HeaderQ : Type
+LeanPEP.Adapters.ProximalGradientSource.SourceQ (n : ℕ) : Type
+LeanPEP.Adapters.ProximalGradientSource.expectedSource_model (n : ℕ) :
+  (expectedSourceQ n).model = Profiles.ProximalGradient.modelQ n
+LeanPEP.Adapters.ProximalGradientSource.checkSampleQ_eq_true_iff {p m : ℕ} (a b : Profiles.Composite.SampleQ p m) :
+  checkSampleQ a b = true ↔ a = b
+LeanPEP.Adapters.ProximalGradientSource.auditSourceQ {n : ℕ} (s : SourceQ n) : AuditQ
+LeanPEP.Adapters.ProximalGradientSource.checkSourceQ_eq_true_iff {n : ℕ} (s : SourceQ n) :
+  checkSourceQ s = true ↔ s = expectedSourceQ n
+LeanPEP.Adapters.ProximalGradientSource.source_model_eq {n : ℕ} (s : SourceQ n) (hs : checkSourceQ s = true) :
+  s.model = Profiles.ProximalGradient.modelQ n
+LeanPEP.Adapters.ProximalGradientSource.source_objective_eq {n : ℕ} (s : SourceQ n) (hs : checkSourceQ s = true) :
+  s.objective = Profiles.ProximalGradient.objectiveQ n
+LeanPEP.Adapters.ProximalGradientSource.checkBoundQ_eq_true_iff {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) :
+  checkBoundQ s c = true ↔
+    checkSourceQ s = true ∧ checkUpperCertQ c = true ∧ c.interpTerms = [] ∧ c.objective = s.objective
+LeanPEP.Adapters.ProximalGradientSource.checked_certificate {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = c.bound
+LeanPEP.Imported.CompositeSource.PGOne.bound_check : checkBoundQ PGOne.sourceQ PGOne.upperQ = true
+LeanPEP.Imported.CompositeSource.PGTwo.bound_check : checkBoundQ PGTwo.sourceQ PGTwo.upperQ = true
+LeanPEP.Imported.CompositeSource.PGThree.bound_check : checkBoundQ PGThree.sourceQ PGThree.upperQ = true
+LeanPEP.Imported.CompositeSource.forged_local_certificate_accepted : checkUpperCertQ forgedUpperQ = true
+LeanPEP.Imported.CompositeSource.forged_bound_rejected : checkBoundQ forgedSourceQ forgedUpperQ = false
+LeanPEP.ActualFunction.ProximalGradientSourceAudit.finite_upper {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true)
+  (d : DataR (Fin (Profiles.ProximalGradient.valueCount n)) (Profiles.ProximalGradient.basisCount n))
+  (hpsd : IsGramPosSemidef d.gram) (hcon : AssumptionsFeasibleR (Profiles.ProximalGradient.modelQ n) d) :
+  (Profiles.ProximalGradient.objectiveQ n).evalR d ≤ ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientSourceAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) (hc : checkBoundQ s c = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientSourceAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientSourceAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.Adapters.ExactFormulation.checkListQ_eq_true_iff' depends on axioms: [propext]
+'LeanPEP.Adapters.ProximalGradientSource.checkSourceQ_eq_true_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientSource.checked_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeSource.PGThree.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeSource.PGThree.upper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeSource.forged_bound_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSourceAudit.upper_firstOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSourceAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

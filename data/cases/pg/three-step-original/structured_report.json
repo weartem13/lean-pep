@@ -1,0 +1,35 @@
+{
+  "actual_upper_verified": true,
+  "bound": {
+    "den": 499559,
+    "num": 41630
+  },
+  "candidate_accepted": true,
+  "candidate_bytes_sha256": "266fd8a8408de7f5a3e9325260874888c38610b9fa1bd7eae626ad00c433ae9e",
+  "capture_bytes_sha256": "d3dc736d4cd354a246c7438d1b1395ece81e740bf233291799fa6f1fbaeed30b",
+  "d13_acceptance_met": false,
+  "format": "leanpep-structured-pg-three-v1",
+  "generation_rule": "pg_t3_source_affine_common_grid_v1",
+  "horizon": 3,
+  "input_bytes_unchanged": true,
+  "interface_smoke_exit": 0,
+  "lean": {
+    "attempted": true,
+    "axioms_allowed": true,
+    "build_exit": 0,
+    "checked": true,
+    "reason": null,
+    "replay_exit": 0
+  },
+  "live_capture_performed": false,
+  "mode": "archive_structured",
+  "namespace": "LeanPEP.Imported.PGThreeStructured001",
+  "primal_certified": false,
+  "raw_modified": false,
+  "replay_bytes_sha256": "ea6b74274a0688a1fa8a40546d34394a702be7a3ffaf953db2152069248ed855",
+  "residual_recomputed": true,
+  "selected_endpoint": "structured",
+  "source_coefficients_changed": false,
+  "status": "verified_upper",
+  "tightness_claimed": false
+}

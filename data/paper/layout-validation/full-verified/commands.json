@@ -1,0 +1,3591 @@
+[
+  {
+    "label": "python_full",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/test_python.py",
+      "--inventory-json",
+      "<VALIDATION_LOGS>/full-verified/test-ids.json",
+      "-v"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 156.941331790993,
+    "log": "000_python_full.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "generated",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/check_generated.py",
+      "--output",
+      "<VALIDATION_LOGS>/full-verified/generation"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 13.05089704200509,
+    "log": "001_generated.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "core",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.786863749992335,
+    "log": "002_core.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "prerequisites",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSource",
+      "LeanPEP.Imported.CompositeCoordinates",
+      "LeanPEP.Imported.CompositeOrdering",
+      "LeanPEP.Imported.CompositeRows",
+      "LeanPEP.Imported.CompositePerformance",
+      "LeanPEP.Imported.CompositeSparse",
+      "LeanPEP.Imported.CompositeCandidates",
+      "LeanPEP.Imported.CompositeCapture",
+      "LeanPEP.Imported.CompositeCompletion",
+      "LeanPEP.Imported.CompositeBoundedCompletion"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.248881707986584,
+    "log": "003_prerequisites.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeSourceRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSourceRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.399834292009473,
+    "log": "004_build_CompositeSourceRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCoordinatesRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCoordinatesRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.346112749975873,
+    "log": "005_build_CompositeCoordinatesRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeOrderingRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeOrderingRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.3013911249872763,
+    "log": "006_build_CompositeOrderingRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeRowsRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeRowsRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.3561153339978773,
+    "log": "007_build_CompositeRowsRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositePerformanceRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositePerformanceRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.287151999975322,
+    "log": "008_build_CompositePerformanceRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeSparseRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeSparseRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.41049320800812,
+    "log": "009_build_CompositeSparseRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCandidatesRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCandidatesRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.6337792910053395,
+    "log": "010_build_CompositeCandidatesRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCaptureRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCaptureRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.677870832994813,
+    "log": "011_build_CompositeCaptureRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeCompletionRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeCompletionRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.504630959010683,
+    "log": "012_build_CompositeCompletionRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_CompositeBoundedCompletionRegression",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.CompositeBoundedCompletionRegression"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.723774082987802,
+    "log": "013_build_CompositeBoundedCompletionRegression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "aggregate",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.674352666013874,
+    "log": "014_aggregate.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_GDOneCapture",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.GDOneCapture"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 28.008869124983903,
+    "log": "015_build_GDOneCapture.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_GDOneCapturedTightness",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.GDOneCapturedTightness"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 19.435388291982235,
+    "log": "016_build_GDOneCapturedTightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_GDTwoCapture",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.GDTwoCapture"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 9.885730791982496,
+    "log": "017_build_GDTwoCapture.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_PGOneCapturedTightness",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.PGOneCapturedTightness"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 34.73855229199398,
+    "log": "018_build_PGOneCapturedTightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_GDOnePrimal",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Adapters.GDOnePrimal"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 3.433839415985858,
+    "log": "019_build_GDOnePrimal.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_PGOnePrimal",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Adapters.PGOnePrimal"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.692660500004422,
+    "log": "020_build_PGOnePrimal.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_C14GDOneDual",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.C14GDOneDual"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.6230174170050304,
+    "log": "021_build_C14GDOneDual.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_C14GDOnePrimal",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.C14GDOnePrimal"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.57968824999989,
+    "log": "022_build_C14GDOnePrimal.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 26,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_C14PGOnePrimal",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.C14PGOnePrimal"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.6122868329985067,
+    "log": "023_build_C14PGOnePrimal.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 28,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_C14PGOneUpper",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.Imported.C14PGOneUpper"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.8306124590162653,
+    "log": "024_build_C14PGOneUpper.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_0_V03SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V03SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 5.878470249997918,
+    "log": "025_smoke_files_0_V03SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_1_V04SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V04SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.822924000007333,
+    "log": "026_smoke_files_1_V04SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_2_V05SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V05SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.212906083994312,
+    "log": "027_smoke_files_2_V05SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_3_V06SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V06SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.080433833005372,
+    "log": "028_smoke_files_3_V06SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_4_V07SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V07SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 5.979349500004901,
+    "log": "029_smoke_files_4_V07SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_5_V08B2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V08B2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.202735917002428,
+    "log": "030_smoke_files_5_V08B2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_6_V08SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V08SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.143517040996812,
+    "log": "031_smoke_files_6_V08SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_7_V09SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V09SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.25612554201507,
+    "log": "032_smoke_files_7_V09SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_8_V10ASmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V10ASmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.216790917009348,
+    "log": "033_smoke_files_8_V10ASmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_9_V10BSmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V10BSmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.088986500020837,
+    "log": "034_smoke_files_9_V10BSmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_10_V10CSmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V10CSmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.234208541980479,
+    "log": "035_smoke_files_10_V10CSmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_11_V10D2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V10D2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.590256291005062,
+    "log": "036_smoke_files_11_V10D2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_12_V10DSmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V10DSmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.231737791997148,
+    "log": "037_smoke_files_12_V10DSmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_13_V11ASmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V11ASmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.235785083001247,
+    "log": "038_smoke_files_13_V11ASmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_14_V11BSmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V11BSmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.18575483301538,
+    "log": "039_smoke_files_14_V11BSmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_15_V11C2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V11C2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.88140054201358,
+    "log": "040_smoke_files_15_V11C2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_16_V11CSmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V11CSmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.135984458000166,
+    "log": "041_smoke_files_16_V11CSmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_17_V12A1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12A1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.942180500016548,
+    "log": "042_smoke_files_17_V12A1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_18_V12A2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12A2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.669258874986554,
+    "log": "043_smoke_files_18_V12A2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_19_V12A3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12A3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.503041832998861,
+    "log": "044_smoke_files_19_V12A3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_20_V12A4SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12A4SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.562172792007914,
+    "log": "045_smoke_files_20_V12A4SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_21_V12B10SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B10SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.819222459016601,
+    "log": "046_smoke_files_21_V12B10SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_22_V12B11SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B11SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.615700124995783,
+    "log": "047_smoke_files_22_V12B11SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_23_V12B12SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B12SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.666450666991295,
+    "log": "048_smoke_files_23_V12B12SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_24_V12B13SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B13SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.811658459017053,
+    "log": "049_smoke_files_24_V12B13SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_25_V12B1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.960862541978713,
+    "log": "050_smoke_files_25_V12B1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_26_V12B2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.2958625000028405,
+    "log": "051_smoke_files_26_V12B2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_27_V12B3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.119510749995243,
+    "log": "052_smoke_files_27_V12B3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_28_V12B4SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B4SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.320888542017201,
+    "log": "053_smoke_files_28_V12B4SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_29_V12B5SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B5SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.111152249999577,
+    "log": "054_smoke_files_29_V12B5SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_30_V12B6SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B6SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.349507665989222,
+    "log": "055_smoke_files_30_V12B6SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_31_V12B7SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B7SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.035620582988486,
+    "log": "056_smoke_files_31_V12B7SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_32_V12B8SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B8SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.055842625006335,
+    "log": "057_smoke_files_32_V12B8SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_33_V12B9SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12B9SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.11609004100319,
+    "log": "058_smoke_files_33_V12B9SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_34_V12C1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12C1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.33764783400693,
+    "log": "059_smoke_files_34_V12C1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_35_V12C2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12C2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.375256375002209,
+    "log": "060_smoke_files_35_V12C2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_36_V12C3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12C3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.150444207974942,
+    "log": "061_smoke_files_36_V12C3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_37_V12D1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12D1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.155923999991501,
+    "log": "062_smoke_files_37_V12D1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_38_V12D2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12D2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.192507792002289,
+    "log": "063_smoke_files_38_V12D2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_39_V12D3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12D3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 5.745706291985698,
+    "log": "064_smoke_files_39_V12D3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_40_V12D4SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V12D4SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 5.994740124995587,
+    "log": "065_smoke_files_40_V12D4SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_41_V13A1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13A1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.635879167006351,
+    "log": "066_smoke_files_41_V13A1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_42_V13A2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13A2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 5.909364499995718,
+    "log": "067_smoke_files_42_V13A2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_43_V13A3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13A3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.01434279201203,
+    "log": "068_smoke_files_43_V13A3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_44_V13B1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13B1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.494675791996997,
+    "log": "069_smoke_files_44_V13B1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 3,
+      "expected_declarations": 3,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_45_V13B2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13B2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.118629750009859,
+    "log": "070_smoke_files_45_V13B2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 4,
+      "expected_declarations": 4,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_46_V13B3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13B3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.074931999988621,
+    "log": "071_smoke_files_46_V13B3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 5,
+      "expected_declarations": 5,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_47_V13B4SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13B4SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.613755291997222,
+    "log": "072_smoke_files_47_V13B4SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_48_V13C10SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C10SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.219975792017067,
+    "log": "073_smoke_files_48_V13C10SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_49_V13C11SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C11SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.773757707996992,
+    "log": "074_smoke_files_49_V13C11SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_50_V13C1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.301689375017304,
+    "log": "075_smoke_files_50_V13C1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_51_V13C2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.883744457998546,
+    "log": "076_smoke_files_51_V13C2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_52_V13C3ASmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C3ASmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.172712166997371,
+    "log": "077_smoke_files_52_V13C3ASmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_53_V13C3BSmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C3BSmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.563008416997036,
+    "log": "078_smoke_files_53_V13C3BSmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_54_V13C4SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C4SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.13447483300115,
+    "log": "079_smoke_files_54_V13C4SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_55_V13C5SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C5SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.567391791992122,
+    "log": "080_smoke_files_55_V13C5SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_56_V13C6SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C6SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.704937792004785,
+    "log": "081_smoke_files_56_V13C6SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_57_V13C7SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C7SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.150988500012318,
+    "log": "082_smoke_files_57_V13C7SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_58_V13C8SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C8SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.170484875008697,
+    "log": "083_smoke_files_58_V13C8SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_59_V13C9SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13C9SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.598920250020456,
+    "log": "084_smoke_files_59_V13C9SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_60_V13D10SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D10SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.3061887079966255,
+    "log": "085_smoke_files_60_V13D10SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_61_V13D11SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D11SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.718043458997272,
+    "log": "086_smoke_files_61_V13D11SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_62_V13D12SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D12SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.348555959004443,
+    "log": "087_smoke_files_62_V13D12SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_63_V13D13SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D13SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.606028375012102,
+    "log": "088_smoke_files_63_V13D13SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 3,
+      "expected_declarations": 3,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_64_V13D1SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D1SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 13.303260167012922,
+    "log": "089_smoke_files_64_V13D1SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_65_V13D2SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D2SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.131977166980505,
+    "log": "090_smoke_files_65_V13D2SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_66_V13D3SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D3SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.751593499997398,
+    "log": "091_smoke_files_66_V13D3SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_67_V13D4SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D4SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.131949000002351,
+    "log": "092_smoke_files_67_V13D4SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_68_V13D5SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D5SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.552284999983385,
+    "log": "093_smoke_files_68_V13D5SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_69_V13D6SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D6SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.698758041980909,
+    "log": "094_smoke_files_69_V13D6SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_70_V13D7SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D7SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.324338249978609,
+    "log": "095_smoke_files_70_V13D7SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_71_V13D8SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D8SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.70706399998744,
+    "log": "096_smoke_files_71_V13D8SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "smoke_files_72_V13D9SmokeTest",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/smoke/V13D9SmokeTest.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.665670375019545,
+    "log": "097_smoke_files_72_V13D9SmokeTest.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "regression_files_0_gd_one_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/gd_one_regression.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.246970292006154,
+    "log": "098_regression_files_0_gd_one_regression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "regression_files_1_gd_one_tightness",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/gd_one_tightness.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.2238347090024035,
+    "log": "099_regression_files_1_gd_one_tightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 13,
+      "expected_declarations": 13,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "regression_files_2_pg_one_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/pg_one_regression.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 16.484469624992926,
+    "log": "100_regression_files_2_pg_one_regression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "regression_files_3_pg_one_tightness",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/pg_one_tightness.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.137820291973185,
+    "log": "101_regression_files_3_pg_one_tightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 14,
+      "expected_declarations": 14,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_0_PrimalReplay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/gd/one-step-exact/PrimalReplay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.617029832996195,
+    "log": "102_replay_files_0_PrimalReplay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 26,
+      "expected_declarations": 26,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_1_UpperReplay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/gd/one-step-exact/UpperReplay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 9.626092708000215,
+    "log": "103_replay_files_1_UpperReplay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_2_PrimalReplay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/gd/one-step-gap/PrimalReplay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.40042029201868,
+    "log": "104_replay_files_2_PrimalReplay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 26,
+      "expected_declarations": 26,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_3_Replay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/gd/one-step-upper/Replay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 9.037842624995392,
+    "log": "105_replay_files_3_Replay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_4_Replay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/gd/two-step-original/Replay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 16.5872236249852,
+    "log": "106_replay_files_4_Replay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 13,
+      "expected_declarations": 13,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_5_PrimalReplay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/pg/one-step-exact/PrimalReplay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 26.037685542018153,
+    "log": "107_replay_files_5_PrimalReplay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 28,
+      "expected_declarations": 28,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_6_UpperReplay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/pg/one-step-exact/UpperReplay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 23.77871758301626,
+    "log": "108_replay_files_6_UpperReplay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 10,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_7_Replay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/pg/one-step-exact/live-evidence/Replay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 16.499097209016327,
+    "log": "109_replay_files_7_Replay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 3,
+      "expected_declarations": 3,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_8_Replay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/pg/three-step-original/Replay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 139.54741704202024,
+    "log": "110_replay_files_8_Replay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 10,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_9_Replay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/pg/two-step-original/Replay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 55.79340366597171,
+    "log": "111_replay_files_9_Replay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 10,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_10_Replay",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/cases/pg/two-step-reuse/Replay.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 54.88231920800172,
+    "log": "112_replay_files_10_Replay.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 11,
+      "expected_declarations": 11,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "replay_files_11_Contrasts",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "data/paper/controls/Contrasts.lean"
+    ],
+    "timeout_seconds": 1200,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 117.06388979201438,
+    "log": "113_replay_files_11_Contrasts.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 27,
+      "expected_declarations": 27,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "interface_smoke",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "examples/interface.lean"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 7.167268166987924,
+    "log": "114_interface_smoke.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 2,
+      "expected_declarations": 2,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "pg2_recover",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/tools/replay_pg_certificate.py",
+      "recover",
+      "--source-root",
+      "<PUBLIC_SOURCE>",
+      "--input",
+      "<PUBLIC_SOURCE>/data/cases/pg/two-step-reuse/capture.json",
+      "--output",
+      "<VALIDATION_LOGS>/full-verified/pg2-recover",
+      "--namespace",
+      "LeanPEP.Imported.Public.PG2",
+      "--timeout",
+      "900"
+    ],
+    "timeout_seconds": 1020,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 60.026912999979686,
+    "log": "115_pg2_recover.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "cleanup_dry_run",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/clean.py"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 0.2399067909864243,
+    "log": "116_cleanup_dry_run.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  }
+]

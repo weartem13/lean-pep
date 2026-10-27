@@ -1,0 +1,95 @@
+LeanPEP.Profiles.ProximalGradientCertificate.boundQ_pos (n : ℕ) : 0 < boundQ n
+LeanPEP.Profiles.ProximalGradientCertificate.smoothStarWeightQ_nonneg (n : ℕ) (i : Fin (n + 2)) :
+  0 ≤ smoothStarWeightQ n i
+LeanPEP.Profiles.ProximalGradientCertificate.smoothChainWeightQ_nonneg (n : ℕ) (i : Fin (n + 1)) :
+  0 ≤ smoothChainWeightQ n i
+LeanPEP.Profiles.ProximalGradientCertificate.nonsmoothStarWeightQ_nonneg (n : ℕ) (j : Fin (n + 1)) :
+  0 ≤ nonsmoothStarWeightQ n j
+LeanPEP.Profiles.ProximalGradientCertificate.nonsmoothChainWeightQ_nonneg (n : ℕ) (j : Fin n) :
+  0 ≤ nonsmoothChainWeightQ n j
+LeanPEP.Profiles.ProximalGradientCertificate.pivotNumeratorQ_pos (n : ℕ) (i : Fin (n + 1)) : 0 < pivotNumeratorQ n i
+LeanPEP.Profiles.ProximalGradientCertificate.mixedWeightQ_nonneg (n : ℕ) (i : Fin (n + 1)) : 0 ≤ mixedWeightQ n i
+LeanPEP.Profiles.ProximalGradientCertificate.gradientDifferenceWeightQ_nonneg (n : ℕ) (i : Fin (n + 1)) :
+  0 ≤ gradientDifferenceWeightQ n i
+LeanPEP.Profiles.ProximalGradientCertificate.assumptionTermsQ_nonneg (n : ℕ)
+  (t : AssumptionTermQ (Profiles.ProximalGradient.modelQ n)) : t ∈ assumptionTermsQ n → 0 ≤ t.weight
+LeanPEP.Profiles.ProximalGradientCertificate.dualFactorsQ_nonneg (n : ℕ)
+  (t : RankOneFactorQ (Profiles.ProximalGradient.basisCount n)) : t ∈ dualFactorsQ n → 0 ≤ t.weight
+LeanPEP.Profiles.ProximalGradientCertificate.dualValidQ_all (n : ℕ) :
+  PSDFactorValidQ (upperCertQ n).dualMatrix (upperCertQ n).dualFactor
+LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_iff_identity (n : ℕ) :
+  checkUpperCertQ (upperCertQ n) = true ↔ CertificateIdentityQ n
+LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_one : checkUpperCertQ (upperCertQ 0) = true
+LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_two : checkUpperCertQ (upperCertQ 1) = true
+LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_three : checkUpperCertQ (upperCertQ 2) = true
+LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_four : checkUpperCertQ (upperCertQ 3) = true
+LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_small (n : ℕ) (hn : n ≤ 3) :
+  checkUpperCertQ (upperCertQ n) = true
+LeanPEP.ActualFunction.ProximalGradientWitness.nonsmooth_convex (n : ℕ) :
+  ConvexOn ℝ Set.univ (ActualFunction.ProximalGradientWitness.nonsmoothFunction n)
+LeanPEP.ActualFunction.ProximalGradientWitness.star_subgradient (n : ℕ) :
+  ActualFunction.Proximal.SubgradientAt (ActualFunction.ProximalGradientWitness.nonsmoothFunction n)
+    (-ActualFunction.ProximalGradientWitness.smoothGradient 0) 0
+LeanPEP.ActualFunction.ProximalGradientWitness.witnessPoint_nonneg (n k : ℕ) (hk : k ≤ n + 1) :
+  0 ≤ ActualFunction.ProximalGradientWitness.witnessPoint n k
+LeanPEP.ActualFunction.ProximalGradientWitness.residual_value (n k : ℕ) :
+  ActualFunction.ProximalGradient.residual ActualFunction.ProximalGradientWitness.smoothGradient
+      (ActualFunction.ProximalGradientWitness.witnessPoint n) k =
+    ActualFunction.ProximalGradientWitness.slope n - 1
+LeanPEP.ActualFunction.ProximalGradientWitness.actual_run (n : ℕ) :
+  ActualFunction.ProximalGradient.IsProxRun (n + 1) (ActualFunction.ProximalGradientWitness.nonsmoothFunction n)
+    ActualFunction.ProximalGradientWitness.smoothGradient (ActualFunction.ProximalGradientWitness.witnessPoint n)
+LeanPEP.ActualFunction.ProximalGradientWitness.attains (n : ℕ) :
+  ActualFunction.ProximalGradientWitness.smoothFunction
+          (ActualFunction.ProximalGradientWitness.witnessPoint n (n + 1)) +
+        ActualFunction.ProximalGradientWitness.nonsmoothFunction n
+          (ActualFunction.ProximalGradientWitness.witnessPoint n (n + 1)) -
+      (ActualFunction.ProximalGradientWitness.smoothFunction 0 +
+        ActualFunction.ProximalGradientWitness.nonsmoothFunction n 0) =
+    ↑(boundQ n)
+LeanPEP.ActualFunction.ProximalGradientWitness.bound_mem_analyticValues (n : ℕ) :
+  ↑(boundQ n) ∈ ActualFunction.ProximalGradient.oneDimensionalAnalyticValues n
+LeanPEP.ActualFunction.ProximalGradientWitness.bound_mem_finiteValues (n : ℕ) :
+  ↑(boundQ n) ∈ Profiles.ProximalGradient.finiteValues n
+LeanPEP.ActualFunction.ProximalGradientWitness.bound_le_any_upper (n : ℕ) (b : ℝ)
+  (hb : ∀ r ∈ ActualFunction.ProximalGradient.oneDimensionalAnalyticValues n, r ≤ b) : ↑(boundQ n) ≤ b
+LeanPEP.ActualFunction.ProximalGradientRate.upper_analytic_of_check.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n : ℕ} (hc : checkUpperCertQ (upperCertQ n) = true) {f h : E → ℝ}
+  {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsOneSmoothConvexAnalytic f g) (hh : ConvexOn ℝ Set.univ h)
+  (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsProxRun (n + 1) h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ 1 / (4 * (↑n + 1))
+LeanPEP.ActualFunction.ProximalGradientRate.upper_analytic_small.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] (n : ℕ) (hn : n ≤ 3) {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsOneSmoothConvexAnalytic f g) (hh : ConvexOn ℝ Set.univ h)
+  (hs : ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar)
+  (hrun : ActualFunction.ProximalGradient.IsProxRun (n + 1) h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ 1) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ 1 / (4 * (↑n + 1))
+LeanPEP.ActualFunction.ProximalGradientRate.finite_tight_small (n : ℕ) (hn : n ≤ 3) :
+  IsGreatest (Profiles.ProximalGradient.finiteValues n) (1 / (4 * (↑n + 1)))
+LeanPEP.ActualFunction.ProximalGradientRate.analytic_tight_small (n : ℕ) (hn : n ≤ 3) :
+  IsGreatest (ActualFunction.ProximalGradient.oneDimensionalAnalyticValues n) (1 / (4 * (↑n + 1)))
+LeanPEP.ActualFunction.ProximalGradientRate.analytic_upper_and_oneDimensional_tight.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] (n : ℕ) (hn : n ≤ 3) :
+  (∀ {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E},
+      ActualFunction.IsOneSmoothConvexAnalytic f g →
+        ConvexOn ℝ Set.univ h →
+          ActualFunction.Proximal.SubgradientAt h (-g xStar) xStar →
+            ActualFunction.ProximalGradient.IsProxRun (n + 1) h g x →
+              ‖x 0 - xStar‖ ^ 2 ≤ 1 → f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ 1 / (4 * (↑n + 1))) ∧
+    IsGreatest (ActualFunction.ProximalGradient.oneDimensionalAnalyticValues n) (1 / (4 * (↑n + 1)))
+tests/lean/smoke/V13C3ASmokeTest.lean:63:84: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.Profiles.ProximalGradientCertificate.dualValidQ_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Profiles.ProximalGradientCertificate.upperCertQ_check_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientWitness.actual_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientWitness.attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientRate.upper_analytic_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientRate.analytic_tight_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

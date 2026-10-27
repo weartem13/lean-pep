@@ -1,0 +1,60 @@
+[
+  {
+    "label": "build_pg_tightness",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.PGOneCapturedTightness"
+    ],
+    "timeout_seconds": 1800
+  },
+  {
+    "label": "build_gd_tightness",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.GDOneCapturedTightness"
+    ],
+    "timeout_seconds": 1800
+  },
+  {
+    "label": "gd_one_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/gd_one_regression.lean"
+    ],
+    "timeout_seconds": 900
+  },
+  {
+    "label": "gd_one_tightness",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/gd_one_tightness.lean"
+    ],
+    "timeout_seconds": 900
+  },
+  {
+    "label": "pg_one_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/pg_one_regression.lean"
+    ],
+    "timeout_seconds": 900
+  },
+  {
+    "label": "pg_one_tightness",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/pg_one_tightness.lean"
+    ],
+    "timeout_seconds": 900
+  }
+]

@@ -1,0 +1,1150 @@
+{
+  "status": "passed",
+  "mode": "full",
+  "coverage": {
+    "library_modules": 247,
+    "aggregate_project_modules": 238,
+    "unaggregated_modules": 10,
+    "smoke_files": 73,
+    "regression_files": 4,
+    "replay_files": 12,
+    "historical_replays_preserved_without_rerun": 8
+  },
+  "completed_commands": 117,
+  "planned_commands": 117,
+  "live_capture_performed": false,
+  "standard_axioms_checked_by_consumer": true,
+  "direct_axiom_audits": [
+    {
+      "label": "core",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "prerequisites",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeSourceRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeCoordinatesRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeOrderingRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeRowsRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositePerformanceRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeSparseRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeCandidatesRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeCaptureRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeCompletionRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_CompositeBoundedCompletionRegression",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "aggregate",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_GDOneCapture",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_GDOneCapturedTightness",
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_GDTwoCapture",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_PGOneCapturedTightness",
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_GDOnePrimal",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_PGOnePrimal",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_C14GDOneDual",
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_C14GDOnePrimal",
+      "passed": true,
+      "printed_declarations": 26,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_C14PGOnePrimal",
+      "passed": true,
+      "printed_declarations": 28,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_C14PGOneUpper",
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_0_V03SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_1_V04SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_2_V05SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_3_V06SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_4_V07SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_5_V08B2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_6_V08SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_7_V09SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_8_V10ASmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_9_V10BSmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_10_V10CSmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_11_V10D2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_12_V10DSmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_13_V11ASmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_14_V11BSmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_15_V11C2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_16_V11CSmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_17_V12A1SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_18_V12A2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_19_V12A3SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_20_V12A4SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_21_V12B10SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_22_V12B11SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_23_V12B12SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_24_V12B13SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_25_V12B1SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_26_V12B2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_27_V12B3SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_28_V12B4SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_29_V12B5SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_30_V12B6SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_31_V12B7SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_32_V12B8SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_33_V12B9SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_34_V12C1SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_35_V12C2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_36_V12C3SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_37_V12D1SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_38_V12D2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_39_V12D3SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_40_V12D4SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_41_V13A1SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_42_V13A2SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_43_V13A3SmokeTest",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_44_V13B1SmokeTest",
+      "passed": true,
+      "printed_declarations": 3,
+      "expected_declarations": 3,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_45_V13B2SmokeTest",
+      "passed": true,
+      "printed_declarations": 4,
+      "expected_declarations": 4,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_46_V13B3SmokeTest",
+      "passed": true,
+      "printed_declarations": 5,
+      "expected_declarations": 5,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_47_V13B4SmokeTest",
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_48_V13C10SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_49_V13C11SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_50_V13C1SmokeTest",
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_51_V13C2SmokeTest",
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_52_V13C3ASmokeTest",
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_53_V13C3BSmokeTest",
+      "passed": true,
+      "printed_declarations": 6,
+      "expected_declarations": 6,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_54_V13C4SmokeTest",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_55_V13C5SmokeTest",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_56_V13C6SmokeTest",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_57_V13C7SmokeTest",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_58_V13C8SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_59_V13C9SmokeTest",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_60_V13D10SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_61_V13D11SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_62_V13D12SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_63_V13D13SmokeTest",
+      "passed": true,
+      "printed_declarations": 3,
+      "expected_declarations": 3,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_64_V13D1SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_65_V13D2SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_66_V13D3SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_67_V13D4SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_68_V13D5SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_69_V13D6SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_70_V13D7SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_71_V13D8SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "smoke_files_72_V13D9SmokeTest",
+      "passed": true,
+      "printed_declarations": 8,
+      "expected_declarations": 8,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "regression_files_0_gd_one_regression",
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "regression_files_1_gd_one_tightness",
+      "passed": true,
+      "printed_declarations": 13,
+      "expected_declarations": 13,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "regression_files_2_pg_one_regression",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "regression_files_3_pg_one_tightness",
+      "passed": true,
+      "printed_declarations": 14,
+      "expected_declarations": 14,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_0_PrimalReplay",
+      "passed": true,
+      "printed_declarations": 26,
+      "expected_declarations": 26,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_1_UpperReplay",
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_2_PrimalReplay",
+      "passed": true,
+      "printed_declarations": 26,
+      "expected_declarations": 26,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_3_Replay",
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_4_Replay",
+      "passed": true,
+      "printed_declarations": 13,
+      "expected_declarations": 13,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_5_PrimalReplay",
+      "passed": true,
+      "printed_declarations": 28,
+      "expected_declarations": 28,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_6_UpperReplay",
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 10,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_7_Replay",
+      "passed": true,
+      "printed_declarations": 3,
+      "expected_declarations": 3,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_8_Replay",
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 10,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_9_Replay",
+      "passed": true,
+      "printed_declarations": 10,
+      "expected_declarations": 10,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_10_Replay",
+      "passed": true,
+      "printed_declarations": 11,
+      "expected_declarations": 11,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "replay_files_11_Contrasts",
+      "passed": true,
+      "printed_declarations": 27,
+      "expected_declarations": 27,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "interface_smoke",
+      "passed": true,
+      "printed_declarations": 2,
+      "expected_declarations": 2,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    }
+  ],
+  "selected_byte_comparison": true
+}

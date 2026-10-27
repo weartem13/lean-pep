@@ -1,0 +1,10 @@
+{
+  "dependencies_only": true,
+  "dependency_mode": "official upstream Git and matching binary cache",
+  "dependency_source_cold_build": false,
+  "first_error": "mathlib_fetch: exit 128; see 05_mathlib_fetch.log",
+  "old_project_objects_used": false,
+  "source_id": "sha256:0e87f88f9f440e7b3fdd102a284d8f9958f922e413c4a442253f41ecba244784",
+  "source_root": "<PUBLIC_SOURCE>",
+  "status": "not_verified"
+}

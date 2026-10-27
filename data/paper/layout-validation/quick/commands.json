@@ -1,0 +1,142 @@
+[
+  {
+    "label": "core",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 95.2274698750116,
+    "log": "000_core.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "consumer_python",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/test_python.py",
+      "--pattern",
+      "test_pg_certificate_consumer.py",
+      "-v"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 3.2365521249885205,
+    "log": "001_consumer_python.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "interface_smoke",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "examples/interface.lean"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 5.640534540987574,
+    "log": "002_interface_smoke.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 2,
+      "expected_declarations": 2,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "pg2_verify",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/tools/replay_pg_certificate.py",
+      "verify",
+      "--source-root",
+      "<PUBLIC_SOURCE>",
+      "--input",
+      "<PUBLIC_SOURCE>/data/cases/pg/two-step-reuse/capture.json",
+      "--candidate",
+      "<PUBLIC_SOURCE>/data/cases/pg/two-step-reuse/selected_exact.json",
+      "--output",
+      "<VALIDATION_LOGS>/quick/pg2-verify",
+      "--namespace",
+      "LeanPEP.Imported.Public.PG2",
+      "--timeout",
+      "900"
+    ],
+    "timeout_seconds": 960,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 50.84851900002104,
+    "log": "003_pg2_verify.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "cleanup_dry_run",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/clean.py"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 0.07390870898962021,
+    "log": "004_cleanup_dry_run.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  }
+]

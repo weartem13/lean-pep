@@ -1,0 +1,59 @@
+LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate.{u_1} {E : Type u_1} [NormedAddCommGroup E] (g : E → E)
+  (x0 : E) : ℕ → E
+LeanPEP.ActualFunction.ParametricGDActual.sampledGradient.{u_1} {E : Type u_1} [NormedAddCommGroup E] (N : ℕ)
+  (g : E → E) (x0 : E) : Fin (N + 1) → E
+LeanPEP.ActualFunction.ParametricGDActual.sampledValue.{u_1} {E : Type u_1} [NormedAddCommGroup E] (N : ℕ) (f : E → ℝ)
+  (g : E → E) (xStar x0 : E) : Fin (N + 1) → ℝ
+LeanPEP.ActualFunction.ParametricGDActual.actualPoint.{u_1} {E : Type u_1} [NormedAddCommGroup E] (N : ℕ) (xStar : E)
+  (g : E → E) (x0 : E) : LeanPEP.Toy.FiniteGD.Point N → E
+LeanPEP.ActualFunction.ParametricGDActual.prefixVector_sampledGradient.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (g : E → E) (x0 : E) (k : ℕ) (hk : k ≤ N + 1) :
+  LeanPEP.ActualFunction.ParametricGDHilbert.prefixVector
+      (LeanPEP.ActualFunction.ParametricGDActual.sampledGradient N g x0) k hk =
+    x0 - LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate g x0 k
+LeanPEP.ActualFunction.ParametricGDActual.pointPosition_sampledGradient.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (xStar : E) (g : E → E) (x0 : E) (i : LeanPEP.Toy.FiniteGD.Point N) :
+  LeanPEP.ActualFunction.ParametricGDHilbert.pointPosition (x0 - xStar)
+      (LeanPEP.ActualFunction.ParametricGDActual.sampledGradient N g x0) i =
+    LeanPEP.ActualFunction.ParametricGDActual.actualPoint N xStar g x0 i - xStar
+LeanPEP.ActualFunction.ParametricGDActual.actualPoint_iter_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (xStar : E) (g : E → E) (x0 : E) (k : Fin N) :
+  LeanPEP.ActualFunction.ParametricGDActual.actualPoint N xStar g x0 (LeanPEP.Toy.FiniteGD.Point.iter ⟨↑k + 1, ⋯⟩) =
+    LeanPEP.ActualFunction.ParametricGDActual.actualPoint N xStar g x0 (LeanPEP.Toy.FiniteGD.Point.iter ⟨↑k, ⋯⟩) -
+      g (LeanPEP.ActualFunction.ParametricGDActual.actualPoint N xStar g x0 (LeanPEP.Toy.FiniteGD.Point.iter ⟨↑k, ⋯⟩))
+LeanPEP.ActualFunction.ParametricGDActual.interpolationSlack_sampled.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E} (N : ℕ) (xStar x0 : E) (hstationary : g xStar = 0)
+  (i j : LeanPEP.Toy.FiniteGD.Point N) :
+  LeanPEP.ActualFunction.ParametricGDHilbert.interpolationSlack (x0 - xStar)
+      (LeanPEP.ActualFunction.ParametricGDActual.sampledGradient N g x0)
+      (LeanPEP.ActualFunction.ParametricGDActual.sampledValue N f g xStar x0) i j =
+    LeanPEP.ActualFunction.interpolationSlack f g (LeanPEP.ActualFunction.ParametricGDActual.actualPoint N xStar g x0 i)
+      (LeanPEP.ActualFunction.ParametricGDActual.actualPoint N xStar g x0 j)
+LeanPEP.ActualFunction.ParametricGDActual.feasible_of_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E} (h : LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder f g) (N : ℕ)
+  {xStar x0 : E} (hstationary : g xStar = 0) :
+  LeanPEP.ActualFunction.ParametricGDHilbert.Feasible (x0 - xStar)
+    (LeanPEP.ActualFunction.ParametricGDActual.sampledGradient N g x0)
+    (LeanPEP.ActualFunction.ParametricGDActual.sampledValue N f g xStar x0)
+LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.parametricGD_upper_exact_radius.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder f g) (N : ℕ) {xStar x0 : E} (hstationary : g xStar = 0) :
+  f (LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate g x0 N) - f xStar ≤
+    ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N) * ‖x0 - xStar‖ ^ 2
+LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.parametricGD_upper_unit_radius.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder f g) (N : ℕ) {xStar x0 : E} (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  f (LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate g x0 N) - f xStar ≤
+    ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.parametricGD_upper_exact_radius.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (N : ℕ) {xStar x0 : E} (hstationary : g xStar = 0) :
+  f (LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate g x0 N) - f xStar ≤
+    ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N) * ‖x0 - xStar‖ ^ 2
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.parametricGD_upper_unit_radius.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (N : ℕ) {xStar x0 : E} (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  f (LeanPEP.ActualFunction.ParametricGDActual.unitGDIterate g x0 N) - f xStar ≤
+    ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)

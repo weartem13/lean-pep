@@ -1,0 +1,309 @@
+{
+  "stage": "candidate_returned",
+  "wall_seconds": 3.02375120902434,
+  "trial_count": 3,
+  "trials": [
+    {
+      "denominator": 500000,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499999,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499998,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": true,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true,
+      "psd": {
+        "format": "leanpep-psd-synthesis-v1",
+        "producer_version": "v0.13D1",
+        "matrix_sha256": "096be50fa8a4298373323255fd7124be5e0e674597a9ae6eba55191b300d8697",
+        "dimension": 8,
+        "status": "psd",
+        "reason": "exact factor identity",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "python_exact_recheck": true,
+        "lean_status": "not_run_by_this_producer",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "factor_count": 6,
+        "factor_certificate": {
+          "factors": [
+            {
+              "weight": {
+                "num": 31250,
+                "den": 249999
+              },
+              "vector": [
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -1,
+                  "den": 31250
+                },
+                {
+                  "num": -1,
+                  "den": 1
+                },
+                {
+                  "num": 105211,
+                  "den": 125000
+                },
+                {
+                  "num": 221,
+                  "den": 200
+                },
+                {
+                  "num": 69903,
+                  "den": 62500
+                },
+                {
+                  "num": 361873,
+                  "den": 125000
+                },
+                {
+                  "num": 50997,
+                  "den": 25000
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 651049479,
+                "den": 1302078125
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": -365318171,
+                  "den": 1736131944
+                },
+                {
+                  "num": 44375,
+                  "den": 15625187496
+                },
+                {
+                  "num": -364074287,
+                  "den": 1302098958
+                },
+                {
+                  "num": 99791,
+                  "den": 5208395832
+                },
+                {
+                  "num": -7968088765,
+                  "den": 15625187496
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 38475945472741,
+                "den": 385805555438272
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -92045744104289,
+                  "den": 346283509254669
+                },
+                {
+                  "num": -21474333531360,
+                  "den": 38475945472741
+                },
+                {
+                  "num": 1461098561767,
+                  "den": 5496563638963
+                },
+                {
+                  "num": -153011042185397,
+                  "den": 346283509254669
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 30276141974796387881,
+                "den": 259711593090473985993
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -63308020144161140949,
+                  "den": 121104567899185551524
+                },
+                {
+                  "num": -30275499122396352447,
+                  "den": 30276141974796387881
+                },
+                {
+                  "num": 63310591553761282685,
+                  "den": 121104567899185551524
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 47066411527853518918935721,
+                "den": 363312250442741864345381712
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 2239280266358304225602,
+                  "den": 47066411527853518918935721
+                },
+                {
+                  "num": -47064172247587160614710119,
+                  "den": 47066411527853518918935721
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 753003301606743693518356135,
+                "den": 94132446524414815009720090514232
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "original_upper_accepted": true
+    }
+  ],
+  "returned_candidate": true
+}

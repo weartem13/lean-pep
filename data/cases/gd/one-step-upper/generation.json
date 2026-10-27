@@ -1,0 +1,479 @@
+{
+  "free_indices": [
+    2,
+    5,
+    6,
+    7,
+    8
+  ],
+  "generation_rule": "gd_one_source_affine_grid_v1",
+  "grid_seed": [
+    {
+      "den": 499997,
+      "num": 83333
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 499997,
+      "num": 83333
+    },
+    {
+      "den": 499997,
+      "num": 172184
+    },
+    {
+      "den": 499997,
+      "num": 327813
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499997,
+      "num": 327814
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499997,
+      "num": 155630
+    }
+  ],
+  "known_rate_used": false,
+  "matrix": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": -1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ]
+  ],
+  "max_trials": 128,
+  "pivot_indices": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "raw_seed": [
+    {
+      "den": 1250000000000000,
+      "num": 208333333336233
+    },
+    {
+      "den": 10000000000000000,
+      "num": 10000000000047669
+    },
+    {
+      "den": 1250000000000000,
+      "num": 208333333336233
+    },
+    {
+      "den": 10000000000000000,
+      "num": 3443700654963083
+    },
+    {
+      "den": 500000000000000,
+      "num": 327814967265223
+    },
+    {
+      "den": 1000000000000000000000000000,
+      "num": 9081341948518489
+    },
+    {
+      "den": 10000000000000000,
+      "num": 6556310175716147
+    },
+    {
+      "den": 1000000000000000000000000000,
+      "num": 17707068559743983
+    },
+    {
+      "den": 5000000000000000,
+      "num": 1556304760421849
+    }
+  ],
+  "residual_recomputed": true,
+  "rhs": [
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 1
+    }
+  ],
+  "solution": [
+    {
+      "den": 499997,
+      "num": 83333
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 499997,
+      "num": 83333
+    },
+    {
+      "den": 499997,
+      "num": 172184
+    },
+    {
+      "den": 499997,
+      "num": 327813
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499997,
+      "num": 327814
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 499997,
+      "num": 155630
+    }
+  ],
+  "trial_count": 4,
+  "trials": [
+    {
+      "denominator": 500000,
+      "nonnegative": true,
+      "policy": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499999,
+      "nonnegative": true,
+      "policy": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499998,
+      "nonnegative": true,
+      "policy": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499997,
+      "nonnegative": true,
+      "policy": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": true,
+        "interpolation_references": true,
+        "policy_valid": true
+      },
+      "psd": {
+        "dimension": 3,
+        "factor_certificate": {
+          "factors": [
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 83333,
+                  "num": -86092
+                },
+                {
+                  "den": 166666,
+                  "num": -327813
+                }
+              ],
+              "weight": {
+                "den": 499997,
+                "num": 83333
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 13873553616,
+                  "num": -13873550857
+                }
+              ],
+              "weight": {
+                "den": 41666250001,
+                "num": 6936776808
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                }
+              ],
+              "weight": {
+                "den": 13873470374678304,
+                "num": 41620577515
+              }
+            }
+          ]
+        },
+        "factor_count": 3,
+        "format": "leanpep-psd-synthesis-v1",
+        "lean_status": "not_run_by_this_producer",
+        "matrix_sha256": "14b0cb2652d4c67222cd8b289d40a71e69fa00ad7b4afa7207850768c4bb52e2",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          2
+        ],
+        "producer_version": "v0.13D1",
+        "python_exact_recheck": true,
+        "reason": "exact factor identity",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "status": "psd"
+      }
+    }
+  ]
+}

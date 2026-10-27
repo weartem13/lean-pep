@@ -1,0 +1,3683 @@
+{
+  "candidate_diagnostic_accepted": true,
+  "changed_count": 85,
+  "coefficient_count": 158,
+  "entries": [
+    {
+      "absolute_error": {
+        "den": 999980000000000000000,
+        "num": 499982820193603
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 62499
+      },
+      "delta": {
+        "den": 999980000000000000000,
+        "num": 499982820193603
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.bound",
+      "raw": {
+        "den": 20000000000000000,
+        "num": 2500000000343603
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.const",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 1
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[0]",
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.value_coeff[7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[0][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[1][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[2][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[3][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[4][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[5][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[6][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][0]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][1]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][2]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][3]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][4]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][5]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][6]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.objective.gram_coeff[7][7]",
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 10000000000000000,
+        "num": 255491
+      },
+      "candidate": {
+        "den": 1,
+        "num": 1
+      },
+      "delta": {
+        "den": 10000000000000000,
+        "num": -255491
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[0].weight",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 10000000000255491
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 999980000000000000000,
+        "num": 499982820193603
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 62499
+      },
+      "delta": {
+        "den": 999980000000000000000,
+        "num": 499982820193603
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[1].weight",
+      "raw": {
+        "den": 20000000000000000,
+        "num": 2500000000343603
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 312493750000000000000,
+        "num": 29979581226467
+      },
+      "candidate": {
+        "den": 99998,
+        "num": 17203
+      },
+      "delta": {
+        "den": 312493750000000000000,
+        "num": 29979581226467
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[2].weight",
+      "raw": {
+        "den": 6250000000000000,
+        "num": 1075208404576467
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 125012027748037
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 81961
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": -125012027748037
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[3].weight",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 3278508070401963
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 82965207613141
+      },
+      "candidate": {
+        "den": 99998,
+        "num": 50011
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": 82965207613141
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[4].weight",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 5001198364663141
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 312500000000000000000,
+        "num": 287678385033387
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 312500000000000000000,
+        "num": -287678385033387
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[5].weight",
+      "raw": {
+        "den": 312500000000000000000,
+        "num": 287678385033387
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 199996000000000000000,
+        "num": 131233365761359
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 54869
+      },
+      "delta": {
+        "den": 199996000000000000000,
+        "num": 131233365761359
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[6].weight",
+      "raw": {
+        "den": 4000000000000000,
+        "num": 877918933711359
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 964467370296467
+      },
+      "candidate": {
+        "den": 49999,
+        "num": 8449
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 964467370296467
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[7].weight",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 8449149693646467
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 24999500000000000000000000,
+        "num": 19338390000543528427
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 1
+      },
+      "delta": {
+        "den": 24999500000000000000000000,
+        "num": 19338390000543528427
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[8].weight",
+      "raw": {
+        "den": 500000000000000000000,
+        "num": 613244464878427
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 999980000000000000000,
+        "num": 537655419294503
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 30248
+      },
+      "delta": {
+        "den": 999980000000000000000,
+        "num": 537655419294503
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[9].weight",
+      "raw": {
+        "den": 20000000000000000,
+        "num": 2419877644444503
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 91168597192527
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 165563
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": -91168597192527
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[10].weight",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 6622654276457473
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000000000,
+        "num": 79429033208692927573
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 1
+      },
+      "delta": {
+        "den": 499990000000000000000000000,
+        "num": 79429033208692927573
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[11].weight",
+      "raw": {
+        "den": 10000000000000000000000,
+        "num": 18411787571577573
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 2560944307222021
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 47717
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -2560944307222021
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[12].weight",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 9543642091727979
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 1806777439997089
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 117963
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 1806777439997089
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[13].weight",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 11796499794447089
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 351327582186061
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 141027
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": 351327582186061
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[14].weight",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 2820589385236061
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 351370276232163
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 358963
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": -351370276232163
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[15].weight",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 7179410615617837
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000000000000,
+        "num": 856266742591107
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 25000000000000000000000000,
+        "num": -856266742591107
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[16].weight",
+      "raw": {
+        "den": 25000000000000000000000000,
+        "num": 856266742591107
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 15624687500000000000,
+        "num": 2693945524497
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 108968
+      },
+      "delta": {
+        "den": 15624687500000000000,
+        "num": 2693945524497
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[17].weight",
+      "raw": {
+        "den": 312500000000000,
+        "num": 136212670374497
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 6250000000000000000000000,
+        "num": 321130015698687
+      },
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 6250000000000000000000000,
+        "num": -321130015698687
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[18].weight",
+      "raw": {
+        "den": 6250000000000000000000000,
+        "num": 321130015698687
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 2651383309770387
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 76909
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -2651383309770387
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.assumption_terms[19].weight",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 15382160670879613
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 2499893958470873
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 62499
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": 2499893958470873
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][0]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 12500000002120873
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 49999000000000000000000000,
+        "num": 298756348557773931
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -1
+      },
+      "delta": {
+        "den": 49999000000000000000000000,
+        "num": -298756348557773931
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][1]",
+      "raw": {
+        "den": 1000000000000000000000,
+        "num": -1994064754323931
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 2500002403601927
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -62499
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -2500002403601927
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][2]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -12499999999951927
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 249995000000000000000,
+        "num": 11994993817359
+      },
+      "candidate": {
+        "den": 199996,
+        "num": 17203
+      },
+      "delta": {
+        "den": 249995000000000000000,
+        "num": 11994993817359
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][3]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 430083361767359
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 124997500000000000000,
+        "num": 43917576271937
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 141027
+      },
+      "delta": {
+        "den": 124997500000000000000,
+        "num": 43917576271937
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][4]",
+      "raw": {
+        "den": 2500000000000000,
+        "num": 352573673121937
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 156249227763691
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 81961
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": -156249227763691
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][5]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 4098135087686309
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 878393119956833
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 358963
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": -878393119956833
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][6]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 17948526538393167
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 103722316562779
+      },
+      "candidate": {
+        "den": 199996,
+        "num": 50011
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": 103722316562779
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[0][7]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 6251497955512779
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 49999000000000000000000000,
+        "num": 298756348557773931
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -1
+      },
+      "delta": {
+        "den": 49999000000000000000000000,
+        "num": -298756348557773931
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][0]",
+      "raw": {
+        "den": 1000000000000000000000,
+        "num": -1994064754323931
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 249995000000000000000,
+        "num": 2973738374051
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 249997
+      },
+      "delta": {
+        "den": 249995000000000000000,
+        "num": 2973738374051
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][1]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 2500019940924051
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 49999000000000000000000000,
+        "num": 298756349642352239
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 1
+      },
+      "delta": {
+        "den": 49999000000000000000000000,
+        "num": 298756349642352239
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][2]",
+      "raw": {
+        "den": 1000000000000000000000,
+        "num": 1994064754302239
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 269781733848157
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -86017
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -269781733848157
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][3]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -8601866641698157
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 49999000000000000000000000,
+        "num": 23312009121789524077
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -1
+      },
+      "delta": {
+        "den": 49999000000000000000000000,
+        "num": -23312009121789524077
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][4]",
+      "raw": {
+        "den": 1000000000000000000000,
+        "num": -1533790493374077
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 1706180372117163
+      },
+      "candidate": {
+        "den": 249995,
+        "num": -40981
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -1706180372117163
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][5]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -16392693730267163
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 7812343750000000000000000,
+        "num": 620744198411941617
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -1
+      },
+      "delta": {
+        "den": 7812343750000000000000000,
+        "num": -620744198411941617
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][6]",
+      "raw": {
+        "den": 156250000000000000000,
+        "num": -143837992791617
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 81209909919561
+      },
+      "candidate": {
+        "den": 249995,
+        "num": -62514
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": -81209909919561
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[1][7]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": -2500608387969561
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 2500002403601927
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -62499
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -2500002403601927
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][0]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -12499999999951927
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 49999000000000000000000000,
+        "num": 298756349642352239
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 1
+      },
+      "delta": {
+        "den": 49999000000000000000000000,
+        "num": 298756349642352239
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][1]",
+      "raw": {
+        "den": 1000000000000000000000,
+        "num": 1994064754302239
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 2499893958470873
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 62499
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": 2499893958470873
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][2]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 12500000002120873
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 249995000000000000000,
+        "num": 11994993817359
+      },
+      "candidate": {
+        "den": 199996,
+        "num": -17203
+      },
+      "delta": {
+        "den": 249995000000000000000,
+        "num": -11994993817359
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][3]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": -430083361767359
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 878351525388741
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -141027
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": -878351525388741
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][4]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -7051473462438741
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 156249227763691
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -81961
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": 156249227763691
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][5]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -4098135087686309
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 878393119956833
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -358963
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 878393119956833
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][6]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -17948526538393167
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 103722316562779
+      },
+      "candidate": {
+        "den": 199996,
+        "num": -50011
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": -103722316562779
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[2][7]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -6251497955512779
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 249995000000000000000,
+        "num": 11994993817359
+      },
+      "candidate": {
+        "den": 199996,
+        "num": 17203
+      },
+      "delta": {
+        "den": 249995000000000000000,
+        "num": 11994993817359
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][0]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 430083361767359
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 269781733848157
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -86017
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -269781733848157
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][1]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -8601866641698157
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 249995000000000000000,
+        "num": 11994993817359
+      },
+      "candidate": {
+        "den": 199996,
+        "num": -17203
+      },
+      "delta": {
+        "den": 249995000000000000000,
+        "num": -11994993817359
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][2]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": -430083361767359
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 119922530271759
+      },
+      "candidate": {
+        "den": 99998,
+        "num": 17203
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": 119922530271759
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][3]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 4300833618221759
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 846453497797749
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 16407
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 846453497797749
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][4]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 1640715885247749
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 9999800000000000000000,
+        "num": 1377579078960569
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 55709
+      },
+      "delta": {
+        "den": 9999800000000000000000,
+        "num": -1377579078960569
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][5]",
+      "raw": {
+        "den": 200000000000000000,
+        "num": 11142050392589431
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 476379874611863
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 155623
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -476379874611863
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][6]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 31125232032238137
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 847649529867177
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 101169
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 847649529867177
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[3][7]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 10117085388717177
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 124997500000000000000,
+        "num": 43917576271937
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 141027
+      },
+      "delta": {
+        "den": 124997500000000000000,
+        "num": 43917576271937
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][0]",
+      "raw": {
+        "den": 2500000000000000,
+        "num": 352573673121937
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 49999000000000000000000000,
+        "num": 23312009121789524077
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -1
+      },
+      "delta": {
+        "den": 49999000000000000000000000,
+        "num": -23312009121789524077
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][1]",
+      "raw": {
+        "den": 1000000000000000000000,
+        "num": -1533790493374077
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 878351525388741
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -141027
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": -878351525388741
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][2]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -7051473462438741
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 846453497797749
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 16407
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 846453497797749
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][3]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 1640715885247749
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 351329079856107
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 141027
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": 351329079856107
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][4]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 2820589385206107
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 1170555907698713
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 196751
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 1170555907698713
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][5]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 9837723343348713
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 107789979286701
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 141027
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": -107789979286701
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][6]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 7051493185663299
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 999980000000000000000,
+        "num": 275884101934019
+      },
+      "candidate": {
+        "den": 199996,
+        "num": 66909
+      },
+      "delta": {
+        "den": 999980000000000000000,
+        "num": 275884101934019
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[4][7]",
+      "raw": {
+        "den": 20000000000000000,
+        "num": 6691028302884019
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 156249227763691
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 81961
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": -156249227763691
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][0]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 4098135087686309
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 1706180372117163
+      },
+      "candidate": {
+        "den": 249995,
+        "num": -40981
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -1706180372117163
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][1]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -16392693730267163
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 156249227763691
+      },
+      "candidate": {
+        "den": 499990,
+        "num": -81961
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": 156249227763691
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][2]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -4098135087686309
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 9999800000000000000000,
+        "num": 1377579078960569
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 55709
+      },
+      "delta": {
+        "den": 9999800000000000000000,
+        "num": -1377579078960569
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][3]",
+      "raw": {
+        "den": 200000000000000000,
+        "num": 11142050392589431
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 1170555907698713
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 196751
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 1170555907698713
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][4]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 9837723343348713
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 203085827741533
+      },
+      "candidate": {
+        "den": 49999,
+        "num": 27366
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": 203085827741533
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][5]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 5473305404391533
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 99998000000000000000,
+        "num": 62650686204059
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 114734
+      },
+      "delta": {
+        "den": 99998000000000000000,
+        "num": -62650686204059
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][6]",
+      "raw": {
+        "den": 2000000000000000,
+        "num": 917891610845941
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 213709644539897
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 108291
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": -213709644539897
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[5][7]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 10829320860610103
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 878393119956833
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 358963
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": -878393119956833
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][0]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 17948526538393167
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 7812343750000000000000000,
+        "num": 620744198411941617
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -1
+      },
+      "delta": {
+        "den": 7812343750000000000000000,
+        "num": -620744198411941617
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][1]",
+      "raw": {
+        "den": 156250000000000000000,
+        "num": -143837992791617
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 878393119956833
+      },
+      "candidate": {
+        "den": 999980,
+        "num": -358963
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 878393119956833
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][2]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -17948526538393167
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 4999900000000000000000,
+        "num": 476379874611863
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 155623
+      },
+      "delta": {
+        "den": 4999900000000000000000,
+        "num": -476379874611863
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][3]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 31125232032238137
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 107789979286701
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 141027
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": -107789979286701
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][4]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 7051493185663299
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 99998000000000000000,
+        "num": 62650686204059
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 114734
+      },
+      "delta": {
+        "den": 99998000000000000000,
+        "num": -62650686204059
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][5]",
+      "raw": {
+        "den": 2000000000000000,
+        "num": 917891610845941
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 265149747033713
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 576899
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": -265149747033713
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][6]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 11538216067316287
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 92364139892993
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 665671
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": 92364139892993
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[6][7]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 6656841289542993
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 103722316562779
+      },
+      "candidate": {
+        "den": 199996,
+        "num": 50011
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": 103722316562779
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][0]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 6251497955512779
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 81209909919561
+      },
+      "candidate": {
+        "den": 249995,
+        "num": -62514
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": -81209909919561
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][1]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": -2500608387969561
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 1249975000000000000000,
+        "num": 103722316562779
+      },
+      "candidate": {
+        "den": 199996,
+        "num": -50011
+      },
+      "delta": {
+        "den": 1249975000000000000000,
+        "num": -103722316562779
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][2]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -6251497955512779
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 847649529867177
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 101169
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": 847649529867177
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][3]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 10117085388717177
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 999980000000000000000,
+        "num": 275884101934019
+      },
+      "candidate": {
+        "den": 199996,
+        "num": 66909
+      },
+      "delta": {
+        "den": 999980000000000000000,
+        "num": 275884101934019
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][4]",
+      "raw": {
+        "den": 20000000000000000,
+        "num": 6691028302884019
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 2499950000000000000000,
+        "num": 213709644539897
+      },
+      "candidate": {
+        "den": 499990,
+        "num": 108291
+      },
+      "delta": {
+        "den": 2499950000000000000000,
+        "num": -213709644539897
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][5]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 10829320860610103
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 499990000000000000000,
+        "num": 92364139892993
+      },
+      "candidate": {
+        "den": 999980,
+        "num": 665671
+      },
+      "delta": {
+        "den": 499990000000000000000,
+        "num": 92364139892993
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][6]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 6656841289542993
+      },
+      "within_error": true
+    },
+    {
+      "absolute_error": {
+        "den": 249995000000000000000,
+        "num": 92358642302947
+      },
+      "candidate": {
+        "den": 249995,
+        "num": 207838
+      },
+      "delta": {
+        "den": 249995000000000000000,
+        "num": 92358642302947
+      },
+      "denominator_within_policy": true,
+      "path": "$.upper.dual_matrix[7][7]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 4156841289652947
+      },
+      "within_error": true
+    }
+  ],
+  "factor_denominators_subject_to_policy": false,
+  "lean_checked": false,
+  "max_abs_error": {
+    "den": 312500000000000000000,
+    "num": 287678385033387
+  },
+  "max_abs_error_path": "$.upper.assumption_terms[5].weight",
+  "max_candidate_coefficient_denominator": 999980,
+  "original_policy": {
+    "max_abs_error": "0.000001",
+    "max_denominator": 1000000,
+    "method": "limit_denominator"
+  },
+  "policy_checks": {
+    "assumption_references": true,
+    "coefficient_lengths": true,
+    "denominator_bounds": true,
+    "error_bounds": true,
+    "interpolation_references": true,
+    "policy_valid": true
+  },
+  "raw_binding_checks": {
+    "bound": true,
+    "interpolation_empty": true,
+    "objective": true,
+    "ordered_weights": true,
+    "residual": true
+  },
+  "source_unchanged": true,
+  "structured_diagnostic": {
+    "bound_guards": {
+      "compact_upper": true,
+      "coverage": true,
+      "empty_implicit_interpolation": true,
+      "full_bound": true,
+      "full_source": true,
+      "objective_binding": true
+    },
+    "canonical_json_sha256": "b2261d4824be247669f6e7c7f33dea404cceb5644bc8805caa373c2468e34fe7",
+    "compact_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "compact_row_count": 20,
+    "completed_diagnostic": {
+      "arbitrary_auxiliary_order_supported": false,
+      "bound_guards": {
+        "all_extended_rows": true,
+        "auxiliary_objective": true,
+        "base_source": true,
+        "certificate_objective": true,
+        "eliminated_bound": true,
+        "empty_implicit_interpolation": true,
+        "positive_performance_scale": true,
+        "source_certificate": true
+      },
+      "canonical_json_sha256": "4e9420f75526989ac2233d00906b9368cfeac56868dab14f25961f1a615b5065",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "base_rows": 26,
+        "base_values": 7,
+        "basis": 8,
+        "extended_rows": 27,
+        "extended_values": 8
+      },
+      "eliminated_diagnostic": {
+        "arbitrary_row_deletion_supported": false,
+        "bound_guards": {
+          "empty_implicit_interpolation": true,
+          "normalized_bound": true,
+          "normalized_source": true,
+          "oriented_source_certificate": true,
+          "positive_scales": true,
+          "source_objective": true
+        },
+        "canonical_json_sha256": "14eba44385193175e73aecff859e39a30252fc6ca6f5f13ea460b1fb1c225c31",
+        "diagnostic_passed": true,
+        "equality_rows_supported": false,
+        "format": "leanpep-scaled-pg-diagnostic-v1",
+        "horizon": 2,
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+        "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+        "normalized_diagnostic": {
+          "arbitrary_pepit_leaf_elimination_supported": false,
+          "bound_guards": {
+            "canonical_bound": true,
+            "canonical_source": true,
+            "empty_implicit_interpolation": true,
+            "permutations": true,
+            "source_certificate": true,
+            "source_objective": true
+          },
+          "canonical_diagnostic": {
+            "arbitrary_pepit_order_supported": false,
+            "bound_guards": {
+              "centered_bound": true,
+              "empty_implicit_interpolation": true,
+              "native_certificate": true,
+              "native_objective": true,
+              "source": true
+            },
+            "canonical_json_sha256": "b11731f2b7345219f320699f63f763046b2596c4a4a358874d487add58dc891c",
+            "centered_certificate": {
+              "certificate": true,
+              "empty_implicit_interpolation": true,
+              "objective_matches_source": true,
+              "source": true
+            },
+            "centered_source_mismatches": [],
+            "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+            "diagnostic_passed": true,
+            "dimensions": {
+              "centered": 7,
+              "native": 8,
+              "values": 7
+            },
+            "format": "leanpep-uncentered-pg-diagnostic-v1",
+            "horizon": 2,
+            "lean_checked": false,
+            "live_capture_performed": false,
+            "native_certificate": {
+              "accepted": true,
+              "factor": true,
+              "identity": true,
+              "symmetric": true,
+              "weights": true
+            },
+            "numeric_interpretation": "exact_num_den_no_reconstruction",
+            "origin": {
+              "description": "D9 untrusted live_solver_capture; producer identity is NOT authenticated; input is retained separately",
+              "mode": "external_exact_snapshot"
+            },
+            "primal_transport_checked": false,
+            "provenance_authenticated": false,
+            "source_guards": {
+              "center_matrix": true,
+              "centered_source": true,
+              "constraints_roundtrip": true,
+              "header": true,
+              "nonsmooth_roundtrip": true,
+              "objective_roundtrip": true,
+              "section_matrix": true,
+              "smooth_roundtrip": true
+            },
+            "source_mismatches": []
+          },
+          "canonical_input_error": null,
+          "canonical_json_sha256": "1439151ecaebdf9a6da003ff8325b5a229b1bf9c69f5e0f5d78ce250a4ae69f0",
+          "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+          "diagnostic_passed": true,
+          "dimensions": {
+            "basis": 8,
+            "nonsmooth": 3,
+            "rows": 26,
+            "smooth": 4,
+            "values": 7
+          },
+          "format": "leanpep-permuted-pg-diagnostic-v1",
+          "horizon": 2,
+          "lean_checked": false,
+          "live_capture_performed": false,
+          "numeric_interpretation": "exact_num_den_no_reconstruction",
+          "origin": {
+            "description": "D9 untrusted live_solver_capture; producer identity is NOT authenticated; input is retained separately",
+            "mode": "external_exact_snapshot"
+          },
+          "permutation_guards": {
+            "basis": true,
+            "nonsmooth": true,
+            "rows": true,
+            "smooth": true,
+            "values": true
+          },
+          "primal_import_supported": false,
+          "provenance_authenticated": false,
+          "roundtrip_payload_and_certificate": true,
+          "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+          "source_certificate": {
+            "accepted": true,
+            "factor": true,
+            "identity": true,
+            "symmetric": true,
+            "weights": true
+          }
+        },
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "oriented_source_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "origin": {
+          "description": "D9 untrusted live_solver_capture; producer identity is NOT authenticated; input is retained separately",
+          "mode": "external_exact_snapshot"
+        },
+        "positive_scale_guards": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "primal_import_supported": false,
+        "provenance_authenticated": false,
+        "raw_solver_signed_multipliers_supported": false,
+        "row_roundtrip": true,
+        "weighted_assumption_sum_preserved": true
+      },
+      "format": "leanpep-single-performance-diagnostic-v1",
+      "full_solver_pipeline_claimed": false,
+      "horizon": 2,
+      "layout": "tau_first_value_performance_first_row_v1",
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "multiple_metrics_supported": false,
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D9 untrusted live_solver_capture; producer identity is NOT authenticated; input is retained separately",
+        "mode": "external_exact_snapshot"
+      },
+      "performance_mass_is_one": true,
+      "performance_weighted_mass": {
+        "den": 1,
+        "num": 1
+      },
+      "primal_import_supported": false,
+      "provenance_authenticated": false,
+      "removed_performance_references": 1,
+      "retained_source_row_indices": [
+        25,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23
+      ],
+      "row_mismatches": [],
+      "source_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "substituted_assumption_sum_preserved": true,
+      "substitution": "tau_equals_base_objective_not_zero"
+    },
+    "coverage": {
+      "guards": {
+        "omitted_rows_zero": true,
+        "partial_inverse": true,
+        "retained_labels": true,
+        "retained_rows": true,
+        "retained_rules": true
+      },
+      "label_mismatches": [],
+      "nonzero_omitted_indices": [],
+      "omitted_full_indices": [
+        1,
+        6,
+        11,
+        16,
+        17,
+        21,
+        25
+      ],
+      "passed": true,
+      "row_mismatches": [],
+      "rule_mismatches": []
+    },
+    "diagnostic_passed": true,
+    "format": "leanpep-zero-row-coverage-diagnostic-v1",
+    "full_row_count": 27,
+    "full_solver_pipeline_claimed": false,
+    "horizon": 2,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "mapped_full_indices": [
+      0,
+      26,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24
+    ],
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "omitted_row_criterion": "all_coefficients_zero_before_tau_and_origin_elimination",
+    "origin": {
+      "description": "D9 untrusted live_solver_capture; producer identity is NOT authenticated; input is retained separately",
+      "mode": "external_exact_snapshot"
+    },
+    "provenance_authenticated": false,
+    "source_passed": true,
+    "term_count_preserved": true,
+    "weights_preserved": true
+  },
+  "trace_checks": {
+    "objective": true,
+    "permutation": true,
+    "rows": true,
+    "rules": true,
+    "source": true
+  }
+}

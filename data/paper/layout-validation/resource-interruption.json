@@ -1,0 +1,20 @@
+{
+  "classification": "resource_interruption",
+  "cause": "filesystem exhausted (ENOSPC)",
+  "first_interrupted_stage": "build_GDOneCapture after successful aggregate",
+  "outer_exit": 1,
+  "completed_command_receipts": 15,
+  "completed_receipts_preserved": "full-final/commands.json",
+  "incomplete_result_record": true,
+  "original_console": "full-final-console.log",
+  "cwd": "<PUBLIC_SOURCE>",
+  "argv": [
+    "python3",
+    "scripts/verify.py",
+    "full",
+    "--output",
+    "<VALIDATION_LOGS>/full-final"
+  ],
+  "mathematical_rejection_inferred": false,
+  "remedy": "remove only individually inventoried older temporary project .lake/build outputs; retain dependencies, source and research evidence; retry unchanged full entry in fresh full-verified output"
+}

@@ -1,0 +1,1512 @@
+{
+  "audit": {
+    "beta": {
+      "den": 6,
+      "num": 1
+    },
+    "candidate_diagnostic_accepted": true,
+    "canonical_gram": [
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        }
+      ]
+    ],
+    "canonical_interpolation_slacks": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 9,
+        "num": 2
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 9,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    "canonical_values": [
+      {
+        "den": 21677,
+        "num": -3213
+      },
+      {
+        "den": 390186,
+        "num": 50551
+      },
+      {
+        "den": 130062,
+        "num": 2399
+      }
+    ],
+    "first_failure": null,
+    "full_native_rows_geZero": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 9,
+        "num": 2
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 9,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    "generation_rule": "gd1_source_optimal_face_target_one_sixth_v1",
+    "live_capture_performed": false,
+    "native_factor": [
+      {
+        "vector": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 3,
+            "num": 1
+          },
+          {
+            "den": 3,
+            "num": 1
+          }
+        ],
+        "weight": {
+          "den": 1,
+          "num": 1
+        }
+      }
+    ],
+    "native_psd": true,
+    "native_rows_leZero": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 9,
+        "num": -2
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 9,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    "policy": {
+      "M": 1000000,
+      "accepted": true,
+      "changed_count": 13,
+      "count": 13,
+      "entries": [
+        {
+          "absolute_error": {
+            "den": 10000000000000000,
+            "num": 1207
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 1,
+            "num": 1
+          },
+          "delta": {
+            "den": 10000000000000000,
+            "num": 1207
+          },
+          "denominator": 1,
+          "path": "gram[0][0]",
+          "raw": {
+            "den": 10000000000000000,
+            "num": 9999999999998793
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 30000000000000000,
+            "num": 3561263209
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 3,
+            "num": 1
+          },
+          "delta": {
+            "den": 30000000000000000,
+            "num": 3561263209
+          },
+          "denominator": 3,
+          "path": "gram[0][1]",
+          "raw": {
+            "den": 10000000000000000,
+            "num": 3333332146245597
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 60000000000000000,
+            "num": 7120366061
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 3,
+            "num": 1
+          },
+          "delta": {
+            "den": 60000000000000000,
+            "num": 7120366061
+          },
+          "denominator": 3,
+          "path": "gram[0][2]",
+          "raw": {
+            "den": 20000000000000000,
+            "num": 6666664293211313
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 30000000000000000,
+            "num": 3561263209
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 3,
+            "num": 1
+          },
+          "delta": {
+            "den": 30000000000000000,
+            "num": 3561263209
+          },
+          "denominator": 3,
+          "path": "gram[1][0]",
+          "raw": {
+            "den": 10000000000000000,
+            "num": 3333332146245597
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 900000000000000000,
+            "num": 71211111391
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 9,
+            "num": 1
+          },
+          "delta": {
+            "den": 900000000000000000,
+            "num": 71211111391
+          },
+          "denominator": 9,
+          "path": "gram[1][1]",
+          "raw": {
+            "den": 100000000000000000,
+            "num": 11111103198765401
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 11250000000000000,
+            "num": 889733627
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 9,
+            "num": 1
+          },
+          "delta": {
+            "den": 11250000000000000,
+            "num": 889733627
+          },
+          "denominator": 9,
+          "path": "gram[1][2]",
+          "raw": {
+            "den": 1250000000000000,
+            "num": 138888790029597
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 60000000000000000,
+            "num": 7120366061
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 3,
+            "num": 1
+          },
+          "delta": {
+            "den": 60000000000000000,
+            "num": 7120366061
+          },
+          "denominator": 3,
+          "path": "gram[2][0]",
+          "raw": {
+            "den": 20000000000000000,
+            "num": 6666664293211313
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 11250000000000000,
+            "num": 889733627
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 9,
+            "num": 1
+          },
+          "delta": {
+            "den": 11250000000000000,
+            "num": 889733627
+          },
+          "denominator": 9,
+          "path": "gram[2][1]",
+          "raw": {
+            "den": 1250000000000000,
+            "num": 138888790029597
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 450000000000000000,
+            "num": 35626784477
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 9,
+            "num": 1
+          },
+          "delta": {
+            "den": 450000000000000000,
+            "num": 35626784477
+          },
+          "denominator": 9,
+          "path": "gram[2][2]",
+          "raw": {
+            "den": 50000000000000000,
+            "num": 5555551597023947
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 2167700000000000000000,
+            "num": 85731420705391
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 21677,
+            "num": -3213
+          },
+          "delta": {
+            "den": 2167700000000000000000,
+            "num": -85731420705391
+          },
+          "denominator": 21677,
+          "path": "values[0]",
+          "raw": {
+            "den": 100000000000000000,
+            "num": -14822157783299317
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 4877325000000000000000,
+            "num": 193130288199299
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 390186,
+            "num": 50551
+          },
+          "delta": {
+            "den": 4877325000000000000000,
+            "num": 193130288199299
+          },
+          "denominator": 390186,
+          "path": "values[1]",
+          "raw": {
+            "den": 25000000000000000,
+            "num": 3238903019942857
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 1625775000000000000000,
+            "num": 64298524922603
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 130062,
+            "num": 2399
+          },
+          "delta": {
+            "den": 1625775000000000000000,
+            "num": -64298524922603
+          },
+          "denominator": 130062,
+          "path": "values[2]",
+          "raw": {
+            "den": 25000000000000000,
+            "num": 461127220841213
+          }
+        },
+        {
+          "absolute_error": {
+            "den": 1875000000000000,
+            "num": 17
+          },
+          "accepted": true,
+          "candidate": {
+            "den": 6,
+            "num": 1
+          },
+          "delta": {
+            "den": 1875000000000000,
+            "num": 17
+          },
+          "denominator": 6,
+          "path": "values[3]",
+          "raw": {
+            "den": 625000000000000,
+            "num": 104166666666661
+          }
+        }
+      ],
+      "eta": {
+        "den": 1000000,
+        "num": 1
+      },
+      "factors_excluded": true,
+      "max_denominator": 390186,
+      "max_error": {
+        "absolute_error": {
+          "den": 30000000000000000,
+          "num": 3561263209
+        },
+        "accepted": true,
+        "candidate": {
+          "den": 3,
+          "num": 1
+        },
+        "delta": {
+          "den": 30000000000000000,
+          "num": 3561263209
+        },
+        "denominator": 3,
+        "path": "gram[0][1]",
+        "raw": {
+          "den": 10000000000000000,
+          "num": 3333332146245597
+        }
+      },
+      "name": "GD1_PRIMAL_POLICY_V1"
+    },
+    "radius_slack": {
+      "den": 1,
+      "num": 0
+    },
+    "tau": {
+      "den": 6,
+      "num": 1
+    }
+  },
+  "format": "leanpep-gd1-native-primal-v1",
+  "generation_rule": "gd1_source_optimal_face_target_one_sixth_v1",
+  "native_gram": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 3,
+        "num": 1
+      },
+      {
+        "den": 3,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 3,
+        "num": 1
+      },
+      {
+        "den": 9,
+        "num": 1
+      },
+      {
+        "den": 9,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 3,
+        "num": 1
+      },
+      {
+        "den": 9,
+        "num": 1
+      },
+      {
+        "den": 9,
+        "num": 1
+      }
+    ]
+  ],
+  "native_values": [
+    {
+      "den": 21677,
+      "num": -3213
+    },
+    {
+      "den": 390186,
+      "num": 50551
+    },
+    {
+      "den": 130062,
+      "num": 2399
+    },
+    {
+      "den": 6,
+      "num": 1
+    }
+  ],
+  "source": {
+    "algorithm": "smooth_only_gd",
+    "basis_order": [
+      "x0_minus_x_star",
+      "g0",
+      "g1"
+    ],
+    "constraints": [
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ]
+        },
+        "label": [
+          "performance"
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": -1
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "radius"
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 2,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "smooth",
+          0,
+          1
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": -1
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": 1
+              }
+            ],
+            [
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 2,
+                "num": 1
+              },
+              {
+                "den": 2,
+                "num": 1
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "smooth",
+          0,
+          2
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "smooth",
+          1,
+          0
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": 1
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": 1
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "smooth",
+          1,
+          2
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": 1
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "smooth",
+          2,
+          0
+        ],
+        "sense": "leZero"
+      },
+      {
+        "expression": {
+          "const": {
+            "den": 1,
+            "num": 0
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 2,
+                "num": -1
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 2,
+                "num": -1
+              },
+              {
+                "den": 2,
+                "num": 1
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "label": [
+          "smooth",
+          2,
+          1
+        ],
+        "sense": "leZero"
+      }
+    ],
+    "format": "lean-pep-gd-one-capture-v1",
+    "metric": {
+      "const": {
+        "den": 1,
+        "num": 0
+      },
+      "gram_coeff": [
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      ],
+      "value_coeff": [
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    },
+    "numerical": {
+      "bound": "0.1666666666667361",
+      "multipliers": [
+        "1.0000000000000622",
+        "0.1666666666667361",
+        "0.34436971412078693",
+        "0.655630285879573",
+        "1.204625915250773e-13",
+        "0.6556300046298623",
+        "2.3878926454610356e-13",
+        "0.3112602905092041"
+      ],
+      "residual": [
+        [
+          "0.16666666666673138",
+          "-0.17218485706036404",
+          "-0.327815142939757"
+        ],
+        [
+          "-0.17218485706036404",
+          "0.34436971412077794",
+          "0.17218499768518308"
+        ],
+        [
+          "-0.327815142939757",
+          "0.17218499768518308",
+          "0.811260290509372"
+        ]
+      ]
+    },
+    "objective": {
+      "const": {
+        "den": 1,
+        "num": 0
+      },
+      "gram_coeff": [
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      ],
+      "value_coeff": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ]
+    },
+    "policy": {
+      "max_abs_error": "0.000001",
+      "max_denominator": 1000000
+    },
+    "producer": {
+      "live_capture_performed": true,
+      "name": "PEPit",
+      "options": {
+        "max_iter": 500,
+        "tol_feas": 1e-12,
+        "tol_gap_abs": 1e-12,
+        "tol_gap_rel": 1e-12
+      },
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "version": "0.5.1",
+      "wrapper": "cvxpy"
+    },
+    "profile": {
+      "L": "1",
+      "radius_squared": "1",
+      "step_size": "1",
+      "target": "f1-f_star"
+    },
+    "reference": {
+      "gradient": [
+        "0",
+        "0",
+        "0"
+      ],
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rule": "translate_reference_to_origin_and_stationarity"
+    },
+    "samples": [
+      {
+        "gradient": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        "position": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        "value_index": 0
+      },
+      {
+        "gradient": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        "position": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        "value_index": 1
+      },
+      {
+        "gradient": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          }
+        ],
+        "position": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": -1
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        "value_index": 2
+      }
+    ],
+    "steps": 1,
+    "value_order": [
+      "f_star",
+      "f0",
+      "f1",
+      "tau"
+    ]
+  }
+}

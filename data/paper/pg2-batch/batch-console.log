@@ -1,0 +1,16 @@
+captured B01 0
+captured B02 0
+captured B03 0
+captured B04 0
+captured B05 0
+captured B06 0
+captured B07 0
+captured B08 0
+recovered B01 0 {'grids_observed': 27, 'policy_rejected': 26, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+recovered B02 0 {'grids_observed': 2, 'policy_rejected': 1, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+recovered B03 0 {'grids_observed': 29, 'policy_rejected': 28, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+recovered B04 0 {'grids_observed': 11, 'policy_rejected': 10, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+recovered B05 0 {'grids_observed': 2, 'policy_rejected': 1, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+recovered B07 0 {'grids_observed': 3, 'policy_rejected': 2, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+recovered B08 0 {'grids_observed': 18, 'policy_rejected': 17, 'nonnegative_rejected': 0, 'psd_rejected': 0, 'original_upper_rejected': 0}
+{"configurations": 8, "successful_captures": 8, "different_payloads": 7, "accepted_unique": 7, "historical_payload_count": 4, "preregistration_sha256": "197b07b0984ade74341eb7bddecc11f7e2b3ffd7816f643eb894cd44af723159", "post_freeze_recovery_adaptations": 0}

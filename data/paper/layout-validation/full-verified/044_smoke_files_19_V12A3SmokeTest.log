@@ -1,0 +1,49 @@
+LeanPEP.ActualFunction.FiniteGram.gramOfVectors.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {m : ℕ} (base : Fin m → E) : LeanPEP.GramPEP.Gram m ℝ
+LeanPEP.ActualFunction.FiniteGram.realize.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {m : ℕ}
+  (base : Fin m → E) (u : LeanPEP.GramPEP.VecExpr m ℝ) : E
+LeanPEP.ActualFunction.FiniteGram.gramInner_gramOfVectors.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {m : ℕ} (base : Fin m → E) (u v : LeanPEP.GramPEP.VecExpr m ℝ) :
+  LeanPEP.GramPEP.gramInner (LeanPEP.ActualFunction.FiniteGram.gramOfVectors base) u v =
+    inner ℝ (LeanPEP.ActualFunction.FiniteGram.realize base u) (LeanPEP.ActualFunction.FiniteGram.realize base v)
+LeanPEP.ActualFunction.FiniteGram.gramOfVectors_posSemidef.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {m : ℕ} (base : Fin m → E) :
+  LeanPEP.GramPEP.IsGramPosSemidef (LeanPEP.ActualFunction.FiniteGram.gramOfVectors base)
+LeanPEP.ActualFunction.FiniteGram.dataOfModel_realizes.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {p m : ℕ} (base : Fin m → E) (model : LeanPEP.GramPEP.ModelQ p m) (sample : Fin p → E)
+  (f : E → ℝ) : LeanPEP.GramPEP.RealizesModelQ model (LeanPEP.ActualFunction.FiniteGram.dataOfModel base model sample f)
+LeanPEP.ActualFunction.FiniteGram.interpolationSlack_dataOfModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {p m : ℕ} {base : Fin m → E} {model : LeanPEP.GramPEP.ModelQ p m} {sample : Fin p → E}
+  {anchor : E} {f : E → ℝ} {g : E → E}
+  (hreal : LeanPEP.ActualFunction.FiniteGram.RealizesActualSamples base model sample anchor g) (i j : Fin p) :
+  LeanPEP.GramPEP.interpolationSlack (LeanPEP.ActualFunction.FiniteGram.dataOfModel base model sample f) i j =
+    LeanPEP.ActualFunction.interpolationSlack f g (sample i) (sample j)
+LeanPEP.ActualFunction.FiniteGram.dataOfModel_coreFeasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {p m : ℕ} [CompleteSpace E] {base : Fin m → E} {model : LeanPEP.GramPEP.ModelQ p m}
+  {sample : Fin p → E} {anchor : E} {f : E → ℝ} {g : E → E}
+  (hfun : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g)
+  (hreal : LeanPEP.ActualFunction.FiniteGram.RealizesActualSamples base model sample anchor g) :
+  LeanPEP.GramPEP.CoreFeasible (LeanPEP.ActualFunction.FiniteGram.dataOfModel base model sample f)
+LeanPEP.ActualFunction.OneStepGram.oneStepData.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (f : E → ℝ) (g : E → E) (xStar x0 x1 : E) : LeanPEP.GramPEP.DataR (Fin 3) 3
+LeanPEP.ActualFunction.OneStepGram.oneStepData_realizesModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (f : E → ℝ) (g : E → E) (xStar x0 x1 : E) :
+  LeanPEP.GramPEP.RealizesModelQ LeanPEP.GramPEP.UpperCertificateExamples.oneStepModelQ
+    (LeanPEP.ActualFunction.OneStepGram.oneStepData f g xStar x0 x1)
+LeanPEP.ActualFunction.OneStepGram.oneStepData_coreFeasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E} {xStar x0 x1 : E}
+  (hfun : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (hstationary : g xStar = 0) (hstep : x1 = x0 - g x0) :
+  LeanPEP.GramPEP.CoreFeasible (LeanPEP.ActualFunction.OneStepGram.oneStepData f g xStar x0 x1)
+LeanPEP.ActualFunction.OneStepGram.oneStepData_assumptionsFeasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (f : E → ℝ) (g : E → E) (xStar x0 x1 : E) (hradius : inner ℝ (x0 - xStar) (x0 - xStar) ≤ 1) :
+  LeanPEP.GramPEP.AssumptionsFeasibleR LeanPEP.GramPEP.UpperCertificateExamples.oneStepModelQ
+    (LeanPEP.ActualFunction.OneStepGram.oneStepData f g xStar x0 x1)
+LeanPEP.ActualFunction.OneStepGram.oneStepData_feasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E} {xStar x0 x1 : E}
+  (hfun : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (hstationary : g xStar = 0) (hstep : x1 = x0 - g x0)
+  (hradius : inner ℝ (x0 - xStar) (x0 - xStar) ≤ 1) :
+  LeanPEP.GramPEP.RealizesModelQ LeanPEP.GramPEP.UpperCertificateExamples.oneStepModelQ
+      (LeanPEP.ActualFunction.OneStepGram.oneStepData f g xStar x0 x1) ∧
+    LeanPEP.GramPEP.CoreFeasible (LeanPEP.ActualFunction.OneStepGram.oneStepData f g xStar x0 x1) ∧
+      LeanPEP.GramPEP.AssumptionsFeasibleR LeanPEP.GramPEP.UpperCertificateExamples.oneStepModelQ
+        (LeanPEP.ActualFunction.OneStepGram.oneStepData f g xStar x0 x1)

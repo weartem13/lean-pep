@@ -1,0 +1,65 @@
+LeanPEP.GramPEP.checkPSDFactorQ {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m) : Bool
+LeanPEP.GramPEP.checkPSDFactorQ_sound {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m) (h : checkPSDFactorQ G c = true) :
+  IsGramPosSemidef G
+LeanPEP.GramPEP.checkPSDFactorQ_sound_real {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m)
+  (h : checkPSDFactorQ G c = true) : IsGramPosSemidef (castGramQ G)
+LeanPEP.GramPEP.UpperCertQ.withDualFactor {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model) (d : PSDFactorCertQ m) :
+  UpperCertQ model
+LeanPEP.GramPEP.UpperCertValidQ.withDualFactor {p m : ℕ} {model : ModelQ p m} {c : UpperCertQ model}
+  (hc : UpperCertValidQ c) (d : PSDFactorCertQ m) (hd : checkPSDFactorQ c.dualMatrix d = true) :
+  UpperCertValidQ (c.withDualFactor d)
+LeanPEP.GramPEP.checkUpperCertQ_withDualFactor {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model)
+  (d : PSDFactorCertQ m) (hc : checkUpperCertQ c = true) (hd : checkPSDFactorQ c.dualMatrix d = true) :
+  checkUpperCertQ (c.withDualFactor d) = true
+LeanPEP.GramPEP.not_isGramPosSemidef_of_negative {m : ℕ} (G : Gram m ℚ) (v : VecExpr m ℚ) (hv : gramNormSq G v < 0) :
+  ¬IsGramPosSemidef G
+LeanPEP.GramPEP.not_isGramPosSemidef_real_of_negative {m : ℕ} (G : Gram m ℚ) (v : VecExpr m ℚ)
+  (hv : gramNormSq G v < 0) : ¬IsGramPosSemidef (castGramQ G)
+LeanPEP.GramPEP.not_isGramPosSemidef_of_asymmetry {m : ℕ} (G : Gram m ℚ) (i j : Fin m) (hij : G i j ≠ G j i) :
+  ¬IsGramPosSemidef G
+LeanPEP.Imported.PSDSynthesisRegression.gd_bundle_check : checkExactGramBundleQ GramOneStepResynthesized.bundleQ = true
+LeanPEP.Imported.PSDSynthesisRegression.gd_attainment_real :
+  GramOneStepResynthesized.upperCertQ.objective.evalR (castDataQ GramOneStepResynthesized.primalQ) = 1 / 6
+LeanPEP.ActualFunction.PSDSynthesisApplications.pg_one_matrix_binding :
+  PSDSynthesized.PGDualOne.matrixQ = (Profiles.ProximalGradientCertificate.upperCertQ 0).dualMatrix
+LeanPEP.ActualFunction.PSDSynthesisApplications.pg_two_matrix_binding :
+  PSDSynthesized.PGDualTwo.matrixQ = (Profiles.ProximalGradientCertificate.upperCertQ 1).dualMatrix
+LeanPEP.ActualFunction.PSDSynthesisApplications.pg_one_upper_check :
+  checkUpperCertQ
+      ((Profiles.ProximalGradientCertificate.upperCertQ 0).withDualFactor PSDSynthesized.PGDualOne.factorQ) =
+    true
+LeanPEP.ActualFunction.PSDSynthesisApplications.pg_two_upper_check :
+  checkUpperCertQ
+      ((Profiles.ProximalGradientCertificate.upperCertQ 1).withDualFactor PSDSynthesized.PGDualTwo.factorQ) =
+    true
+LeanPEP.ActualFunction.PSDSynthesisApplications.upper_of_synthesized_dual.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (d : PSDFactorCertQ (Profiles.ProximalGradient.basisCount n))
+  (hd : checkPSDFactorQ (Profiles.ProximalGradientCertificate.upperCertQ n).dualMatrix d = true) {L : ℝ≥0} {R : ℝ}
+  {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / (4 * (↑n + 1))
+LeanPEP.ActualFunction.PSDSynthesisApplications.two_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 2 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 2) + h (x 2) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 8
+tests/lean/smoke/V13D1SmokeTest.lean:57:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.GramPEP.checkUpperCertQ_withDualFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.not_isGramPosSemidef_real_of_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.PSDSynthesized.IrrationalCholesky.psd_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.PSDSynthesized.LiftedZeroDiagonal.not_psd_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.PSDSynthesisRegression.gd_bundle_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.PSDSynthesisRegression.gd_attainment_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.PSDSynthesisApplications.pg_two_upper_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.PSDSynthesisApplications.two_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

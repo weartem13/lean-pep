@@ -1,0 +1,29 @@
+LeanPEP.ActualFunction.HuberWitness.threshold_den_mul (N : ℕ) : ↑(2 * N + 1) * threshold N = 1
+LeanPEP.ActualFunction.HuberWitness.threshold_le_witnessPoint (N k : ℕ) (hk : k ≤ N) : threshold N ≤ witnessPoint N k
+LeanPEP.ActualFunction.HuberWitness.witnessGradient_witnessPoint (N k : ℕ) (hk : k ≤ N) :
+  witnessGradient N (witnessPoint N k) = threshold N
+LeanPEP.ActualFunction.HuberWitness.witnessFunction_witnessPoint (N k : ℕ) (hk : k ≤ N) :
+  witnessFunction N (witnessPoint N k) = threshold N * witnessPoint N k - threshold N ^ 2 / 2
+LeanPEP.ActualFunction.HuberWitness.witnessPoint_unitGD_step (N k : ℕ) (hk : k ≤ N) :
+  witnessPoint N (k + 1) = witnessPoint N k - witnessGradient N (witnessPoint N k)
+LeanPEP.ActualFunction.HuberWitness.unitGDIterate_eq_witnessPoint (N k : ℕ) :
+  k ≤ N + 1 → unitGDIterate (witnessGradient N) 1 k = witnessPoint N k
+LeanPEP.ActualFunction.HuberWitness.unitGDIterate_final (N : ℕ) :
+  unitGDIterate (witnessGradient N) 1 N = witnessPoint N N
+LeanPEP.ActualFunction.HuberWitness.witnessPoint_final_eq_midpoint (N : ℕ) : witnessPoint N N = (1 + threshold N) / 2
+LeanPEP.ActualFunction.HuberWitness.witnessFunction_final_eq_half_threshold (N : ℕ) :
+  witnessFunction N (witnessPoint N N) = 1 / 2 * threshold N
+LeanPEP.ActualFunction.HuberWitness.half_threshold_eq_gdBoundQ_cast (N : ℕ) : 1 / 2 * threshold N = ↑(gdBoundQ N)
+LeanPEP.ActualFunction.HuberWitness.gdBoundQ_cast_eq_closed (N : ℕ) : ↑(gdBoundQ N) = 1 / ↑(4 * N + 2)
+LeanPEP.ActualFunction.HuberWitness.witnessFunction_final_eq_bound (N : ℕ) :
+  witnessFunction N (witnessPoint N N) = ↑(gdBoundQ N)
+LeanPEP.ActualFunction.HuberWitness.witness_unitGD_attains_bound (N : ℕ) :
+  witnessFunction N (unitGDIterate (witnessGradient N) 1 N) - witnessFunction N 0 = ↑(gdBoundQ N)
+LeanPEP.ActualFunction.HuberWitness.witness_unitGD_attains_closed_form (N : ℕ) :
+  witnessFunction N (unitGDIterate (witnessGradient N) 1 N) - witnessFunction N 0 = 1 / ↑(4 * N + 2)
+LeanPEP.ActualFunction.HuberWitness.normalized_lower_witness (N : ℕ) :
+  IsOneSmoothConvexFirstOrder (witnessFunction N) (witnessGradient N) ∧
+    witnessGradient N 0 = 0 ∧
+      (∀ (x : ℝ), witnessFunction N 0 ≤ witnessFunction N x) ∧
+        ‖1 - 0‖ ^ 2 ≤ 1 ∧
+          witnessFunction N (unitGDIterate (witnessGradient N) 1 N) - witnessFunction N 0 = ↑(gdBoundQ N)

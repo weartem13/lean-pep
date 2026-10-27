@@ -1,0 +1,221 @@
+{
+  "assumption_terms": [
+    {
+      "index": 0,
+      "weight": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "index": 1,
+      "weight": {
+        "den": 6,
+        "num": 1
+      }
+    },
+    {
+      "index": 2,
+      "weight": {
+        "den": 24767,
+        "num": 8529
+      }
+    },
+    {
+      "index": 3,
+      "weight": {
+        "den": 24767,
+        "num": 16238
+      }
+    },
+    {
+      "index": 4,
+      "weight": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "index": 5,
+      "weight": {
+        "den": 24767,
+        "num": 16238
+      }
+    },
+    {
+      "index": 6,
+      "weight": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "index": 7,
+      "weight": {
+        "den": 24767,
+        "num": 7709
+      }
+    }
+  ],
+  "bound": {
+    "den": 6,
+    "num": 1
+  },
+  "dual_factor": {
+    "factors": [
+      {
+        "vector": [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 24767,
+            "num": -25587
+          },
+          {
+            "den": 24767,
+            "num": -48714
+          }
+        ],
+        "weight": {
+          "den": 6,
+          "num": 1
+        }
+      },
+      {
+        "vector": [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1,
+            "num": -1
+          }
+        ],
+        "weight": {
+          "den": 1226808578,
+          "num": 204243963
+        }
+      }
+    ]
+  },
+  "dual_matrix": [
+    [
+      {
+        "den": 6,
+        "num": 1
+      },
+      {
+        "den": 49534,
+        "num": -8529
+      },
+      {
+        "den": 24767,
+        "num": -8119
+      }
+    ],
+    [
+      {
+        "den": 49534,
+        "num": -8529
+      },
+      {
+        "den": 24767,
+        "num": 8529
+      },
+      {
+        "den": 49534,
+        "num": 8529
+      }
+    ],
+    [
+      {
+        "den": 24767,
+        "num": -8119
+      },
+      {
+        "den": 49534,
+        "num": 8529
+      },
+      {
+        "den": 49534,
+        "num": 40185
+      }
+    ]
+  ],
+  "interp_terms": [],
+  "objective": {
+    "const": {
+      "den": 1,
+      "num": 0
+    },
+    "gram_coeff": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    ],
+    "value_coeff": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  }
+}

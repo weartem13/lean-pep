@@ -1,0 +1,1634 @@
+{
+  "schema": "leanpep-content-review-v1",
+  "root": "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore",
+  "review_basis": "R02 module-content review of declarations, definitions, module prose and transitive dependencies; pinned source bytes. Human/agent review record, NOT a Lean semantic-analysis theorem. Runtime never auto-approves new modules.",
+  "excluded": [
+    "UpperCertificateExamples and OneStepGram/Upper/Scaling application chain",
+    "ProximalGradientOneStep fixed certificate and Migration/OneStepWitness application chain",
+    "ParametricUpperCertificate fixed N=0..8 regressions; ProfileGram now imports AffineEvaluationCore"
+  ],
+  "witness_policy": "A parameterized witness is not forbidden by its name. This final closure needs no witness module; concrete witness/certificate applications remain in compatibility paths.",
+  "modules": {
+    "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "a2e810360a978f43676c4aed1088db1201776ccebd103ac9e5eb02f31717582b",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientCapture",
+        "LeanPEP.ActualFunction.ProximalGradientReconstructionAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)",
+        "upper_firstOrder {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)",
+        "upper_analytic [CompleteSpace E] {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)",
+        "raw_upper_firstOrder {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (raw : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientCapture": {
+      "classification": "generic",
+      "rationale": "Trace and raw endpoint correspondence, parameterized by horizon and row count; no submitted instance.",
+      "sha256": "c2957612b8bf3c9d1e394e6361dfa62e820e38a723732171b27f3bfc27e2ab1f",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientReconstruction",
+        "LeanPEP.GramPEP.ExactReindexing"
+      ],
+      "reviewed_declarations": [
+        "TraceQ (n k : \u2115) where",
+        "moveValuesQ {n k : \u2115} (t : TraceQ n k)",
+        "checkTraceQ {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) : Bool :=",
+        "checkTraceQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) :",
+        "captured_row_eval {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "captured_objective_eval {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "orderedWeightsQ {p m : \u2115} {model : ModelQ p m} (c : UpperCertQ model) : List (\u2115 \u00d7 \u211a) :=",
+        "traceWeightsQ {n k : \u2115} (t : TraceQ n k) : List (\u2115 \u00d7 \u211a) :=",
+        "checkRawBindingQ {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "checkRawBindingQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "captured_numerics_preserved {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "checkCapturedRawQ {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "checkCapturedQ {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)",
+        "checkCapturedQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)",
+        "reconstructed_check {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)",
+        "checkCapturedRawQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "captured_raw_check {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k)",
+        "checked_certificate {n k : \u2115} (s : SourceQ n k) (t : TraceQ n k) (policy : PolicyQ)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientReconstruction": {
+      "classification": "generic",
+      "rationale": "Original reconstruction/source/certificate conjunction for arbitrary submitted endpoints.",
+      "sha256": "b4ab13a11502c247894b30f4cbf0712f4fba7fd15b73039cec45402b56675144",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientSparse",
+        "LeanPEP.GramPEP.RationalReconstructionAudit"
+      ],
+      "reviewed_declarations": [
+        "checkRawQ {n k : \u2115} (s : SourceQ n k) (raw : UpperCertQ s.model) : Bool :=",
+        "checkReconstructedQ {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "checkReconstructedQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "reconstructed_bound_check {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "reconstruction_within_policy {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "checked_certificate {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientSparse": {
+      "classification": "generic",
+      "rationale": "Parameterized sparse row coverage, explicit zero omissions and certificate transport.",
+      "sha256": "48bcc54baa3567ae8577b2be302f0d43470d5cf5c8b53366c9df74f4162d1c1d",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientPerformance",
+        "LeanPEP.GramPEP.ZeroRowCoverage"
+      ],
+      "reviewed_declarations": [
+        "RowLabelQ where",
+        "SourceQ (n k : \u2115) where",
+        "completedSourceQ {n k : \u2115} (s : SourceQ n k) : ProximalGradientPerformance.SourceQ n :=",
+        "fullLabelQ {n k : \u2115} (s : SourceQ n k) : Fin (rowCount n + 1) \u2192 RowLabelQ :=",
+        "orientedRowQ {n k : \u2115} (s : SourceQ n k) (i : Fin k) :",
+        "SourceQ.model {n k : \u2115} (s : SourceQ n k) : ModelQ (valueCount n + 1) (basisCount n) :=",
+        "checkCoverageQ {n k : \u2115} (s : SourceQ n k) : Bool :=",
+        "checkCoverageQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) :",
+        "checkSourceQ {n k : \u2115} (s : SourceQ n k) : Bool :=",
+        "checkSourceQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) :",
+        "retained_row_eq {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true) (i : Fin k) :",
+        "omitted_row_zero {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true)",
+        "oriented_coverage_check {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true) :",
+        "rows_feasible_iff {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true)",
+        "finite_upper_equivalence {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true) (B : \u211d) :",
+        "sourceRowQ {n k : \u2115} (s : SourceQ n k) (t : AssumptionTermQ s.model) : Fin k :=",
+        "completedTermQ {n k : \u2115} (s : SourceQ n k) (t : AssumptionTermQ s.model) :",
+        "completedTermQ_weight {n k : \u2115} (s : SourceQ n k) (t : AssumptionTermQ s.model) :",
+        "completedTermQ_index {n k : \u2115} (s : SourceQ n k) (t : AssumptionTermQ s.model) :",
+        "source_get {n k : \u2115} (s : SourceQ n k) (t : AssumptionTermQ s.model) :",
+        "completed_get {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true)",
+        "assumption_sum_preserved {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true)",
+        "completedUpperQ {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model) :",
+        "completedUpperQ_bound {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model) :",
+        "completedUpperQ_count {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model) :",
+        "certificate_rhs_preserved {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true)",
+        "completedUpper_check {n k : \u2115} (s : SourceQ n k) (hs : checkCoverageQ s = true)",
+        "checkBoundQ {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model) : Bool :=",
+        "checkBoundQ_eq_true_iff {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model) :",
+        "checked_certificate {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientPerformance": {
+      "classification": "generic",
+      "rationale": "Parameterized tau lift and objective transport; no fixed candidate bound.",
+      "sha256": "c9be84a166ea5b2438194859782ce62c347afb39ebccebc0b1626ff6d77b66ad",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientRows",
+        "LeanPEP.GramPEP.PerformanceLift"
+      ],
+      "reviewed_declarations": [
+        "SourceQ (n : \u2115) where",
+        "expectedRowsQ {n : \u2115} (b : ProximalGradientRows.SourceQ n) (r : RuleQ) :",
+        "rowRuleQ {n : \u2115} (s : SourceQ n) : Fin (rowCount n + 1) \u2192 RuleQ :=",
+        "orientedRowQ {n : \u2115} (s : SourceQ n) (i : Fin (rowCount n + 1)) :",
+        "SourceQ.model {n : \u2115} (s : SourceQ n) : ModelQ (valueCount n + 1) (basisCount n) :=",
+        "checkLiftQ {n : \u2115} (s : SourceQ n) : Bool :=",
+        "checkLiftQ_eq_true_iff {n : \u2115} (s : SourceQ n) :",
+        "checkSourceQ {n : \u2115} (s : SourceQ n) : Bool :=",
+        "checkSourceQ_eq_true_iff {n : \u2115} (s : SourceQ n) :",
+        "oriented_zero {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true) :",
+        "oriented_succ {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true) (i : Fin (rowCount n)) :",
+        "substitute_row_zero {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true) :",
+        "substitute_row_succ {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "rows_feasible_iff {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "finite_upper_equivalence {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true) (B : \u211d) :",
+        "sourceRowQ {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) : Fin (rowCount n + 1) :=",
+        "baseTermQ {n : \u2115} (s : SourceQ n) (i : Fin (rowCount n)) (w : \u211a) : AssumptionTermQ s.base.model :=",
+        "eliminateConsQ {n : \u2115} (s : SourceQ n) (i : Fin (rowCount n + 1)) (w : \u211a)",
+        "eliminateTermsQ {n : \u2115} (s : SourceQ n) :",
+        "base_get {n : \u2115} (s : SourceQ n) (i : Fin (rowCount n)) (w : \u211a) :",
+        "source_get {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "eliminate_cons_sum {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "assumption_sum_preserved {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "eliminate_cons_weights {n : \u2115} (s : SourceQ n) (i : Fin (rowCount n + 1))",
+        "eliminate_weights {n : \u2115} (s : SourceQ n) (ts : List (AssumptionTermQ s.model))",
+        "eliminatedUpperQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) : UpperCertQ s.base.model :=",
+        "eliminatedUpperQ_bound {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "certificate_rhs_preserved {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "eliminatedUpper_check {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "performanceMassQ {n : \u2115} (s : SourceQ n) : List (AssumptionTermQ s.model) \u2192 \u211a",
+        "oriented_tau_coeff {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "assumption_tau_coeff {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "performance_mass_eq_one {n : \u2115} (s : SourceQ n) (hs : checkLiftQ s = true)",
+        "checkBoundQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) : Bool :=",
+        "checkBoundQ_eq_true_iff {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checked_performance_mass {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "checked_certificate {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) (hc : checkBoundQ s c = true) :"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientRows": {
+      "classification": "generic",
+      "rationale": "Parameterized signed row normalization and multiplier transport.",
+      "sha256": "d639329503ab4ac406d27b91ce1886fd57d708bebb6390b361524cc13afcdc2c",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientOrdering",
+        "LeanPEP.GramPEP.RowNormalization",
+        "Mathlib.Data.List.OfFn"
+      ],
+      "reviewed_declarations": [
+        "SourceQ (n : \u2115) where",
+        "SourceQ.model {n : \u2115} (s : SourceQ n) : ModelQ (valueCount n) (basisCount n) :=",
+        "normalizedSourceQ {n : \u2115} (s : SourceQ n) : ProximalGradientOrdering.SourceQ n :=",
+        "restoredSnapshotQ {n : \u2115} (s : SourceQ n) : SnapshotQ n :=",
+        "snapshot_roundtrip {n : \u2115} (s : SourceQ n) (hr : checkRulesQ s.rules = true) :",
+        "rows_feasible_iff {n : \u2115} (s : SourceQ n) (hr : checkRulesQ s.rules = true)",
+        "checkSourceQ {n : \u2115} (s : SourceQ n) : Bool :=",
+        "checkSourceQ_eq_true_iff {n : \u2115} (s : SourceQ n) :",
+        "source_binding {n : \u2115} (s : SourceQ n) (hs : checkSourceQ s = true) :",
+        "sourceRowQ {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) : Fin (rowCount n) :=",
+        "normalizedAssumptionQ {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "normalizedAssumptionQ_weight {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "normalizedAssumptionQ_index {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "source_get {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "normalized_get {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "assumption_sum_preserved {n : \u2115} (s : SourceQ n) (hr : checkRulesQ s.rules = true)",
+        "normalizedUpperQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "normalizedUpperQ_bound {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "normalizedUpperQ_assumption_count {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "certificate_rhs_preserved {n : \u2115} (s : SourceQ n) (hr : checkRulesQ s.rules = true)",
+        "normalizedUpper_check {n : \u2115} (s : SourceQ n) (hr : checkRulesQ s.rules = true)",
+        "checkBoundQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) : Bool :=",
+        "checkBoundQ_eq_true_iff {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checked_certificate {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientOrdering": {
+      "classification": "generic",
+      "rationale": "Five arbitrary submitted finite permutations and exact binding.",
+      "sha256": "f9ca15cbfcb61067b9b0f19bcf440016b8f6f12824e6949d3f5a05a2f8a346e3",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientCoordinates",
+        "LeanPEP.GramPEP.ExactReindexing"
+      ],
+      "reviewed_declarations": [
+        "valueCount (n : \u2115) := ProximalGradient.valueCount n",
+        "basisCount (n : \u2115) := ProximalGradientCoordinates.leafCount n",
+        "rowCount (n : \u2115) := (n+3)^2 + (n+2)^2 + 1",
+        "MetadataQ where",
+        "SnapshotQ (n : \u2115) where",
+        "OrderingQ (n : \u2115) where",
+        "OrderingQ.symm {n : \u2115} (o : OrderingQ n) : OrderingQ n :=",
+        "checkOrderingQ {n : \u2115} (o : OrderingQ n) : Bool :=",
+        "checkOrderingQ_eq_true_iff {n : \u2115} (o : OrderingQ n) :",
+        "reorderSnapshotQ {n : \u2115} (o : OrderingQ n) (s : SnapshotQ n) : SnapshotQ n :=",
+        "reorderSnapshotQ_roundtrip {n : \u2115} (o : OrderingQ n)",
+        "constraint_reference {n : \u2115} (o : OrderingQ n) (ho : checkOrderingQ o = true)",
+        "SnapshotQ.toNative {n : \u2115} (s : SnapshotQ n) : ProximalGradientCoordinates.SourceQ n :=",
+        "SourceQ (n : \u2115) where",
+        "SourceQ.model {n : \u2115} (s : SourceQ n) : ModelQ (valueCount n) (basisCount n) :=",
+        "nativeSourceQ {n : \u2115} (s : SourceQ n) : ProximalGradientCoordinates.SourceQ n :=",
+        "checkSourceQ {n : \u2115} (s : SourceQ n) : Bool :=",
+        "checkSourceQ_eq_true_iff {n : \u2115} (s : SourceQ n) :",
+        "source_roundtrip {n : \u2115} (s : SourceQ n) (hs : checkSourceQ s = true) :",
+        "sourceRowQ {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) : Fin (rowCount n) :=",
+        "nativeAssumptionQ {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "nativeAssumptionQ_weight {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "nativeAssumptionQ_index {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "nativeUpperQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "nativeUpperQ_bound {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "nativeUpperQ_assumption_count {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checkBoundQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) : Bool :=",
+        "checkBoundQ_eq_true_iff {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checked_certificate {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientCoordinates": {
+      "classification": "generic",
+      "rationale": "Origin coordinate maps for arbitrary positive horizon and submitted sources.",
+      "sha256": "19f18bdc44f4e1d38499025a75026fab92f41d6718ec0b0f042e69822aeec5a2",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientSource",
+        "LeanPEP.GramPEP.OriginCoordinates"
+      ],
+      "reviewed_declarations": [
+        "leafCount (n : \u2115) := ProximalGradient.basisCount n + 1",
+        "checkRectQ {r c : \u2115} (A B : Matrix (Fin r) (Fin c) \u211a) : Bool :=",
+        "checkRectQ_eq_true_iff {r c : \u2115} (A B : Matrix (Fin r) (Fin c) \u211a) :",
+        "SourceQ (n : \u2115) where",
+        "SourceQ.model {n : \u2115} (s : SourceQ n) :",
+        "expectedHeaderQ (n : \u2115) : ProximalGradientSource.HeaderQ :=",
+        "centeredSourceQ {n : \u2115} (s : SourceQ n) : ProximalGradientSource.SourceQ n :=",
+        "expectedSourceQ (n : \u2115) : SourceQ n :=",
+        "AuditQ where",
+        "auditSourceQ {n : \u2115} (s : SourceQ n) : AuditQ :=",
+        "checkSourceQ {n : \u2115} (s : SourceQ n) : Bool :=",
+        "checkSourceQ_eq_true_iff {n : \u2115} (s : SourceQ n) :",
+        "checkSourceQ_sound {n : \u2115} (s : SourceQ n) (hs : checkSourceQ s = true) :",
+        "centered_expectedSourceQ (n : \u2115) :",
+        "expectedSource_check (n : \u2115) : checkSourceQ (expectedSourceQ n) = true := by",
+        "checkSourceQ_eq_expected {n : \u2115} (s : SourceQ n) :",
+        "centeredAssumptionQ {n : \u2115} (s : SourceQ n) (t : AssumptionTermQ s.model) :",
+        "centeredUpperQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "centeredUpper_bound {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checkBoundQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) : Bool :=",
+        "checkBoundQ_eq_true_iff {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checked_certificate {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.Adapters.ProximalGradientSource": {
+      "classification": "generic",
+      "rationale": "Arbitrary-horizon source template and exact source/upper binding. expectedSourceQ constructs source equations, not a numerical certificate.",
+      "sha256": "3454e622d22748a529cac6cc9fd5687f2346ee74b366c0e038b69bcd5df13c66",
+      "imports": [
+        "LeanPEP.Adapters.ExactFormulation",
+        "LeanPEP.Profiles.ProximalGradient"
+      ],
+      "reviewed_declarations": [
+        "SenseQ where",
+        "RowKindQ where",
+        "RowTagQ where",
+        "HeaderQ where",
+        "SourceQ (n : \u2115) where",
+        "SourceQ.model {n : \u2115} (s : SourceQ n) :",
+        "pairTags (kind : RowKindQ) (k : \u2115) : List RowTagQ :=",
+        "expectedHeaderQ (n : \u2115) : HeaderQ :=",
+        "expectedSourceQ (n : \u2115) : SourceQ n :=",
+        "expectedSource_model (n : \u2115) :",
+        "checkSampleQ {p m : \u2115} (a b : Composite.SampleQ p m) : Bool :=",
+        "checkSampleQ_eq_true_iff {p m : \u2115} (a b : Composite.SampleQ p m) :",
+        "AuditQ where",
+        "auditSourceQ {n : \u2115} (s : SourceQ n) : AuditQ :=",
+        "checkSourceQ {n : \u2115} (s : SourceQ n) : Bool :=",
+        "checkSourceQ_eq_true_iff {n : \u2115} (s : SourceQ n) :",
+        "expectedSource_check (n : \u2115) : checkSourceQ (expectedSourceQ n) = true :=",
+        "source_model_eq {n : \u2115} (s : SourceQ n) (hs : checkSourceQ s = true) :",
+        "source_objective_eq {n : \u2115} (s : SourceQ n) (hs : checkSourceQ s = true) :",
+        "checkBoundQ {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) : Bool :=",
+        "checkBoundQ_eq_true_iff {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model) :",
+        "checked_certificate {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.Adapters.ExactFormulation": {
+      "classification": "generic",
+      "rationale": "Generic list equality and type-safe rebinding for arbitrary equal models.",
+      "sha256": "f653ef344c85e7ab190900d5a4812935a5a5e747dd55817c953427f609293546",
+      "imports": [
+        "LeanPEP.GramPEP.ExternalBundle"
+      ],
+      "reviewed_declarations": [
+        "checkListQ {\u03b1 : Type*} (cmp : \u03b1 \u2192 \u03b1 \u2192 Bool) : List \u03b1 \u2192 List \u03b1 \u2192 Bool",
+        "checkListQ_eq_true_iff {\u03b1 : Type*} (cmp : \u03b1 \u2192 \u03b1 \u2192 Bool)",
+        "UpperCertQ.rebind {p m : \u2115} {source target : ModelQ p m}",
+        "UpperCertQ.rebind_bound {p m : \u2115} {source target : ModelQ p m}",
+        "UpperCertQ.rebind_objective {p m : \u2115} {source target : ModelQ p m}",
+        "UpperCertQ.rebind_interpTerms {p m : \u2115} {source target : ModelQ p m}",
+        "UpperCertQ.rebind_dualMatrix {p m : \u2115} {source target : ModelQ p m}",
+        "checkUpperCertQ_rebind {p m : \u2115} {source target : ModelQ p m}"
+      ]
+    },
+    "LeanPEP.GramPEP.ExternalBundle": {
+      "classification": "generic",
+      "rationale": "Generic bundle data types and validators for arbitrary dimensions; no concrete external bundle value.",
+      "sha256": "cba6914336ba6b6083096ab60b8ab37b89c45de3fd6b2fe2e3db3f762d5e32a2",
+      "imports": [
+        "LeanPEP.GramPEP.PSDFactorizationRealBridge",
+        "LeanPEP.GramPEP.UpperCertificateAudit"
+      ],
+      "reviewed_declarations": [
+        "evalQ {p m : \u2115}",
+        "evalR_castDataQ",
+        "RealizesModelExactQ {p m : \u2115}",
+        "checkVecExprEqQ {m : \u2115} (u v : VecExpr m \u211a) : Bool :=",
+        "checkVecExprEqQ_eq_true_iff",
+        "checkDataRealizesModelQ {p m : \u2115}",
+        "checkDataRealizesModelQ_eq_true_iff",
+        "realizesModelExactQ_toReal",
+        "pointIndexPairs (p : \u2115) : List (Fin p \u00d7 Fin p) :=",
+        "mem_pointIndexPairs {p : \u2115} (i j : Fin p) :",
+        "checkInterpolationFeasibleQ",
+        "checkInterpolationFeasibleQ_eq_true_iff",
+        "InterpolationViolationQ (p : \u2115) where",
+        "interpolationViolationsQ",
+        "mem_interpolationViolationsQ_sound",
+        "AssumptionsFeasibleQ {p m : \u2115}",
+        "assumptionIndices {p m : \u2115} (model : ModelQ p m) :",
+        "mem_assumptionIndices",
+        "checkAssumptionsFeasibleQ {p m : \u2115}",
+        "checkAssumptionsFeasibleQ_eq_true_iff",
+        "assumptionsFeasibleQ_toReal",
+        "AssumptionViolationQ where",
+        "assumptionViolationsQ {p m : \u2115}",
+        "mem_assumptionViolationsQ_sound",
+        "ImportMetadataQ (p m : \u2115) where",
+        "ExactGramBundleQ (p m : \u2115) where",
+        "expectedOrderedPairCountQ (p : \u2115) : Nat := p * p",
+        "checkImportMetadataQ {p m : \u2115} (b : ExactGramBundleQ p m) : Bool :=",
+        "checkExactGramBundleQ {p m : \u2115}",
+        "checkExactGramBundleQ_components",
+        "checkExactGramBundleQ_sound_real",
+        "ImportMetadataFieldQ where",
+        "ImportMetadataMismatchQ where",
+        "importMetadataMismatchQ",
+        "importMetadataMismatchesQ {p m : \u2115}",
+        "ModelDataFieldQ where",
+        "ModelDataMismatchQ (p m : \u2115) where",
+        "modelDataMismatchesQ {p m : \u2115}",
+        "ObjectiveMismatchQ where",
+        "objectiveMismatchesQ {p m : \u2115}",
+        "ExactGramBundleAuditReportQ (p m : \u2115) where",
+        "auditExactGramBundleQ {p m : \u2115}",
+        "auditExactGramBundleQ_accepted_iff",
+        "auditExactGramBundleQ_sound_real"
+      ]
+    },
+    "LeanPEP.GramPEP.PSDFactorizationRealBridge": {
+      "classification": "generic",
+      "rationale": "Generic rational-factor to real PSD soundness.",
+      "sha256": "bcadf964f2021c15440b5a898a68babd4f5e7533e3d6f1242c6d8f1773500510",
+      "imports": [
+        "LeanPEP.GramPEP.RationalBridge",
+        "LeanPEP.GramPEP.PSDFactorization"
+      ],
+      "reviewed_declarations": [
+        "vecDotQR {m : \u2115} (u : VecExpr m \u211d) (v : VecExpr m \u211a) : \u211d :=",
+        "castGramQ_zero {m : \u2115} :",
+        "castGramQ_add {m : \u2115} (G H : Gram m \u211a) :",
+        "gramNormSq_add_gram_real",
+        "gramNormSq_cast_weightedOuterQ",
+        "factorGramQ_cast_norm_nonneg",
+        "castGramQ_symmetric",
+        "factorGramQ_cast_posSemidef",
+        "psdFactorValidQ_sound_real",
+        "checkPSDFactorQ_sound_real"
+      ]
+    },
+    "LeanPEP.GramPEP.RationalBridge": {
+      "classification": "generic",
+      "rationale": "Generic rational-to-real casts and feasibility preservation.",
+      "sha256": "3ebcd0ae7a2e1519fd92ca3a114eb86b003f5742e752806eab4f253e051f01c2",
+      "imports": [
+        "LeanPEP.GramPEP.Coordinate"
+      ],
+      "reviewed_declarations": [
+        "castVecQ {m : \u2115} (u : VecExpr m \u211a) : VecExpr m \u211d :=",
+        "castGramQ {m : \u2115} (G : Gram m \u211a) : Gram m \u211d :=",
+        "castDataQ",
+        "castVecQ_apply",
+        "castGramQ_apply",
+        "castDataQ_gram",
+        "castDataQ_position_apply",
+        "castDataQ_gradient_apply",
+        "castDataQ_value",
+        "castVecQ_sub",
+        "gramInner_castQ",
+        "gramNormSq_castQ",
+        "castGramQ_standardGram {m : \u2115} :",
+        "interpolationSlack_castDataQ",
+        "interpolationFeasibleQ_toReal"
+      ]
+    },
+    "LeanPEP.GramPEP.Coordinate": {
+      "classification": "generic",
+      "rationale": "Standard basis/Gram/factor family for arbitrary dimension; identity-matrix representation lemma, not an optimization performance certificate.",
+      "sha256": "8c9bf77664e98c488893231cc5fd4ba116758c0eadba223d88661bc083d14a75",
+      "imports": [
+        "LeanPEP.GramPEP.PSDFactorization"
+      ],
+      "reviewed_declarations": [
+        "standardGram",
+        "standardBasisExpr",
+        "gramInner_standardGram",
+        "gramNormSq_standardGram",
+        "standardGram_posSemidef",
+        "standardFactorCertQ (m : \u2115) : PSDFactorCertQ m :="
+      ]
+    },
+    "LeanPEP.GramPEP.PSDFactorization": {
+      "classification": "generic",
+      "rationale": "Generic rank-one factor syntax, exact matrix checks and soundness.",
+      "sha256": "34edb4fcd1452484722182566645e09fcefcda5a5c2e221c1a9f970ffa42882b",
+      "imports": [
+        "LeanPEP.GramPEP.Core"
+      ],
+      "reviewed_declarations": [
+        "gramIndices (m : \u2115) : List (Fin m) :=",
+        "gramIndexPairs (m : \u2115) : List (Fin m \u00d7 Fin m) :=",
+        "mem_gramIndices {m : \u2115} (i : Fin m) :",
+        "mem_gramIndexPairs {m : \u2115} (i j : Fin m) :",
+        "vecDotQ {m : \u2115} (u v : VecExpr m \u211a) : \u211a :=",
+        "RankOneFactorQ (m : \u2115) where",
+        "PSDFactorCertQ (m : \u2115) where",
+        "weightedOuterQ {m : \u2115} (t : RankOneFactorQ m) : Gram m \u211a :=",
+        "factorGramQ {m : \u2115} : List (RankOneFactorQ m) \u2192 Gram m \u211a",
+        "gramInner_zero_gram",
+        "gramNormSq_zero_gram",
+        "gramInner_add_gram",
+        "gramNormSq_add_gram",
+        "gramNormSq_weightedOuterQ",
+        "factorGramQ_symmetric",
+        "factorGramQ_norm_nonneg",
+        "factorGramQ_posSemidef",
+        "checkGramEqQ {m : \u2115} (G H : Gram m \u211a) : Bool :=",
+        "checkGramEqQ_eq_true_iff",
+        "checkGramSymmetricQ {m : \u2115} (G : Gram m \u211a) : Bool :=",
+        "checkGramSymmetricQ_eq_true_iff",
+        "checkFactorWeightsQ {m : \u2115} (c : PSDFactorCertQ m) : Bool :=",
+        "checkFactorWeightsQ_eq_true_iff",
+        "PSDFactorValidQ {m : \u2115}",
+        "checkPSDFactorQ {m : \u2115}",
+        "checkPSDFactorQ_eq_true_iff",
+        "psdFactorValidQ_sound",
+        "checkPSDFactorQ_sound",
+        "GramAsymmetryQ (m : \u2115) where",
+        "NegativeFactorWeightQ where",
+        "GramEntryMismatchQ (m : \u2115) where",
+        "gramAsymmetriesQ {m : \u2115} (G : Gram m \u211a) :",
+        "negativeFactorWeightsFromQ {m : \u2115} :",
+        "negativeFactorWeightsQ {m : \u2115} (c : PSDFactorCertQ m) :",
+        "gramEntryMismatchesQ {m : \u2115}",
+        "PSDFactorAuditReportQ (m : \u2115) where",
+        "auditPSDFactorQ {m : \u2115}",
+        "auditPSDFactorQ_accepted_iff",
+        "auditPSDFactorQ_sound",
+        "mem_gramAsymmetriesQ_sound",
+        "mem_gramEntryMismatchesQ_sound",
+        "mem_negativeFactorWeightsFromQ_sound",
+        "mem_negativeFactorWeightsQ_sound"
+      ]
+    },
+    "LeanPEP.GramPEP.Core": {
+      "classification": "generic",
+      "rationale": "Parameterized Gram or finite-GD semantic types/feasibility, not an instantiated optimization certificate.",
+      "sha256": "88dd215b47dec3d985625e1530285fb6d80e224fd3b803d256ad9a49230f0920",
+      "imports": [
+        "Mathlib.Tactic",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Data.Matrix.Mul"
+      ],
+      "reviewed_declarations": [
+        "VecExpr (m : \u2115) (\ud835\udd5c : Type*) := Fin m \u2192 \ud835\udd5c",
+        "Gram (m : \u2115) (\ud835\udd5c : Type*) := Matrix (Fin m) (Fin m) \ud835\udd5c",
+        "gramInner",
+        "gramNormSq",
+        "IsGramSymmetric",
+        "IsGramPosSemidef",
+        "Data (Point : Type*) (m : \u2115) (\ud835\udd5c : Type*) where",
+        "DataQ (Point : Type*) (m : \u2115) := Data Point m \u211a",
+        "DataR (Point : Type*) (m : \u2115) := Data Point m \u211d",
+        "interpolationSlack",
+        "InterpolationFeasible",
+        "CoreFeasible",
+        "orderedPairs {Point : Type*} (points : List Point) : List (Point \u00d7 Point) :=",
+        "gramInner_zero_left",
+        "gramInner_zero_right",
+        "gramNormSq_zero"
+      ]
+    },
+    "LeanPEP.GramPEP.UpperCertificateAudit": {
+      "classification": "generic",
+      "rationale": "Generic coefficient/weight diagnostics, no fixed certificate.",
+      "sha256": "ff1e6c595c30c06c2f1ec05051fc19df35abd14cb64d2ee3ac10b1864cc30f14",
+      "imports": [
+        "LeanPEP.GramPEP.UpperCertificateChecker"
+      ],
+      "reviewed_declarations": [
+        "NegativeInterpWeightQ (p : \u2115) where",
+        "negativeInterpWeightsFromQ {p : \u2115} :",
+        "negativeInterpWeightsQ {p : \u2115}",
+        "NegativeAssumptionWeightQ where",
+        "negativeAssumptionWeightsFromQ",
+        "negativeAssumptionWeightsQ",
+        "LinearCoeffLocationQ (p m : \u2115) where",
+        "linearCoeffAtQ {p m : \u2115}",
+        "linearCoeffLocationsQ (p m : \u2115) :",
+        "LinearCoeffMismatchQ (p m : \u2115) where",
+        "linearCoeffMismatchAtQ {p m : \u2115}",
+        "linearExprMismatchesQ {p m : \u2115}",
+        "UpperCertAuditReportQ (p m : \u2115) where",
+        "auditUpperCertQ {p m : \u2115} {model : ModelQ p m}",
+        "auditUpperCertQ_accepted_iff",
+        "auditUpperCertQ_sound_real",
+        "mem_negativeInterpWeightsFromQ_sound",
+        "mem_negativeInterpWeightsQ_sound",
+        "mem_negativeAssumptionWeightsFromQ_sound",
+        "mem_negativeAssumptionWeightsQ_sound",
+        "mem_linearExprMismatchesQ_sound"
+      ]
+    },
+    "LeanPEP.GramPEP.UpperCertificateChecker": {
+      "classification": "generic",
+      "rationale": "Original generic exact upper checker and soundness, no instantiated check.",
+      "sha256": "c93577d5afe23d916cd8585902c7d8f743dca0215ee2cc4391953b58ada9e490",
+      "imports": [
+        "LeanPEP.GramPEP.UpperCertificate"
+      ],
+      "reviewed_declarations": [
+        "checkLinearExprEqQ {p m : \u2115}",
+        "checkLinearExprEqQ_sound {p m : \u2115}",
+        "checkLinearExprEqQ_complete {p m : \u2115}",
+        "checkLinearExprEqQ_eq_true_iff {p m : \u2115}",
+        "UpperCertValidQ {p m : \u2115} {model : ModelQ p m}",
+        "checkUpperCertQ {p m : \u2115} {model : ModelQ p m}",
+        "checkUpperCertQ_sound {p m : \u2115} {model : ModelQ p m}",
+        "checkUpperCertQ_complete {p m : \u2115} {model : ModelQ p m}",
+        "checkUpperCertQ_eq_true_iff {p m : \u2115} {model : ModelQ p m}",
+        "interpTermsValueR_nonneg {p m : \u2115}",
+        "assumptionTermsValueR_nonneg {p m : \u2115}",
+        "gramPairingR_zero {m : \u2115} (G : Gram m \u211d) :",
+        "gramPairingR_add {m : \u2115}",
+        "gramPairingR_weightedOuterQ {m : \u2115}",
+        "dualFactorsValueR {m : \u2115}",
+        "gramPairingR_factorGramQ {m : \u2115}",
+        "dualFactorsValueR_nonneg {m : \u2115}",
+        "gramPairingR_nonneg_of_valid {m : \u2115}",
+        "upperCertValidQ_sound_real {p m : \u2115} {model : ModelQ p m}",
+        "checkUpperCertQ_sound_real {p m : \u2115} {model : ModelQ p m}"
+      ]
+    },
+    "LeanPEP.GramPEP.UpperCertificate": {
+      "classification": "generic",
+      "rationale": "Parameterized affine/quadratic syntax and certificate type/evaluation; no concrete certificate instance.",
+      "sha256": "38f5c8e2bc66116f7777a80601b3106258e1a88a3ee3e8dcd87b3937a2cdf192",
+      "imports": [
+        "LeanPEP.GramPEP.RationalBridge",
+        "LeanPEP.GramPEP.PSDFactorization"
+      ],
+      "reviewed_declarations": [
+        "pointIndices (p : \u2115) : List (Fin p) :=",
+        "mem_pointIndices {p : \u2115} (i : Fin p) :",
+        "gramInner_comm_of_symmetric",
+        "LinearExprQ (p m : \u2115) where",
+        "zero (p m : \u2115) : LinearExprQ p m :=",
+        "const (p m : \u2115) (c : \u211a) : LinearExprQ p m :=",
+        "add {p m : \u2115} (a b : LinearExprQ p m) : LinearExprQ p m :=",
+        "neg {p m : \u2115} (a : LinearExprQ p m) : LinearExprQ p m :=",
+        "sub {p m : \u2115} (a b : LinearExprQ p m) : LinearExprQ p m :=",
+        "scale {p m : \u2115} (c : \u211a) (a : LinearExprQ p m) : LinearExprQ p m :=",
+        "valueVar {p m : \u2115} (i : Fin p) : LinearExprQ p m :=",
+        "gramOuter {p m : \u2115}",
+        "gramBilinear {p m : \u2115}",
+        "gramNorm {p m : \u2115} (u : VecExpr m \u211a) : LinearExprQ p m :=",
+        "gramPairing {p m : \u2115} (S : Gram m \u211a) : LinearExprQ p m :=",
+        "evalR {p m : \u2115}",
+        "evalR_zero {p m : \u2115} (d : DataR (Fin p) m) :",
+        "evalR_const {p m : \u2115} (c : \u211a)",
+        "evalR_add {p m : \u2115}",
+        "evalR_neg {p m : \u2115}",
+        "evalR_sub {p m : \u2115}",
+        "evalR_scale {p m : \u2115}",
+        "evalR_valueVar {p m : \u2115}",
+        "evalR_gramOuter {p m : \u2115}",
+        "evalR_gramBilinear {p m : \u2115}",
+        "evalR_gramNorm {p m : \u2115}",
+        "evalR_gramPairing {p m : \u2115}",
+        "ModelQ (p m : \u2115) where",
+        "RealizesModelQ {p m : \u2115}",
+        "interpolationExprQ {p m : \u2115}",
+        "evalR_interpolationExprQ",
+        "AssumptionsFeasibleR {p m : \u2115}",
+        "InterpTermQ (p : \u2115) where",
+        "AssumptionTermQ {p m : \u2115} (model : ModelQ p m) where",
+        "UpperCertQ {p m : \u2115} (model : ModelQ p m) where",
+        "interpExprSumQ {p m : \u2115} (model : ModelQ p m) :",
+        "assumptionExprSumQ {p m : \u2115} (model : ModelQ p m) :",
+        "certificateRhsExprQ {p m : \u2115} {model : ModelQ p m}",
+        "upperTargetExprQ {p m : \u2115}",
+        "interpTermsValueR {p m : \u2115}",
+        "assumptionTermsValueR {p m : \u2115}",
+        "gramPairingR {m : \u2115}",
+        "certificateRhsValueR {p m : \u2115}",
+        "evalR_interpExprSumQ",
+        "evalR_assumptionExprSumQ",
+        "evalR_certificateRhsExprQ",
+        "evalR_upperTargetExprQ"
+      ]
+    },
+    "LeanPEP.Profiles.ProximalGradient": {
+      "classification": "generic",
+      "rationale": "Arbitrary-horizon PG profile/source compiler or actual trajectory embedding; certificate is an input, not a fixed numeric value.",
+      "sha256": "5fbd675a72ff9064209cc7db511470f766f82793f6fa438b6203aea009f1d7ce",
+      "imports": [
+        "LeanPEP.Profiles.Composite",
+        "LeanPEP.GramPEP.Coordinate"
+      ],
+      "reviewed_declarations": [
+        "valueCount (n : \u2115) : \u2115 := (n + 3) + (n + 2)",
+        "basisCount (n : \u2115) : \u2115 := (n + 4) + (n + 1)",
+        "smoothValueIndex {n : \u2115} (i : Fin (n + 3)) : Fin (valueCount n) :=",
+        "nonsmoothValueIndex {n : \u2115} (i : Fin (n + 2)) : Fin (valueCount n) :=",
+        "initialBasisIndex (n : \u2115) : Fin (basisCount n) :=",
+        "starBasisIndex (n : \u2115) : Fin (basisCount n) :=",
+        "gradientBasisIndex {n : \u2115} (i : Fin (n + 2)) : Fin (basisCount n) :=",
+        "residualBasisIndex {n : \u2115} (j : Fin (n + 1)) : Fin (basisCount n) :=",
+        "value_blocks_disjoint {n : \u2115} (i : Fin (n + 3)) (j : Fin (n + 2)) :",
+        "smoothValueIndex_injective (n : \u2115) :",
+        "nonsmoothValueIndex_injective (n : \u2115) :",
+        "valueIndex_covers {n : \u2115} (i : Fin (valueCount n)) :",
+        "initialVecQ (n : \u2115) : VecExpr (basisCount n) \u211a :=",
+        "starGradientQ (n : \u2115) : VecExpr (basisCount n) \u211a :=",
+        "gradientVecQ {n : \u2115} (i : Fin (n + 2)) : VecExpr (basisCount n) \u211a :=",
+        "residualVecQ {n : \u2115} (j : Fin (n + 1)) : VecExpr (basisCount n) \u211a :=",
+        "positionVecQ (n : \u2115) : \u2115 \u2192 VecExpr (basisCount n) \u211a",
+        "positionVecQ_zero (n : \u2115) : positionVecQ n 0 = initialVecQ n := rfl",
+        "positionVecQ_succ {n : \u2115} (j : Fin (n + 1)) :",
+        "positionVecQ_gradient_causal {n : \u2115} (k : \u2115) (i : Fin (n + 2))",
+        "positionVecQ_residual_causal {n : \u2115} (k : \u2115) (i : Fin (n + 1))",
+        "terminal_gradient_unused (n : \u2115) (k : \u2115) (hk : k \u2264 n + 1) :",
+        "smoothSamplesQ (n : \u2115) : Fin (n + 3) \u2192 Composite.SampleQ (valueCount n) (basisCount n) :=",
+        "nonsmoothSamplesQ (n : \u2115) : Fin (n + 2) \u2192 Composite.SampleQ (valueCount n) (basisCount n) :=",
+        "smoothComponentQ (n : \u2115) : Composite.ComponentQ (valueCount n) (basisCount n) :=",
+        "nonsmoothComponentQ (n : \u2115) : Composite.ComponentQ (valueCount n) (basisCount n) :=",
+        "radiusExprQ (n : \u2115) : LinearExprQ (valueCount n) (basisCount n) :=",
+        "objectiveQ (n : \u2115) : LinearExprQ (valueCount n) (basisCount n) :=",
+        "profileQ (n : \u2115) : Composite.ProfileQ (valueCount n) (basisCount n) :=",
+        "modelQ (n : \u2115) : ModelQ (valueCount n) (basisCount n) :=",
+        "modelQ_constraints (n : \u2115) : (modelQ n).assumptions =",
+        "modelQ_constraint_count (n : \u2115) :",
+        "certificate_upper {n : \u2115} (c : UpperCertQ (modelQ n))"
+      ]
+    },
+    "LeanPEP.Profiles.Composite": {
+      "classification": "generic",
+      "rationale": "Parameterized component-local interpolation compilation or actual sample semantics.",
+      "sha256": "219d27f0a445140776b0cdc5cc69b5ea0e072ab596e3c9b40fa1041e1f4a2659",
+      "imports": [
+        "LeanPEP.GramPEP.ExplicitConstraints"
+      ],
+      "reviewed_declarations": [
+        "FunctionClassQ where",
+        "SampleQ (p m : \u2115) where",
+        "ComponentQ (p m : \u2115) where",
+        "interpolationExprQ {p m : \u2115} (kind : FunctionClassQ)",
+        "componentConstraintsQ {p m : \u2115} (c : ComponentQ p m) :",
+        "ProfileQ (p m : \u2115) where",
+        "compileConstraintsQ {p m : \u2115} (profile : ProfileQ p m) :",
+        "compileModelQ {p m : \u2115} (profile : ProfileQ p m) : ModelQ p m :=",
+        "evalR_interpolationExprQ_convex {p m : \u2115}",
+        "evalR_interpolationExprQ_smooth {p m : \u2115}",
+        "componentConstraintsQ_nonneg {p m : \u2115}",
+        "compileModelQ_feasible {p m : \u2115} (profile : ProfileQ p m)",
+        "certificate_upper {p m : \u2115} (profile : ProfileQ p m)"
+      ]
+    },
+    "LeanPEP.GramPEP.ExplicitConstraints": {
+      "classification": "generic",
+      "rationale": "Generic soundness restricted to empty implicit interpolation terms.",
+      "sha256": "e38d041b4b8936bf767afecd6db7ee1478ef13a06e49a98589787dcf97b64fe8",
+      "imports": [
+        "LeanPEP.GramPEP.UpperCertificateChecker"
+      ],
+      "reviewed_declarations": [
+        "castVecQ_zero {m : \u2115} :",
+        "castVecQ_neg {m : \u2115} (u : VecExpr m \u211a) :",
+        "checkUpperCertQ_sound_real_explicit {p m : \u2115} {model : ModelQ p m}"
+      ]
+    },
+    "LeanPEP.GramPEP.OriginCoordinates": {
+      "classification": "generic",
+      "rationale": "Generic coordinate restriction, section and Gram/PSD transport.",
+      "sha256": "d2b0cbe6a4467727f1618744ce9199527015b809fea471c17dd83d35b12528de",
+      "imports": [
+        "LeanPEP.Profiles.Composite",
+        "LeanPEP.GramPEP.Coordinate"
+      ],
+      "reviewed_declarations": [
+        "restrictVec {m : \u2115} {K : Type*} (v : VecExpr (m+1) K) : VecExpr m K :=",
+        "liftVecQ {m : \u2115} (a : Fin m) (v : VecExpr m \u211a) : VecExpr (m+1) \u211a :=",
+        "liftPositionQ {m : \u2115} (a : Fin m) (v : VecExpr m \u211a) : VecExpr (m+1) \u211a :=",
+        "restrict_liftVecQ {m : \u2115} (a : Fin m) (v : VecExpr m \u211a) :",
+        "restrict_liftPositionQ {m : \u2115} (a : Fin m) (v : VecExpr m \u211a) :",
+        "restrictGram {m : \u2115} {K : Type*} (G : Gram (m+1) K) : Gram m K :=",
+        "liftGramQ {m : \u2115} (a : Fin m) (S : Gram m \u211a) : Gram (m+1) \u211a :=",
+        "restrict_liftGramQ {m : \u2115} (a : Fin m) (S : Gram m \u211a) :",
+        "restrictExprQ {p m : \u2115} (e : LinearExprQ p (m+1)) : LinearExprQ p m :=",
+        "liftExprQ {p m : \u2115} (a : Fin m) (e : LinearExprQ p m) : LinearExprQ p (m+1) :=",
+        "restrict_liftExprQ {p m : \u2115} (a : Fin m) (e : LinearExprQ p m) :",
+        "restrictSampleQ {p m : \u2115} (s : Profiles.Composite.SampleQ p (m+1)) :",
+        "liftSampleQ {p m : \u2115} (a : Fin m) (s : Profiles.Composite.SampleQ p m) :",
+        "restrict_liftSampleQ {p m : \u2115} (a : Fin m)",
+        "centerMapQ {m : \u2115} (a : Fin m) : Matrix (Fin m) (Fin (m+1)) \u211a :=",
+        "sectionMapQ (m : \u2115) : Matrix (Fin (m+1)) (Fin m) \u211a :=",
+        "center_section_entry {m : \u2115} (a : Fin m) (i j : Fin m) :",
+        "liftVecQ_eq_center_combination {m : \u2115} (a : Fin m) (v : VecExpr m \u211a)",
+        "restrictVec_eq_section_combination {m : \u2115} (v : VecExpr (m+1) \u211a)",
+        "liftGramQ_eq_congruence {m : \u2115} (a : Fin m) (S : Gram m \u211a)",
+        "restrictGram_eq_congruence {m : \u2115} (S : Gram (m+1) \u211a) (i j : Fin m) :",
+        "section_center_origin {m : \u2115} (a : Fin m) :",
+        "restrictFactorQ {m : \u2115} (f : RankOneFactorQ (m+1)) : RankOneFactorQ m :=",
+        "restrictPSDFactorQ {m : \u2115} (f : PSDFactorCertQ (m+1)) : PSDFactorCertQ m :=",
+        "restrict_factorGram_entry {m : \u2115} (fs : List (RankOneFactorQ (m+1)))",
+        "restrict_factorGram {m : \u2115} (fs : List (RankOneFactorQ (m+1))) :",
+        "zeroOriginGramR {m : \u2115} (G : Gram m \u211d) : Gram (m+1) \u211d :=",
+        "zeroOriginDataR {p m : \u2115} (d : DataR (Fin p) m) :",
+        "evalR_restrictExprQ {p m : \u2115} (e : LinearExprQ p (m+1))",
+        "gramNormSq_zeroOriginGramR {m : \u2115} (G : Gram m \u211d)",
+        "zeroOriginGramR_psd {m : \u2115} (G : Gram m \u211d) (hG : IsGramPosSemidef G) :"
+      ]
+    },
+    "LeanPEP.GramPEP.ExactReindexing": {
+      "classification": "generic",
+      "rationale": "Generic finite bijection and coefficient/factor/data transport.",
+      "sha256": "de42573dc77ea7c8c8550ae141301be3b4c87f61bb16fca646fc868bdf9d1ac8",
+      "imports": [
+        "LeanPEP.Profiles.Composite",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+      ],
+      "reviewed_declarations": [
+        "IndexMapQ (k : \u2115) where",
+        "IndexMapQ.symm {k : \u2115} (p : IndexMapQ k) : IndexMapQ k :=",
+        "IndexMapQ.identity (k : \u2115) : IndexMapQ k :=",
+        "checkQ {k : \u2115} (p : IndexMapQ k) : Bool :=",
+        "checkQ_eq_true_iff {k : \u2115} (p : IndexMapQ k) :",
+        "checkQ_identity (k : \u2115) : checkQ (IndexMapQ.identity k) = true :=",
+        "checkQ_symm {k : \u2115} (p : IndexMapQ k) (hp : checkQ p = true) :",
+        "checkedEquiv {k : \u2115} (p : IndexMapQ k) (hp : checkQ p = true) : Fin k \u2243 Fin k :=",
+        "vec {k : \u2115} {\u03b1 : Type*} (p : IndexMapQ k) (v : Fin k \u2192 \u03b1) : Fin k \u2192 \u03b1 :=",
+        "matrix {k : \u2115} {\u03b1 : Type*} (p : IndexMapQ k) (A : Fin k \u2192 Fin k \u2192 \u03b1) :",
+        "vec_roundtrip {k : \u2115} {\u03b1 : Type*} (p : IndexMapQ k) (hp : checkQ p = true)",
+        "matrix_roundtrip {k : \u2115} {\u03b1 : Type*} (p : IndexMapQ k) (hp : checkQ p = true)",
+        "expr {p m : \u2115} (pv : IndexMapQ p) (pb : IndexMapQ m) (e : LinearExprQ p m) :",
+        "sample {p m : \u2115} (pv : IndexMapQ p) (pb : IndexMapQ m)",
+        "expr_roundtrip {p m : \u2115} (pv : IndexMapQ p) (pb : IndexMapQ m)",
+        "sample_roundtrip {p m : \u2115} (pv : IndexMapQ p) (pb : IndexMapQ m)",
+        "factor {m : \u2115} (pb : IndexMapQ m) (t : RankOneFactorQ m) : RankOneFactorQ m :=",
+        "psdFactor {m : \u2115} (pb : IndexMapQ m) (f : PSDFactorCertQ m) : PSDFactorCertQ m :=",
+        "factorGram_entry {m : \u2115} (pb : IndexMapQ m) (fs : List (RankOneFactorQ m))",
+        "factorGram_reindex {m : \u2115} (pb : IndexMapQ m) (fs : List (RankOneFactorQ m)) :",
+        "sum_reindex {k : \u2115} {\u03b1 : Type*} [AddCommMonoid \u03b1]",
+        "dataR {p m : \u2115} (pv : IndexMapQ p) (pb : IndexMapQ m)",
+        "evalR_reindex {p m : \u2115} (pv : IndexMapQ p) (pb : IndexMapQ m)"
+      ]
+    },
+    "LeanPEP.GramPEP.RowNormalization": {
+      "classification": "generic",
+      "rationale": "Generic sign and positive-scale transformations.",
+      "sha256": "74948362da6c2022c9cb0cb10c18f240ee9eada57f8d7c5b690f9703b10dd0ee",
+      "imports": [
+        "LeanPEP.GramPEP.UpperCertificateChecker"
+      ],
+      "reviewed_declarations": [
+        "SenseQ where",
+        "RuleQ where",
+        "checkRulesQ {k : \u2115} (rs : Fin k \u2192 RuleQ) : Bool :=",
+        "checkRulesQ_eq_true_iff {k : \u2115} (rs : Fin k \u2192 RuleQ) :",
+        "orientExprQ {p m : \u2115} (sense : SenseQ) (e : LinearExprQ p m) : LinearExprQ p m :=",
+        "normalizeExprQ {p m : \u2115} (r : RuleQ) (e : LinearExprQ p m) : LinearExprQ p m :=",
+        "encodeExprQ {p m : \u2115} (r : RuleQ) (e : LinearExprQ p m) : LinearExprQ p m :=",
+        "scale_scale {p m : \u2115} (a b : \u211a) (e : LinearExprQ p m) :",
+        "scale_one {p m : \u2115} (e : LinearExprQ p m) : LinearExprQ.scale 1 e = e := by",
+        "orient_involutive {p m : \u2115} (sense : SenseQ) (e : LinearExprQ p m) :",
+        "scale_normalize {p m : \u2115} (r : RuleQ) (hr : r.scale \u2260 0) (e : LinearExprQ p m) :",
+        "encode_normalize {p m : \u2115} (r : RuleQ) (hr : r.scale \u2260 0) (e : LinearExprQ p m) :",
+        "normalize_encode {p m : \u2115} (r : RuleQ) (hr : r.scale \u2260 0) (e : LinearExprQ p m) :",
+        "normalize_injective {p m : \u2115} (r : RuleQ) (hr : r.scale \u2260 0) :",
+        "HoldsR {p m : \u2115} (sense : SenseQ) (e : LinearExprQ p m) (d : DataR (Fin p) m) : Prop :=",
+        "orient_nonneg_iff {p m : \u2115} (sense : SenseQ) (e : LinearExprQ p m)",
+        "normalize_nonneg_iff {p m : \u2115} (r : RuleQ) (hr : 0 < r.scale)",
+        "weighted_normalize {p m : \u2115} (r : RuleQ) (hr : r.scale \u2260 0)",
+        "normalized_weight_nonneg (r : RuleQ) (hr : 0 < r.scale) (w : \u211a) (hw : 0 \u2264 w) :"
+      ]
+    },
+    "LeanPEP.GramPEP.PerformanceLift": {
+      "classification": "generic",
+      "rationale": "Generic performance-variable substitution and exact evaluation identities.",
+      "sha256": "ab8230706f63f7c19550cbdae5c7f8df19fca4eb41e98152a8b466a617d70961",
+      "imports": [
+        "LeanPEP.GramPEP.RowNormalization"
+      ],
+      "reviewed_declarations": [
+        "embedExprQ {p m : \u2115} (e : LinearExprQ p m) : LinearExprQ (p+1) m :=",
+        "tauExprQ (p m : \u2115) : LinearExprQ (p+1) m :=",
+        "tailExprQ {p m : \u2115} (e : LinearExprQ (p+1) m) : LinearExprQ p m :=",
+        "substituteQ {p m : \u2115} (o : LinearExprQ p m) (e : LinearExprQ (p+1) m) :",
+        "linkExprQ {p m : \u2115} (o : LinearExprQ p m) : LinearExprQ (p+1) m :=",
+        "substitute_embed {p m : \u2115} (o e : LinearExprQ p m) :",
+        "substitute_tau {p m : \u2115} (o : LinearExprQ p m) :",
+        "substitute_add {p m : \u2115} (o : LinearExprQ p m) (e f : LinearExprQ (p+1) m) :",
+        "substitute_scale {p m : \u2115} (o : LinearExprQ p m) (a : \u211a) (e : LinearExprQ (p+1) m) :",
+        "substitute_neg {p m : \u2115} (o : LinearExprQ p m) (e : LinearExprQ (p+1) m) :",
+        "substitute_zero {p m : \u2115} (o : LinearExprQ p m) :",
+        "substitute_const {p m : \u2115} (o : LinearExprQ p m) (b : \u211a) :",
+        "substitute_gramPairing {p m : \u2115} (o : LinearExprQ p m) (G : Gram m \u211a) :",
+        "substitute_link {p m : \u2115} (o : LinearExprQ p m) :",
+        "substitute_orient {p m : \u2115} (o : LinearExprQ p m) (sense : RowNormalization.SenseQ)",
+        "embed_orient {p m : \u2115} (sense : RowNormalization.SenseQ) (e : LinearExprQ p m) :",
+        "expr_scale_zero {p m : \u2115} (a : \u211a) :",
+        "expr_zero_add {p m : \u2115} (e : LinearExprQ p m) :",
+        "extendDataR {p m : \u2115} (d : DataR (Fin p) m) (t : \u211d) : DataR (Fin (p+1)) m :=",
+        "eval_embed {p m : \u2115} (e : LinearExprQ p m) (d : DataR (Fin p) m) (t : \u211d) :",
+        "eval_tau {p m : \u2115} (d : DataR (Fin p) m) (t : \u211d) :",
+        "eval_substitute {p m : \u2115} (o : LinearExprQ p m) (e : LinearExprQ (p+1) m)",
+        "eval_link {p m : \u2115} (o : LinearExprQ p m) (d : DataR (Fin p) m) (t : \u211d) :"
+      ]
+    },
+    "LeanPEP.GramPEP.ZeroRowCoverage": {
+      "classification": "generic",
+      "rationale": "Generic partial coverage maps with identically-zero omitted rows.",
+      "sha256": "a327ba7a504c265ad140d28ce5a07e116686246a05ca249c94e103fa4ffab620",
+      "imports": [
+        "LeanPEP.GramPEP.UpperCertificateChecker"
+      ],
+      "reviewed_declarations": [
+        "MapQ (small full : \u2115) where",
+        "checkMapQ {small full : \u2115} (a : MapQ small full) : Bool :=",
+        "checkMapQ_eq_true_iff {small full : \u2115} (a : MapQ small full) :",
+        "toFull_injective {small full : \u2115} (a : MapQ small full)",
+        "omitted_iff {small full : \u2115} (a : MapQ small full)",
+        "checkRowsQ {p m small full : \u2115} (a : MapQ small full)",
+        "checkRowsQ_eq_true_iff {p m small full : \u2115} (a : MapQ small full)",
+        "feasible_iff {p m small full : \u2115} (a : MapQ small full)",
+        "finite_upper_equivalence {p m small full : \u2115} (a : MapQ small full)"
+      ]
+    },
+    "LeanPEP.GramPEP.RationalReconstructionAudit": {
+      "classification": "generic",
+      "rationale": "Original generic direct endpoint policy and reference preservation.",
+      "sha256": "4f1626d83da4c0c34f6bbb09d8d33c4453c23326b9129635b447920decb92236",
+      "imports": [
+        "LeanPEP.GramPEP.ExternalBundle"
+      ],
+      "reviewed_declarations": [
+        "PolicyQ where",
+        "checkPolicyQ (p : PolicyQ) : Bool :=",
+        "checkPolicyQ_eq_true_iff (p : PolicyQ) :",
+        "WithinQ (p : PolicyQ) (raw reconstructed : \u211a) : Prop :=",
+        "checkScalarQ (p : PolicyQ) (a b : \u211a) : Bool := decide (WithinQ p a b)",
+        "checkScalarQ_eq_true_iff (p : PolicyQ) (a b : \u211a) :",
+        "checkCoefficientsQ (p : PolicyQ) : List \u211a \u2192 List \u211a \u2192 Bool",
+        "CoefficientsWithinQ (p : PolicyQ) : List \u211a \u2192 List \u211a \u2192 Prop",
+        "checkCoefficientsQ_eq_true_iff (p : PolicyQ) (as bs : List \u211a) :",
+        "coefficients_length (p : PolicyQ) (as bs : List \u211a)",
+        "gramCoefficientsQ {m : \u2115} (G : Gram m \u211a) : List \u211a :=",
+        "exprCoefficientsQ {p m : \u2115} (e : LinearExprQ p m) : List \u211a :=",
+        "numericalCoefficientsQ {p m : \u2115} {model : ModelQ p m} (c : UpperCertQ model) : List \u211a :=",
+        "assumptionReferencesQ {p m : \u2115} {model : ModelQ p m} (c : UpperCertQ model) : List \u2115 :=",
+        "interpolationReferencesQ {p m : \u2115} {model : ModelQ p m} (c : UpperCertQ model) : List (Fin p \u00d7 Fin p) :=",
+        "checkChangesQ {p m : \u2115} {model : ModelQ p m} (policy : PolicyQ)",
+        "checkChangesQ_eq_true_iff {p m : \u2115} {model : ModelQ p m} (policy : PolicyQ)",
+        "references_preserved {p m : \u2115} {model : ModelQ p m} (policy : PolicyQ)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientReconstructionAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "7521b322552ea427c2a7c0a8e47fc12ce739828a91a35fdce1fba1c22f0d7f34",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientReconstruction",
+        "LeanPEP.ActualFunction.ProximalGradientSparseAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "upper_firstOrder {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "upper_analytic [CompleteSpace E] {n k : \u2115} (s : SourceQ n k) (policy : PolicyQ)",
+        "raw_upper_firstOrder {n k : \u2115} (s : SourceQ n k) (raw : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientSparseAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "9d1776133b35350f18e88def21377caa895135260da37c460b7d906324c9a8d8",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientSparse",
+        "LeanPEP.ActualFunction.ProximalGradientPerformanceAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model)",
+        "upper_firstOrder {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model)",
+        "upper_analytic [CompleteSpace E] {n k : \u2115} (s : SourceQ n k) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientPerformanceAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "9d5b05180f11553e64c0e51e9ea1c3dbacefc984e2bb07c5b5f6619e70f44dfb",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientPerformance",
+        "LeanPEP.ActualFunction.ProximalGradientRowAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_firstOrder {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_analytic [CompleteSpace E] {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientRowAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "62df0a577fff3dd836fee3635b272678408796176f8a69c6fca4e25b0737d187",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientRows",
+        "LeanPEP.ActualFunction.ProximalGradientOrderingAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_firstOrder {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_analytic [CompleteSpace E] {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientOrderingAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "cae54ab27af1cca598894e287bef3a60f25d27376a4e97d0c964a0d5dea00d16",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientOrdering",
+        "LeanPEP.ActualFunction.ProximalGradientCoordinateAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_firstOrder {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_analytic [CompleteSpace E] {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientCoordinateAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "614b9330343ac7a779e3d2692ec3a55061e6ce3d7f52881e9538cb706992112c",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientCoordinates",
+        "LeanPEP.ActualFunction.ProximalGradientSourceAuditCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_firstOrder {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_analytic [CompleteSpace E] {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientSourceAuditCore": {
+      "classification": "generic",
+      "rationale": "Original arbitrary-horizon finite/actual bound bridge; submitted certificate/check hypothesis remains parameterized; fixture application excluded.",
+      "sha256": "82159350d57bb77c31c19468d2e4201f1f5e3778b36c4b4af9b4d2b17a38ce54",
+      "imports": [
+        "LeanPEP.Adapters.ProximalGradientSource",
+        "LeanPEP.ActualFunction.ProximalGradientMinimizerCore"
+      ],
+      "reviewed_declarations": [
+        "finite_upper {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_firstOrder {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)",
+        "upper_analytic [CompleteSpace E] {n : \u2115} (s : SourceQ n) (c : UpperCertQ s.model)"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientMinimizerCore": {
+      "classification": "generic",
+      "rationale": "Only certificate_upper_of_minimizer for arbitrary accepted certificate; rate/attainment applications left outside.",
+      "sha256": "075de0866ddca5c8853ec04339edda6184f9b5d7fd752ea299e85aafbba1a5df",
+      "imports": [
+        "LeanPEP.ActualFunction.CompositeOptimality",
+        "LeanPEP.ActualFunction.ProximalGradientScalingCore"
+      ],
+      "reviewed_declarations": [
+        "certificate_upper_of_minimizer {n : \u2115}"
+      ]
+    },
+    "LeanPEP.ActualFunction.CompositeOptimality": {
+      "classification": "generic",
+      "rationale": "General composite optimality/subgradient extraction on real Hilbert spaces.",
+      "sha256": "41c1f28e9c8f581edaa24c5e8f11c8744b74a8e9ea99b8dd1007614b766cb507",
+      "imports": [
+        "LeanPEP.ActualFunction.ProximalScaling"
+      ],
+      "reviewed_declarations": [
+        "subgradient_of_isProxPoint {L : \u211d\u22650} {h : E \u2192 \u211d} {v x : E}",
+        "isProxPoint_iff_subgradient {L : \u211d\u22650} {h : E \u2192 \u211d} {v x : E}",
+        "isProxPoint_unique {L : \u211d\u22650} {h : E \u2192 \u211d} {v x y : E}",
+        "scaled_forward_residual {K : \u211d\u22650} (hK : 0 < (K : \u211d)) (x a : E) :",
+        "prox_fixedPoint_of_quadratic_support {K : \u211d\u22650} {h : E \u2192 \u211d} {x a : E}",
+        "subgradient_of_quadratic_support {K : \u211d\u22650} {h : E \u2192 \u211d} {x a : E}",
+        "subgradient_of_minimizer_of_upperModel {L : \u211d\u22650}",
+        "subgradient_of_composite_minimizer {L : \u211d\u22650}",
+        "composite_minimizer_of_subgradient {L : \u211d\u22650}",
+        "composite_minimizer_iff_subgradient {L : \u211d\u22650}",
+        "composite_minimizer_iff_prox_fixedPoint {L : \u211d\u22650}",
+        "composite_minimizer_iff_subgradient_analytic [CompleteSpace E] {L : \u211d\u22650}"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalScaling": {
+      "classification": "generic",
+      "rationale": "General prox contracts, normalization and uniqueness; depends directly on SmoothScalingCore.",
+      "sha256": "da7e053eff9e8d8ff3cf2a6fa3f030d527e2dc3b11dd0d396dd6d9dcc067a552",
+      "imports": [
+        "LeanPEP.ActualFunction.Proximal",
+        "LeanPEP.ActualFunction.SmoothScalingCore"
+      ],
+      "reviewed_declarations": [
+        "IsProxPoint (L : \u211d\u22650) (h : E \u2192 \u211d) (v x : E) : Prop :=",
+        "isProxPoint_iff_norm (L : \u211d\u22650) (h : E \u2192 \u211d) (v x : E) :",
+        "isProxPoint_one (h : E \u2192 \u211d) (v x : E) :",
+        "normalizedPoint (center : E) (R : \u211d) (x : E) : E := R\u207b\u00b9 \u2022 (x-center)",
+        "scaled_normalizedPoint (center x : E) {R : \u211d} (hR : R \u2260 0) :",
+        "normalized_scaledPoint (center z : E) {R : \u211d} (hR : R \u2260 0) :",
+        "scaledPoint_sub (center : E) (R : \u211d) (x y : E) :",
+        "scaledPoint_combination (center : E) (R a b : \u211d) (x y : E) (hab : a+b=1) :",
+        "normalizedFunction_convex {L : \u211d\u22650} {R : \u211d} {h : E \u2192 \u211d} (center : E)",
+        "normalized_subgradient {L : \u211d\u22650} {R : \u211d} {h : E \u2192 \u211d}",
+        "normalized_prox_objective {L : \u211d\u22650} {R : \u211d}",
+        "normalized_prox_iff {L : \u211d\u22650} {R : \u211d}",
+        "isProxPoint_of_subgradient {L : \u211d\u22650} {h : E \u2192 \u211d} {v x : E}",
+        "eq_of_subgradient_of_isProxPoint {L : \u211d\u22650} {h : E \u2192 \u211d} {v x y : E}"
+      ]
+    },
+    "LeanPEP.ActualFunction.Proximal": {
+      "classification": "generic",
+      "rationale": "General real-valued convex subgradient/prox equivalence, no witness fixture.",
+      "sha256": "45357ef9c430b811da286a5cefd87f6e7f01675b63b98bc19ff34ca192d49d46",
+      "imports": [
+        "LeanPEP.ActualFunction.AnalyticBridge"
+      ],
+      "reviewed_declarations": [
+        "SubgradientAt (h : E \u2192 \u211d) (s x : E) : Prop :=",
+        "IsUnitProxPoint (h : E \u2192 \u211d) (v x : E) : Prop :=",
+        "isUnitProxPoint_iff_norm (h : E \u2192 \u211d) (v x : E) :",
+        "quadratic_remainder (v x y : E) :",
+        "isUnitProxPoint_of_subgradient {h : E \u2192 \u211d} {v x : E}",
+        "subgradient_of_isUnitProxPoint {h : E \u2192 \u211d} {v x : E}",
+        "isUnitProxPoint_iff_subgradient {h : E \u2192 \u211d} {v x : E}",
+        "IsUnitForwardBackwardStep (h : E \u2192 \u211d) (g0 x0 x1 s1 : E) : Prop where",
+        "forwardBackwardStep_of_prox {h : E \u2192 \u211d} {g0 x0 x1 : E}",
+        "IsUnitForwardBackwardStep.prox {h : E \u2192 \u211d} {g0 x0 x1 s1 : E}",
+        "composite_globalMin {f h : E \u2192 \u211d} {g : E \u2192 E} {xStar : E}"
+      ]
+    },
+    "LeanPEP.ActualFunction.AnalyticBridge": {
+      "classification": "generic",
+      "rationale": "Universal analytic-to-first-order smooth convex bridge.",
+      "sha256": "b85b9a3bde4f869b517d30113161c987451cd3c7982a8c906d57b36f3c78a788",
+      "imports": [
+        "LeanPEP.ActualFunction.Interpolation",
+        "Mathlib.Analysis.Calculus.Deriv.MeanValue",
+        "Mathlib.Analysis.Calculus.Deriv.Pow",
+        "Mathlib.Analysis.Convex.Deriv",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "lowerModel",
+        "upperModel",
+        "toFirstOrder",
+        "interpolationSlack_nonneg",
+        "pairwise_interpolation"
+      ]
+    },
+    "LeanPEP.ActualFunction.Interpolation": {
+      "classification": "generic",
+      "rationale": "Universal smooth convex interpolation inequality for arbitrary points/functions.",
+      "sha256": "922e60874d323ff48598d987e993a926535b4f1ee5f13e6936c8253d523eae2b",
+      "imports": [
+        "LeanPEP.ActualFunction.Basic",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "interpolationSlack (f : E \u2192 \u211d) (g : E \u2192 E) (x y : E) : \u211d :=",
+        "interpolationSlack_nonneg",
+        "pairwise_interpolation"
+      ]
+    },
+    "LeanPEP.ActualFunction.Basic": {
+      "classification": "generic",
+      "rationale": "General analytic and first-order function contracts.",
+      "sha256": "082eea1fa391a36897ab21b8ab53f57706780d03c4251f904ac2648022003e13",
+      "imports": [
+        "Mathlib.Analysis.Calculus.Gradient.Basic",
+        "Mathlib.Analysis.Convex.Function",
+        "Mathlib.Topology.MetricSpace.Lipschitz"
+      ],
+      "reviewed_declarations": [
+        "and is not yet claimed by this file.",
+        "IsOneSmoothConvexAnalytic",
+        "makes the remaining analytic bridge visible in theorem statements.",
+        "IsOneSmoothConvexFirstOrder",
+        "gradient_eq (h : IsOneSmoothConvexAnalytic f g) :",
+        "differentiable (h : IsOneSmoothConvexAnalytic f g) :"
+      ]
+    },
+    "LeanPEP.ActualFunction.SmoothScalingCore": {
+      "classification": "generic",
+      "rationale": "Four original normalization declarations for arbitrary L, R, functions and points; no one-step certificate.",
+      "sha256": "8225ed288367678c26b82c44bfc6711c7184407b53d902439740dbb87bbfc2d9",
+      "imports": [
+        "LeanPEP.ActualFunction.GeneralSmooth",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "scaledPoint (xStar : E) (R : \u211d) (z : E) : E :=",
+        "normalizedFunction",
+        "normalizedGradient",
+        "normalizedFirstOrder"
+      ]
+    },
+    "LeanPEP.ActualFunction.GeneralSmooth": {
+      "classification": "generic",
+      "rationale": "General L-smooth analytic/first-order contracts and implications.",
+      "sha256": "ccf7db313dedde30b6b906907bdc2b77baa02812406c55951a6899e397b6f6c5",
+      "imports": [
+        "LeanPEP.ActualFunction.AnalyticBridge",
+        "Mathlib.Analysis.Calculus.Deriv.MeanValue",
+        "Mathlib.Analysis.Calculus.Deriv.Pow",
+        "Mathlib.Analysis.Convex.Deriv",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "IsSmoothConvexAnalytic",
+        "IsSmoothConvexFirstOrder",
+        "gradient_eq (h : IsSmoothConvexAnalytic L f g) :",
+        "differentiable (h : IsSmoothConvexAnalytic L f g) :",
+        "lowerModel",
+        "upperModel",
+        "toFirstOrder",
+        "toSmooth",
+        "toSmooth"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradientScalingCore": {
+      "classification": "generic",
+      "rationale": "Physical run and normalization with arbitrary accepted certificate; no fixed rate/attainment instance.",
+      "sha256": "3de7d38b85bfb0394e5300e3f9c2ebbcd2ef362210d3eac90a8cecf1137d2222",
+      "imports": [
+        "LeanPEP.ActualFunction.ProximalScaling",
+        "LeanPEP.ActualFunction.ProximalGradient"
+      ],
+      "reviewed_declarations": [
+        "IsSmoothProxRun (N : \u2115) (L : \u211d\u22650) (h : E \u2192 \u211d) (g : E \u2192 E) (x : \u2115 \u2192 E) : Prop :=",
+        "isSmoothProxRun_zero (L : \u211d\u22650) (h : E \u2192 \u211d) (g : E \u2192 E) (x : \u2115 \u2192 E) :",
+        "isSmoothProxRun_one (N : \u2115) (h : E \u2192 \u211d) (g : E \u2192 E) (x : \u2115 \u2192 E) :",
+        "IsSmoothProxRun.restrict {M N : \u2115} {L : \u211d\u22650} {h : E \u2192 \u211d} {g : E \u2192 E}",
+        "normalized_forward {L : \u211d\u22650} {R : \u211d} (hL : 0 < (L : \u211d)) (hR : 0 < R)",
+        "isSmoothProxRun_iff_normalized {N : \u2115} {L : \u211d\u22650} {R : \u211d}",
+        "normalized_stationarity {L : \u211d\u22650} {R : \u211d} {h : E \u2192 \u211d} {g : E \u2192 E}",
+        "normalizedPoint_radius {R : \u211d} {xStar x0 : E} (hR : 0 < R)",
+        "normalized_objective {L : \u211d\u22650} {R : \u211d} (hR : R \u2260 0)",
+        "stationary_run {N : \u2115} {L : \u211d\u22650} {h : E \u2192 \u211d} {g : E \u2192 E}",
+        "certificate_upper {n : \u2115}"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProximalGradient": {
+      "classification": "generic",
+      "rationale": "Arbitrary-horizon PG profile/source compiler or actual trajectory embedding; certificate is an input, not a fixed numeric value.",
+      "sha256": "f819edca636cf6ffa40a09835a301fb956ab4c3db631e0c77274ff0c4cb202bc",
+      "imports": [
+        "LeanPEP.ActualFunction.Composite",
+        "LeanPEP.ActualFunction.ProfileGram",
+        "LeanPEP.Profiles.ProximalGradient"
+      ],
+      "reviewed_declarations": [
+        "IsProxRun (N : \u2115) (h : E \u2192 \u211d) (g : E \u2192 E) (x : \u2115 \u2192 E) : Prop :=",
+        "IsResidualRun (N : \u2115) (h : E \u2192 \u211d) (g : E \u2192 E) (x s : \u2115 \u2192 E) : Prop :=",
+        "residual (g : E \u2192 E) (x : \u2115 \u2192 E) (k : \u2115) : E :=",
+        "isProxRun_zero (h : E \u2192 \u211d) (g : E \u2192 E) (x : \u2115 \u2192 E) :",
+        "IsProxRun.restrict {M N : \u2115} {h : E \u2192 \u211d} {g : E \u2192 E} {x : \u2115 \u2192 E}",
+        "IsResidualRun.toProxRun {N : \u2115} {h : E \u2192 \u211d} {g : E \u2192 E} {x s : \u2115 \u2192 E}",
+        "IsProxRun.toResidualRun {N : \u2115} {h : E \u2192 \u211d} {g : E \u2192 E} {x : \u2115 \u2192 E}",
+        "IsResidualRun.residual_eq {N : \u2115} {h : E \u2192 \u211d} {g : E \u2192 E} {x s : \u2115 \u2192 E}",
+        "isProxRun_iff_residual {N : \u2115} {h : E \u2192 \u211d} {g : E \u2192 E} {x : \u2115 \u2192 E}",
+        "smoothPoints (n : \u2115) (xStar : E) (x : \u2115 \u2192 E) : Fin (n + 3) \u2192 E :=",
+        "nonsmoothPoints (n : \u2115) (xStar : E) (x : \u2115 \u2192 E) : Fin (n + 2) \u2192 E :=",
+        "nonsmoothOracles (n : \u2115) (gStar : E) (s : \u2115 \u2192 E) : Fin (n + 2) \u2192 E :=",
+        "baseVectors (n : \u2115) (g : E \u2192 E) (xStar : E) (x s : \u2115 \u2192 E) :",
+        "valueSlots (n : \u2115) (f h : E \u2192 \u211d) (xStar : E) (x : \u2115 \u2192 E) :",
+        "valueSlots_smooth (n : \u2115) (f h : E \u2192 \u211d) (xStar : E) (x : \u2115 \u2192 E)",
+        "valueSlots_nonsmooth (n : \u2115) (f h : E \u2192 \u211d) (xStar : E) (x : \u2115 \u2192 E)",
+        "actualData (n : \u2115) (f h : E \u2192 \u211d) (g : E \u2192 E) (xStar : E) (x s : \u2115 \u2192 E) :",
+        "realize_initial (n : \u2115) (g : E \u2192 E) (xStar : E) (x s : \u2115 \u2192 E) :",
+        "realize_starGradient (n : \u2115) (g : E \u2192 E) (xStar : E) (x s : \u2115 \u2192 E) :",
+        "realize_gradient (n : \u2115) (g : E \u2192 E) (xStar : E) (x s : \u2115 \u2192 E)",
+        "realize_residual (n : \u2115) (g : E \u2192 E) (xStar : E) (x s : \u2115 \u2192 E)",
+        "position_realization {n : \u2115} {g : E \u2192 E} {x s : \u2115 \u2192 E} (xStar : E)",
+        "smoothSamples_denote {n : \u2115} (f h : E \u2192 \u211d) (g : E \u2192 E)",
+        "nonsmoothSamples_denote {n : \u2115} (f h : E \u2192 \u211d) (g : E \u2192 E)",
+        "radius_eval (n : \u2115) (f h : E \u2192 \u211d) (g : E \u2192 E)",
+        "objective_eval (n : \u2115) (f h : E \u2192 \u211d) (g : E \u2192 E)",
+        "actualData_constraints {n : \u2115} {f h : E \u2192 \u211d} {g : E \u2192 E}",
+        "certificate_upper {n : \u2115} (c : GramPEP.UpperCertQ (modelQ n))",
+        "certificate_upper_of_prox {n : \u2115} (c : GramPEP.UpperCertQ (modelQ n))",
+        "certificate_upper_analytic [CompleteSpace E] {n : \u2115}"
+      ]
+    },
+    "LeanPEP.ActualFunction.Composite": {
+      "classification": "generic",
+      "rationale": "Parameterized component-local interpolation compilation or actual sample semantics.",
+      "sha256": "c8a925c81688a8743e9fbbeb51088f7e688bb27f38c7de1ea12c5017d0be7b2c",
+      "imports": [
+        "LeanPEP.ActualFunction.Proximal",
+        "LeanPEP.ActualFunction.FiniteGram",
+        "LeanPEP.Profiles.Composite"
+      ],
+      "reviewed_declarations": [
+        "dataOfValues {p m : \u2115} (base : Fin m \u2192 E) (values : Fin p \u2192 \u211d) :",
+        "SampleDenotes {p m : \u2115} (base : Fin m \u2192 E) (values : Fin p \u2192 \u211d)",
+        "eval_convex {p m : \u2115} {base : Fin m \u2192 E} {values : Fin p \u2192 \u211d}",
+        "eval_smooth {p m : \u2115} {base : Fin m \u2192 E} {values : Fin p \u2192 \u211d}",
+        "convex_pair_nonneg {p m : \u2115} {base : Fin m \u2192 E} {values : Fin p \u2192 \u211d}",
+        "smooth_pair_nonneg {p m : \u2115} {base : Fin m \u2192 E} {values : Fin p \u2192 \u211d}"
+      ]
+    },
+    "LeanPEP.ActualFunction.FiniteGram": {
+      "classification": "generic",
+      "rationale": "Generic Gram realization of finite families and sample evaluation.",
+      "sha256": "27a25ec6c0a41fa3091cf0fa4f4a2d4b48b3aa7555f51cbe1d85b2adc1a9eb7d",
+      "imports": [
+        "LeanPEP.ActualFunction.AnalyticBridge",
+        "LeanPEP.GramPEP.UpperCertificate",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "gramOfVectors {m : \u2115} (base : Fin m \u2192 E) : Gram m \u211d :=",
+        "realize {m : \u2115}",
+        "realize_zero {m : \u2115} (base : Fin m \u2192 E) :",
+        "realize_add {m : \u2115} (base : Fin m \u2192 E)",
+        "realize_neg {m : \u2115} (base : Fin m \u2192 E)",
+        "realize_sub {m : \u2115} (base : Fin m \u2192 E)",
+        "gramInner_gramOfVectors {m : \u2115} (base : Fin m \u2192 E)",
+        "gramNormSq_gramOfVectors {m : \u2115} (base : Fin m \u2192 E)",
+        "gramOfVectors_symmetric {m : \u2115} (base : Fin m \u2192 E) :",
+        "gramOfVectors_posSemidef {m : \u2115} (base : Fin m \u2192 E) :",
+        "dataOfModel",
+        "dataOfModel_gram",
+        "dataOfModel_position",
+        "dataOfModel_gradient",
+        "dataOfModel_value",
+        "dataOfModel_realizes",
+        "RealizesActualSamples",
+        "interpolationSlack_dataOfModel",
+        "dataOfModel_interpolationFeasible",
+        "dataOfModel_coreFeasible"
+      ]
+    },
+    "LeanPEP.ActualFunction.ProfileGram": {
+      "classification": "generic",
+      "rationale": "Generic actual interpretation of arbitrary profiles; now imports only generic affine evaluation definitions/lemmas.",
+      "sha256": "70a0f32cefd96943374cbfa786b7af832249e7e57cd099aba3bffdc3bd7d01d0",
+      "imports": [
+        "LeanPEP.ActualFunction.FiniteGram",
+        "LeanPEP.ActualFunction.AffineEvaluationCore",
+        "LeanPEP.GramPEP.UpperCertificateChecker",
+        "LeanPEP.Profiles.GramCompilation"
+      ],
+      "reviewed_declarations": [
+        "samplePoint {N : \u2115} (xStar : E) (points : Fin (N + 1) \u2192 E) : Point N \u2192 E",
+        "orderedSamples {N : \u2115} (xStar : E) (points : Fin (N + 1) \u2192 E) :",
+        "orderedSamples_pointIndex {N : \u2115}",
+        "sampleBase {N : \u2115} (g : E \u2192 E) (xStar x0 : E)",
+        "realize_standardBasisQ {m : \u2115} (base : Fin m \u2192 E) (i : Fin m) :",
+        "realize_affineVecQ {N : \u2115} (a : GradAffineQ N)",
+        "realize_initialBasisQ {N : \u2115}",
+        "realize_sampledGradientBasisQ {N : \u2115}",
+        "RealizesProfile {N : \u2115} (profile : ProfileQ N) (g : E \u2192 E)",
+        "realizesProfile_iff_updates {N : \u2115} (profile : ProfileQ N) (g : E \u2192 E)",
+        "realizesActualSamples {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_realizesModel {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_interpolationSlack {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_coreFeasible {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_initialRadius_eval {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_assumptionsFeasible {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_objective_eval {N : \u2115} (profile : PEPProfileQ N)",
+        "profileData_feasible {N : \u2115} (profile : PEPProfileQ N)",
+        "certificate_upper {N : \u2115} (profile : PEPProfileQ N)",
+        "certificate_upper_analytic {N : \u2115} [CompleteSpace E]"
+      ]
+    },
+    "LeanPEP.ActualFunction.AffineEvaluationCore": {
+      "classification": "generic",
+      "rationale": "linearCombination, evalVector and their seven original generic simp lemmas, parameterized by dimension and ambient vectors.",
+      "sha256": "49ca4eb4467e3da1cb5b8b51ced59e626ff4f999543144c72d68ba4b3d7d9dcd",
+      "imports": [
+        "LeanPEP.Toy.FiniteGD.UpperCertificate",
+        "Mathlib.Analysis.InnerProductSpace.Basic",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "linearCombination",
+        "evalVector",
+        "evalVector_zero",
+        "evalVector_const",
+        "evalVector_basis",
+        "evalVector_add",
+        "evalVector_neg",
+        "evalVector_sub",
+        "evalVector_scale"
+      ]
+    },
+    "LeanPEP.Toy.FiniteGD.UpperCertificate": {
+      "classification": "generic",
+      "rationale": "Parameterized affine/quadratic syntax and certificate type/evaluation; no concrete certificate instance.",
+      "sha256": "633a376938db56208280c31acb1725692f98ffdcb8120e807edf19f8b47f68e4",
+      "imports": [
+        "LeanPEP.Toy.FiniteGD.RationalBridge"
+      ],
+      "reviewed_declarations": [
+        "indices (N : \u2115) : List (Fin (N + 1)) :=",
+        "indexPairs (N : \u2115) : List (Fin (N + 1) \u00d7 Fin (N + 1)) :=",
+        "mem_indices {N : \u2115} (i : Fin (N + 1)) :",
+        "mem_indexPairs {N : \u2115} (i j : Fin (N + 1)) :",
+        "unitCoeff {N : \u2115} (i : Fin (N + 1)) : Fin (N + 1) \u2192 \u211a :=",
+        "dotR",
+        "quadR",
+        "dotR_zero",
+        "dotR_unitCoeff",
+        "dotR_add",
+        "dotR_neg",
+        "dotR_scale",
+        "quadR_zero",
+        "quadR_add",
+        "quadR_neg",
+        "quadR_scale",
+        "outerQ",
+        "symOuterQ",
+        "quadR_outerQ",
+        "quadR_symOuterQ",
+        "GradAffineQ (N : \u2115) where",
+        "zero (N : \u2115) : GradAffineQ N :=",
+        "const (N : \u2115) (c : \u211a) : GradAffineQ N :=",
+        "basis {N : \u2115} (i : Fin (N + 1)) : GradAffineQ N :=",
+        "add {N : \u2115} (a b : GradAffineQ N) : GradAffineQ N :=",
+        "neg {N : \u2115} (a : GradAffineQ N) : GradAffineQ N :=",
+        "sub {N : \u2115} (a b : GradAffineQ N) : GradAffineQ N :=",
+        "scale {N : \u2115} (c : \u211a) (a : GradAffineQ N) : GradAffineQ N :=",
+        "evalR",
+        "evalR_zero {N : \u2115} (d : DataR N) :",
+        "evalR_const {N : \u2115} (c : \u211a) (d : DataR N) :",
+        "evalR_basis",
+        "evalR_add",
+        "evalR_neg",
+        "evalR_sub",
+        "evalR_scale",
+        "prefixAffine",
+        "evalR_prefixAffine",
+        "xAffineQ {N : \u2115} : Point N \u2192 GradAffineQ N",
+        "gradAffineQ {N : \u2115} : Point N \u2192 GradAffineQ N",
+        "evalR_xAffineQ",
+        "evalR_gradAffineQ",
+        "QuadPolyQ (N : \u2115) where",
+        "zero (N : \u2115) : QuadPolyQ N :=",
+        "add {N : \u2115} (p q : QuadPolyQ N) : QuadPolyQ N :=",
+        "neg {N : \u2115} (p : QuadPolyQ N) : QuadPolyQ N :=",
+        "sub {N : \u2115} (p q : QuadPolyQ N) : QuadPolyQ N :=",
+        "scale {N : \u2115} (c : \u211a) (p : QuadPolyQ N) : QuadPolyQ N :=",
+        "ofAffine {N : \u2115} (a : GradAffineQ N) : QuadPolyQ N :=",
+        "valueVar {N : \u2115} (i : Fin (N + 1)) : QuadPolyQ N :=",
+        "mulAffine {N : \u2115} (a b : GradAffineQ N) : QuadPolyQ N :=",
+        "square {N : \u2115} (a : GradAffineQ N) : QuadPolyQ N :=",
+        "evalR",
+        "evalR_zero {N : \u2115} (d : DataR N) :",
+        "evalR_add",
+        "evalR_neg",
+        "evalR_sub",
+        "evalR_scale",
+        "evalR_ofAffine",
+        "evalR_valueVar",
+        "evalR_mulAffine",
+        "evalR_square",
+        "pointValuePolyQ {N : \u2115} : Point N \u2192 QuadPolyQ N",
+        "evalR_pointValuePolyQ",
+        "slackPolyQ {N : \u2115} (i j : Point N) : QuadPolyQ N :=",
+        "evalR_slackPolyQ",
+        "InterpTermQ (N : \u2115) where",
+        "SquareTermQ (N : \u2115) where",
+        "UpperCertQ (N : \u2115) where",
+        "interpPolySumQ {N : \u2115} :",
+        "squarePolySumQ {N : \u2115} :",
+        "certificateRhsPolyQ {N : \u2115} (c : UpperCertQ N) : QuadPolyQ N :=",
+        "upperTargetPolyQ {N : \u2115}",
+        "upperCertDifferenceQ {N : \u2115} (c : UpperCertQ N) : QuadPolyQ N :=",
+        "interpTermsValueR",
+        "squareTermsValueR",
+        "evalR_interpPolySumQ",
+        "evalR_squarePolySumQ",
+        "evalR_certificateRhsPolyQ",
+        "evalR_upperTargetPolyQ"
+      ]
+    },
+    "LeanPEP.Toy.FiniteGD.RationalBridge": {
+      "classification": "generic",
+      "rationale": "Generic rational-to-real casts and feasibility preservation.",
+      "sha256": "087f54f4918ea845562b5a83026268821aa72415b360901e46d8657c27554dc6",
+      "imports": [
+        "LeanPEP.Toy.FiniteGD.RationalChecker"
+      ],
+      "reviewed_declarations": [
+        "toRealData {N : \u2115} (d : DataQ N) : DataR N :=",
+        "prefixSum_cast",
+        "x_toRealData",
+        "gradAt_toRealData",
+        "valueAt_toRealData",
+        "slack_toRealData",
+        "feasibleQ_toReal",
+        "checkFeasibleQ_sound_real"
+      ]
+    },
+    "LeanPEP.Toy.FiniteGD.RationalChecker": {
+      "classification": "generic",
+      "rationale": "Generic exact finite-GD trajectory feasibility checker, not concrete data.",
+      "sha256": "6452bda328a493258fd1b10d66f676100acc2695e010a1d8d0e70e36408dd750",
+      "imports": [
+        "LeanPEP.Toy.FiniteGD.Core"
+      ],
+      "reviewed_declarations": [
+        "checkFeasibleQ {N : \u2115} (d : DataQ N) : Bool :=",
+        "checkFeasibleQ_eq_true_iff {N : \u2115} (d : DataQ N) :",
+        "checkFeasibleQ_sound",
+        "checkFeasibleQ_complete",
+        "ViolationQ (N : \u2115) where",
+        "violationsFromQ",
+        "allViolationsQ {N : \u2115} (d : DataQ N) : List (ViolationQ N) :=",
+        "mem_violationsFromQ_sound",
+        "mem_allViolationsQ_sound",
+        "mem_violationsFromQ_of_mem_of_negative",
+        "mem_allViolationsQ_of_negative",
+        "violationsFromQ_eq_nil_of_feasible",
+        "allViolationsQ_eq_nil_iff",
+        "PrimalAuditReportQ (N : \u2115) where",
+        "auditPrimalQ {N : \u2115} (d : DataQ N) : PrimalAuditReportQ N :=",
+        "auditPrimalQ_accepted_iff",
+        "auditPrimalQ_accepted_iff_no_violations"
+      ]
+    },
+    "LeanPEP.Toy.FiniteGD.Core": {
+      "classification": "generic",
+      "rationale": "Parameterized Gram or finite-GD semantic types/feasibility, not an instantiated optimization certificate.",
+      "sha256": "434009617fd98114da76894f8a448ee0b09921532a6206e4852010157a0fbc06",
+      "imports": [
+        "Mathlib.Tactic",
+        "Mathlib.Algebra.Order.Field.Basic",
+        "Mathlib.Data.Fin.VecNotation",
+        "Mathlib.Data.List.Range",
+        "Mathlib.Tactic.DeriveFintype"
+      ],
+      "reviewed_declarations": [
+        "Point (N : \u2115) where",
+        "Data (N : \u2115) (\ud835\udd5c : Type*) where",
+        "prefixSum",
+        "iterX",
+        "x",
+        "gradAt",
+        "valueAt",
+        "slack",
+        "Feasible",
+        "DataR (N : \u2115) := Data N \u211d",
+        "DataQ (N : \u2115) := Data N \u211a",
+        "points (N : \u2115) : List (Point N) :=",
+        "pointPairs (N : \u2115) : List (Point N \u00d7 Point N) :=",
+        "mem_points {N : \u2115} (i : Point N) :",
+        "mem_pointPairs {N : \u2115} (i j : Point N) :",
+        "x_star",
+        "x_iter",
+        "gradAt_star",
+        "gradAt_iter",
+        "valueAt_star",
+        "valueAt_iter"
+      ]
+    },
+    "LeanPEP.Profiles.GramCompilation": {
+      "classification": "generic",
+      "rationale": "Arbitrary fixed-step profile compiler; unit normalization is a source convention, not a numerical upper certificate.",
+      "sha256": "bd72a016b2ccaf84bcf8de78938225368945ac022a45430afe8621c51a2df37b",
+      "imports": [
+        "LeanPEP.Profiles.FixedStepFirstOrder",
+        "LeanPEP.GramPEP.UpperCertificate",
+        "LeanPEP.GramPEP.Coordinate",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "pointAtIndex {N : \u2115} : Fin (N + 2) \u2192 Point N :=",
+        "pointIndex {N : \u2115} : Point N \u2192 Fin (N + 2)",
+        "pointAtIndex_zero {N : \u2115} :",
+        "pointAtIndex_succ {N : \u2115} (i : Fin (N + 1)) :",
+        "pointIndex_star {N : \u2115} :",
+        "pointIndex_iter {N : \u2115} (i : Fin (N + 1)) :",
+        "pointAtIndex_pointIndex {N : \u2115} (i : Point N) :",
+        "pointIndex_pointAtIndex {N : \u2115} (i : Fin (N + 2)) :",
+        "pointIndex_injective {N : \u2115} :",
+        "pointIndex_surjective {N : \u2115} :",
+        "initialBasisIndex (N : \u2115) : Fin (N + 2) := 0",
+        "gradientBasisIndex {N : \u2115} (i : Fin (N + 1)) : Fin (N + 2) :=",
+        "initialBasisQ (N : \u2115) : VecExpr (N + 2) \u211a :=",
+        "sampledGradientBasisQ {N : \u2115}",
+        "affineVecQ {N : \u2115} (a : GradAffineQ N) : VecExpr (N + 2) \u211a :=",
+        "affineVecQ_initial {N : \u2115} (a : GradAffineQ N) :",
+        "affineVecQ_gradient {N : \u2115}",
+        "pointPositionVecQ {N : \u2115}",
+        "pointGradientVecQ {N : \u2115} : Point N \u2192 VecExpr (N + 2) \u211a",
+        "NormalizationProfileQ where",
+        "unitRadiusNormalizationQ : NormalizationProfileQ :=",
+        "initialRadiusExprQ {N : \u2115}",
+        "normalizationAssumptionsQ {N : \u2115}",
+        "ObjectiveProfileQ (N : \u2115) where",
+        "finalGapObjectiveProfileQ (N : \u2115) : ObjectiveProfileQ N :=",
+        "objectiveExprQ {N : \u2115} (objective : ObjectiveProfileQ N) :",
+        "PEPProfileQ (N : \u2115) where",
+        "compileModelQ {N : \u2115} (profile : PEPProfileQ N) :",
+        "compileObjectiveQ {N : \u2115} (profile : PEPProfileQ N) :",
+        "compileModelQ_position_pointIndex {N : \u2115}",
+        "compileModelQ_gradient_pointIndex {N : \u2115}",
+        "compileModelQ_iter_initial_coordinate {N : \u2115}",
+        "compileModelQ_iter_gradient_coordinate_of_le {N : \u2115}",
+        "objectiveExprQ_evalR {N : \u2115}",
+        "initialRadiusExprQ_evalR {N : \u2115}"
+      ]
+    },
+    "LeanPEP.Profiles.FixedStepFirstOrder": {
+      "classification": "generic",
+      "rationale": "Parameterized fixed-step profile semantics and soundness for supplied certificates.",
+      "sha256": "11a24850e5f2c0a23fff08b7a651cba88973eac53e94135591cecb536e7869e8",
+      "imports": [
+        "LeanPEP.Toy.FiniteGD.UpperCertificateChecker",
+        "Mathlib.Tactic"
+      ],
+      "reviewed_declarations": [
+        "ProfileQ (N : \u2115) where",
+        "gradientCombinationAffineQ",
+        "iterateAffineQ",
+        "pointAffineQ",
+        "gradientCombinationAffineQ_constCoeff",
+        "gradientCombinationAffineQ_gradCoeff",
+        "iterateAffineQ_constCoeff",
+        "iterateAffineQ_gradCoeff",
+        "iterateAffineQ_gradCoeff_of_le",
+        "pointAffineQ_star",
+        "pointAffineQ_iter",
+        "interpolationPolyQ",
+        "pointPositionR",
+        "interpolationSlackR",
+        "FeasibleR",
+        "evalR_interpolationPolyQ",
+        "interpPolySumQ",
+        "certificateRhsPolyQ",
+        "UpperCertValidQ",
+        "checkUpperCertQ",
+        "checkUpperCertQ_sound",
+        "checkUpperCertQ_complete",
+        "checkUpperCertQ_eq_true_iff",
+        "interpTermsValueR",
+        "evalR_interpPolySumQ",
+        "evalR_certificateRhsPolyQ",
+        "interpTermsValueR_nonneg",
+        "upperCertValidQ_sound_real",
+        "checkUpperCertQ_sound_real"
+      ]
+    },
+    "LeanPEP.Toy.FiniteGD.UpperCertificateChecker": {
+      "classification": "generic",
+      "rationale": "Original generic exact upper checker and soundness, no instantiated check.",
+      "sha256": "29f05aee40e42e6c983ff6900a5fa4049b823649da6e044de121e7e2bd71b063",
+      "imports": [
+        "LeanPEP.Toy.FiniteGD.UpperCertificate"
+      ],
+      "reviewed_declarations": [
+        "checkPolyEqQ {N : \u2115} (p q : QuadPolyQ N) : Bool :=",
+        "checkPolyEqQ_sound",
+        "checkPolyEqQ_complete",
+        "checkPolyEqQ_eq_true_iff",
+        "UpperCertValidQ {N : \u2115} (c : UpperCertQ N) : Prop where",
+        "checkUpperCertQ {N : \u2115} (c : UpperCertQ N) : Bool :=",
+        "checkUpperCertQ_sound",
+        "checkUpperCertQ_complete",
+        "checkUpperCertQ_eq_true_iff",
+        "interpTermsValueR_nonneg",
+        "squareTermsValueR_nonneg",
+        "upperCertValidQ_sound_real",
+        "checkUpperCertQ_sound_real",
+        "firstNegativeInterpTermQ",
+        "NegativeSquareWeightQ where",
+        "firstNegativeSquareWeightFromQ",
+        "firstNegativeSquareWeightQ",
+        "CoeffLocationQ (N : \u2115) where",
+        "CoeffMismatchQ (N : \u2115) where",
+        "mismatchQ",
+        "coefficientMismatchesQ",
+        "UpperCertFailureQ (N : \u2115) where",
+        "UpperCertAuditQ (N : \u2115) where",
+        "auditUpperCertQ"
+      ]
+    }
+  }
+}

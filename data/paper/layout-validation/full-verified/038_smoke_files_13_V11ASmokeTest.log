@@ -1,0 +1,126 @@
+LeanPEP.GramPEP.ImportMetadataQ (p m : ℕ) : Type
+LeanPEP.GramPEP.ExactGramBundleQ (p m : ℕ) : Type
+LeanPEP.GramPEP.checkDataRealizesModelQ {p m : ℕ} (model : ModelQ p m) (d : DataQ (Fin p) m) : Bool
+LeanPEP.GramPEP.checkInterpolationFeasibleQ {p m : ℕ} (d : DataQ (Fin p) m) : Bool
+LeanPEP.GramPEP.checkAssumptionsFeasibleQ {p m : ℕ} (model : ModelQ p m) (d : DataQ (Fin p) m) : Bool
+LeanPEP.GramPEP.checkExactGramBundleQ {p m : ℕ} (b : ExactGramBundleQ p m) : Bool
+LeanPEP.GramPEP.checkExactGramBundleQ_sound_real {p m : ℕ} (b : ExactGramBundleQ p m)
+  (h : checkExactGramBundleQ b = true) :
+  checkImportMetadataQ b = true ∧
+    RealizesModelQ b.model (castDataQ b.primal) ∧
+      CoreFeasible (castDataQ b.primal) ∧
+        AssumptionsFeasibleR b.model (castDataQ b.primal) ∧
+          b.upper.objective.evalR (castDataQ b.primal) = ↑b.upper.bound ∧
+            ∀ (d : DataR (Fin p) m),
+              RealizesModelQ b.model d →
+                CoreFeasible d → AssumptionsFeasibleR b.model d → b.upper.objective.evalR d ≤ ↑b.upper.bound
+LeanPEP.GramPEP.ExactGramBundleAuditReportQ (p m : ℕ) : Type
+LeanPEP.GramPEP.auditExactGramBundleQ {p m : ℕ} (b : ExactGramBundleQ p m) : ExactGramBundleAuditReportQ p m
+LeanPEP.GramPEP.auditExactGramBundleQ_sound_real {p m : ℕ} (b : ExactGramBundleQ p m)
+  (h : (auditExactGramBundleQ b).accepted = true) :
+  checkImportMetadataQ b = true ∧
+    RealizesModelQ b.model (castDataQ b.primal) ∧
+      CoreFeasible (castDataQ b.primal) ∧
+        AssumptionsFeasibleR b.model (castDataQ b.primal) ∧
+          b.upper.objective.evalR (castDataQ b.primal) = ↑b.upper.bound ∧
+            ∀ (d : DataR (Fin p) m),
+              RealizesModelQ b.model d →
+                CoreFeasible d → AssumptionsFeasibleR b.model d → b.upper.objective.evalR d ≤ ↑b.upper.bound
+LeanPEP.GramPEP.checkPSDFactorQ_sound_real {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m)
+  (h : checkPSDFactorQ G c = true) : IsGramPosSemidef (castGramQ G)
+LeanPEP.Imported.GramOneStepExact.bundleQ_check : checkExactGramBundleQ Imported.GramOneStepExact.bundleQ = true
+LeanPEP.Imported.GramOneStepExact.bundleQ_sound_real :
+  checkImportMetadataQ Imported.GramOneStepExact.bundleQ = true ∧
+    RealizesModelQ Imported.GramOneStepExact.modelQ (castDataQ Imported.GramOneStepExact.primalQ) ∧
+      CoreFeasible (castDataQ Imported.GramOneStepExact.primalQ) ∧
+        AssumptionsFeasibleR Imported.GramOneStepExact.modelQ (castDataQ Imported.GramOneStepExact.primalQ) ∧
+          Imported.GramOneStepExact.upperCertQ.objective.evalR (castDataQ Imported.GramOneStepExact.primalQ) =
+              ↑Imported.GramOneStepExact.upperCertQ.bound ∧
+            ∀ (d : DataR (Fin 3) 3),
+              RealizesModelQ Imported.GramOneStepExact.modelQ d →
+                CoreFeasible d →
+                  AssumptionsFeasibleR Imported.GramOneStepExact.modelQ d →
+                    Imported.GramOneStepExact.upperCertQ.objective.evalR d ≤ ↑Imported.GramOneStepExact.upperCertQ.bound
+LeanPEP.Imported.GramOneStepBadMetadata.bundleQ_rejected :
+  checkExactGramBundleQ Imported.GramOneStepBadMetadata.bundleQ = false
+LeanPEP.Imported.GramOneStepBadPrimal.bundleQ_rejected :
+  checkExactGramBundleQ Imported.GramOneStepBadPrimal.bundleQ = false
+LeanPEP.Imported.GramOneStepBadPrimalFactor.bundleQ_rejected :
+  checkExactGramBundleQ Imported.GramOneStepBadPrimalFactor.bundleQ = false
+LeanPEP.Imported.GramOneStepBadUpper.bundleQ_rejected :
+  checkExactGramBundleQ Imported.GramOneStepBadUpper.bundleQ = false
+{ accepted := true,
+  metadataMismatches := [],
+  modelDataMismatches := [],
+  primalPSDAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  interpolationViolations := [],
+  assumptionViolations := [],
+  upperAudit := { accepted := true,
+                  negativeInterpWeights := [],
+                  negativeAssumptionWeights := [],
+                  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+                  identityMismatches := [] },
+  objectiveMismatches := [] }
+{ accepted := false,
+  metadataMismatches := [{ field := LeanPEP.GramPEP.ImportMetadataFieldQ.orderedPairCount,
+                           expected := 9,
+                           actual := 8 }],
+  modelDataMismatches := [],
+  primalPSDAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  interpolationViolations := [],
+  assumptionViolations := [],
+  upperAudit := { accepted := true,
+                  negativeInterpWeights := [],
+                  negativeAssumptionWeights := [],
+                  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+                  identityMismatches := [] },
+  objectiveMismatches := [] }
+{ accepted := false,
+  metadataMismatches := [],
+  modelDataMismatches := [],
+  primalPSDAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  interpolationViolations := [{ i := 0, j := 2, value := (-1 : Rat)/12 }, { i := 1, j := 2, value := (-1 : Rat)/12 }],
+  assumptionViolations := [],
+  upperAudit := { accepted := true,
+                  negativeInterpWeights := [],
+                  negativeAssumptionWeights := [],
+                  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+                  identityMismatches := [] },
+  objectiveMismatches := [{ witnessValue := (1 : Rat)/4, certifiedBound := (1 : Rat)/6 }] }
+{ accepted := false,
+  metadataMismatches := [],
+  modelDataMismatches := [],
+  primalPSDAudit := { accepted := false,
+                      asymmetries := [],
+                      negativeWeights := [],
+                      entryMismatches := [{ i := 0, j := 0, expected := 1, actual := 0 },
+                                          { i := 0, j := 1, expected := (1 : Rat)/3, actual := 0 },
+                                          { i := 0, j := 2, expected := (1 : Rat)/3, actual := 0 },
+                                          { i := 1, j := 0, expected := (1 : Rat)/3, actual := 0 },
+                                          { i := 1, j := 1, expected := (1 : Rat)/9, actual := 0 },
+                                          { i := 1, j := 2, expected := (1 : Rat)/9, actual := 0 },
+                                          { i := 2, j := 0, expected := (1 : Rat)/3, actual := 0 },
+                                          { i := 2, j := 1, expected := (1 : Rat)/9, actual := 0 },
+                                          { i := 2, j := 2, expected := (1 : Rat)/9, actual := 0 }] },
+  interpolationViolations := [],
+  assumptionViolations := [],
+  upperAudit := { accepted := true,
+                  negativeInterpWeights := [],
+                  negativeAssumptionWeights := [],
+                  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+                  identityMismatches := [] },
+  objectiveMismatches := [] }
+{ accepted := false,
+  metadataMismatches := [],
+  modelDataMismatches := [],
+  primalPSDAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  interpolationViolations := [],
+  assumptionViolations := [],
+  upperAudit := { accepted := false,
+                  negativeInterpWeights := [],
+                  negativeAssumptionWeights := [],
+                  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+                  identityMismatches := [{ location := LeanPEP.GramPEP.LinearCoeffLocationQ.const,
+                                           expected := (1 : Rat)/5,
+                                           actual := (1 : Rat)/6 }] },
+  objectiveMismatches := [{ witnessValue := (1 : Rat)/6, certifiedBound := (1 : Rat)/5 }] }

@@ -1,0 +1,164 @@
+{
+  "accepted": false,
+  "adapted_approximate_gram_sha256": "6829c024aa0b7b9b7656203d81ee0bb6ba7867d5d21950cacf9937a20d35880d",
+  "adapter_generator_version": "v0.11.4",
+  "adapter_id": "pepit-smooth-convex-gd-one-step-v1",
+  "capture_mode": "deterministic_regression_fixture",
+  "computed_model_fingerprint": "981067eb44a899e66d4829ab33c690c97db6a2239f7e4976d325263d7f189588",
+  "declared_model_fingerprint": "981067eb44a899e66d4829ab33c690c97db6a2239f7e4976d325263d7f189588",
+  "expected_model_fingerprint": "1d752930ba9e3395abd7e3d4b643a0a239b33bb2a2d2ec4ed50b4e4af863842a",
+  "expected_ordering": {
+    "constraints": [
+      "initial_radius",
+      "smooth_convexity:star:x0",
+      "smooth_convexity:star:x1",
+      "smooth_convexity:x0:star",
+      "smooth_convexity:x0:x1",
+      "smooth_convexity:x1:star",
+      "smooth_convexity:x1:x0"
+    ],
+    "function_values": [
+      "f_star",
+      "f0",
+      "f1"
+    ],
+    "leaf_points": [
+      "x_star",
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "factorization_hint_checks": {
+    "dual_exact_for_source_matrix": true,
+    "note": "factor hints are untrusted numerical postprocessing; exact acceptance is decided only by downstream Gram audits",
+    "primal_exact_for_source_matrix": true
+  },
+  "live_solver_claim": false,
+  "mismatches": [
+    {
+      "actual": [
+        "initial_radius",
+        "smooth_convexity:star:x1",
+        "smooth_convexity:star:x0",
+        "smooth_convexity:x0:star",
+        "smooth_convexity:x0:x1",
+        "smooth_convexity:x1:star",
+        "smooth_convexity:x1:x0"
+      ],
+      "expected": [
+        "initial_radius",
+        "smooth_convexity:star:x0",
+        "smooth_convexity:star:x1",
+        "smooth_convexity:x0:star",
+        "smooth_convexity:x0:x1",
+        "smooth_convexity:x1:star",
+        "smooth_convexity:x1:x0"
+      ],
+      "field": "problem.constraint_order"
+    },
+    {
+      "actual": "981067eb44a899e66d4829ab33c690c97db6a2239f7e4976d325263d7f189588",
+      "expected": "1d752930ba9e3395abd7e3d4b643a0a239b33bb2a2d2ec4ed50b4e4af863842a",
+      "field": "problem.model_fingerprint.declared"
+    },
+    {
+      "actual": "981067eb44a899e66d4829ab33c690c97db6a2239f7e4976d325263d7f189588",
+      "expected": "1d752930ba9e3395abd7e3d4b643a0a239b33bb2a2d2ec4ed50b4e4af863842a",
+      "field": "problem.model_fingerprint.computed"
+    }
+  ],
+  "producer": {
+    "capture_mode": "deterministic_regression_fixture",
+    "git_commit": "5a061a1b2dbe450b6bac42e2442942748f3b1f32",
+    "name": "PEPit",
+    "package_version": "0.0.1.dev0+5a061a1",
+    "solver": "CLARABEL",
+    "solver_status": "optimal",
+    "wrapper": "cvxpy"
+  },
+  "schema_version": 1,
+  "solver_values": {
+    "dual_objective": "0.1666666667",
+    "primal_objective": "0.1666666668"
+  },
+  "source_artifact_sha256": "1798d9e6db540ae9f0a3b1ba71ba8e2707298dab2c3f63db1fec1edd2af08ce3",
+  "source_ordering": {
+    "constraints": [
+      "initial_radius",
+      "smooth_convexity:star:x1",
+      "smooth_convexity:star:x0",
+      "smooth_convexity:x0:star",
+      "smooth_convexity:x0:x1",
+      "smooth_convexity:x1:star",
+      "smooth_convexity:x1:x0"
+    ],
+    "function_values": [
+      "f_star",
+      "f0",
+      "f1"
+    ],
+    "leaf_points": [
+      "x_star",
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "target": {
+    "centered_dual_matrix": [
+      [
+        "0.166666666633333333335",
+        "-0.249999999975",
+        "-0.249999999975"
+      ],
+      [
+        "-0.249999999975",
+        "0.5",
+        "0.25"
+      ],
+      [
+        "-0.249999999975",
+        "0.25",
+        "0.5"
+      ]
+    ],
+    "centered_primal_gram": [
+      [
+        "1",
+        "0.3333333333",
+        "0.3333333333"
+      ],
+      [
+        "0.3333333333",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ],
+      [
+        "0.3333333333",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ]
+    ],
+    "gram_basis_order": [
+      "x0_minus_xstar",
+      "g0",
+      "g1"
+    ],
+    "point_order": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  }
+}

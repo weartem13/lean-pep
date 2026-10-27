@@ -1,0 +1,309 @@
+{
+  "M": 1000000,
+  "accepted": true,
+  "changed_count": 13,
+  "count": 13,
+  "entries": [
+    {
+      "absolute_error": {
+        "den": 5000000000000000,
+        "num": 47221
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1,
+        "num": 1
+      },
+      "delta": {
+        "den": 5000000000000000,
+        "num": 47221
+      },
+      "denominator": 1,
+      "path": "gram[0][0]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 4999999999952779
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 39878631217
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 333333
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 39878631217
+      },
+      "denominator": 1000000,
+      "path": "gram[0][1]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 16666610121368783
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 19939398831
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 333333
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": 19939398831
+      },
+      "denominator": 1000000,
+      "path": "gram[0][2]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 8333305060601169
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 39878631217
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 333333
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 39878631217
+      },
+      "denominator": 1000000,
+      "path": "gram[1][0]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 16666610121368783
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 12500000000000000,
+        "num": 8035295433
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 111111
+      },
+      "delta": {
+        "den": 12500000000000000,
+        "num": 8035295433
+      },
+      "denominator": 1000000,
+      "path": "gram[1][1]",
+      "raw": {
+        "den": 12500000000000000,
+        "num": 1388879464704567
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 32141280213
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 111111
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 32141280213
+      },
+      "denominator": 1000000,
+      "path": "gram[1][2]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 5555517858719787
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 19939398831
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 333333
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": 19939398831
+      },
+      "denominator": 1000000,
+      "path": "gram[2][0]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 8333305060601169
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 32141280213
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 111111
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 32141280213
+      },
+      "denominator": 1000000,
+      "path": "gram[2][1]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 5555517858719787
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 100000000000000000,
+        "num": 64282381651
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 111111
+      },
+      "delta": {
+        "den": 100000000000000000,
+        "num": 64282381651
+      },
+      "denominator": 1000000,
+      "path": "gram[2][2]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 11111035717618349
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 800000000000000,
+        "num": 228386799
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": -148221
+      },
+      "delta": {
+        "den": 800000000000000,
+        "num": 228386799
+      },
+      "denominator": 1000000,
+      "path": "values[0]",
+      "raw": {
+        "den": 800000000000000,
+        "num": -118577028386799
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 13082275299
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 250000,
+        "num": 32389
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 13082275299
+      },
+      "denominator": 250000,
+      "path": "values[1]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 6477786917724701
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1000000000000000000,
+        "num": 381178166957
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 200000,
+        "num": 3689
+      },
+      "delta": {
+        "den": 1000000000000000000,
+        "num": -381178166957
+      },
+      "denominator": 200000,
+      "path": "values[2]",
+      "raw": {
+        "den": 1000000000000000000,
+        "num": 18445381178166957
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 12500000000000000,
+        "num": 8333286579
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 500000,
+        "num": 83333
+      },
+      "delta": {
+        "den": 12500000000000000,
+        "num": -8333286579
+      },
+      "denominator": 500000,
+      "path": "values[3]",
+      "raw": {
+        "den": 12500000000000000,
+        "num": 2083333333286579
+      }
+    }
+  ],
+  "eta": {
+    "den": 1000000,
+    "num": 1
+  },
+  "factors_excluded": true,
+  "max_denominator": 1000000,
+  "max_error": {
+    "absolute_error": {
+      "den": 25000000000000000,
+      "num": 19939398831
+    },
+    "accepted": true,
+    "candidate": {
+      "den": 1000000,
+      "num": 333333
+    },
+    "delta": {
+      "den": 25000000000000000,
+      "num": 19939398831
+    },
+    "denominator": 1000000,
+    "path": "gram[0][2]",
+    "raw": {
+      "den": 25000000000000000,
+      "num": 8333305060601169
+    }
+  },
+  "name": "GD1_PRIMAL_POLICY_V1"
+}

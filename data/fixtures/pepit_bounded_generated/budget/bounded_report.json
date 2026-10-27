@@ -1,0 +1,42 @@
+{
+  "box_based_on": "raw_not_seed",
+  "box_status": "infeasible",
+  "capture_sha256": "4642a49c0907d1b8b66febefb576ab4cfbfcba2cb480eb52b4e234b860f24050",
+  "completion_accepted": false,
+  "d10_completion_accepted": false,
+  "d10_free_columns": [],
+  "d10_linear_status": "solution",
+  "denominator_constraint_searched": false,
+  "failure_scope": "No rational point in THIS submitted coefficient system and raw budget/nonnegativity box. The source-to-system compiler is not formally verified here. This is not general PEP infeasibility, not absence of a certificate with a different residual, and not a denominator-search claim.",
+  "format": "leanpep-bounded-completion-v1",
+  "free_seed_values_required": false,
+  "independent_box_recheck": true,
+  "lean_checked": false,
+  "live_capture_performed": false,
+  "max_pivots": 10000,
+  "nearest_solution_claimed": false,
+  "obstruction_margin": {
+    "den": 10000,
+    "num": -21
+  },
+  "optimal_bound_claimed": false,
+  "pivots": 15,
+  "producer_authenticated": false,
+  "producer_claim": {
+    "mode": "simulated_regression",
+    "name": "PEPit",
+    "solver": "not_run",
+    "status": "not_run",
+    "version": "0.5.1",
+    "wrapper": "not_run"
+  },
+  "raw_accepted": false,
+  "residual_recomputed": false,
+  "seed_accepted": false,
+  "seed_used": false,
+  "solver": "exact_phase_I_least_index",
+  "source_coefficients_changed": false,
+  "source_sha256": "c3f52091aac928008c5abb980431fbe793b84dcffb9fa4a605ce910cef181c65",
+  "system_columns": 11,
+  "system_rows": 43
+}

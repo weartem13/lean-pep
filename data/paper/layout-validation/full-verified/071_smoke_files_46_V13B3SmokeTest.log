@@ -1,0 +1,89 @@
+LeanPEP.ActualFunction.MomentumActual.isRun_of_oracle_eq_on_queries.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (g g' : E → E) (x0 : E)
+  (hqueries : ∀ k < N, g' (MomentumActual.query s g x0 k) = g (MomentumActual.query s g x0 k)) :
+  MomentumActual.IsRun N s g' x0 (MomentumActual.state s g x0) (MomentumActual.query s g x0)
+LeanPEP.ActualFunction.MomentumActual.eq_of_oracle_eq_on_queries.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (g g' : E → E) (x0 : E)
+  (hqueries : ∀ k < N, g' (MomentumActual.query s g x0 k) = g (MomentumActual.query s g x0 k)) (k : ℕ) (hk : k ≤ N) :
+  MomentumActual.state s g' x0 k = MomentumActual.state s g x0 k ∧
+    MomentumActual.query s g' x0 k = MomentumActual.query s g x0 k
+LeanPEP.ActualFunction.MomentumActual.outputPoints_eq_of_oracle_eq_on_queries.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (g g' : E → E) (x0 : E)
+  (hqueries : ∀ k < N, g' (MomentumActual.query s g x0 k) = g (MomentumActual.query s g x0 k)) :
+  MomentumActual.outputPoints N s g' x0 = MomentumActual.outputPoints N s g x0
+LeanPEP.ActualFunction.NesterovPilotWitness.threshold_pos : 0 < NesterovPilotWitness.threshold
+LeanPEP.ActualFunction.NesterovPilotWitness.analytic :
+  IsOneSmoothConvexAnalytic NesterovPilotWitness.witnessFunction NesterovPilotWitness.witnessGradient
+LeanPEP.ActualFunction.NesterovPilotWitness.firstOrder :
+  IsOneSmoothConvexFirstOrder NesterovPilotWitness.witnessFunction NesterovPilotWitness.witnessGradient
+LeanPEP.ActualFunction.NesterovPilotWitness.witnessFunction_zero : NesterovPilotWitness.witnessFunction 0 = 0
+LeanPEP.ActualFunction.NesterovPilotWitness.witnessGradient_zero : NesterovPilotWitness.witnessGradient 0 = 0
+LeanPEP.ActualFunction.NesterovPilotWitness.zero_isGlobalMin (x : ℝ) :
+  NesterovPilotWitness.witnessFunction 0 ≤ NesterovPilotWitness.witnessFunction x
+LeanPEP.ActualFunction.NesterovPilotWitness.reference_state_values :
+  NesterovPilotWitness.referenceState 0 = 1 ∧
+    NesterovPilotWitness.referenceState 1 = 19 / 21 ∧
+      NesterovPilotWitness.referenceState 2 = 17 / 21 ∧
+        NesterovPilotWitness.referenceState 3 = 29 / 42 ∧ NesterovPilotWitness.referenceState 4 = 23 / 42
+LeanPEP.ActualFunction.NesterovPilotWitness.reference_query_values :
+  NesterovPilotWitness.referenceQuery 0 = 1 ∧
+    NesterovPilotWitness.referenceQuery 1 = 19 / 21 ∧
+      NesterovPilotWitness.referenceQuery 2 = 11 / 14 ∧
+        NesterovPilotWitness.referenceQuery 3 = 9 / 14 ∧ NesterovPilotWitness.referenceQuery 4 = 10 / 21
+LeanPEP.ActualFunction.NesterovPilotWitness.threshold_le_referenceQuery (k : ℕ) (hk : k ≤ 4) :
+  NesterovPilotWitness.threshold ≤ NesterovPilotWitness.referenceQuery k
+LeanPEP.ActualFunction.NesterovPilotWitness.gradient_referenceQuery (k : ℕ) (hk : k ≤ 4) :
+  NesterovPilotWitness.witnessGradient (NesterovPilotWitness.referenceQuery k) = NesterovPilotWitness.threshold
+LeanPEP.ActualFunction.NesterovPilotWitness.actual_trajectory (k : ℕ) (hk : k ≤ 4) :
+  NesterovPilotUpper.iterate NesterovPilotWitness.witnessGradient 1 k = NesterovPilotWitness.referenceState k ∧
+    NesterovPilotUpper.query NesterovPilotWitness.witnessGradient 1 k = NesterovPilotWitness.referenceQuery k
+LeanPEP.ActualFunction.NesterovPilotWitness.iterate_four :
+  NesterovPilotUpper.iterate NesterovPilotWitness.witnessGradient 1 4 = 23 / 42
+LeanPEP.ActualFunction.NesterovPilotWitness.query_four :
+  NesterovPilotUpper.query NesterovPilotWitness.witnessGradient 1 4 = 10 / 21
+LeanPEP.ActualFunction.NesterovPilotWitness.terminal_state_ne_query :
+  NesterovPilotUpper.iterate NesterovPilotWitness.witnessGradient 1 4 ≠
+    NesterovPilotUpper.query NesterovPilotWitness.witnessGradient 1 4
+LeanPEP.ActualFunction.NesterovPilotWitness.attains :
+  NesterovPilotWitness.witnessFunction (NesterovPilotUpper.iterate NesterovPilotWitness.witnessGradient 1 4) -
+      NesterovPilotWitness.witnessFunction 0 =
+    1 / 21
+LeanPEP.ActualFunction.NesterovPilotWitness.final_query_gap :
+  NesterovPilotWitness.witnessFunction (NesterovPilotUpper.query NesterovPilotWitness.witnessGradient 1 4) -
+      NesterovPilotWitness.witnessFunction 0 =
+    2 / 49
+LeanPEP.ActualFunction.NesterovPilotWitness.attains_of_isRun {x y : ℕ → ℝ}
+  (hrun : MomentumActual.IsRun 4 nesterovScheduleQ NesterovPilotWitness.witnessGradient 1 x y) :
+  NesterovPilotWitness.witnessFunction (x 4) - NesterovPilotWitness.witnessFunction 0 = 1 / 21
+LeanPEP.ActualFunction.NesterovPilotWitness.normalized_analytic_lower_witness :
+  IsOneSmoothConvexAnalytic NesterovPilotWitness.witnessFunction NesterovPilotWitness.witnessGradient ∧
+    NesterovPilotWitness.witnessGradient 0 = 0 ∧
+      (∀ (x : ℝ), NesterovPilotWitness.witnessFunction 0 ≤ NesterovPilotWitness.witnessFunction x) ∧
+        ‖1 - 0‖ ^ 2 ≤ 1 ∧
+          NesterovPilotWitness.witnessFunction (NesterovPilotUpper.iterate NesterovPilotWitness.witnessGradient 1 4) -
+              NesterovPilotWitness.witnessFunction 0 =
+            1 / 21
+LeanPEP.ActualFunction.NesterovPilotWitness.oneDimensionalAnalyticValues : Set ℝ
+LeanPEP.ActualFunction.NesterovPilotWitness.bound_mem_oneDimensionalAnalyticValues :
+  1 / 21 ∈ NesterovPilotWitness.oneDimensionalAnalyticValues
+LeanPEP.ActualFunction.NesterovPilotWitness.oneDimensional_analytic_tight :
+  IsGreatest NesterovPilotWitness.oneDimensionalAnalyticValues (1 / 21)
+LeanPEP.ActualFunction.NesterovPilotWitness.analytic_upper_and_oneDimensional_tight.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] :
+  (∀ {f : E → ℝ} {g : E → E} {xStar x0 : E},
+      IsOneSmoothConvexAnalytic f g →
+        g xStar = 0 → ‖x0 - xStar‖ ^ 2 ≤ 1 → f (NesterovPilotUpper.iterate g x0 4) - f xStar ≤ 1 / 21) ∧
+    IsGreatest NesterovPilotWitness.oneDimensionalAnalyticValues (1 / 21)
+'LeanPEP.ActualFunction.MomentumActual.eq_of_oracle_eq_on_queries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitness.actual_trajectory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitness.attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitness.oneDimensional_analytic_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitness.analytic_upper_and_oneDimensional_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

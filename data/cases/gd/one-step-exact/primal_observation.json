@@ -1,0 +1,46 @@
+{
+  "actual_lower_bound_proved": false,
+  "basis_order": [
+    "x0_minus_x_star",
+    "g0",
+    "g1"
+  ],
+  "capture_sha256": "c8544b5e120e5a9896b865878c40a4df7324605a04420aa3b788a2ee28e7178c",
+  "feasibility_checked": false,
+  "format": "leanpep-gd1-primal-observation-v1",
+  "gram": [
+    [
+      "0.9999999999998793",
+      "0.3333332146245597",
+      "0.33333321466056565"
+    ],
+    [
+      "0.3333332146245597",
+      "0.11111103198765401",
+      "0.1111110320236776"
+    ],
+    [
+      "0.33333321466056565",
+      "0.1111110320236776",
+      "0.11111103194047894"
+    ]
+  ],
+  "lean_checked": false,
+  "numerical_convention": "finite_decimal_strings_v1",
+  "point_eval_used": false,
+  "projection_performed_by_exporter": false,
+  "source": "PEPit.wrapper.get_primal_variables (optimal_G, optimal_F)",
+  "tau_index": 3,
+  "value_order": [
+    "f_star",
+    "f0",
+    "f1",
+    "tau"
+  ],
+  "values": [
+    "-0.14822157783299317",
+    "0.12955612079771428",
+    "0.01844508883364852",
+    "0.1666666666666576"
+  ]
+}

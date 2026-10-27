@@ -1,0 +1,175 @@
+LeanPEP.ActualFunction.SummablePerturbation.errorTail (eps : ℕ → ℝ) (n : ℕ) : ℝ
+LeanPEP.ActualFunction.SummablePerturbation.partial_sum_le_total {eps : ℕ → ℝ} (he : ∀ (n : ℕ), 0 ≤ eps n)
+  (hs : Summable eps) (n : ℕ) : ∑ k ∈ Finset.range n, eps k ≤ ∑' (k : ℕ), eps k
+LeanPEP.ActualFunction.SummablePerturbation.errorTail_nonneg {eps : ℕ → ℝ} (he : ∀ (n : ℕ), 0 ≤ eps n)
+  (hs : Summable eps) (n : ℕ) : 0 ≤ SummablePerturbation.errorTail eps n
+LeanPEP.ActualFunction.SummablePerturbation.errorTail_succ (eps : ℕ → ℝ) (n : ℕ) :
+  SummablePerturbation.errorTail eps (n + 1) = SummablePerturbation.errorTail eps n - eps n
+LeanPEP.ActualFunction.SummablePerturbation.errorTail_tendsto_zero {eps : ℕ → ℝ} (hs : Summable eps) :
+  Tendsto (SummablePerturbation.errorTail eps) atTop (𝓝 0)
+LeanPEP.ActualFunction.SummablePerturbation.corrected_antitone {a eps : ℕ → ℝ}
+  (hstep : ∀ (n : ℕ), a (n + 1) ≤ a n + eps n) : Antitone fun n => a n + SummablePerturbation.errorTail eps n
+LeanPEP.ActualFunction.SummablePerturbation.exists_limit_of_summable_error {a eps : ℕ → ℝ} (ha : ∀ (n : ℕ), 0 ≤ a n)
+  (he : ∀ (n : ℕ), 0 ≤ eps n) (hs : Summable eps) (hstep : ∀ (n : ℕ), a (n + 1) ≤ a n + eps n) :
+  ∃ d, Tendsto a atTop (𝓝 d)
+LeanPEP.ActualFunction.SummablePerturbation.le_initial_add_total {a eps : ℕ → ℝ} (he : ∀ (n : ℕ), 0 ≤ eps n)
+  (hs : Summable eps) (hstep : ∀ (n : ℕ), a (n + 1) ≤ a n + eps n) (n : ℕ) : a n ≤ a 0 + ∑' (k : ℕ), eps k
+LeanPEP.ActualFunction.SummablePerturbation.distance_step.{u_1} {E : Type u_1} [NormedAddCommGroup E] {T : E → E}
+  {u : ℕ → E} {eps : ℕ → ℝ} (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖) (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n)
+  {p : E} (hp : T p = p) (n : ℕ) : ‖u (n + 1) - p‖ ≤ ‖u n - p‖ + eps n
+LeanPEP.ActualFunction.SummablePerturbation.distance_has_limit.{u_1} {E : Type u_1} [NormedAddCommGroup E] {T : E → E}
+  {u : ℕ → E} {eps : ℕ → ℝ} (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n) {p : E} (hp : T p = p) :
+  ∃ d, Tendsto (fun n => ‖u n - p‖) atTop (𝓝 d)
+LeanPEP.ActualFunction.SummablePerturbation.distance_le_budget.{u_1} {E : Type u_1} [NormedAddCommGroup E] {T : E → E}
+  {u : ℕ → E} {eps : ℕ → ℝ} (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n) {p : E} (hp : T p = p) (n : ℕ) :
+  ‖u n - p‖ ≤ ‖u 0 - p‖ + ∑' (k : ℕ), eps k
+LeanPEP.ActualFunction.SummablePerturbation.residual_energy_bound.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  {T : E → E} {u : ℕ → E} {eps : ℕ → ℝ} {p : E} {c B : ℝ} (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖) (hp : T p = p)
+  (henergy : ∀ (x : E), ‖T x - p‖ ^ 2 + c * ‖T x - x‖ ^ 2 ≤ ‖x - p‖ ^ 2) (hB : ∀ (n : ℕ), ‖u n - p‖ ≤ B)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n) (n : ℕ) :
+  c * ‖T (u n) - u n‖ ^ 2 ≤ ‖u n - p‖ ^ 2 - ‖u (n + 1) - p‖ ^ 2 + 2 * B * eps n + eps n ^ 2
+LeanPEP.ActualFunction.SummablePerturbation.residual_tendsto_zero.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  {T : E → E} {u : ℕ → E} {eps : ℕ → ℝ} {p : E} {c : ℝ} (hc : 0 < c) (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖)
+  (hp : T p = p) (henergy : ∀ (x : E), ‖T x - p‖ ^ 2 + c * ‖T x - x‖ ^ 2 ≤ ‖x - p‖ ^ 2) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n) : Tendsto (fun n => ‖T (u n) - u n‖) atTop (𝓝 0)
+LeanPEP.ActualFunction.SummablePerturbation.step_norm_tendsto_zero.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  {T : E → E} {u : ℕ → E} {eps : ℕ → ℝ} (hs : Summable eps) (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n)
+  (hres : Tendsto (fun n => ‖T (u n) - u n‖) atTop (𝓝 0)) : Tendsto (fun n => ‖u (n + 1) - u n‖) atTop (𝓝 0)
+LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inner_limits_eq_of_distance_limits.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {u : ℕ → E} {z w : E} {lz lw : Filter ℕ} [lz.NeBot] [lw.NeBot]
+  (hlz : lz ≤ atTop) (hlw : lw ≤ atTop) (hz : ∀ (v : E), Tendsto (fun n => inner ℝ (u n) v) lz (𝓝 (inner ℝ z v)))
+  (hw : ∀ (v : E), Tendsto (fun n => inner ℝ (u n) v) lw (𝓝 (inner ℝ w v)))
+  (hdz : ∃ d, Tendsto (fun n => ‖u n - z‖) atTop (𝓝 d)) (hdw : ∃ d, Tendsto (fun n => ‖u n - w‖) atTop (𝓝 d)) : z = w
+LeanPEP.ActualFunction.WeakQuasiFejerConvergence.clusters_eq_of_distance_limits.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {u : ℕ → E} {z w : E}
+  (hz : MapClusterPt (HilbertWeakTopology.weakRiesz z) atTop fun n => HilbertWeakTopology.weakRiesz (u n))
+  (hw : MapClusterPt (HilbertWeakTopology.weakRiesz w) atTop fun n => HilbertWeakTopology.weakRiesz (u n))
+  (hdz : ∃ d, Tendsto (fun n => ‖u n - z‖) atTop (𝓝 d)) (hdw : ∃ d, Tendsto (fun n => ‖u n - w‖) atTop (𝓝 d)) : z = w
+LeanPEP.ActualFunction.WeakQuasiFejerConvergence.exists_weak_tendsto_fixed_of_distance_limits.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {T : E → E} {u : ℕ → E} {center : E} {R : ℝ}
+  (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖) (hB : ∀ (n : ℕ), ‖u n - center‖ ≤ R)
+  (hres : Tendsto (fun n => ‖T (u n) - u n‖) atTop (𝓝 0))
+  (hdist : ∀ (z : E), T z = z → ∃ d, Tendsto (fun n => ‖u n - z‖) atTop (𝓝 d)) :
+  ∃ z, T z = z ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inexact_weak_tendsto.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {T : E → E} {u : ℕ → E} {eps : ℕ → ℝ} {c : ℝ} (hc : 0 < c)
+  (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖)
+  (henergy : ∀ (p : E), T p = p → ∀ (x : E), ‖T x - p‖ ^ 2 + c * ‖T x - x‖ ^ 2 ≤ ‖x - p‖ ^ 2) (p : E) (hp : T p = p)
+  (hs : Summable eps) (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n) :
+  ∃ z, T z = z ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+LeanPEP.ActualFunction.WeakQuasiFejerConvergence.exists_strong_tendsto_fixed_of_compact.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {T : E → E} {u : ℕ → E} (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖)
+  (hres : Tendsto (fun n => ‖T (u n) - u n‖) atTop (𝓝 0))
+  (hdist : ∀ (z : E), T z = z → ∃ d, Tendsto (fun n => ‖u n - z‖) atTop (𝓝 d)) {K : Set E} (hK : IsCompact K)
+  (hmem : ∀ (n : ℕ), u n ∈ K) : ∃ z ∈ K, T z = z ∧ Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inexact_strong_tendsto_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {T : E → E} {u : ℕ → E} {eps : ℕ → ℝ} {c : ℝ}
+  (hc : 0 < c) (hT : ∀ (x y : E), ‖T x - T y‖ ≤ ‖x - y‖)
+  (henergy : ∀ (p : E), T p = p → ∀ (x : E), ‖T x - p‖ ^ 2 + c * ‖T x - x‖ ^ 2 ≤ ‖x - p‖ ^ 2) (p : E) (hp : T p = p)
+  (hs : Summable eps) (herr : ∀ (n : ℕ), ‖u (n + 1) - T (u n)‖ ≤ eps n) : ∃ z, T z = z ∧ Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.forwardBackwardStep_fixed_energy.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {p : E}
+  (hpfix : forwardBackwardStep hp g p = p) (x : E) :
+  ‖forwardBackwardStep hp g x - p‖ ^ 2 + 1 / 2 * ‖forwardBackwardStep hp g x - x‖ ^ 2 ≤ ‖x - p‖ ^ 2
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_distance_has_limit.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E)
+  (eps : ℕ → ℝ) (hs : Summable eps) (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) :
+  ∃ d, Tendsto (fun n => ‖u n - xStar‖) atTop (𝓝 d)
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_norm_sub_le_budget.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E)
+  (eps : ℕ → ℝ) (hs : Summable eps) (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) (N : ℕ) :
+  ‖u N - xStar‖ ≤ ‖u 0 - xStar‖ + ∑' (n : ℕ), eps n
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_residual_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) :
+  Tendsto (fun n => ‖forwardBackwardStep hp g (u n) - u n‖) atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_step_norm_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) :
+  Tendsto (fun n => ‖u (n + 1) - u n‖) atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_weak_tendsto.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_weak_tendsto_hilbert.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep ⋯ g (u n)‖ ≤ eps n) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_tendsto_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_tendsto_finiteDimensional_analytic.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep ⋯ g (u n)‖ ≤ eps n) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_weak_tendsto_of_unique.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hunique : ∀ (z : E), (∀ (y : E), f z + h z ≤ f y + h y) → z = xStar) (u : ℕ → E) (eps : ℕ → ℝ) (hs : Summable eps)
+  (herr : ∀ (n : ℕ), ‖u (n + 1) - forwardBackwardStep hp g (u n)‖ ≤ eps n) :
+  Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) xStar))
+LeanPEP.ActualFunction.ProximalGradientCanonical.oracle_prox_error_bound.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} {g : E → E} (hp : HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (x e y : E) {delta : ℝ} (hprox : ‖y - proxMap hp (x - (↑L)⁻¹ • (g x + e))‖ ≤ delta) :
+  ‖y - forwardBackwardStep hp g x‖ ≤ delta + (↑L)⁻¹ * ‖e‖
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_oracle_prox_weak_tendsto.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u e : ℕ → E) (delta : ℕ → ℝ) (he : Summable fun n => ‖e n‖)
+  (hd : Summable delta) (hprox : ∀ (n : ℕ), ‖u (n + 1) - proxMap hp (u n - (↑L)⁻¹ • (g (u n) + e n))‖ ≤ delta n) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_oracle_prox_weak_tendsto_hilbert.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u e : ℕ → E) (delta : ℕ → ℝ) (he : Summable fun n => ‖e n‖)
+  (hd : Summable delta) (hprox : ∀ (n : ℕ), ‖u (n + 1) - proxMap ⋯ (u n - (↑L)⁻¹ • (g (u n) + e n))‖ ≤ delta n) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_gradient_weak_tendsto.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (u e : ℕ → E) (he : Summable fun n => ‖e n‖)
+  (hstep : ∀ (n : ℕ), u (n + 1) = proxMap hp (u n - (↑L)⁻¹ • (g (u n) + e n))) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (fun n => (toWeakSpace ℝ E) (u n)) atTop (𝓝 ((toWeakSpace ℝ E) z))
+'LeanPEP.ActualFunction.SummablePerturbation.exists_limit_of_summable_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.SummablePerturbation.residual_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inner_limits_eq_of_distance_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inexact_weak_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.WeakQuasiFejerConvergence.inexact_strong_tendsto_finiteDimensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_weak_tendsto_hilbert' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_tendsto_finiteDimensional_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.inexact_oracle_prox_weak_tendsto_hilbert' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

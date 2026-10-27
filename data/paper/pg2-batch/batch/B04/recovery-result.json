@@ -1,0 +1,459 @@
+{
+  "absent_stage_evidence": "unknown or not reached; never inferred from solver status",
+  "command": {
+    "argv": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/scripts/observe_consumer.py",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B04/observer.json",
+      "recover",
+      "--source-root",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+      "--input",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B04/capture.json",
+      "--output",
+      "<WORK_TMP>/LeanPEP_REFINE_BATCH/B04",
+      "--namespace",
+      "LeanPEP.Imported.Refine001.B04",
+      "--timeout",
+      "900"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset"
+    },
+    "exit": 0,
+    "log": "RefineEvidence_001/batch/B04/consumer-cli.log",
+    "outer_CHILDREN_high_water_bytes": 6014992384,
+    "resource_scope": "cumulative CHILDREN high water in batch parent; not per-operation simultaneous peak",
+    "started_at_utc": "2026-10-06T22:18:44.824599+00:00",
+    "timeout_stage": null,
+    "wall_seconds": 50.87354499998037
+  },
+  "consumer_result": {
+    "actual_upper_verified": true,
+    "bound": "62499/499990",
+    "execution_status": "passed",
+    "inputs_unchanged": true,
+    "live_capture_performed": false,
+    "mode": "recover",
+    "pure_closure_status": "passed_content_review",
+    "residual_recomputed": true,
+    "rule": "pg2_source_affine_grid_v1_64_trials",
+    "selected_endpoint": "structured",
+    "status": "passed"
+  },
+  "counts": {
+    "grids_observed": 11,
+    "nonnegative_rejected": 0,
+    "original_upper_rejected": 0,
+    "policy_rejected": 10,
+    "psd_rejected": 0
+  },
+  "observed_candidate": {
+    "returned_candidate": true,
+    "stage": "candidate_returned",
+    "trial_count": 11,
+    "trials": [
+      {
+        "denominator": 500000,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499999,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499998,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499997,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499996,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499995,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499994,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499993,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499992,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499991,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499990,
+        "nonnegative_weights": true,
+        "original_upper_accepted": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": true,
+          "interpolation_references": true,
+          "policy_valid": true
+        },
+        "psd": {
+          "dimension": 8,
+          "factor_certificate": {
+            "factors": [
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 62499,
+                    "num": -1
+                  },
+                  {
+                    "den": 1,
+                    "num": -1
+                  },
+                  {
+                    "den": 124998,
+                    "num": 86015
+                  },
+                  {
+                    "den": 41666,
+                    "num": 47009
+                  },
+                  {
+                    "den": 62499,
+                    "num": 81961
+                  },
+                  {
+                    "den": 124998,
+                    "num": 358963
+                  },
+                  {
+                    "den": 124998,
+                    "num": 250055
+                  }
+                ],
+                "weight": {
+                  "den": 499990,
+                  "num": 62499
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 7812281251,
+                    "num": -1343972617
+                  },
+                  {
+                    "den": 31249125004,
+                    "num": 16029
+                  },
+                  {
+                    "den": 15624562502,
+                    "num": -5122461077
+                  },
+                  {
+                    "den": 7812281251,
+                    "num": 74116
+                  },
+                  {
+                    "den": 31249125004,
+                    "num": -15627999889
+                  }
+                ],
+                "weight": {
+                  "den": 15624437505,
+                  "num": 7812281251
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 1531876771147547,
+                    "num": -1003581396559003
+                  },
+                  {
+                    "den": 1531876771147547,
+                    "num": -1332630636198716
+                  },
+                  {
+                    "den": 1531876771147547,
+                    "num": 1003616339691111
+                  },
+                  {
+                    "den": 1531876771147547,
+                    "num": -199211191816723
+                  }
+                ],
+                "weight": {
+                  "den": 15624250010749960,
+                  "num": 1531876771147547
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 495487084492276814437,
+                    "num": -270026931106238650474
+                  },
+                  {
+                    "den": 495487084492276814437,
+                    "num": -495464280253332218156
+                  },
+                  {
+                    "den": 495487084492276814437,
+                    "num": 270049735345183246755
+                  }
+                ],
+                "weight": {
+                  "den": 6127384534448496196240,
+                  "num": 495487084492276814437
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 5257962837030746740958706,
+                    "num": 210894922273427867395
+                  },
+                  {
+                    "den": 5257962837030746740958706,
+                    "num": -5257751942108473313091311
+                  }
+                ],
+                "weight": {
+                  "den": 247738587375293484450355630,
+                  "num": 44692684114761347298149001
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  }
+                ],
+                "weight": {
+                  "den": 5257857677774006126023886825880,
+                  "num": 42060576728348675733397099
+                }
+              }
+            ]
+          },
+          "factor_count": 6,
+          "format": "leanpep-psd-synthesis-v1",
+          "lean_status": "not_run_by_this_producer",
+          "matrix_sha256": "3181c397d763005eb58d3d702c6cda4c90c9109f1aceac516f7beeda1be8b0bf",
+          "pivot_indices_original_basis": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "producer_version": "v0.13D1",
+          "python_exact_recheck": true,
+          "reason": "exact factor identity",
+          "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+          "status": "psd"
+        }
+      }
+    ],
+    "wall_seconds": 3.0424340829777066
+  }
+}

@@ -1,0 +1,16 @@
+test_actual_lean_failure_never_selects (test_pg_certificate_consumer.ConsumerTests.test_actual_lean_failure_never_selects) ... Lean failed or limit
+ok
+test_capture_semantics_not_byte_whitelist (test_pg_certificate_consumer.ConsumerTests.test_capture_semantics_not_byte_whitelist) ... ok
+test_missing_project_dependency_fails_closed (test_pg_certificate_consumer.ConsumerTests.test_missing_project_dependency_fails_closed) ... ok
+test_optional_resource_unavailable_does_not_change_exit (test_pg_certificate_consumer.ConsumerTests.test_optional_resource_unavailable_does_not_change_exit) ... ok
+test_output_guard (test_pg_certificate_consumer.ConsumerTests.test_output_guard) ... ok
+test_pure_core_closure (test_pg_certificate_consumer.ConsumerTests.test_pure_core_closure) ... ok
+test_r01_actual_example_path_rejected (test_pg_certificate_consumer.ConsumerTests.test_r01_actual_example_path_rejected) ... ok
+test_renamed_unreviewed_concrete_certificate_rejected (test_pg_certificate_consumer.ConsumerTests.test_renamed_unreviewed_concrete_certificate_rejected) ... ok
+test_reviewed_filename_with_changed_content_rejected (test_pg_certificate_consumer.ConsumerTests.test_reviewed_filename_with_changed_content_rejected) ... ok
+test_source_mismatch_rejected (test_pg_certificate_consumer.ConsumerTests.test_source_mismatch_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.012s
+
+OK

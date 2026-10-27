@@ -1,0 +1,363 @@
+{
+  "absent_stage_evidence": "unknown or not reached; never inferred from solver status",
+  "command": {
+    "argv": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/scripts/observe_consumer.py",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B07/observer.json",
+      "recover",
+      "--source-root",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+      "--input",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B07/capture.json",
+      "--output",
+      "<WORK_TMP>/LeanPEP_REFINE_BATCH/B07",
+      "--namespace",
+      "LeanPEP.Imported.Refine001.B07",
+      "--timeout",
+      "900"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset"
+    },
+    "exit": 0,
+    "log": "RefineEvidence_001/batch/B07/consumer-cli.log",
+    "outer_CHILDREN_high_water_bytes": 6014992384,
+    "resource_scope": "cumulative CHILDREN high water in batch parent; not per-operation simultaneous peak",
+    "started_at_utc": "2026-10-06T22:20:28.262045+00:00",
+    "timeout_stage": null,
+    "wall_seconds": 52.161071875016205
+  },
+  "consumer_result": {
+    "actual_upper_verified": true,
+    "bound": "31250/249999",
+    "execution_status": "passed",
+    "inputs_unchanged": true,
+    "live_capture_performed": false,
+    "mode": "recover",
+    "pure_closure_status": "passed_content_review",
+    "residual_recomputed": true,
+    "rule": "pg2_source_affine_grid_v1_64_trials",
+    "selected_endpoint": "structured",
+    "status": "passed"
+  },
+  "counts": {
+    "grids_observed": 3,
+    "nonnegative_rejected": 0,
+    "original_upper_rejected": 0,
+    "policy_rejected": 2,
+    "psd_rejected": 0
+  },
+  "observed_candidate": {
+    "returned_candidate": true,
+    "stage": "candidate_returned",
+    "trial_count": 3,
+    "trials": [
+      {
+        "denominator": 500000,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499999,
+        "nonnegative_weights": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": false,
+          "interpolation_references": true,
+          "policy_valid": true
+        }
+      },
+      {
+        "denominator": 499998,
+        "nonnegative_weights": true,
+        "original_upper_accepted": true,
+        "policy_checks": {
+          "assumption_references": true,
+          "coefficient_lengths": true,
+          "denominator_bounds": true,
+          "error_bounds": true,
+          "interpolation_references": true,
+          "policy_valid": true
+        },
+        "psd": {
+          "dimension": 8,
+          "factor_certificate": {
+            "factors": [
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 31250,
+                    "num": -1
+                  },
+                  {
+                    "den": 1,
+                    "num": -1
+                  },
+                  {
+                    "den": 125000,
+                    "num": 105211
+                  },
+                  {
+                    "den": 200,
+                    "num": 221
+                  },
+                  {
+                    "den": 62500,
+                    "num": 69903
+                  },
+                  {
+                    "den": 125000,
+                    "num": 361873
+                  },
+                  {
+                    "den": 25000,
+                    "num": 50997
+                  }
+                ],
+                "weight": {
+                  "den": 249999,
+                  "num": 31250
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1736131944,
+                    "num": -365318171
+                  },
+                  {
+                    "den": 15625187496,
+                    "num": 44375
+                  },
+                  {
+                    "den": 1302098958,
+                    "num": -364074287
+                  },
+                  {
+                    "den": 5208395832,
+                    "num": 99791
+                  },
+                  {
+                    "den": 15625187496,
+                    "num": -7968088765
+                  }
+                ],
+                "weight": {
+                  "den": 1302078125,
+                  "num": 651049479
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 346283509254669,
+                    "num": -92045744104289
+                  },
+                  {
+                    "den": 38475945472741,
+                    "num": -21474333531360
+                  },
+                  {
+                    "den": 5496563638963,
+                    "num": 1461098561767
+                  },
+                  {
+                    "den": 346283509254669,
+                    "num": -153011042185397
+                  }
+                ],
+                "weight": {
+                  "den": 385805555438272,
+                  "num": 38475945472741
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 121104567899185551524,
+                    "num": -63308020144161140949
+                  },
+                  {
+                    "den": 30276141974796387881,
+                    "num": -30275499122396352447
+                  },
+                  {
+                    "den": 121104567899185551524,
+                    "num": 63310591553761282685
+                  }
+                ],
+                "weight": {
+                  "den": 259711593090473985993,
+                  "num": 30276141974796387881
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 47066411527853518918935721,
+                    "num": 2239280266358304225602
+                  },
+                  {
+                    "den": 47066411527853518918935721,
+                    "num": -47064172247587160614710119
+                  }
+                ],
+                "weight": {
+                  "den": 363312250442741864345381712,
+                  "num": 47066411527853518918935721
+                }
+              },
+              {
+                "vector": [
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 0
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  },
+                  {
+                    "den": 1,
+                    "num": 1
+                  }
+                ],
+                "weight": {
+                  "den": 94132446524414815009720090514232,
+                  "num": 753003301606743693518356135
+                }
+              }
+            ]
+          },
+          "factor_count": 6,
+          "format": "leanpep-psd-synthesis-v1",
+          "lean_status": "not_run_by_this_producer",
+          "matrix_sha256": "096be50fa8a4298373323255fd7124be5e0e674597a9ae6eba55191b300d8697",
+          "pivot_indices_original_basis": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "producer_version": "v0.13D1",
+          "python_exact_recheck": true,
+          "reason": "exact factor identity",
+          "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+          "status": "psd"
+        }
+      }
+    ],
+    "wall_seconds": 3.02375120902434
+  }
+}

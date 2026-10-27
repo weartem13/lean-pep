@@ -1,0 +1,1599 @@
+{
+  "bound": {
+    "den": 499983,
+    "num": 62498
+  },
+  "constant_value_solution": [
+    {
+      "den": 499983,
+      "num": 62498
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 499983,
+      "num": 62498
+    },
+    {
+      "den": 15151,
+      "num": 2591
+    },
+    {
+      "den": 499983,
+      "num": 167714
+    },
+    {
+      "den": 499983,
+      "num": 246779
+    },
+    {
+      "den": 166661,
+      "num": 1
+    },
+    {
+      "den": 499983,
+      "num": 115618
+    },
+    {
+      "den": 499983,
+      "num": 77311
+    },
+    {
+      "den": 499983,
+      "num": 4
+    },
+    {
+      "den": 45453,
+      "num": 5171
+    },
+    {
+      "den": 499983,
+      "num": 338918
+    },
+    {
+      "den": 166661,
+      "num": 2
+    },
+    {
+      "den": 499983,
+      "num": 50548
+    },
+    {
+      "den": 499983,
+      "num": 112471
+    },
+    {
+      "den": 499983,
+      "num": 139234
+    },
+    {
+      "den": 499983,
+      "num": 360749
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 166661,
+      "num": 73838
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 45453,
+      "num": 7480
+    }
+  ],
+  "consumer_rule": "pg2_source_affine_grid_v1_64_trials",
+  "denominator": 499983,
+  "factor_count": 6,
+  "free_indices": [
+    2,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    18,
+    19,
+    20
+  ],
+  "generation_rule": "pg_t2_source_affine_common_grid_v1",
+  "grid_seed": [
+    {
+      "den": 499983,
+      "num": 62498
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 499983,
+      "num": 62498
+    },
+    {
+      "den": 15151,
+      "num": 2591
+    },
+    {
+      "den": 499983,
+      "num": 167714
+    },
+    {
+      "den": 499983,
+      "num": 246779
+    },
+    {
+      "den": 166661,
+      "num": 1
+    },
+    {
+      "den": 499983,
+      "num": 115618
+    },
+    {
+      "den": 499983,
+      "num": 77311
+    },
+    {
+      "den": 499983,
+      "num": 4
+    },
+    {
+      "den": 45453,
+      "num": 5171
+    },
+    {
+      "den": 499983,
+      "num": 338918
+    },
+    {
+      "den": 166661,
+      "num": 2
+    },
+    {
+      "den": 499983,
+      "num": 50548
+    },
+    {
+      "den": 499983,
+      "num": 112471
+    },
+    {
+      "den": 499983,
+      "num": 139234
+    },
+    {
+      "den": 499983,
+      "num": 360749
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 166661,
+      "num": 73838
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 45453,
+      "num": 7480
+    }
+  ],
+  "known_rate_used": false,
+  "max_grid_trials": 64,
+  "peak_rss_bytes": 34144256,
+  "pivot_indices": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    15,
+    16
+  ],
+  "raw_seed": [
+    {
+      "den": 100000000000000000,
+      "num": 12500000036614037
+    },
+    {
+      "den": 1000000000000000,
+      "num": 1000000000215959
+    },
+    {
+      "den": 100000000000000000,
+      "num": 12500000036614037
+    },
+    {
+      "den": 50000000000000000,
+      "num": 8550605438274621
+    },
+    {
+      "den": 2500000000000000,
+      "num": 838598862418881
+    },
+    {
+      "den": 50000000000000000,
+      "num": 24678754088275043
+    },
+    {
+      "den": 1000000000000000000000,
+      "num": 6144206783311301
+    },
+    {
+      "den": 50000000000000000,
+      "num": 11562171310520397
+    },
+    {
+      "den": 1562500000000000,
+      "num": 241605723611107
+    },
+    {
+      "den": 200000000000000000000,
+      "num": 1602767941137767
+    },
+    {
+      "den": 50000000000000000,
+      "num": 5688293279656937
+    },
+    {
+      "den": 10000000000000000,
+      "num": 6778590094037333
+    },
+    {
+      "den": 500000000000000000000,
+      "num": 6288726056691173
+    },
+    {
+      "den": 20000000000000000,
+      "num": 2021985183393163
+    },
+    {
+      "den": 100000000000000000,
+      "num": 22494991765861297
+    },
+    {
+      "den": 5000000000000000,
+      "num": 1392389749501799
+    },
+    {
+      "den": 10000000000000000,
+      "num": 7215220508610013
+    },
+    {
+      "den": 20000000000000000000000000,
+      "num": 6093074744863209
+    },
+    {
+      "den": 390625000000000,
+      "num": 173063896203351
+    },
+    {
+      "den": 100000000000000000000000000,
+      "num": 45677692397593293
+    },
+    {
+      "den": 25000000000000000,
+      "num": 4114140617121289
+    }
+  ],
+  "residual_recomputed": true,
+  "resource_scope": "getrusage SELF process high-water mark including imports, before Lean",
+  "system": {
+    "matrix": [
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    ],
+    "rhs": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ]
+  },
+  "trial_count": 18,
+  "trials": [
+    {
+      "denominator": 500000,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499999,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499998,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499997,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499996,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499995,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499994,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499993,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499992,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499991,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499990,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499989,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499988,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499987,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499986,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499985,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499984,
+      "nonnegative_weights": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": false,
+        "interpolation_references": true,
+        "policy_valid": true
+      }
+    },
+    {
+      "denominator": 499983,
+      "nonnegative_weights": true,
+      "original_upper_accepted": true,
+      "policy_checks": {
+        "assumption_references": true,
+        "coefficient_lengths": true,
+        "denominator_bounds": true,
+        "error_bounds": true,
+        "interpolation_references": true,
+        "policy_valid": true
+      },
+      "psd": {
+        "dimension": 8,
+        "factor_certificate": {
+          "factors": [
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 124996,
+                  "num": -13
+                },
+                {
+                  "den": 1,
+                  "num": -1
+                },
+                {
+                  "den": 124996,
+                  "num": 85503
+                },
+                {
+                  "den": 62498,
+                  "num": 69617
+                },
+                {
+                  "den": 62498,
+                  "num": 83857
+                },
+                {
+                  "den": 124996,
+                  "num": 360749
+                },
+                {
+                  "den": 124996,
+                  "num": 246779
+                }
+              ],
+              "weight": {
+                "den": 499983,
+                "num": 62498
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 62499124795,
+                  "num": -10688046397
+                },
+                {
+                  "den": 62499124795,
+                  "num": 560082
+                },
+                {
+                  "den": 62499124795,
+                  "num": -20962648822
+                },
+                {
+                  "den": 62499124795,
+                  "num": 3939761
+                },
+                {
+                  "den": 62499124795,
+                  "num": -30843929733
+                }
+              ],
+              "weight": {
+                "den": 124991750136,
+                "num": 62499124795
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 6118374112009961,
+                  "num": -3964736924129641
+                },
+                {
+                  "den": 6118374112009961,
+                  "num": -5194849838079619
+                },
+                {
+                  "den": 6118374112009961,
+                  "num": 3964789450208982
+                },
+                {
+                  "den": 6118374112009961,
+                  "num": -923471747851001
+                }
+              ],
+              "weight": {
+                "den": 62496999824756970,
+                "num": 6118374112009961
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 503339662802810734045,
+                  "num": -242445319477284832221
+                },
+                {
+                  "den": 503339662802810734045,
+                  "num": -503323399018813849453
+                },
+                {
+                  "den": 503339662802810734045,
+                  "num": 242461583261281716813
+                }
+              ],
+              "weight": {
+                "den": 6118166087290152661326,
+                "num": 503339662802810734045
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 98515490460573483943372724,
+                  "num": 1716551969605015152767
+                },
+                {
+                  "den": 98515490460573483943372724,
+                  "num": -98513773908603878928219957
+                }
+              ],
+              "weight": {
+                "den": 251661274627137719240021235,
+                "num": 49257745230286741971686362
+              }
+            },
+            {
+              "vector": [
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 0
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                },
+                {
+                  "den": 1,
+                  "num": 1
+                }
+              ],
+              "weight": {
+                "den": 903781109485301141696501369976,
+                "num": 3612759644542077454323023
+              }
+            }
+          ]
+        },
+        "factor_count": 6,
+        "format": "leanpep-psd-synthesis-v1",
+        "lean_status": "not_run_by_this_producer",
+        "matrix_sha256": "f0d4c683d51d9812655640819c3b801929deef0b424cd5fc719c628b97078beb",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "producer_version": "v0.13D1",
+        "python_exact_recheck": true,
+        "reason": "exact factor identity",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "status": "psd"
+      }
+    }
+  ],
+  "wall_seconds": 1.7226700829924084
+}

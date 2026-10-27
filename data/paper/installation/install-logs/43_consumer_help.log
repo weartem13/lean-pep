@@ -1,0 +1,24 @@
+usage: replay_pg_certificate.py [-h] --source-root SOURCE_ROOT [--input INPUT]
+                                [--candidate CANDIDATE] [--cache CACHE]
+                                --output OUTPUT [--namespace NAMESPACE]
+                                [--expected-sha256 EXPECTED_SHA256]
+                                [--timeout TIMEOUT]
+                                {dependencies,build,recover,verify}
+
+Relocatable PG2 certificate consumer. Recovery needs Python's standard library
+only. Numerical capture is separate. Existing hash-locked archive tools are
+unchanged.
+
+positional arguments:
+  {dependencies,build,recover,verify}
+
+options:
+  -h, --help            show this help message and exit
+  --source-root SOURCE_ROOT
+  --input INPUT
+  --candidate CANDIDATE
+  --cache CACHE
+  --output OUTPUT
+  --namespace NAMESPACE
+  --expected-sha256 EXPECTED_SHA256
+  --timeout TIMEOUT

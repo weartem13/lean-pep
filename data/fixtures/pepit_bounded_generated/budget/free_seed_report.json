@@ -1,0 +1,2098 @@
+{
+  "capture_sha256": "4642a49c0907d1b8b66febefb576ab4cfbfcba2cb480eb52b4e234b860f24050",
+  "changed_seed_entries": 2,
+  "completed_bound": {
+    "den": 4,
+    "num": 1
+  },
+  "completed_diagnostic": {
+    "bound_guards": {
+      "compact_upper": true,
+      "coverage": true,
+      "empty_implicit_interpolation": true,
+      "full_bound": true,
+      "full_source": true,
+      "objective_binding": true
+    },
+    "canonical_json_sha256": "8117d3cadf2c7c42399e2585db4638d6516dbbc4bb111422e25b3cd707580057",
+    "compact_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "compact_row_count": 10,
+    "completed_diagnostic": {
+      "arbitrary_auxiliary_order_supported": false,
+      "bound_guards": {
+        "all_extended_rows": true,
+        "auxiliary_objective": true,
+        "base_source": true,
+        "certificate_objective": true,
+        "eliminated_bound": true,
+        "empty_implicit_interpolation": true,
+        "positive_performance_scale": true,
+        "source_certificate": true
+      },
+      "canonical_json_sha256": "5dbc3cbef3c149ab721b7207f14a4adaa9d62de0b20fe0b26a71fe1452df0b09",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "base_rows": 14,
+        "base_values": 5,
+        "basis": 6,
+        "extended_rows": 15,
+        "extended_values": 6
+      },
+      "eliminated_diagnostic": {
+        "arbitrary_row_deletion_supported": false,
+        "bound_guards": {
+          "empty_implicit_interpolation": true,
+          "normalized_bound": true,
+          "normalized_source": true,
+          "oriented_source_certificate": true,
+          "positive_scales": true,
+          "source_objective": true
+        },
+        "canonical_json_sha256": "7691b6448cac194c981e90b1aa99575a80ca9c7203bd916eb546a9660cc3194a",
+        "diagnostic_passed": true,
+        "equality_rows_supported": false,
+        "format": "leanpep-scaled-pg-diagnostic-v1",
+        "horizon": 1,
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+        "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+        "normalized_diagnostic": {
+          "arbitrary_pepit_leaf_elimination_supported": false,
+          "bound_guards": {
+            "canonical_bound": true,
+            "canonical_source": true,
+            "empty_implicit_interpolation": true,
+            "permutations": true,
+            "source_certificate": true,
+            "source_objective": true
+          },
+          "canonical_diagnostic": {
+            "arbitrary_pepit_order_supported": false,
+            "bound_guards": {
+              "centered_bound": true,
+              "empty_implicit_interpolation": true,
+              "native_certificate": true,
+              "native_objective": true,
+              "source": true
+            },
+            "canonical_json_sha256": "05f65b516f4e52237622e115ad7291ba01117c8731258e798137be2fdadd65a6",
+            "centered_certificate": {
+              "certificate": true,
+              "empty_implicit_interpolation": true,
+              "objective_matches_source": true,
+              "source": true
+            },
+            "centered_source_mismatches": [],
+            "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+            "diagnostic_passed": true,
+            "dimensions": {
+              "centered": 5,
+              "native": 6,
+              "values": 5
+            },
+            "format": "leanpep-uncentered-pg-diagnostic-v1",
+            "horizon": 1,
+            "lean_checked": false,
+            "live_capture_performed": false,
+            "native_certificate": {
+              "accepted": true,
+              "factor": true,
+              "identity": true,
+              "symmetric": true,
+              "weights": true
+            },
+            "numeric_interpretation": "exact_num_den_no_reconstruction",
+            "origin": {
+              "description": "D9 untrusted simulated_regression; producer identity is NOT authenticated; input is retained separately",
+              "mode": "deterministic_regression_fixture"
+            },
+            "primal_transport_checked": false,
+            "provenance_authenticated": false,
+            "source_guards": {
+              "center_matrix": true,
+              "centered_source": true,
+              "constraints_roundtrip": true,
+              "header": true,
+              "nonsmooth_roundtrip": true,
+              "objective_roundtrip": true,
+              "section_matrix": true,
+              "smooth_roundtrip": true
+            },
+            "source_mismatches": []
+          },
+          "canonical_input_error": null,
+          "canonical_json_sha256": "8060c3713dca7f314460a8f25a8a1bd6dc810066e08fee51e91abea35819af9a",
+          "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+          "diagnostic_passed": true,
+          "dimensions": {
+            "basis": 6,
+            "nonsmooth": 2,
+            "rows": 14,
+            "smooth": 3,
+            "values": 5
+          },
+          "format": "leanpep-permuted-pg-diagnostic-v1",
+          "horizon": 1,
+          "lean_checked": false,
+          "live_capture_performed": false,
+          "numeric_interpretation": "exact_num_den_no_reconstruction",
+          "origin": {
+            "description": "D9 untrusted simulated_regression; producer identity is NOT authenticated; input is retained separately",
+            "mode": "deterministic_regression_fixture"
+          },
+          "permutation_guards": {
+            "basis": true,
+            "nonsmooth": true,
+            "rows": true,
+            "smooth": true,
+            "values": true
+          },
+          "primal_import_supported": false,
+          "provenance_authenticated": false,
+          "roundtrip_payload_and_certificate": true,
+          "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+          "source_certificate": {
+            "accepted": true,
+            "factor": true,
+            "identity": true,
+            "symmetric": true,
+            "weights": true
+          }
+        },
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "oriented_source_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "origin": {
+          "description": "D9 untrusted simulated_regression; producer identity is NOT authenticated; input is retained separately",
+          "mode": "deterministic_regression_fixture"
+        },
+        "positive_scale_guards": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "primal_import_supported": false,
+        "provenance_authenticated": false,
+        "raw_solver_signed_multipliers_supported": false,
+        "row_roundtrip": true,
+        "weighted_assumption_sum_preserved": true
+      },
+      "format": "leanpep-single-performance-diagnostic-v1",
+      "full_solver_pipeline_claimed": false,
+      "horizon": 1,
+      "layout": "tau_first_value_performance_first_row_v1",
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "multiple_metrics_supported": false,
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D9 untrusted simulated_regression; producer identity is NOT authenticated; input is retained separately",
+        "mode": "deterministic_regression_fixture"
+      },
+      "performance_mass_is_one": true,
+      "performance_weighted_mass": {
+        "den": 1,
+        "num": 1
+      },
+      "primal_import_supported": false,
+      "provenance_authenticated": false,
+      "removed_performance_references": 1,
+      "retained_source_row_indices": [
+        11,
+        13,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10
+      ],
+      "row_mismatches": [],
+      "source_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "substituted_assumption_sum_preserved": true,
+      "substitution": "tau_equals_base_objective_not_zero"
+    },
+    "coverage": {
+      "guards": {
+        "omitted_rows_zero": true,
+        "partial_inverse": true,
+        "retained_labels": true,
+        "retained_rows": true,
+        "retained_rules": true
+      },
+      "label_mismatches": [],
+      "nonzero_omitted_indices": [],
+      "omitted_full_indices": [
+        1,
+        5,
+        9,
+        10,
+        13
+      ],
+      "passed": true,
+      "row_mismatches": [],
+      "rule_mismatches": []
+    },
+    "diagnostic_passed": true,
+    "format": "leanpep-zero-row-coverage-diagnostic-v1",
+    "full_row_count": 15,
+    "full_solver_pipeline_claimed": false,
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "mapped_full_indices": [
+      12,
+      14,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      11,
+      0
+    ],
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "omitted_row_criterion": "all_coefficients_zero_before_tau_and_origin_elimination",
+    "origin": {
+      "description": "D9 untrusted simulated_regression; producer identity is NOT authenticated; input is retained separately",
+      "mode": "deterministic_regression_fixture"
+    },
+    "provenance_authenticated": false,
+    "source_passed": true,
+    "term_count_preserved": true,
+    "weights_preserved": true
+  },
+  "completed_policy_checks": {
+    "assumption_references": true,
+    "coefficient_lengths": true,
+    "denominator_bounds": true,
+    "error_bounds": false,
+    "interpolation_references": true,
+    "policy_valid": true
+  },
+  "completion_accepted": false,
+  "fixed_target_checks": {
+    "completed_implicit_empty": true,
+    "factors": true,
+    "objective": true,
+    "references": true,
+    "residual": true,
+    "seed_implicit_empty": true
+  },
+  "format": "leanpep-fixed-residual-completion-v1",
+  "free_columns": [],
+  "free_seed_values_preserved": true,
+  "guaranteed_reconstruction_claimed": false,
+  "independent_result_recheck": true,
+  "lean_checked": false,
+  "linear_status": "solution",
+  "live_capture_performed": false,
+  "max_raw_to_completed_error": {
+    "den": 10000,
+    "num": 31
+  },
+  "nearest_solution_claimed": false,
+  "numerical_entries": [
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 0,
+      "raw": {
+        "den": 10000,
+        "num": 2531
+      },
+      "raw_to_completed": {
+        "den": 10000,
+        "num": -31
+      },
+      "seed": {
+        "den": 10000,
+        "num": 2531
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 1,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 1
+      },
+      "index": 2,
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 3,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 4,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 5,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 6,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 7,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 8,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 9,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 10,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 11,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 12,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 13,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 14,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 15,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 16,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 17,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 18,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 19,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 20,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 21,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 22,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 23,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 24,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 25,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 26,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 27,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 28,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 29,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 30,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 31,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 32,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 33,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 34,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 35,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 36,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 37,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 38,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 39,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 40,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 41,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 42,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 43,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 44,
+      "raw": {
+        "den": 10000,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 10000,
+        "num": -1
+      },
+      "seed": {
+        "den": 10000,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 45,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 46,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 47,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 48,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 49,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 50,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 51,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 1
+      },
+      "index": 52,
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 1
+      },
+      "index": 53,
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 54,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 55,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 56,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 57,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 58,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 59,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 60,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 1
+      },
+      "index": 61,
+      "raw": {
+        "den": 1,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 62,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": -1
+      },
+      "index": 63,
+      "raw": {
+        "den": 2,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 64,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 65,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 66,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 67,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 68,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 69,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 70,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 71,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 72,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": -1
+      },
+      "index": 73,
+      "raw": {
+        "den": 2,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 74,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 75,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 76,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 77,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 78,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 79,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 80,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 1,
+        "num": 0
+      },
+      "index": 81,
+      "raw": {
+        "den": 1,
+        "num": 0
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 82,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 83,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 84,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 85,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": 1
+      },
+      "index": 86,
+      "raw": {
+        "den": 4,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 87,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 4,
+        "num": -1
+      },
+      "index": 88,
+      "raw": {
+        "den": 4,
+        "num": -1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "completed": {
+        "den": 2,
+        "num": 1
+      },
+      "index": 89,
+      "raw": {
+        "den": 2,
+        "num": 1
+      },
+      "raw_to_completed": {
+        "den": 1,
+        "num": 0
+      },
+      "seed": {
+        "den": 2,
+        "num": 1
+      }
+    }
+  ],
+  "pivot_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "producer_authenticated": false,
+  "producer_claim": {
+    "mode": "simulated_regression",
+    "name": "PEPit",
+    "solver": "not_run",
+    "status": "not_run",
+    "version": "0.5.1",
+    "wrapper": "not_run"
+  },
+  "raw_accepted": false,
+  "raw_binding_checks": {
+    "bound": true,
+    "interpolation_empty": true,
+    "objective": true,
+    "ordered_weights": true,
+    "residual": true
+  },
+  "raw_bound": {
+    "den": 10000,
+    "num": 2531
+  },
+  "residual_recomputed": false,
+  "scope": "exact linear completion of bound and existing weights at fixed objective/residual",
+  "seed_accepted": false,
+  "seed_bound": {
+    "den": 10000,
+    "num": 2531
+  },
+  "seed_policy_checks": {
+    "assumption_references": true,
+    "coefficient_lengths": true,
+    "denominator_bounds": true,
+    "error_bounds": true,
+    "interpolation_references": true,
+    "policy_valid": true
+  },
+  "source_coefficients_changed": false,
+  "source_sha256": "c3f52091aac928008c5abb980431fbe793b84dcffb9fa4a605ce910cef181c65",
+  "system_columns": 11,
+  "system_rows": 43,
+  "trace_checks": {
+    "objective": true,
+    "permutation": true,
+    "rows": true,
+    "rules": true,
+    "source": true
+  }
+}

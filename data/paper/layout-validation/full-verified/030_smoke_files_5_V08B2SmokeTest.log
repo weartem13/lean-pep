@@ -1,0 +1,29 @@
+LeanPEP.HardInstances.NesterovChain.unitGDStep {n : ℕ} (x : LeanPEP.HardInstances.NesterovChain.Vector n) :
+  LeanPEP.HardInstances.NesterovChain.Vector n
+LeanPEP.HardInstances.NesterovChain.IsUnitGDPath {n steps : ℕ}
+  (path : Fin (steps + 1) → LeanPEP.HardInstances.NesterovChain.Vector n) : Prop
+LeanPEP.HardInstances.NesterovChain.unitNormalizedPerformance {n : ℕ}
+  (x0 xk : LeanPEP.HardInstances.NesterovChain.Vector n) : ℝ
+LeanPEP.HardInstances.NesterovChain.dim3_gradient_start :
+  LeanPEP.HardInstances.NesterovChain.gradient 2 1 dim3X0 = dim3G0
+LeanPEP.HardInstances.NesterovChain.dim3_step_zero : unitGDStep dim3X0 = dim3X1
+LeanPEP.HardInstances.NesterovChain.dim3Path_isUnitGD : IsUnitGDPath dim3Path
+LeanPEP.HardInstances.NesterovChain.dim3_gap_after_one : function 2 1 dim3X1 - function 2 1 (minimizer 2) = 3 / 64
+LeanPEP.HardInstances.NesterovChain.dim3_initialDistanceSq : normSq (dim3X0 - minimizer 2) = 7 / 8
+LeanPEP.HardInstances.NesterovChain.dim3_unitNormalizedPerformance : unitNormalizedPerformance dim3X0 dim3X1 = 3 / 56
+LeanPEP.HardInstances.NesterovChain.dim5_gradient_start :
+  LeanPEP.HardInstances.NesterovChain.gradient 4 1 dim5X0 = dim5G0
+LeanPEP.HardInstances.NesterovChain.dim5_gradient_after_one :
+  LeanPEP.HardInstances.NesterovChain.gradient 4 1 dim5X1 = dim5G1
+LeanPEP.HardInstances.NesterovChain.dim5_step_zero : unitGDStep dim5X0 = dim5X1
+LeanPEP.HardInstances.NesterovChain.dim5_step_one : unitGDStep dim5X1 = dim5X2
+LeanPEP.HardInstances.NesterovChain.dim5Path_isUnitGD : IsUnitGDPath dim5Path
+LeanPEP.HardInstances.NesterovChain.dim5_gap_after_two : function 4 1 dim5X2 - function 4 1 (minimizer 4) = 125 / 3072
+LeanPEP.HardInstances.NesterovChain.dim5_initialDistanceSq : normSq (dim5X0 - minimizer 4) = 55 / 36
+LeanPEP.HardInstances.NesterovChain.dim5_unitNormalizedPerformance : unitNormalizedPerformance dim5X0 dim5X2 = 75 / 2816
+LeanPEP.Comparisons.nesterovDim3_oneStep_comparison :
+  IsGreatest LeanPEP.Toy.OneStep.pepValues (1 / 6) ∧
+    unitNormalizedPerformance dim3X0 dim3X1 = 3 / 56 ∧ unitNormalizedPerformance dim3X0 dim3X1 < 1 / 6
+LeanPEP.Comparisons.nesterovDim5_twoStep_comparison :
+  IsGreatest LeanPEP.Toy.TwoStep.pepValues (1 / 10) ∧
+    unitNormalizedPerformance dim5X0 dim5X2 = 75 / 2816 ∧ unitNormalizedPerformance dim5X0 dim5X2 < 1 / 10

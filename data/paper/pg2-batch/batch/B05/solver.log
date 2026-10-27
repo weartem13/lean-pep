@@ -1,0 +1,111 @@
+(CVXPY) Oct 06 11:15:42 PM: Your problem has 72 variables, 84 constraints, and 0 parameters.
+(CVXPY) Oct 06 11:15:42 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Oct 06 11:15:42 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Oct 06 11:15:42 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Oct 06 11:15:42 PM: Your problem is compiled with the CPP canonicalization backend.
+(CVXPY) Oct 06 11:15:42 PM: Compiling problem (target solver=CLARABEL).
+(CVXPY) Oct 06 11:15:42 PM: Reduction chain: FlipObjective -> Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> CLARABEL
+(CVXPY) Oct 06 11:15:42 PM: Applying reduction FlipObjective
+(CVXPY) Oct 06 11:15:42 PM: Applying reduction Dcp2Cone
+(CVXPY) Oct 06 11:15:42 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Oct 06 11:15:42 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Oct 06 11:15:42 PM: Applying reduction CLARABEL
+(CVXPY) Oct 06 11:15:42 PM: Finished problem compilation (took 1.242e-02 seconds).
+(CVXPY) Oct 06 11:15:42 PM: Invoking solver CLARABEL  to obtain a solution.
+(PEPit) Setting up the problem: performance measure is the minimum of 1 element(s)
+(PEPit) Setting up the problem: Adding initial conditions and general constraints ...
+(PEPit) Setting up the problem: initial conditions and general constraints (1 constraint(s) added)
+(PEPit) Setting up the problem: interpolation conditions for 2 function(s)
+			Function 1 : Adding 12 scalar constraint(s) ...
+			Function 1 : 12 scalar constraint(s) added
+			Function 2 : Adding 6 scalar constraint(s) ...
+			Function 2 : 6 scalar constraint(s) added
+(PEPit) Setting up the problem: additional constraints for 0 function(s)
+(PEPit) Setting up the problem: size of the Gram matrix: 8x8
+(PEPit) Compiling SDP
+(PEPit) Calling SDP solver
+===============================================================================
+                                     CVXPY                                     
+                                     v1.8.2                                    
+===============================================================================
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 44
+  constraints   = 56
+  nnz(P)        = 0
+  nnz(A)        = 171
+  cones (total) = 2
+    : Nonnegative = 1,  numel = 20
+    : PSDTriangle = 1,  numel = 36
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 300, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-9, tol_gap_abs = 1.0e-9, tol_gap_rel = 1.0e-9,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/lib/python3.14/site-packages/PEPit/wrappers/cvxpy_wrapper.py:297: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  self.prob.solve(**kwargs)
+(CVXPY) Oct 06 11:15:42 PM: Problem status: optimal_inaccurate
+(CVXPY) Oct 06 11:15:42 PM: Optimal value: 1.250e-01
+(CVXPY) Oct 06 11:15:42 PM: Compilation took 1.242e-02 seconds
+(CVXPY) Oct 06 11:15:42 PM: Solver (including time spent in interface) took 2.406e-03 seconds
+  0  +0.0000e+00  -1.1462e+00  1.15e+00  7.92e-01  1.31e+00  1.00e+00  1.63e+00   ------   
+  1  -3.1235e-01  -7.6677e-01  4.54e-01  3.55e-01  4.89e-01  2.54e-01  6.15e-01  7.04e-01  
+  2  -2.0836e-01  -2.5636e-01  4.80e-02  9.27e-02  1.03e-01  6.13e-02  1.77e-01  8.25e-01  
+  3  -1.2611e-01  -1.3444e-01  8.33e-03  2.36e-02  2.71e-02  1.45e-02  5.68e-02  7.60e-01  
+  4  -1.2750e-01  -1.3030e-01  2.80e-03  7.61e-03  8.75e-03  4.43e-03  1.89e-02  7.00e-01  
+  5  -1.2500e-01  -1.2611e-01  1.11e-03  1.86e-03  2.17e-03  6.28e-04  4.77e-03  9.05e-01  
+  6  -1.2503e-01  -1.2536e-01  3.20e-04  5.20e-04  6.11e-04  1.67e-04  1.35e-03  7.47e-01  
+  7  -1.2497e-01  -1.2509e-01  1.24e-04  1.85e-04  2.17e-04  4.89e-05  4.81e-04  8.02e-01  
+  8  -1.2501e-01  -1.2504e-01  3.33e-05  4.76e-05  5.61e-05  1.14e-05  1.24e-04  8.45e-01  
+  9  -1.2500e-01  -1.2500e-01  4.47e-06  6.16e-06  7.27e-06  1.32e-06  1.61e-05  9.39e-01  
+ 10  -1.2500e-01  -1.2500e-01  1.31e-06  1.80e-06  2.12e-06  3.78e-07  4.70e-06  7.56e-01  
+ 11  -1.2500e-01  -1.2500e-01  5.03e-07  6.82e-07  8.04e-07  1.37e-07  1.79e-06  8.07e-01  
+ 12  -1.2500e-01  -1.2500e-01  1.52e-07  2.05e-07  2.42e-07  4.03e-08  5.38e-07  8.26e-01  
+ 13  -1.2500e-01  -1.2500e-01  3.35e-08  4.51e-08  5.33e-08  8.79e-09  1.19e-07  9.04e-01  
+ 14  -1.2500e-01  -1.2500e-01  9.72e-09  1.31e-08  1.54e-08  2.55e-09  3.43e-08  7.61e-01  
+ 15  -1.2500e-01  -1.2500e-01  3.17e-09  4.26e-09  5.03e-09  8.25e-10  1.12e-08  8.47e-01  
+ 16  -1.2500e-01  -1.2500e-01  3.23e-09  1.37e-08  5.17e-09  8.62e-10  1.05e-08  1.83e-04  
+ 17  -1.2500e-01  -1.2500e-01  1.08e-09  4.67e-09  1.71e-09  2.77e-10  3.43e-09  8.03e-01  
+ 18  -1.2500e-01  -1.2500e-01  1.97e-10  2.81e-09  3.09e-10  4.86e-11  6.12e-10  9.12e-01  
+ 19  -1.2500e-01  -1.2500e-01  1.97e-10  2.81e-09  3.09e-10  4.86e-11  6.12e-10  0.00e+00  
+---------------------------------------------------------------------------------------------
+Terminated with status = AlmostSolved
+solve time = 2.069125ms
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(PEPit) Solver status: optimal_inaccurate (wrapper:cvxpy, solver: CLARABEL); optimal value: 0.12499999996050544
+[96m(PEPit) Postprocessing: solver's output is not entirely feasible (smallest eigenvalue of the Gram matrix is: -1.28e-09 < 0).
+ Small deviation from 0 may simply be due to numerical error. Big ones should be deeply investigated.
+ In any case, from now the provided values of parameters are based on the projection of the Gram matrix onto the cone of symmetric semi-definite matrix.[0m
+(PEPit) Primal feasibility check:
+		The solver found a Gram matrix that is positive semi-definite up to an error of 1.2803609790067328e-09
+		All the primal scalar constraints are verified up to an error of 2.5216192883759092e-09
+(PEPit) Dual feasibility check:
+		The solver found a residual matrix that is positive semi-definite
+		All the dual scalar values associated with inequality constraints are nonnegative
+(PEPit) The worst-case guarantee proof is perfectly reconstituted up to an error of 6.7502212183306155e-09
+(PEPit) Final upper bound (dual): 0.1250000001575175 and lower bound (primal example): 0.12499999996050544 
+(PEPit) Duality gap: absolute: 1.970120594441127e-10 and relative: 1.5760964760508795e-09
+{"output": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B05/capture.json", "mode": "live_solver_capture", "source_rows": 20, "lean_checked": false, "candidate_acceptance_not_claimed": true}

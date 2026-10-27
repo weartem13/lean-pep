@@ -1,0 +1,22 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantTailQ (N k : ℕ) : ℚ
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ_castSucc (N : ℕ) (k : Fin N) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ N k.castSucc =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantTailQ N ↑k -
+      LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantTailQ N (↑k + 1)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ_last (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ N (Fin.last N) =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantTailQ N N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantTailQ_zero_eq_bound (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantTailQ N 0 = LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantSumQ_eq_fin_sum (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantSumQ N =
+    ∑ k, LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ N k
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributions_sum (N : ℕ) :
+  ∑ k, LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ N k =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ_all (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificate_constCoeff (N : ℕ) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).constCoeff =
+    (LeanPEP.Toy.FiniteGD.upperTargetPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+        (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N)).constCoeff

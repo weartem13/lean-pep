@@ -1,0 +1,65 @@
+LeanPEP.ActualFunction.HuberWitness.scaledThreshold (N : ℕ) (R : ℝ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessFunction (N : ℕ) (L : ℝ≥0) (R x : ℝ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessGradient (N : ℕ) (L : ℝ≥0) (R x : ℝ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessPoint (N : ℕ) (R : ℝ) (k : ℕ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.huberGradient_scale {R a x : ℝ} (hR : 0 ≤ R) :
+  huberGradient (R * a) (R * x) = R * huberGradient a x
+LeanPEP.ActualFunction.HuberWitness.huberFunction_scale {R a x : ℝ} (hR : 0 ≤ R) :
+  huberFunction (R * a) (R * x) = R ^ 2 * huberFunction a x
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessFunction_scale_point (N : ℕ) (L : ℝ≥0) {R x : ℝ} (hR : 0 ≤ R) :
+  scaledWitnessFunction N L R (R * x) = ↑L * R ^ 2 * witnessFunction N x
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessGradient_scale_point (N : ℕ) (L : ℝ≥0) {R x : ℝ} (hR : 0 ≤ R) :
+  scaledWitnessGradient N L R (R * x) = ↑L * R * witnessGradient N x
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessFunction_hasDerivAt (N : ℕ) (L : ℝ≥0) (R x : ℝ) :
+  HasDerivAt (scaledWitnessFunction N L R) (scaledWitnessGradient N L R x) x
+LeanPEP.ActualFunction.HuberWitness.deriv_scaledWitnessFunction (N : ℕ) (L : ℝ≥0) (R x : ℝ) :
+  deriv (scaledWitnessFunction N L R) x = scaledWitnessGradient N L R x
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessFunction_differentiable (N : ℕ) (L : ℝ≥0) (R : ℝ) :
+  Differentiable ℝ (scaledWitnessFunction N L R)
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessGradient_monotone (N : ℕ) (L : ℝ≥0) (R : ℝ) :
+  Monotone (scaledWitnessGradient N L R)
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessFunction_convexOn (N : ℕ) (L : ℝ≥0) (R : ℝ) :
+  ConvexOn ℝ Set.univ (scaledWitnessFunction N L R)
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessGradient_lipschitz (N : ℕ) (L : ℝ≥0) (R : ℝ) :
+  LipschitzWith L (scaledWitnessGradient N L R)
+LeanPEP.ActualFunction.HuberWitness.scaledWitness_analytic (N : ℕ) (L : ℝ≥0) (R : ℝ) :
+  IsSmoothConvexAnalytic L (scaledWitnessFunction N L R) (scaledWitnessGradient N L R)
+LeanPEP.ActualFunction.HuberWitness.scaledWitnessPoint_smoothGD_step (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (k : ℕ) (hk : k ≤ N) :
+  scaledWitnessPoint N R (k + 1) =
+    scaledWitnessPoint N R k - (↑L)⁻¹ • scaledWitnessGradient N L R (scaledWitnessPoint N R k)
+LeanPEP.ActualFunction.HuberWitness.smoothGDIterate_eq_scaledWitnessPoint (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (k : ℕ) : k ≤ N + 1 → smoothGDIterate L (scaledWitnessGradient N L R) R k = scaledWitnessPoint N R k
+LeanPEP.ActualFunction.HuberWitness.smoothGDIterate_final (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  smoothGDIterate L (scaledWitnessGradient N L R) R N = scaledWitnessPoint N R N
+LeanPEP.ActualFunction.HuberWitness.generalBound (N : ℕ) (L : ℝ≥0) (R : ℝ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.generalBound_eq_closed (N : ℕ) (L : ℝ≥0) (R : ℝ) :
+  generalBound N L R = ↑L * R ^ 2 / ↑(4 * N + 2)
+LeanPEP.ActualFunction.HuberWitness.scaledWitness_smoothGD_attains_bound (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 ≤ R) :
+  scaledWitnessFunction N L R (smoothGDIterate L (scaledWitnessGradient N L R) R N) - scaledWitnessFunction N L R 0 =
+    generalBound N L R
+LeanPEP.ActualFunction.HuberWitness.scaledWitness_smoothGD_attains_closed_form (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 ≤ R) :
+  scaledWitnessFunction N L R (smoothGDIterate L (scaledWitnessGradient N L R) R N) - scaledWitnessFunction N L R 0 =
+    ↑L * R ^ 2 / ↑(4 * N + 2)
+LeanPEP.ActualFunction.HuberWitness.general_analytic_lower_witness (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 ≤ R) :
+  IsSmoothConvexAnalytic L (scaledWitnessFunction N L R) (scaledWitnessGradient N L R) ∧
+    scaledWitnessGradient N L R 0 = 0 ∧
+      (∀ (x : ℝ), scaledWitnessFunction N L R 0 ≤ scaledWitnessFunction N L R x) ∧
+        ‖R - 0‖ ^ 2 ≤ R ^ 2 ∧
+          scaledWitnessFunction N L R (smoothGDIterate L (scaledWitnessGradient N L R) R N) -
+              scaledWitnessFunction N L R 0 =
+            generalBound N L R
+LeanPEP.ActualFunction.HuberWitness.oneDimensionalAnalyticGDValues (N : ℕ) (L : ℝ≥0) (R : ℝ) : Set ℝ
+LeanPEP.ActualFunction.HuberWitness.generalBound_mem_oneDimensionalAnalyticGDValues (N : ℕ) {L : ℝ≥0} {R : ℝ}
+  (hL : 0 < ↑L) (hR : 0 ≤ R) : generalBound N L R ∈ oneDimensionalAnalyticGDValues N L R
+LeanPEP.ActualFunction.HuberWitness.oneDimensional_analytic_tight (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  IsGreatest (oneDimensionalAnalyticGDValues N L R) (generalBound N L R)
+LeanPEP.ActualFunction.HuberWitness.analytic_upper_and_oneDimensional_tight.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] (N : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  (∀ {f : E → ℝ} {g : E → E} {xStar x0 : E},
+      IsSmoothConvexAnalytic L f g →
+        g xStar = 0 → ‖x0 - xStar‖ ^ 2 ≤ R ^ 2 → f (smoothGDIterate L g x0 N) - f xStar ≤ generalBound N L R) ∧
+    IsGreatest (oneDimensionalAnalyticGDValues N L R) (generalBound N L R)

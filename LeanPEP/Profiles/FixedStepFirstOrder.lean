@@ -1,0 +1,342 @@
+import LeanPEP.Toy.FiniteGD.UpperCertificateChecker
+import Mathlib.Tactic
+
+/-!
+# Exact fixed-step first-order algorithm profiles
+
+This module introduces the first reusable algorithm-profile/compiler layer of
+Lean-PEP.  A normalized fixed-step first-order method is represented by exact
+rational coefficients `h i j` with the semantics
+
+```text
+x_i = x_0 - sum_j h[i,j] g_j.
+```
+
+Causality is part of the profile: the coefficient of `g_j` in `x_i` must vanish
+whenever `i <= j`.  Thus an iterate can only depend on gradients sampled at
+strictly earlier indices.
+
+The compiler maps a profile to the existing exact `GradAffineQ` and
+`QuadPolyQ` syntax.  It also provides a profile-aware upper-certificate checker
+and proves its real scalar soundness.  The checker still delegates exact
+coefficient equality to the existing trusted `checkPolyEqQ`; this module does
+not introduce floating-point computation or a second polynomial language.
+
+The normalization `x_star = 0` and `x_0 = 1` is intentionally retained in this
+first slice so that the arbitrary-length GD development can be migrated by an
+exact equivalence theorem.  General normalization and Gram-basis compilation
+are subsequent profile layers.
+-/
+
+namespace LeanPEP
+namespace Profiles
+namespace FixedStepFirstOrder
+
+open LeanPEP.Toy.FiniteGD
+
+/-- Exact rational coefficients of a normalized fixed-step first-order method.
+
+`stepCoeff i j` is the coefficient of sampled gradient `g_j` in the cumulative
+update from `x_0` to `x_i`; the compiled position is
+`x_i = x_0 - sum_j stepCoeff i j * g_j`.
+-/
+structure ProfileQ (N : ℕ) where
+  stepCoeff : Fin (N + 1) → Fin (N + 1) → ℚ
+  causal : ∀ i j : Fin (N + 1),
+    i.val ≤ j.val → stepCoeff i j = 0
+
+/-- The symbolic gradient combination subtracted from the initial point at
+iterate `i`. -/
+def gradientCombinationAffineQ
+    {N : ℕ} (profile : ProfileQ N) (i : Fin (N + 1)) :
+    GradAffineQ N :=
+  { constCoeff := 0
+    gradCoeff := profile.stepCoeff i }
+
+/-- Compile one normalized iterate position into the existing exact affine
+syntax. -/
+def iterateAffineQ
+    {N : ℕ} (profile : ProfileQ N) (i : Fin (N + 1)) :
+    GradAffineQ N :=
+  GradAffineQ.sub
+    (GradAffineQ.const N 1)
+    (gradientCombinationAffineQ profile i)
+
+/-- Compile the optimum together with all generated iterates. -/
+def pointAffineQ
+    {N : ℕ} (profile : ProfileQ N) : Point N → GradAffineQ N
+  | Point.star => GradAffineQ.zero N
+  | Point.iter i => iterateAffineQ profile i
+
+@[simp] theorem gradientCombinationAffineQ_constCoeff
+    {N : ℕ} (profile : ProfileQ N) (i : Fin (N + 1)) :
+    (gradientCombinationAffineQ profile i).constCoeff = 0 := rfl
+
+@[simp] theorem gradientCombinationAffineQ_gradCoeff
+    {N : ℕ} (profile : ProfileQ N)
+    (i j : Fin (N + 1)) :
+    (gradientCombinationAffineQ profile i).gradCoeff j =
+      profile.stepCoeff i j := rfl
+
+@[simp] theorem iterateAffineQ_constCoeff
+    {N : ℕ} (profile : ProfileQ N) (i : Fin (N + 1)) :
+    (iterateAffineQ profile i).constCoeff = 1 := by
+  simp [iterateAffineQ, gradientCombinationAffineQ,
+    GradAffineQ.sub, GradAffineQ.add, GradAffineQ.neg,
+    GradAffineQ.const]
+
+@[simp] theorem iterateAffineQ_gradCoeff
+    {N : ℕ} (profile : ProfileQ N)
+    (i j : Fin (N + 1)) :
+    (iterateAffineQ profile i).gradCoeff j =
+      -profile.stepCoeff i j := by
+  simp [iterateAffineQ, gradientCombinationAffineQ,
+    GradAffineQ.sub, GradAffineQ.add, GradAffineQ.neg,
+    GradAffineQ.const]
+
+/-- Compiled causality: an iterate position contains no current or future
+sampled gradient. -/
+theorem iterateAffineQ_gradCoeff_of_le
+    {N : ℕ} (profile : ProfileQ N)
+    (i j : Fin (N + 1)) (hij : i.val ≤ j.val) :
+    (iterateAffineQ profile i).gradCoeff j = 0 := by
+  rw [iterateAffineQ_gradCoeff, profile.causal i j hij]
+  simp
+
+@[simp] theorem pointAffineQ_star
+    {N : ℕ} (profile : ProfileQ N) :
+    pointAffineQ profile (Point.star : Point N) =
+      GradAffineQ.zero N := rfl
+
+@[simp] theorem pointAffineQ_iter
+    {N : ℕ} (profile : ProfileQ N) (i : Fin (N + 1)) :
+    pointAffineQ profile (Point.iter i) = iterateAffineQ profile i := rfl
+
+/-- Compile one ordered normalized smooth-convex interpolation inequality for
+this algorithm profile. -/
+def interpolationPolyQ
+    {N : ℕ} (profile : ProfileQ N) (i j : Point N) : QuadPolyQ N :=
+  QuadPolyQ.sub
+    (QuadPolyQ.sub
+      (QuadPolyQ.sub
+        (pointValuePolyQ i)
+        (pointValuePolyQ j))
+      (QuadPolyQ.mulAffine
+        (gradAffineQ j)
+        (GradAffineQ.sub
+          (pointAffineQ profile i)
+          (pointAffineQ profile j))))
+    (QuadPolyQ.scale ((1 : ℚ) / 2)
+      (QuadPolyQ.square
+        (GradAffineQ.sub (gradAffineQ i) (gradAffineQ j))))
+
+/-- Real scalar position obtained by evaluating the compiled exact affine
+position on sampled gradient data. -/
+noncomputable def pointPositionR
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N)
+    (i : Point N) : ℝ :=
+  (pointAffineQ profile i).evalR d
+
+/-- Real scalar interpolation slack generated by a profile. -/
+noncomputable def interpolationSlackR
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N)
+    (i j : Point N) : ℝ :=
+  valueAt d i - valueAt d j
+    - gradAt d j * (pointPositionR profile d i - pointPositionR profile d j)
+    - ((1 : ℝ) / 2) * (gradAt d i - gradAt d j)^2
+
+/-- Proposition-level feasibility for the interpolation system compiled from a
+fixed-step profile. -/
+def FeasibleR
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N) : Prop :=
+  ∀ i j : Point N, 0 ≤ interpolationSlackR profile d i j
+
+/-- The compiled polynomial has exactly the profile-generated scalar
+interpolation semantics. -/
+@[simp] theorem evalR_interpolationPolyQ
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N)
+    (i j : Point N) :
+    (interpolationPolyQ profile i j).evalR d =
+      interpolationSlackR profile d i j := by
+  simp [interpolationPolyQ, interpolationSlackR, pointPositionR]
+
+/-- Symbolic weighted sum of the profile-generated interpolation constraints. -/
+def interpPolySumQ
+    {N : ℕ} (profile : ProfileQ N) :
+    List (InterpTermQ N) → QuadPolyQ N
+  | [] => QuadPolyQ.zero N
+  | t :: ts =>
+      QuadPolyQ.add
+        (QuadPolyQ.scale t.weight
+          (interpolationPolyQ profile t.i t.j))
+        (interpPolySumQ profile ts)
+
+/-- Complete profile-aware certificate right-hand side.  Square terms remain in
+the shared `GradAffineQ` syntax and are reused unchanged. -/
+def certificateRhsPolyQ
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N) : QuadPolyQ N :=
+  QuadPolyQ.add
+    (interpPolySumQ profile c.interpTerms)
+    (squarePolySumQ c.squareTerms)
+
+/-- Proposition-level validity of an upper certificate for a compiled profile. -/
+structure UpperCertValidQ
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N) : Prop where
+  interpWeights : ∀ t ∈ c.interpTerms, 0 ≤ t.weight
+  squareWeights : ∀ t ∈ c.squareTerms, 0 ≤ t.weight
+  identity :
+    certificateRhsPolyQ profile c =
+      upperTargetPolyQ c.bound c.objective
+
+/-- Executable profile-aware exact certificate checker. -/
+def checkUpperCertQ
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N) : Bool :=
+  c.interpTerms.all (fun t => decide (0 ≤ t.weight)) &&
+    (c.squareTerms.all (fun t => decide (0 ≤ t.weight)) &&
+      LeanPEP.Toy.FiniteGD.checkPolyEqQ
+        (certificateRhsPolyQ profile c)
+        (upperTargetPolyQ c.bound c.objective))
+
+/-- Boolean acceptance implies the proposition-level profile certificate. -/
+theorem checkUpperCertQ_sound
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N)
+    (h : checkUpperCertQ profile c = true) :
+    UpperCertValidQ profile c := by
+  have hparts :
+      (∀ t ∈ c.interpTerms, 0 ≤ t.weight) ∧
+      (∀ t ∈ c.squareTerms, 0 ≤ t.weight) ∧
+      LeanPEP.Toy.FiniteGD.checkPolyEqQ
+        (certificateRhsPolyQ profile c)
+        (upperTargetPolyQ c.bound c.objective) = true := by
+    simpa [checkUpperCertQ, List.all_eq_true] using h
+  exact
+    { interpWeights := hparts.1
+      squareWeights := hparts.2.1
+      identity := LeanPEP.Toy.FiniteGD.checkPolyEqQ_sound _ _ hparts.2.2 }
+
+/-- Every propositionally valid profile certificate is accepted. -/
+theorem checkUpperCertQ_complete
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N)
+    (h : UpperCertValidQ profile c) :
+    checkUpperCertQ profile c = true := by
+  have hinterp :
+      c.interpTerms.all (fun t => decide (0 ≤ t.weight)) = true := by
+    apply List.all_eq_true.mpr
+    intro t ht
+    exact decide_eq_true (h.interpWeights t ht)
+  have hsquare :
+      c.squareTerms.all (fun t => decide (0 ≤ t.weight)) = true := by
+    apply List.all_eq_true.mpr
+    intro t ht
+    exact decide_eq_true (h.squareWeights t ht)
+  have hidentity :
+      LeanPEP.Toy.FiniteGD.checkPolyEqQ
+        (certificateRhsPolyQ profile c)
+        (upperTargetPolyQ c.bound c.objective) = true :=
+    LeanPEP.Toy.FiniteGD.checkPolyEqQ_complete _ _ h.identity
+  simp [checkUpperCertQ, hinterp, hsquare, hidentity]
+
+/-- The executable profile checker exactly decides profile-certificate
+validity. -/
+theorem checkUpperCertQ_eq_true_iff
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N) :
+    checkUpperCertQ profile c = true ↔ UpperCertValidQ profile c := by
+  constructor
+  · exact checkUpperCertQ_sound profile c
+  · exact checkUpperCertQ_complete profile c
+
+/-- Real value of the profile-generated weighted interpolation terms. -/
+noncomputable def interpTermsValueR
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N) :
+    List (InterpTermQ N) → ℝ
+  | [] => 0
+  | t :: ts =>
+      (t.weight : ℝ) * interpolationSlackR profile d t.i t.j +
+        interpTermsValueR profile d ts
+
+@[simp] theorem evalR_interpPolySumQ
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N)
+    (terms : List (InterpTermQ N)) :
+    (interpPolySumQ profile terms).evalR d =
+      interpTermsValueR profile d terms := by
+  induction terms with
+  | nil =>
+      simp [interpPolySumQ, interpTermsValueR]
+  | cons t ts ih =>
+      simp [interpPolySumQ, interpTermsValueR, ih]
+
+@[simp] theorem evalR_certificateRhsPolyQ
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N)
+    (c : UpperCertQ N) :
+    (certificateRhsPolyQ profile c).evalR d =
+      interpTermsValueR profile d c.interpTerms +
+        squareTermsValueR d c.squareTerms := by
+  simp [certificateRhsPolyQ]
+
+/-- Nonnegative interpolation weights preserve feasibility of a compiled
+profile. -/
+theorem interpTermsValueR_nonneg
+    {N : ℕ} (profile : ProfileQ N) (d : DataR N)
+    (hd : FeasibleR profile d)
+    (terms : List (InterpTermQ N))
+    (hweights : ∀ t ∈ terms, 0 ≤ t.weight) :
+    0 ≤ interpTermsValueR profile d terms := by
+  revert hweights
+  induction terms with
+  | nil =>
+      intro hweights
+      simp [interpTermsValueR]
+  | cons t ts ih =>
+      intro hweights
+      have hweightQ : 0 ≤ t.weight := hweights t (by simp)
+      have hweightR : 0 ≤ (t.weight : ℝ) :=
+        Rat.cast_nonneg.mpr hweightQ
+      have hslack : 0 ≤ interpolationSlackR profile d t.i t.j :=
+        hd t.i t.j
+      have htailWeights : ∀ u ∈ ts, 0 ≤ u.weight := by
+        intro u hu
+        exact hweights u (by simp [hu])
+      have htail : 0 ≤ interpTermsValueR profile d ts :=
+        ih htailWeights
+      simp only [interpTermsValueR]
+      exact add_nonneg (mul_nonneg hweightR hslack) htail
+
+/-- A propositionally valid profile certificate proves its claimed real scalar
+upper bound. -/
+theorem upperCertValidQ_sound_real
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N)
+    (hc : UpperCertValidQ profile c)
+    (d : DataR N) (hd : FeasibleR profile d) :
+    d.value c.objective ≤ (c.bound : ℝ) := by
+  have hinterp :
+      0 ≤ interpTermsValueR profile d c.interpTerms :=
+    interpTermsValueR_nonneg profile d hd c.interpTerms hc.interpWeights
+  have hsquares : 0 ≤ squareTermsValueR d c.squareTerms :=
+    LeanPEP.Toy.FiniteGD.squareTermsValueR_nonneg
+      d c.squareTerms hc.squareWeights
+  have htotal :
+      0 ≤ interpTermsValueR profile d c.interpTerms +
+        squareTermsValueR d c.squareTerms :=
+    add_nonneg hinterp hsquares
+  have hidentity :
+      (c.bound : ℝ) - d.value c.objective =
+        interpTermsValueR profile d c.interpTerms +
+          squareTermsValueR d c.squareTerms := by
+    have heval := congrArg
+      (fun p : QuadPolyQ N => p.evalR d) hc.identity
+    simpa using heval.symm
+  nlinarith
+
+/-- An accepted executable profile certificate proves its claimed real scalar
+upper bound. -/
+theorem checkUpperCertQ_sound_real
+    {N : ℕ} (profile : ProfileQ N) (c : UpperCertQ N)
+    (h : checkUpperCertQ profile c = true)
+    (d : DataR N) (hd : FeasibleR profile d) :
+    d.value c.objective ≤ (c.bound : ℝ) :=
+  upperCertValidQ_sound_real profile c
+    (checkUpperCertQ_sound profile c h) d hd
+
+end FixedStepFirstOrder
+end Profiles
+end LeanPEP

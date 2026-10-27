@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "source": "v0.6 rejected two-step bundle with wrong upper bound",
+  "steps": 2,
+  "declared_point_count": 4,
+  "declared_constraint_count": 16,
+  "expect": "rejected",
+  "primal": {
+    "grad": [
+      { "num": 1, "den": 5 },
+      { "num": 1, "den": 5 },
+      { "num": 1, "den": 5 }
+    ],
+    "value": [
+      { "num": 9, "den": 50 },
+      { "num": 7, "den": 50 },
+      { "num": 1, "den": 10 }
+    ]
+  },
+  "upper": {
+    "bound": { "num": 1, "den": 9 },
+    "objective": 2,
+    "interp_terms": [
+      {
+        "weight": { "num": 1, "den": 4 },
+        "i": { "kind": "star" },
+        "j": { "kind": "iter", "index": 0 }
+      },
+      {
+        "weight": { "num": 1, "den": 4 },
+        "i": { "kind": "iter", "index": 0 },
+        "j": { "kind": "iter", "index": 1 }
+      },
+      {
+        "weight": { "num": 1, "den": 4 },
+        "i": { "kind": "iter", "index": 1 },
+        "j": { "kind": "iter", "index": 2 }
+      },
+      {
+        "weight": { "num": 5, "den": 12 },
+        "i": { "kind": "star" },
+        "j": { "kind": "iter", "index": 1 }
+      },
+      {
+        "weight": { "num": 5, "den": 12 },
+        "i": { "kind": "iter", "index": 1 },
+        "j": { "kind": "iter", "index": 2 }
+      },
+      {
+        "weight": { "num": 1, "den": 3 },
+        "i": { "kind": "star" },
+        "j": { "kind": "iter", "index": 2 }
+      }
+    ],
+    "square_terms": [
+      {
+        "weight": { "num": 2, "den": 3 },
+        "form": {
+          "const": { "num": -5, "den": 16 },
+          "grad": [
+            { "num": 5, "den": 16 },
+            { "num": 1, "den": 1 },
+            { "num": 1, "den": 4 }
+          ]
+        }
+      },
+      {
+        "weight": { "num": 11, "den": 24 },
+        "form": {
+          "const": { "num": -1, "den": 4 },
+          "grad": [
+            { "num": 1, "den": 4 },
+            { "num": 0, "den": 1 },
+            { "num": 1, "den": 1 }
+          ]
+        }
+      },
+      {
+        "weight": { "num": 5, "den": 32 },
+        "form": {
+          "const": { "num": -1, "den": 5 },
+          "grad": [
+            { "num": 1, "den": 1 },
+            { "num": 0, "den": 1 },
+            { "num": 0, "den": 1 }
+          ]
+        }
+      }
+    ]
+  }
+}

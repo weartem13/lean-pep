@@ -1,0 +1,89 @@
+LeanPEP.GramPEP.ExactReindexing.checkQ_eq_true_iff {k : ℕ} (p : IndexMapQ k) :
+  checkQ p = true ↔ (∀ (i : Fin k), p.toCanonical (p.toSource i) = i) ∧ ∀ (j : Fin k), p.toSource (p.toCanonical j) = j
+LeanPEP.GramPEP.ExactReindexing.checkQ_identity (k : ℕ) : checkQ (IndexMapQ.identity k) = true
+LeanPEP.GramPEP.ExactReindexing.checkedEquiv {k : ℕ} (p : IndexMapQ k) (hp : checkQ p = true) : Fin k ≃ Fin k
+LeanPEP.GramPEP.ExactReindexing.vec_roundtrip.{u_1} {k : ℕ} {α : Type u_1} (p : IndexMapQ k) (hp : checkQ p = true)
+  (v : Fin k → α) : vec p.symm (vec p v) = v
+LeanPEP.GramPEP.ExactReindexing.matrix_roundtrip.{u_1} {k : ℕ} {α : Type u_1} (p : IndexMapQ k) (hp : checkQ p = true)
+  (A : Fin k → Fin k → α) : matrix p.symm (matrix p A) = A
+LeanPEP.GramPEP.ExactReindexing.expr_roundtrip {p m : ℕ} (pv : IndexMapQ p) (pb : IndexMapQ m) (hv : checkQ pv = true)
+  (hb : checkQ pb = true) (e : LinearExprQ p m) : expr pv.symm pb.symm (expr pv pb e) = e
+LeanPEP.GramPEP.ExactReindexing.sample_roundtrip {p m : ℕ} (pv : IndexMapQ p) (pb : IndexMapQ m) (hv : checkQ pv = true)
+  (hb : checkQ pb = true) (s : Profiles.Composite.SampleQ p m) : sample pv.symm pb.symm (sample pv pb s) = s
+LeanPEP.GramPEP.ExactReindexing.factorGram_reindex {m : ℕ} (pb : IndexMapQ m) (fs : List (RankOneFactorQ m)) :
+  factorGramQ (List.map (factor pb) fs) = matrix pb (factorGramQ fs)
+LeanPEP.GramPEP.ExactReindexing.sum_reindex.{u_1} {k : ℕ} {α : Type u_1} [AddCommMonoid α] (p : IndexMapQ k)
+  (hp : checkQ p = true) (v : Fin k → α) : ∑ i, v (p.toSource i) = ∑ i, v i
+LeanPEP.GramPEP.ExactReindexing.evalR_reindex {p m : ℕ} (pv : IndexMapQ p) (pb : IndexMapQ m) (hv : checkQ pv = true)
+  (hb : checkQ pb = true) (e : LinearExprQ p m) (d : DataR (Fin p) m) : (expr pv pb e).evalR (dataR pv pb d) = e.evalR d
+LeanPEP.Adapters.ProximalGradientOrdering.checkOrderingQ_eq_true_iff {n : ℕ} (o : OrderingQ n) :
+  checkOrderingQ o = true ↔
+    checkQ o.basis = true ∧
+      checkQ o.values = true ∧ checkQ o.smooth = true ∧ checkQ o.nonsmooth = true ∧ checkQ o.rows = true
+LeanPEP.Adapters.ProximalGradientOrdering.reorderSnapshotQ_roundtrip {n : ℕ} (o : OrderingQ n)
+  (ho : checkOrderingQ o = true) (s : SnapshotQ n) : reorderSnapshotQ o.symm (reorderSnapshotQ o s) = s
+LeanPEP.Adapters.ProximalGradientOrdering.constraint_reference {n : ℕ} (o : OrderingQ n) (ho : checkOrderingQ o = true)
+  (s : SnapshotQ n) (j : Fin (rowCount n)) :
+  (reorderSnapshotQ o s).constraints (o.rows.toCanonical j) = expr o.values o.basis (s.constraints j)
+LeanPEP.Adapters.ProximalGradientOrdering.checkSourceQ_eq_true_iff {n : ℕ} (s : SourceQ n) :
+  checkSourceQ s = true ↔
+    checkOrderingQ s.ordering = true ∧ nativeSourceQ s = Adapters.ProximalGradientCoordinates.expectedSourceQ n
+LeanPEP.Adapters.ProximalGradientOrdering.source_roundtrip {n : ℕ} (s : SourceQ n) (hs : checkSourceQ s = true) :
+  reorderSnapshotQ s.ordering.symm (reorderSnapshotQ s.ordering s.snapshot) = s.snapshot
+LeanPEP.Adapters.ProximalGradientOrdering.nativeAssumptionQ_index {n : ℕ} (s : SourceQ n)
+  (t : AssumptionTermQ s.model) : ↑(nativeAssumptionQ s t).index = ↑(s.ordering.rows.toCanonical (sourceRowQ s t))
+LeanPEP.Adapters.ProximalGradientOrdering.nativeUpperQ_bound {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) :
+  (nativeUpperQ s c).bound = c.bound
+LeanPEP.Adapters.ProximalGradientOrdering.nativeUpperQ_assumption_count {n : ℕ} (s : SourceQ n)
+  (c : UpperCertQ s.model) : (nativeUpperQ s c).assumptionTerms.length = c.assumptionTerms.length
+LeanPEP.Adapters.ProximalGradientOrdering.checkBoundQ_eq_true_iff {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) :
+  checkBoundQ s c = true ↔
+    checkSourceQ s = true ∧
+      checkUpperCertQ c = true ∧
+        c.interpTerms = [] ∧
+          c.objective = s.snapshot.objective ∧
+            Adapters.ProximalGradientCoordinates.checkBoundQ (nativeSourceQ s) (nativeUpperQ s c) = true
+LeanPEP.Adapters.ProximalGradientOrdering.checked_certificate {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = c.bound
+LeanPEP.Imported.CompositeOrdering.PGOne.bound_check : checkBoundQ PGOne.sourceQ PGOne.upperQ = true
+LeanPEP.Imported.CompositeOrdering.PGTwo.bound_check : checkBoundQ PGTwo.sourceQ PGTwo.upperQ = true
+LeanPEP.Imported.CompositeOrdering.PGThree.bound_check : checkBoundQ PGThree.sourceQ PGThree.upperQ = true
+LeanPEP.Imported.CompositeOrdering.PGIdentity.bound_check : checkBoundQ PGIdentity.sourceQ PGIdentity.upperQ = true
+LeanPEP.Imported.CompositeOrdering.bad_inverse_native_passes :
+  Adapters.ProximalGradientCoordinates.checkSourceQ (nativeSourceQ badInverseQ) = true
+LeanPEP.Imported.CompositeOrdering.bad_inverse_rejected : checkSourceQ badInverseQ = false
+LeanPEP.Imported.CompositeOrdering.wrong_rows_joint_rejected : checkBoundQ PGOne.sourceQ wrongRowsQ = false
+LeanPEP.Imported.CompositeOrdering.implicit_joint_rejected : checkBoundQ PGOne.sourceQ implicitQ = false
+LeanPEP.Imported.CompositeOrdering.forged_joint_rejected : checkBoundQ forgedSourceQ forgedUpperQ = false
+LeanPEP.ActualFunction.ProximalGradientOrderingAudit.finite_upper {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true)
+  (d : DataR (Fin (Profiles.ProximalGradient.valueCount n)) (Profiles.ProximalGradient.basisCount n))
+  (hpsd : IsGramPosSemidef d.gram) (hcon : AssumptionsFeasibleR (Profiles.ProximalGradient.modelQ n) d) :
+  (Profiles.ProximalGradient.objectiveQ n).evalR d ≤ ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientOrderingAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) (hc : checkBoundQ s c = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientOrderingAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.GramPEP.ExactReindexing.checkQ_eq_true_iff' depends on axioms: [propext, Quot.sound]
+'LeanPEP.GramPEP.ExactReindexing.evalR_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientOrdering.reorderSnapshotQ_roundtrip' depends on axioms: [propext, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientOrdering.constraint_reference' depends on axioms: [propext, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientOrdering.checked_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeOrdering.bad_inverse_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeOrdering.PGThree.bound_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOrderingAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

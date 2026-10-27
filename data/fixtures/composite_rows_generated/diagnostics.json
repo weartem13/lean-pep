@@ -1,0 +1,666 @@
+[
+  {
+    "arbitrary_row_deletion_supported": false,
+    "bound_guards": {
+      "empty_implicit_interpolation": true,
+      "normalized_bound": true,
+      "normalized_source": true,
+      "oriented_source_certificate": true,
+      "positive_scales": true,
+      "source_objective": true
+    },
+    "canonical_json_sha256": "ae7e3b9c56ea22a87cdf7e2e4d18200a895c3b4d908cb5d57eafb2b14df27a97",
+    "diagnostic_passed": true,
+    "equality_rows_supported": false,
+    "format": "leanpep-scaled-pg-diagnostic-v1",
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+    "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+    "normalized_diagnostic": {
+      "arbitrary_pepit_leaf_elimination_supported": false,
+      "bound_guards": {
+        "canonical_bound": true,
+        "canonical_source": true,
+        "empty_implicit_interpolation": true,
+        "permutations": true,
+        "source_certificate": true,
+        "source_objective": true
+      },
+      "canonical_diagnostic": {
+        "arbitrary_pepit_order_supported": false,
+        "bound_guards": {
+          "centered_bound": true,
+          "empty_implicit_interpolation": true,
+          "native_certificate": true,
+          "native_objective": true,
+          "source": true
+        },
+        "canonical_json_sha256": "4d1fe549f7cfbc8cd039e14119ed09e463537d658d0051d735e6495bbeb3cf8a",
+        "centered_certificate": {
+          "certificate": true,
+          "empty_implicit_interpolation": true,
+          "objective_matches_source": true,
+          "source": true
+        },
+        "centered_source_mismatches": [],
+        "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+        "diagnostic_passed": true,
+        "dimensions": {
+          "centered": 5,
+          "native": 6,
+          "values": 5
+        },
+        "format": "leanpep-uncentered-pg-diagnostic-v1",
+        "horizon": 1,
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "native_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "origin": {
+          "description": "D5 1-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+          "mode": "deterministic_regression_fixture"
+        },
+        "primal_transport_checked": false,
+        "provenance_authenticated": false,
+        "source_guards": {
+          "center_matrix": true,
+          "centered_source": true,
+          "constraints_roundtrip": true,
+          "header": true,
+          "nonsmooth_roundtrip": true,
+          "objective_roundtrip": true,
+          "section_matrix": true,
+          "smooth_roundtrip": true
+        },
+        "source_mismatches": []
+      },
+      "canonical_input_error": null,
+      "canonical_json_sha256": "f474720eaef1d50415133572d2272226df96636d4d5ae91cccf2714597375210",
+      "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "basis": 6,
+        "nonsmooth": 2,
+        "rows": 14,
+        "smooth": 3,
+        "values": 5
+      },
+      "format": "leanpep-permuted-pg-diagnostic-v1",
+      "horizon": 1,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D5 1-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+        "mode": "deterministic_regression_fixture"
+      },
+      "permutation_guards": {
+        "basis": true,
+        "nonsmooth": true,
+        "rows": true,
+        "smooth": true,
+        "values": true
+      },
+      "primal_import_supported": false,
+      "provenance_authenticated": false,
+      "roundtrip_payload_and_certificate": true,
+      "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+      "source_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      }
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "oriented_source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "origin": {
+      "description": "D5 1-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+      "mode": "deterministic_regression_fixture"
+    },
+    "positive_scale_guards": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "raw_solver_signed_multipliers_supported": false,
+    "row_roundtrip": true,
+    "weighted_assumption_sum_preserved": true
+  },
+  {
+    "arbitrary_row_deletion_supported": false,
+    "bound_guards": {
+      "empty_implicit_interpolation": true,
+      "normalized_bound": true,
+      "normalized_source": true,
+      "oriented_source_certificate": true,
+      "positive_scales": true,
+      "source_objective": true
+    },
+    "canonical_json_sha256": "ef31637ddbd6ea86bc9590466baa4bdbe266cc7bd349fadcf050ad8a56e864d4",
+    "diagnostic_passed": true,
+    "equality_rows_supported": false,
+    "format": "leanpep-scaled-pg-diagnostic-v1",
+    "horizon": 2,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+    "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+    "normalized_diagnostic": {
+      "arbitrary_pepit_leaf_elimination_supported": false,
+      "bound_guards": {
+        "canonical_bound": true,
+        "canonical_source": true,
+        "empty_implicit_interpolation": true,
+        "permutations": true,
+        "source_certificate": true,
+        "source_objective": true
+      },
+      "canonical_diagnostic": {
+        "arbitrary_pepit_order_supported": false,
+        "bound_guards": {
+          "centered_bound": true,
+          "empty_implicit_interpolation": true,
+          "native_certificate": true,
+          "native_objective": true,
+          "source": true
+        },
+        "canonical_json_sha256": "8e52dcfa5ba8b827557e78afe8262e2c3c5478f02e579f494755d345115cf037",
+        "centered_certificate": {
+          "certificate": true,
+          "empty_implicit_interpolation": true,
+          "objective_matches_source": true,
+          "source": true
+        },
+        "centered_source_mismatches": [],
+        "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+        "diagnostic_passed": true,
+        "dimensions": {
+          "centered": 7,
+          "native": 8,
+          "values": 7
+        },
+        "format": "leanpep-uncentered-pg-diagnostic-v1",
+        "horizon": 2,
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "native_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "origin": {
+          "description": "D5 2-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+          "mode": "deterministic_regression_fixture"
+        },
+        "primal_transport_checked": false,
+        "provenance_authenticated": false,
+        "source_guards": {
+          "center_matrix": true,
+          "centered_source": true,
+          "constraints_roundtrip": true,
+          "header": true,
+          "nonsmooth_roundtrip": true,
+          "objective_roundtrip": true,
+          "section_matrix": true,
+          "smooth_roundtrip": true
+        },
+        "source_mismatches": []
+      },
+      "canonical_input_error": null,
+      "canonical_json_sha256": "ef9ca2867342c5d047d84e38e66066b78e501f53fa8c83f3600301b2aedb5185",
+      "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "basis": 8,
+        "nonsmooth": 3,
+        "rows": 26,
+        "smooth": 4,
+        "values": 7
+      },
+      "format": "leanpep-permuted-pg-diagnostic-v1",
+      "horizon": 2,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D5 2-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+        "mode": "deterministic_regression_fixture"
+      },
+      "permutation_guards": {
+        "basis": true,
+        "nonsmooth": true,
+        "rows": true,
+        "smooth": true,
+        "values": true
+      },
+      "primal_import_supported": false,
+      "provenance_authenticated": false,
+      "roundtrip_payload_and_certificate": true,
+      "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+      "source_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      }
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "oriented_source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "origin": {
+      "description": "D5 2-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+      "mode": "deterministic_regression_fixture"
+    },
+    "positive_scale_guards": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "raw_solver_signed_multipliers_supported": false,
+    "row_roundtrip": true,
+    "weighted_assumption_sum_preserved": true
+  },
+  {
+    "arbitrary_row_deletion_supported": false,
+    "bound_guards": {
+      "empty_implicit_interpolation": true,
+      "normalized_bound": true,
+      "normalized_source": true,
+      "oriented_source_certificate": true,
+      "positive_scales": true,
+      "source_objective": true
+    },
+    "canonical_json_sha256": "896a053d2f0c047dc17c040dd735c55edd1b409fa232484422cc8a379ebd3fb3",
+    "diagnostic_passed": true,
+    "equality_rows_supported": false,
+    "format": "leanpep-scaled-pg-diagnostic-v1",
+    "horizon": 3,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+    "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+    "normalized_diagnostic": {
+      "arbitrary_pepit_leaf_elimination_supported": false,
+      "bound_guards": {
+        "canonical_bound": true,
+        "canonical_source": true,
+        "empty_implicit_interpolation": true,
+        "permutations": true,
+        "source_certificate": true,
+        "source_objective": true
+      },
+      "canonical_diagnostic": {
+        "arbitrary_pepit_order_supported": false,
+        "bound_guards": {
+          "centered_bound": true,
+          "empty_implicit_interpolation": true,
+          "native_certificate": true,
+          "native_objective": true,
+          "source": true
+        },
+        "canonical_json_sha256": "5e1124e03b5e5e9418a461cac0fa7d812951a6f966751b18780178b3c659e926",
+        "centered_certificate": {
+          "certificate": true,
+          "empty_implicit_interpolation": true,
+          "objective_matches_source": true,
+          "source": true
+        },
+        "centered_source_mismatches": [],
+        "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+        "diagnostic_passed": true,
+        "dimensions": {
+          "centered": 9,
+          "native": 10,
+          "values": 9
+        },
+        "format": "leanpep-uncentered-pg-diagnostic-v1",
+        "horizon": 3,
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "native_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "origin": {
+          "description": "D5 3-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+          "mode": "deterministic_regression_fixture"
+        },
+        "primal_transport_checked": false,
+        "provenance_authenticated": false,
+        "source_guards": {
+          "center_matrix": true,
+          "centered_source": true,
+          "constraints_roundtrip": true,
+          "header": true,
+          "nonsmooth_roundtrip": true,
+          "objective_roundtrip": true,
+          "section_matrix": true,
+          "smooth_roundtrip": true
+        },
+        "source_mismatches": []
+      },
+      "canonical_input_error": null,
+      "canonical_json_sha256": "0adfce07d163e8ae32d26c85c79745a7e6ba15cb6d7a5514f6020756c97bea4d",
+      "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "basis": 10,
+        "nonsmooth": 4,
+        "rows": 42,
+        "smooth": 5,
+        "values": 9
+      },
+      "format": "leanpep-permuted-pg-diagnostic-v1",
+      "horizon": 3,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D5 3-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+        "mode": "deterministic_regression_fixture"
+      },
+      "permutation_guards": {
+        "basis": true,
+        "nonsmooth": true,
+        "rows": true,
+        "smooth": true,
+        "values": true
+      },
+      "primal_import_supported": false,
+      "provenance_authenticated": false,
+      "roundtrip_payload_and_certificate": true,
+      "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+      "source_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      }
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "oriented_source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "origin": {
+      "description": "D5 3-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+      "mode": "deterministic_regression_fixture"
+    },
+    "positive_scale_guards": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "raw_solver_signed_multipliers_supported": false,
+    "row_roundtrip": true,
+    "weighted_assumption_sum_preserved": true
+  },
+  {
+    "arbitrary_row_deletion_supported": false,
+    "bound_guards": {
+      "empty_implicit_interpolation": true,
+      "normalized_bound": true,
+      "normalized_source": true,
+      "oriented_source_certificate": true,
+      "positive_scales": true,
+      "source_objective": true
+    },
+    "canonical_json_sha256": "500d84bc10e90f3fbb040346b023a09352018ac11ec4ac49563c816ed10dd8e9",
+    "diagnostic_passed": true,
+    "equality_rows_supported": false,
+    "format": "leanpep-scaled-pg-diagnostic-v1",
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "multiplier_convention": "nonnegative_on_oriented_rows_v1",
+    "multiplier_transport": "source_lambda_times_source_row_positive_scale_then_D4_row_inverse",
+    "normalized_diagnostic": {
+      "arbitrary_pepit_leaf_elimination_supported": false,
+      "bound_guards": {
+        "canonical_bound": true,
+        "canonical_source": true,
+        "empty_implicit_interpolation": true,
+        "permutations": true,
+        "source_certificate": true,
+        "source_objective": true
+      },
+      "canonical_diagnostic": {
+        "arbitrary_pepit_order_supported": false,
+        "bound_guards": {
+          "centered_bound": true,
+          "empty_implicit_interpolation": true,
+          "native_certificate": true,
+          "native_objective": true,
+          "source": true
+        },
+        "canonical_json_sha256": "4d1fe549f7cfbc8cd039e14119ed09e463537d658d0051d735e6495bbeb3cf8a",
+        "centered_certificate": {
+          "certificate": true,
+          "empty_implicit_interpolation": true,
+          "objective_matches_source": true,
+          "source": true
+        },
+        "centered_source_mismatches": [],
+        "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+        "diagnostic_passed": true,
+        "dimensions": {
+          "centered": 5,
+          "native": 6,
+          "values": 5
+        },
+        "format": "leanpep-uncentered-pg-diagnostic-v1",
+        "horizon": 1,
+        "lean_checked": false,
+        "live_capture_performed": false,
+        "native_certificate": {
+          "accepted": true,
+          "factor": true,
+          "identity": true,
+          "symmetric": true,
+          "weights": true
+        },
+        "numeric_interpretation": "exact_num_den_no_reconstruction",
+        "origin": {
+          "description": "D5 1-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+          "mode": "deterministic_regression_fixture"
+        },
+        "primal_transport_checked": false,
+        "provenance_authenticated": false,
+        "source_guards": {
+          "center_matrix": true,
+          "centered_source": true,
+          "constraints_roundtrip": true,
+          "header": true,
+          "nonsmooth_roundtrip": true,
+          "objective_roundtrip": true,
+          "section_matrix": true,
+          "smooth_roundtrip": true
+        },
+        "source_mismatches": []
+      },
+      "canonical_input_error": null,
+      "canonical_json_sha256": "a61d47bdcf1a844a369d50b0370faed6a1924424ed85323ae640184bed51436a",
+      "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "basis": 6,
+        "nonsmooth": 2,
+        "rows": 14,
+        "smooth": 3,
+        "values": 5
+      },
+      "format": "leanpep-permuted-pg-diagnostic-v1",
+      "horizon": 1,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D5 1-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+        "mode": "deterministic_regression_fixture"
+      },
+      "permutation_guards": {
+        "basis": true,
+        "nonsmooth": true,
+        "rows": true,
+        "smooth": true,
+        "values": true
+      },
+      "primal_import_supported": false,
+      "provenance_authenticated": false,
+      "roundtrip_payload_and_certificate": true,
+      "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+      "source_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      }
+    },
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "oriented_source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    },
+    "origin": {
+      "description": "D5 1-step exact signed row scales on D4 stored data; nonnegative oriented multipliers, no solver",
+      "mode": "deterministic_regression_fixture"
+    },
+    "positive_scale_guards": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "raw_solver_signed_multipliers_supported": false,
+    "row_roundtrip": true,
+    "weighted_assumption_sum_preserved": true
+  }
+]

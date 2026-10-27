@@ -1,0 +1,71 @@
+{
+  "capture_command": {
+    "argv": [
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin/python",
+      "tools/capture_pepit_proximal_gradient.py",
+      "--steps",
+      "2",
+      "--solver",
+      "CLARABEL",
+      "--solver-options",
+      "{\"equilibrate_enable\": true, \"max_iter\": 300, \"static_regularization_constant\": 1e-08, \"tol_feas\": 1e-08, \"tol_gap_abs\": 1e-08, \"tol_gap_rel\": 1e-08}",
+      "--verbose",
+      "2",
+      "--output",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B01/capture.json"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset"
+    },
+    "exit": 0,
+    "log": "RefineEvidence_001/batch/B01/solver.log",
+    "outer_CHILDREN_high_water_bytes": 150536192,
+    "resource_scope": "cumulative CHILDREN high water in batch parent; not per-operation simultaneous peak",
+    "started_at_utc": "2026-10-06T22:15:37.284347+00:00",
+    "timeout_stage": null,
+    "wall_seconds": 1.8891132500139065
+  },
+  "capture_sha256": "17141488ec3453e8b8d81196d973a01a9bae831a1baa88bd6a96e8ea8b2297b7",
+  "configuration": {
+    "equilibrate_enable": true,
+    "max_iter": 300,
+    "static_regularization_constant": 1e-08,
+    "tol_feas": 1e-08,
+    "tol_gap_abs": 1e-08,
+    "tol_gap_rel": 1e-08
+  },
+  "historical_matches": [
+    "A14PGTwoLive_001/capture.json",
+    "A14PGTwoLive_001/completion/capture_input.json",
+    "A14PGTwoLive_001/audit/capture_input.json",
+    "A14PGTwoStructured_001/capture.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_001/capture.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_001/completion/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_001/audit/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoStructured_001/capture.json",
+    "deliverables/LP-V014-doc-candidate-002/examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+    "deliverables/LP-V014-doc-candidate-002/A14PGTwoReplay_001/capture.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_001/capture.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_001/completion/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_001/audit/capture_input.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoStructured_001/capture.json",
+    "deliverables/LP-V014-doc-candidate-001/examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+    "deliverables/LP-V014-doc-candidate-001/A14PGTwoReplay_001/capture.json",
+    "examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+    "A14PGTwoReplay_001/capture.json"
+  ],
+  "id": "B01",
+  "numerical_key": "1013638106cb252d67e304bbd8d02f7fac2f2ca187682fe95ec06f472b5c0cd9",
+  "producer": {
+    "mode": "live_solver_capture",
+    "name": "PEPit",
+    "solver": "CLARABEL",
+    "status": "optimal",
+    "version": "0.5.1",
+    "wrapper": "cvxpy"
+  },
+  "source_matches_reference": true,
+  "unique_recovery_owner": "B01"
+}

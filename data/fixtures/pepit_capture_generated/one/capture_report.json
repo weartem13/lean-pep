@@ -1,0 +1,58 @@
+{
+  "actual_constraint_count": 10,
+  "capture_sha256": "3e5aaba5f3f847d13cbd11fb1278c956c0d94dcf6245b4874863f776e76d6d9f",
+  "dual_matrix_recomputed": false,
+  "format": "leanpep-pg-capture-report-v1",
+  "lean_checked": false,
+  "live_capture_performed_by_importer": false,
+  "negative_weights_filtered": false,
+  "numerical_candidate_present": true,
+  "omitted_template_rows_only_diagonal": true,
+  "original_tau_index": 5,
+  "producer_authenticated": false,
+  "producer_claim": {
+    "mode": "simulated_regression",
+    "name": "PEPit",
+    "solver": "not_run",
+    "status": "not_run",
+    "version": "0.5.1",
+    "wrapper": "not_run"
+  },
+  "raw_accepted": true,
+  "raw_binding_checks": {
+    "bound": true,
+    "interpolation_empty": true,
+    "objective": true,
+    "ordered_weights": true,
+    "residual": true
+  },
+  "reconstructed_accepted": true,
+  "scope": "unit PG; no extra/equality/LMI rows or dependent leaves",
+  "source_coefficients_reconstructed": false,
+  "source_passed": true,
+  "trace_checks": {
+    "objective": true,
+    "permutation": true,
+    "rows": true,
+    "rules": true,
+    "source": true
+  },
+  "value_map": {
+    "to_canonical": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      0
+    ],
+    "to_source": [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

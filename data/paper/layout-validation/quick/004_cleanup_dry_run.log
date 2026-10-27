@@ -1,0 +1,11 @@
+{
+  "mode": "dry-run",
+  "entries": [
+    {
+      "path": ".lake/build",
+      "category": "project_lean_objects"
+    }
+  ],
+  "dependency_cache_touched": false,
+  "retained_data_touched": false
+}

@@ -1,0 +1,178 @@
+LeanPEP.GramPEP.checkUpperCertQ_sound_real_explicit {p m : ℕ} {model : GramPEP.ModelQ p m}
+  (c : GramPEP.UpperCertQ model) (hcheck : GramPEP.checkUpperCertQ c = true) (hempty : c.interpTerms = [])
+  (d : GramPEP.DataR (Fin p) m) (hpsd : GramPEP.IsGramPosSemidef d.gram)
+  (hconstraints : GramPEP.AssumptionsFeasibleR model d) : c.objective.evalR d ≤ ↑c.bound
+LeanPEP.Profiles.Composite.FunctionClassQ : Type
+LeanPEP.Profiles.Composite.SampleQ (p m : ℕ) : Type
+LeanPEP.Profiles.Composite.ComponentQ (p m : ℕ) : Type
+LeanPEP.Profiles.Composite.ProfileQ (p m : ℕ) : Type
+LeanPEP.Profiles.Composite.compileModelQ {p m : ℕ} (profile : Profiles.Composite.ProfileQ p m) : GramPEP.ModelQ p m
+LeanPEP.Profiles.Composite.evalR_interpolationExprQ_convex {p m : ℕ} (a b : Profiles.Composite.SampleQ p m)
+  (d : GramPEP.DataR (Fin p) m) (hG : GramPEP.IsGramSymmetric d.gram) :
+  (Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.convex a b).evalR d =
+    d.value a.valueIndex - d.value b.valueIndex -
+      GramPEP.gramInner d.gram (GramPEP.castVecQ b.oracle) (GramPEP.castVecQ (a.position - b.position))
+LeanPEP.Profiles.Composite.evalR_interpolationExprQ_smooth {p m : ℕ} (a b : Profiles.Composite.SampleQ p m)
+  (d : GramPEP.DataR (Fin p) m) (hG : GramPEP.IsGramSymmetric d.gram) :
+  (Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.oneSmoothConvex a b).evalR d =
+    d.value a.valueIndex - d.value b.valueIndex -
+        GramPEP.gramInner d.gram (GramPEP.castVecQ b.oracle) (GramPEP.castVecQ (a.position - b.position)) -
+      1 / 2 * GramPEP.gramNormSq d.gram (GramPEP.castVecQ (a.oracle - b.oracle))
+LeanPEP.Profiles.Composite.compileModelQ_feasible {p m : ℕ} (profile : Profiles.Composite.ProfileQ p m)
+  (d : GramPEP.DataR (Fin p) m)
+  (hcomponents :
+    ∀ c ∈ profile.components,
+      ∀ a ∈ c.samples, ∀ b ∈ c.samples, 0 ≤ (Profiles.Composite.interpolationExprQ c.functionClass a b).evalR d)
+  (hassumptions : ∀ e ∈ profile.assumptions, 0 ≤ e.evalR d) :
+  GramPEP.AssumptionsFeasibleR (Profiles.Composite.compileModelQ profile) d
+LeanPEP.Profiles.Composite.certificate_upper {p m : ℕ} (profile : Profiles.Composite.ProfileQ p m)
+  (c : GramPEP.UpperCertQ (Profiles.Composite.compileModelQ profile)) (hcheck : GramPEP.checkUpperCertQ c = true)
+  (hempty : c.interpTerms = []) (hobjective : c.objective = profile.objective) (d : GramPEP.DataR (Fin p) m)
+  (hpsd : GramPEP.IsGramPosSemidef d.gram)
+  (hconstraints : GramPEP.AssumptionsFeasibleR (Profiles.Composite.compileModelQ profile) d) :
+  profile.objective.evalR d ≤ ↑c.bound
+LeanPEP.ActualFunction.Proximal.SubgradientAt.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (h : E → ℝ) (s x : E) : Prop
+LeanPEP.ActualFunction.Proximal.IsUnitProxPoint.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (h : E → ℝ) (v x : E) : Prop
+LeanPEP.ActualFunction.Proximal.isUnitProxPoint_iff_norm.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (h : E → ℝ) (v x : E) :
+  Proximal.IsUnitProxPoint h v x ↔ ∀ (y : E), h x + 1 / 2 * ‖x - v‖ ^ 2 ≤ h y + 1 / 2 * ‖y - v‖ ^ 2
+LeanPEP.ActualFunction.Proximal.isUnitProxPoint_iff_subgradient.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {h : E → ℝ} {v x : E} (hh : ConvexOn ℝ Set.univ h) :
+  Proximal.IsUnitProxPoint h v x ↔ Proximal.SubgradientAt h (v - x) x
+LeanPEP.ActualFunction.Proximal.forwardBackwardStep_of_prox.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {h : E → ℝ} {g0 x0 x1 : E} (hh : ConvexOn ℝ Set.univ h)
+  (hp : Proximal.IsUnitProxPoint h (x0 - g0) x1) : Proximal.IsUnitForwardBackwardStep h g0 x0 x1 (x0 - g0 - x1)
+LeanPEP.ActualFunction.Proximal.IsUnitForwardBackwardStep.prox.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {h : E → ℝ} {g0 x0 x1 s1 : E} (hstep : Proximal.IsUnitForwardBackwardStep h g0 x0 x1 s1) :
+  Proximal.IsUnitProxPoint h (x0 - g0) x1
+LeanPEP.ActualFunction.Proximal.composite_globalMin.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {f h : E → ℝ} {g : E → E} {xStar : E} (hf : IsOneSmoothConvexFirstOrder f g)
+  (hs : Proximal.SubgradientAt h (-g xStar) xStar) (y : E) : f xStar + h xStar ≤ f y + h y
+LeanPEP.ActualFunction.Composite.eval_convex.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {p m : ℕ} {base : Fin m → E} {values : Fin p → ℝ} {anchor x y s t : E} {fx fy : ℝ}
+  {a b : Profiles.Composite.SampleQ p m} (ha : Composite.SampleDenotes base values anchor a x s fx)
+  (hb : Composite.SampleDenotes base values anchor b y t fy) :
+  (Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.convex a b).evalR
+      (Composite.dataOfValues base values) =
+    fx - fy - inner ℝ t (x - y)
+LeanPEP.ActualFunction.Composite.eval_smooth.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {p m : ℕ} {base : Fin m → E} {values : Fin p → ℝ} {anchor x y s t : E} {fx fy : ℝ}
+  {a b : Profiles.Composite.SampleQ p m} (ha : Composite.SampleDenotes base values anchor a x s fx)
+  (hb : Composite.SampleDenotes base values anchor b y t fy) :
+  (Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.oneSmoothConvex a b).evalR
+      (Composite.dataOfValues base values) =
+    fx - fy - inner ℝ t (x - y) - 1 / 2 * inner ℝ (s - t) (s - t)
+LeanPEP.ActualFunction.Composite.convex_pair_nonneg.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {p m : ℕ} {base : Fin m → E} {values : Fin p → ℝ} {anchor x y s t : E} {h : E → ℝ}
+  {a b : Profiles.Composite.SampleQ p m} (ha : Composite.SampleDenotes base values anchor a x s (h x))
+  (hb : Composite.SampleDenotes base values anchor b y t (h y)) (ht : Proximal.SubgradientAt h t y) :
+  0 ≤
+    (Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.convex a b).evalR
+      (Composite.dataOfValues base values)
+LeanPEP.ActualFunction.Composite.smooth_pair_nonneg.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {p m : ℕ} {base : Fin m → E} {values : Fin p → ℝ} {anchor x y : E} {f : E → ℝ} {g : E → E}
+  {a b : Profiles.Composite.SampleQ p m} (ha : Composite.SampleDenotes base values anchor a x (g x) (f x))
+  (hb : Composite.SampleDenotes base values anchor b y (g y) (f y)) (hf : IsOneSmoothConvexFirstOrder f g) :
+  0 ≤
+    (Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.oneSmoothConvex a b).evalR
+      (Composite.dataOfValues base values)
+LeanPEP.Profiles.ProximalGradientOneStep.modelQ_constraints :
+  Profiles.ProximalGradientOneStep.modelQ.assumptions =
+    List.flatMap
+          (fun i =>
+            List.map
+              (fun j =>
+                Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.oneSmoothConvex
+                  (Profiles.ProximalGradientOneStep.smoothSamplesQ i)
+                  (Profiles.ProximalGradientOneStep.smoothSamplesQ j))
+              (List.finRange 3))
+          (List.finRange 3) ++
+        List.flatMap
+          (fun i =>
+            List.map
+              (fun j =>
+                Profiles.Composite.interpolationExprQ Profiles.Composite.FunctionClassQ.convex
+                  (Profiles.ProximalGradientOneStep.nonsmoothSamplesQ i)
+                  (Profiles.ProximalGradientOneStep.nonsmoothSamplesQ j))
+              (List.finRange 2))
+          (List.finRange 2) ++
+      [Profiles.ProximalGradientOneStep.radiusExprQ]
+LeanPEP.Profiles.ProximalGradientOneStep.upperCertQ_check :
+  GramPEP.checkUpperCertQ Profiles.ProximalGradientOneStep.upperCertQ = true
+LeanPEP.Profiles.ProximalGradientOneStep.certificate_identity :
+  GramPEP.certificateRhsExprQ Profiles.ProximalGradientOneStep.upperCertQ =
+    GramPEP.upperTargetExprQ (1 / 4) Profiles.ProximalGradientOneStep.objectiveQ
+LeanPEP.Profiles.ProximalGradientOneStep.primalQ_constraints_check :
+  GramPEP.checkAssumptionsFeasibleQ Profiles.ProximalGradientOneStep.modelQ Profiles.ProximalGradientOneStep.primalQ =
+    true
+LeanPEP.Profiles.ProximalGradientOneStep.primalQ_implicit_interpolation_rejected :
+  GramPEP.checkInterpolationFeasibleQ Profiles.ProximalGradientOneStep.primalQ = false
+LeanPEP.Profiles.ProximalGradientOneStep.finite_tight : IsGreatest Profiles.ProximalGradientOneStep.finiteValues (1 / 4)
+LeanPEP.ActualFunction.ProximalGradientOneStep.smoothSamples_denote.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (f h : E → ℝ) (g : E → E) (xStar x0 x1 s1 : E) (hupdate : x1 = x0 - g x0 - s1) (i : Fin 3) :
+  Composite.SampleDenotes (ProximalGradientOneStep.baseVectors g xStar x0 x1 s1)
+    (ProximalGradientOneStep.valueSlots f h xStar x0 x1) xStar (Profiles.ProximalGradientOneStep.smoothSamplesQ i)
+    (ProximalGradientOneStep.smoothPoints xStar x0 x1 i) (g (ProximalGradientOneStep.smoothPoints xStar x0 x1 i))
+    (f (ProximalGradientOneStep.smoothPoints xStar x0 x1 i))
+LeanPEP.ActualFunction.ProximalGradientOneStep.nonsmoothSamples_denote.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (f h : E → ℝ) (g : E → E) (xStar x0 x1 s1 : E) (hupdate : x1 = x0 - g x0 - s1) (i : Fin 2) :
+  Composite.SampleDenotes (ProximalGradientOneStep.baseVectors g xStar x0 x1 s1)
+    (ProximalGradientOneStep.valueSlots f h xStar x0 x1) xStar (Profiles.ProximalGradientOneStep.nonsmoothSamplesQ i)
+    (ProximalGradientOneStep.nonsmoothPoints xStar x1 i) (ProximalGradientOneStep.nonsmoothOracles (g xStar) s1 i)
+    (h (ProximalGradientOneStep.nonsmoothPoints xStar x1 i))
+LeanPEP.ActualFunction.ProximalGradientOneStep.actualData_constraints.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f h : E → ℝ} {g : E → E} {xStar x0 x1 s1 : E} (hf : IsOneSmoothConvexFirstOrder f g)
+  (hs : Proximal.SubgradientAt h (-g xStar) xStar) (hstep : Proximal.IsUnitForwardBackwardStep h (g x0) x0 x1 s1)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  GramPEP.AssumptionsFeasibleR Profiles.ProximalGradientOneStep.modelQ
+    (ProximalGradientOneStep.actualData f h g xStar x0 x1 s1)
+LeanPEP.ActualFunction.ProximalGradientOneStep.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f h : E → ℝ} {g : E → E} {xStar x0 x1 s1 : E} (hf : IsOneSmoothConvexFirstOrder f g)
+  (hs : Proximal.SubgradientAt h (-g xStar) xStar) (hstep : Proximal.IsUnitForwardBackwardStep h (g x0) x0 x1 s1)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) : f x1 + h x1 - (f xStar + h xStar) ≤ 1 / 4
+LeanPEP.ActualFunction.ProximalGradientOneStep.upper_of_prox.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f h : E → ℝ} {g : E → E} {xStar x0 x1 : E} (hf : IsOneSmoothConvexFirstOrder f g)
+  (hh : ConvexOn ℝ Set.univ h) (hs : Proximal.SubgradientAt h (-g xStar) xStar)
+  (hp : Proximal.IsUnitProxPoint h (x0 - g x0) x1) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  f x1 + h x1 - (f xStar + h xStar) ≤ 1 / 4
+LeanPEP.ActualFunction.ProximalGradientOneStep.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f h : E → ℝ} {g : E → E} {xStar x0 x1 : E}
+  (hf : IsOneSmoothConvexAnalytic f g) (hh : ConvexOn ℝ Set.univ h) (hs : Proximal.SubgradientAt h (-g xStar) xStar)
+  (hp : Proximal.IsUnitProxPoint h (x0 - g x0) x1) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  f x1 + h x1 - (f xStar + h xStar) ≤ 1 / 4
+LeanPEP.ActualFunction.ProximalGradientOneStepWitness.actual_prox :
+  Proximal.IsUnitProxPoint ProximalGradientOneStepWitness.nonsmoothFunction
+    (1 - ProximalGradientOneStepWitness.smoothGradient 1) (1 / 2)
+LeanPEP.ActualFunction.ProximalGradientOneStepWitness.attains :
+  ProximalGradientOneStepWitness.smoothFunction (1 / 2) + ProximalGradientOneStepWitness.nonsmoothFunction (1 / 2) -
+      (ProximalGradientOneStepWitness.smoothFunction 0 + ProximalGradientOneStepWitness.nonsmoothFunction 0) =
+    1 / 4
+LeanPEP.ActualFunction.ProximalGradientOneStepWitness.smooth_gradient_at_star_ne_zero :
+  ProximalGradientOneStepWitness.smoothGradient 0 ≠ 0
+LeanPEP.ActualFunction.ProximalGradientOneStepWitness.oneDimensional_analytic_tight :
+  IsGreatest ProximalGradientOneStepWitness.oneDimensionalAnalyticValues (1 / 4)
+LeanPEP.ActualFunction.ProximalGradientOneStepWitness.analytic_upper_and_oneDimensional_tight.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] :
+  (∀ {f h : E → ℝ} {g : E → E} {xStar x0 x1 : E},
+      IsOneSmoothConvexAnalytic f g →
+        ConvexOn ℝ Set.univ h →
+          Proximal.SubgradientAt h (-g xStar) xStar →
+            Proximal.IsUnitProxPoint h (x0 - g x0) x1 →
+              ‖x0 - xStar‖ ^ 2 ≤ 1 → f x1 + h x1 - (f xStar + h xStar) ≤ 1 / 4) ∧
+    IsGreatest ProximalGradientOneStepWitness.oneDimensionalAnalyticValues (1 / 4)
+'LeanPEP.GramPEP.checkUpperCertQ_sound_real_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.Proximal.isUnitProxPoint_iff_subgradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Profiles.ProximalGradientOneStep.upperCertQ_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOneStep.actualData_constraints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOneStep.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientOneStepWitness.oneDimensional_analytic_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

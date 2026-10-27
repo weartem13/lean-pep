@@ -1,0 +1,30 @@
+[
+  {
+    "cwd": "<PUBLIC_SOURCE>",
+    "argv": [
+      "python3",
+      "scripts/verify.py",
+      "full",
+      "--output",
+      "<VALIDATION_LOGS>/full-verified"
+    ],
+    "exit": 0,
+    "wall_seconds": 1396.5998768330028,
+    "log": "full-verified-console.log",
+    "python": "<TEST_ENV>/bin/python3"
+  },
+  {
+    "cwd": "<PUBLIC_SOURCE>",
+    "argv": [
+      "python3",
+      "scripts/verify.py",
+      "tightness",
+      "--output",
+      "<VALIDATION_LOGS>/tightness"
+    ],
+    "exit": 0,
+    "wall_seconds": 40.83082262499374,
+    "log": "tightness-console.log",
+    "python": "<TEST_ENV>/bin/python3"
+  }
+]

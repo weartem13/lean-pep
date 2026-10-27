@@ -1,0 +1,13 @@
+'LeanPEP.Imported.Refine001.B04.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.trace_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.raw_binding_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.policy_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.upper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.structured_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.structured_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.policy_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Refine001.B04.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

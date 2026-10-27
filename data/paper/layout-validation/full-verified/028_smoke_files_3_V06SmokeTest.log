@@ -1,0 +1,13 @@
+LeanPEP.Toy.FiniteGD.ExactBundleAuditQ.accepted
+LeanPEP.Toy.FiniteGD.ExactBundleAuditQ.rejected
+  (LeanPEP.Toy.FiniteGD.ExactBundleFailureQ.metadataMismatch
+    [{ field := LeanPEP.Toy.FiniteGD.MetadataFieldQ.constraintCount, expected := 16, actual := 15 }])
+LeanPEP.Toy.FiniteGD.ExactBundleAuditQ.rejected
+  (LeanPEP.Toy.FiniteGD.ExactBundleFailureQ.primalRejected
+    [{ i := LeanPEP.Toy.FiniteGD.Point.star, j := LeanPEP.Toy.FiniteGD.Point.iter 2, value := (-1 : Rat)/5 },
+     { i := LeanPEP.Toy.FiniteGD.Point.iter 0, j := LeanPEP.Toy.FiniteGD.Point.iter 2, value := (-1 : Rat)/5 },
+     { i := LeanPEP.Toy.FiniteGD.Point.iter 1, j := LeanPEP.Toy.FiniteGD.Point.iter 2, value := (-1 : Rat)/5 }])
+LeanPEP.Toy.FiniteGD.ExactBundleAuditQ.rejected
+  (LeanPEP.Toy.FiniteGD.ExactBundleFailureQ.upperRejected
+    (LeanPEP.Toy.FiniteGD.UpperCertFailureQ.identityMismatch
+      [{ location := LeanPEP.Toy.FiniteGD.CoeffLocationQ.const, expected := (1 : Rat)/9, actual := (1 : Rat)/10 }]))

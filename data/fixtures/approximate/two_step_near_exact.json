@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "source": "v0.7 near-exact two-step solver candidate",
+  "steps": 2,
+  "declared_point_count": 4,
+  "declared_constraint_count": 16,
+  "expect": {
+    "raw": "rejected",
+    "reconstructed": "accepted"
+  },
+  "policy": {
+    "method": "limit_denominator",
+    "max_denominator": 1000,
+    "max_abs_error": "5e-10"
+  },
+  "primal": {
+    "grad": [
+      "2e-1",
+      "0.2000000000",
+      "2.000000000e-1"
+    ],
+    "value": [
+      "1.799999998e-1",
+      "0.14",
+      "1e-1"
+    ]
+  },
+  "upper": {
+    "bound": "1.0e-1",
+    "objective": 2,
+    "interp_terms": [
+      {
+        "weight": "0.25",
+        "i": { "kind": "star" },
+        "j": { "kind": "iter", "index": 0 }
+      },
+      {
+        "weight": "2.5e-1",
+        "i": { "kind": "iter", "index": 0 },
+        "j": { "kind": "iter", "index": 1 }
+      },
+      {
+        "weight": "0.2500000000",
+        "i": { "kind": "iter", "index": 1 },
+        "j": { "kind": "iter", "index": 2 }
+      },
+      {
+        "weight": "0.4166666667",
+        "i": { "kind": "star" },
+        "j": { "kind": "iter", "index": 1 }
+      },
+      {
+        "weight": "4.166666667e-1",
+        "i": { "kind": "iter", "index": 1 },
+        "j": { "kind": "iter", "index": 2 }
+      },
+      {
+        "weight": "0.3333333333",
+        "i": { "kind": "star" },
+        "j": { "kind": "iter", "index": 2 }
+      }
+    ],
+    "square_terms": [
+      {
+        "weight": "0.6666666667",
+        "form": {
+          "const": "-0.3125",
+          "grad": [
+            "0.3125",
+            "1",
+            "0.25"
+          ]
+        }
+      },
+      {
+        "weight": "0.4583333333",
+        "form": {
+          "const": "-2.5e-1",
+          "grad": [
+            "0.25",
+            "0",
+            "1.0"
+          ]
+        }
+      },
+      {
+        "weight": "0.15625",
+        "form": {
+          "const": "-0.2",
+          "grad": [
+            "1",
+            "0.0",
+            "0e0"
+          ]
+        }
+      }
+    ]
+  }
+}

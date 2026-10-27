@@ -1,0 +1,9 @@
+{
+  "actual_live_directory": "B14GDOnePrimalLive_001",
+  "capture": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/B14GDOnePrimalLive_001/capture.json",
+  "capture_byte_sha256": "a2154f76e65a33c65a07631430b91c9d060cad8095b1598eec4fa319ad6fbc67",
+  "capture_canonical_sha256": "9f3871037285b1b0fd841d006c679b8ff72710b6ec4676418fa4416f15facb17",
+  "old_upper_capture_not_used": true,
+  "sidecar": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/B14GDOnePrimalLive_001/primal_observation.json",
+  "sidecar_byte_sha256": "eac439e2fef7b6abfcd1d4b05fec4f1afc76ecf902f74e9285da9000a667a776"
+}

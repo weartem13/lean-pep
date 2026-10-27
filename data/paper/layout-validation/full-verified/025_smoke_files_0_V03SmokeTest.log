@@ -1,0 +1,22 @@
+{ accepted := true, violations := [] }
+{ accepted := false,
+  violations := [{ i := LeanPEP.Toy.OneStep.Pt.star, j := LeanPEP.Toy.OneStep.Pt.p1, value := (-1 : Rat)/4 },
+                 { i := LeanPEP.Toy.OneStep.Pt.p0, j := LeanPEP.Toy.OneStep.Pt.p1, value := (-1 : Rat)/4 }] }
+true
+LeanPEP.Toy.OneStep.UpperCertAuditQ.accepted
+LeanPEP.Toy.OneStep.UpperCertAuditQ.rejected
+  (LeanPEP.Toy.OneStep.UpperCertFailureQ.negativeInterpWeight
+    { weight := -1, i := LeanPEP.Toy.OneStep.Pt.star, j := LeanPEP.Toy.OneStep.Pt.p1 })
+LeanPEP.Toy.OneStep.UpperCertAuditQ.rejected
+  (LeanPEP.Toy.OneStep.UpperCertFailureQ.negativeSquareWeight
+    { weight := -1, form := { constCoeff := (-1 : Rat)/3, g0Coeff := 1, g1Coeff := 0 } })
+LeanPEP.Toy.OneStep.UpperCertAuditQ.rejected
+  (LeanPEP.Toy.OneStep.UpperCertFailureQ.identityMismatch
+    { constCoeff := (1 : Rat)/30,
+      g0Coeff := 0,
+      g1Coeff := 0,
+      f0Coeff := 0,
+      f1Coeff := 0,
+      g0SqCoeff := 0,
+      g0g1Coeff := 0,
+      g1SqCoeff := 0 })

@@ -1,0 +1,144 @@
+⚠ [2977/3090] Replayed LeanPEP.Profiles.ProximalGradient
+warning: LeanPEP/Profiles/ProximalGradient.lean:136:43: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [hi, hgj, hsj, sub_self,̵ ̵s̵u̵b̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2979/3090] Replayed LeanPEP.GramPEP.OriginCoordinates
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:98:93: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centerMapQ, liftVecQ, standardBasisExpr, mul_ite, mul_neg, Finset.sum_neg_distrib,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:105:81: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictVec, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:115:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:26: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, n̵e̵g̵_̵m̵u̵l̵,̵ ̵mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_neg_distrib, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:124:22: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictGram, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ,
+  ̵  ̵ ̵ ̵ite_mul, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3128/3154] Replayed LeanPEP.ActualFunction.Proximal
+warning: LeanPEP/ActualFunction/Proximal.lean:100:10: This simp argument is unused:
+  real_inner_smul_left
+
+Hint: Omit it from the simp argument list.
+  simp only [inner_sub_left, inner_sub_right, inner_add_left, inner_add_right,
+            real_inner_smul_l̵e̵f̵t̵,̵ ̵re̵a̵l̵_̵in̵n̵e̵r̵_̵s̵m̵u̵l̵_̵r̵i̵ght, real_inner_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3130/3154] Replayed LeanPEP.ActualFunction.SmoothScalingCore
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3131/3154] Replayed LeanPEP.ActualFunction.ProximalScaling
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:105:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:105:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:120:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3132/3154] Replayed LeanPEP.ActualFunction.CompositeOptimality
+warning: LeanPEP/ActualFunction/CompositeOptimality.lean:44:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3139/3154] Replayed LeanPEP.ActualFunction.AffineEvaluationCore
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:55:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:62:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3143/3154] Replayed LeanPEP.ActualFunction.ProfileGram
+warning: LeanPEP/ActualFunction/ProfileGram.lean:45:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProfileGram.orderedSamples_pointIndex`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:72:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:78:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:84:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3144/3154] Replayed LeanPEP.ActualFunction.ProximalGradient
+warning: LeanPEP/ActualFunction/ProximalGradient.lean:93:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalGradient.valueSlots_smooth`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProximalGradient.lean:98:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalGradient.valueSlots_nonsmooth`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3145/3154] Replayed LeanPEP.ActualFunction.ProximalGradientScalingCore
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:40:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:40:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:95:33: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:95:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Build completed successfully (3154 jobs).

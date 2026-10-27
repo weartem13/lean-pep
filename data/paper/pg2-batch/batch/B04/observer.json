@@ -1,0 +1,405 @@
+{
+  "stage": "candidate_returned",
+  "wall_seconds": 3.0424340829777066,
+  "trial_count": 11,
+  "trials": [
+    {
+      "denominator": 500000,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499999,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499998,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499997,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499996,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499995,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499994,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499993,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499992,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499991,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499990,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": true,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true,
+      "psd": {
+        "format": "leanpep-psd-synthesis-v1",
+        "producer_version": "v0.13D1",
+        "matrix_sha256": "3181c397d763005eb58d3d702c6cda4c90c9109f1aceac516f7beeda1be8b0bf",
+        "dimension": 8,
+        "status": "psd",
+        "reason": "exact factor identity",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "python_exact_recheck": true,
+        "lean_status": "not_run_by_this_producer",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "factor_count": 6,
+        "factor_certificate": {
+          "factors": [
+            {
+              "weight": {
+                "num": 62499,
+                "den": 499990
+              },
+              "vector": [
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -1,
+                  "den": 62499
+                },
+                {
+                  "num": -1,
+                  "den": 1
+                },
+                {
+                  "num": 86015,
+                  "den": 124998
+                },
+                {
+                  "num": 47009,
+                  "den": 41666
+                },
+                {
+                  "num": 81961,
+                  "den": 62499
+                },
+                {
+                  "num": 358963,
+                  "den": 124998
+                },
+                {
+                  "num": 250055,
+                  "den": 124998
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 7812281251,
+                "den": 15624437505
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": -1343972617,
+                  "den": 7812281251
+                },
+                {
+                  "num": 16029,
+                  "den": 31249125004
+                },
+                {
+                  "num": -5122461077,
+                  "den": 15624562502
+                },
+                {
+                  "num": 74116,
+                  "den": 7812281251
+                },
+                {
+                  "num": -15627999889,
+                  "den": 31249125004
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 1531876771147547,
+                "den": 15624250010749960
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -1003581396559003,
+                  "den": 1531876771147547
+                },
+                {
+                  "num": -1332630636198716,
+                  "den": 1531876771147547
+                },
+                {
+                  "num": 1003616339691111,
+                  "den": 1531876771147547
+                },
+                {
+                  "num": -199211191816723,
+                  "den": 1531876771147547
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 495487084492276814437,
+                "den": 6127384534448496196240
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -270026931106238650474,
+                  "den": 495487084492276814437
+                },
+                {
+                  "num": -495464280253332218156,
+                  "den": 495487084492276814437
+                },
+                {
+                  "num": 270049735345183246755,
+                  "den": 495487084492276814437
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 44692684114761347298149001,
+                "den": 247738587375293484450355630
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 210894922273427867395,
+                  "den": 5257962837030746740958706
+                },
+                {
+                  "num": -5257751942108473313091311,
+                  "den": 5257962837030746740958706
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 42060576728348675733397099,
+                "den": 5257857677774006126023886825880
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "original_upper_accepted": true
+    }
+  ],
+  "returned_candidate": true
+}

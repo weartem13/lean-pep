@@ -1,0 +1,58 @@
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  [CompleteSpace E] (L : ℝ≥0) (f : E → ℝ) (g : E → E) : Prop
+LeanPEP.ActualFunction.IsSmoothConvexFirstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (L : ℝ≥0) (f : E → ℝ) (g : E → E) : Prop
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.gradient_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) : gradient f = g
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.differentiable.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) : Differentiable ℝ f
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.lowerModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (x y : E) : f x + inner ℝ (g x) (y - x) ≤ f y
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.upperModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (x y : E) :
+  f y ≤ f x + inner ℝ (g x) (y - x) + ↑L / 2 * inner ℝ (y - x) (y - x)
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.toFirstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) : LeanPEP.ActualFunction.IsSmoothConvexFirstOrder L f g
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.toSmooth.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) : LeanPEP.ActualFunction.IsSmoothConvexAnalytic 1 f g
+LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.toSmooth.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E} (h : LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder f g) :
+  LeanPEP.ActualFunction.IsSmoothConvexFirstOrder 1 f g
+LeanPEP.ActualFunction.SmoothScaling.scaledPoint.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (xStar : E) (R : ℝ) (z : E) : E
+LeanPEP.ActualFunction.SmoothScaling.normalizedFunction.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (f : E → ℝ) (xStar : E) (L : ℝ≥0) (R : ℝ) (z : E) : ℝ
+LeanPEP.ActualFunction.SmoothScaling.normalizedGradient.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (g : E → E) (xStar : E) (L : ℝ≥0) (R : ℝ) (z : E) : E
+LeanPEP.ActualFunction.SmoothScaling.normalizedFirstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f : E → ℝ} {g : E → E} {xStar : E} {R : ℝ}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hR : 0 < R) :
+  LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder
+    (LeanPEP.ActualFunction.SmoothScaling.normalizedFunction f xStar L R)
+    (LeanPEP.ActualFunction.SmoothScaling.normalizedGradient g xStar L R)
+LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.oneStepGD_upper_at_update.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E} (h : LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder f g)
+  {xStar x0 : E} (hstationary : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) : f (x0 - g x0) - f xStar ≤ 1 / 6
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.oneStepGD_upper_at_update_of_pos_radius.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) {xStar x0 : E} {R : ℝ} (hR : 0 < R)
+  (hstationary : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x0 - (↑L)⁻¹ • g x0) - f xStar ≤ ↑L * R ^ 2 / 6
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.oneStepGD_upper_at_update.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) {xStar x0 : E} {R : ℝ} (hR : 0 ≤ R)
+  (hstationary : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x0 - (↑L)⁻¹ • g x0) - f xStar ≤ ↑L * R ^ 2 / 6
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.oneStepGD_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) {xStar x0 x1 : E} {R : ℝ} (hR : 0 ≤ R)
+  (hstationary : g xStar = 0) (hstep : x1 = x0 - (↑L)⁻¹ • g x0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f x1 - f xStar ≤ ↑L * R ^ 2 / 6
+LeanPEP.ActualFunction.IsSmoothConvexAnalytic.oneStepGD_upper_exact_radius.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) {xStar x0 : E} (hstationary : g xStar = 0) :
+  f (x0 - (↑L)⁻¹ • g x0) - f xStar ≤ ↑L * ‖x0 - xStar‖ ^ 2 / 6

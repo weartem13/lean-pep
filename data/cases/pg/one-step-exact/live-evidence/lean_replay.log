@@ -1,0 +1,4 @@
+$ <AUTHOR_HOME>/.elan/bin/lake env lean <AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/D13LiveOne_005/Replay.lean
+'LeanPEP.Imported.Live.PGOne005.no_box_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Live.PGOne005.no_fixed_family_in_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Live.PGOne005.compiler_binding' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,138 @@
+LeanPEP.GramPEP.ZeroRowCoverage.checkMapQ_eq_true_iff {small full : ℕ} (a : ZeroRowCoverage.MapQ small full) :
+  ZeroRowCoverage.checkMapQ a = true ↔
+    (∀ (i : Fin small), a.fromFull (a.toFull i) = some i) ∧
+      ∀ (j : Fin full) (i : Fin small), a.fromFull j = some i → a.toFull i = j
+LeanPEP.GramPEP.ZeroRowCoverage.toFull_injective {small full : ℕ} (a : ZeroRowCoverage.MapQ small full)
+  (ha : ZeroRowCoverage.checkMapQ a = true) : Function.Injective a.toFull
+LeanPEP.GramPEP.ZeroRowCoverage.omitted_iff {small full : ℕ} (a : ZeroRowCoverage.MapQ small full)
+  (ha : ZeroRowCoverage.checkMapQ a = true) (j : Fin full) : a.fromFull j = none ↔ ¬∃ i, a.toFull i = j
+LeanPEP.GramPEP.ZeroRowCoverage.checkRowsQ_eq_true_iff {p m small full : ℕ} (a : ZeroRowCoverage.MapQ small full)
+  (xs : Fin small → LinearExprQ p m) (ys : Fin full → LinearExprQ p m) :
+  ZeroRowCoverage.checkRowsQ a xs ys = true ↔
+    ZeroRowCoverage.checkMapQ a = true ∧
+      (∀ (i : Fin small), xs i = ys (a.toFull i)) ∧ ∀ (j : Fin full), a.fromFull j = none → ys j = LinearExprQ.zero p m
+LeanPEP.GramPEP.ZeroRowCoverage.feasible_iff {p m small full : ℕ} (a : ZeroRowCoverage.MapQ small full)
+  (xs : Fin small → LinearExprQ p m) (ys : Fin full → LinearExprQ p m) (ha : ZeroRowCoverage.checkRowsQ a xs ys = true)
+  (d : DataR (Fin p) m) : (∀ (i : Fin small), 0 ≤ (xs i).evalR d) ↔ ∀ (j : Fin full), 0 ≤ (ys j).evalR d
+LeanPEP.GramPEP.ZeroRowCoverage.finite_upper_equivalence {p m small full : ℕ} (a : ZeroRowCoverage.MapQ small full)
+  (xs : Fin small → LinearExprQ p m) (ys : Fin full → LinearExprQ p m) (ha : ZeroRowCoverage.checkRowsQ a xs ys = true)
+  (o : LinearExprQ p m) (B : ℝ) :
+  (∀ (d : DataR (Fin p) m), IsGramPosSemidef d.gram → (∀ (i : Fin small), 0 ≤ (xs i).evalR d) → o.evalR d ≤ B) ↔
+    ∀ (d : DataR (Fin p) m), IsGramPosSemidef d.gram → (∀ (j : Fin full), 0 ≤ (ys j).evalR d) → o.evalR d ≤ B
+LeanPEP.Adapters.ProximalGradientSparse.checkCoverageQ_eq_true_iff {n k : ℕ} (s : SourceQ n k) :
+  checkCoverageQ s = true ↔
+    ZeroRowCoverage.checkRowsQ s.coverage s.rows (completedSourceQ s).rows = true ∧
+      (∀ (i : Fin k),
+          s.rules i = Adapters.ProximalGradientPerformance.rowRuleQ (completedSourceQ s) (s.coverage.toFull i)) ∧
+        ∀ (i : Fin k), s.labels i = fullLabelQ s (s.coverage.toFull i)
+LeanPEP.Adapters.ProximalGradientSparse.checkSourceQ_eq_true_iff {n k : ℕ} (s : SourceQ n k) :
+  checkSourceQ s = true ↔
+    checkCoverageQ s = true ∧ Adapters.ProximalGradientPerformance.checkSourceQ (completedSourceQ s) = true
+LeanPEP.Adapters.ProximalGradientSparse.retained_row_eq {n k : ℕ} (s : SourceQ n k) (hs : checkCoverageQ s = true)
+  (i : Fin k) :
+  orientedRowQ s i = Adapters.ProximalGradientPerformance.orientedRowQ (completedSourceQ s) (s.coverage.toFull i)
+LeanPEP.Adapters.ProximalGradientSparse.omitted_row_zero {n k : ℕ} (s : SourceQ n k) (hs : checkCoverageQ s = true)
+  (j : Fin (Adapters.ProximalGradientOrdering.rowCount n + 1)) (hj : s.coverage.fromFull j = none) :
+  Adapters.ProximalGradientPerformance.orientedRowQ (completedSourceQ s) j =
+    LinearExprQ.zero (Adapters.ProximalGradientOrdering.valueCount n + 1)
+      (Adapters.ProximalGradientOrdering.basisCount n)
+LeanPEP.Adapters.ProximalGradientSparse.oriented_coverage_check {n k : ℕ} (s : SourceQ n k)
+  (hs : checkCoverageQ s = true) :
+  ZeroRowCoverage.checkRowsQ s.coverage (orientedRowQ s)
+      (Adapters.ProximalGradientPerformance.orientedRowQ (completedSourceQ s)) =
+    true
+LeanPEP.Adapters.ProximalGradientSparse.rows_feasible_iff {n k : ℕ} (s : SourceQ n k) (hs : checkCoverageQ s = true)
+  (d :
+    DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n + 1)) (Adapters.ProximalGradientOrdering.basisCount n)) :
+  (∀ (i : Fin k), 0 ≤ (orientedRowQ s i).evalR d) ↔
+    ∀ (j : Fin (Adapters.ProximalGradientOrdering.rowCount n + 1)),
+      0 ≤ (Adapters.ProximalGradientPerformance.orientedRowQ (completedSourceQ s) j).evalR d
+LeanPEP.Adapters.ProximalGradientSparse.finite_upper_equivalence {n k : ℕ} (s : SourceQ n k)
+  (hs : checkCoverageQ s = true) (B : ℝ) :
+  (∀
+      (d :
+        DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n + 1))
+          (Adapters.ProximalGradientOrdering.basisCount n)),
+      IsGramPosSemidef d.gram → (∀ (i : Fin k), 0 ≤ (orientedRowQ s i).evalR d) → s.objective.evalR d ≤ B) ↔
+    ∀
+      (d :
+        DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n + 1))
+          (Adapters.ProximalGradientOrdering.basisCount n)),
+      IsGramPosSemidef d.gram →
+        (∀ (j : Fin (Adapters.ProximalGradientOrdering.rowCount n + 1)),
+            0 ≤ (Adapters.ProximalGradientPerformance.orientedRowQ (completedSourceQ s) j).evalR d) →
+          s.objective.evalR d ≤ B
+LeanPEP.Adapters.ProximalGradientSparse.completedTermQ_weight {n k : ℕ} (s : SourceQ n k)
+  (t : AssumptionTermQ s.model) : (completedTermQ s t).weight = t.weight
+LeanPEP.Adapters.ProximalGradientSparse.completedTermQ_index {n k : ℕ} (s : SourceQ n k) (t : AssumptionTermQ s.model) :
+  ↑(completedTermQ s t).index = ↑(s.coverage.toFull (sourceRowQ s t))
+LeanPEP.Adapters.ProximalGradientSparse.assumption_sum_preserved {n k : ℕ} (s : SourceQ n k)
+  (hs : checkCoverageQ s = true) (ts : List (AssumptionTermQ s.model)) :
+  assumptionExprSumQ (completedSourceQ s).model (List.map (completedTermQ s) ts) = assumptionExprSumQ s.model ts
+LeanPEP.Adapters.ProximalGradientSparse.certificate_rhs_preserved {n k : ℕ} (s : SourceQ n k)
+  (hs : checkCoverageQ s = true) (c : UpperCertQ s.model) (hi : c.interpTerms = []) :
+  certificateRhsExprQ (completedUpperQ s c) = certificateRhsExprQ c
+LeanPEP.Adapters.ProximalGradientSparse.completedUpper_check {n k : ℕ} (s : SourceQ n k) (hs : checkCoverageQ s = true)
+  (c : UpperCertQ s.model) (hi : c.interpTerms = []) (hc : checkUpperCertQ c = true) :
+  checkUpperCertQ (completedUpperQ s c) = true
+LeanPEP.Adapters.ProximalGradientSparse.completedUpperQ_count {n k : ℕ} (s : SourceQ n k) (c : UpperCertQ s.model) :
+  (completedUpperQ s c).assumptionTerms.length = c.assumptionTerms.length
+LeanPEP.Adapters.ProximalGradientSparse.checked_certificate {n k : ℕ} (s : SourceQ n k) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = c.bound
+LeanPEP.Imported.CompositeSparse.PGOne.bound_check :
+  checkBoundQ Imported.CompositeSparse.PGOne.sourceQ Imported.CompositeSparse.PGOne.upperQ = true
+LeanPEP.Imported.CompositeSparse.PGTwo.bound_check :
+  checkBoundQ Imported.CompositeSparse.PGTwo.sourceQ Imported.CompositeSparse.PGTwo.upperQ = true
+LeanPEP.Imported.CompositeSparse.PGThree.bound_check :
+  checkBoundQ Imported.CompositeSparse.PGThree.sourceQ Imported.CompositeSparse.PGThree.upperQ = true
+LeanPEP.Imported.CompositeSparse.PGAll.bound_check :
+  checkBoundQ Imported.CompositeSparse.PGAll.sourceQ Imported.CompositeSparse.PGAll.upperQ = true
+LeanPEP.Imported.CompositeSparse.missing_nonzero_local_passes :
+  checkUpperCertQ Imported.CompositeSparse.missingNonzeroUpperQ = true
+LeanPEP.Imported.CompositeSparse.missing_nonzero_completed_passes :
+  Adapters.ProximalGradientPerformance.checkBoundQ (completedSourceQ Imported.CompositeSparse.missingNonzeroQ)
+      (completedUpperQ Imported.CompositeSparse.missingNonzeroQ Imported.CompositeSparse.missingNonzeroUpperQ) =
+    true
+LeanPEP.Imported.CompositeSparse.missing_nonzero_joint_rejected :
+  checkBoundQ Imported.CompositeSparse.missingNonzeroQ Imported.CompositeSparse.missingNonzeroUpperQ = false
+LeanPEP.Imported.CompositeSparse.split_performance_mass :
+  Adapters.ProximalGradientPerformance.performanceMassQ (completedSourceQ Imported.CompositeSparse.PGTwo.sourceQ)
+      (completedUpperQ Imported.CompositeSparse.PGTwo.sourceQ Imported.CompositeSparse.PGTwo.upperQ).assumptionTerms =
+    1
+LeanPEP.ActualFunction.ProximalGradientSparseAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n k : ℕ} (s : SourceQ n k) (c : UpperCertQ s.model) (hc : checkBoundQ s c = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientSparseAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+tests/lean/smoke/V13D7SmokeTest.lean:79:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+tests/lean/smoke/V13D7SmokeTest.lean:84:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.GramPEP.ZeroRowCoverage.feasible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.ZeroRowCoverage.finite_upper_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientSparse.assumption_sum_preserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientSparse.completedUpper_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeSparse.missing_nonzero_joint_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeSparse.split_performance_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeSparse.PGThree.bound_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientSparseAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

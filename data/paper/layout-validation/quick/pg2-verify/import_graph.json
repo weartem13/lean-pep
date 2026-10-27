@@ -1,0 +1,232 @@
+{
+  "LeanPEP.ActualFunction.AffineEvaluationCore": [
+    "LeanPEP.Toy.FiniteGD.UpperCertificate",
+    "Mathlib.Analysis.InnerProductSpace.Basic",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.ActualFunction.AnalyticBridge": [
+    "LeanPEP.ActualFunction.Interpolation",
+    "Mathlib.Analysis.Calculus.Deriv.MeanValue",
+    "Mathlib.Analysis.Calculus.Deriv.Pow",
+    "Mathlib.Analysis.Convex.Deriv",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.ActualFunction.Basic": [
+    "Mathlib.Analysis.Calculus.Gradient.Basic",
+    "Mathlib.Analysis.Convex.Function",
+    "Mathlib.Topology.MetricSpace.Lipschitz"
+  ],
+  "LeanPEP.ActualFunction.Composite": [
+    "LeanPEP.ActualFunction.Proximal",
+    "LeanPEP.ActualFunction.FiniteGram",
+    "LeanPEP.Profiles.Composite"
+  ],
+  "LeanPEP.ActualFunction.CompositeOptimality": [
+    "LeanPEP.ActualFunction.ProximalScaling"
+  ],
+  "LeanPEP.ActualFunction.FiniteGram": [
+    "LeanPEP.ActualFunction.AnalyticBridge",
+    "LeanPEP.GramPEP.UpperCertificate",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.ActualFunction.GeneralSmooth": [
+    "LeanPEP.ActualFunction.AnalyticBridge",
+    "Mathlib.Analysis.Calculus.Deriv.MeanValue",
+    "Mathlib.Analysis.Calculus.Deriv.Pow",
+    "Mathlib.Analysis.Convex.Deriv",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.ActualFunction.Interpolation": [
+    "LeanPEP.ActualFunction.Basic",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.ActualFunction.ProfileGram": [
+    "LeanPEP.ActualFunction.FiniteGram",
+    "LeanPEP.ActualFunction.AffineEvaluationCore",
+    "LeanPEP.GramPEP.UpperCertificateChecker",
+    "LeanPEP.Profiles.GramCompilation"
+  ],
+  "LeanPEP.ActualFunction.Proximal": [
+    "LeanPEP.ActualFunction.AnalyticBridge"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradient": [
+    "LeanPEP.ActualFunction.Composite",
+    "LeanPEP.ActualFunction.ProfileGram",
+    "LeanPEP.Profiles.ProximalGradient"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientCapture",
+    "LeanPEP.ActualFunction.ProximalGradientReconstructionAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientCoordinateAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientCoordinates",
+    "LeanPEP.ActualFunction.ProximalGradientSourceAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientMinimizerCore": [
+    "LeanPEP.ActualFunction.CompositeOptimality",
+    "LeanPEP.ActualFunction.ProximalGradientScalingCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientOrderingAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientOrdering",
+    "LeanPEP.ActualFunction.ProximalGradientCoordinateAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientPerformanceAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientPerformance",
+    "LeanPEP.ActualFunction.ProximalGradientRowAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientReconstructionAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientReconstruction",
+    "LeanPEP.ActualFunction.ProximalGradientSparseAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientRowAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientRows",
+    "LeanPEP.ActualFunction.ProximalGradientOrderingAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientScalingCore": [
+    "LeanPEP.ActualFunction.ProximalScaling",
+    "LeanPEP.ActualFunction.ProximalGradient"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientSourceAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientSource",
+    "LeanPEP.ActualFunction.ProximalGradientMinimizerCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalGradientSparseAuditCore": [
+    "LeanPEP.Adapters.ProximalGradientSparse",
+    "LeanPEP.ActualFunction.ProximalGradientPerformanceAuditCore"
+  ],
+  "LeanPEP.ActualFunction.ProximalScaling": [
+    "LeanPEP.ActualFunction.Proximal",
+    "LeanPEP.ActualFunction.SmoothScalingCore"
+  ],
+  "LeanPEP.ActualFunction.SmoothScalingCore": [
+    "LeanPEP.ActualFunction.GeneralSmooth",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.Adapters.ExactFormulation": [
+    "LeanPEP.GramPEP.ExternalBundle"
+  ],
+  "LeanPEP.Adapters.ProximalGradientCapture": [
+    "LeanPEP.Adapters.ProximalGradientReconstruction",
+    "LeanPEP.GramPEP.ExactReindexing"
+  ],
+  "LeanPEP.Adapters.ProximalGradientCoordinates": [
+    "LeanPEP.Adapters.ProximalGradientSource",
+    "LeanPEP.GramPEP.OriginCoordinates"
+  ],
+  "LeanPEP.Adapters.ProximalGradientOrdering": [
+    "LeanPEP.Adapters.ProximalGradientCoordinates",
+    "LeanPEP.GramPEP.ExactReindexing"
+  ],
+  "LeanPEP.Adapters.ProximalGradientPerformance": [
+    "LeanPEP.Adapters.ProximalGradientRows",
+    "LeanPEP.GramPEP.PerformanceLift"
+  ],
+  "LeanPEP.Adapters.ProximalGradientReconstruction": [
+    "LeanPEP.Adapters.ProximalGradientSparse",
+    "LeanPEP.GramPEP.RationalReconstructionAudit"
+  ],
+  "LeanPEP.Adapters.ProximalGradientRows": [
+    "LeanPEP.Adapters.ProximalGradientOrdering",
+    "LeanPEP.GramPEP.RowNormalization",
+    "Mathlib.Data.List.OfFn"
+  ],
+  "LeanPEP.Adapters.ProximalGradientSource": [
+    "LeanPEP.Adapters.ExactFormulation",
+    "LeanPEP.Profiles.ProximalGradient"
+  ],
+  "LeanPEP.Adapters.ProximalGradientSparse": [
+    "LeanPEP.Adapters.ProximalGradientPerformance",
+    "LeanPEP.GramPEP.ZeroRowCoverage"
+  ],
+  "LeanPEP.GramPEP.Coordinate": [
+    "LeanPEP.GramPEP.PSDFactorization"
+  ],
+  "LeanPEP.GramPEP.Core": [
+    "Mathlib.Tactic",
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Data.Matrix.Mul"
+  ],
+  "LeanPEP.GramPEP.ExactReindexing": [
+    "LeanPEP.Profiles.Composite",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs"
+  ],
+  "LeanPEP.GramPEP.ExplicitConstraints": [
+    "LeanPEP.GramPEP.UpperCertificateChecker"
+  ],
+  "LeanPEP.GramPEP.ExternalBundle": [
+    "LeanPEP.GramPEP.PSDFactorizationRealBridge",
+    "LeanPEP.GramPEP.UpperCertificateAudit"
+  ],
+  "LeanPEP.GramPEP.OriginCoordinates": [
+    "LeanPEP.Profiles.Composite",
+    "LeanPEP.GramPEP.Coordinate"
+  ],
+  "LeanPEP.GramPEP.PSDFactorization": [
+    "LeanPEP.GramPEP.Core"
+  ],
+  "LeanPEP.GramPEP.PSDFactorizationRealBridge": [
+    "LeanPEP.GramPEP.RationalBridge",
+    "LeanPEP.GramPEP.PSDFactorization"
+  ],
+  "LeanPEP.GramPEP.PerformanceLift": [
+    "LeanPEP.GramPEP.RowNormalization"
+  ],
+  "LeanPEP.GramPEP.RationalBridge": [
+    "LeanPEP.GramPEP.Coordinate"
+  ],
+  "LeanPEP.GramPEP.RationalReconstructionAudit": [
+    "LeanPEP.GramPEP.ExternalBundle"
+  ],
+  "LeanPEP.GramPEP.RowNormalization": [
+    "LeanPEP.GramPEP.UpperCertificateChecker"
+  ],
+  "LeanPEP.GramPEP.UpperCertificate": [
+    "LeanPEP.GramPEP.RationalBridge",
+    "LeanPEP.GramPEP.PSDFactorization"
+  ],
+  "LeanPEP.GramPEP.UpperCertificateAudit": [
+    "LeanPEP.GramPEP.UpperCertificateChecker"
+  ],
+  "LeanPEP.GramPEP.UpperCertificateChecker": [
+    "LeanPEP.GramPEP.UpperCertificate"
+  ],
+  "LeanPEP.GramPEP.ZeroRowCoverage": [
+    "LeanPEP.GramPEP.UpperCertificateChecker"
+  ],
+  "LeanPEP.Profiles.Composite": [
+    "LeanPEP.GramPEP.ExplicitConstraints"
+  ],
+  "LeanPEP.Profiles.FixedStepFirstOrder": [
+    "LeanPEP.Toy.FiniteGD.UpperCertificateChecker",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.Profiles.GramCompilation": [
+    "LeanPEP.Profiles.FixedStepFirstOrder",
+    "LeanPEP.GramPEP.UpperCertificate",
+    "LeanPEP.GramPEP.Coordinate",
+    "Mathlib.Tactic"
+  ],
+  "LeanPEP.Profiles.ProximalGradient": [
+    "LeanPEP.Profiles.Composite",
+    "LeanPEP.GramPEP.Coordinate"
+  ],
+  "LeanPEP.Toy.FiniteGD.Core": [
+    "Mathlib.Tactic",
+    "Mathlib.Algebra.Order.Field.Basic",
+    "Mathlib.Data.Fin.VecNotation",
+    "Mathlib.Data.List.Range",
+    "Mathlib.Tactic.DeriveFintype"
+  ],
+  "LeanPEP.Toy.FiniteGD.RationalBridge": [
+    "LeanPEP.Toy.FiniteGD.RationalChecker"
+  ],
+  "LeanPEP.Toy.FiniteGD.RationalChecker": [
+    "LeanPEP.Toy.FiniteGD.Core"
+  ],
+  "LeanPEP.Toy.FiniteGD.UpperCertificate": [
+    "LeanPEP.Toy.FiniteGD.RationalBridge"
+  ],
+  "LeanPEP.Toy.FiniteGD.UpperCertificateChecker": [
+    "LeanPEP.Toy.FiniteGD.UpperCertificate"
+  ]
+}

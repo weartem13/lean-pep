@@ -1,0 +1,26 @@
+[
+  {
+    "label": "python_full",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/test_python.py",
+      "--inventory-json",
+      "<VALIDATION_LOGS>/full/test-ids.json",
+      "-v"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 1,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 152.1027003339841,
+    "log": "000_python_full.log",
+    "axiom_audit": null,
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  }
+]

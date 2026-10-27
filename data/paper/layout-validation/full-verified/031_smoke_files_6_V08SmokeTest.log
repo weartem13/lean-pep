@@ -1,0 +1,34 @@
+LeanPEP.HardInstances.NesterovChain.quadraticForm_chainMatrix {n : ℕ}
+  (x : LeanPEP.HardInstances.NesterovChain.Vector n) : quadraticForm (chainMatrix n) x = energy x
+LeanPEP.HardInstances.NesterovChain.chainMatrix_posSemidef (n : ℕ) : (chainMatrix n).PosSemidef
+LeanPEP.HardInstances.NesterovChain.quadraticForm_chainMatrix_le {n : ℕ}
+  (x : LeanPEP.HardInstances.NesterovChain.Vector n) : quadraticForm (chainMatrix n) x ≤ 4 * normSq x
+LeanPEP.HardInstances.NesterovChain.function_add_expansion {n : ℕ} (L : ℝ)
+  (x d : LeanPEP.HardInstances.NesterovChain.Vector n) :
+  function n L (x + d) = function n L x + LeanPEP.HardInstances.NesterovChain.gradient n L x ⬝ᵥ d + L / 8 * energy d
+LeanPEP.HardInstances.NesterovChain.function_sub_expansion {n : ℕ} (L : ℝ)
+  (x y : LeanPEP.HardInstances.NesterovChain.Vector n) :
+  function n L y =
+    function n L x + LeanPEP.HardInstances.NesterovChain.gradient n L x ⬝ᵥ (y - x) + L / 8 * energy (y - x)
+LeanPEP.HardInstances.NesterovChain.convex_firstOrder {n : ℕ} {L : ℝ} (hL : 0 ≤ L)
+  (x y : LeanPEP.HardInstances.NesterovChain.Vector n) :
+  function n L x + LeanPEP.HardInstances.NesterovChain.gradient n L x ⬝ᵥ (y - x) ≤ function n L y
+LeanPEP.HardInstances.NesterovChain.smooth_upperModel {n : ℕ} {L : ℝ} (hL : 0 ≤ L)
+  (x y : LeanPEP.HardInstances.NesterovChain.Vector n) :
+  function n L y ≤
+    function n L x + LeanPEP.HardInstances.NesterovChain.gradient n L x ⬝ᵥ (y - x) + L / 2 * normSq (y - x)
+LeanPEP.HardInstances.NesterovChain.gradient_sub_eq_hessian_mulVec {n : ℕ} (L : ℝ)
+  (x y : LeanPEP.HardInstances.NesterovChain.Vector n) :
+  LeanPEP.HardInstances.NesterovChain.gradient n L y - LeanPEP.HardInstances.NesterovChain.gradient n L x =
+    (hessian n L).mulVec (y - x)
+LeanPEP.HardInstances.NesterovChain.hessian_posSemidef (n : ℕ) {L : ℝ} (hL : 0 ≤ L) : (hessian n L).PosSemidef
+LeanPEP.HardInstances.NesterovChain.quadraticForm_hessian_le {n : ℕ} {L : ℝ} (hL : 0 ≤ L)
+  (x : LeanPEP.HardInstances.NesterovChain.Vector n) : quadraticForm (hessian n L) x ≤ L * normSq x
+LeanPEP.HardInstances.NesterovChain.chainMatrix_mulVec_minimizer (n : ℕ) :
+  (chainMatrix n).mulVec (minimizer n) = firstBasis n
+LeanPEP.HardInstances.NesterovChain.gradient_minimizer (n : ℕ) (L : ℝ) :
+  LeanPEP.HardInstances.NesterovChain.gradient n L (minimizer n) = 0
+LeanPEP.HardInstances.NesterovChain.minimizer_isGlobalMin {n : ℕ} {L : ℝ} (hL : 0 ≤ L)
+  (x : LeanPEP.HardInstances.NesterovChain.Vector n) : function n L (minimizer n) ≤ function n L x
+LeanPEP.HardInstances.NesterovChain.function_minimizer_value (n : ℕ) (L : ℝ) :
+  function n L (minimizer n) = -(L / 8) * (1 - 1 / ↑(n + 2))

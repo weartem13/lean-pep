@@ -1,0 +1,17 @@
+{
+  "cpu": "Apple M1 Pro",
+  "logical_cpu_count": 8,
+  "total_memory_bytes": 34359738368,
+  "total_memory_GiB": 32,
+  "os": "macOS 14.8.2 (23J126)",
+  "arch": "arm64",
+  "measurement_scope": "read on this refinement task only; not assigned retroactively to prior measurements",
+  "batch_parallelism": "one solve at a time; one Lean Replay at a time",
+  "solver_threads": "Clarabel max_threads=0 default auto; effective thread count not independently measured",
+  "prior_project_cache": "batch and profiling use existing project cache; independent install forbids it",
+  "system_python": "Python 3.14.3",
+  "git": "git version 2.47.1",
+  "lean": "Lean (version 4.31.0, arm64-apple-darwin24.6.0, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "lake": "Lake version 5.0.0-src+68218e8 (Lean version 4.31.0)",
+  "elan": "elan 4.1.2 (58e8d545e 2025-05-26)"
+}

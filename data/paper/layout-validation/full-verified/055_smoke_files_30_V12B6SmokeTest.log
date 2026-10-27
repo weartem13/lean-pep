@@ -1,0 +1,27 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.slackPolyQ_constCoeff {N : ℕ} (i j : LeanPEP.Toy.FiniteGD.Point N) :
+  (LeanPEP.Toy.FiniteGD.slackPolyQ i j).constCoeff = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.interpPolySumQ_constCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.InterpTermQ N)) : (LeanPEP.Toy.FiniteGD.interpPolySumQ terms).constCoeff = 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.squarePolySumQ_constCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.SquareTermQ N)) :
+  (LeanPEP.Toy.FiniteGD.squarePolySumQ terms).constCoeff =
+    (List.map (fun t => t.weight * t.form.constCoeff ^ 2) terms).sum
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ_constCoeff (N : ℕ) (k : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareFormQ N k).constCoeff = -(1 / ↑(2 * N - ↑k + 1))
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ_closed (N : ℕ) (k : Fin (N + 1)) :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantContributionQ N k =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareWeightQ N k * (1 / ↑(2 * N - ↑k + 1)) ^ 2
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateRhs_constCoeff_eq_constantSumQ (N : ℕ) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).constCoeff =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantSumQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificate_constCoeff_eq_target_iff (N : ℕ) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).constCoeff =
+      (LeanPEP.Toy.FiniteGD.upperTargetPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+          (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N)).constCoeff ↔
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ_0 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ_4 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ 4
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ_8 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdConstantCoefficientIdentityQ 8

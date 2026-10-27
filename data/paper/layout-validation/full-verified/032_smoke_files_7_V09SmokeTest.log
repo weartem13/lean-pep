@@ -1,0 +1,10 @@
+LeanPEP.Toy.ThreeStep.threeStep_pointPair_count : (LeanPEP.Toy.FiniteGD.pointPairs 3).length = 25
+LeanPEP.Toy.ThreeStep.exactWitnessQ_check : LeanPEP.Toy.FiniteGD.checkFeasibleQ exactWitnessQ = true
+LeanPEP.Toy.ThreeStep.exactWitness_feasible : LeanPEP.Toy.FiniteGD.Feasible exactWitness
+LeanPEP.Toy.ThreeStep.exactWitness_value : exactWitness.value 3 = 1 / 14
+LeanPEP.Toy.ThreeStep.threeStepUpperCertQ_check : LeanPEP.Toy.FiniteGD.checkUpperCertQ threeStepUpperCertQ = true
+LeanPEP.Toy.ThreeStep.threeStep_upper (d : ThreeStepData) (h : LeanPEP.Toy.FiniteGD.Feasible d) : d.value 3 ≤ 1 / 14
+LeanPEP.Toy.ThreeStep.threeStep_exact_value : IsGreatest pepValues (1 / 14)
+true
+true
+LeanPEP.Toy.FiniteGD.UpperCertAuditQ.accepted

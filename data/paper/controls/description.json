@@ -1,0 +1,23 @@
+{
+  "base_capture": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+  "looser_delta": "1/1000",
+  "broken_matrix00_before": "62497/499974",
+  "broken_matrix00_after": "78122/624973",
+  "alternate": "All submitted row expressions doubled; weights halved; unchanged labels/rules/base. Algebra valid, target binding false.",
+  "checks": [
+    "looser_mathematics",
+    "looser_psd",
+    "looser_budget_rejected",
+    "looser_capture_rejected",
+    "broken_source_consistent",
+    "broken_policy_passes",
+    "broken_identity_rejected",
+    "broken_upper_rejected",
+    "broken_capture_rejected",
+    "alternate_model_math_passes",
+    "alternate_model_psd_passes",
+    "alternate_target_source_rejected",
+    "alternate_target_bound_rejected",
+    "alternate_target_trace_rejected"
+  ]
+}

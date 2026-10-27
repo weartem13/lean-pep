@@ -1,0 +1,79 @@
+LeanPEP.GramPEP.ApproxGramAuditProvenanceQ : Type
+LeanPEP.GramPEP.ApproxGramAuditComparisonQ (p m : ℕ) : Type
+LeanPEP.GramPEP.auditApproximateGramPairQ {p m : ℕ} (provenance : ApproxGramAuditProvenanceQ)
+  (raw reconstructed : ExactGramBundleQ p m) : ApproxGramAuditComparisonQ p m
+LeanPEP.Imported.GramOneStepApproxComparison.rawBundleQ_rejected :
+  checkExactGramBundleQ Imported.GramOneStepApproxRaw.bundleQ = false
+LeanPEP.Imported.GramOneStepApproxComparison.reconstructedBundleQ_check :
+  checkExactGramBundleQ Imported.GramOneStepApproxReconstructed.bundleQ = true
+LeanPEP.Imported.GramOneStepApproxReconstructed.bundleQ_sound_real :
+  checkImportMetadataQ Imported.GramOneStepApproxReconstructed.bundleQ = true ∧
+    RealizesModelQ Imported.GramOneStepApproxReconstructed.modelQ
+        (castDataQ Imported.GramOneStepApproxReconstructed.primalQ) ∧
+      CoreFeasible (castDataQ Imported.GramOneStepApproxReconstructed.primalQ) ∧
+        AssumptionsFeasibleR Imported.GramOneStepApproxReconstructed.modelQ
+            (castDataQ Imported.GramOneStepApproxReconstructed.primalQ) ∧
+          Imported.GramOneStepApproxReconstructed.upperCertQ.objective.evalR
+                (castDataQ Imported.GramOneStepApproxReconstructed.primalQ) =
+              ↑Imported.GramOneStepApproxReconstructed.upperCertQ.bound ∧
+            ∀ (d : DataR (Fin 3) 3),
+              RealizesModelQ Imported.GramOneStepApproxReconstructed.modelQ d →
+                CoreFeasible d →
+                  AssumptionsFeasibleR Imported.GramOneStepApproxReconstructed.modelQ d →
+                    Imported.GramOneStepApproxReconstructed.upperCertQ.objective.evalR d ≤
+                      ↑Imported.GramOneStepApproxReconstructed.upperCertQ.bound
+{ provenance := { sourceSha256 := "502cba56391c69ebb200e502d61c8d456e01f13c0d741657612fdc64c1c2dd38",
+                  rawExactSha256 := "95a8c12b58e623d2ea5d3ed7a57ed35dbc55d439bbd84bbda1b24fd571614e16",
+                  reconstructedExactSha256 := "e5f97e3fdd3f0b391d881c714ba6e9aac0c6ac3d0c2b5acd4b0727d65d319a3c",
+                  reconstructionReportSha256 := "eb59b0d5cc3c3906976d627580af5ffe73a8bca2988f7470da3263c7e83e24df",
+                  comparisonManifestSha256 := "c1b3438fdf8fe38bfda174a9ebdafdfefe800a3ee86e872fa007b0cceeb52896" },
+  rawAudit := { accepted := false,
+                metadataMismatches := [],
+                modelDataMismatches := [],
+                primalPSDAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+                interpolationViolations := [{ i := 0, j := 1, value := (-8888888889 : Rat)/200000000000000000000 },
+                                            { i := 0, j := 2, value := (-26666666667 : Rat)/200000000000000000000 },
+                                            { i := 1, j := 2, value := (-8888888889 : Rat)/100000000000000000000 }],
+                assumptionViolations := [],
+                upperAudit := { accepted := false,
+                                negativeInterpWeights := [],
+                                negativeAssumptionWeights := [],
+                                dualAudit := { accepted := true,
+                                               asymmetries := [],
+                                               negativeWeights := [],
+                                               entryMismatches := [] },
+                                identityMismatches := [{ location := LeanPEP.GramPEP.LinearCoeffLocationQ.gram 0 0,
+                                                         expected := 0,
+                                                         actual := (-13333333333 : Rat)/200000000000000000000 },
+                                                       { location := LeanPEP.GramPEP.LinearCoeffLocationQ.gram 0 1,
+                                                         expected := 0,
+                                                         actual := (1 : Rat)/40000000000 },
+                                                       { location := LeanPEP.GramPEP.LinearCoeffLocationQ.gram 0 2,
+                                                         expected := 0,
+                                                         actual := (1 : Rat)/40000000000 },
+                                                       { location := LeanPEP.GramPEP.LinearCoeffLocationQ.gram 1 0,
+                                                         expected := 0,
+                                                         actual := (1 : Rat)/40000000000 },
+                                                       { location := LeanPEP.GramPEP.LinearCoeffLocationQ.gram 2 0,
+                                                         expected := 0,
+                                                         actual := (1 : Rat)/40000000000 }] },
+                objectiveMismatches := [{ witnessValue := (416666667 : Rat)/2500000000,
+                                          certifiedBound := (1666666667 : Rat)/10000000000 }] },
+  reconstructedAudit := { accepted := true,
+                          metadataMismatches := [],
+                          modelDataMismatches := [],
+                          primalPSDAudit := { accepted := true,
+                                              asymmetries := [],
+                                              negativeWeights := [],
+                                              entryMismatches := [] },
+                          interpolationViolations := [],
+                          assumptionViolations := [],
+                          upperAudit := { accepted := true,
+                                          negativeInterpWeights := [],
+                                          negativeAssumptionWeights := [],
+                                          dualAudit := { accepted := true,
+                                                         asymmetries := [],
+                                                         negativeWeights := [],
+                                                         entryMismatches := [] },
+                                          identityMismatches := [] },
+                          objectiveMismatches := [] } }

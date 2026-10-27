@@ -1,0 +1,25 @@
+{
+  "gauge": {
+    "den": 21677,
+    "num": -3213
+  },
+  "gauge_interval": [
+    {
+      "den": 100000000000000000,
+      "num": -14822257783299317
+    },
+    {
+      "den": 225000000000000000,
+      "num": -33349647820514287
+    }
+  ],
+  "generation_rule": "gd1_source_optimal_face_target_one_sixth_v1",
+  "known_rate_used": true,
+  "solver_calls": 0,
+  "structure_from": "source_identity_and_equality_conditions",
+  "target_bound": {
+    "den": 6,
+    "num": 1
+  },
+  "tau_rule": "one_sixth_checked_directly"
+}

@@ -1,0 +1,95 @@
+LeanPEP.Profiles.GramCompilation.pointAtIndex {N : ℕ} : Fin (N + 2) → Point N
+LeanPEP.Profiles.GramCompilation.pointIndex {N : ℕ} : Point N → Fin (N + 2)
+LeanPEP.Profiles.GramCompilation.pointAtIndex_pointIndex {N : ℕ} (i : Point N) :
+  Profiles.GramCompilation.pointAtIndex (Profiles.GramCompilation.pointIndex i) = i
+LeanPEP.Profiles.GramCompilation.pointIndex_pointAtIndex {N : ℕ} (i : Fin (N + 2)) :
+  Profiles.GramCompilation.pointIndex (Profiles.GramCompilation.pointAtIndex i) = i
+LeanPEP.Profiles.GramCompilation.pointIndex_injective {N : ℕ} : Function.Injective Profiles.GramCompilation.pointIndex
+LeanPEP.Profiles.GramCompilation.pointIndex_surjective {N : ℕ} : Function.Surjective Profiles.GramCompilation.pointIndex
+LeanPEP.Profiles.GramCompilation.initialBasisIndex (N : ℕ) : Fin (N + 2)
+LeanPEP.Profiles.GramCompilation.gradientBasisIndex {N : ℕ} (i : Fin (N + 1)) : Fin (N + 2)
+LeanPEP.Profiles.GramCompilation.affineVecQ {N : ℕ} (a : GradAffineQ N) : VecExpr (N + 2) ℚ
+LeanPEP.Profiles.GramCompilation.affineVecQ_initial {N : ℕ} (a : GradAffineQ N) :
+  Profiles.GramCompilation.affineVecQ a (Profiles.GramCompilation.initialBasisIndex N) = a.constCoeff
+LeanPEP.Profiles.GramCompilation.affineVecQ_gradient {N : ℕ} (a : GradAffineQ N) (i : Fin (N + 1)) :
+  Profiles.GramCompilation.affineVecQ a (Profiles.GramCompilation.gradientBasisIndex i) = a.gradCoeff i
+LeanPEP.Profiles.GramCompilation.NormalizationProfileQ : Type
+LeanPEP.Profiles.GramCompilation.unitRadiusNormalizationQ : Profiles.GramCompilation.NormalizationProfileQ
+LeanPEP.Profiles.GramCompilation.initialRadiusExprQ {N : ℕ}
+  (normalization : Profiles.GramCompilation.NormalizationProfileQ) : LinearExprQ (N + 2) (N + 2)
+LeanPEP.Profiles.GramCompilation.ObjectiveProfileQ (N : ℕ) : Type
+LeanPEP.Profiles.GramCompilation.finalGapObjectiveProfileQ (N : ℕ) : Profiles.GramCompilation.ObjectiveProfileQ N
+LeanPEP.Profiles.GramCompilation.PEPProfileQ (N : ℕ) : Type
+LeanPEP.Profiles.GramCompilation.compileModelQ {N : ℕ} (profile : Profiles.GramCompilation.PEPProfileQ N) :
+  ModelQ (N + 2) (N + 2)
+LeanPEP.Profiles.GramCompilation.compileObjectiveQ {N : ℕ} (profile : Profiles.GramCompilation.PEPProfileQ N) :
+  LinearExprQ (N + 2) (N + 2)
+LeanPEP.Profiles.GramCompilation.compileModelQ_position_pointIndex {N : ℕ}
+  (profile : Profiles.GramCompilation.PEPProfileQ N) (i : Point N) :
+  (Profiles.GramCompilation.compileModelQ profile).position (Profiles.GramCompilation.pointIndex i) =
+    Profiles.GramCompilation.pointPositionVecQ profile.algorithm i
+LeanPEP.Profiles.GramCompilation.compileModelQ_gradient_pointIndex {N : ℕ}
+  (profile : Profiles.GramCompilation.PEPProfileQ N) (i : Point N) :
+  (Profiles.GramCompilation.compileModelQ profile).gradient (Profiles.GramCompilation.pointIndex i) =
+    Profiles.GramCompilation.pointGradientVecQ i
+LeanPEP.Profiles.GramCompilation.compileModelQ_iter_initial_coordinate {N : ℕ}
+  (profile : Profiles.GramCompilation.PEPProfileQ N) (i : Fin (N + 1)) :
+  (Profiles.GramCompilation.compileModelQ profile).position (Profiles.GramCompilation.pointIndex (Point.iter i))
+      (Profiles.GramCompilation.initialBasisIndex N) =
+    1
+LeanPEP.Profiles.GramCompilation.compileModelQ_iter_gradient_coordinate_of_le {N : ℕ}
+  (profile : Profiles.GramCompilation.PEPProfileQ N) (i j : Fin (N + 1)) (hij : ↑i ≤ ↑j) :
+  (Profiles.GramCompilation.compileModelQ profile).position (Profiles.GramCompilation.pointIndex (Point.iter i))
+      (Profiles.GramCompilation.gradientBasisIndex j) =
+    0
+LeanPEP.Profiles.GramCompilation.objectiveExprQ_evalR {N : ℕ} (objective : Profiles.GramCompilation.ObjectiveProfileQ N)
+  (d : GramPEP.DataR (Fin (N + 2)) (N + 2)) :
+  (Profiles.GramCompilation.objectiveExprQ objective).evalR d =
+    d.value (Profiles.GramCompilation.pointIndex objective.target) -
+      d.value (Profiles.GramCompilation.pointIndex objective.reference)
+LeanPEP.Profiles.GramCompilation.initialRadiusExprQ_evalR {N : ℕ}
+  (normalization : Profiles.GramCompilation.NormalizationProfileQ) (d : GramPEP.DataR (Fin (N + 2)) (N + 2))
+  (hG : IsGramSymmetric d.gram) :
+  (Profiles.GramCompilation.initialRadiusExprQ normalization).evalR d =
+    ↑normalization.radiusSq - gramNormSq d.gram (castVecQ (Profiles.GramCompilation.initialBasisQ N))
+LeanPEP.Profiles.GradientDescentGram.unitGDGramProfileQ (N : ℕ) : Profiles.GramCompilation.PEPProfileQ N
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ (N : ℕ) : ModelQ (N + 2) (N + 2)
+LeanPEP.Profiles.GradientDescentGram.unitGDObjectiveQ (N : ℕ) : LinearExprQ (N + 2) (N + 2)
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_position_pointIndex {N : ℕ} (i : Point N) :
+  (Profiles.GradientDescentGram.unitGDModelQ N).position (Profiles.GramCompilation.pointIndex i) =
+    Profiles.GramCompilation.affineVecQ (xAffineQ i)
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_gradient_pointIndex {N : ℕ} (i : Point N) :
+  (Profiles.GradientDescentGram.unitGDModelQ N).gradient (Profiles.GramCompilation.pointIndex i) =
+    Profiles.GramCompilation.pointGradientVecQ i
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_iter_gradient_coordinate {N : ℕ} (i j : Fin (N + 1)) :
+  (Profiles.GradientDescentGram.unitGDModelQ N).position (Profiles.GramCompilation.pointIndex (Point.iter i))
+      (Profiles.GramCompilation.gradientBasisIndex j) =
+    if ↑j < ↑i then -1 else 0
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_iter_gradient_coordinate_of_le {N : ℕ} (i j : Fin (N + 1))
+  (hij : ↑i ≤ ↑j) :
+  (Profiles.GradientDescentGram.unitGDModelQ N).position (Profiles.GramCompilation.pointIndex (Point.iter i))
+      (Profiles.GramCompilation.gradientBasisIndex j) =
+    0
+LeanPEP.Profiles.GradientDescentGram.unitGDObjectiveQ_evalR {N : ℕ} (d : GramPEP.DataR (Fin (N + 2)) (N + 2)) :
+  (Profiles.GradientDescentGram.unitGDObjectiveQ N).evalR d =
+    d.value (Profiles.GramCompilation.pointIndex (Point.iter (Fin.last N))) -
+      d.value (Profiles.GramCompilation.pointIndex Point.star)
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_one_vectors :
+  RealizesModelExactQ UpperCertificateExamples.oneStepModelQ
+    (Profiles.GradientDescentGram.modelSkeletonQ (Profiles.GradientDescentGram.unitGDModelQ 1))
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_one_assumptions :
+  (Profiles.GradientDescentGram.unitGDModelQ 1).assumptions = UpperCertificateExamples.oneStepModelQ.assumptions
+LeanPEP.Profiles.GradientDescentGram.unitGDModelQ_one_eq :
+  Profiles.GradientDescentGram.unitGDModelQ 1 = UpperCertificateExamples.oneStepModelQ
+LeanPEP.Profiles.GradientDescentGram.unitGDObjectiveQ_one_eq :
+  Profiles.GradientDescentGram.unitGDObjectiveQ 1 = UpperCertificateExamples.oneStepObjectiveQ
+LeanPEP.Profiles.GradientDescentGram.unitGDInterpolationExprQ_one (i j : Fin 3) :
+  interpolationExprQ (Profiles.GradientDescentGram.unitGDModelQ 1) i j =
+    interpolationExprQ UpperCertificateExamples.oneStepModelQ i j
+LeanPEP.Profiles.GradientDescentGram.unitGD_oneStep_exact_certificate :
+  ∃ c,
+    c.bound = 1 / 6 ∧ c.objective = Profiles.GradientDescentGram.unitGDObjectiveQ 1 ∧ GramPEP.checkUpperCertQ c = true
+LeanPEP.Profiles.GradientDescentGram.unitGD_oneStep_upper (d : GramPEP.DataR (Fin 3) 3)
+  (hrealizes : RealizesModelQ (Profiles.GradientDescentGram.unitGDModelQ 1) d) (hcore : CoreFeasible d)
+  (hassumptions : AssumptionsFeasibleR (Profiles.GradientDescentGram.unitGDModelQ 1) d) :
+  (Profiles.GradientDescentGram.unitGDObjectiveQ 1).evalR d ≤ 1 / 6

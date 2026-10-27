@@ -1,0 +1,47 @@
+LeanPEP.GramPEP.RankOneFactorQ (m : ℕ) : Type
+LeanPEP.GramPEP.PSDFactorCertQ (m : ℕ) : Type
+LeanPEP.GramPEP.weightedOuterQ {m : ℕ} (t : RankOneFactorQ m) : Gram m ℚ
+LeanPEP.GramPEP.gramNormSq_zero_gram {m : ℕ} (u : VecExpr m ℚ) : gramNormSq 0 u = 0
+LeanPEP.GramPEP.factorGramQ {m : ℕ} : List (RankOneFactorQ m) → Gram m ℚ
+LeanPEP.GramPEP.checkGramEqQ {m : ℕ} (G H : Gram m ℚ) : Bool
+LeanPEP.GramPEP.checkGramSymmetricQ {m : ℕ} (G : Gram m ℚ) : Bool
+LeanPEP.GramPEP.checkFactorWeightsQ {m : ℕ} (c : PSDFactorCertQ m) : Bool
+LeanPEP.GramPEP.PSDFactorValidQ {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m) : Prop
+LeanPEP.GramPEP.checkPSDFactorQ {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m) : Bool
+LeanPEP.GramPEP.checkPSDFactorQ_sound {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m) (h : checkPSDFactorQ G c = true) :
+  IsGramPosSemidef G
+LeanPEP.GramPEP.GramAsymmetryQ (m : ℕ) : Type
+LeanPEP.GramPEP.NegativeFactorWeightQ : Type
+LeanPEP.GramPEP.GramEntryMismatchQ (m : ℕ) : Type
+LeanPEP.GramPEP.PSDFactorAuditReportQ (m : ℕ) : Type
+LeanPEP.GramPEP.auditPSDFactorQ {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m) : PSDFactorAuditReportQ m
+LeanPEP.GramPEP.auditPSDFactorQ_sound {m : ℕ} (G : Gram m ℚ) (c : PSDFactorCertQ m)
+  (h : (auditPSDFactorQ G c).accepted = true) : IsGramPosSemidef G
+LeanPEP.GramPEP.mem_gramAsymmetriesQ_sound {m : ℕ} (G : Gram m ℚ) (a : GramAsymmetryQ m) (h : a ∈ gramAsymmetriesQ G) :
+  a.left = G a.i a.j ∧ a.right = G a.j a.i ∧ a.left ≠ a.right
+LeanPEP.GramPEP.mem_negativeFactorWeightsQ_sound {m : ℕ} (c : PSDFactorCertQ m) (e : NegativeFactorWeightQ)
+  (h : e ∈ negativeFactorWeightsQ c) : e.weight < 0
+LeanPEP.GramPEP.mem_gramEntryMismatchesQ_sound {m : ℕ} (G actual : Gram m ℚ) (e : GramEntryMismatchQ m)
+  (h : e ∈ gramEntryMismatchesQ G actual) : e.expected = G e.i e.j ∧ e.actual = actual e.i e.j ∧ e.expected ≠ e.actual
+LeanPEP.GramPEP.PSDFactorizationExamples.unitFactorCertQ_check : checkPSDFactorQ unitGram unitFactorCertQ = true
+LeanPEP.GramPEP.PSDFactorizationExamples.twoByTwoFactorCertQ_check :
+  checkPSDFactorQ twoByTwoGramQ twoByTwoFactorCertQ = true
+LeanPEP.GramPEP.PSDFactorizationExamples.twoByTwoGramQ_posSemidef : IsGramPosSemidef twoByTwoGramQ
+LeanPEP.GramPEP.PSDFactorizationExamples.negativeWeightCertQ_audit :
+  auditPSDFactorQ negativeUnitGramQ negativeWeightCertQ =
+    { accepted := false, asymmetries := [], negativeWeights := [{ index := 0, weight := -1 }], entryMismatches := [] }
+LeanPEP.GramPEP.PSDFactorizationExamples.missingFactorCertQ_audit :
+  auditPSDFactorQ unitGram missingFactorCertQ =
+    { accepted := false, asymmetries := [], negativeWeights := [],
+      entryMismatches := [{ i := 0, j := 0, expected := 1, actual := 0 }] }
+LeanPEP.GramPEP.PSDFactorizationExamples.asymmetricGramQ_asymmetries :
+  (auditPSDFactorQ asymmetricGramQ { factors := [] }).asymmetries =
+    [{ i := 0, j := 1, left := 1, right := 0 }, { i := 1, j := 0, left := 0, right := 1 }]
+true
+true
+{ accepted := false, asymmetries := [], negativeWeights := [{ index := 0, weight := -1 }], entryMismatches := [] }
+{ accepted := false,
+  asymmetries := [],
+  negativeWeights := [],
+  entryMismatches := [{ i := 0, j := 0, expected := 1, actual := 0 }] }
+[{ i := 0, j := 1, left := 1, right := 0 }, { i := 1, j := 0, left := 0, right := 1 }]

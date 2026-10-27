@@ -1,0 +1,11 @@
+$ <AUTHOR_HOME>/.elan/bin/lake env lean <AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/A14PGTwoStructured_001/Replay.lean
+'LeanPEP.Imported.Structured.PGTwo001.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.trace_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.raw_binding_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.policy_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.upper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.structured_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.structured_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.policy_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.Structured.PGTwo001.actual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

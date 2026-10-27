@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "mode": "tightness",
+  "coverage": {
+    "library_modules": 247,
+    "aggregate_project_modules": 238,
+    "unaggregated_modules": 10,
+    "smoke_files": 73,
+    "regression_files": 4,
+    "replay_files": 12,
+    "historical_replays_preserved_without_rerun": 8
+  },
+  "completed_commands": 6,
+  "planned_commands": 6,
+  "live_capture_performed": false,
+  "standard_axioms_checked_by_consumer": false,
+  "direct_axiom_audits": [
+    {
+      "label": "build_pg_tightness",
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "build_gd_tightness",
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "gd_one_regression",
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "gd_one_tightness",
+      "passed": true,
+      "printed_declarations": 13,
+      "expected_declarations": 13,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "pg_one_regression",
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "pg_one_tightness",
+      "passed": true,
+      "printed_declarations": 14,
+      "expected_declarations": 14,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    }
+  ],
+  "selected_byte_comparison": "not applicable"
+}

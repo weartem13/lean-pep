@@ -1,0 +1,34 @@
+{
+  "actual_upper_verified": true,
+  "bound": {
+    "den": 4,
+    "num": 1
+  },
+  "candidate_accepted": true,
+  "candidate_bytes_sha256": "8d1a4dc93f1d6306db88a57ff24ffb608ccd375d335da317a9964cf31c01c1f6",
+  "capture_bytes_sha256": "69ab11490086c9d6e704b6b6693d45e783a84ed61fe1c14519e423c4a608250b",
+  "d13_acceptance_met": false,
+  "format": "leanpep-structured-pg-one-v1",
+  "generation_rule": "pg_t1_source_affine_rank3_v1",
+  "input_bytes_unchanged": true,
+  "interface_smoke_exit": 0,
+  "lean": {
+    "attempted": true,
+    "axioms_allowed": true,
+    "build_exit": 0,
+    "checked": true,
+    "reason": null,
+    "replay_exit": 0
+  },
+  "live_capture_performed": false,
+  "mode": "archive_structured",
+  "namespace": "LeanPEP.Imported.Structured.PGOne001",
+  "primal_certified": false,
+  "raw_modified": false,
+  "replay_bytes_sha256": "9d871ff84b6f46b12e49c0ec44f49fb4afdce3d010c62b45c96effd46f2b4aeb",
+  "residual_recomputed": true,
+  "selected_endpoint": "structured",
+  "source_coefficients_changed": false,
+  "status": "verified_upper",
+  "tightness_claimed": false
+}

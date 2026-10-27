@@ -1,0 +1,21 @@
+{
+  "mathlib_import_roots": [
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Defs",
+    "Mathlib.Algebra.Order.Field.Basic",
+    "Mathlib.Analysis.Calculus.Deriv.MeanValue",
+    "Mathlib.Analysis.Calculus.Deriv.Pow",
+    "Mathlib.Analysis.Calculus.Gradient.Basic",
+    "Mathlib.Analysis.Convex.Deriv",
+    "Mathlib.Analysis.Convex.Function",
+    "Mathlib.Analysis.InnerProductSpace.Basic",
+    "Mathlib.Data.Fin.VecNotation",
+    "Mathlib.Data.List.OfFn",
+    "Mathlib.Data.List.Range",
+    "Mathlib.Data.Matrix.Mul",
+    "Mathlib.Tactic",
+    "Mathlib.Tactic.DeriveFintype",
+    "Mathlib.Topology.MetricSpace.Lipschitz"
+  ],
+  "old_project_output_supplied": false
+}

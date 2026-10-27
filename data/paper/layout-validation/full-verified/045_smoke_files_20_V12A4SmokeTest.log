@@ -1,0 +1,12 @@
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.oneStepGD_upper_of_inner_radius.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) {xStar x0 x1 : E} (hstationary : g xStar = 0)
+  (hstep : x1 = x0 - g x0) (hradius : inner ℝ (x0 - xStar) (x0 - xStar) ≤ 1) : f x1 - f xStar ≤ 1 / 6
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.oneStepGD_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) {xStar x0 x1 : E} (hstationary : g xStar = 0)
+  (hstep : x1 = x0 - g x0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) : f x1 - f xStar ≤ 1 / 6
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.oneStepGD_upper_at_update.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) {xStar x0 : E} (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) : f (x0 - g x0) - f xStar ≤ 1 / 6

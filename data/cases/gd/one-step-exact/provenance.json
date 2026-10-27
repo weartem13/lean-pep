@@ -1,0 +1,27 @@
+{
+  "capture_byte_sha256": "c3af570e558a7ad3ad0d4a02e1aa6875bf29fe4a2f33cd1a046f5b7e985b1e1b",
+  "capture_canonical_sha256": "c8544b5e120e5a9896b865878c40a4df7324605a04420aa3b788a2ee28e7178c",
+  "effective_solve_kwargs": {
+    "dimension_reduction_heuristic": null,
+    "max_iter": 500,
+    "return_primal_or_dual": "dual",
+    "solver": "CLARABEL",
+    "tol_feas": 1e-12,
+    "tol_gap_abs": 1e-12,
+    "tol_gap_rel": 1e-12,
+    "verbose": 2,
+    "wrapper": "cvxpy"
+  },
+  "effective_solver_options": {
+    "max_iter": 500,
+    "tol_feas": 1e-12,
+    "tol_gap_abs": 1e-12,
+    "tol_gap_rel": 1e-12
+  },
+  "live_capture_performed": true,
+  "observer_sha256": "14df726c7eee180acfca1b2927d04e8ef39045f7e039bd436c1f22a0395d69cc",
+  "original_capture_code_sha256": "dc464305f3b6dc08dabbd50f0df13b1ddb1a96c119c2bf0b4c8b90dfa612be4f",
+  "sidecar_byte_sha256": "2e233c9773d58a958d7e2f3a910b36dffde8905e65fe97c2b561fc6b276e174e",
+  "solve_count": 1,
+  "solve_elapsed_seconds": 0.029266541001561563
+}

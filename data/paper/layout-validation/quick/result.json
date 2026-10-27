@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "mode": "quick",
+  "coverage": {
+    "library_modules": 247,
+    "aggregate_project_modules": 238,
+    "unaggregated_modules": 10,
+    "smoke_files": 73,
+    "regression_files": 4,
+    "replay_files": 12,
+    "historical_replays_preserved_without_rerun": 8
+  },
+  "completed_commands": 5,
+  "planned_commands": 5,
+  "live_capture_performed": false,
+  "standard_axioms_checked_by_consumer": true,
+  "direct_axiom_audits": [
+    {
+      "label": "core",
+      "passed": true,
+      "printed_declarations": 0,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    {
+      "label": "interface_smoke",
+      "passed": true,
+      "printed_declarations": 2,
+      "expected_declarations": 2,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    }
+  ],
+  "selected_byte_comparison": "not applicable"
+}

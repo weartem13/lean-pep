@@ -1,0 +1,136 @@
+LeanPEP.GramPEP.RationalReconstructionAudit.checkPolicyQ_eq_true_iff (p : PolicyQ) :
+  checkPolicyQ p = true ↔ 0 < p.maxDenominator ∧ 0 ≤ p.maxAbsError
+LeanPEP.GramPEP.RationalReconstructionAudit.checkScalarQ_eq_true_iff (p : PolicyQ) (a b : ℚ) :
+  checkScalarQ p a b = true ↔ WithinQ p a b
+LeanPEP.GramPEP.RationalReconstructionAudit.checkCoefficientsQ_eq_true_iff (p : PolicyQ) (as bs : List ℚ) :
+  checkCoefficientsQ p as bs = true ↔ CoefficientsWithinQ p as bs
+LeanPEP.GramPEP.RationalReconstructionAudit.coefficients_length (p : PolicyQ) (as bs : List ℚ)
+  (h : checkCoefficientsQ p as bs = true) : as.length = bs.length
+LeanPEP.GramPEP.RationalReconstructionAudit.numericalCoefficientsQ {p m : ℕ} {model : ModelQ p m}
+  (c : UpperCertQ model) : List ℚ
+LeanPEP.GramPEP.RationalReconstructionAudit.checkChangesQ_eq_true_iff {p m : ℕ} {model : ModelQ p m} (policy : PolicyQ)
+  (raw reconstructed : UpperCertQ model) :
+  checkChangesQ policy raw reconstructed = true ↔
+    (0 < policy.maxDenominator ∧ 0 ≤ policy.maxAbsError) ∧
+      assumptionReferencesQ raw = assumptionReferencesQ reconstructed ∧
+        interpolationReferencesQ raw = interpolationReferencesQ reconstructed ∧
+          CoefficientsWithinQ policy (numericalCoefficientsQ raw) (numericalCoefficientsQ reconstructed)
+LeanPEP.GramPEP.RationalReconstructionAudit.references_preserved {p m : ℕ} {model : ModelQ p m} (policy : PolicyQ)
+  (raw reconstructed : UpperCertQ model) (h : checkChangesQ policy raw reconstructed = true) :
+  assumptionReferencesQ raw = assumptionReferencesQ reconstructed ∧
+    interpolationReferencesQ raw = interpolationReferencesQ reconstructed
+LeanPEP.Adapters.ProximalGradientReconstruction.checkReconstructedQ_eq_true_iff {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model) :
+  checkReconstructedQ s policy raw reconstructed = true ↔
+    checkChangesQ policy raw reconstructed = true ∧ Adapters.ProximalGradientSparse.checkBoundQ s reconstructed = true
+LeanPEP.Adapters.ProximalGradientReconstruction.reconstructed_bound_check {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model)
+  (h : checkReconstructedQ s policy raw reconstructed = true) :
+  Adapters.ProximalGradientSparse.checkBoundQ s reconstructed = true
+LeanPEP.Adapters.ProximalGradientReconstruction.reconstruction_within_policy {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model)
+  (h : checkReconstructedQ s policy raw reconstructed = true) :
+  CoefficientsWithinQ policy (numericalCoefficientsQ raw) (numericalCoefficientsQ reconstructed)
+LeanPEP.Adapters.ProximalGradientReconstruction.checked_certificate {n k : ℕ}
+  (s : Adapters.ProximalGradientSparse.SourceQ n k) (policy : PolicyQ) (raw reconstructed : UpperCertQ s.model)
+  (h : checkReconstructedQ s policy raw reconstructed = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = reconstructed.bound
+LeanPEP.Imported.CompositeCandidates.PGOne.raw_psd_passes :
+  checkPSDFactorQ Imported.CompositeCandidates.PGOne.rawUpperQ.dualMatrix
+      Imported.CompositeCandidates.PGOne.rawUpperQ.dualFactor =
+    true
+LeanPEP.Imported.CompositeCandidates.PGOne.raw_rejected :
+  checkRawQ Imported.CompositeCandidates.PGOne.sourceQ Imported.CompositeCandidates.PGOne.rawUpperQ = false
+LeanPEP.Imported.CompositeCandidates.PGThree.raw_not_psd_real :
+  ¬IsGramPosSemidef (castGramQ Imported.CompositeCandidates.PGThree.rawUpperQ.dualMatrix)
+LeanPEP.Imported.CompositeCandidates.PGThree.reconstructed_check :
+  checkReconstructedQ Imported.CompositeCandidates.PGThree.sourceQ Imported.CompositeCandidates.PGThree.policyQ
+      Imported.CompositeCandidates.PGThree.rawUpperQ Imported.CompositeCandidates.PGThree.reconstructedUpperQ =
+    true
+LeanPEP.Imported.CompositeCandidates.PGExact.raw_check :
+  checkRawQ Imported.CompositeCandidates.PGExact.sourceQ Imported.CompositeCandidates.PGExact.rawUpperQ = true
+LeanPEP.Imported.CompositeCandidates.strict_policy_rejected :
+  checkReconstructedQ Imported.CompositeCandidates.PGOne.sourceQ Imported.CompositeCandidates.strictPolicyQ
+      Imported.CompositeCandidates.PGOne.rawUpperQ Imported.CompositeCandidates.PGOne.reconstructedUpperQ =
+    false
+LeanPEP.Imported.CompositeCandidates.wrong_bound_within_policy :
+  checkChangesQ Imported.CompositeCandidates.loosePolicyQ Imported.CompositeCandidates.PGOne.rawUpperQ
+      Imported.CompositeCandidates.wrongBoundQ =
+    true
+LeanPEP.Imported.CompositeCandidates.wrong_bound_joint_rejected :
+  checkReconstructedQ Imported.CompositeCandidates.PGOne.sourceQ Imported.CompositeCandidates.loosePolicyQ
+      Imported.CompositeCandidates.PGOne.rawUpperQ Imported.CompositeCandidates.wrongBoundQ =
+    false
+LeanPEP.Imported.CompositeCandidates.wrong_factors_rejected :
+  checkReconstructedQ Imported.CompositeCandidates.PGOne.sourceQ Imported.CompositeCandidates.PGOne.policyQ
+      Imported.CompositeCandidates.PGOne.rawUpperQ Imported.CompositeCandidates.wrongFactorsQ =
+    false
+LeanPEP.Imported.CompositeCandidates.extra_zero_reference_rejected :
+  checkChangesQ Imported.CompositeCandidates.PGOne.policyQ Imported.CompositeCandidates.PGOne.rawUpperQ
+      Imported.CompositeCandidates.extraZeroQ =
+    false
+LeanPEP.Imported.CompositeCandidates.wrong_coverage_rejected :
+  checkReconstructedQ Imported.CompositeCandidates.wrongCoverageQ Imported.CompositeCandidates.PGOne.policyQ
+      Imported.CompositeCandidates.PGOne.rawUpperQ Imported.CompositeCandidates.PGOne.reconstructedUpperQ =
+    false
+LeanPEP.Imported.CompositeCandidates.raw_acceptance_not_inherited :
+  checkChangesQ Imported.CompositeCandidates.PGOne.policyQ Imported.CompositeCandidates.PGOne.rawUpperQ
+        Imported.CompositeCandidates.PGOne.reconstructedUpperQ =
+      true ∧
+    checkRawQ Imported.CompositeCandidates.PGOne.sourceQ Imported.CompositeCandidates.PGOne.rawUpperQ = false ∧
+      checkReconstructedQ Imported.CompositeCandidates.PGOne.sourceQ Imported.CompositeCandidates.PGOne.policyQ
+          Imported.CompositeCandidates.PGOne.rawUpperQ Imported.CompositeCandidates.PGOne.reconstructedUpperQ =
+        true
+LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k) (policy : PolicyQ)
+  (raw reconstructed : UpperCertQ s.model) (hc : checkReconstructedQ s policy raw reconstructed = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑reconstructed.bound
+LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.raw_upper_firstOrder.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (raw : UpperCertQ s.model) (hc : checkRawQ s raw = true) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E}
+  {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑raw.bound
+LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+tests/lean/smoke/V13D8SmokeTest.lean:70:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+tests/lean/smoke/V13D8SmokeTest.lean:75:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.GramPEP.RationalReconstructionAudit.checkCoefficientsQ_eq_true_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.GramPEP.RationalReconstructionAudit.checkChangesQ_eq_true_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientReconstruction.checked_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCandidates.PGThree.raw_not_psd_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCandidates.raw_acceptance_not_inherited' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCandidates.wrong_bound_joint_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCandidates.PGThree.reconstructed_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientReconstructionAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

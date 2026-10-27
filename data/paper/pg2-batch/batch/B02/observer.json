@@ -1,0 +1,297 @@
+{
+  "stage": "candidate_returned",
+  "wall_seconds": 2.9576942090061493,
+  "trial_count": 2,
+  "trials": [
+    {
+      "denominator": 500000,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": false,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true
+    },
+    {
+      "denominator": 499999,
+      "policy_checks": {
+        "policy_valid": true,
+        "assumption_references": true,
+        "interpolation_references": true,
+        "coefficient_lengths": true,
+        "error_bounds": true,
+        "denominator_bounds": true
+      },
+      "nonnegative_weights": true,
+      "psd": {
+        "format": "leanpep-psd-synthesis-v1",
+        "producer_version": "v0.13D1",
+        "matrix_sha256": "f32bd54dee524ad1408081462a0fc74d6c3b9914e647af29f5fbfc2cc0366b44",
+        "dimension": 8,
+        "status": "psd",
+        "reason": "exact factor identity",
+        "pivot_indices_original_basis": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "python_exact_recheck": true,
+        "lean_status": "not_run_by_this_producer",
+        "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+        "factor_count": 6,
+        "factor_certificate": {
+          "factors": [
+            {
+              "weight": {
+                "num": 62500,
+                "den": 499999
+              },
+              "vector": [
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -1,
+                  "den": 62500
+                },
+                {
+                  "num": -1,
+                  "den": 1
+                },
+                {
+                  "num": 84793,
+                  "den": 125000
+                },
+                {
+                  "num": 140799,
+                  "den": 125000
+                },
+                {
+                  "num": 164947,
+                  "den": 125000
+                },
+                {
+                  "num": 1796,
+                  "den": 625
+                },
+                {
+                  "num": 250261,
+                  "den": 125000
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 15625093749,
+                "den": 31249937500
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": -5299602707,
+                  "den": 31250187498
+                },
+                {
+                  "num": 15799,
+                  "den": 31250187498
+                },
+                {
+                  "num": -10309147553,
+                  "den": 31250187498
+                },
+                {
+                  "num": 49450,
+                  "den": 5208364583
+                },
+                {
+                  "num": -15641124739,
+                  "den": 31250187498
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 6105495356977849,
+                "den": 62500249995250008
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -4125406876235255,
+                  "den": 6105495356977849
+                },
+                {
+                  "num": -283591983459983,
+                  "den": 321341860893571
+                },
+                {
+                  "num": 4125439768472118,
+                  "den": 6105495356977849
+                },
+                {
+                  "num": -717214779001309,
+                  "den": 6105495356977849
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 478692979637711304593,
+                "den": 6105483145987135044302
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": -283221070240814495855,
+                  "den": 478692979637711304593
+                },
+                {
+                  "num": -478683931383283064396,
+                  "den": 478692979637711304593
+                },
+                {
+                  "num": 283230118495242736052,
+                  "den": 478692979637711304593
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 2701037522818720003178693,
+                "den": 15441678137153291263560994
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 1584615806952660563323,
+                  "den": 83732163207380320098539483
+                },
+                {
+                  "num": -83730578591573367437976160,
+                  "den": 83732163207380320098539483
+                }
+              ]
+            },
+            {
+              "weight": {
+                "num": 167457983962113851571125168,
+                "den": 41865997871526952668949642960517
+              },
+              "vector": [
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 0,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                },
+                {
+                  "num": 1,
+                  "den": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "original_upper_accepted": true
+    }
+  ],
+  "returned_candidate": true
+}

@@ -1,0 +1,35 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.slackPolyQ_valueCoeff {N : ℕ} (i j : LeanPEP.Toy.FiniteGD.Point N)
+  (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.slackPolyQ i j).valueCoeff r =
+    (LeanPEP.Toy.FiniteGD.pointValuePolyQ i).valueCoeff r - (LeanPEP.Toy.FiniteGD.pointValuePolyQ j).valueCoeff r
+LeanPEP.Toy.FiniteGD.ParametricUpper.interpPolySumQ_valueCoeff {N : ℕ}
+  (terms : List (LeanPEP.Toy.FiniteGD.InterpTermQ N)) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ terms).valueCoeff r =
+    (List.map
+        (fun t =>
+          t.weight *
+            ((LeanPEP.Toy.FiniteGD.pointValuePolyQ t.i).valueCoeff r -
+              (LeanPEP.Toy.FiniteGD.pointValuePolyQ t.j).valueCoeff r))
+        terms).sum
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarTermsQ_valueCoeff (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarTermsQ N)).valueCoeff r =
+    -LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainTermsQ_valueCoeff (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.interpPolySumQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainTermsQ N)).valueCoeff r =
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainSourceSumQ N r -
+      LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainTargetSumQ N r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateRhs_valueCoeff_flow (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).valueCoeff r =
+    -LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N r +
+        LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainSourceSumQ N r -
+      LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainTargetSumQ N r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificate_valueCoeff (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).valueCoeff r =
+    (LeanPEP.Toy.FiniteGD.upperTargetPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+          (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N)).valueCoeff
+      r
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificate_valueCoefficients (N : ℕ) (r : Fin (N + 1)) :
+  (LeanPEP.Toy.FiniteGD.certificateRhsPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)).valueCoeff r =
+    (LeanPEP.Toy.FiniteGD.upperTargetPolyQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+          (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N)).valueCoeff
+      r

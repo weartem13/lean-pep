@@ -1,0 +1,115 @@
+{
+  "allowed_changes": [
+    "primal.gram_factor",
+    "upper.dual_factor",
+    "declared.primal_factor_count",
+    "declared.dual_factor_count"
+  ],
+  "bundle_emitted": true,
+  "dual": {
+    "dimension": 3,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -3
+            },
+            {
+              "den": 2,
+              "num": -3
+            }
+          ],
+          "weight": {
+            "den": 6,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            }
+          ],
+          "weight": {
+            "den": 8,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "factor_count": 2,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "0a7b6c31c9d5b867c6b811545a2a07d9c5c04812bfd0c849e9c3ee182b6451cc",
+    "pivot_indices_original_basis": [
+      0,
+      1
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  "format": "leanpep-bundle-factor-synthesis-v1",
+  "full_bundle_acceptance": "not_checked",
+  "primal": {
+    "dimension": 3,
+    "factor_certificate": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "factor_count": 1,
+    "format": "leanpep-psd-synthesis-v1",
+    "lean_status": "not_run_by_this_producer",
+    "matrix_sha256": "e094770308ea2d57fe11ee5e5d5bf729cece02ad2e4b7cfe6da8bde19c546815",
+    "pivot_indices_original_basis": [
+      0
+    ],
+    "producer_version": "v0.13D1",
+    "python_exact_recheck": true,
+    "reason": "exact factor identity",
+    "scope": "matrix only; not source audit, PEP feasibility, upper bound, or tightness",
+    "status": "psd"
+  },
+  "producer_version": "v0.13D1",
+  "raw_reconstructed_policy": "input exact matrices are not modified or reconstructed",
+  "replacement_bundle_sha256": "ed33f09551151952cd5063cfa31cc8d459fa4b6fab15864d1887ae6ef50ba33d",
+  "source_bundle_sha256": "b3968a8c8056d45cb64eafc188c219b0e1e79d243d88a804ebbfcbd47b797791",
+  "source_formulation_audit": "not_performed"
+}

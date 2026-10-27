@@ -1,0 +1,208 @@
+{
+  "declared_constraint_count": 16,
+  "declared_point_count": 4,
+  "expect": "rejected",
+  "primal": {
+    "grad": [
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      }
+    ],
+    "value": [
+      {
+        "den": 5000000000,
+        "num": 899999999
+      },
+      {
+        "den": 50,
+        "num": 7
+      },
+      {
+        "den": 10,
+        "num": 1
+      }
+    ]
+  },
+  "schema_version": 1,
+  "source": "v0.7 near-exact two-step solver candidate | raw exact decimal interpretation",
+  "steps": 2,
+  "upper": {
+    "bound": {
+      "den": 10,
+      "num": 1
+    },
+    "interp_terms": [
+      {
+        "i": {
+          "kind": "star"
+        },
+        "j": {
+          "index": 0,
+          "kind": "iter"
+        },
+        "weight": {
+          "den": 4,
+          "num": 1
+        }
+      },
+      {
+        "i": {
+          "index": 0,
+          "kind": "iter"
+        },
+        "j": {
+          "index": 1,
+          "kind": "iter"
+        },
+        "weight": {
+          "den": 4,
+          "num": 1
+        }
+      },
+      {
+        "i": {
+          "index": 1,
+          "kind": "iter"
+        },
+        "j": {
+          "index": 2,
+          "kind": "iter"
+        },
+        "weight": {
+          "den": 4,
+          "num": 1
+        }
+      },
+      {
+        "i": {
+          "kind": "star"
+        },
+        "j": {
+          "index": 1,
+          "kind": "iter"
+        },
+        "weight": {
+          "den": 10000000000,
+          "num": 4166666667
+        }
+      },
+      {
+        "i": {
+          "index": 1,
+          "kind": "iter"
+        },
+        "j": {
+          "index": 2,
+          "kind": "iter"
+        },
+        "weight": {
+          "den": 10000000000,
+          "num": 4166666667
+        }
+      },
+      {
+        "i": {
+          "kind": "star"
+        },
+        "j": {
+          "index": 2,
+          "kind": "iter"
+        },
+        "weight": {
+          "den": 10000000000,
+          "num": 3333333333
+        }
+      }
+    ],
+    "objective": 2,
+    "square_terms": [
+      {
+        "form": {
+          "const": {
+            "den": 16,
+            "num": -5
+          },
+          "grad": [
+            {
+              "den": 16,
+              "num": 5
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": 1
+            }
+          ]
+        },
+        "weight": {
+          "den": 10000000000,
+          "num": 6666666667
+        }
+      },
+      {
+        "form": {
+          "const": {
+            "den": 4,
+            "num": -1
+          },
+          "grad": [
+            {
+              "den": 4,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ]
+        },
+        "weight": {
+          "den": 10000000000,
+          "num": 4583333333
+        }
+      },
+      {
+        "form": {
+          "const": {
+            "den": 5,
+            "num": -1
+          },
+          "grad": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "weight": {
+          "den": 32,
+          "num": 5
+        }
+      }
+    ]
+  }
+}

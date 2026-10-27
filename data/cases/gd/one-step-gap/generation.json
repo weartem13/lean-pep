@@ -1,0 +1,648 @@
+{
+  "generation_rule": "gd1_native_microgrid_then_equal_gradient_block_local9_v1",
+  "known_rate_used": false,
+  "max_candidates": 10,
+  "solver_calls": 0,
+  "trial_count": 6,
+  "trials": [
+    {
+      "accepted": false,
+      "first_failure": "native PSD: negative",
+      "gram": [
+        [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          }
+        ]
+      ],
+      "method": "independent_all13_microgrid",
+      "native_psd": false,
+      "offset": null,
+      "policy_accepted": true,
+      "rows": [
+        {
+          "den": 1000000,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1000000,
+          "num": -1
+        },
+        {
+          "den": 500000,
+          "num": -111111
+        },
+        {
+          "den": 1000000,
+          "num": -1
+        },
+        {
+          "den": 1000000,
+          "num": -111111
+        },
+        {
+          "den": 1000000,
+          "num": 1
+        }
+      ],
+      "values": [
+        {
+          "den": 1000000,
+          "num": -148221
+        },
+        {
+          "den": 250000,
+          "num": 32389
+        },
+        {
+          "den": 200000,
+          "num": 3689
+        },
+        {
+          "den": 1000000,
+          "num": 166667
+        }
+      ]
+    },
+    {
+      "accepted": false,
+      "first_failure": "native PSD: negative",
+      "gram": [
+        [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          }
+        ]
+      ],
+      "method": "equal_gradient_block_and_f0_minus_f1_equals_norm_sq",
+      "native_psd": false,
+      "offset": [
+        0,
+        0
+      ],
+      "policy_accepted": true,
+      "rows": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1000000,
+          "num": -1
+        },
+        {
+          "den": 1000000,
+          "num": -1
+        },
+        {
+          "den": 1000000,
+          "num": -222221
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1000000,
+          "num": -111111
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "values": [
+        {
+          "den": 1000000,
+          "num": -148221
+        },
+        {
+          "den": 200000,
+          "num": 25911
+        },
+        {
+          "den": 200000,
+          "num": 3689
+        },
+        {
+          "den": 500000,
+          "num": 83333
+        }
+      ]
+    },
+    {
+      "accepted": false,
+      "first_failure": "row[2]=1/2000000>0",
+      "gram": [
+        [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          }
+        ]
+      ],
+      "method": "equal_gradient_block_and_f0_minus_f1_equals_norm_sq",
+      "native_psd": true,
+      "offset": [
+        0,
+        1
+      ],
+      "policy_accepted": true,
+      "rows": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 2000000,
+          "num": 1
+        },
+        {
+          "den": 2000000,
+          "num": 1
+        },
+        {
+          "den": 2000000,
+          "num": -444443
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 2000000,
+          "num": -222221
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "values": [
+        {
+          "den": 1000000,
+          "num": -148221
+        },
+        {
+          "den": 250000,
+          "num": 32389
+        },
+        {
+          "den": 200000,
+          "num": 3689
+        },
+        {
+          "den": 500000,
+          "num": 83333
+        }
+      ]
+    },
+    {
+      "accepted": false,
+      "first_failure": "gram[1][1] budget",
+      "gram": [
+        [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 250000,
+            "num": 83333
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 1000000,
+            "num": 111109
+          },
+          {
+            "den": 1000000,
+            "num": 111109
+          }
+        ],
+        [
+          {
+            "den": 250000,
+            "num": 83333
+          },
+          {
+            "den": 1000000,
+            "num": 111109
+          },
+          {
+            "den": 1000000,
+            "num": 111109
+          }
+        ]
+      ],
+      "method": "equal_gradient_block_and_f0_minus_f1_equals_norm_sq",
+      "native_psd": false,
+      "offset": [
+        0,
+        -1
+      ],
+      "policy_accepted": false,
+      "rows": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 400000,
+          "num": -1
+        },
+        {
+          "den": 400000,
+          "num": -1
+        },
+        {
+          "den": 2000000,
+          "num": -444441
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 2000000,
+          "num": -222223
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "values": [
+        {
+          "den": 1000000,
+          "num": -148221
+        },
+        {
+          "den": 500000,
+          "num": 64777
+        },
+        {
+          "den": 200000,
+          "num": 3689
+        },
+        {
+          "den": 500000,
+          "num": 83333
+        }
+      ]
+    },
+    {
+      "accepted": false,
+      "first_failure": "native PSD: negative",
+      "gram": [
+        [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1000000,
+            "num": 333333
+          },
+          {
+            "den": 1000000,
+            "num": 333333
+          }
+        ],
+        [
+          {
+            "den": 1000000,
+            "num": 333333
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          }
+        ],
+        [
+          {
+            "den": 1000000,
+            "num": 333333
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          },
+          {
+            "den": 100000,
+            "num": 11111
+          }
+        ]
+      ],
+      "method": "equal_gradient_block_and_f0_minus_f1_equals_norm_sq",
+      "native_psd": false,
+      "offset": [
+        1,
+        0
+      ],
+      "policy_accepted": true,
+      "rows": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 500000,
+          "num": -1
+        },
+        {
+          "den": 500000,
+          "num": -1
+        },
+        {
+          "den": 1000000,
+          "num": -222221
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1000000,
+          "num": -111111
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "values": [
+        {
+          "den": 1000000,
+          "num": -148221
+        },
+        {
+          "den": 200000,
+          "num": 25911
+        },
+        {
+          "den": 200000,
+          "num": 3689
+        },
+        {
+          "den": 500000,
+          "num": 83333
+        }
+      ]
+    },
+    {
+      "accepted": true,
+      "first_failure": null,
+      "gram": [
+        [
+          {
+            "den": 1,
+            "num": 1
+          },
+          {
+            "den": 1000000,
+            "num": 333333
+          },
+          {
+            "den": 1000000,
+            "num": 333333
+          }
+        ],
+        [
+          {
+            "den": 1000000,
+            "num": 333333
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          }
+        ],
+        [
+          {
+            "den": 1000000,
+            "num": 333333
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          },
+          {
+            "den": 1000000,
+            "num": 111111
+          }
+        ]
+      ],
+      "method": "equal_gradient_block_and_f0_minus_f1_equals_norm_sq",
+      "native_psd": true,
+      "offset": [
+        1,
+        1
+      ],
+      "policy_accepted": true,
+      "rows": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 2000000,
+          "num": -1
+        },
+        {
+          "den": 2000000,
+          "num": -1
+        },
+        {
+          "den": 2000000,
+          "num": -444443
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 2000000,
+          "num": -222221
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      "values": [
+        {
+          "den": 1000000,
+          "num": -148221
+        },
+        {
+          "den": 250000,
+          "num": 32389
+        },
+        {
+          "den": 200000,
+          "num": 3689
+        },
+        {
+          "den": 500000,
+          "num": 83333
+        }
+      ]
+    }
+  ]
+}

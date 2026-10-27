@@ -1,0 +1,116 @@
+LeanPEP.GramPEP.OriginCoordinates.restrict_liftVecQ {m : ℕ} (a : Fin m) (v : VecExpr m ℚ) :
+  restrictVec (liftVecQ a v) = v
+LeanPEP.GramPEP.OriginCoordinates.restrict_liftPositionQ {m : ℕ} (a : Fin m) (v : VecExpr m ℚ) :
+  restrictVec (liftPositionQ a v) = v
+LeanPEP.GramPEP.OriginCoordinates.restrict_liftExprQ {p m : ℕ} (a : Fin m) (e : LinearExprQ p m) :
+  restrictExprQ (liftExprQ a e) = e
+LeanPEP.GramPEP.OriginCoordinates.restrict_liftSampleQ {p m : ℕ} (a : Fin m) (s : Profiles.Composite.SampleQ p m) :
+  restrictSampleQ (liftSampleQ a s) = s
+LeanPEP.GramPEP.OriginCoordinates.liftVecQ_eq_center_combination {m : ℕ} (a : Fin m) (v : VecExpr m ℚ)
+  (k : Fin (m + 1)) : liftVecQ a v k = ∑ i, v i * centerMapQ a i k
+LeanPEP.GramPEP.OriginCoordinates.restrictVec_eq_section_combination {m : ℕ} (v : VecExpr (m + 1) ℚ) (k : Fin m) :
+  restrictVec v k = ∑ i, v i * sectionMapQ m i k
+LeanPEP.GramPEP.OriginCoordinates.liftGramQ_eq_congruence {m : ℕ} (a : Fin m) (S : Gram m ℚ) (i j : Fin (m + 1)) :
+  liftGramQ a S i j = ∑ r, ∑ t, centerMapQ a r i * S r t * centerMapQ a t j
+LeanPEP.GramPEP.OriginCoordinates.restrictGram_eq_congruence {m : ℕ} (S : Gram (m + 1) ℚ) (i j : Fin m) :
+  restrictGram S i j = ∑ r, ∑ t, sectionMapQ m r i * S r t * sectionMapQ m t j
+LeanPEP.GramPEP.OriginCoordinates.center_section_entry {m : ℕ} (a i j : Fin m) :
+  ∑ k, centerMapQ a i k * sectionMapQ m k j = if i = j then 1 else 0
+LeanPEP.GramPEP.OriginCoordinates.section_center_origin {m : ℕ} (a : Fin m) :
+  ∑ i, sectionMapQ m 0 i * centerMapQ a i 0 = 0
+LeanPEP.GramPEP.OriginCoordinates.restrict_factorGram {m : ℕ} (fs : List (RankOneFactorQ (m + 1))) :
+  factorGramQ (List.map restrictFactorQ fs) = restrictGram (factorGramQ fs)
+LeanPEP.GramPEP.OriginCoordinates.evalR_restrictExprQ {p m : ℕ} (e : LinearExprQ p (m + 1)) (d : DataR (Fin p) m) :
+  (restrictExprQ e).evalR d = e.evalR (zeroOriginDataR d)
+LeanPEP.GramPEP.OriginCoordinates.zeroOriginGramR_psd {m : ℕ} (G : Gram m ℝ) (hG : IsGramPosSemidef G) :
+  IsGramPosSemidef (zeroOriginGramR G)
+LeanPEP.Adapters.ProximalGradientCoordinates.checkRectQ_eq_true_iff {r c : ℕ} (A B : Matrix (Fin r) (Fin c) ℚ) :
+  checkRectQ A B = true ↔ A = B
+LeanPEP.Adapters.ProximalGradientCoordinates.auditSourceQ {n : ℕ} (s : SourceQ n) : AuditQ
+LeanPEP.Adapters.ProximalGradientCoordinates.checkSourceQ_eq_true_iff {n : ℕ} (s : SourceQ n) :
+  checkSourceQ s = true ↔
+    s.header = expectedHeaderQ n ∧
+      s.centerMatrix = centerMapQ (Profiles.ProximalGradient.initialBasisIndex n) ∧
+        s.sectionMatrix = sectionMapQ (Profiles.ProximalGradient.basisCount n) ∧
+          s.smoothSamples =
+              List.map (liftSampleQ (Profiles.ProximalGradient.initialBasisIndex n)) (centeredSourceQ s).smoothSamples ∧
+            s.nonsmoothSamples =
+                List.map (liftSampleQ (Profiles.ProximalGradient.initialBasisIndex n))
+                  (centeredSourceQ s).nonsmoothSamples ∧
+              s.constraints =
+                  List.map (liftExprQ (Profiles.ProximalGradient.initialBasisIndex n)) (centeredSourceQ s).constraints ∧
+                s.objective = liftExprQ (Profiles.ProximalGradient.initialBasisIndex n) (centeredSourceQ s).objective ∧
+                  Adapters.ProximalGradientSource.checkSourceQ (centeredSourceQ s) = true
+LeanPEP.Adapters.ProximalGradientCoordinates.checkSourceQ_sound {n : ℕ} (s : SourceQ n) (hs : checkSourceQ s = true) :
+  s = expectedSourceQ n
+LeanPEP.Adapters.ProximalGradientCoordinates.centered_expectedSourceQ (n : ℕ) :
+  centeredSourceQ (expectedSourceQ n) = Adapters.ProximalGradientSource.expectedSourceQ n
+LeanPEP.Adapters.ProximalGradientCoordinates.expectedSource_check (n : ℕ) : checkSourceQ (expectedSourceQ n) = true
+LeanPEP.Adapters.ProximalGradientCoordinates.checkSourceQ_eq_expected {n : ℕ} (s : SourceQ n) :
+  checkSourceQ s = true ↔ s = expectedSourceQ n
+LeanPEP.Adapters.ProximalGradientCoordinates.centeredUpper_bound {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) :
+  (centeredUpperQ s c).bound = c.bound
+LeanPEP.Adapters.ProximalGradientCoordinates.checkBoundQ_eq_true_iff {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) :
+  checkBoundQ s c = true ↔
+    checkSourceQ s = true ∧
+      checkUpperCertQ c = true ∧
+        c.interpTerms = [] ∧
+          c.objective = s.objective ∧
+            Adapters.ProximalGradientSource.checkBoundQ (centeredSourceQ s) (centeredUpperQ s c) = true
+LeanPEP.Adapters.ProximalGradientCoordinates.checked_certificate {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = c.bound
+LeanPEP.Imported.CompositeCoordinates.PGOne.bound_check : checkBoundQ PGOne.sourceQ PGOne.upperQ = true
+LeanPEP.Imported.CompositeCoordinates.PGTwo.bound_check : checkBoundQ PGTwo.sourceQ PGTwo.upperQ = true
+LeanPEP.Imported.CompositeCoordinates.PGThree.bound_check : checkBoundQ PGThree.sourceQ PGThree.upperQ = true
+LeanPEP.Imported.CompositeCoordinates.hidden_origin_centered_passes :
+  Adapters.ProximalGradientSource.checkSourceQ (centeredSourceQ hiddenOriginQ) = true
+LeanPEP.Imported.CompositeCoordinates.hidden_origin_native_rejected : checkSourceQ hiddenOriginQ = false
+LeanPEP.Imported.CompositeCoordinates.wrong_native_dual_centered_passes :
+  Adapters.ProximalGradientSource.checkBoundQ (centeredSourceQ PGOne.sourceQ)
+      (centeredUpperQ PGOne.sourceQ wrongNativeDualQ) =
+    true
+LeanPEP.Imported.CompositeCoordinates.wrong_native_dual_joint_rejected :
+  checkBoundQ PGOne.sourceQ wrongNativeDualQ = false
+LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.finite_upper {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true)
+  (d : DataR (Fin (Profiles.ProximalGradient.valueCount n)) (Profiles.ProximalGradient.basisCount n))
+  (hpsd : IsGramPosSemidef d.gram) (hcon : AssumptionsFeasibleR (Profiles.ProximalGradient.modelQ n) d) :
+  (Profiles.ProximalGradient.objectiveQ n).evalR d ≤ ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model) (hc : checkBoundQ s c = true) {L : ℝ≥0}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n : ℕ} (s : SourceQ n) (c : UpperCertQ s.model)
+  (hc : checkBoundQ s c = true) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.GramPEP.OriginCoordinates.liftGramQ_eq_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.OriginCoordinates.evalR_restrictExprQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.OriginCoordinates.zeroOriginGramR_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCoordinates.checkSourceQ_eq_expected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientCoordinates.checked_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCoordinates.hidden_origin_native_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeCoordinates.PGThree.bound_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCoordinateAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

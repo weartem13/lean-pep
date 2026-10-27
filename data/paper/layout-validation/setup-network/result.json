@@ -1,0 +1,11 @@
+{
+  "dependencies_only": true,
+  "dependency_mode": "official upstream Git and matching binary cache",
+  "dependency_source_cold_build": false,
+  "lock_sha256": "7ab86d43e5b63f76c46ff223cca781bfa7db3125822913a8bf695fb6e97335a9",
+  "old_project_objects_used": false,
+  "source_id": "sha256:0e87f88f9f440e7b3fdd102a284d8f9958f922e413c4a442253f41ecba244784",
+  "source_root": "<PUBLIC_SOURCE>",
+  "status": "dependencies_ready",
+  "toolchain": "leanprover/lean4:v4.31.0"
+}

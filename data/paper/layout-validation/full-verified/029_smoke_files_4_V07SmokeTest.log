@@ -1,0 +1,14 @@
+{ provenance := { sourceSha256 := "57063eb77c58f8e401295c264941bf0b1b42bcb47704fa4b38320ee511550c1c",
+                  rawExactSha256 := "b4a0f570dc0efbe62a1124fe5ea01a7f80dad7d1b1f4002a8f4d9c51f9bc7e34",
+                  reconstructedExactSha256 := "3179cd0ea614e4a386c6e3b796e096cb5bc0c4cb7e1f210cba7e784fdb758d46",
+                  reconstructionReportSha256 := "b5b301a5e38f885ff7c6c214c8f7098c4ab5656946ab81578698bf6cec067191",
+                  comparisonManifestSha256 := "3af57172700cb4c6f87473ac2b9972e6d9904f5dd7552802080b33f9533d8638" },
+  rawAudit := LeanPEP.Toy.FiniteGD.ExactBundleAuditQ.rejected
+                (LeanPEP.Toy.FiniteGD.ExactBundleFailureQ.primalRejected
+                  [{ i := LeanPEP.Toy.FiniteGD.Point.iter 0,
+                     j := LeanPEP.Toy.FiniteGD.Point.iter 1,
+                     value := (-1 : Rat)/5000000000 },
+                   { i := LeanPEP.Toy.FiniteGD.Point.iter 0,
+                     j := LeanPEP.Toy.FiniteGD.Point.iter 2,
+                     value := (-1 : Rat)/5000000000 }]),
+  reconstructedAudit := LeanPEP.Toy.FiniteGD.ExactBundleAuditQ.accepted }

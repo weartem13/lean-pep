@@ -1,0 +1,71 @@
+⚠ [3102/3120] Replayed LeanPEP.ActualFunction.SmoothScalingCore
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3111/3120] Replayed LeanPEP.ActualFunction.OneStepGram
+warning: LeanPEP/ActualFunction/OneStepGram.lean:83:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3113/3120] Replayed LeanPEP.ActualFunction.OneStepScaling
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3118/3120] Replayed LeanPEP.ActualFunction.GDOneCapture
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:131:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:146:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:131:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:146:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [3120/3120] Replayed LeanPEP.Imported.C14GDOnePrimal
+info: LeanPEP/Imported/C14GDOnePrimal.lean:57:0: 'LeanPEP.Imported.C14GDOnePrimal.source_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:58:0: 'LeanPEP.Imported.C14GDOnePrimal.source_rows_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:59:0: 'LeanPEP.Imported.C14GDOnePrimal.policy_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:60:0: 'LeanPEP.Imported.C14GDOnePrimal.native_psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:61:0: 'LeanPEP.Imported.C14GDOnePrimal.raw_psd_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:62:0: 'LeanPEP.Imported.C14GDOnePrimal.raw_rows_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:63:0: 'LeanPEP.Imported.C14GDOnePrimal.raw_performance_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:64:0: 'LeanPEP.Imported.C14GDOnePrimal.native_rows_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:65:0: 'LeanPEP.Imported.C14GDOnePrimal.full_rows_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:66:0: 'LeanPEP.Imported.C14GDOnePrimal.model_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:67:0: 'LeanPEP.Imported.C14GDOnePrimal.interpolation_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:68:0: 'LeanPEP.Imported.C14GDOnePrimal.radius_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:69:0: 'LeanPEP.Imported.C14GDOnePrimal.finite_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:70:0: 'LeanPEP.Imported.C14GDOnePrimal.tau_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:71:0: 'LeanPEP.Imported.C14GDOnePrimal.beta_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:72:0: 'LeanPEP.Imported.C14GDOnePrimal.tau_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:73:0: 'LeanPEP.Imported.C14GDOnePrimal.counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:74:0: 'LeanPEP.Imported.C14GDOnePrimal.self_rows_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:75:0: 'LeanPEP.Imported.C14GDOnePrimal.native_gram_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:76:0: 'LeanPEP.Imported.C14GDOnePrimal.value_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:77:0: 'LeanPEP.Imported.C14GDOnePrimal.native_primal_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:78:0: 'LeanPEP.Imported.C14GDOnePrimal.finite_primal_verified' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:79:0: 'LeanPEP.Imported.C14GDOnePrimal.objective_verified' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:80:0: 'LeanPEP.Imported.C14GDOnePrimal.concrete_primal_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:81:0: 'LeanPEP.Adapters.GDOnePrimal.checkFinite_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LeanPEP/Imported/C14GDOnePrimal.lean:82:0: 'LeanPEP.Adapters.GDOnePrimal.primal_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3120 jobs).

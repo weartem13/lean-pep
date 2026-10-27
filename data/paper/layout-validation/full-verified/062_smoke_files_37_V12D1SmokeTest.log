@@ -1,0 +1,16 @@
+LeanPEP.ActualFunction.HuberWitness.huberFunction (a x : ℝ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.huberGradient (a x : ℝ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.lowerModel (a x y : ℝ) :
+  huberFunction a x + huberGradient a x * (y - x) ≤ huberFunction a y
+LeanPEP.ActualFunction.HuberWitness.upperModel (a x y : ℝ) :
+  huberFunction a y ≤ huberFunction a x + huberGradient a x * (y - x) + 1 / 2 * (y - x) ^ 2
+LeanPEP.ActualFunction.HuberWitness.firstOrder (a : ℝ) : IsOneSmoothConvexFirstOrder (huberFunction a) (huberGradient a)
+LeanPEP.ActualFunction.HuberWitness.threshold (N : ℕ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.threshold_eq_gdCenterQ_cast (N : ℕ) :
+  threshold N = ↑(Toy.FiniteGD.ParametricUpper.gdCenterQ N)
+LeanPEP.ActualFunction.HuberWitness.witnessFunction (N : ℕ) : ℝ → ℝ
+LeanPEP.ActualFunction.HuberWitness.witnessGradient (N : ℕ) : ℝ → ℝ
+LeanPEP.ActualFunction.HuberWitness.witnessPoint (N k : ℕ) : ℝ
+LeanPEP.ActualFunction.HuberWitness.witness_firstOrder (N : ℕ) :
+  IsOneSmoothConvexFirstOrder (witnessFunction N) (witnessGradient N)
+LeanPEP.ActualFunction.HuberWitness.witness_zero_isGlobalMin (N : ℕ) (x : ℝ) : witnessFunction N 0 ≤ witnessFunction N x

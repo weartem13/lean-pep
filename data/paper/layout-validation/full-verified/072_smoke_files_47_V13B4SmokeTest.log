@@ -1,0 +1,199 @@
+LeanPEP.ActualFunction.MomentumScaling.smoothState_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (s : ScheduleQ) (L : ℝ≥0) (g : E → E) (x0 : E) (k : ℕ) :
+  MomentumScaling.smoothState s L g x0 (k + 1) =
+    MomentumScaling.smoothQuery s L g x0 k - (↑(s.step k) / ↑L) • g (MomentumScaling.smoothQuery s L g x0 k)
+LeanPEP.ActualFunction.MomentumScaling.smoothQuery_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (s : ScheduleQ) (L : ℝ≥0) (g : E → E) (x0 : E) (k : ℕ) :
+  MomentumScaling.smoothQuery s L g x0 (k + 1) =
+    MomentumScaling.smoothState s L g x0 (k + 1) +
+      ↑(s.momentum k) • (MomentumScaling.smoothState s L g x0 (k + 1) - MomentumScaling.smoothState s L g x0 k)
+LeanPEP.ActualFunction.MomentumScaling.IsSmoothRun.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (N : ℕ) (s : ScheduleQ) (L : ℝ≥0) (g : E → E) (x0 : E) (x y : ℕ → E) : Prop
+LeanPEP.ActualFunction.MomentumScaling.isSmoothRun_of_updates.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} {L : ℝ≥0} {g : E → E} {x0 : E} {x y : ℕ → E} (hx : x 0 = x0)
+  (hy : y 0 = x0) (hstep : ∀ k < N, x (k + 1) = y k - (↑(s.step k) / ↑L) • g (y k))
+  (hmomentum : ∀ k < N, y (k + 1) = x (k + 1) + ↑(s.momentum k) • (x (k + 1) - x k)) :
+  MomentumScaling.IsSmoothRun N s L g x0 x y
+LeanPEP.ActualFunction.MomentumScaling.eq_of_isSmoothRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} {L : ℝ≥0} {g : E → E} {x0 : E} {x y : ℕ → E}
+  (h : MomentumScaling.IsSmoothRun N s L g x0 x y) (k : ℕ) (hk : k ≤ N) :
+  x k = MomentumScaling.smoothState s L g x0 k ∧ y k = MomentumScaling.smoothQuery s L g x0 k
+LeanPEP.ActualFunction.MomentumScaling.scaledPoint_sub_smul.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (center : E) (R a : ℝ) (y v : E) :
+  SmoothScaling.scaledPoint center R (y - a • v) = SmoothScaling.scaledPoint center R y - a • R • v
+LeanPEP.ActualFunction.MomentumScaling.scaledPoint_extrapolate.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (center : E) (R b : ℝ) (x y : E) :
+  SmoothScaling.scaledPoint center R (x + b • (x - y)) =
+    SmoothScaling.scaledPoint center R x +
+      b • (SmoothScaling.scaledPoint center R x - SmoothScaling.scaledPoint center R y)
+LeanPEP.ActualFunction.MomentumScaling.isRun_affine.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (N : ℕ) (s : ScheduleQ) (g g' : E → E) (center : E) (R : ℝ) (z0 : E)
+  (hfields : ∀ (z : E), g' (SmoothScaling.scaledPoint center R z) = R • g z) :
+  MomentumActual.IsRun N s g' (SmoothScaling.scaledPoint center R z0)
+    (fun k => SmoothScaling.scaledPoint center R (MomentumActual.state s g z0 k)) fun k =>
+    SmoothScaling.scaledPoint center R (MomentumActual.query s g z0 k)
+LeanPEP.ActualFunction.MomentumScaling.affine_trajectory.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (s : ScheduleQ) (g g' : E → E) (center : E) (R : ℝ) (z0 : E)
+  (hfields : ∀ (z : E), g' (SmoothScaling.scaledPoint center R z) = R • g z) (k : ℕ) :
+  MomentumActual.state s g' (SmoothScaling.scaledPoint center R z0) k =
+      SmoothScaling.scaledPoint center R (MomentumActual.state s g z0 k) ∧
+    MomentumActual.query s g' (SmoothScaling.scaledPoint center R z0) k =
+      SmoothScaling.scaledPoint center R (MomentumActual.query s g z0 k)
+LeanPEP.ActualFunction.MomentumScaling.normalizedInitial_normSq.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (xStar x0 : E) {R : ℝ} (hR : 0 < R) :
+  ‖MomentumScaling.normalizedInitial xStar x0 R‖ ^ 2 = ‖x0 - xStar‖ ^ 2 / R ^ 2
+LeanPEP.ActualFunction.MomentumScaling.normalizedInitial_radius.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {xStar x0 : E} {R : ℝ} (hR : 0 < R) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  ‖MomentumScaling.normalizedInitial xStar x0 R‖ ^ 2 ≤ 1
+LeanPEP.ActualFunction.MomentumScaling.normalized_trajectory.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (s : ScheduleQ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 < R) (g : E → E) (xStar x0 : E)
+  (k : ℕ) :
+  SmoothScaling.scaledPoint xStar R
+        (MomentumActual.state s (SmoothScaling.normalizedGradient g xStar L R)
+          (MomentumScaling.normalizedInitial xStar x0 R) k) =
+      MomentumScaling.smoothState s L g x0 k ∧
+    SmoothScaling.scaledPoint xStar R
+        (MomentumActual.query s (SmoothScaling.normalizedGradient g xStar L R)
+          (MomentumScaling.normalizedInitial xStar x0 R) k) =
+      MomentumScaling.smoothQuery s L g x0 k
+LeanPEP.ActualFunction.MomentumScaling.stationary_trajectory.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (s : ScheduleQ) (L : ℝ≥0) {g : E → E} {xStar : E} (hs : g xStar = 0) (k : ℕ) :
+  MomentumScaling.smoothState s L g xStar k = xStar ∧ MomentumScaling.smoothQuery s L g xStar k = xStar
+LeanPEP.ActualFunction.MomentumScaling.certificate_upper_of_pos_radius.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} (c : GramPEP.UpperCertQ (outputModelQ N s unitRadiusNormalizationQ))
+  (hcheck : GramPEP.checkUpperCertQ c = true) (hobjective : c.objective = outputObjectiveQ N s unitRadiusNormalizationQ)
+  {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E} {xStar x0 : E} (hfun : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L)
+  (hR : 0 < R) (hs : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (MomentumScaling.smoothState s L g x0 N) - f xStar ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.MomentumScaling.certificate_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} (c : GramPEP.UpperCertQ (outputModelQ N s unitRadiusNormalizationQ))
+  (hcheck : GramPEP.checkUpperCertQ c = true) (hobjective : c.objective = outputObjectiveQ N s unitRadiusNormalizationQ)
+  {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E} {xStar x0 : E} (hfun : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (hs : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (MomentumScaling.smoothState s L g x0 N) - f xStar ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.MomentumScaling.certificate_upper_exact_radius.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} (c : GramPEP.UpperCertQ (outputModelQ N s unitRadiusNormalizationQ))
+  (hcheck : GramPEP.checkUpperCertQ c = true) (hobjective : c.objective = outputObjectiveQ N s unitRadiusNormalizationQ)
+  {L : ℝ≥0} {f : E → ℝ} {g : E → E} {xStar x0 : E} (hfun : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L)
+  (hs : g xStar = 0) : f (MomentumScaling.smoothState s L g x0 N) - f xStar ≤ ↑L * ‖x0 - xStar‖ ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.MomentumScaling.certificate_upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {N : ℕ} {s : ScheduleQ}
+  (c : GramPEP.UpperCertQ (outputModelQ N s unitRadiusNormalizationQ)) (hcheck : GramPEP.checkUpperCertQ c = true)
+  (hobjective : c.objective = outputObjectiveQ N s unitRadiusNormalizationQ) {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E}
+  {xStar x0 : E} (hfun : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hR : 0 ≤ R) (hs : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) : f (MomentumScaling.smoothState s L g x0 N) - f xStar ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.MomentumScaling.certificate_upper_of_isSmoothRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} (c : GramPEP.UpperCertQ (outputModelQ N s unitRadiusNormalizationQ))
+  (hcheck : GramPEP.checkUpperCertQ c = true) (hobjective : c.objective = outputObjectiveQ N s unitRadiusNormalizationQ)
+  {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E} {xStar x0 : E} {x y : ℕ → E} (hfun : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hR : 0 ≤ R) (hs : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2)
+  (hrun : MomentumScaling.IsSmoothRun N s L g x0 x y) : f (x N) - f xStar ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.NesterovPilotScaling.iterate_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (L : ℝ≥0) (g : E → E) (x0 : E) (k : ℕ) :
+  NesterovPilotScaling.iterate L g x0 (k + 1) =
+    NesterovPilotScaling.query L g x0 k - (↑L)⁻¹ • g (NesterovPilotScaling.query L g x0 k)
+LeanPEP.ActualFunction.NesterovPilotScaling.query_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (L : ℝ≥0) (g : E → E) (x0 : E) (k : ℕ) :
+  NesterovPilotScaling.query L g x0 (k + 1) =
+    NesterovPilotScaling.iterate L g x0 (k + 1) +
+      (↑k / (↑k + 3)) • (NesterovPilotScaling.iterate L g x0 (k + 1) - NesterovPilotScaling.iterate L g x0 k)
+LeanPEP.ActualFunction.NesterovPilotScaling.iterate_one.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (g : E → E) (x0 : E) (k : ℕ) :
+  NesterovPilotScaling.iterate 1 g x0 k = NesterovPilotUpper.iterate g x0 k
+LeanPEP.ActualFunction.NesterovPilotScaling.query_one.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (g : E → E) (x0 : E) (k : ℕ) :
+  NesterovPilotScaling.query 1 g x0 k = NesterovPilotUpper.query g x0 k
+LeanPEP.ActualFunction.NesterovPilotScaling.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hfun : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hR : 0 ≤ R) (hs : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) : f (NesterovPilotScaling.iterate L g x0 4) - f xStar ≤ ↑L * R ^ 2 / 21
+LeanPEP.ActualFunction.NesterovPilotScaling.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hfun : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hR : 0 ≤ R) (hs : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) : f (NesterovPilotScaling.iterate L g x0 4) - f xStar ≤ ↑L * R ^ 2 / 21
+LeanPEP.ActualFunction.NesterovPilotScaling.upper_analytic_exact_radius.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hfun : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hs : g xStar = 0) :
+  f (NesterovPilotScaling.iterate L g x0 4) - f xStar ≤ ↑L * ‖x0 - xStar‖ ^ 2 / 21
+LeanPEP.ActualFunction.NesterovPilotScaling.upper_analytic_of_isSmoothRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f : E → ℝ} {g : E → E} {xStar x0 : E} {x y : ℕ → E}
+  (hfun : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hR : 0 ≤ R) (hs : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) (hrun : MomentumScaling.IsSmoothRun 4 nesterovScheduleQ L g x0 x y) :
+  f (x 4) - f xStar ≤ ↑L * R ^ 2 / 21
+LeanPEP.ActualFunction.HuberWitness.amplitudeScaled_analytic (L : ℝ≥0) (a : ℝ) :
+  IsSmoothConvexAnalytic L (fun x => ↑L * HuberWitness.huberFunction a x) fun x => ↑L * HuberWitness.huberGradient a x
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.analytic (L : ℝ≥0) (R : ℝ) :
+  IsSmoothConvexAnalytic L (NesterovPilotWitnessScaling.scaledWitnessFunction L R)
+    (NesterovPilotWitnessScaling.scaledWitnessGradient L R)
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.scaledWitnessFunction_scale_point (L : ℝ≥0) {R x : ℝ} (hR : 0 ≤ R) :
+  NesterovPilotWitnessScaling.scaledWitnessFunction L R (R * x) = ↑L * R ^ 2 * NesterovPilotWitness.witnessFunction x
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.scaledWitnessGradient_scale_point (L : ℝ≥0) {R x : ℝ} (hR : 0 ≤ R) :
+  NesterovPilotWitnessScaling.scaledWitnessGradient L R (R * x) = ↑L * R * NesterovPilotWitness.witnessGradient x
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.scaled_trajectory {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (k : ℕ) :
+  NesterovPilotScaling.iterate L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R k =
+      R * NesterovPilotUpper.iterate NesterovPilotWitness.witnessGradient 1 k ∧
+    NesterovPilotScaling.query L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R k =
+      R * NesterovPilotUpper.query NesterovPilotWitness.witnessGradient 1 k
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.iterate_four {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  NesterovPilotScaling.iterate L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4 = R * (23 / 42)
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.query_four {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  NesterovPilotScaling.query L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4 = R * (10 / 21)
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.terminal_state_ne_query {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 < R) :
+  NesterovPilotScaling.iterate L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4 ≠
+    NesterovPilotScaling.query L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.attains {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  NesterovPilotWitnessScaling.scaledWitnessFunction L R
+        (NesterovPilotScaling.iterate L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4) -
+      NesterovPilotWitnessScaling.scaledWitnessFunction L R 0 =
+    ↑L * R ^ 2 / 21
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.final_query_gap {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  NesterovPilotWitnessScaling.scaledWitnessFunction L R
+        (NesterovPilotScaling.query L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4) -
+      NesterovPilotWitnessScaling.scaledWitnessFunction L R 0 =
+    2 * ↑L * R ^ 2 / 49
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.zeroRadius_trajectory {L : ℝ≥0} (hL : 0 < ↑L) (k : ℕ) :
+  NesterovPilotScaling.iterate L (NesterovPilotWitnessScaling.scaledWitnessGradient L 0) 0 k = 0 ∧
+    NesterovPilotScaling.query L (NesterovPilotWitnessScaling.scaledWitnessGradient L 0) 0 k = 0
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.attains_of_isSmoothRun {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R)
+  {x y : ℕ → ℝ}
+  (hrun :
+    MomentumScaling.IsSmoothRun 4 nesterovScheduleQ L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R x y) :
+  NesterovPilotWitnessScaling.scaledWitnessFunction L R (x 4) -
+      NesterovPilotWitnessScaling.scaledWitnessFunction L R 0 =
+    ↑L * R ^ 2 / 21
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.analytic_lower_witness {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  IsSmoothConvexAnalytic L (NesterovPilotWitnessScaling.scaledWitnessFunction L R)
+      (NesterovPilotWitnessScaling.scaledWitnessGradient L R) ∧
+    NesterovPilotWitnessScaling.scaledWitnessGradient L R 0 = 0 ∧
+      (∀ (x : ℝ),
+          NesterovPilotWitnessScaling.scaledWitnessFunction L R 0 ≤
+            NesterovPilotWitnessScaling.scaledWitnessFunction L R x) ∧
+        ‖R - 0‖ ^ 2 ≤ R ^ 2 ∧
+          NesterovPilotWitnessScaling.scaledWitnessFunction L R
+                (NesterovPilotScaling.iterate L (NesterovPilotWitnessScaling.scaledWitnessGradient L R) R 4) -
+              NesterovPilotWitnessScaling.scaledWitnessFunction L R 0 =
+            ↑L * R ^ 2 / 21
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.oneDimensional_analytic_tight {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L)
+  (hR : 0 ≤ R) : IsGreatest (NesterovPilotWitnessScaling.oneDimensionalAnalyticValues L R) (↑L * R ^ 2 / 21)
+LeanPEP.ActualFunction.NesterovPilotWitnessScaling.analytic_upper_and_oneDimensional_tight.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  (∀ {f : E → ℝ} {g : E → E} {xStar x0 : E},
+      IsSmoothConvexAnalytic L f g →
+        g xStar = 0 →
+          ‖x0 - xStar‖ ^ 2 ≤ R ^ 2 → f (NesterovPilotScaling.iterate L g x0 4) - f xStar ≤ ↑L * R ^ 2 / 21) ∧
+    IsGreatest (NesterovPilotWitnessScaling.oneDimensionalAnalyticValues L R) (↑L * R ^ 2 / 21)
+tests/lean/smoke/V13B4SmokeTest.lean:128:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LeanPEP.ActualFunction.MomentumScaling.affine_trajectory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.MomentumScaling.certificate_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotScaling.upper_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitnessScaling.scaled_trajectory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitnessScaling.attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotWitnessScaling.oneDimensional_analytic_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

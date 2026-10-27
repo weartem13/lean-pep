@@ -1,0 +1,83 @@
+{
+  "policy_count": 158,
+  "policy_nonzero": 83,
+  "policy_max_denominator": 999998,
+  "policy_max_denominator_bits": 20,
+  "factor_rationals": 54,
+  "factor_max_denominator_bits": 106,
+  "factor_nonzero": 34,
+  "files": [
+    {
+      "path": "ReuseEvidence_002/capture_001/capture.json",
+      "bytes": 140264,
+      "sha256": "47672b19cce3866e5baf239bead50a0a314ce75309041a9e4a3fd2b38a93f8d1"
+    },
+    {
+      "path": "ReuseEvidence_002/development/selected_exact.json",
+      "bytes": 325280,
+      "sha256": "30a1de18c2af966e846826bc7968ac2ff1776203f1bc22f83d22bf2db7e40204"
+    },
+    {
+      "path": "ReuseEvidence_002/development/Replay.lean",
+      "bytes": 106850,
+      "sha256": "79277967eb1d29facbc529fd66e4085a38c40e554e6a91ec93edfdf1789be6ef"
+    }
+  ],
+  "old_numerical_groups": [
+    {
+      "paths": [
+        "A14PGTwoLive_001/capture.json",
+        "A14PGTwoLive_001/completion/capture_input.json",
+        "A14PGTwoLive_001/audit/capture_input.json",
+        "A14PGTwoStructured_001/capture.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_001/capture.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_001/completion/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_001/audit/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoStructured_001/capture.json",
+        "deliverables/LP-V014-doc-candidate-002/examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoReplay_001/capture.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_001/capture.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_001/completion/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_001/audit/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoStructured_001/capture.json",
+        "deliverables/LP-V014-doc-candidate-001/examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoReplay_001/capture.json",
+        "examples/pepit_capture/pg_two_live_clarabel_20260930.json",
+        "A14PGTwoReplay_001/capture.json"
+      ],
+      "archive_count": 18
+    },
+    {
+      "paths": [
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_002/capture.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_002/completion/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_002/audit/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_002/capture.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_002/completion/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_002/audit/capture_input.json",
+        "A14PGTwoLive_002/capture.json",
+        "A14PGTwoLive_002/completion/capture_input.json",
+        "A14PGTwoLive_002/audit/capture_input.json",
+        "ReuseEvidence_001/new_live_002/capture.json",
+        "deliverables/LP-PAPER-REUSE-001-R01/evidence/new_live_002/capture.json"
+      ],
+      "archive_count": 11
+    },
+    {
+      "paths": [
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_003/capture.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_003/completion/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-002/A14PGTwoLive_003/audit/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_003/capture.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_003/completion/capture_input.json",
+        "deliverables/LP-V014-doc-candidate-001/A14PGTwoLive_003/audit/capture_input.json",
+        "A14PGTwoLive_003/capture.json",
+        "A14PGTwoLive_003/completion/capture_input.json",
+        "A14PGTwoLive_003/audit/capture_input.json",
+        "ReuseEvidence_001/new_live_001/capture.json",
+        "deliverables/LP-PAPER-REUSE-001-R01/evidence/new_live_001/capture.json"
+      ],
+      "archive_count": 11
+    }
+  ]
+}

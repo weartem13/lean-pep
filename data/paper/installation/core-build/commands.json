@@ -1,0 +1,17 @@
+[
+  {
+    "LEAN_PATH": "unset",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore"
+    ],
+    "cwd": "<WORK_TMP>/LeanPEP_REFINE_INSTALL/source",
+    "exit": 0,
+    "log": "core_build.log",
+    "peak_rss_bytes": 3028434944,
+    "resource_scope": "getrusage CHILDREN high-water mark in this consumer process, bytes; not process-tree sum; descendant inclusion unverified",
+    "timeout_seconds": 1800,
+    "wall_seconds": 85.85759087500628
+  }
+]

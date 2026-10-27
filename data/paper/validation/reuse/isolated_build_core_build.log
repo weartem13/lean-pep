@@ -1,0 +1,191 @@
+✔ [3098/3154] Built LeanPEP.ActualFunction.Basic (10s)
+✔ [3099/3154] Built LeanPEP.GramPEP.Core (10s)
+✔ [3100/3154] Built LeanPEP.Toy.FiniteGD.Core (10s)
+✔ [3101/3154] Built LeanPEP.Toy.FiniteGD.RationalChecker (4.1s)
+✔ [3102/3154] Built LeanPEP.ActualFunction.Interpolation (4.5s)
+✔ [3103/3154] Built LeanPEP.GramPEP.PSDFactorization (4.5s)
+✔ [3104/3154] Built LeanPEP.Toy.FiniteGD.RationalBridge (4.2s)
+✔ [3105/3154] Built LeanPEP.GramPEP.Coordinate (4.1s)
+✔ [3106/3154] Built LeanPEP.ActualFunction.AnalyticBridge (4.9s)
+✔ [3107/3154] Built LeanPEP.GramPEP.RationalBridge (4.8s)
+✔ [3108/3154] Built LeanPEP.Toy.FiniteGD.UpperCertificate (5.3s)
+✔ [3109/3154] Built LeanPEP.ActualFunction.GeneralSmooth (5.8s)
+⚠ [3110/3154] Built LeanPEP.ActualFunction.Proximal (6.2s)
+warning: LeanPEP/ActualFunction/Proximal.lean:100:10: This simp argument is unused:
+  real_inner_smul_left
+
+Hint: Omit it from the simp argument list.
+  simp only [inner_sub_left, inner_sub_right, inner_add_left, inner_add_right,
+            real_inner_smul_l̵e̵f̵t̵,̵ ̵re̵a̵l̵_̵in̵n̵e̵r̵_̵s̵m̵u̵l̵_̵r̵i̵ght, real_inner_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3111/3154] Built LeanPEP.GramPEP.PSDFactorizationRealBridge (5.4s)
+⚠ [3112/3154] Built LeanPEP.ActualFunction.AffineEvaluationCore (5.4s)
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:55:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:62:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3113/3154] Built LeanPEP.Toy.FiniteGD.UpperCertificateChecker (5.7s)
+✔ [3114/3154] Built LeanPEP.GramPEP.UpperCertificate (6.1s)
+⚠ [3115/3154] Built LeanPEP.ActualFunction.SmoothScalingCore (5.8s)
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3116/3154] Built LeanPEP.Profiles.FixedStepFirstOrder (4.8s)
+✔ [3117/3154] Built LeanPEP.GramPEP.UpperCertificateChecker (5.1s)
+✔ [3118/3154] Built LeanPEP.ActualFunction.FiniteGram (5.1s)
+⚠ [3119/3154] Built LeanPEP.ActualFunction.ProximalScaling (7.2s)
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:105:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:105:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalScaling.lean:120:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3120/3154] Built LeanPEP.Profiles.GramCompilation (5.4s)
+✔ [3121/3154] Built LeanPEP.GramPEP.ExplicitConstraints (5.6s)
+✔ [3122/3154] Built LeanPEP.GramPEP.ZeroRowCoverage (5.8s)
+✔ [3123/3154] Built LeanPEP.GramPEP.RowNormalization (5.9s)
+✔ [3124/3154] Built LeanPEP.GramPEP.UpperCertificateAudit (6.0s)
+⚠ [3125/3154] Built LeanPEP.ActualFunction.CompositeOptimality (6.1s)
+warning: LeanPEP/ActualFunction/CompositeOptimality.lean:44:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3126/3154] Built LeanPEP.Profiles.Composite (4.8s)
+⚠ [3127/3154] Built LeanPEP.ActualFunction.ProfileGram (5.5s)
+warning: LeanPEP/ActualFunction/ProfileGram.lean:45:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProfileGram.orderedSamples_pointIndex`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:72:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:78:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:84:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3128/3154] Built LeanPEP.GramPEP.PerformanceLift (5.2s)
+✔ [3129/3154] Built LeanPEP.GramPEP.ExternalBundle (6.0s)
+✔ [3130/3154] Built LeanPEP.GramPEP.ExactReindexing (5.3s)
+⚠ [3131/3154] Built LeanPEP.Profiles.ProximalGradient (5.3s)
+warning: LeanPEP/Profiles/ProximalGradient.lean:136:43: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [hi, hgj, hsj, sub_self,̵ ̵s̵u̵b̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3132/3154] Built LeanPEP.ActualFunction.Composite (5.5s)
+⚠ [3133/3154] Built LeanPEP.GramPEP.OriginCoordinates (5.7s)
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:98:93: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centerMapQ, liftVecQ, standardBasisExpr, mul_ite, mul_neg, Finset.sum_neg_distrib,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:105:81: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictVec, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:115:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:26: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, n̵e̵g̵_̵m̵u̵l̵,̵ ̵mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_neg_distrib, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:118:68: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [liftGramQ, centerMapQ, liftVecQ, standardBasisExpr, ite_mul, mul_ite, neg_mul, mul_neg,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵n̵e̵g̵_̵d̵i̵s̵t̵r̵i̵b̵,̵ ̵e̵q̵_̵c̵o̵m̵m̵]̵F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲n̲e̲g̲_̲d̲i̲s̲t̲r̲i̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/GramPEP/OriginCoordinates.lean:124:22: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [restrictGram, sectionMapQ, standardBasisExpr, Fin.sum_univ_succ,
+  ̵  ̵ ̵ ̵ite_mul, mul_ite,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3134/3154] Built LeanPEP.Adapters.ExactFormulation (4.9s)
+✔ [3135/3154] Built LeanPEP.GramPEP.RationalReconstructionAudit (5.1s)
+⚠ [3136/3154] Built LeanPEP.ActualFunction.ProximalGradient (4.8s)
+warning: LeanPEP/ActualFunction/ProximalGradient.lean:93:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalGradient.valueSlots_smooth`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProximalGradient.lean:98:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProximalGradient.valueSlots_nonsmooth`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3137/3154] Built LeanPEP.Adapters.ProximalGradientSource (4.6s)
+⚠ [3138/3154] Built LeanPEP.ActualFunction.ProximalGradientScalingCore (4.0s)
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:40:46: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:40:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:95:33: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/ProximalGradientScalingCore.lean:95:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3139/3154] Built LeanPEP.Adapters.ProximalGradientCoordinates (4.6s)
+✔ [3140/3154] Built LeanPEP.ActualFunction.ProximalGradientMinimizerCore (4.6s)
+✔ [3141/3154] Built LeanPEP.Adapters.ProximalGradientOrdering (4.9s)
+✔ [3142/3154] Built LeanPEP.ActualFunction.ProximalGradientSourceAuditCore (5.3s)
+✔ [3143/3154] Built LeanPEP.Adapters.ProximalGradientRows (4.9s)
+✔ [3144/3154] Built LeanPEP.ActualFunction.ProximalGradientCoordinateAuditCore (4.5s)
+✔ [3145/3154] Built LeanPEP.Adapters.ProximalGradientPerformance (4.7s)
+✔ [3146/3154] Built LeanPEP.ActualFunction.ProximalGradientOrderingAuditCore (4.4s)
+✔ [3147/3154] Built LeanPEP.Adapters.ProximalGradientSparse (4.4s)
+✔ [3148/3154] Built LeanPEP.ActualFunction.ProximalGradientRowAuditCore (4.5s)
+✔ [3149/3154] Built LeanPEP.Adapters.ProximalGradientReconstruction (4.2s)
+✔ [3150/3154] Built LeanPEP.Adapters.ProximalGradientCapture (4.1s)
+✔ [3151/3154] Built LeanPEP.ActualFunction.ProximalGradientPerformanceAuditCore (4.4s)
+✔ [3152/3154] Built LeanPEP.ActualFunction.ProximalGradientSparseAuditCore (4.3s)
+✔ [3153/3154] Built LeanPEP.ActualFunction.ProximalGradientReconstructionAuditCore (4.4s)
+✔ [3154/3154] Built LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore (4.4s)
+Build completed successfully (3154 jobs).

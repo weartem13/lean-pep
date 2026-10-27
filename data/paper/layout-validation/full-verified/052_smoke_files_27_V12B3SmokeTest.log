@@ -1,0 +1,30 @@
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ_nonneg (N : ℕ) (k : Fin N) :
+  0 ≤ LeanPEP.Toy.FiniteGD.ParametricUpper.gdChainWeightQ N k
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ_nonneg (N : ℕ) (k : Fin (N + 1)) :
+  0 ≤ LeanPEP.Toy.FiniteGD.ParametricUpper.gdStarWeightQ N k
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareWeightQ_nonneg (N : ℕ) (k : Fin (N + 1)) :
+  0 ≤ LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareWeightQ N k
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdInterpTermsQ_weights_nonneg (N : ℕ) (t : LeanPEP.Toy.FiniteGD.InterpTermQ N) :
+  t ∈ LeanPEP.Toy.FiniteGD.ParametricUpper.gdInterpTermsQ N → 0 ≤ t.weight
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareTermsQ_weights_nonneg (N : ℕ) (t : LeanPEP.Toy.FiniteGD.SquareTermQ N) :
+  t ∈ LeanPEP.Toy.FiniteGD.ParametricUpper.gdSquareTermsQ N → 0 ≤ t.weight
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ (N : ℕ) : Prop
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ_valid_of_identity (N : ℕ)
+  (hidentity : LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ N) :
+  LeanPEP.Toy.FiniteGD.UpperCertValidQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ_check_eq_true_iff_identity (N : ℕ) :
+  LeanPEP.Toy.FiniteGD.checkUpperCertQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N) = true ↔
+    LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ N
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ_check_of_identity (N : ℕ)
+  (hidentity : LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ N) :
+  LeanPEP.Toy.FiniteGD.checkUpperCertQ (LeanPEP.Toy.FiniteGD.ParametricUpper.gdUpperCertQ N) = true
+LeanPEP.Toy.FiniteGD.ParametricUpper.gd_upper_of_identity (N : ℕ)
+  (hidentity : LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ N) (d : LeanPEP.Toy.FiniteGD.DataR N)
+  (hfeasible : LeanPEP.Toy.FiniteGD.Feasible d) :
+  d.value (LeanPEP.Toy.FiniteGD.ParametricUpper.gdObjective N) ≤ ↑(LeanPEP.Toy.FiniteGD.ParametricUpper.gdBoundQ N)
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ_0 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ 0
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ_4 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ 4
+LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ_8 :
+  LeanPEP.Toy.FiniteGD.ParametricUpper.gdCertificateIdentityQ 8

@@ -1,0 +1,54 @@
+{
+  "capture_command": {
+    "argv": [
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/.venv-pepit/bin/python",
+      "tools/capture_pepit_proximal_gradient.py",
+      "--steps",
+      "2",
+      "--solver",
+      "CLARABEL",
+      "--solver-options",
+      "{\"equilibrate_enable\": true, \"max_iter\": 300, \"static_regularization_constant\": 1e-07, \"tol_feas\": 1e-10, \"tol_gap_abs\": 1e-10, \"tol_gap_rel\": 1e-10}",
+      "--verbose",
+      "2",
+      "--output",
+      "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/RefineEvidence_001/batch/B02/capture.json"
+    ],
+    "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset"
+    },
+    "exit": 0,
+    "log": "RefineEvidence_001/batch/B02/solver.log",
+    "outer_CHILDREN_high_water_bytes": 151535616,
+    "resource_scope": "cumulative CHILDREN high water in batch parent; not per-operation simultaneous peak",
+    "started_at_utc": "2026-10-06T22:15:39.185578+00:00",
+    "timeout_stage": null,
+    "wall_seconds": 0.8379015829996206
+  },
+  "capture_sha256": "47672b19cce3866e5baf239bead50a0a314ce75309041a9e4a3fd2b38a93f8d1",
+  "configuration": {
+    "equilibrate_enable": true,
+    "max_iter": 300,
+    "static_regularization_constant": 1e-07,
+    "tol_feas": 1e-10,
+    "tol_gap_abs": 1e-10,
+    "tol_gap_rel": 1e-10
+  },
+  "historical_matches": [
+    "ReuseEvidence_002/capture_001/capture.json"
+  ],
+  "id": "B02",
+  "numerical_key": "4a37b9acf85511ed3f9b541deeef9102fcede3caf48746f3b741b25532749285",
+  "producer": {
+    "mode": "live_solver_capture",
+    "name": "PEPit",
+    "solver": "CLARABEL",
+    "status": "optimal_inaccurate",
+    "version": "0.5.1",
+    "wrapper": "cvxpy"
+  },
+  "source_matches_reference": true,
+  "unique_recovery_owner": "B02"
+}

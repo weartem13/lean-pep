@@ -1,0 +1,186 @@
+[
+  {
+    "label": "build_pg_tightness",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.PGOneCapturedTightness"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 3.7193548749783076,
+    "log": "000_build_pg_tightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "build_gd_tightness",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.GDOneCapturedTightness"
+    ],
+    "timeout_seconds": 1800,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 2.859294665977359,
+    "log": "001_build_gd_tightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 38,
+      "expected_declarations": 0,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "gd_one_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/gd_one_regression.lean"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 8.72163670801092,
+    "log": "002_gd_one_regression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 12,
+      "expected_declarations": 12,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "gd_one_tightness",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/gd_one_tightness.lean"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.638076791976346,
+    "log": "003_gd_one_tightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 13,
+      "expected_declarations": 13,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "pg_one_regression",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/pg_one_regression.lean"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 12.127537291991757,
+    "log": "004_pg_one_regression.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 7,
+      "expected_declarations": 7,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "label": "pg_one_tightness",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "tests/lean/regression/pg_one_tightness.lean"
+    ],
+    "timeout_seconds": 900,
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "timed_out": false,
+    "signal_number": null,
+    "wall_seconds": 6.571731292002369,
+    "log": "005_pg_one_tightness.log",
+    "axiom_audit": {
+      "passed": true,
+      "printed_declarations": 14,
+      "expected_declarations": 14,
+      "missing": [],
+      "nonstandard_axioms": [],
+      "malformed_axiom_output": false,
+      "sorry_found": false
+    },
+    "environment": {
+      "LEAN_PATH": "unset",
+      "PYTHONPATH": "unset",
+      "LEAN_SRC_PATH": "unset",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  }
+]

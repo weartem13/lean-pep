@@ -1,0 +1,131 @@
+LeanPEP.ActualFunction.FejerConvergence.tendsto_of_antitone_dist_of_subsequence.{u_1} {X : Type u_1} [MetricSpace X]
+  {u : ℕ → X} {z : X} {φ : ℕ → ℕ} (hanti : Antitone fun n => dist (u n) z) (hsub : Tendsto (u ∘ φ) atTop (𝓝 z)) :
+  Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.FejerConvergence.fixed_of_subsequence_of_residual.{u_1} {X : Type u_1} [MetricSpace X]
+  {T : X → X} {u : ℕ → X} (hT : Continuous T) (hres : Tendsto (fun n => dist (T (u n)) (u n)) atTop (𝓝 0)) {z : X}
+  {φ : ℕ → ℕ} (hφ : Tendsto φ atTop atTop) (hsub : Tendsto (u ∘ φ) atTop (𝓝 z)) : T z = z
+LeanPEP.ActualFunction.FejerConvergence.tendsto_fixed_of_subsequence.{u_1} {X : Type u_1} [MetricSpace X] {T : X → X}
+  {u : ℕ → X} (hT : Continuous T) (hres : Tendsto (fun n => dist (T (u n)) (u n)) atTop (𝓝 0))
+  (hfejer : ∀ (z : X), T z = z → Antitone fun n => dist (u n) z) {z : X} {φ : ℕ → ℕ} (hφ : Tendsto φ atTop atTop)
+  (hsub : Tendsto (u ∘ φ) atTop (𝓝 z)) : T z = z ∧ Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.FejerConvergence.exists_tendsto_fixed_of_compact.{u_1} {X : Type u_1} [MetricSpace X] {T : X → X}
+  {u : ℕ → X} (hT : Continuous T) (hres : Tendsto (fun n => dist (T (u n)) (u n)) atTop (𝓝 0))
+  (hfejer : ∀ (z : X), T z = z → Antitone fun n => dist (u n) z) {K : Set X} (hK : IsCompact K)
+  (hu : ∀ (n : ℕ), u n ∈ K) : ∃ z ∈ K, T z = z ∧ Tendsto u atTop (𝓝 z)
+LeanPEP.ActualFunction.ObjectiveConvergence.gap_tendsto_zero_of_succ_bound {a : ℕ → ℝ} {C : ℝ} (ha : ∀ (k : ℕ), 0 ≤ a k)
+  (hb : ∀ (k : ℕ), a (k + 1) ≤ C / (↑k + 1)) : Tendsto a atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_residual_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Tendsto (fun k => dist (forwardBackwardStep hp g (iterate hp g x0 k)) (iterate hp g x0 k)) atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_tendsto_of_subsequence.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) {z : E} {φ : ℕ → ℕ} (hφ : StrictMono φ)
+  (hsub : Tendsto (iterate hp g x0 ∘ φ) atTop (𝓝 z)) :
+  (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (iterate hp g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_tendsto_of_compact.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E)
+  {K : Set E} (hK : IsCompact K) (hmem : ∀ (k : ℕ), iterate hp g x0 k ∈ K) :
+  ∃ z ∈ K, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (iterate hp g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_tendsto_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (iterate hp g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_tendsto_firstOrder.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (finiteDimensionalIterate L h hL hh g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_tendsto.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (finiteDimensionalIterate L h hL hh g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_tendsto_of_unique.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hunique : ∀ (z : E), (∀ (y : E), f z + h z ≤ f y + h y) → z = xStar) (x0 : E) :
+  Tendsto (finiteDimensionalIterate L h hL hh g x0) atTop (𝓝 xStar)
+LeanPEP.ActualFunction.ProximalGradientCanonical.run_tendsto_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x : ℕ → E)
+  (hrun : ∀ (N : ℕ), ProximalGradientScaling.IsSmoothProxRun N L h g x) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto x atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_tendsto_of_compact.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) {K : Set E} (hK : IsCompact K)
+  (hmem : ∀ (k : ℕ), hilbertIterate L h hL hh hcont g x0 k ∈ K) :
+  ∃ z ∈ K, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (hilbertIterate L h hL hh hcont g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_tendsto_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  ∃ z, (∀ (y : E), f z + h z ≤ f y + h y) ∧ Tendsto (hilbertIterate L h hL hh hcont g x0) atTop (𝓝 z)
+LeanPEP.ActualFunction.ProximalGradientCanonical.run_objective_gap_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x : ℕ → E)
+  (hrun : ∀ (N : ℕ), ProximalGradientScaling.IsSmoothProxRun N L h g x) :
+  Tendsto (fun k => f (x k) + h (x k) - (f xStar + h xStar)) atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.run_objective_tendsto.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x : ℕ → E)
+  (hrun : ∀ (N : ℕ), ProximalGradientScaling.IsSmoothProxRun N L h g x) :
+  Tendsto (fun k => f (x k) + h (x k)) atTop (𝓝 (f xStar + h xStar))
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_objective_gap_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Tendsto (fun k => f (iterate hp g x0 k) + h (iterate hp g x0 k) - (f xStar + h xStar)) atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_objective_tendsto.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} (hp : HasProx L h) (hf : IsSmoothConvexFirstOrder L f g)
+  (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E} (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Tendsto (fun k => f (iterate hp g x0 k) + h (iterate hp g x0 k)) atTop (𝓝 (f xStar + h xStar))
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_objective_gap_tendsto_zero.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Tendsto
+    (fun k =>
+      f (hilbertIterate L h hL hh hcont g x0 k) + h (hilbertIterate L h hL hh hcont g x0 k) - (f xStar + h xStar))
+    atTop (𝓝 0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_objective_tendsto.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) (hcont : Continuous h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Tendsto (fun k => f (hilbertIterate L h hL hh hcont g x0 k) + h (hilbertIterate L h hL hh hcont g x0 k)) atTop
+    (𝓝 (f xStar + h xStar))
+LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_objective_tendsto.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E}
+  (hf : IsSmoothConvexAnalytic L f g) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) {xStar : E}
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (x0 : E) :
+  Tendsto (fun k => f (finiteDimensionalIterate L h hL hh g x0 k) + h (finiteDimensionalIterate L h hL hh g x0 k)) atTop
+    (𝓝 (f xStar + h xStar))
+'LeanPEP.ActualFunction.FejerConvergence.fixed_of_subsequence_of_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.FejerConvergence.exists_tendsto_fixed_of_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_tendsto_of_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.run_tendsto_finiteDimensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.run_objective_gap_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.hilbertIterate_objective_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

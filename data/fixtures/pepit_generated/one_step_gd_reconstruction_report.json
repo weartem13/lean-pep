@@ -1,0 +1,1827 @@
+{
+  "changed_entry_count": 22,
+  "entries": [
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[0][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[0][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[0][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[1][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[1][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[1][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[2][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[2][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": -1
+      },
+      "source": "-1",
+      "source_exact": {
+        "den": 1,
+        "num": -1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.position[2][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[0][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[0][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[0][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[1][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[1][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[1][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[2][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[2][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.gradient[2][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.const",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.value_coeff[0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.value_coeff[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.value_coeff[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[0][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": -1
+      },
+      "source": "-1",
+      "source_exact": {
+        "den": 1,
+        "num": -1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[0][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[0][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[1][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[1][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[1][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[2][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[2][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.model.assumptions[0].expr.gram_coeff[2][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.gram[0][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.primal.gram[0][1]",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.primal.gram[0][2]",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.primal.gram[1][0]",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "changed": true,
+      "delta": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "path": "$.primal.gram[1][1]",
+      "reconstructed": {
+        "den": 9,
+        "num": 1
+      },
+      "source": "0.11111111108888888889",
+      "source_exact": {
+        "den": 100000000000000000000,
+        "num": 11111111108888888889
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "changed": true,
+      "delta": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "path": "$.primal.gram[1][2]",
+      "reconstructed": {
+        "den": 9,
+        "num": 1
+      },
+      "source": "0.11111111108888888889",
+      "source_exact": {
+        "den": 100000000000000000000,
+        "num": 11111111108888888889
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.primal.gram[2][0]",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "changed": true,
+      "delta": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "path": "$.primal.gram[2][1]",
+      "reconstructed": {
+        "den": 9,
+        "num": 1
+      },
+      "source": "0.11111111108888888889",
+      "source_exact": {
+        "den": 100000000000000000000,
+        "num": 11111111108888888889
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "changed": true,
+      "delta": {
+        "den": 900000000000000000000,
+        "num": 19999999999
+      },
+      "path": "$.primal.gram[2][2]",
+      "reconstructed": {
+        "den": 9,
+        "num": 1
+      },
+      "source": "0.11111111108888888889",
+      "source_exact": {
+        "den": 100000000000000000000,
+        "num": 11111111108888888889
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.value[0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 45000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 45000000000,
+        "num": -1
+      },
+      "path": "$.primal.value[1]",
+      "reconstructed": {
+        "den": 18,
+        "num": 5
+      },
+      "source": "0.2777777778",
+      "source_exact": {
+        "den": 5000000000,
+        "num": 1388888889
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 7500000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 7500000000,
+        "num": -1
+      },
+      "path": "$.primal.value[2]",
+      "reconstructed": {
+        "den": 6,
+        "num": 1
+      },
+      "source": "0.1666666668",
+      "source_exact": {
+        "den": 2500000000,
+        "num": 416666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.gram_factor.factors[0].weight",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.gram_factor.factors[0].vector[0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.primal.gram_factor.factors[0].vector[1]",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.primal.gram_factor.factors[0].vector[2]",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.bound",
+      "reconstructed": {
+        "den": 6,
+        "num": 1
+      },
+      "source": "0.1666666667",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 1666666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.const",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[0]",
+      "reconstructed": {
+        "den": 1,
+        "num": -1
+      },
+      "source": "-1",
+      "source_exact": {
+        "den": 1,
+        "num": -1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.value_coeff[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[0][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[1][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.objective.gram_coeff[2][2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.interp_terms[0].weight",
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "source_exact": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.interp_terms[1].weight",
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "source_exact": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.interp_terms[2].weight",
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "source_exact": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.assumption_terms[0].weight",
+      "reconstructed": {
+        "den": 6,
+        "num": 1
+      },
+      "source": "0.1666666667",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 1666666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 600000000000000000000,
+        "num": 19999999999
+      },
+      "changed": true,
+      "delta": {
+        "den": 600000000000000000000,
+        "num": 19999999999
+      },
+      "path": "$.upper.dual_matrix[0][0]",
+      "reconstructed": {
+        "den": 6,
+        "num": 1
+      },
+      "source": "0.166666666633333333335",
+      "source_exact": {
+        "den": 200000000000000000000,
+        "num": 33333333326666666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 40000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 40000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_matrix[0][1]",
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.249999999975",
+      "source_exact": {
+        "den": 40000000000,
+        "num": -9999999999
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 40000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 40000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_matrix[0][2]",
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.249999999975",
+      "source_exact": {
+        "den": 40000000000,
+        "num": -9999999999
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 40000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 40000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_matrix[1][0]",
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.249999999975",
+      "source_exact": {
+        "den": 40000000000,
+        "num": -9999999999
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][1]",
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "source_exact": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[1][2]",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 40000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 40000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_matrix[2][0]",
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-0.249999999975",
+      "source_exact": {
+        "den": 40000000000,
+        "num": -9999999999
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][1]",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_matrix[2][2]",
+      "reconstructed": {
+        "den": 2,
+        "num": 1
+      },
+      "source": "0.5",
+      "source_exact": {
+        "den": 2,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[0].weight",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_factor.factors[0].vector[0]",
+      "reconstructed": {
+        "den": 3,
+        "num": -1
+      },
+      "source": "-0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": -3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[0].vector[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[0].vector[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[1].weight",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_factor.factors[1].vector[0]",
+      "reconstructed": {
+        "den": 3,
+        "num": -1
+      },
+      "source": "-0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": -3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[1].vector[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[1].vector[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[2].weight",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 15000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 15000000000,
+        "num": -1
+      },
+      "path": "$.upper.dual_factor.factors[2].vector[0]",
+      "reconstructed": {
+        "den": 3,
+        "num": -2
+      },
+      "source": "-0.6666666666",
+      "source_exact": {
+        "den": 5000000000,
+        "num": -3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[2].vector[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.dual_factor.factors[2].vector[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    }
+  ],
+  "entry_count": 86,
+  "generator_version": "v0.11.1",
+  "kind": "lean-pep-gram-reconstruction-report-v1",
+  "policy": {
+    "max_abs_error": "2e-10",
+    "max_abs_error_exact": {
+      "den": 5000000000,
+      "num": 1
+    },
+    "max_denominator": 1000,
+    "method": "limit_denominator"
+  },
+  "raw_exact_sha256": "3a68dee25f34953e654a4954cc7fe9bfb6453d9c7b1d9ff13b235af744ff03cb",
+  "reconstructed_exact_sha256": "e47858938be8430f897e31c3c32c2d4144126f7e4f5377a2bab8cdad2a93cb8d",
+  "schema_version": 1,
+  "source_sha256": "d2688c1dff7853b8a43b30dc5914de9f8a2e6a4bf021a39eaf026a04a01bf3e4"
+}

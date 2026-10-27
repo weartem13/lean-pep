@@ -1,0 +1,25 @@
+LeanPEP.ActualFunction.ProximalGradientSparseAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n k : ℕ} (s : LeanPEP.Adapters.ProximalGradientSparse.SourceQ n k)
+  (c : LeanPEP.GramPEP.UpperCertQ s.model) (hc : LeanPEP.Adapters.ProximalGradientSparse.checkBoundQ s c = true)
+  {L : NNReal} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : LeanPEP.ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n k : ℕ} (s : LeanPEP.Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : LeanPEP.Adapters.ProximalGradientCapture.TraceQ n k)
+  (policy : LeanPEP.GramPEP.RationalReconstructionAudit.PolicyQ)
+  (raw reconstructed : LeanPEP.GramPEP.UpperCertQ s.model)
+  (hc : LeanPEP.Adapters.ProximalGradientCapture.checkCapturedQ s t policy raw reconstructed = true) {L : NNReal}
+  {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : LeanPEP.ActualFunction.IsSmoothConvexAnalytic L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : LeanPEP.ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑reconstructed.bound
+'LeanPEP.ActualFunction.ProximalGradientSparseAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCaptureAudit.upper_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

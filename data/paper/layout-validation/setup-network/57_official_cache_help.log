@@ -1,0 +1,84 @@
+✔ [4/24] Built Cache.Lean (503ms)
+✔ [5/24] Built Cache.Init (438ms)
+✔ [6/24] Built Batteries.Data.String.Basic (534ms)
+✔ [7/24] Built Batteries.Data.Array.Match (761ms)
+✔ [8/24] Built Batteries.Tactic.OpenPrivate (1.0s)
+✔ [9/24] Built Batteries.Data.String.Matcher (317ms)
+✔ [10/24] Built Cache.IO (1.2s)
+✔ [11/24] Built Batteries.Data.String.Basic:c.o (1.7s)
+✔ [12/24] Built Batteries.Data.String.Matcher:c.o (1.2s)
+✔ [13/24] Built Cache.Lean:c.o (1.8s)
+✔ [14/24] Built Cache.Init:c.o (1.8s)
+✔ [15/24] Built Batteries.Data.Array.Match:c.o (1.6s)
+✔ [16/24] Built Batteries.Tactic.OpenPrivate:c.o (1.9s)
+✔ [17/24] Built Cache.Hashing (747ms)
+✔ [18/24] Built Cache.IO:c.o (1.0s)
+✔ [19/24] Built Cache.Hashing:c.o (305ms)
+✔ [20/24] Built Cache.Requests (1.5s)
+✔ [21/24] Built Cache.Main (859ms)
+✔ [22/24] Built Cache.Main:c.o (447ms)
+✔ [23/24] Built Cache.Requests:c.o (1.5s)
+✔ [24/24] Built cache:exe (3.9s)
+Mathlib4 caching CLI
+Usage: cache [OPTIONS] [COMMAND]
+
+Commands:
+  # No privilege required
+  get  [ARGS]    Download linked files missing on the local cache and decompress
+  get! [ARGS]    Download all linked files and decompress
+  get- [ARGS]    Download linked files missing to the local cache, but do not decompress
+  pack           Compress non-compressed build files into the local cache
+  pack!          Compress build files into the local cache (no skipping)
+  unpack         Decompress linked already downloaded files
+  unpack!        Decompress linked already downloaded files (no skipping)
+  clean          Delete non-linked files
+  clean!         Delete everything on the local cache
+  lookup [ARGS]  Show information about cache files for the given Lean files
+
+  # Privilege required
+  put          Run 'pack' then upload linked files missing on the server
+  put!         Run 'pack' then upload all linked files
+  commit       Write a commit on the server
+  commit!      Overwrite a commit on the server
+
+  # Intended for CI use
+  unstage      Copy *.ltar files from the staging directory to the local cache
+  unstage!     Copy *.ltar files from the staging directory to the local cache (overwrite existing files)
+  stage        Move files not already 'pack'ed to an output directory
+  stage!       Move all linked cache files to an output directory
+  put-staged   Upload *.ltar files from the staging directory (privilege required)
+  put-unpacked Run 'put' only for files not already 'pack'ed (privilege required)
+
+Options:
+  --repo=OWNER/REPO  Override the repository to fetch/push cache from
+  --staging-dir=<output-directory> Required for 'stage', 'stage!', 'unstage' and 'put-staged': staging directory.
+
+* Linked files refer to local cache files with corresponding Lean sources
+* Commands ending with '!' should be used manually, when hot-fixes are needed
+
+# The arguments for 'get', 'get!', 'get-' and 'lookup'
+
+'get', 'get!', 'get-' and 'lookup' can process a list of module names or file names.
+
+'get [ARGS]' will only get the cache for the specified Lean files and all files imported by one.
+
+Valid arguments are:
+
+* Module names like 'Mathlib.Init'
+* Module globs like 'Mathlib.Data.+' (find all Lean files inside `Mathlib/Data/`)
+* Module globs like 'Mathlib.Data.*' (both of the above)
+* File names like 'Mathlib/Init.lean'
+* Folder names like 'Mathlib/Data/' (find all Lean files inside `Mathlib/Data/`)
+* With bash's automatic glob expansion one can also write things like
+  'Mathlib/**/Order/*.lean'. However, one would need to write `Mathlib.Data.\*`
+  to prevent glob expansion.
+
+# Environment variables
+
+* MATHLIB_CACHE_DIR       Local cache directory (default: ~/.cache/mathlib)
+* MATHLIB_CACHE_USE_CLOUDFLARE  Set to '1' to use Cloudflare instead of Azure
+* MATHLIB_CACHE_GET_URL   Override the download URL
+* MATHLIB_CACHE_PUT_URL   Override the upload URL
+
+See Cache/README.md for more details.
+

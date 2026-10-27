@@ -1,0 +1,304 @@
+⚠ [3101/3127] Replayed LeanPEP.ActualFunction.SmoothScalingCore
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:64:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/SmoothScalingCore.lean:97:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3110/3127] Replayed LeanPEP.ActualFunction.OneStepGram
+warning: LeanPEP/ActualFunction/OneStepGram.lean:83:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3120/3127] Replayed LeanPEP.ActualFunction.AffineEvaluationCore
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:55:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/AffineEvaluationCore.lean:62:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3123/3142] Replayed LeanPEP.ActualFunction.OneStepScaling
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:136:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/OneStepScaling.lean:151:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3124/3142] Replayed LeanPEP.ActualFunction.GDOneCapture
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:131:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:146:30: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:131:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/GDOneCapture.lean:146:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3127/3142] Replayed LeanPEP.ActualFunction.ProfileGram
+warning: LeanPEP/ActualFunction/ProfileGram.lean:45:8: automatically included section variable(s) unused in theorem `LeanPEP.ActualFunction.ProfileGram.orderedSamples_pointIndex`:
+  [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:72:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:78:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/ProfileGram.lean:84:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3130/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperTelescoping
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperTelescoping.lean:54:13: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperTelescoping.lean:76:13: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3131/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperValueCoefficients
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:33:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:81:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵pointValuePolyQ, QuadPolyQ.zero, QuadPolyQ.valueVar,
+  ̲  ̲ ̲ ̲zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:82:57: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, Function.comp_apply,
+  ̵  ̵ ̵ ̵pointValuePolyQ, QuadPolyQ.zero,
+  ̲  ̲ ̲ ̲QuadPolyQ.valueVar,̵ ̵z̵e̵r̵o̵_̵s̵u̵b̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:86:21: This simp argument is unused:
+  hkr
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵k̵r̵,̵ ̵Ne.symm hkr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:111:42: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdChainTermsQ, List.map_map, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵pointValuePolyQ, QuadPolyQ.valueVar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:225:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:284:42: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:310:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:284:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperValueCoefficients.lean:310:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3133/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperConstantTelescoping
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperConstantTelescoping.lean:46:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperConstantTelescoping.lean:97:27: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.val_last, i̵f̵_̵p̵o̵s̵ ̵r̵f̵l̵,̵ ̵hdenNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3134/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperGradientCoefficients
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:50:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:106:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵
+  ̵ ̵ ̵ ̵ ̵slackPolyQ_star_iter_gradCoeff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:107:4: This simp argument is unused:
+  slackPolyQ_star_iter_gradCoeff
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map, Function.comp_apply,̵
+  ̵ ̵ ̵ ̵ ̵s̵l̵a̵c̵k̵P̵o̵l̵y̵Q̵_̵s̵t̵a̵r̵_̵i̵t̵e̵r̵_̵g̵r̵a̵d̵C̵o̵e̵f̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperGradientCoefficients.lean:111:21: This simp argument is unused:
+  hkr
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵k̵r̵,̵ ̵Ne.symm hkr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3137/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperQuadraticCoefficients
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticCoefficients.lean:53:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3138/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperQuadraticOffDiagonal
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:33:21: This simp argument is unused:
+  hrs
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵r̵s̵,̵ ̵Ne.symm hrs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:165:28: This simp argument is unused:
+  Ne.symm hsk
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hsk,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵s̵k̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:204:22: This simp argument is unused:
+  hltSucc
+
+Hint: Omit it from the simp argument list.
+  simp [GradAffineQ.sub, GradAffineQ.add, GradAffineQ.neg,
+  ̵  ̵ ̵ ̵ ̵ ̵xAffineQ, GradAffineQ.const,
+  ̲  ̲ ̲ ̲ ̲ ̲prefixAffine_gradCoeff,
+  ̵  ̵ ̵ ̵ ̵ ̵unitCoeff, hlt, hlt̵S̵u̵c̵c̵,̵ ̵h̵l̵e, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:223:24: This simp argument is unused:
+  hnotSucc
+
+Hint: Omit it from the simp argument list.
+  simp [GradAffineQ.sub, GradAffineQ.add, GradAffineQ.neg, xAffineQ, GradAffineQ.const,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲prefixAffine_gradCoeff, unitCoeff, hlt, h̵n̵o̵t̵S̵u̵c̵c̵,̵ ̵hkr, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:234:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:290:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:296:21: This simp argument is unused:
+  hks
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, h̵k̵s̵,̵ ̵Ne.symm hks]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticOffDiagonal.lean:299:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3139/3142] Replayed LeanPEP.Toy.FiniteGD.ParametricUpperQuadraticDiagonal
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:63:25: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:63:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:105:26: This simp argument is unused:
+  Ne.symm hab
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hab,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵a̵b̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:28: This simp argument is unused:
+  hab
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hra, h̵a̵b̵,̵ ̵Ne.symm hab]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:33: This simp argument is unused:
+  Ne.symm hab
+
+Hint: Omit it from the simp argument list.
+  simp [unitCoeff, hra, hab,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵a̵b̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:105:43: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:109:37: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:105:43: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:108:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:109:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:119:41: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdStarTermsQ, List.map_map,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LeanPEP/Toy/FiniteGD/ParametricUpperQuadraticDiagonal.lean:141:42: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [gdChainTermsQ, List.map_map,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3142/3142] Built LeanPEP.ActualFunction.GDTwoCapture (6.4s)
+warning: LeanPEP/ActualFunction/GDTwoCapture.lean:96:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LeanPEP/ActualFunction/GDTwoCapture.lean:135:27: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDTwoCapture.lean:144:29: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LeanPEP/ActualFunction/GDTwoCapture.lean:135:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LeanPEP/ActualFunction/GDTwoCapture.lean:144:29: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Build completed successfully (3142 jobs).

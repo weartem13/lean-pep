@@ -1,0 +1,463 @@
+{
+  "declared": {
+    "assumption_count": 1,
+    "dual_factor_count": 2,
+    "gram_basis_count": 3,
+    "ordered_pair_count": 9,
+    "point_count": 3,
+    "primal_factor_count": 1,
+    "upper_assumption_term_count": 1,
+    "upper_interp_term_count": 3
+  },
+  "expect": "accepted",
+  "model": {
+    "assumptions": [
+      {
+        "expr": {
+          "const": {
+            "den": 1,
+            "num": 1
+          },
+          "gram_coeff": [
+            [
+              {
+                "den": 1,
+                "num": -1
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ],
+            [
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              },
+              {
+                "den": 1,
+                "num": 0
+              }
+            ]
+          ],
+          "value_coeff": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        },
+        "name": "initial_radius"
+      }
+    ],
+    "gradient": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ]
+    ],
+    "position": [
+      [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        }
+      ]
+    ]
+  },
+  "ordering": {
+    "gram_basis": [
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "points": [
+      "star",
+      "x0",
+      "x1"
+    ]
+  },
+  "primal": {
+    "gram": [
+      [
+        {
+          "den": 1,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        },
+        {
+          "den": 9,
+          "num": 1
+        }
+      ]
+    ],
+    "gram_factor": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            }
+          ],
+          "weight": {
+            "den": 1,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "value": [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 18,
+        "num": 5
+      },
+      {
+        "den": 6,
+        "num": 1
+      }
+    ]
+  },
+  "schema_version": 1,
+  "source": "one-step exact Gram-PEP bundle",
+  "upper": {
+    "assumption_terms": [
+      {
+        "index": 0,
+        "weight": {
+          "den": 6,
+          "num": 1
+        }
+      }
+    ],
+    "bound": {
+      "den": 6,
+      "num": 1
+    },
+    "dual_factor": {
+      "factors": [
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": -3
+            },
+            {
+              "den": 2,
+              "num": -3
+            }
+          ],
+          "weight": {
+            "den": 6,
+            "num": 1
+          }
+        },
+        {
+          "vector": [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": -1
+            }
+          ],
+          "weight": {
+            "den": 8,
+            "num": 1
+          }
+        }
+      ]
+    },
+    "dual_matrix": [
+      [
+        {
+          "den": 6,
+          "num": 1
+        },
+        {
+          "den": 4,
+          "num": -1
+        },
+        {
+          "den": 4,
+          "num": -1
+        }
+      ],
+      [
+        {
+          "den": 4,
+          "num": -1
+        },
+        {
+          "den": 2,
+          "num": 1
+        },
+        {
+          "den": 4,
+          "num": 1
+        }
+      ],
+      [
+        {
+          "den": 4,
+          "num": -1
+        },
+        {
+          "den": 4,
+          "num": 1
+        },
+        {
+          "den": 2,
+          "num": 1
+        }
+      ]
+    ],
+    "interp_terms": [
+      {
+        "i": 0,
+        "j": 2,
+        "weight": {
+          "den": 2,
+          "num": 1
+        }
+      },
+      {
+        "i": 0,
+        "j": 1,
+        "weight": {
+          "den": 2,
+          "num": 1
+        }
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "weight": {
+          "den": 2,
+          "num": 1
+        }
+      }
+    ],
+    "objective": {
+      "const": {
+        "den": 1,
+        "num": 0
+      },
+      "gram_coeff": [
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ],
+        [
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          },
+          {
+            "den": 1,
+            "num": 0
+          }
+        ]
+      ],
+      "value_coeff": [
+        {
+          "den": 1,
+          "num": -1
+        },
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ]
+    }
+  }
+}

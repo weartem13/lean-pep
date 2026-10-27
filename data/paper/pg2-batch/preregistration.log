@@ -1,0 +1,1 @@
+{"configurations": 8, "frozen_files": 351, "versions": {"PEPit": "0.5.1", "cvxpy": "1.8.2", "clarabel": "0.11.1", "numpy": "2.5.3", "scipy": "1.18.1"}, "preregistration_sha256": "197b07b0984ade74341eb7bddecc11f7e2b3ffd7816f643eb894cd44af723159", "solver_calls_so_far": 0}

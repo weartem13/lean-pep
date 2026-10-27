@@ -1,0 +1,50 @@
+LeanPEP.Profiles.FixedStepFirstOrder.ProfileQ (N : ℕ) : Type
+LeanPEP.Profiles.FixedStepFirstOrder.ProfileQ.causal {N : ℕ} (self : Profiles.FixedStepFirstOrder.ProfileQ N)
+  (i j : Fin (N + 1)) : ↑i ≤ ↑j → self.stepCoeff i j = 0
+LeanPEP.Profiles.FixedStepFirstOrder.gradientCombinationAffineQ {N : ℕ}
+  (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (i : Fin (N + 1)) : GradAffineQ N
+LeanPEP.Profiles.FixedStepFirstOrder.iterateAffineQ {N : ℕ} (profile : Profiles.FixedStepFirstOrder.ProfileQ N)
+  (i : Fin (N + 1)) : GradAffineQ N
+LeanPEP.Profiles.FixedStepFirstOrder.iterateAffineQ_gradCoeff_of_le {N : ℕ}
+  (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (i j : Fin (N + 1)) (hij : ↑i ≤ ↑j) :
+  (Profiles.FixedStepFirstOrder.iterateAffineQ profile i).gradCoeff j = 0
+LeanPEP.Profiles.FixedStepFirstOrder.interpolationPolyQ {N : ℕ} (profile : Profiles.FixedStepFirstOrder.ProfileQ N)
+  (i j : Point N) : QuadPolyQ N
+LeanPEP.Profiles.FixedStepFirstOrder.evalR_interpolationPolyQ {N : ℕ}
+  (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (d : DataR N) (i j : Point N) :
+  (Profiles.FixedStepFirstOrder.interpolationPolyQ profile i j).evalR d =
+    Profiles.FixedStepFirstOrder.interpolationSlackR profile d i j
+LeanPEP.Profiles.FixedStepFirstOrder.checkUpperCertQ_eq_true_iff {N : ℕ}
+  (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (c : UpperCertQ N) :
+  Profiles.FixedStepFirstOrder.checkUpperCertQ profile c = true ↔ Profiles.FixedStepFirstOrder.UpperCertValidQ profile c
+LeanPEP.Profiles.FixedStepFirstOrder.checkUpperCertQ_sound_real {N : ℕ}
+  (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (c : UpperCertQ N)
+  (h : Profiles.FixedStepFirstOrder.checkUpperCertQ profile c = true) (d : DataR N)
+  (hd : Profiles.FixedStepFirstOrder.FeasibleR profile d) : d.value c.objective ≤ ↑c.bound
+LeanPEP.Profiles.GradientDescent.unitGDProfileQ (N : ℕ) : Profiles.FixedStepFirstOrder.ProfileQ N
+LeanPEP.Profiles.GradientDescent.unitStepCoeffQ_causal {N : ℕ} (i j : Fin (N + 1)) (hij : ↑i ≤ ↑j) :
+  Profiles.GradientDescent.unitStepCoeffQ i j = 0
+LeanPEP.Profiles.GradientDescent.gradientCombinationAffineQ_unitGD {N : ℕ} (i : Fin (N + 1)) :
+  Profiles.FixedStepFirstOrder.gradientCombinationAffineQ (Profiles.GradientDescent.unitGDProfileQ N) i =
+    GradAffineQ.prefixAffine ↑i ⋯
+LeanPEP.Profiles.GradientDescent.iterateAffineQ_unitGD {N : ℕ} (i : Fin (N + 1)) :
+  Profiles.FixedStepFirstOrder.iterateAffineQ (Profiles.GradientDescent.unitGDProfileQ N) i = xAffineQ (Point.iter i)
+LeanPEP.Profiles.GradientDescent.pointAffineQ_unitGD {N : ℕ} (i : Point N) :
+  Profiles.FixedStepFirstOrder.pointAffineQ (Profiles.GradientDescent.unitGDProfileQ N) i = xAffineQ i
+LeanPEP.Profiles.GradientDescent.interpolationPolyQ_unitGD {N : ℕ} (i j : Point N) :
+  Profiles.FixedStepFirstOrder.interpolationPolyQ (Profiles.GradientDescent.unitGDProfileQ N) i j = slackPolyQ i j
+LeanPEP.Profiles.GradientDescent.interpolationSlackR_unitGD {N : ℕ} (d : DataR N) (i j : Point N) :
+  Profiles.FixedStepFirstOrder.interpolationSlackR (Profiles.GradientDescent.unitGDProfileQ N) d i j = slack d i j
+LeanPEP.Profiles.GradientDescent.feasibleR_unitGD_iff {N : ℕ} (d : DataR N) :
+  Profiles.FixedStepFirstOrder.FeasibleR (Profiles.GradientDescent.unitGDProfileQ N) d ↔ Feasible d
+LeanPEP.Profiles.GradientDescent.certificateRhsPolyQ_unitGD {N : ℕ} (c : UpperCertQ N) :
+  Profiles.FixedStepFirstOrder.certificateRhsPolyQ (Profiles.GradientDescent.unitGDProfileQ N) c = certificateRhsPolyQ c
+LeanPEP.Profiles.GradientDescent.checkUpperCertQ_unitGD {N : ℕ} (c : UpperCertQ N) :
+  Profiles.FixedStepFirstOrder.checkUpperCertQ (Profiles.GradientDescent.unitGDProfileQ N) c = checkUpperCertQ c
+LeanPEP.Profiles.GradientDescent.gdUpperCertQ_profile_check_all (N : ℕ) :
+  Profiles.FixedStepFirstOrder.checkUpperCertQ (Profiles.GradientDescent.unitGDProfileQ N) (gdUpperCertQ N) = true
+LeanPEP.Profiles.GradientDescent.gd_profile_upper_all (N : ℕ) (d : DataR N)
+  (hfeasible : Profiles.FixedStepFirstOrder.FeasibleR (Profiles.GradientDescent.unitGDProfileQ N) d) :
+  d.value (gdObjective N) ≤ ↑(gdBoundQ N)
+LeanPEP.Profiles.GradientDescent.gd_profile_upper_all_of_legacy_feasible (N : ℕ) (d : DataR N)
+  (hfeasible : Feasible d) : d.value (gdObjective N) ≤ ↑(gdBoundQ N)

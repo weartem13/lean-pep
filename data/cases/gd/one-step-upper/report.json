@@ -1,0 +1,21 @@
+{
+  "actual_upper_verified": true,
+  "bound": {
+    "den": 499997,
+    "num": 83333
+  },
+  "capture_sha256": "a2154f76e65a33c65a07631430b91c9d060cad8095b1598eec4fa319ad6fbc67",
+  "generation_rule": "gd_one_source_affine_grid_v1",
+  "lean": {
+    "attempted": true,
+    "axioms_allowed": true,
+    "build_exit": 0,
+    "checked": true,
+    "reason": null,
+    "replay_exit": 0
+  },
+  "live_capture_performed": false,
+  "residual_recomputed": true,
+  "selected_endpoint": "structured",
+  "selected_sha256": "be846160b52482cb7e8ad5c2511ee0775d0b5e0d605aec09f5d931822563a250"
+}

@@ -1,0 +1,16 @@
+{
+  "actual_upper_verified": true,
+  "bound": "62500/499999",
+  "cache_scope": "official matching-revision binary dependencies; no dependency-source cold-build claim",
+  "entry_sha256": "73bc8de094aa54fe75f5f45f1b01fc589519258882543926e610808454a337e9",
+  "environment": {
+    "ELAN_HOME": "<WORK_TMP>/LeanPEP_REFINE_INSTALL/elan",
+    "MATHLIB_CACHE_DIR": "<WORK_TMP>/LeanPEP_REFINE_INSTALL/mathlib-downloads",
+    "XDG_CACHE_HOME": "<WORK_TMP>/LeanPEP_REFINE_INSTALL/xdg-cache"
+  },
+  "namespace": "LeanPEP.Imported.Refine001.FreshInstall",
+  "old_author_cache_used": false,
+  "source_id": "sha256:e43a0018cd7dd8d202361abcea8fcbbda1db7981bf25ec5e36c317116b1f429c",
+  "source_zip_sha256": "e2fa8b8d6f85fa8e8cfc07daec3447e0adebb7f2732a69b1441185584fcab0b3",
+  "status": "verified"
+}

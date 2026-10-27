@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "mode": "full",
+  "coverage": {
+    "library_modules": 247,
+    "aggregate_project_modules": 238,
+    "unaggregated_modules": 10,
+    "smoke_files": 73,
+    "regression_files": 4,
+    "replay_files": 12,
+    "historical_replays_preserved_without_rerun": 8
+  },
+  "completed_commands": 1,
+  "planned_commands": 117,
+  "live_capture_performed": false,
+  "standard_axioms_checked_by_consumer": false,
+  "direct_axiom_audits": [],
+  "selected_byte_comparison": false
+}

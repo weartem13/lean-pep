@@ -1,0 +1,69 @@
+[
+  {
+    "argv": [
+      "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lean",
+      "--version"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "lean_version",
+    "log": "01_lean_version.log",
+    "wall_seconds": 0.040052249998552725
+  },
+  {
+    "argv": [
+      "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lake",
+      "--help"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "lake_help",
+    "log": "02_lake_help.log",
+    "wall_seconds": 0.03919254199718125
+  },
+  {
+    "argv": [
+      "git",
+      "init",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_init",
+    "log": "03_mathlib_init.log",
+    "wall_seconds": 0.020541584002785385
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/leanprover-community/mathlib4.git"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 0,
+    "label": "mathlib_remote",
+    "log": "04_mathlib_remote.log",
+    "wall_seconds": 0.01050970799406059
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "<PUBLIC_SOURCE>/.lake/packages/mathlib",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    ],
+    "cwd": "<PUBLIC_SOURCE>",
+    "exit": 128,
+    "label": "mathlib_fetch",
+    "log": "05_mathlib_fetch.log",
+    "wall_seconds": 0.03979954100213945
+  }
+]

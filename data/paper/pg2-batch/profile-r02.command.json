@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "--profile",
+    "-Dprofiler.threshold=0",
+    "ReuseEvidence_002/development/Replay.lean"
+  ],
+  "cwd": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex",
+  "exit": 0,
+  "wall_seconds": 57.23487466701772,
+  "CHILDREN_bytes": 5957697536,
+  "CHILDREN_MiB": 5681.703125,
+  "resource_scope": "getrusage CHILDREN high water; not simultaneous process-tree peak",
+  "log": "profile-r02.log",
+  "finished_at_utc": "2026-10-06T22:24:30.202507+00:00"
+}

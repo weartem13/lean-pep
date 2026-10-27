@@ -1,0 +1,24 @@
+LeanPEP.Adapters.ProximalGradientCapture.checkCapturedRawQ {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (raw : GramPEP.UpperCertQ s.model) : Bool
+LeanPEP.Adapters.ProximalGradientCapture.checkCapturedQ {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (policy : GramPEP.RationalReconstructionAudit.PolicyQ)
+  (raw reconstructed : GramPEP.UpperCertQ s.model) : Bool
+LeanPEP.Adapters.ProximalGradientCompletion.checkCompletedQ {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (policy : GramPEP.RationalReconstructionAudit.PolicyQ)
+  (raw seed completed : GramPEP.UpperCertQ s.model) : Bool
+LeanPEP.GramPEP.UpperCoefficientBox.checked_no_accepted_in_budget {p m q : ℕ} {model : GramPEP.ModelQ p m}
+  (f : GramPEP.UpperCoefficientSystem.FamilyQ model q) (raw : Fin (q + 1) → ℚ) (eta : ℚ)
+  (b : GramPEP.RationalBoxSystem.BoxQ (GramPEP.UpperCoefficientSystem.rowCount p m) (q + 1))
+  (hb : GramPEP.UpperCoefficientBox.checkBoxQ f raw eta b = true)
+  (w : GramPEP.RationalBoxSystem.ObstructionQ (GramPEP.UpperCoefficientSystem.rowCount p m) (q + 1))
+  (hw : GramPEP.RationalBoxSystem.checkObstructionQ b w = true) :
+  ¬∃ x,
+      GramPEP.checkUpperCertQ (GramPEP.UpperCoefficientSystem.instantiateQ f x) = true ∧
+        GramPEP.UpperCoefficientBox.WithinBudgetQ raw x eta
+'LeanPEP.Imported.D13InterfaceSmoke.raw_route_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.D13InterfaceSmoke.reconstructed_route_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompiledCompletion.Budget.no_fixed_certificate_in_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,192 @@
+LeanPEP.ActualFunction.ProfileGram.orderedSamples_pointIndex.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (xStar : E) (points : Fin (N + 1) → E) (i : Toy.FiniteGD.Point N) :
+  ProfileGram.orderedSamples xStar points (pointIndex i) = ProfileGram.samplePoint xStar points i
+LeanPEP.ActualFunction.ProfileGram.realize_standardBasisQ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {m : ℕ} (base : Fin m → E) (i : Fin m) :
+  FiniteGram.realize base (GramPEP.castVecQ (GramPEP.standardBasisExpr i)) = base i
+LeanPEP.ActualFunction.ProfileGram.realize_affineVecQ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (a : Toy.FiniteGD.GradAffineQ N) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) :
+  FiniteGram.realize (ProfileGram.sampleBase g xStar x0 points) (GramPEP.castVecQ (affineVecQ a)) =
+    ParametricGDHilbert.evalVector a (x0 - xStar) fun i => g (points i)
+LeanPEP.ActualFunction.ProfileGram.realize_initialBasisQ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (g : E → E) (xStar x0 : E) (points : Fin (N + 1) → E) :
+  FiniteGram.realize (ProfileGram.sampleBase g xStar x0 points) (GramPEP.castVecQ (initialBasisQ N)) = x0 - xStar
+LeanPEP.ActualFunction.ProfileGram.realize_sampledGradientBasisQ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (g : E → E) (xStar x0 : E) (points : Fin (N + 1) → E) (i : Fin (N + 1)) :
+  FiniteGram.realize (ProfileGram.sampleBase g xStar x0 points) (GramPEP.castVecQ (sampledGradientBasisQ i)) =
+    g (points i)
+LeanPEP.ActualFunction.ProfileGram.RealizesProfile.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {N : ℕ} (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (g : E → E) (xStar x0 : E) (points : Fin (N + 1) → E) :
+  Prop
+LeanPEP.ActualFunction.ProfileGram.realizesProfile_iff_updates.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : Profiles.FixedStepFirstOrder.ProfileQ N) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) :
+  ProfileGram.RealizesProfile profile g xStar x0 points ↔
+    ∀ (i : Fin (N + 1)), points i = x0 - ∑ j, ↑(profile.stepCoeff i j) • g (points j)
+LeanPEP.ActualFunction.ProfileGram.realizesActualSamples.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) (g : E → E) (xStar x0 : E) (points : Fin (N + 1) → E)
+  (hstationary : g xStar = 0) (htrajectory : ProfileGram.RealizesProfile profile.algorithm g xStar x0 points) :
+  FiniteGram.RealizesActualSamples (ProfileGram.sampleBase g xStar x0 points) (compileModelQ profile)
+    (ProfileGram.orderedSamples xStar points) xStar g
+LeanPEP.ActualFunction.ProfileGram.profileData_realizesModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) (f : E → ℝ) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) :
+  GramPEP.RealizesModelQ (compileModelQ profile) (ProfileGram.profileData profile f g xStar x0 points)
+LeanPEP.ActualFunction.ProfileGram.profileData_interpolationSlack.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) (f : E → ℝ) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) (hstationary : g xStar = 0)
+  (htrajectory : ProfileGram.RealizesProfile profile.algorithm g xStar x0 points) (i j : Fin (N + 2)) :
+  GramPEP.interpolationSlack (ProfileGram.profileData profile f g xStar x0 points) i j =
+    interpolationSlack f g (ProfileGram.orderedSamples xStar points i) (ProfileGram.orderedSamples xStar points j)
+LeanPEP.ActualFunction.ProfileGram.profileData_coreFeasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  {points : Fin (N + 1) → E} (hfun : IsOneSmoothConvexFirstOrder f g) (hstationary : g xStar = 0)
+  (htrajectory : ProfileGram.RealizesProfile profile.algorithm g xStar x0 points) :
+  GramPEP.CoreFeasible (ProfileGram.profileData profile f g xStar x0 points)
+LeanPEP.ActualFunction.ProfileGram.profileData_initialRadius_eval.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) (f : E → ℝ) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) :
+  (initialRadiusExprQ profile.normalization).evalR (ProfileGram.profileData profile f g xStar x0 points) =
+    ↑profile.normalization.radiusSq - ‖x0 - xStar‖ ^ 2
+LeanPEP.ActualFunction.ProfileGram.profileData_assumptionsFeasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) (f : E → ℝ) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑profile.normalization.radiusSq) :
+  GramPEP.AssumptionsFeasibleR (compileModelQ profile) (ProfileGram.profileData profile f g xStar x0 points)
+LeanPEP.ActualFunction.ProfileGram.profileData_objective_eval.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) (f : E → ℝ) (g : E → E) (xStar x0 : E)
+  (points : Fin (N + 1) → E) :
+  (compileObjectiveQ profile).evalR (ProfileGram.profileData profile f g xStar x0 points) =
+    f (ProfileGram.samplePoint xStar points profile.objective.target) -
+      f (ProfileGram.samplePoint xStar points profile.objective.reference)
+LeanPEP.ActualFunction.ProfileGram.profileData_feasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (profile : PEPProfileQ N) {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  {points : Fin (N + 1) → E} (hfun : IsOneSmoothConvexFirstOrder f g) (hstationary : g xStar = 0)
+  (htrajectory : ProfileGram.RealizesProfile profile.algorithm g xStar x0 points)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑profile.normalization.radiusSq) :
+  GramPEP.RealizesModelQ (compileModelQ profile) (ProfileGram.profileData profile f g xStar x0 points) ∧
+    GramPEP.CoreFeasible (ProfileGram.profileData profile f g xStar x0 points) ∧
+      GramPEP.AssumptionsFeasibleR (compileModelQ profile) (ProfileGram.profileData profile f g xStar x0 points)
+LeanPEP.ActualFunction.ProfileGram.certificate_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {N : ℕ} (profile : PEPProfileQ N) (c : GramPEP.UpperCertQ (compileModelQ profile))
+  (hcheck : GramPEP.checkUpperCertQ c = true) (hobjective : c.objective = compileObjectiveQ profile) {f : E → ℝ}
+  {g : E → E} {xStar x0 : E} {points : Fin (N + 1) → E} (hfun : IsOneSmoothConvexFirstOrder f g)
+  (hstationary : g xStar = 0) (htrajectory : ProfileGram.RealizesProfile profile.algorithm g xStar x0 points)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑profile.normalization.radiusSq) :
+  f (ProfileGram.samplePoint xStar points profile.objective.target) -
+      f (ProfileGram.samplePoint xStar points profile.objective.reference) ≤
+    ↑c.bound
+LeanPEP.ActualFunction.ProfileGram.certificate_upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} [CompleteSpace E] (profile : PEPProfileQ N)
+  (c : GramPEP.UpperCertQ (compileModelQ profile)) (hcheck : GramPEP.checkUpperCertQ c = true)
+  (hobjective : c.objective = compileObjectiveQ profile) {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  {points : Fin (N + 1) → E} (hfun : IsOneSmoothConvexAnalytic f g) (hstationary : g xStar = 0)
+  (htrajectory : ProfileGram.RealizesProfile profile.algorithm g xStar x0 points)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑profile.normalization.radiusSq) :
+  f (ProfileGram.samplePoint xStar points profile.objective.target) -
+      f (ProfileGram.samplePoint xStar points profile.objective.reference) ≤
+    ↑c.bound
+LeanPEP.ActualFunction.MomentumActual.iteratePair.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (s : ScheduleQ) (g : E → E) (x0 : E) : ℕ → E × E
+LeanPEP.ActualFunction.MomentumActual.state_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (s : ScheduleQ) (g : E → E) (x0 : E) (k : ℕ) :
+  MomentumActual.state s g x0 (k + 1) = MomentumActual.query s g x0 k - ↑(s.step k) • g (MomentumActual.query s g x0 k)
+LeanPEP.ActualFunction.MomentumActual.query_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (s : ScheduleQ) (g : E → E) (x0 : E) (k : ℕ) :
+  MomentumActual.query s g x0 (k + 1) =
+    MomentumActual.state s g x0 (k + 1) +
+      ↑(s.momentum k) • (MomentumActual.state s g x0 (k + 1) - MomentumActual.state s g x0 k)
+LeanPEP.ActualFunction.MomentumActual.IsRun.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] (N : ℕ)
+  (s : ScheduleQ) (g : E → E) (x0 : E) (x y : ℕ → E) : Prop
+LeanPEP.ActualFunction.MomentumActual.eq_of_isRun.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {N : ℕ} {s : ScheduleQ} {g : E → E} {x0 : E} {x y : ℕ → E} (h : MomentumActual.IsRun N s g x0 x y) (k : ℕ) :
+  k ≤ N → x k = MomentumActual.state s g x0 k ∧ y k = MomentumActual.query s g x0 k
+LeanPEP.ActualFunction.MomentumActual.outputPoints_before_final.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (s : ScheduleQ) (g : E → E) (x0 : E) (i : Fin (N + 1)) (hi : ↑i < N) :
+  MomentumActual.outputPoints N s g x0 i = MomentumActual.query s g x0 ↑i
+LeanPEP.ActualFunction.MomentumActual.outputPoints_final.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (g : E → E) (x0 : E) :
+  MomentumActual.outputPoints N s g x0 (Fin.last N) = MomentumActual.state s g x0 N
+LeanPEP.ActualFunction.MomentumActual.evalVector_stateAffineQ_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (s : ScheduleQ) (k : Fin (N + 1)) (u0 : E) (grad : Fin (N + 1) → E) :
+  ParametricGDHilbert.evalVector (stateAffineQ N s (↑k + 1)) u0 grad =
+    ParametricGDHilbert.evalVector (queryAffineQ N s ↑k) u0 grad - ↑(s.step ↑k) • grad k
+LeanPEP.ActualFunction.MomentumActual.evalVector_queryAffineQ_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} (s : ScheduleQ) (k : ℕ) (u0 : E) (grad : Fin (N + 1) → E) :
+  ParametricGDHilbert.evalVector (queryAffineQ N s (k + 1)) u0 grad =
+    ParametricGDHilbert.evalVector (stateAffineQ N s (k + 1)) u0 grad +
+      ↑(s.momentum k) •
+        (ParametricGDHilbert.evalVector (stateAffineQ N s (k + 1)) u0 grad -
+          ParametricGDHilbert.evalVector (stateAffineQ N s k) u0 grad)
+LeanPEP.ActualFunction.MomentumActual.affineTrajectory_realization.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (g : E → E) (xStar x0 : E) (k : ℕ) :
+  k ≤ N →
+    (ParametricGDHilbert.evalVector (stateAffineQ N s k) (x0 - xStar) fun i =>
+          g (MomentumActual.outputPoints N s g x0 i)) =
+        MomentumActual.state s g x0 k - xStar ∧
+      (ParametricGDHilbert.evalVector (queryAffineQ N s k) (x0 - xStar) fun i =>
+          g (MomentumActual.outputPoints N s g x0 i)) =
+        MomentumActual.query s g x0 k - xStar
+LeanPEP.ActualFunction.MomentumActual.outputPoints_realizesProfile.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (g : E → E) (xStar x0 : E) :
+  ProfileGram.RealizesProfile (outputProfileQ N s) g xStar x0 (MomentumActual.outputPoints N s g x0)
+LeanPEP.ActualFunction.MomentumActual.outputData_feasible.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (normalization : NormalizationProfileQ) {f : E → ℝ} {g : E → E}
+  {xStar x0 : E} (hfun : IsOneSmoothConvexFirstOrder f g) (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑normalization.radiusSq) :
+  GramPEP.RealizesModelQ (outputModelQ N s normalization) (MomentumActual.outputData N s normalization f g xStar x0) ∧
+    GramPEP.CoreFeasible (MomentumActual.outputData N s normalization f g xStar x0) ∧
+      GramPEP.AssumptionsFeasibleR (outputModelQ N s normalization)
+        (MomentumActual.outputData N s normalization f g xStar x0)
+LeanPEP.ActualFunction.MomentumActual.outputData_objective_eval.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (N : ℕ) (s : ScheduleQ) (normalization : NormalizationProfileQ) (f : E → ℝ) (g : E → E)
+  (xStar x0 : E) :
+  (outputObjectiveQ N s normalization).evalR (MomentumActual.outputData N s normalization f g xStar x0) =
+    f (MomentumActual.state s g x0 N) - f xStar
+LeanPEP.ActualFunction.MomentumActual.certificate_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} {normalization : NormalizationProfileQ}
+  (c : GramPEP.UpperCertQ (outputModelQ N s normalization)) (hcheck : GramPEP.checkUpperCertQ c = true)
+  (hobjective : c.objective = outputObjectiveQ N s normalization) {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hfun : IsOneSmoothConvexFirstOrder f g) (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑normalization.radiusSq) : f (MomentumActual.state s g x0 N) - f xStar ≤ ↑c.bound
+LeanPEP.ActualFunction.MomentumActual.certificate_upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} [CompleteSpace E] {s : ScheduleQ} {normalization : NormalizationProfileQ}
+  (c : GramPEP.UpperCertQ (outputModelQ N s normalization)) (hcheck : GramPEP.checkUpperCertQ c = true)
+  (hobjective : c.objective = outputObjectiveQ N s normalization) {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hfun : IsOneSmoothConvexAnalytic f g) (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑normalization.radiusSq) : f (MomentumActual.state s g x0 N) - f xStar ≤ ↑c.bound
+LeanPEP.ActualFunction.MomentumActual.certificate_upper_of_isRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {N : ℕ} {s : ScheduleQ} {normalization : NormalizationProfileQ}
+  (c : GramPEP.UpperCertQ (outputModelQ N s normalization)) (hcheck : GramPEP.checkUpperCertQ c = true)
+  (hobjective : c.objective = outputObjectiveQ N s normalization) {f : E → ℝ} {g : E → E} {xStar x0 : E} {x y : ℕ → E}
+  (hfun : IsOneSmoothConvexFirstOrder f g) (hstationary : g xStar = 0)
+  (hradius : ‖x0 - xStar‖ ^ 2 ≤ ↑normalization.radiusSq) (hrun : MomentumActual.IsRun N s g x0 x y) :
+  f (x N) - f xStar ≤ ↑c.bound
+LeanPEP.ActualFunction.NesterovPilotUpper.iterate_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (g : E → E) (x0 : E) (k : ℕ) :
+  NesterovPilotUpper.iterate g x0 (k + 1) = NesterovPilotUpper.query g x0 k - g (NesterovPilotUpper.query g x0 k)
+LeanPEP.ActualFunction.NesterovPilotUpper.query_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (g : E → E) (x0 : E) (k : ℕ) :
+  NesterovPilotUpper.query g x0 (k + 1) =
+    NesterovPilotUpper.iterate g x0 (k + 1) +
+      (↑k / (↑k + 3)) • (NesterovPilotUpper.iterate g x0 (k + 1) - NesterovPilotUpper.iterate g x0 k)
+LeanPEP.ActualFunction.NesterovPilotUpper.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {f : E → ℝ} {g : E → E} {xStar x0 : E} (hfun : IsOneSmoothConvexFirstOrder f g)
+  (hstationary : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  f (NesterovPilotUpper.iterate g x0 4) - f xStar ≤ 1 / 21
+LeanPEP.ActualFunction.NesterovPilotUpper.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hfun : IsOneSmoothConvexAnalytic f g) (hstationary : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1) :
+  f (NesterovPilotUpper.iterate g x0 4) - f xStar ≤ 1 / 21
+LeanPEP.ActualFunction.NesterovPilotUpper.upper_analytic_of_isRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E} {xStar x0 : E} {x y : ℕ → E}
+  (hfun : IsOneSmoothConvexAnalytic f g) (hstationary : g xStar = 0) (hradius : ‖x0 - xStar‖ ^ 2 ≤ 1)
+  (hrun : MomentumActual.IsRun 4 nesterovScheduleQ g x0 x y) : f (x 4) - f xStar ≤ 1 / 21
+'LeanPEP.ActualFunction.ProfileGram.certificate_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.MomentumActual.affineTrajectory_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotUpper.upper_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.NesterovPilotUpper.upper_analytic_of_isRun' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

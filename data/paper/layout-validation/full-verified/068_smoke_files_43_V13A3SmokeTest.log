@@ -1,0 +1,117 @@
+LeanPEP.Profiles.GradientDescentGramCertificate.relativeValueCoeffQ {N : ℕ} (a : Fin (N + 1) → ℚ) : Fin (N + 2) → ℚ
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizedGramCoeffQ {N : ℕ} (p : QuadPolyQ N) : Gram (N + 2) ℚ
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ {N : ℕ} (p : QuadPolyQ N) :
+  LinearExprQ (N + 2) (N + 2)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_zero (N : ℕ) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (QuadPolyQ.zero N) = LinearExprQ.zero (N + 2) (N + 2)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_add {N : ℕ} (p q : QuadPolyQ N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (p.add q) =
+    (Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ p).add
+      (Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ q)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_sub {N : ℕ} (p q : QuadPolyQ N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (p.sub q) =
+    (Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ p).sub
+      (Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ q)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_scale {N : ℕ} (c : ℚ) (p : QuadPolyQ N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (QuadPolyQ.scale c p) =
+    LinearExprQ.scale c (Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ p)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_valueVar {N : ℕ} (i : Fin (N + 1)) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (QuadPolyQ.valueVar i) =
+    (LinearExprQ.valueVar (Profiles.GramCompilation.pointIndex (Point.iter i))).sub
+      (LinearExprQ.valueVar (Profiles.GramCompilation.pointIndex Point.star))
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_mulAffine {N : ℕ} (a b : GradAffineQ N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (QuadPolyQ.mulAffine a b) =
+    LinearExprQ.gramBilinear (Profiles.GramCompilation.affineVecQ a) (Profiles.GramCompilation.affineVecQ b)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_square {N : ℕ} (a : GradAffineQ N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (QuadPolyQ.square a) =
+    LinearExprQ.gramNorm (Profiles.GramCompilation.affineVecQ a)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ_constAffine (N : ℕ) (c : ℚ) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (QuadPolyQ.ofAffine (GradAffineQ.const N c)) =
+    LinearExprQ.scale c (LinearExprQ.gramNorm (Profiles.GramCompilation.initialBasisQ N))
+LeanPEP.Profiles.GradientDescentGramCertificate.affineVecQ_gradAffineQ {N : ℕ} (i : Point N) :
+  Profiles.GramCompilation.affineVecQ (gradAffineQ i) = Profiles.GramCompilation.pointGradientVecQ i
+LeanPEP.Profiles.GradientDescentGramCertificate.relativePointValueExprQ {N : ℕ} (i : Point N) :
+  LinearExprQ (N + 2) (N + 2)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizePointValuePolyQ {N : ℕ} (i : Point N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (pointValuePolyQ i) =
+    Profiles.GradientDescentGramCertificate.relativePointValueExprQ i
+LeanPEP.Profiles.GradientDescentGramCertificate.relativePointValueExprQ_sub {N : ℕ} (i j : Point N) :
+  (Profiles.GradientDescentGramCertificate.relativePointValueExprQ i).sub
+      (Profiles.GradientDescentGramCertificate.relativePointValueExprQ j) =
+    (LinearExprQ.valueVar (Profiles.GramCompilation.pointIndex i)).sub
+      (LinearExprQ.valueVar (Profiles.GramCompilation.pointIndex j))
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeSlackPolyQ_unitGD {N : ℕ} (i j : Point N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (slackPolyQ i j) =
+    interpolationExprQ (Profiles.GradientDescentGram.unitGDModelQ N) (Profiles.GramCompilation.pointIndex i)
+      (Profiles.GramCompilation.pointIndex j)
+LeanPEP.Profiles.GradientDescentGramCertificate.gramInterpTermQ {N : ℕ} (t : Toy.FiniteGD.InterpTermQ N) :
+  GramPEP.InterpTermQ (N + 2)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeInterpPolySumQ_unitGD {N : ℕ}
+  (terms : List (Toy.FiniteGD.InterpTermQ N)) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (interpPolySumQ terms) =
+    interpExprSumQ (Profiles.GradientDescentGram.unitGDModelQ N)
+      (List.map Profiles.GradientDescentGramCertificate.gramInterpTermQ terms)
+LeanPEP.Profiles.GradientDescentGramCertificate.gramSquareFactorQ {N : ℕ} (t : SquareTermQ N) : RankOneFactorQ (N + 2)
+LeanPEP.Profiles.GradientDescentGramCertificate.gramPairingExpr_weightedOuterQ {m p : ℕ} (t : RankOneFactorQ m) :
+  LinearExprQ.gramPairing (weightedOuterQ t) = LinearExprQ.scale t.weight (LinearExprQ.gramNorm t.vector)
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeSquarePolySumQ {N : ℕ} (terms : List (SquareTermQ N)) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (squarePolySumQ terms) =
+    LinearExprQ.gramPairing (factorGramQ (List.map Profiles.GradientDescentGramCertificate.gramSquareFactorQ terms))
+LeanPEP.Profiles.GradientDescentGramCertificate.homogenizeCertificateRhsPolyQ_unitGD {N : ℕ}
+  (c : Toy.FiniteGD.UpperCertQ N) :
+  Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (certificateRhsPolyQ c) =
+    (interpExprSumQ (Profiles.GradientDescentGram.unitGDModelQ N)
+          (List.map Profiles.GradientDescentGramCertificate.gramInterpTermQ c.interpTerms)).add
+      (LinearExprQ.gramPairing
+        (factorGramQ (List.map Profiles.GradientDescentGramCertificate.gramSquareFactorQ c.squareTerms)))
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramDualFactorsQ (N : ℕ) : List (RankOneFactorQ (N + 2))
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramDualMatrixQ (N : ℕ) : Gram (N + 2) ℚ
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramDualFactorCertQ (N : ℕ) : PSDFactorCertQ (N + 2)
+LeanPEP.Profiles.GradientDescentGramCertificate.unitGDRadiusAssumptionIndexQ (N : ℕ) :
+  Fin (Profiles.GradientDescentGram.unitGDModelQ N).assumptions.length
+LeanPEP.Profiles.GradientDescentGramCertificate.unitGDRadiusAssumption_get (N : ℕ) :
+  (Profiles.GradientDescentGram.unitGDModelQ N).assumptions.get
+      (Profiles.GradientDescentGramCertificate.unitGDRadiusAssumptionIndexQ N) =
+    Profiles.GramCompilation.initialRadiusExprQ Profiles.GramCompilation.unitRadiusNormalizationQ
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramAssumptionTermsQ (N : ℕ) :
+  List (AssumptionTermQ (Profiles.GradientDescentGram.unitGDModelQ N))
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramAssumptionExprSumQ (N : ℕ) :
+  assumptionExprSumQ (Profiles.GradientDescentGram.unitGDModelQ N)
+      (Profiles.GradientDescentGramCertificate.gdGramAssumptionTermsQ N) =
+    LinearExprQ.scale (gdBoundQ N)
+      (Profiles.GramCompilation.initialRadiusExprQ Profiles.GramCompilation.unitRadiusNormalizationQ)
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramUpperCertQ (N : ℕ) :
+  GramPEP.UpperCertQ (Profiles.GradientDescentGram.unitGDModelQ N)
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramInterpWeights_nonneg (N : ℕ) (t : GramPEP.InterpTermQ (N + 2)) :
+  t ∈ List.map Profiles.GradientDescentGramCertificate.gramInterpTermQ (gdInterpTermsQ N) → 0 ≤ t.weight
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramDualWeights_nonneg (N : ℕ) (t : RankOneFactorQ (N + 2)) :
+  t ∈ Profiles.GradientDescentGramCertificate.gdGramDualFactorsQ N → 0 ≤ t.weight
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramAssumptionWeights_nonneg (N : ℕ)
+  (t : AssumptionTermQ (Profiles.GradientDescentGram.unitGDModelQ N)) :
+  t ∈ Profiles.GradientDescentGramCertificate.gdGramAssumptionTermsQ N → 0 ≤ t.weight
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramDualValidQ (N : ℕ) :
+  PSDFactorValidQ (Profiles.GradientDescentGramCertificate.gdGramDualMatrixQ N)
+    (Profiles.GradientDescentGramCertificate.gdGramDualFactorCertQ N)
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramCertificateRhsExprQ (N : ℕ) :
+  certificateRhsExprQ (Profiles.GradientDescentGramCertificate.gdGramUpperCertQ N) =
+    (interpExprSumQ (Profiles.GradientDescentGram.unitGDModelQ N)
+          (List.map Profiles.GradientDescentGramCertificate.gramInterpTermQ (gdInterpTermsQ N))).add
+      ((LinearExprQ.scale (gdBoundQ N)
+            (Profiles.GramCompilation.initialRadiusExprQ Profiles.GramCompilation.unitRadiusNormalizationQ)).add
+        (LinearExprQ.gramPairing (Profiles.GradientDescentGramCertificate.gdGramDualMatrixQ N)))
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramUpperTargetDecompositionQ (N : ℕ) :
+  (LinearExprQ.scale (gdBoundQ N)
+          (Profiles.GramCompilation.initialRadiusExprQ Profiles.GramCompilation.unitRadiusNormalizationQ)).add
+      (Profiles.GradientDescentGramCertificate.homogenizeQuadPolyQ (upperTargetPolyQ (gdBoundQ N) (gdObjective N))) =
+    upperTargetExprQ (gdBoundQ N) (Profiles.GradientDescentGram.unitGDObjectiveQ N)
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramUpperCertQ_identity_all (N : ℕ) :
+  certificateRhsExprQ (Profiles.GradientDescentGramCertificate.gdGramUpperCertQ N) =
+    upperTargetExprQ (gdBoundQ N) (Profiles.GradientDescentGram.unitGDObjectiveQ N)
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramUpperCertQ_valid_all (N : ℕ) :
+  GramPEP.UpperCertValidQ (Profiles.GradientDescentGramCertificate.gdGramUpperCertQ N)
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGramUpperCertQ_check_all (N : ℕ) :
+  GramPEP.checkUpperCertQ (Profiles.GradientDescentGramCertificate.gdGramUpperCertQ N) = true
+LeanPEP.Profiles.GradientDescentGramCertificate.gdGram_upper_all (N : ℕ) (d : GramPEP.DataR (Fin (N + 2)) (N + 2))
+  (hrealizes : RealizesModelQ (Profiles.GradientDescentGram.unitGDModelQ N) d) (hcore : CoreFeasible d)
+  (hassumptions : AssumptionsFeasibleR (Profiles.GradientDescentGram.unitGDModelQ N) d) :
+  (Profiles.GradientDescentGram.unitGDObjectiveQ N).evalR d ≤ ↑(gdBoundQ N)

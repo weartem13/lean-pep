@@ -1,0 +1,61 @@
+[
+  {
+    "label": "core",
+    "argv": [
+      "lake",
+      "build",
+      "LeanPEP.ActualFunction.ProximalGradientCaptureAuditCore"
+    ],
+    "timeout_seconds": 1800
+  },
+  {
+    "label": "consumer_python",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/test_python.py",
+      "--pattern",
+      "test_pg_certificate_consumer.py",
+      "-v"
+    ],
+    "timeout_seconds": 900
+  },
+  {
+    "label": "interface_smoke",
+    "argv": [
+      "lake",
+      "env",
+      "lean",
+      "examples/interface.lean"
+    ],
+    "timeout_seconds": 900
+  },
+  {
+    "label": "pg2_verify",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/tools/replay_pg_certificate.py",
+      "verify",
+      "--source-root",
+      "<PUBLIC_SOURCE>",
+      "--input",
+      "<PUBLIC_SOURCE>/data/cases/pg/two-step-reuse/capture.json",
+      "--candidate",
+      "<PUBLIC_SOURCE>/data/cases/pg/two-step-reuse/selected_exact.json",
+      "--output",
+      "<VALIDATION_LOGS>/quick/pg2-verify",
+      "--namespace",
+      "LeanPEP.Imported.Public.PG2",
+      "--timeout",
+      "900"
+    ],
+    "timeout_seconds": 960
+  },
+  {
+    "label": "cleanup_dry_run",
+    "argv": [
+      "<TEST_ENV>/bin/python3",
+      "<PUBLIC_SOURCE>/scripts/clean.py"
+    ],
+    "timeout_seconds": 900
+  }
+]

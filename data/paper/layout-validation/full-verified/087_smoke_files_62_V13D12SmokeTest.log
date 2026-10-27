@@ -1,0 +1,108 @@
+LeanPEP.GramPEP.UpperCoefficientSystem.coefficient_ext_iff {p m : ℕ} (a b : LinearExprQ p m) :
+  a = b ↔ ∀ (i : Fin (rowCount p m)), coefficientQ a i = coefficientQ b i
+LeanPEP.GramPEP.UpperCoefficientSystem.coefficient_assumptions {p m q : ℕ} (model : ModelQ p m)
+  (ts : Fin q → AssumptionTermQ model) (i : Fin (rowCount p m)) :
+  coefficientQ (assumptionExprSumQ model (List.ofFn ts)) i =
+    ∑ j, (ts j).weight * coefficientQ (model.assumptions.get (ts j).index) i
+LeanPEP.GramPEP.UpperCoefficientSystem.compile_row {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (x : Fin (q + 1) → ℚ) (i : Fin (rowCount p m)) :
+  ∑ j, (compileQ f).matrix i j * x j =
+    coefficientQ (LinearExprQ.const p m 1) i * x 0 -
+      ∑ j, x j.succ * coefficientQ (model.assumptions.get (f.references j)) i
+LeanPEP.GramPEP.UpperCoefficientSystem.identity_iff_solution {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (x : Fin (q + 1) → ℚ) :
+  certificateRhsExprQ (instantiateQ f x) = upperTargetExprQ (x 0) f.objective ↔
+    RationalLinearSystem.IsSolutionQ (compileQ f) x
+LeanPEP.GramPEP.UpperCoefficientSystem.accepted_iff {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (x : Fin (q + 1) → ℚ) :
+  checkUpperCertQ (instantiateQ f x) = true ↔
+    RationalLinearSystem.IsSolutionQ (compileQ f) x ∧
+      (∀ (j : Fin q), 0 ≤ x j.succ) ∧ PSDFactorValidQ f.residual f.factors
+LeanPEP.GramPEP.UpperCoefficientSystem.checkSystemQ_eq_true_iff {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (s : RationalLinearSystem.SystemQ (rowCount p m) (q + 1)) : checkSystemQ f s = true ↔ s = compileQ f
+LeanPEP.GramPEP.UpperCoefficientSystem.checked_no_identity {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (s : RationalLinearSystem.SystemQ (rowCount p m) (q + 1)) (hs : checkSystemQ f s = true) (y : Fin (rowCount p m) → ℚ)
+  (hy : RationalLinearSystem.checkObstructionQ s y = true) :
+  ¬∃ x, certificateRhsExprQ (instantiateQ f x) = upperTargetExprQ (x 0) f.objective
+LeanPEP.GramPEP.UpperCoefficientSystem.checked_no_accepted {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (s : RationalLinearSystem.SystemQ (rowCount p m) (q + 1)) (hs : checkSystemQ f s = true) (y : Fin (rowCount p m) → ℚ)
+  (hy : RationalLinearSystem.checkObstructionQ s y = true) : ¬∃ x, checkUpperCertQ (instantiateQ f x) = true
+LeanPEP.GramPEP.UpperCoefficientBox.feasible_iff {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (raw x : Fin (q + 1) → ℚ) (eta : ℚ) :
+  RationalBoxSystem.FeasibleQ (compileBoxQ f raw eta) x ↔
+    RationalLinearSystem.IsSolutionQ (compileQ f) x ∧ (∀ (j : Fin q), 0 ≤ x j.succ) ∧ WithinBudgetQ raw x eta
+LeanPEP.GramPEP.UpperCoefficientBox.feasible_iff_accepted {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (raw x : Fin (q + 1) → ℚ) (eta : ℚ) (hp : PSDFactorValidQ f.residual f.factors) :
+  RationalBoxSystem.FeasibleQ (compileBoxQ f raw eta) x ↔
+    checkUpperCertQ (instantiateQ f x) = true ∧ WithinBudgetQ raw x eta
+LeanPEP.GramPEP.UpperCoefficientBox.checkBoxQ_eq_true_iff {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (raw : Fin (q + 1) → ℚ) (eta : ℚ) (b : RationalBoxSystem.BoxQ (rowCount p m) (q + 1)) :
+  checkBoxQ f raw eta b = true ↔ b = compileBoxQ f raw eta
+LeanPEP.GramPEP.UpperCoefficientBox.checked_no_identity_in_budget {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (raw : Fin (q + 1) → ℚ) (eta : ℚ) (b : RationalBoxSystem.BoxQ (rowCount p m) (q + 1))
+  (hb : checkBoxQ f raw eta b = true) (w : RationalBoxSystem.ObstructionQ (rowCount p m) (q + 1))
+  (hw : RationalBoxSystem.checkObstructionQ b w = true) :
+  ¬∃ x,
+      certificateRhsExprQ (instantiateQ f x) = upperTargetExprQ (x 0) f.objective ∧
+        (∀ (j : Fin q), 0 ≤ x j.succ) ∧ WithinBudgetQ raw x eta
+LeanPEP.GramPEP.UpperCoefficientBox.checked_no_accepted_in_budget {p m q : ℕ} {model : ModelQ p m} (f : FamilyQ model q)
+  (raw : Fin (q + 1) → ℚ) (eta : ℚ) (b : RationalBoxSystem.BoxQ (rowCount p m) (q + 1))
+  (hb : checkBoxQ f raw eta b = true) (w : RationalBoxSystem.ObstructionQ (rowCount p m) (q + 1))
+  (hw : RationalBoxSystem.checkObstructionQ b w = true) :
+  ¬∃ x, checkUpperCertQ (instantiateQ f x) = true ∧ WithinBudgetQ raw x eta
+LeanPEP.GramPEP.UpperCoefficientBox.checkRawVectorQ_eq_true_iff {p m : ℕ} {model : ModelQ p m}
+  (seed raw : UpperCertQ model) (v : Fin (seed.assumptionTerms.length + 1) → ℚ) :
+  checkRawVectorQ seed raw v = true ↔
+    List.map (fun t => ↑t.index) seed.assumptionTerms = List.map (fun t => ↑t.index) raw.assumptionTerms ∧
+      List.ofFn v = raw.bound :: List.map (fun t => t.weight) raw.assumptionTerms
+LeanPEP.Imported.CompiledCompletion.One.system_binding :
+  checkSystemQ Imported.CompiledCompletion.One.familyQ Imported.CompositeBoundedCompletion.PGOne.coefficientSystemQ =
+    true
+LeanPEP.Imported.CompiledCompletion.Three.compiled_certificate_check :
+  checkUpperCertQ
+      (instantiateQ Imported.CompiledCompletion.Three.familyQ
+        Imported.CompositeBoundedCompletion.PGThree.completionVectorQ) =
+    true
+LeanPEP.Imported.CompiledCompletion.Inconsistent.no_fixed_identity :
+  ¬∃ x,
+      certificateRhsExprQ (instantiateQ Imported.CompiledCompletion.Inconsistent.familyQ x) =
+        upperTargetExprQ (x 0) Imported.CompiledCompletion.Inconsistent.familyQ.objective
+LeanPEP.Imported.CompiledCompletion.Budget.no_fixed_certificate_in_budget :
+  ¬∃ x,
+      checkUpperCertQ (instantiateQ Imported.CompiledCompletion.Budget.familyQ x) = true ∧
+        WithinBudgetQ Imported.CompositeBoundedCompletion.Budget.rawVectorQ x
+          Imported.CompositeBoundedCompletion.Budget.policyQ.maxAbsError
+LeanPEP.Imported.CompiledCompletion.One.forged_local_obstruction_check :
+  RationalLinearSystem.checkObstructionQ Imported.CompiledCompletion.One.forgedSystemQ
+      Imported.CompiledCompletion.One.forgedWitnessQ =
+    true
+LeanPEP.Imported.CompiledCompletion.One.forged_system_rejected :
+  checkSystemQ Imported.CompiledCompletion.One.familyQ Imported.CompiledCompletion.One.forgedSystemQ = false
+LeanPEP.Imported.CompiledCompletion.Budget.changed_box_rejected :
+  checkBoxQ Imported.CompiledCompletion.Budget.familyQ Imported.CompositeBoundedCompletion.Budget.rawVectorQ
+      Imported.CompositeBoundedCompletion.Budget.policyQ.maxAbsError Imported.CompiledCompletion.Budget.changedBoxQ =
+    false
+LeanPEP.ActualFunction.ProximalGradientBoundedCompletionAudit.three_step_upper.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E}
+  {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.GramPEP.UpperCoefficientSystem.coefficient_ext_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.UpperCoefficientSystem.identity_iff_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.GramPEP.UpperCoefficientSystem.accepted_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.UpperCoefficientSystem.checked_no_accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.UpperCoefficientBox.checked_no_accepted_in_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompiledCompletion.Three.compiled_certificate_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompiledCompletion.Inconsistent.no_fixed_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompiledCompletion.Budget.no_fixed_certificate_in_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,1033 @@
+{
+  "cases": [
+    {
+      "input": {
+        "dimension": 0,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": []
+      },
+      "name": "Empty",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 3,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ]
+        ]
+      },
+      "name": "Zero",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 2,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 2
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 3
+            }
+          ]
+        ]
+      },
+      "name": "IrrationalCholesky",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 3,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 2
+            },
+            {
+              "den": 1,
+              "num": 2
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 2
+            },
+            {
+              "den": 1,
+              "num": 2
+            }
+          ]
+        ]
+      },
+      "name": "SingularPermuted",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "input": {
+        "dimension": 2,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 2
+            }
+          ]
+        ]
+      },
+      "name": "NegativeDiagonal",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 2,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 2
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 2
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ]
+        ]
+      },
+      "name": "PositiveDiagonalIndefinite",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 2,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 3
+            }
+          ]
+        ]
+      },
+      "name": "ZeroDiagonalNonzeroRow",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 3,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 2
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 2
+            },
+            {
+              "den": 1,
+              "num": 3
+            }
+          ]
+        ]
+      },
+      "name": "LiftedZeroDiagonal",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 2,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 100000000000000000000,
+              "num": -1
+            }
+          ]
+        ]
+      },
+      "name": "TinyNegative",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 2,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ]
+        ]
+      },
+      "name": "Asymmetric",
+      "origin": "hand-specified exact regression matrix; not a solver run",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 3,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 9,
+              "num": 1
+            },
+            {
+              "den": 9,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 9,
+              "num": 1
+            },
+            {
+              "den": 9,
+              "num": 1
+            }
+          ]
+        ]
+      },
+      "name": "GDPrimal",
+      "origin": "unchanged examples/gram_external/one_step_exact.json primal.gram",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 3,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ]
+        ]
+      },
+      "name": "GDDual",
+      "origin": "unchanged examples/gram_external/one_step_exact.json upper.dual_matrix",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 5,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 4,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 2,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ]
+        ]
+      },
+      "name": "PGDualOne",
+      "origin": "exact C3A formula mirror, T=1; Lean equality to original upperCertQ is checked separately",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 7,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 8,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 8,
+              "num": -1
+            },
+            {
+              "den": 24,
+              "num": -5
+            },
+            {
+              "den": 6,
+              "num": -1
+            },
+            {
+              "den": 6,
+              "num": -1
+            },
+            {
+              "den": 3,
+              "num": -1
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 8,
+              "num": -1
+            },
+            {
+              "den": 24,
+              "num": -5
+            },
+            {
+              "den": 6,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 1,
+              "num": 0
+            }
+          ],
+          [
+            {
+              "den": 8,
+              "num": -1
+            },
+            {
+              "den": 8,
+              "num": -1
+            },
+            {
+              "den": 4,
+              "num": 1
+            },
+            {
+              "den": 24,
+              "num": 5
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 24,
+              "num": -5
+            },
+            {
+              "den": 24,
+              "num": -5
+            },
+            {
+              "den": 24,
+              "num": 5
+            },
+            {
+              "den": 3,
+              "num": 2
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 6,
+              "num": -1
+            },
+            {
+              "den": 6,
+              "num": -1
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 6,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 6,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            }
+          ],
+          [
+            {
+              "den": 3,
+              "num": -1
+            },
+            {
+              "den": 1,
+              "num": 0
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 2,
+              "num": 1
+            },
+            {
+              "den": 3,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            }
+          ]
+        ]
+      },
+      "name": "PGDualTwo",
+      "origin": "exact C3A formula mirror, T=2; Lean equality to original upperCertQ is checked separately",
+      "pivot_order": null
+    },
+    {
+      "input": {
+        "dimension": 7,
+        "format": "leanpep-rational-matrix-v1",
+        "matrix": [
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            }
+          ],
+          [
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 1,
+              "num": 1
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            }
+          ],
+          [
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 16,
+              "num": 9
+            },
+            {
+              "den": 16,
+              "num": 9
+            }
+          ],
+          [
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 4,
+              "num": -3
+            },
+            {
+              "den": 16,
+              "num": 9
+            },
+            {
+              "den": 16,
+              "num": 9
+            }
+          ]
+        ]
+      },
+      "name": "PGPrimalTwo",
+      "origin": "exact C3A one-dimensional witness Gram mirror, T=2; matrix-level regression only",
+      "pivot_order": null
+    }
+  ],
+  "format": "leanpep-psd-regression-cases-v1"
+}

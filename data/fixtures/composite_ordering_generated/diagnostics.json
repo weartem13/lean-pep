@@ -1,0 +1,414 @@
+[
+  {
+    "arbitrary_pepit_leaf_elimination_supported": false,
+    "bound_guards": {
+      "canonical_bound": true,
+      "canonical_source": true,
+      "empty_implicit_interpolation": true,
+      "permutations": true,
+      "source_certificate": true,
+      "source_objective": true
+    },
+    "canonical_diagnostic": {
+      "arbitrary_pepit_order_supported": false,
+      "bound_guards": {
+        "centered_bound": true,
+        "empty_implicit_interpolation": true,
+        "native_certificate": true,
+        "native_objective": true,
+        "source": true
+      },
+      "canonical_json_sha256": "3d611243f74a67981f22a2f23600f680aae310599b607933abac186c54b7dc51",
+      "centered_certificate": {
+        "certificate": true,
+        "empty_implicit_interpolation": true,
+        "objective_matches_source": true,
+        "source": true
+      },
+      "centered_source_mismatches": [],
+      "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "centered": 5,
+        "native": 6,
+        "values": 5
+      },
+      "format": "leanpep-uncentered-pg-diagnostic-v1",
+      "horizon": 1,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "native_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D4 1-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+        "mode": "deterministic_regression_fixture"
+      },
+      "primal_transport_checked": false,
+      "provenance_authenticated": false,
+      "source_guards": {
+        "center_matrix": true,
+        "centered_source": true,
+        "constraints_roundtrip": true,
+        "header": true,
+        "nonsmooth_roundtrip": true,
+        "objective_roundtrip": true,
+        "section_matrix": true,
+        "smooth_roundtrip": true
+      },
+      "source_mismatches": []
+    },
+    "canonical_input_error": null,
+    "canonical_json_sha256": "0e84dfec7e75895d9ca1c40c727d7a833f0cbfa38c9d78b8f15b727b41f4958a",
+    "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "basis": 6,
+      "nonsmooth": 2,
+      "rows": 14,
+      "smooth": 3,
+      "values": 5
+    },
+    "format": "leanpep-permuted-pg-diagnostic-v1",
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D4 1-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "permutation_guards": {
+      "basis": true,
+      "nonsmooth": true,
+      "rows": true,
+      "smooth": true,
+      "values": true
+    },
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "roundtrip_payload_and_certificate": true,
+    "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+    "source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    }
+  },
+  {
+    "arbitrary_pepit_leaf_elimination_supported": false,
+    "bound_guards": {
+      "canonical_bound": true,
+      "canonical_source": true,
+      "empty_implicit_interpolation": true,
+      "permutations": true,
+      "source_certificate": true,
+      "source_objective": true
+    },
+    "canonical_diagnostic": {
+      "arbitrary_pepit_order_supported": false,
+      "bound_guards": {
+        "centered_bound": true,
+        "empty_implicit_interpolation": true,
+        "native_certificate": true,
+        "native_objective": true,
+        "source": true
+      },
+      "canonical_json_sha256": "da5fcbf92e8c351eb929f9f50f8de488d3d0909214ecbe12c1df936bcd459dab",
+      "centered_certificate": {
+        "certificate": true,
+        "empty_implicit_interpolation": true,
+        "objective_matches_source": true,
+        "source": true
+      },
+      "centered_source_mismatches": [],
+      "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "centered": 7,
+        "native": 8,
+        "values": 7
+      },
+      "format": "leanpep-uncentered-pg-diagnostic-v1",
+      "horizon": 2,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "native_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D4 2-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+        "mode": "deterministic_regression_fixture"
+      },
+      "primal_transport_checked": false,
+      "provenance_authenticated": false,
+      "source_guards": {
+        "center_matrix": true,
+        "centered_source": true,
+        "constraints_roundtrip": true,
+        "header": true,
+        "nonsmooth_roundtrip": true,
+        "objective_roundtrip": true,
+        "section_matrix": true,
+        "smooth_roundtrip": true
+      },
+      "source_mismatches": []
+    },
+    "canonical_input_error": null,
+    "canonical_json_sha256": "ce74a4d6dee0cda17bbac984b26a7fd70e1ca6c5b4f531d59fb27c4e1d9fb603",
+    "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "basis": 8,
+      "nonsmooth": 3,
+      "rows": 26,
+      "smooth": 4,
+      "values": 7
+    },
+    "format": "leanpep-permuted-pg-diagnostic-v1",
+    "horizon": 2,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D4 2-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "permutation_guards": {
+      "basis": true,
+      "nonsmooth": true,
+      "rows": true,
+      "smooth": true,
+      "values": true
+    },
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "roundtrip_payload_and_certificate": true,
+    "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+    "source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    }
+  },
+  {
+    "arbitrary_pepit_leaf_elimination_supported": false,
+    "bound_guards": {
+      "canonical_bound": true,
+      "canonical_source": true,
+      "empty_implicit_interpolation": true,
+      "permutations": true,
+      "source_certificate": true,
+      "source_objective": true
+    },
+    "canonical_diagnostic": {
+      "arbitrary_pepit_order_supported": false,
+      "bound_guards": {
+        "centered_bound": true,
+        "empty_implicit_interpolation": true,
+        "native_certificate": true,
+        "native_objective": true,
+        "source": true
+      },
+      "canonical_json_sha256": "72956a19565d01d987b8eceeeeb35395b813e467f27267af0d5be902a7e7b417",
+      "centered_certificate": {
+        "certificate": true,
+        "empty_implicit_interpolation": true,
+        "objective_matches_source": true,
+        "source": true
+      },
+      "centered_source_mismatches": [],
+      "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "centered": 9,
+        "native": 10,
+        "values": 9
+      },
+      "format": "leanpep-uncentered-pg-diagnostic-v1",
+      "horizon": 3,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "native_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D4 3-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+        "mode": "deterministic_regression_fixture"
+      },
+      "primal_transport_checked": false,
+      "provenance_authenticated": false,
+      "source_guards": {
+        "center_matrix": true,
+        "centered_source": true,
+        "constraints_roundtrip": true,
+        "header": true,
+        "nonsmooth_roundtrip": true,
+        "objective_roundtrip": true,
+        "section_matrix": true,
+        "smooth_roundtrip": true
+      },
+      "source_mismatches": []
+    },
+    "canonical_input_error": null,
+    "canonical_json_sha256": "f5dd77772a74cd71d49d2ae35bbe12683509d777cfffcd8aef3b47fde37512ed",
+    "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "basis": 10,
+      "nonsmooth": 4,
+      "rows": 42,
+      "smooth": 5,
+      "values": 9
+    },
+    "format": "leanpep-permuted-pg-diagnostic-v1",
+    "horizon": 3,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D4 3-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "permutation_guards": {
+      "basis": true,
+      "nonsmooth": true,
+      "rows": true,
+      "smooth": true,
+      "values": true
+    },
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "roundtrip_payload_and_certificate": true,
+    "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+    "source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    }
+  },
+  {
+    "arbitrary_pepit_leaf_elimination_supported": false,
+    "bound_guards": {
+      "canonical_bound": true,
+      "canonical_source": true,
+      "empty_implicit_interpolation": true,
+      "permutations": true,
+      "source_certificate": true,
+      "source_objective": true
+    },
+    "canonical_diagnostic": {
+      "arbitrary_pepit_order_supported": false,
+      "bound_guards": {
+        "centered_bound": true,
+        "empty_implicit_interpolation": true,
+        "native_certificate": true,
+        "native_objective": true,
+        "source": true
+      },
+      "canonical_json_sha256": "3d611243f74a67981f22a2f23600f680aae310599b607933abac186c54b7dc51",
+      "centered_certificate": {
+        "certificate": true,
+        "empty_implicit_interpolation": true,
+        "objective_matches_source": true,
+        "source": true
+      },
+      "centered_source_mismatches": [],
+      "coordinate_contract": "fixed_rectangular_center_map_and_zero_origin_section_with_full_roundtrip",
+      "diagnostic_passed": true,
+      "dimensions": {
+        "centered": 5,
+        "native": 6,
+        "values": 5
+      },
+      "format": "leanpep-uncentered-pg-diagnostic-v1",
+      "horizon": 1,
+      "lean_checked": false,
+      "live_capture_performed": false,
+      "native_certificate": {
+        "accepted": true,
+        "factor": true,
+        "identity": true,
+        "symmetric": true,
+        "weights": true
+      },
+      "numeric_interpretation": "exact_num_den_no_reconstruction",
+      "origin": {
+        "description": "D4 1-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+        "mode": "deterministic_regression_fixture"
+      },
+      "primal_transport_checked": false,
+      "provenance_authenticated": false,
+      "source_guards": {
+        "center_matrix": true,
+        "centered_source": true,
+        "constraints_roundtrip": true,
+        "header": true,
+        "nonsmooth_roundtrip": true,
+        "objective_roundtrip": true,
+        "section_matrix": true,
+        "smooth_roundtrip": true
+      },
+      "source_mismatches": []
+    },
+    "canonical_input_error": null,
+    "canonical_json_sha256": "acdbc99069cf9f70673d59c504ba2551cc5070edc5014aaed301e0ecffa9a960",
+    "coordinate_contract": "five_bijective_storage_permutations_then_unchanged_D3_roundtrip_audit",
+    "diagnostic_passed": true,
+    "dimensions": {
+      "basis": 6,
+      "nonsmooth": 2,
+      "rows": 14,
+      "smooth": 3,
+      "values": 5
+    },
+    "format": "leanpep-permuted-pg-diagnostic-v1",
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D4 1-step exact PG storage permutations; D3 source and D1 factors, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "permutation_guards": {
+      "basis": true,
+      "nonsmooth": true,
+      "rows": true,
+      "smooth": true,
+      "values": true
+    },
+    "primal_import_supported": false,
+    "provenance_authenticated": false,
+    "roundtrip_payload_and_certificate": true,
+    "row_tag_semantics": "logical_component_point_indices_not_source_storage_offsets",
+    "source_certificate": {
+      "accepted": true,
+      "factor": true,
+      "identity": true,
+      "symmetric": true,
+      "weights": true
+    }
+  }
+]

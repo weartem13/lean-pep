@@ -1,0 +1,8 @@
+{
+  "command_receipt": "profile-r02.command.json",
+  "duplicate_decide_bottleneck": "not established",
+  "group_output": "attribute application 0.188ms\n\tblocked (unaccounted) 228s\n\tcompilation (IR) 8.12ms\n\tcompilation (LCNF base) 132ms\n\tcompilation (LCNF impure) 41.9ms\n\tcompilation (LCNF mono) 115ms\n\telaboration 1.87s\n\tfix level params 0.55ms\n\timport 13.4s\n\tinitialization 21.3ms\n\tinstantiate metavars 0.274ms\n\tinterpretation 2.06s\n\tlet-to-have transformation 0.585ms\n\tlinting 100ms\n\toverlappingInstancesLinter 31.8ms\n\tparsing 211ms\n\tprocess pre-definitions 83.3ms\n\tshare common exprs 2.54ms\n\ttactic execution 24.1ms\n\ttacticAnalysis 363ms\n\ttype checking 38.9s\n\ttypeclass inference 329ms",
+  "optimization_implemented": false,
+  "raw_log": "profile-r02.log",
+  "scope": "One same-process fixed R02 Replay; default Lean concurrency; existing project/dependency caches; threshold 0 includes detailed profiler/linter overhead; no per-declaration attribution. Cumulative groups and blocked time overlap across tasks and are not additive wall time."
+}

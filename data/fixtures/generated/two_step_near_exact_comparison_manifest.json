@@ -1,0 +1,22 @@
+{
+  "generator_version": "v0.7.0",
+  "hashes": {
+    "raw_exact_sha256": "b4a0f570dc0efbe62a1124fe5ea01a7f80dad7d1b1f4002a8f4d9c51f9bc7e34",
+    "reconstructed_exact_sha256": "3179cd0ea614e4a386c6e3b796e096cb5bc0c4cb7e1f210cba7e784fdb758d46",
+    "reconstruction_report_sha256": "b5b301a5e38f885ff7c6c214c8f7098c4ab5656946ab81578698bf6cec067191",
+    "source_sha256": "57063eb77c58f8e401295c264941bf0b1b42bcb47704fa4b38320ee511550c1c"
+  },
+  "interpretation": "reconstructed acceptance does not imply that the raw numerical candidate was accepted",
+  "kind": "lean-pep-approximate-audit-comparison-v1",
+  "schema_version": 1,
+  "tracks": {
+    "raw": {
+      "expected_audit": "rejected",
+      "meaning": "exact audit of the original finite base-10 strings; no repair or rounding"
+    },
+    "reconstructed": {
+      "expected_audit": "accepted",
+      "meaning": "exact audit of a nearby candidate produced by the recorded reconstruction policy"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# Paper evidence
+
+This directory makes the paper's retained mathematical data and key execution evidence available without an author workstation or private archive. No solve or recovery experiment was repeated during this directory migration.
+
+- `pg2-batch/preregistration.json` gives the eight fixed configurations, frozen participating-source hashes, original resource limits, and recovery policy. `preregistration.sha256` is deliberately the hash of the original preregistration, before public path redaction; the public derivative has its separate hash in `evidence-index.json`.
+- `pg2-batch/batch-results.json` and `batch-table.json` give every configuration's outcome. Eight captures yielded seven distinct exact numerical payloads; B06 duplicates B05 and does not claim a second recovery or Lean run. Four payloads match earlier archives and three were new. These are descriptive results for a fixed batch, not a population success-rate estimate.
+- `pg2-batch/batch/B01` through `B08` retain every capture and solver receipt/log. Seven `recover/` subdirectories retain the accepted certificate, exact audit, generation and failed-grid diagnostics, Lean source, and execution log. The seven identical `candidate_exact.json` copies are represented by explicit aliases to `selected_exact.json` in the evidence index.
+- `pg2-batch/batch/Bxx/observer.json` files (within each executed case) record the observed recovery stages. All 85 rejected grid points remain represented in their original generation/observer records. No selected file exists for a failed attempt.
+- `pg2-batch/environment.json`, `profile-summary.json`, and the profiling log/command receipt describe current-at-measurement hardware and timing scope. Self/children resource measurements are not summed into a process-tree peak. Profiling is an investigation, not an optimization result.
+- `installation/` retains the separate official-dependency installation and accepted-input verification receipts. Official matching-revision binary caches were used; this is not a claim of dependency-source cold compilation.
+- `validation/` retains the calibration, semantic checks, accepted PG/GD pair, and control execution records cited by the paper. `controls/` retains both the first failed attempt and the repaired historical control proof; its exploratory inputs are not alternate accepted PG models.
+
+All historical mathematical executions refer to the accepted source identity `sha256:e43a0018cd7dd8d202361abcea8fcbbda1db7981bf25ec5e36c317116b1f429c`. The original 1150-file source ZIP had SHA256 `e2fa8b8d6f85fa8e8cfc07daec3447e0adebb7f2732a69b1441185584fcab0b3`. The reorganized distribution has a new identity and its own validation receipts; it does not acquire historical solve timings retroactively.
+
+`evidence-index.json` maps the old relative names to this directory and distinguishes byte-identical files from local-path-redacted derivatives. Personal paths in retained public receipts are placeholders, not runnable path instructions. Their originals are preserved privately. The [declaration/evidence map](../../docs/evidence/claim-evidence.md) points to these accessible copies and retains the original execution identity.
+
+The maintained-layout validation is indexed separately in [layout-validation/README.md](layout-validation/README.md). It includes the new source identity, initial environment failures and final successful command logs; the eight original solver runs were not repeated.
+
+The historical migration index is preserved byte-for-byte. Its single entry `data/paper/validation/metadata-errata.json` records old manuscript-editing corrections and is intentionally not distributed with the code; that editorial file remains in the local manuscript archive. Every research-evidence entry remains distributed. Use the [declaration/evidence map](../../docs/evidence/claim-evidence.json) for active statement-to-source/execution checks.

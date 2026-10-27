@@ -1,0 +1,126 @@
+LeanPEP.GramPEP.RowNormalization.checkRulesQ_eq_true_iff {k : ℕ} (rs : Fin k → RowNormalization.RuleQ) :
+  RowNormalization.checkRulesQ rs = true ↔ ∀ (i : Fin k), 0 < (rs i).scale
+LeanPEP.GramPEP.RowNormalization.orient_involutive {p m : ℕ} (sense : RowNormalization.SenseQ) (e : LinearExprQ p m) :
+  RowNormalization.orientExprQ sense (RowNormalization.orientExprQ sense e) = e
+LeanPEP.GramPEP.RowNormalization.encode_normalize {p m : ℕ} (r : RowNormalization.RuleQ) (hr : r.scale ≠ 0)
+  (e : LinearExprQ p m) : RowNormalization.encodeExprQ r (RowNormalization.normalizeExprQ r e) = e
+LeanPEP.GramPEP.RowNormalization.normalize_encode {p m : ℕ} (r : RowNormalization.RuleQ) (hr : r.scale ≠ 0)
+  (e : LinearExprQ p m) : RowNormalization.normalizeExprQ r (RowNormalization.encodeExprQ r e) = e
+LeanPEP.GramPEP.RowNormalization.normalize_injective {p m : ℕ} (r : RowNormalization.RuleQ) (hr : r.scale ≠ 0) :
+  Function.Injective (RowNormalization.normalizeExprQ r)
+LeanPEP.GramPEP.RowNormalization.orient_nonneg_iff {p m : ℕ} (sense : RowNormalization.SenseQ) (e : LinearExprQ p m)
+  (d : DataR (Fin p) m) : 0 ≤ (RowNormalization.orientExprQ sense e).evalR d ↔ RowNormalization.HoldsR sense e d
+LeanPEP.GramPEP.RowNormalization.normalize_nonneg_iff {p m : ℕ} (r : RowNormalization.RuleQ) (hr : 0 < r.scale)
+  (e : LinearExprQ p m) (d : DataR (Fin p) m) :
+  0 ≤ (RowNormalization.normalizeExprQ r e).evalR d ↔ RowNormalization.HoldsR r.sense e d
+LeanPEP.GramPEP.RowNormalization.weighted_normalize {p m : ℕ} (r : RowNormalization.RuleQ) (hr : r.scale ≠ 0) (w : ℚ)
+  (e : LinearExprQ p m) :
+  LinearExprQ.scale (w * r.scale) (RowNormalization.normalizeExprQ r e) =
+    LinearExprQ.scale w (RowNormalization.orientExprQ r.sense e)
+LeanPEP.GramPEP.RowNormalization.normalized_weight_nonneg (r : RowNormalization.RuleQ) (hr : 0 < r.scale) (w : ℚ)
+  (hw : 0 ≤ w) : 0 ≤ w * r.scale
+LeanPEP.Adapters.ProximalGradientRows.snapshot_roundtrip {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (hr : RowNormalization.checkRulesQ s.rules = true) : Adapters.ProximalGradientRows.restoredSnapshotQ s = s.snapshot
+LeanPEP.Adapters.ProximalGradientRows.rows_feasible_iff {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (hr : RowNormalization.checkRulesQ s.rules = true)
+  (d : DataR (Fin (Adapters.ProximalGradientOrdering.valueCount n)) (Adapters.ProximalGradientOrdering.basisCount n)) :
+  (∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n)),
+      RowNormalization.HoldsR (s.rules i).sense (s.snapshot.constraints i) d) ↔
+    ∀ (i : Fin (Adapters.ProximalGradientOrdering.rowCount n)),
+      0 ≤ ((Adapters.ProximalGradientRows.normalizedSourceQ s).snapshot.constraints i).evalR d
+LeanPEP.Adapters.ProximalGradientRows.source_binding {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (hs : Adapters.ProximalGradientRows.checkSourceQ s = true) :
+  Adapters.ProximalGradientOrdering.nativeSourceQ (Adapters.ProximalGradientRows.normalizedSourceQ s) =
+    Adapters.ProximalGradientCoordinates.expectedSourceQ n
+LeanPEP.Adapters.ProximalGradientRows.normalizedAssumptionQ_weight {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (t : AssumptionTermQ s.model) :
+  (Adapters.ProximalGradientRows.normalizedAssumptionQ s t).weight =
+    t.weight * (s.rules (Adapters.ProximalGradientRows.sourceRowQ s t)).scale
+LeanPEP.Adapters.ProximalGradientRows.normalizedAssumptionQ_index {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (t : AssumptionTermQ s.model) : ↑(Adapters.ProximalGradientRows.normalizedAssumptionQ s t).index = ↑t.index
+LeanPEP.Adapters.ProximalGradientRows.assumption_sum_preserved {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (hr : RowNormalization.checkRulesQ s.rules = true) (ts : List (AssumptionTermQ s.model)) :
+  assumptionExprSumQ (Adapters.ProximalGradientRows.normalizedSourceQ s).model
+      (List.map (Adapters.ProximalGradientRows.normalizedAssumptionQ s) ts) =
+    assumptionExprSumQ s.model ts
+LeanPEP.Adapters.ProximalGradientRows.certificate_rhs_preserved {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (hr : RowNormalization.checkRulesQ s.rules = true) (c : UpperCertQ s.model) (hi : c.interpTerms = []) :
+  certificateRhsExprQ (Adapters.ProximalGradientRows.normalizedUpperQ s c) = certificateRhsExprQ c
+LeanPEP.Adapters.ProximalGradientRows.normalizedUpper_check {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (hr : RowNormalization.checkRulesQ s.rules = true) (c : UpperCertQ s.model) (hi : c.interpTerms = [])
+  (hc : checkUpperCertQ c = true) : checkUpperCertQ (Adapters.ProximalGradientRows.normalizedUpperQ s c) = true
+LeanPEP.Adapters.ProximalGradientRows.normalizedUpperQ_assumption_count {n : ℕ}
+  (s : Adapters.ProximalGradientRows.SourceQ n) (c : UpperCertQ s.model) :
+  (Adapters.ProximalGradientRows.normalizedUpperQ s c).assumptionTerms.length = c.assumptionTerms.length
+LeanPEP.Adapters.ProximalGradientRows.checkBoundQ_eq_true_iff {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (c : UpperCertQ s.model) :
+  Adapters.ProximalGradientRows.checkBoundQ s c = true ↔
+    Adapters.ProximalGradientRows.checkSourceQ s = true ∧
+      checkUpperCertQ c = true ∧
+        c.interpTerms = [] ∧
+          c.objective = s.snapshot.objective ∧
+            Adapters.ProximalGradientOrdering.checkBoundQ (Adapters.ProximalGradientRows.normalizedSourceQ s)
+                (Adapters.ProximalGradientRows.normalizedUpperQ s c) =
+              true
+LeanPEP.Adapters.ProximalGradientRows.checked_certificate {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (c : UpperCertQ s.model) (hc : Adapters.ProximalGradientRows.checkBoundQ s c = true) :
+  ∃ d,
+    checkUpperCertQ d = true ∧
+      d.interpTerms = [] ∧ d.objective = Profiles.ProximalGradient.objectiveQ n ∧ d.bound = c.bound
+LeanPEP.Imported.CompositeRows.PGOne.bound_check :
+  Adapters.ProximalGradientRows.checkBoundQ Imported.CompositeRows.PGOne.sourceQ Imported.CompositeRows.PGOne.upperQ =
+    true
+LeanPEP.Imported.CompositeRows.PGTwo.bound_check :
+  Adapters.ProximalGradientRows.checkBoundQ Imported.CompositeRows.PGTwo.sourceQ Imported.CompositeRows.PGTwo.upperQ =
+    true
+LeanPEP.Imported.CompositeRows.PGThree.bound_check :
+  Adapters.ProximalGradientRows.checkBoundQ Imported.CompositeRows.PGThree.sourceQ
+      Imported.CompositeRows.PGThree.upperQ =
+    true
+LeanPEP.Imported.CompositeRows.PGUnit.bound_check :
+  Adapters.ProximalGradientRows.checkBoundQ Imported.CompositeRows.PGUnit.sourceQ Imported.CompositeRows.PGUnit.upperQ =
+    true
+LeanPEP.Imported.CompositeRows.zero_scale_normalized_passes :
+  Adapters.ProximalGradientOrdering.checkSourceQ
+      (Adapters.ProximalGradientRows.normalizedSourceQ Imported.CompositeRows.zeroScaleQ) =
+    true
+LeanPEP.Imported.CompositeRows.zero_scale_rejected :
+  Adapters.ProximalGradientRows.checkSourceQ Imported.CompositeRows.zeroScaleQ = false
+LeanPEP.Imported.CompositeRows.negative_scale_rejected :
+  Adapters.ProximalGradientRows.checkSourceQ Imported.CompositeRows.negativeScaleQ = false
+LeanPEP.Imported.CompositeRows.forged_local_passes : checkUpperCertQ Imported.CompositeRows.forgedUpperQ = true
+LeanPEP.Imported.CompositeRows.forged_joint_rejected :
+  Adapters.ProximalGradientRows.checkBoundQ Imported.CompositeRows.forgedSourceQ Imported.CompositeRows.forgedUpperQ =
+    false
+LeanPEP.ActualFunction.ProximalGradientRowAudit.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n) (c : UpperCertQ s.model)
+  (hc : Adapters.ProximalGradientRows.checkBoundQ s c = true) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E}
+  {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientRowAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n : ℕ} (s : Adapters.ProximalGradientRows.SourceQ n)
+  (c : UpperCertQ s.model) (hc : Adapters.ProximalGradientRows.checkBoundQ s c = true) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ}
+  {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h)
+  (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) : f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientRowAudit.three_step_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E}
+  (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.GramPEP.RowNormalization.normalize_nonneg_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.RowNormalization.weighted_normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientRows.snapshot_roundtrip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Adapters.ProximalGradientRows.assumption_sum_preserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Adapters.ProximalGradientRows.normalizedUpper_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeRows.zero_scale_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeRows.PGThree.bound_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientRowAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,138 @@
+LeanPEP.ActualFunction.ProximalScaling.exists_norm_lower_bound.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {h : E → ℝ} (hh : ConvexOn ℝ Set.univ h) (v : E) :
+  ∃ C, 0 ≤ C ∧ ∀ (x : E), h v - C * ‖x - v‖ ≤ h x
+LeanPEP.ActualFunction.ProximalScaling.exists_isProxPoint.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {h : E → ℝ} (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (v : E) : ∃ x, ProximalScaling.IsProxPoint L h v x
+LeanPEP.ActualFunction.ProximalScaling.existsUnique_isProxPoint.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {h : E → ℝ} (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (v : E) : ∃! x, ProximalScaling.IsProxPoint L h v x
+LeanPEP.ActualFunction.ProximalScaling.HasProx.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (L : ℝ≥0) (h : E → ℝ) : Prop
+LeanPEP.ActualFunction.ProximalScaling.hasProx_of_finiteDimensional.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {h : E → ℝ} (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h) :
+  ProximalScaling.HasProx L h
+LeanPEP.ActualFunction.ProximalScaling.proxMap.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (v : E) : E
+LeanPEP.ActualFunction.ProximalScaling.proxMap_spec.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (v : E) :
+  ProximalScaling.IsProxPoint L h v (ProximalScaling.proxMap hp v)
+LeanPEP.ActualFunction.ProximalScaling.proxMap_eq_of_isProxPoint.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) {v x : E} (hx : ProximalScaling.IsProxPoint L h v x) : ProximalScaling.proxMap hp v = x
+LeanPEP.ActualFunction.ProximalScaling.proxMap_eq_of_selector.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (p : E → E) (hspec : ∀ (v : E), ProximalScaling.IsProxPoint L h v (p v)) :
+  ProximalScaling.proxMap hp = p
+LeanPEP.ActualFunction.ProximalScaling.proxMap_subgradient.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (v : E) :
+  Proximal.SubgradientAt h (↑L • (v - ProximalScaling.proxMap hp v)) (ProximalScaling.proxMap hp v)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (g : E → E) (x0 : E) : ℕ → E
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_zero.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (g : E → E) (x0 : E) :
+  ProximalGradientCanonical.iterate hp g x0 0 = x0
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_succ.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (g : E → E) (x0 : E) (k : ℕ) :
+  ProximalGradientCanonical.iterate hp g x0 (k + 1) =
+    ProximalScaling.proxMap hp
+      (ProximalGradientCanonical.iterate hp g x0 k - (↑L)⁻¹ • g (ProximalGradientCanonical.iterate hp g x0 k))
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_isSmoothProxRun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (g : E → E) (x0 : E) (N : ℕ) :
+  ProximalGradientScaling.IsSmoothProxRun N L h g (ProximalGradientCanonical.iterate hp g x0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.run_eq_iterate.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) {g : E → E} {x0 : E} {N : ℕ} {x : ℕ → E}
+  (hrun : ProximalGradientScaling.IsSmoothProxRun N L h g x) (hx0 : x 0 = x0) (k : ℕ) (hk : k ≤ N) :
+  x k = ProximalGradientCanonical.iterate hp g x0 k
+LeanPEP.ActualFunction.ProximalGradientCanonical.isSmoothProxRun_iff_eq_iterate.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (g : E → E) (x : ℕ → E) (N : ℕ) :
+  ProximalGradientScaling.IsSmoothProxRun N L h g x ↔ ∀ k ≤ N, x k = ProximalGradientCanonical.iterate hp g (x 0) k
+LeanPEP.ActualFunction.ProximalGradientCanonical.exists_all_horizons.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {h : E → ℝ} (hp : ProximalScaling.HasProx L h) (g : E → E) (x0 : E) :
+  ∃ x, x 0 = x0 ∧ ∀ (N : ℕ), ProximalGradientScaling.IsSmoothProxRun N L h g x
+LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] (L : ℝ≥0) (h : E → ℝ) (hL : 0 < ↑L) (hh : ConvexOn ℝ Set.univ h)
+  (g : E → E) (x0 : E) : ℕ → E
+LeanPEP.ActualFunction.ProximalGradientCanonical.finiteDimensionalIterate_isSmoothProxRun.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] (L : ℝ≥0) (h : E → ℝ) (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (g : E → E) (x0 : E) (N : ℕ) :
+  ProximalGradientScaling.IsSmoothProxRun N L h g (ProximalGradientCanonical.finiteDimensionalIterate L h hL hh g x0)
+LeanPEP.ActualFunction.ProximalGradientCanonical.exists_all_horizons_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {L : ℝ≥0} {h : E → ℝ} (hL : 0 < ↑L)
+  (hh : ConvexOn ℝ Set.univ h) (g : E → E) (x0 : E) :
+  ∃ x, x 0 = x0 ∧ ∀ (N : ℕ), ProximalGradientScaling.IsSmoothProxRun N L h g x
+LeanPEP.ActualFunction.ProximalGradientCanonical.certificate_upper.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} (c : GramPEP.UpperCertQ (Profiles.ProximalGradient.modelQ n))
+  (hc : GramPEP.checkUpperCertQ c = true) (hempty : c.interpTerms = [])
+  (hobj : c.objective = Profiles.ProximalGradient.objectiveQ n) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E}
+  {xStar x0 : E} (hp : ProximalScaling.HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h)
+  (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (ProximalGradientCanonical.iterate hp g x0 (n + 1)) + h (ProximalGradientCanonical.iterate hp g x0 (n + 1)) -
+      (f xStar + h xStar) ≤
+    ↑L * R ^ 2 * ↑c.bound
+LeanPEP.ActualFunction.ProximalGradientCanonical.upper_firstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {n : ℕ} {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E} {xStar x0 : E}
+  (hp : ProximalScaling.HasProx L h) (hf : IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (ProximalGradientCanonical.iterate hp g x0 (n + 1)) + h (ProximalGradientCanonical.iterate hp g x0 (n + 1)) -
+      (f xStar + h xStar) ≤
+    ↑L * R ^ 2 / (4 * (↑n + 1))
+LeanPEP.ActualFunction.ProximalGradientCanonical.upper_analytic_steps.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] (T : ℕ) (hT : 0 < T) {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E}
+  {xStar x0 : E} (hp : ProximalScaling.HasProx L h) (hf : IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h)
+  (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (ProximalGradientCanonical.iterate hp g x0 T) + h (ProximalGradientCanonical.iterate hp g x0 T) -
+      (f xStar + h xStar) ≤
+    ↑L * R ^ 2 / (4 * ↑T)
+LeanPEP.ActualFunction.ProximalGradientCanonical.upper_analytic_steps_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] (T : ℕ) (hT : 0 < T) {L : ℝ≥0} {R : ℝ}
+  {f h : E → ℝ} {g : E → E} {xStar x0 : E} (hf : IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h)
+  (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (hradius : ‖x0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (ProximalGradientCanonical.finiteDimensionalIterate L h hL hh g x0 T) +
+        h (ProximalGradientCanonical.finiteDimensionalIterate L h hL hh g x0 T) -
+      (f xStar + h xStar) ≤
+    ↑L * R ^ 2 / (4 * ↑T)
+LeanPEP.ActualFunction.ProximalGradientCanonical.upper_analytic_exact_radius_finiteDimensional.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] (T : ℕ) (hT : 0 < T) {L : ℝ≥0} {f h : E → ℝ}
+  {g : E → E} {xStar x0 : E} (hf : IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) :
+  f (ProximalGradientCanonical.finiteDimensionalIterate L h hL hh g x0 T) +
+        h (ProximalGradientCanonical.finiteDimensionalIterate L h hL hh g x0 T) -
+      (f xStar + h xStar) ≤
+    ↑L * ‖x0 - xStar‖ ^ 2 / (4 * ↑T)
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_at_minimizer.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] {L : ℝ≥0} {f h : E → ℝ} {g : E → E} {xStar : E} (hp : ProximalScaling.HasProx L h)
+  (hf : IsSmoothConvexFirstOrder L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y) (k : ℕ) : ProximalGradientCanonical.iterate hp g xStar k = xStar
+LeanPEP.ActualFunction.ProximalGradientCanonical.iterate_witness (n : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R)
+  (k : ℕ) (hk : k ≤ n + 1) :
+  ProximalGradientCanonical.finiteDimensionalIterate L (ProximalGradientWitnessScaling.nonsmoothFunction n L R) hL ⋯
+      (ProximalGradientWitnessScaling.smoothGradient L) R k =
+    ProximalGradientWitnessScaling.witnessPoint n R k
+LeanPEP.ActualFunction.ProximalGradientCanonical.oneDimensionalValues_eq_minimizerValues (n : ℕ) {L : ℝ≥0} (hL : 0 < ↑L)
+  (R : ℝ) :
+  ProximalGradientCanonical.oneDimensionalValues n L R = ProximalGradientScaling.oneDimensionalMinimizerValues n L R
+LeanPEP.ActualFunction.ProximalGradientCanonical.bound_mem (n : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  ↑L * R ^ 2 / (4 * (↑n + 1)) ∈ ProximalGradientCanonical.oneDimensionalValues n L R
+LeanPEP.ActualFunction.ProximalGradientCanonical.tight_all (n : ℕ) {L : ℝ≥0} {R : ℝ} (hL : 0 < ↑L) (hR : 0 ≤ R) :
+  IsGreatest (ProximalGradientCanonical.oneDimensionalValues n L R) (↑L * R ^ 2 / (4 * (↑n + 1)))
+'LeanPEP.ActualFunction.ProximalScaling.exists_norm_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalScaling.existsUnique_isProxPoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalScaling.proxMap_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.run_eq_iterate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.upper_analytic_steps_finiteDimensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.oneDimensionalValues_eq_minimizerValues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientCanonical.tight_all' depends on axioms: [propext, Classical.choice, Quot.sound]

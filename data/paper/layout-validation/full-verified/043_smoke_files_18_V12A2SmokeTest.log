@@ -1,0 +1,18 @@
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.lowerModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (x y : E) : f x + inner ℝ (g x) (y - x) ≤ f y
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.upperModel.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (x y : E) :
+  f y ≤ f x + inner ℝ (g x) (y - x) + 1 / 2 * inner ℝ (y - x) (y - x)
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.toFirstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) : LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder f g
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.interpolationSlack_nonneg.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (x y : E) :
+  0 ≤ LeanPEP.ActualFunction.interpolationSlack f g x y
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.pairwise_interpolation.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E}
+  (h : LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic f g) (x y : E) :
+  f y + inner ℝ (g y) (x - y) + 1 / 2 * inner ℝ (g x - g y) (g x - g y) ≤ f x

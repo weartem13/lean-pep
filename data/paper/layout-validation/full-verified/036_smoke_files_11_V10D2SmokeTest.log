@@ -1,0 +1,117 @@
+LeanPEP.GramPEP.NegativeInterpWeightQ (p : ℕ) : Type
+LeanPEP.GramPEP.NegativeAssumptionWeightQ : Type
+LeanPEP.GramPEP.LinearCoeffLocationQ (p m : ℕ) : Type
+LeanPEP.GramPEP.LinearCoeffMismatchQ (p m : ℕ) : Type
+LeanPEP.GramPEP.UpperCertAuditReportQ (p m : ℕ) : Type
+LeanPEP.GramPEP.auditUpperCertQ {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model) : UpperCertAuditReportQ p m
+LeanPEP.GramPEP.auditUpperCertQ_accepted_iff {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model) :
+  (auditUpperCertQ c).accepted = true ↔ UpperCertValidQ c
+LeanPEP.GramPEP.auditUpperCertQ_sound_real {p m : ℕ} {model : ModelQ p m} (c : UpperCertQ model)
+  (haudit : (auditUpperCertQ c).accepted = true) (d : DataR (Fin p) m) (hrealizes : RealizesModelQ model d)
+  (hcore : CoreFeasible d) (hassumptions : AssumptionsFeasibleR model d) : c.objective.evalR d ≤ ↑c.bound
+LeanPEP.GramPEP.mem_negativeInterpWeightsQ_sound {p : ℕ} (terms : List (InterpTermQ p)) (e : NegativeInterpWeightQ p)
+  (h : e ∈ negativeInterpWeightsQ terms) : e.weight < 0
+LeanPEP.GramPEP.mem_negativeAssumptionWeightsQ_sound {p m : ℕ} {model : ModelQ p m}
+  (terms : List (AssumptionTermQ model)) (e : NegativeAssumptionWeightQ) (h : e ∈ negativeAssumptionWeightsQ terms) :
+  e.weight < 0
+LeanPEP.GramPEP.mem_linearExprMismatchesQ_sound {p m : ℕ} (expected actual : LinearExprQ p m)
+  (e : LinearCoeffMismatchQ p m) (h : e ∈ linearExprMismatchesQ expected actual) :
+  e.expected = linearCoeffAtQ expected e.location ∧ e.actual = linearCoeffAtQ actual e.location ∧ e.expected ≠ e.actual
+LeanPEP.GramPEP.UpperCertificateAuditExamples.upperCertQ_audit :
+  auditUpperCertQ upperCertQ =
+    { accepted := true, negativeInterpWeights := [], negativeAssumptionWeights := [],
+      dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+      identityMismatches := [] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.oneStepUpperCertQ_audit :
+  auditUpperCertQ oneStepUpperCertQ =
+    { accepted := true, negativeInterpWeights := [], negativeAssumptionWeights := [],
+      dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+      identityMismatches := [] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.cancellingNegativeInterpCertQ_audit :
+  auditUpperCertQ cancellingNegativeInterpCertQ =
+    { accepted := false, negativeInterpWeights := [{ index := 1, weight := -1, i := 0, j := 1 }],
+      negativeAssumptionWeights := [],
+      dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+      identityMismatches := [] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.cancellingNegativeAssumptionCertQ_audit :
+  auditUpperCertQ cancellingNegativeAssumptionCertQ =
+    { accepted := false, negativeInterpWeights := [],
+      negativeAssumptionWeights := [{ index := 1, assumptionIndex := 0, weight := -1 }],
+      dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+      identityMismatches := [] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.cancellingNegativeDualCertQ_audit :
+  auditUpperCertQ cancellingNegativeDualCertQ =
+    { accepted := false, negativeInterpWeights := [], negativeAssumptionWeights := [],
+      dualAudit :=
+        { accepted := false, asymmetries := [], negativeWeights := [{ index := 1, weight := -1 }],
+          entryMismatches := [] },
+      identityMismatches := [] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.missingDualFactorCertQ_audit :
+  auditUpperCertQ missingDualFactorCertQ =
+    { accepted := false, negativeInterpWeights := [], negativeAssumptionWeights := [],
+      dualAudit :=
+        { accepted := false, asymmetries := [], negativeWeights := [],
+          entryMismatches := [{ i := 1, j := 1, expected := 1, actual := 0 }] },
+      identityMismatches := [] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.wrongBoundCertQ_audit :
+  auditUpperCertQ wrongBoundCertQ =
+    { accepted := false, negativeInterpWeights := [], negativeAssumptionWeights := [],
+      dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+      identityMismatches := [{ location := LinearCoeffLocationQ.const, expected := 2, actual := 1 }] }
+LeanPEP.GramPEP.UpperCertificateAuditExamples.combinedFailureCertQ_audit :
+  auditUpperCertQ combinedFailureCertQ =
+    { accepted := false, negativeInterpWeights := [{ index := 1, weight := -1, i := 0, j := 1 }],
+      negativeAssumptionWeights := [{ index := 1, assumptionIndex := 0, weight := -1 }],
+      dualAudit :=
+        { accepted := false, asymmetries := [], negativeWeights := [{ index := 1, weight := -1 }],
+          entryMismatches := [] },
+      identityMismatches := [{ location := LinearCoeffLocationQ.const, expected := 2, actual := 1 }] }
+{ accepted := true,
+  negativeInterpWeights := [],
+  negativeAssumptionWeights := [],
+  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  identityMismatches := [] }
+{ accepted := true,
+  negativeInterpWeights := [],
+  negativeAssumptionWeights := [],
+  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  identityMismatches := [] }
+{ accepted := false,
+  negativeInterpWeights := [{ index := 1, weight := -1, i := 0, j := 1 }],
+  negativeAssumptionWeights := [],
+  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  identityMismatches := [] }
+{ accepted := false,
+  negativeInterpWeights := [],
+  negativeAssumptionWeights := [{ index := 1, assumptionIndex := 0, weight := -1 }],
+  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  identityMismatches := [] }
+{ accepted := false,
+  negativeInterpWeights := [],
+  negativeAssumptionWeights := [],
+  dualAudit := { accepted := false,
+                 asymmetries := [],
+                 negativeWeights := [{ index := 1, weight := -1 }],
+                 entryMismatches := [] },
+  identityMismatches := [] }
+{ accepted := false,
+  negativeInterpWeights := [],
+  negativeAssumptionWeights := [],
+  dualAudit := { accepted := false,
+                 asymmetries := [],
+                 negativeWeights := [],
+                 entryMismatches := [{ i := 1, j := 1, expected := 1, actual := 0 }] },
+  identityMismatches := [] }
+{ accepted := false,
+  negativeInterpWeights := [],
+  negativeAssumptionWeights := [],
+  dualAudit := { accepted := true, asymmetries := [], negativeWeights := [], entryMismatches := [] },
+  identityMismatches := [{ location := LeanPEP.GramPEP.LinearCoeffLocationQ.const, expected := 2, actual := 1 }] }
+{ accepted := false,
+  negativeInterpWeights := [{ index := 1, weight := -1, i := 0, j := 1 }],
+  negativeAssumptionWeights := [{ index := 1, assumptionIndex := 0, weight := -1 }],
+  dualAudit := { accepted := false,
+                 asymmetries := [],
+                 negativeWeights := [{ index := 1, weight := -1 }],
+                 entryMismatches := [] },
+  identityMismatches := [{ location := LeanPEP.GramPEP.LinearCoeffLocationQ.const, expected := 2, actual := 1 }] }

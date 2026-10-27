@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "elan",
+    "which",
+    "lean"
+  ],
+  "exit": 0,
+  "stderr": "",
+  "stdout": "<AUTHOR_HOME>/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lean\n"
+}

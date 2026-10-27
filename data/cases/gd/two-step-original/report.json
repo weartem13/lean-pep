@@ -1,0 +1,26 @@
+{
+  "actual_upper_verified": true,
+  "bound": {
+    "den": 499999,
+    "num": 50000
+  },
+  "capture_sha256": "5eac4b2693c980711c34dccf318be64c19a7672976cd7d445c293ac33c1eed87",
+  "generation_rule": "gd_two_source_affine_grid_v1",
+  "lean": {
+    "adapter_build_exit": 0,
+    "attempted": true,
+    "axioms_allowed": true,
+    "build_exit": 0,
+    "checked": true,
+    "reason": null,
+    "replay_exit": 0
+  },
+  "live_capture_performed": false,
+  "overall_v014a_accepted": false,
+  "primal_feasibility_checked": false,
+  "proof_kind": "actual_function_upper",
+  "residual_recomputed": true,
+  "selected_endpoint": "structured",
+  "selected_sha256": "da603af598fd0f9bf1620139d41bb0179439719d2efeb2b6e8fc1927559033b2",
+  "tightness_claimed": false
+}

@@ -1,0 +1,99 @@
+LeanPEP.GramPEP.RationalBoxSystem.checkFeasibleQ_eq_true_iff {r c : ℕ} (s : BoxQ r c) (x : Fin c → ℚ) :
+  checkFeasibleQ s x = true ↔ FeasibleQ s x
+LeanPEP.GramPEP.RationalBoxSystem.checkObstructionQ_eq_true_iff {r c : ℕ} (s : BoxQ r c) (w : ObstructionQ r c) :
+  checkObstructionQ s w = true ↔ IsObstructionQ s w
+LeanPEP.GramPEP.RationalBoxSystem.margin_eq_slacks {r c : ℕ} (s : BoxQ r c) (w : ObstructionQ r c) (x : Fin c → ℚ)
+  (hx : RationalLinearSystem.IsSolutionQ s.system x)
+  (hcancel : ∀ (j : Fin c), ∑ i, w.equality i * s.system.matrix i j + w.upper j - w.lower j = 0) :
+  marginQ s w = ∑ j, (w.lower j * (x j - s.lower j) + w.upper j * (s.upper j - x j))
+LeanPEP.GramPEP.RationalBoxSystem.obstruction_not_feasible {r c : ℕ} (s : BoxQ r c) (w : ObstructionQ r c)
+  (hw : IsObstructionQ s w) : ¬∃ x, FeasibleQ s x
+LeanPEP.GramPEP.RationalBoxSystem.checked_obstruction {r c : ℕ} (s : BoxQ r c) (w : ObstructionQ r c)
+  (hw : checkObstructionQ s w = true) : ¬∃ x, FeasibleQ s x
+LeanPEP.GramPEP.RationalBoxSystem.policy_interval_iff {c : ℕ} (raw : Fin c → ℚ) (eta : ℚ) (nonnegative : Fin c → Bool)
+  (j : Fin c) (v : ℚ) :
+  policyLowerQ raw eta nonnegative j ≤ v ∧ v ≤ policyUpperQ raw eta j ↔
+    |v - raw j| ≤ eta ∧ (nonnegative j = true → 0 ≤ v)
+LeanPEP.GramPEP.RationalBoxSystem.policy_box_iff {r c : ℕ} (s : RationalLinearSystem.SystemQ r c) (raw x : Fin c → ℚ)
+  (eta : ℚ) (nonnegative : Fin c → Bool) :
+  FeasibleQ { system := s, lower := policyLowerQ raw eta nonnegative, upper := policyUpperQ raw eta } x ↔
+    RationalLinearSystem.IsSolutionQ s x ∧ ∀ (j : Fin c), |x j - raw j| ≤ eta ∧ (nonnegative j = true → 0 ≤ x j)
+LeanPEP.Imported.CompositeBoundedCompletion.PGOne.raw_vector_check :
+  List.ofFn Imported.CompositeBoundedCompletion.PGOne.rawVectorQ =
+    Imported.CompositeBoundedCompletion.PGOne.rawUpperQ.bound ::
+      List.map (fun t => t.weight) Imported.CompositeBoundedCompletion.PGOne.rawUpperQ.assumptionTerms
+LeanPEP.Imported.CompositeBoundedCompletion.PGOne.completion_vector_check :
+  List.ofFn Imported.CompositeBoundedCompletion.PGOne.completionVectorQ =
+    Imported.CompositeBoundedCompletion.PGOne.completedUpperQ.bound ::
+      List.map (fun t => t.weight) Imported.CompositeBoundedCompletion.PGOne.completedUpperQ.assumptionTerms
+LeanPEP.Imported.CompositeBoundedCompletion.PGOne.negative_free_seed :
+  Imported.CompositeBoundedCompletion.PGOne.freeSeedVectorQ 11 < 0
+LeanPEP.Imported.CompositeBoundedCompletion.PGOne.free_seed_rejected :
+  Adapters.ProximalGradientCompletion.checkCompletedQ Imported.CompositeBoundedCompletion.PGOne.sourceQ
+      Imported.CompositeBoundedCompletion.PGOne.traceQ Imported.CompositeBoundedCompletion.PGOne.policyQ
+      Imported.CompositeBoundedCompletion.PGOne.rawUpperQ Imported.CompositeBoundedCompletion.PGOne.reconstructedUpperQ
+      Imported.CompositeBoundedCompletion.PGOne.freeSeedUpperQ =
+    false
+LeanPEP.Imported.CompositeBoundedCompletion.PGOne.free_variable_repaired :
+  Imported.CompositeBoundedCompletion.PGOne.completionVectorQ 11 = 0
+LeanPEP.Imported.CompositeBoundedCompletion.PGThree.box_bounds_check :
+  Imported.CompositeBoundedCompletion.PGThree.boxQ.lower =
+      policyLowerQ Imported.CompositeBoundedCompletion.PGThree.rawVectorQ
+        Imported.CompositeBoundedCompletion.PGThree.policyQ.maxAbsError
+        Imported.CompositeBoundedCompletion.PGThree.signMaskQ ∧
+    Imported.CompositeBoundedCompletion.PGThree.boxQ.upper =
+      policyUpperQ Imported.CompositeBoundedCompletion.PGThree.rawVectorQ
+        Imported.CompositeBoundedCompletion.PGThree.policyQ.maxAbsError
+LeanPEP.Imported.CompositeBoundedCompletion.PGThree.box_feasible_check :
+  checkFeasibleQ Imported.CompositeBoundedCompletion.PGThree.boxQ
+      Imported.CompositeBoundedCompletion.PGThree.completionVectorQ =
+    true
+LeanPEP.Imported.CompositeBoundedCompletion.PGThree.completed_check :
+  Adapters.ProximalGradientCompletion.checkCompletedQ Imported.CompositeBoundedCompletion.PGThree.sourceQ
+      Imported.CompositeBoundedCompletion.PGThree.traceQ Imported.CompositeBoundedCompletion.PGThree.policyQ
+      Imported.CompositeBoundedCompletion.PGThree.rawUpperQ
+      Imported.CompositeBoundedCompletion.PGThree.reconstructedUpperQ
+      Imported.CompositeBoundedCompletion.PGThree.completedUpperQ =
+    true
+LeanPEP.Imported.CompositeBoundedCompletion.Budget.affine_certificate_valid :
+  checkUpperCertQ Imported.CompositeBoundedCompletion.Budget.freeSeedUpperQ = true
+LeanPEP.Imported.CompositeBoundedCompletion.Budget.no_box_solution :
+  ¬∃ x, FeasibleQ Imported.CompositeBoundedCompletion.Budget.boxQ x
+LeanPEP.Imported.CompositeBoundedCompletion.coupled_repaired :
+  checkFeasibleQ Imported.CompositeBoundedCompletion.coupledQ ![1, 0] = true
+LeanPEP.Imported.CompositeBoundedCompletion.impossible_no_solution :
+  ¬∃ x, FeasibleQ Imported.CompositeBoundedCompletion.impossibleQ x
+LeanPEP.Imported.CompositeBoundedCompletion.third_denominator_rejected :
+  RationalReconstructionAudit.checkScalarQ { maxDenominator := 2, maxAbsError := 1 } 0 (1 / 3) = false
+LeanPEP.ActualFunction.ProximalGradientCompletionAudit.upper_analytic.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {n k : ℕ} (s : Adapters.ProximalGradientSparse.SourceQ n k)
+  (t : Adapters.ProximalGradientCapture.TraceQ n k) (policy : RationalReconstructionAudit.PolicyQ)
+  (raw seed completed : UpperCertQ s.model)
+  (hc : Adapters.ProximalGradientCompletion.checkCompletedQ s t policy raw seed completed = true) {L : ℝ≥0} {R : ℝ}
+  {f h : E → ℝ} {g : E → E} {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexAnalytic L f g)
+  (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L) (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun (n + 1) L h g x)
+  (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x (n + 1)) + h (x (n + 1)) - (f xStar + h xStar) ≤ ↑L * R ^ 2 * ↑completed.bound
+LeanPEP.ActualFunction.ProximalGradientBoundedCompletionAudit.three_step_upper.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E] {L : ℝ≥0} {R : ℝ} {f h : E → ℝ} {g : E → E}
+  {xStar : E} {x : ℕ → E} (hf : ActualFunction.IsSmoothConvexAnalytic L f g) (hh : ConvexOn ℝ Set.univ h) (hL : 0 < ↑L)
+  (hR : 0 ≤ R) (hmin : ∀ (y : E), f xStar + h xStar ≤ f y + h y)
+  (hrun : ActualFunction.ProximalGradientScaling.IsSmoothProxRun 3 L h g x) (hradius : ‖x 0 - xStar‖ ^ 2 ≤ R ^ 2) :
+  f (x 3) + h (x 3) - (f xStar + h xStar) ≤ ↑L * R ^ 2 / 12
+'LeanPEP.GramPEP.RationalBoxSystem.margin_eq_slacks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.RationalBoxSystem.obstruction_not_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.RationalBoxSystem.checked_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.GramPEP.RationalBoxSystem.policy_box_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanPEP.Imported.CompositeBoundedCompletion.Budget.no_box_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeBoundedCompletion.PGOne.free_seed_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.Imported.CompositeBoundedCompletion.PGThree.completed_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LeanPEP.ActualFunction.ProximalGradientBoundedCompletionAudit.three_step_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,14 @@
+import LeanPEP
+
+open LeanPEP
+open LeanPEP.GramPEP
+
+#check ApproxGramAuditProvenanceQ
+#check ApproxGramAuditComparisonQ
+#check auditApproximateGramPairQ
+
+#check LeanPEP.Imported.GramOneStepApproxComparison.rawBundleQ_rejected
+#check LeanPEP.Imported.GramOneStepApproxComparison.reconstructedBundleQ_check
+#check LeanPEP.Imported.GramOneStepApproxReconstructed.bundleQ_sound_real
+
+#eval LeanPEP.Imported.GramOneStepApproxComparison.comparisonQ

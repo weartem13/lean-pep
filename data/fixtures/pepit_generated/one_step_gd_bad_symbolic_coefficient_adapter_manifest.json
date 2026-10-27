@@ -1,0 +1,24 @@
+{
+  "adapter_generator_version": "v0.11.4",
+  "adapter_id": "pepit-smooth-convex-gd-one-step-v1",
+  "hashes": {
+    "adapted_approximate_gram_sha256": "81db78894eddbeb40a3bb2e5edb697774ec586921bcdd0bc67efc40760732f7b",
+    "adapter_report_sha256": "db1b19c0f60016d8932a0e311346114ed89e9543320c0c54543a12d61e53ddc1",
+    "source_artifact_sha256": "bf92a968dd8a3ad100e888bfc2304faa77a291866271534af744caa7242cd4ca"
+  },
+  "kind": "lean-pep-pepit-one-step-adapter-manifest-v1",
+  "producer": {
+    "capture_mode": "deterministic_regression_fixture",
+    "git_commit": "5a061a1b2dbe450b6bac42e2442942748f3b1f32",
+    "name": "PEPit",
+    "package_version": "0.0.1.dev0+5a061a1",
+    "solver": "CLARABEL",
+    "solver_status": "optimal",
+    "wrapper": "cvxpy"
+  },
+  "schema_version": 1,
+  "semantics": {
+    "numerical_payload": "sent through approximate-gram-format-v1 and both exact Gram audits",
+    "source_formulation": "audited separately from the numerical Gram tracks"
+  }
+}

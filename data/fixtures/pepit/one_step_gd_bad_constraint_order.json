@@ -1,0 +1,522 @@
+{
+  "expect": {
+    "adapter": "rejected",
+    "raw": "rejected",
+    "reconstructed": "accepted"
+  },
+  "factorization_hints": {
+    "dual_residual": {
+      "factors": [
+        {
+          "vector": [
+            "0.3333333333",
+            "-0.3333333333",
+            "1",
+            "0"
+          ],
+          "weight": "0.25"
+        },
+        {
+          "vector": [
+            "0.3333333333",
+            "-0.3333333333",
+            "0",
+            "1"
+          ],
+          "weight": "0.25"
+        },
+        {
+          "vector": [
+            "0.6666666666",
+            "-0.6666666666",
+            "1",
+            "1"
+          ],
+          "weight": "0.25"
+        }
+      ]
+    },
+    "primal_gram": {
+      "factors": [
+        {
+          "vector": [
+            "2",
+            "3",
+            "0.3333333333",
+            "0.3333333333"
+          ],
+          "weight": "1"
+        }
+      ]
+    },
+    "source": "untrusted exact-decimal regression hints; PEPit itself reports matrices, not exact rational factors"
+  },
+  "problem": {
+    "adapter_id": "pepit-smooth-convex-gd-one-step-v1",
+    "constraints": [
+      {
+        "dual": "0.1666666667",
+        "expr": {
+          "const": "-1",
+          "gram_coeff": [
+            [
+              "1",
+              "-1",
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "value_coeff": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "kind": "initial",
+        "label": "initial_radius",
+        "sense": "le"
+      },
+      {
+        "dual": "0.5",
+        "expr": {
+          "const": "0",
+          "gram_coeff": [
+            [
+              "0",
+              "0",
+              "0",
+              "0.5"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-0.5"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0.5"
+            ],
+            [
+              "0.5",
+              "-0.5",
+              "0.5",
+              "0.5"
+            ]
+          ],
+          "value_coeff": [
+            "-1",
+            "0",
+            "1"
+          ]
+        },
+        "i": 0,
+        "j": 2,
+        "kind": "interpolation",
+        "label": "smooth_convexity:star:x1",
+        "sense": "le"
+      },
+      {
+        "dual": "0.5",
+        "expr": {
+          "const": "0",
+          "gram_coeff": [
+            [
+              "0",
+              "0",
+              "0.5",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-0.5",
+              "0"
+            ],
+            [
+              "0.5",
+              "-0.5",
+              "0.5",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "value_coeff": [
+            "-1",
+            "1",
+            "0"
+          ]
+        },
+        "i": 0,
+        "j": 1,
+        "kind": "interpolation",
+        "label": "smooth_convexity:star:x0",
+        "sense": "le"
+      },
+      {
+        "dual": "0",
+        "expr": {
+          "const": "0",
+          "gram_coeff": [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0.5",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "value_coeff": [
+            "1",
+            "-1",
+            "0"
+          ]
+        },
+        "i": 1,
+        "j": 0,
+        "kind": "interpolation",
+        "label": "smooth_convexity:x0:star",
+        "sense": "le"
+      },
+      {
+        "dual": "0.5",
+        "expr": {
+          "const": "0",
+          "gram_coeff": [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0.5",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0.5"
+            ]
+          ],
+          "value_coeff": [
+            "0",
+            "-1",
+            "1"
+          ]
+        },
+        "i": 1,
+        "j": 2,
+        "kind": "interpolation",
+        "label": "smooth_convexity:x0:x1",
+        "sense": "le"
+      },
+      {
+        "dual": "0",
+        "expr": {
+          "const": "0",
+          "gram_coeff": [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0.5"
+            ]
+          ],
+          "value_coeff": [
+            "1",
+            "0",
+            "-1"
+          ]
+        },
+        "i": 2,
+        "j": 0,
+        "kind": "interpolation",
+        "label": "smooth_convexity:x1:star",
+        "sense": "le"
+      },
+      {
+        "dual": "0",
+        "expr": {
+          "const": "0",
+          "gram_coeff": [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-0.5",
+              "-0.5"
+            ],
+            [
+              "0",
+              "0",
+              "-0.5",
+              "0.5"
+            ]
+          ],
+          "value_coeff": [
+            "0",
+            "1",
+            "-1"
+          ]
+        },
+        "i": 2,
+        "j": 1,
+        "kind": "interpolation",
+        "label": "smooth_convexity:x1:x0",
+        "sense": "le"
+      }
+    ],
+    "function_class": "SmoothConvexFunction",
+    "function_value_order": [
+      "f_star",
+      "f0",
+      "f1"
+    ],
+    "gradient_decomposition": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "leaf_point_order": [
+      "x_star",
+      "x0",
+      "g0",
+      "g1"
+    ],
+    "model_fingerprint": "981067eb44a899e66d4829ab33c690c97db6a2239f7e4976d325263d7f189588",
+    "objective": {
+      "const": "0",
+      "gram_coeff": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "value_coeff": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    "point_decomposition": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "-1",
+        "0"
+      ]
+    ],
+    "point_order": [
+      "star",
+      "x0",
+      "x1"
+    ],
+    "smoothness": "1",
+    "step_size": "1",
+    "steps": 1
+  },
+  "producer": {
+    "capture_mode": "deterministic_regression_fixture",
+    "git_commit": "5a061a1b2dbe450b6bac42e2442942748f3b1f32",
+    "name": "PEPit",
+    "package_version": "0.0.1.dev0+5a061a1",
+    "solver": "CLARABEL",
+    "solver_status": "optimal",
+    "wrapper": "cvxpy"
+  },
+  "reconstruction_policy": {
+    "max_abs_error": "2e-10",
+    "max_denominator": 1000,
+    "method": "limit_denominator"
+  },
+  "schema_version": 1,
+  "solver_output": {
+    "dual_objective": "0.1666666667",
+    "dual_residual": [
+      [
+        "0.166666666633333333335",
+        "-0.166666666633333333335",
+        "0.249999999975",
+        "0.249999999975"
+      ],
+      [
+        "-0.166666666633333333335",
+        "0.166666666633333333335",
+        "-0.249999999975",
+        "-0.249999999975"
+      ],
+      [
+        "0.249999999975",
+        "-0.249999999975",
+        "0.5",
+        "0.25"
+      ],
+      [
+        "0.249999999975",
+        "-0.249999999975",
+        "0.25",
+        "0.5"
+      ]
+    ],
+    "function_values": [
+      "0",
+      "0.2777777778",
+      "0.1666666668"
+    ],
+    "primal_gram": [
+      [
+        "4",
+        "6",
+        "0.6666666666",
+        "0.6666666666"
+      ],
+      [
+        "6",
+        "9",
+        "0.9999999999",
+        "0.9999999999"
+      ],
+      [
+        "0.6666666666",
+        "0.9999999999",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ],
+      [
+        "0.6666666666",
+        "0.9999999999",
+        "0.11111111108888888889",
+        "0.11111111108888888889"
+      ]
+    ],
+    "primal_objective": "0.1666666668"
+  }
+}

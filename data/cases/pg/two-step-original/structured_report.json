@@ -1,0 +1,35 @@
+{
+  "actual_upper_verified": true,
+  "bound": {
+    "den": 499974,
+    "num": 62497
+  },
+  "candidate_accepted": true,
+  "candidate_bytes_sha256": "9a84d1bef1a2cf6f94768728a1a143a811a7ed498e7724517fe89b2a1d3adb68",
+  "capture_bytes_sha256": "17141488ec3453e8b8d81196d973a01a9bae831a1baa88bd6a96e8ea8b2297b7",
+  "d13_acceptance_met": false,
+  "format": "leanpep-structured-pg-two-v1",
+  "generation_rule": "pg_t2_source_affine_common_grid_v1",
+  "horizon": 2,
+  "input_bytes_unchanged": true,
+  "interface_smoke_exit": 0,
+  "lean": {
+    "attempted": true,
+    "axioms_allowed": true,
+    "build_exit": 0,
+    "checked": true,
+    "reason": null,
+    "replay_exit": 0
+  },
+  "live_capture_performed": false,
+  "mode": "archive_structured",
+  "namespace": "LeanPEP.Imported.Structured.PGTwo001",
+  "primal_certified": false,
+  "raw_modified": false,
+  "replay_bytes_sha256": "b8e93a838c666a2b112896081f1a0dee7ce00a30572e98b9ecc7db04c64c416e",
+  "residual_recomputed": true,
+  "selected_endpoint": "structured",
+  "source_coefficients_changed": false,
+  "status": "verified_upper",
+  "tightness_claimed": false
+}

@@ -1,0 +1,10 @@
+{
+  "capture": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/D13LiveOne_005/capture.json",
+  "capture_byte_sha256": "69ab11490086c9d6e704b6b6693d45e783a84ed61fe1c14519e423c4a608250b",
+  "capture_canonical_sha256": "a6764b3e011a9659c16f3b2e430ccf64771bfbcef24c0edcac707f6f5e8f7d12",
+  "old_flags_unchanged": true,
+  "original_live_log": "D13LiveOne_005/capture.log",
+  "sidecar": "<AUTHOR_HOME>/LeanAndPEP/lean-pep-toy_codex/D13LiveOne_005/primal_observation.json",
+  "sidecar_byte_sha256": "bcb554e3eb8dca873f126f6fced3c84f31856ec12e9f0c22ae46b2b14edac79e",
+  "wrapper_source": "tools/capture_pepit_proximal_gradient.py:211"
+}

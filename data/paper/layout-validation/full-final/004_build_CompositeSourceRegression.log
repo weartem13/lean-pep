@@ -1,0 +1,10 @@
+⚠ [2978/2981] Replayed LeanPEP.Profiles.ProximalGradient
+warning: LeanPEP/Profiles/ProximalGradient.lean:136:43: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [hi, hgj, hsj, sub_self,̵ ̵s̵u̵b̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [2981/2981] Built LeanPEP.Imported.CompositeSourceRegression (32s)
+Build completed successfully (2981 jobs).

@@ -1,0 +1,917 @@
+{
+  "M": 1000000,
+  "accepted": true,
+  "changed_count": 42,
+  "count": 42,
+  "entries": [
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 519423727
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 442481
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": -519423727
+      },
+      "denominator": 1000000,
+      "path": "gram[0][0]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 22124050519423727
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 3478085853
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": 3478085853
+      },
+      "denominator": 12500,
+      "path": "gram[0][1]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -1562003478085853
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 31250000000000000,
+        "num": 219891807
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": -57519
+      },
+      "delta": {
+        "den": 31250000000000000,
+        "num": -219891807
+      },
+      "denominator": 1000000,
+      "path": "gram[0][2]",
+      "raw": {
+        "den": 31250000000000000,
+        "num": -1797468530108193
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 13139833959
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 13139833959
+      },
+      "denominator": 12500,
+      "path": "gram[0][3]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -3124013139833959
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 312500000000000,
+        "num": 84298067
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -586
+      },
+      "delta": {
+        "den": 312500000000000,
+        "num": -84298067
+      },
+      "denominator": 3125,
+      "path": "gram[0][4]",
+      "raw": {
+        "den": 312500000000000,
+        "num": -58599915701933
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 100000000000000000,
+        "num": 26281976437
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 100000000000000000,
+        "num": 26281976437
+      },
+      "denominator": 12500,
+      "path": "gram[0][5]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -6248026281976437
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 3478085853
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": 3478085853
+      },
+      "denominator": 12500,
+      "path": "gram[1][0]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -1562003478085853
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 12500000000000000,
+        "num": 1974200107
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 12500000000000000,
+        "num": -1974200107
+      },
+      "denominator": 12500,
+      "path": "gram[1][1]",
+      "raw": {
+        "den": 12500000000000000,
+        "num": 1397001974200107
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 3356371311
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -3356371311
+      },
+      "denominator": 12500,
+      "path": "gram[1][2]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 1562003356371311
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 5000000000000000,
+        "num": 944002673
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 5000000000000000,
+        "num": -944002673
+      },
+      "denominator": 12500,
+      "path": "gram[1][3]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 558800944002673
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 2715505893
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -154
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 2715505893
+      },
+      "denominator": 3125,
+      "path": "gram[1][4]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -2464002715505893
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 10000000000000000,
+        "num": 1888501139
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 10000000000000000,
+        "num": -1888501139
+      },
+      "denominator": 12500,
+      "path": "gram[1][5]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 1117601888501139
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 31250000000000000,
+        "num": 219891807
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": -57519
+      },
+      "delta": {
+        "den": 31250000000000000,
+        "num": -219891807
+      },
+      "denominator": 1000000,
+      "path": "gram[2][0]",
+      "raw": {
+        "den": 31250000000000000,
+        "num": -1797468530108193
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 3356371311
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -3356371311
+      },
+      "denominator": 12500,
+      "path": "gram[2][1]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 1562003356371311
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 5000000000000000,
+        "num": 18422711
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1000000,
+        "num": 442481
+      },
+      "delta": {
+        "den": 5000000000000000,
+        "num": -18422711
+      },
+      "denominator": 1000000,
+      "path": "gram[2][2]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 2212405018422711
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 12899405077
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": -12899405077
+      },
+      "denominator": 12500,
+      "path": "gram[2][3]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 3124012899405077
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 2000000000000000,
+        "num": 536436693
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": 586
+      },
+      "delta": {
+        "den": 2000000000000000,
+        "num": 536436693
+      },
+      "denominator": 3125,
+      "path": "gram[2][4]",
+      "raw": {
+        "den": 2000000000000000,
+        "num": 375039463563307
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 6449172207
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -6449172207
+      },
+      "denominator": 12500,
+      "path": "gram[2][5]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 1562006449172207
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 13139833959
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 13139833959
+      },
+      "denominator": 12500,
+      "path": "gram[3][0]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -3124013139833959
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 5000000000000000,
+        "num": 944002673
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 5000000000000000,
+        "num": -944002673
+      },
+      "denominator": 12500,
+      "path": "gram[3][1]",
+      "raw": {
+        "den": 5000000000000000,
+        "num": 558800944002673
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 12899405077
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": -12899405077
+      },
+      "denominator": 12500,
+      "path": "gram[3][2]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": 3124012899405077
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 5493777361
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -5493777361
+      },
+      "denominator": 12500,
+      "path": "gram[3][3]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 2794005493777361
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 200000000000000000,
+        "num": 7687393829
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -154
+      },
+      "delta": {
+        "den": 200000000000000000,
+        "num": -7687393829
+      },
+      "denominator": 3125,
+      "path": "gram[3][4]",
+      "raw": {
+        "den": 200000000000000000,
+        "num": -9855992312606171
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 100000000000000000,
+        "num": 21979790027
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 100000000000000000,
+        "num": -21979790027
+      },
+      "denominator": 12500,
+      "path": "gram[3][5]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 11176021979790027
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 312500000000000,
+        "num": 84298067
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -586
+      },
+      "delta": {
+        "den": 312500000000000,
+        "num": -84298067
+      },
+      "denominator": 3125,
+      "path": "gram[4][0]",
+      "raw": {
+        "den": 312500000000000,
+        "num": -58599915701933
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 50000000000000000,
+        "num": 2715505893
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -154
+      },
+      "delta": {
+        "den": 50000000000000000,
+        "num": 2715505893
+      },
+      "denominator": 3125,
+      "path": "gram[4][1]",
+      "raw": {
+        "den": 50000000000000000,
+        "num": -2464002715505893
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 2000000000000000,
+        "num": 536436693
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": 586
+      },
+      "delta": {
+        "den": 2000000000000000,
+        "num": 536436693
+      },
+      "denominator": 3125,
+      "path": "gram[4][2]",
+      "raw": {
+        "den": 2000000000000000,
+        "num": 375039463563307
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 200000000000000000,
+        "num": 7687393829
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -154
+      },
+      "delta": {
+        "den": 200000000000000000,
+        "num": -7687393829
+      },
+      "denominator": 3125,
+      "path": "gram[4][3]",
+      "raw": {
+        "den": 200000000000000000,
+        "num": -9855992312606171
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 10000000000000000,
+        "num": 3138666929
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 625,
+        "num": 148
+      },
+      "delta": {
+        "den": 10000000000000000,
+        "num": 3138666929
+      },
+      "denominator": 625,
+      "path": "gram[4][4]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 2367996861333071
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 960919021
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -154
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -960919021
+      },
+      "denominator": 3125,
+      "path": "gram[4][5]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -1231999039080979
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 100000000000000000,
+        "num": 26281976437
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 100000000000000000,
+        "num": 26281976437
+      },
+      "denominator": 12500,
+      "path": "gram[5][0]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": -6248026281976437
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 10000000000000000,
+        "num": 1888501139
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 10000000000000000,
+        "num": -1888501139
+      },
+      "denominator": 12500,
+      "path": "gram[5][1]",
+      "raw": {
+        "den": 10000000000000000,
+        "num": 1117601888501139
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 6449172207
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -6449172207
+      },
+      "denominator": 12500,
+      "path": "gram[5][2]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 1562006449172207
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 100000000000000000,
+        "num": 21979790027
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 100000000000000000,
+        "num": -21979790027
+      },
+      "denominator": 12500,
+      "path": "gram[5][3]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 11176021979790027
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 960919021
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -154
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -960919021
+      },
+      "denominator": 3125,
+      "path": "gram[5][4]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -1231999039080979
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 20000000000000000,
+        "num": 4395942979
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 1397
+      },
+      "delta": {
+        "den": 20000000000000000,
+        "num": -4395942979
+      },
+      "denominator": 12500,
+      "path": "gram[5][5]",
+      "raw": {
+        "den": 20000000000000000,
+        "num": 2235204395942979
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 6553856213
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": -781
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": 6553856213
+      },
+      "denominator": 12500,
+      "path": "values[0]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -1562006553856213
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 3281782083
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": -293
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": -3281782083
+      },
+      "denominator": 3125,
+      "path": "values[1]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": -2343996718217917
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 200000000000000000,
+        "num": 51718230021
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 12500,
+        "num": 781
+      },
+      "delta": {
+        "den": 200000000000000000,
+        "num": -51718230021
+      },
+      "denominator": 12500,
+      "path": "values[2]",
+      "raw": {
+        "den": 200000000000000000,
+        "num": 12496051718230021
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 25000000000000000,
+        "num": 3281782083
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 3125,
+        "num": 293
+      },
+      "delta": {
+        "den": 25000000000000000,
+        "num": 3281782083
+      },
+      "denominator": 3125,
+      "path": "values[3]",
+      "raw": {
+        "den": 25000000000000000,
+        "num": 2343996718217917
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 2000000000000000000000000,
+        "num": 776534890725377
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 1,
+        "num": 0
+      },
+      "delta": {
+        "den": 2000000000000000000000000,
+        "num": -776534890725377
+      },
+      "denominator": 1,
+      "path": "values[4]",
+      "raw": {
+        "den": 2000000000000000000000000,
+        "num": 776534890725377
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 100000000000000000,
+        "num": 2381
+      },
+      "accepted": true,
+      "candidate": {
+        "den": 4,
+        "num": 1
+      },
+      "delta": {
+        "den": 100000000000000000,
+        "num": 2381
+      },
+      "denominator": 4,
+      "path": "values[5]",
+      "raw": {
+        "den": 100000000000000000,
+        "num": 24999999999997619
+      }
+    }
+  ],
+  "eta": {
+    "den": 1000000,
+    "num": 1
+  },
+  "factor_denominators_checked": false,
+  "max_error": {
+    "absolute_error": {
+      "den": 10000000000000000,
+      "num": 3138666929
+    },
+    "accepted": true,
+    "candidate": {
+      "den": 625,
+      "num": 148
+    },
+    "delta": {
+      "den": 10000000000000000,
+      "num": 3138666929
+    },
+    "denominator": 625,
+    "path": "gram[4][4]",
+    "raw": {
+      "den": 10000000000000000,
+      "num": 2367996861333071
+    }
+  },
+  "name": "PRIMAL_POLICY_V1"
+}

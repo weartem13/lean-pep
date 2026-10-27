@@ -1,0 +1,609 @@
+{
+  "changed_entry_count": 6,
+  "entries": [
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.grad[0]",
+      "reconstructed": {
+        "den": 5,
+        "num": 1
+      },
+      "source": "2e-1",
+      "source_exact": {
+        "den": 5,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.grad[1]",
+      "reconstructed": {
+        "den": 5,
+        "num": 1
+      },
+      "source": "0.2000000000",
+      "source_exact": {
+        "den": 5,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.grad[2]",
+      "reconstructed": {
+        "den": 5,
+        "num": 1
+      },
+      "source": "2.000000000e-1",
+      "source_exact": {
+        "den": 5,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 5000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 5000000000,
+        "num": 1
+      },
+      "path": "$.primal.value[0]",
+      "reconstructed": {
+        "den": 50,
+        "num": 9
+      },
+      "source": "1.799999998e-1",
+      "source_exact": {
+        "den": 5000000000,
+        "num": 899999999
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.value[1]",
+      "reconstructed": {
+        "den": 50,
+        "num": 7
+      },
+      "source": "0.14",
+      "source_exact": {
+        "den": 50,
+        "num": 7
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.primal.value[2]",
+      "reconstructed": {
+        "den": 10,
+        "num": 1
+      },
+      "source": "1e-1",
+      "source_exact": {
+        "den": 10,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.bound",
+      "reconstructed": {
+        "den": 10,
+        "num": 1
+      },
+      "source": "1.0e-1",
+      "source_exact": {
+        "den": 10,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.interp_terms[0].weight",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.interp_terms[1].weight",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "2.5e-1",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.interp_terms[2].weight",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.2500000000",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.interp_terms[3].weight",
+      "reconstructed": {
+        "den": 12,
+        "num": 5
+      },
+      "source": "0.4166666667",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 4166666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.interp_terms[4].weight",
+      "reconstructed": {
+        "den": 12,
+        "num": 5
+      },
+      "source": "4.166666667e-1",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 4166666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.upper.interp_terms[5].weight",
+      "reconstructed": {
+        "den": 3,
+        "num": 1
+      },
+      "source": "0.3333333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 3333333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": -1
+      },
+      "path": "$.upper.square_terms[0].weight",
+      "reconstructed": {
+        "den": 3,
+        "num": 2
+      },
+      "source": "0.6666666667",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 6666666667
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[0].form.const",
+      "reconstructed": {
+        "den": 16,
+        "num": -5
+      },
+      "source": "-0.3125",
+      "source_exact": {
+        "den": 16,
+        "num": -5
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[0].form.grad[0]",
+      "reconstructed": {
+        "den": 16,
+        "num": 5
+      },
+      "source": "0.3125",
+      "source_exact": {
+        "den": 16,
+        "num": 5
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[0].form.grad[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[0].form.grad[2]",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "changed": true,
+      "delta": {
+        "den": 30000000000,
+        "num": 1
+      },
+      "path": "$.upper.square_terms[1].weight",
+      "reconstructed": {
+        "den": 24,
+        "num": 11
+      },
+      "source": "0.4583333333",
+      "source_exact": {
+        "den": 10000000000,
+        "num": 4583333333
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[1].form.const",
+      "reconstructed": {
+        "den": 4,
+        "num": -1
+      },
+      "source": "-2.5e-1",
+      "source_exact": {
+        "den": 4,
+        "num": -1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[1].form.grad[0]",
+      "reconstructed": {
+        "den": 4,
+        "num": 1
+      },
+      "source": "0.25",
+      "source_exact": {
+        "den": 4,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[1].form.grad[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[1].form.grad[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1.0",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[2].weight",
+      "reconstructed": {
+        "den": 32,
+        "num": 5
+      },
+      "source": "0.15625",
+      "source_exact": {
+        "den": 32,
+        "num": 5
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[2].form.const",
+      "reconstructed": {
+        "den": 5,
+        "num": -1
+      },
+      "source": "-0.2",
+      "source_exact": {
+        "den": 5,
+        "num": -1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[2].form.grad[0]",
+      "reconstructed": {
+        "den": 1,
+        "num": 1
+      },
+      "source": "1",
+      "source_exact": {
+        "den": 1,
+        "num": 1
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[2].form.grad[1]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0.0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    },
+    {
+      "absolute_error": {
+        "den": 1,
+        "num": 0
+      },
+      "changed": false,
+      "delta": {
+        "den": 1,
+        "num": 0
+      },
+      "path": "$.upper.square_terms[2].form.grad[2]",
+      "reconstructed": {
+        "den": 1,
+        "num": 0
+      },
+      "source": "0e0",
+      "source_exact": {
+        "den": 1,
+        "num": 0
+      }
+    }
+  ],
+  "entry_count": 28,
+  "generator_version": "v0.7.0",
+  "kind": "lean-pep-reconstruction-report-v1",
+  "policy": {
+    "max_abs_error": "5e-10",
+    "max_abs_error_exact": {
+      "den": 2000000000,
+      "num": 1
+    },
+    "max_denominator": 1000,
+    "method": "limit_denominator"
+  },
+  "raw_exact_sha256": "b4a0f570dc0efbe62a1124fe5ea01a7f80dad7d1b1f4002a8f4d9c51f9bc7e34",
+  "reconstructed_exact_sha256": "3179cd0ea614e4a386c6e3b796e096cb5bc0c4cb7e1f210cba7e784fdb758d46",
+  "schema_version": 1,
+  "source_sha256": "57063eb77c58f8e401295c264941bf0b1b42bcb47704fa4b38320ee511550c1c"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "actual_lower_witness_checked": false,
+    "canonical_json_sha256": "3c4b43910c5ebaf806dd76555ebc17d7cb29cf39af8db3834abf93d38c3c6499",
+    "diagnostic_passed": true,
+    "format": "leanpep-centered-pg-diagnostic-v1",
+    "guards": {
+      "certificate": true,
+      "empty_implicit_interpolation": true,
+      "objective_matches_source": true,
+      "source": true
+    },
+    "horizon": 1,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "native_coordinate_transform_checked": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D2 centered 1-step PG exact regression; closed-form weights, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "provenance_authenticated": false,
+    "source_block_checks": {
+      "constraints": true,
+      "header": true,
+      "nonsmooth_samples": true,
+      "objective": true,
+      "smooth_samples": true
+    },
+    "source_mismatches": [],
+    "upper_factor_diagnostic": true,
+    "upper_identity_diagnostic": true
+  },
+  {
+    "actual_lower_witness_checked": false,
+    "canonical_json_sha256": "72503780b19be8ae0704f09e75914e95cf027ba3d267caa732594fdf524dac47",
+    "diagnostic_passed": true,
+    "format": "leanpep-centered-pg-diagnostic-v1",
+    "guards": {
+      "certificate": true,
+      "empty_implicit_interpolation": true,
+      "objective_matches_source": true,
+      "source": true
+    },
+    "horizon": 2,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "native_coordinate_transform_checked": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D2 centered 2-step PG exact regression; closed-form weights, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "provenance_authenticated": false,
+    "source_block_checks": {
+      "constraints": true,
+      "header": true,
+      "nonsmooth_samples": true,
+      "objective": true,
+      "smooth_samples": true
+    },
+    "source_mismatches": [],
+    "upper_factor_diagnostic": true,
+    "upper_identity_diagnostic": true
+  },
+  {
+    "actual_lower_witness_checked": false,
+    "canonical_json_sha256": "685eaf2e1395af689843880b8c960002636747c2634ff4904675c448a0ce118e",
+    "diagnostic_passed": true,
+    "format": "leanpep-centered-pg-diagnostic-v1",
+    "guards": {
+      "certificate": true,
+      "empty_implicit_interpolation": true,
+      "objective_matches_source": true,
+      "source": true
+    },
+    "horizon": 3,
+    "lean_checked": false,
+    "live_capture_performed": false,
+    "native_coordinate_transform_checked": false,
+    "numeric_interpretation": "exact_num_den_no_reconstruction",
+    "origin": {
+      "description": "D2 centered 3-step PG exact regression; closed-form weights, no solver call",
+      "mode": "deterministic_regression_fixture"
+    },
+    "provenance_authenticated": false,
+    "source_block_checks": {
+      "constraints": true,
+      "header": true,
+      "nonsmooth_samples": true,
+      "objective": true,
+      "smooth_samples": true
+    },
+    "source_mismatches": [],
+    "upper_factor_diagnostic": true,
+    "upper_identity_diagnostic": true
+  }
+]

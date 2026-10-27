@@ -1,0 +1,27 @@
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  [CompleteSpace E] (f : E → ℝ) (g : E → E) : Prop
+LeanPEP.ActualFunction.IsOneSmoothConvexFirstOrder.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (f : E → ℝ) (g : E → E) : Prop
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.gradient_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E} (h : ActualFunction.IsOneSmoothConvexAnalytic f g) :
+  gradient f = g
+LeanPEP.ActualFunction.IsOneSmoothConvexAnalytic.differentiable.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [CompleteSpace E] {f : E → ℝ} {g : E → E} (h : ActualFunction.IsOneSmoothConvexAnalytic f g) :
+  Differentiable ℝ f
+LeanPEP.ActualFunction.interpolationSlack.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  (f : E → ℝ) (g : E → E) (x y : E) : ℝ
+LeanPEP.ActualFunction.interpolationSlack_nonneg.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {f : E → ℝ} {g : E → E} (h : ActualFunction.IsOneSmoothConvexFirstOrder f g) (x y : E) :
+  0 ≤ ActualFunction.interpolationSlack f g x y
+LeanPEP.ActualFunction.pairwise_interpolation.{u_1} {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+  {f : E → ℝ} {g : E → E} (h : ActualFunction.IsOneSmoothConvexFirstOrder f g) (x y : E) :
+  f y + inner ℝ (g y) (x - y) + 1 / 2 * inner ℝ (g x - g y) (g x - g y) ≤ f x
+tests/lean/smoke/V12A1SmokeTest.lean:27:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+tests/lean/smoke/V12A1SmokeTest.lean:28:21: warning: 'norm_num' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+tests/lean/smoke/V12A1SmokeTest.lean:28:21: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
