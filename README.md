@@ -10,7 +10,7 @@ The hypotheses are a complete real inner-product space, analytic smooth-convex `
 
 ## Start here
 
-Install Python 3.10+, Git and elan; keep `lean-toolchain` and `lake-manifest.json` unchanged. Offline consumption uses Python's standard library. From a fresh extracted candidate, choose an **external**, unused output directory:
+Install Python 3.10+, Git and elan; keep `lean-toolchain` and `lake-manifest.json` unchanged. Offline consumption uses Python's standard library. From a fresh checkout or code export, choose an **external**, unused output directory:
 
 ```sh
 OUT="$(mktemp -d)"
@@ -36,21 +36,23 @@ The [declaration and execution map](docs/evidence/claim-evidence.md) connects th
 
 This code snapshot includes the implementation, tests, reproduction inputs and supporting evidence. The manuscript, PDF, typesetting resources, paper packages and internal editing records are maintained separately. `SOURCE_MANIFEST.json` and `PUBLIC_MANIFEST.json` identify the exported code and evidence bytes; record them together with the commit when reproducing a result.
 
-The [Lean-PEP repository](https://github.com/weartem13/lean-pep) remains **private**. The selected software version is **0.1.0**; no tag or Release is asserted. The classical PG/GD bounds serve as validation cases, and the executable recovery/verification consumer uses the documented PG2 profile.
+The [Lean-PEP repository](https://github.com/weartem13/lean-pep) is public. The software version is **0.1.0**. The classical PG/GD bounds serve as validation cases, and the executable recovery/verification consumer uses the documented PG2 profile.
 
 ## Citation and licensing
 
-[CITATION.cff](CITATION.cff) provides the repository, software version and bibliographic metadata for the accompanying unpublished manuscript, *Lean-PEP: Performance-Estimation Certificates to Formally Verified Algorithmic Bounds*, by Xinyuan Guo and Andersen Ang. DOI and arXiv identifiers are omitted until assigned.
+Xinyuan Guo and Andersen Ang (2026). *Lean-PEP: Performance-Estimation Certificates to Formally Verified Algorithmic Bounds*. arXiv preprint [arXiv:2611.17618](https://arxiv.org/abs/2611.17618).
+
+[CITATION.cff](CITATION.cff) records the preprint citation and software metadata.
 
 Project-owned software, including the Lean proof sources and Python tools, is licensed under the **Apache License 2.0** (SPDX: `Apache-2.0`); see [LICENSE](LICENSE) for the official full text.
 
 The separately maintained paper uses **CC-BY-4.0**. The migrated declaration/evidence maps retain that license under the limited scope stated in [docs/evidence/README.md](docs/evidence/README.md), with the full text in [docs/evidence/LICENSE](docs/evidence/LICENSE). These terms do not offer a choice of licenses for the whole repository or change the linked research data's existing status.
 
-Existing third-party licenses and attribution notices remain applicable. External dependencies are fetched separately using the pinned lockfile and retain their own terms. The software license is the unmodified standard text, without an additional project copyright notice. The repository remains private, with no public Release or arXiv submission yet.
+Existing third-party licenses and attribution notices remain applicable. External dependencies are fetched separately using the pinned lockfile and retain their own terms. The software license is the unmodified standard text, without an additional project copyright notice.
 
-## Milestone releases
+## Code snapshots
 
-The [release procedure](docs/releasing.md) exports this maintained tree into a fresh directory. The first public repository starts with a new root commit; later milestone releases append commits to that same public history. Daily development is not automatically synchronized. See the [changelog](CHANGELOG.md).
+The [release procedure](docs/releasing.md) describes how to export and verify a code snapshot before adding a commit to the public repository. See the [changelog](CHANGELOG.md).
 
 - [Quickstart](docs/quickstart.md): prerequisites, expected output and direct consumer flags.
 - [Architecture](docs/architecture.md): semantics and import boundary.

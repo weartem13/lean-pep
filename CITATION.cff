@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "For research using Lean-PEP, please cite the accompanying paper. When reproducing an artifact, also record the software version, commit and SOURCE_ID."
+message: "For research using Lean-PEP, please cite the arXiv preprint. When reproducing an artifact, also record the software version, commit and SOURCE_ID."
 type: software
 title: Lean-PEP
 license: Apache-2.0
@@ -14,7 +14,8 @@ authors:
     affiliation: "School of Electronics and Computer Science, University of Southampton, UK"
 abstract: "Exact checking of performance-estimation certificates with source and representation bindings, and bridges to function-level algorithmic bounds in Lean."
 preferred-citation:
-  type: unpublished
+  type: generic
+  status: preprint
   title: "Lean-PEP: Performance-Estimation Certificates to Formally Verified Algorithmic Bounds"
   authors:
     - family-names: Guo
@@ -22,3 +23,7 @@ preferred-citation:
     - family-names: Ang
       given-names: Andersen
   year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2611.17618"
+  url: "https://arxiv.org/abs/2611.17618"
